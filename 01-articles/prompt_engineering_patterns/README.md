@@ -339,15 +339,6 @@ Emoticonized: "That movie was hilarious! 😂"
 
 These prompts connect ideas across domains or surface insightful comparisons.
 
-```mermaid
-mindmap
-  root(Ideas-Stimulators)
-    Cross-Pollinator
-    Analogy-zer
-```
-
-
-
 ### The Cross-Pollinator
 
 Draws conceptual connections and identifies shared principles between disparate domains.
