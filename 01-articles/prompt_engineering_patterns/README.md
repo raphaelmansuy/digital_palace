@@ -389,7 +389,7 @@ These prompts modify the tone, style or emotional sentiment of the text.
 
 ```mermaid
 mindmap
-  root((Tone Adjusters))
+  root((Tone-Adjusters))
     Diplomat
     Sensationalizer
     Artsy-fartsy-izer
