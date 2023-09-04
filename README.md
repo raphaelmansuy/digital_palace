@@ -20,6 +20,9 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 
+## AI and Ethics
+
+[How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
 
 ## Medium publications
 
