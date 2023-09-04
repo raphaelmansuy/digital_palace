@@ -617,3 +617,7 @@ Explaining a concept simply vs comprehensively
 The key is laying out alternative actions and letting the model discern the most suitable response based on the input and context. This provides more control than a simple open-ended prompt.
 
 Route prompts are useful when there are a few different possible good solutions, and the model should choose among the options accordingly. It acts like a multiple choice prompt, steering the AI's response.
+
+## Others (to be categorized)
+
+[Others (to be categorized)](./PROMPTS.md)
