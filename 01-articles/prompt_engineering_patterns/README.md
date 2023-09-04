@@ -81,6 +81,19 @@ mindmap
 
 These prompts modify existing text in some way while keeping the core meaning intact.
 
+```mermaid
+mindmap
+  root((Text Modifiers))
+    Text Simplifier
+    Text Elaborator
+    Text Corrector
+    Text Compressor
+    Text Expander
+    Text Paraphraser
+```
+
+**Text Modifiers**
+
 ### The Simplifier
 
 A simplifier prompt rewrites text using simpler vocabulary and grammar for improved readability. For example:
