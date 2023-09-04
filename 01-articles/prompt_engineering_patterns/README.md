@@ -6,6 +6,8 @@
 | -------------- | ---------- | ---------- | ------- |
 | Raphaël MANSUY | 04/09/2023 | 04/09/2023 | 1.0.1   |
 
+[Reddit ai_prompts_patterns](https://www.reddit.com/r/ai_prompts_patterns/)
+
 ## Introduction
 
 Chatbots and AI assistants are only as smart as their prompts. Like a genie in a bottle, they need the right rub to unleash their powers. Crafting the perfect prompt is an art - with the right incantation, you can summon everything from poetry to product descriptions.
