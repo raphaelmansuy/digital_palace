@@ -391,13 +391,6 @@ Analogy: "Electrons orbit the nucleus like planets around a star."
 
 These prompts modify the tone, style or emotional sentiment of the text.
 
-```mermaid
-mindmap
-  root((Tone-Adjusters))
-    Diplomat
-    Sensationalizer
-    Artsy-fartsy-izer
-```
 
 ### The Diplomat
 
