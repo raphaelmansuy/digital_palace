@@ -92,8 +92,6 @@ mindmap
     Text Paraphraser
 ```
 
-**Text Modifiers**
-
 ### The Simplifier
 
 A simplifier prompt rewrites text using simpler vocabulary and grammar for improved readability. For example:
@@ -343,7 +341,7 @@ These prompts connect ideas across domains or surface insightful comparisons.
 
 ```mermaid
 mindmap
-  root((Ideas Stimulators))
+  root((Ideas-Stimulators))
     Cross-Pollinator
     Analogy-zer
 ```
