@@ -341,10 +341,12 @@ These prompts connect ideas across domains or surface insightful comparisons.
 
 ```mermaid
 mindmap
-  root((Ideas-Stimulators))
+  root(Ideas-Stimulators)
     Cross-Pollinator
     Analogy-zer
 ```
+
+
 
 ### The Cross-Pollinator
 
