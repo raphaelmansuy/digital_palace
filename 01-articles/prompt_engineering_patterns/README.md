@@ -42,6 +42,14 @@ The file also introduces imagined prompt patterns like the Cross-Pollinator, whi
 
 In this guide, we explore the identification of atomic patterns in prompts. We understand that prompts are composable, meaning they can be combined to create more complex and powerful prompts. For example, we can compose the Grounding pattern to provide context, the Generator pattern to generate ideas, and the Reformatter pattern to format the prompt. This composition allows us to create prompts that are tailored to specific needs. In the future, we will delve into the topic of how prompts can be further composed to unlock even more possibilities and enhance the capabilities of AI systems. Stay tuned for the extended version of this guide, where we will explore the art of prompt composition in depth.
 
+**Examples of composable prompts**:
+
+```mermaid
+flowchart LR
+    A[Grounding] --> B[Generator]
+    B --> C[Reformatter]
+```
+
 ---
 
 ```mermaid
