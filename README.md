@@ -19,3 +19,8 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 ### Prompt Engineering Patterns
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
+
+
+## Medium publications
+
+[Forget the Cloud ☁️ — A MacBook Pro with M1/M2 is the Only AI Brain You Need … 🧠](https://medium.com/p/168ac77d78ab)
