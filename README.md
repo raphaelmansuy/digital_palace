@@ -12,7 +12,7 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
 
-![Digital Palace](/00-assets/lamacard.png)
+![Digital Palace](./00-assets/lamacard.png)
 
 ## Articles
 
