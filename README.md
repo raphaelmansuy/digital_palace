@@ -8,7 +8,7 @@ My Digital Palace allows me to write journal entries, upload multimedia, record 
 
 With my palace being public, anyone can read my entries, view my content, and leave comments to connect with me and others in my community. I enjoy fostering this open dialogue and discussion around my shared stories.
 
-In summary, my Digital Palace provides an engaging platform for public self-expression, reflection, and sharing precious memories. It is a chronicle of my personal growth and achievements - my own digital autobiography available to all.
+In summary, my Digital Palace provides an engaging platform for public self-expression, reflection, and sharing memories. It is a chronicle of my personal growth and achievements - my own digital brain available to all.
 
 [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
 
@@ -18,4 +18,4 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 ### Prompt Engineering Patterns
 
-[Prompt Engineering Patterns](!/01-articles/01-prompt-engineering-patterns.md)
+[Prompt Engineering Patterns](01-articles/prompt_engineering_patterns/README.md)
