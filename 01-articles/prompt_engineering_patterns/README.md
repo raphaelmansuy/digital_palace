@@ -4,7 +4,7 @@
 
 | Author         | Created    | Updated    | Version |
 | -------------- | ---------- | ---------- | ------- |
-| Raphaël MANSUY | 04/09/2023 | 04/09/2023 | 1.0.0   |
+| Raphaël MANSUY | 04/09/2023 | 04/09/2023 | 1.0.1   |
 
 ## Introduction
 
@@ -64,6 +64,8 @@ mindmap
     Tone Adjusters
     Knowledge Grounders
     Functional Generators
+    Meta Prompts
+    Router Prompts
 ```
 
 **Mindmap illustrating different categories of prompt engineering patterns.**
@@ -554,3 +556,64 @@ print(celsius)
 This prints the temperature in celsius.
 
 TheCoder allows plain language specifications of problems to be translated directly into runnable code snippets that implement the solution, acting as an AI coder. It could help automate simple programming tasks and provide examples for learning purposes.
+
+## Meta Prompts
+
+The meta prompt is a powerful prompt engineering pattern that involves constructing prompts about prompts.
+
+The key idea is to provide an initial prompt that gives the AI assistant context about the desired prompt structure and behavior. This "outer" prompt frames the task for the AI system before providing the actual "inner" prompt requesting information or action.
+
+For example, a meta prompt could first describe that the next prompt will ask for a 5 sentence summary of a passage:
+
+"The following prompt will ask you to summarize the passage in 5 concise sentences that capture the key points:"
+
+The AI will then be primed to expect a summarization task when given the input text prompt.
+
+Similarly, a meta prompt can specify the desired tone or point of view:
+
+"The following prompt will ask for a simple, straightforward explanation of the key ideas in the passage:"
+
+This frames the prompt type as an explanatory, simplified summary.
+
+The meta prompt acts as an instruction manual for the AI to understand exactly how to interpret and respond to the subsequent input prompt. It provides crucial context to elicit the intended behavior.
+
+Meta prompts are extremely versatile - you can specify length, style, perspective, purpose and more. By explicitly stating how the AI should approach the inner prompt, you can unlock more control over its response.
+
+## Router Prompts
+
+The route prompt is a pattern that provides AI systems with multiple options to choose from when responding to an input. It allows guiding the model towards a preferred response out of several alternatives.
+
+For example, when asking an AI to represent a text as a diagram, a route prompt could provide different diagram choices:
+
+"Please represent the following text as a diagram. Select the best option from the choices below:
+
+Text: I first read a CSV file, than I transform it into Parquet and then I store into an AWS S3 Bucket.
+
+Diagram choices:
+
+A) Flowchart
+
+B) Bar graph
+
+C) Pie chart
+
+D) Mermaid sequence diagram
+
+E) Entity relationship diagram"
+
+By specifying valid options like flowchart, mermaid, etc., the route prompt guides the model to pick the optimal choice, which in this case would likely be a sequence diagram.
+
+```mermaid
+flowchart LR
+    A[Read CSV file] --> B[Transform to Parquet]
+    B --> C[Store in AWS S3 Bucket]
+```
+
+**Other examples include**:
+
+Summarizing a passage in tweet length vs paragraph length
+Responding in a more positive tone vs neutral tone
+Explaining a concept simply vs comprehensively
+The key is laying out alternative actions and letting the model discern the most suitable response based on the input and context. This provides more control than a simple open-ended prompt.
+
+Route prompts are useful when there are a few different possible good solutions, and the model should choose among the options accordingly. It acts like a multiple choice prompt, steering the AI's response.
