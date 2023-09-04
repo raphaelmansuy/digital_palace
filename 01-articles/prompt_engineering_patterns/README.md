@@ -14,6 +14,9 @@ Prompt engineering is the key that unlocks an AI's potential. It's the differenc
 
 There are tried and true formulas for prompting AI systems. Prompt engineering patterns act as guides for creating prompts that elicit certain behaviors from bots. Classifiers to categorize information; extractors to pull out key details; summarizers to distill texts - these common patterns enable more useful responses. With the proper abracadabra, you can get AI to understand your intent and provide the right spell for the job. Prompt engineering is wizardry, and with the right prompts, your AI assistant can dazzle and delight.
 
+![Wizard Lama](./wizardlama.png)
+
+
 ## The Power of Naming: Establishing Standardized Patterns in Prompt Engineering
 
 Design patterns in software design and patterns of prompting share a common challenge: naming things. In programming, one of the most difficult tasks is finding the right names for variables, functions, and classes. Similarly, in prompt engineering, naming patterns is crucial for effective communication and understanding.
