@@ -44,6 +44,24 @@ In this guide, we explore the identification of atomic patterns in prompts. We u
 
 ---
 
+```mermaid
+mindmap
+  root((mindmap))
+    Text Modifiers
+    Text Generators
+    Text Analyzers
+    Text Restructurers
+    Text Enhancers
+    Idea Stimulators
+    Tone Adjusters
+    Knowledge Grounders
+    Functional Generators
+```
+
+**Mindmap illustrating different categories of prompt engineering patterns.**
+
+---
+
 ## Text Modifiers
 
 - Simplifier
