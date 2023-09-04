@@ -18,4 +18,4 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 ### Prompt Engineering Patterns
 
-[Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
+[Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
