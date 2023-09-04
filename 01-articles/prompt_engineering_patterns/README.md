@@ -161,6 +161,13 @@ Output: The huge bear walked over to the creek to get some water.
 
 These prompts generate or complete new text from scratch.
 
+```mermaid
+mindmap
+  root((Text Generators))
+    Text Generator
+    Text Completer
+```
+
 ### The Generator
 
 A generator prompt produces new text from scratch on a given topic. For example:
@@ -194,6 +201,16 @@ Completers enable inference of missing information based on context.
 - Fact Checker
 
 These prompts analyze and process key information in the input text.
+
+```mermaid
+mindmap
+  root((Text Analyzers))
+    Text Classifier
+    Text Extractor
+    Text Summarizer
+    Text Translator
+    Text Fact Checker
+```
 
 ### The Classifier
 
@@ -257,6 +274,12 @@ Output: The first president was George Washington in 1789, not Thomas Jefferson 
 
 These prompts restructure or reorder the text and ideas.
 
+```mermaid
+mindmap
+  root((Text Restructurers))
+    Text Reformatter
+```
+
 ### The Reformatter
 
 A reformatter prompt restructures the input text into a different format. For example:
@@ -274,6 +297,14 @@ Reformatters transform text styles and structures.
 - Highlighter
 - Illustrator
 - Emoticonizer
+
+```mermaid
+mindmap
+  root((Text Enhancers))
+    Text Highlighter
+    Text Illustrator
+    Text Emoticonizer
+```
 
 ### The Highlighter
 
@@ -309,6 +340,13 @@ Emoticonized: "That movie was hilarious! 😂"
 - Analogy-zer
 
 These prompts connect ideas across domains or surface insightful comparisons.
+
+```mermaid
+mindmap
+  root((Ideas Stimulators))
+    Cross-Pollinator
+    Analogy-zer
+```
 
 ### The Cross-Pollinator
 
@@ -358,6 +396,14 @@ Analogy: "Electrons orbit the nucleus like planets around a star."
 
 These prompts modify the tone, style or emotional sentiment of the text.
 
+```mermaid
+mindmap
+  root((Tone Adjusters))
+    Diplomat
+    Sensationalizer
+    Artsy-fartsy-izer
+```
+
 ### The Diplomat
 
 Restates strong claims more diplomatically.
@@ -389,6 +435,14 @@ Artsy-fartsy-ized: "The chanteuse's velvety vocals are sublimely transcendent."
 - Context Binder
 
 These prompts ground the text in a specific body of knowledge. Combined with outside knowledge.
+
+```mermaid
+mindmap
+  root((Knowledge Grounders))
+    Expert Grounder
+    Quotifier
+    Context Binder
+```
 
 ### The Expert Grounder
 
@@ -463,6 +517,12 @@ Context binders produce unified narratives from disparate facts and details.
 - TheCoder
 
 These generate executable code or other functional outputs.
+
+```mermaid
+mindmap
+  root((Functional Generators))
+    TheCoder
+```
 
 ### TheCoder
 
