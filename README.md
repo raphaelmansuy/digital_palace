@@ -15,7 +15,10 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 ![Digital Palace](./00-assets/lamacard.png)
 
 
-## AI
+
+### AI Engineering
+
+[Design Patterns for LLM application](./01-articles/dessign_patterns_for_llm_applications/README.md)
 
 ## LLM Applications
 
