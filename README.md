@@ -14,13 +14,18 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 ![Digital Palace](./00-assets/lamacard.png)
 
-## Articles
+
+## AI
+
+## LLM Applications
+
+[What are the common uses of LLM Applications ?](./01-articles/prompt_engineering_patterns/llm_applications_use_cases/README.md)
 
 ### Prompt Engineering Patterns
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 
-## AI and Ethics
+### AI and Ethics
 
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
 
