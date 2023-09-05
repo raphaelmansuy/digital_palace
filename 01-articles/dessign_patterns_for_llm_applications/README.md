@@ -1,4 +1,4 @@
-# What are the common design patterns for LLM Applications ?
+# Design and architecture patterns for LLM Applications
 
 ## Information
 
