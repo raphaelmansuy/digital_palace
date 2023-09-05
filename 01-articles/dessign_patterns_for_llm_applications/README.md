@@ -102,7 +102,7 @@ The main stages of In-Context Learning Patterns, involve data preprocessing/embe
 
 This may involve breaking the data into chunks and passing them through an embedding model to store them in a vector database.
 
-In the prompt construction/retrieval stage, prompts are constructed based on user queries and contextual data. Frameworks like LangChan an LlamaIndxare are tools that abstract away the details of prompt chaining and retrieval
+In the prompt construction/retrieval stage, prompts are constructed based on user queries and contextual data. Frameworks like LangChain an LlamaIndxare are tools that abstract away the details of prompt chaining and retrieval
 
 Finally, in the prompt execution/inference stage, the constructed prompts are submitted to pre-trained language models for inference. Various proprietary and open-source models like OpenAI API (GPT-4) and gpt-3.5-turbo are options in this stage.
 
