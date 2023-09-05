@@ -94,9 +94,17 @@ graph LR
 
 #### Introduction to In-Context Learning Patterns
 
-This design pattern utilizes LLMs off the shelf without fine-tuning and controls their behavior through clever prompting and conditioning on private contextual data. It involves data preprocessing/embedding, prompt construction/retrieval, and prompt execution/inference.
+This design pattern utilizes LLMs off the shelf without fine-tuning and controls their behavior through clever prompting and conditioning on private contextual data.
 
-The main stages of In-Context Learning Patterns, involve data preprocessing/embedding, prompt construction/retrieval, and prompt execution/inference. In the data preprocessing/embedding stage, the private contextual data is processed and transformed into a suitable format for the language models. This may involve breaking the data into chunks and passing them through an embedding model to store them in a vector database. In the prompt construction/retrieval stage, prompts are constructed based on user queries and contextual data. Frameworks like LangChain, LlamaIndex, and ChatGPT are mentioned as tools that abstract away the details of prompt chaining and retrieval. Finally, in the prompt execution/inference stage, the constructed prompts are submitted to pre-trained language models for inference. Various proprietary and open-source models like OpenAI API (GPT-4) and gpt-3.5-turbo are mentioned as options in this stage.
+It involves data preprocessing/embedding, prompt construction/retrieval, and prompt execution/inference.
+
+The main stages of In-Context Learning Patterns, involve data preprocessing/embedding, prompt construction/retrieval, and prompt execution/inference. In the data preprocessing/embedding stage, the private contextual data is processed and transformed into a suitable format for the language models.
+
+This may involve breaking the data into chunks and passing them through an embedding model to store them in a vector database.
+
+In the prompt construction/retrieval stage, prompts are constructed based on user queries and contextual data. Frameworks like LangChan an LlamaIndxare are tools that abstract away the details of prompt chaining and retrieval
+
+Finally, in the prompt execution/inference stage, the constructed prompts are submitted to pre-trained language models for inference. Various proprietary and open-source models like OpenAI API (GPT-4) and gpt-3.5-turbo are options in this stage.
 
 #### Schema of the 3 stages of In-Context Learning Patterns
 
