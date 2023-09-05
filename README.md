@@ -19,7 +19,7 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 ## LLM Applications
 
-[What are the common use cases of LLM Applications ?](./01-articles/prompt_engineering_patterns/llm_applications_use_cases/README.md)
+[What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
 ### Prompt Engineering Patterns
 
