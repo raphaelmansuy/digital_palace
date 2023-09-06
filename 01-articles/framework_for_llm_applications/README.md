@@ -1,6 +1,6 @@
 # Framework for LLM Applications
 
-## LangChain
+## LangChain 🔗 🦜
 
 LangChain is an open-source framework created to simplify the development of applications using large language models (LLMs). It provides tools and interfaces that make it easier to build LLM-powered apps that are:
 
@@ -16,7 +16,7 @@ Some example use cases of LangChain include building chatbots, QA systems, summa
 
 Read more about LangChain [here](https://python.langchain.com).
 
-## LLamaIndex
+## LLamaIndex 🦙
 
 LLamaIndex provides a data framework to ingest and structure private or domain-specific data to be used with LLMs. It allows:
 
