@@ -233,7 +233,52 @@ And then you are good to go!
 
 ## Advanced Usage
 
+### RAG
+
 🏗️ To be written
+
+### Real time RAG
+
+Real-time updates are critical for RAG systems in dynamic business environments to ensure responses reflect the latest information. For example, a customer support chatbot needs to incorporate new product announcements and changes instantly to provide accurate answers. A financial advisor chatbot needs real-time updates on stock prices, market events, and portfolio changes to make sound recommendations.
+
+To enable this, the RAG pipeline must ingest streaming data like social media feeds, press releases, transaction records, or sensor readings continuously. The vector indexes and passage databases need to incorporate these updates incrementally without expensive retraining. When users ask questions, the system performs on-the-fly retrieval to construct prompts using the freshest relevant information.
+
+With real-time ingestion, indexing, and retrieval, the system can answer questions based on data that could have changed minutes or seconds ago. This ensures RAG systems provide timely, tailored, and trustworthy responses instead of outdated information. For businesses relying on AI assistants, real-time RAG is crucial for delivering satisfactory and informed user experiences.
+
+```mermaid
+graph LR
+    A[New Data - streaming] --> B[Ingestion and Indexing]
+    B --> C[Vector Index]
+    C --> D[Retrieval] --> E[Context Filtering]
+    D --> F[Re-ranking]
+    E --> G[Prompt Assembly]
+    F --> G
+    G --> H[Language Model]
+    H --> I[Response] --> J[Caching] --> K[User]
+```
+
+The steps to implement a RAG system using dynamic databases are:
+
+**Indexing**:
+
+- Ingest new documents or data into the database in real-time using streaming pipelines or triggers.
+- Update the vector index incrementally on new data instead of reindexing from scratch periodically. Tools like Pinecone, Weaviate, and Qdrant support incremental indexing.
+- Use chunking strategies like semantic segmentation to break documents into coherent sections instead of fixed sizes. This allows more relevant chunks to be retrieved.
+- Assign metadata like timestamps, keywords, or embeddings to chunks to enable filtering during retrieval.
+
+**Retrieval**:
+
+- Query the vector database with user questions in real-time. Retrieve the most relevant chunks using approximate nearest neighbor search.
+- Apply additional filters on the chunks based on metadata to refine the results. For example, retrieve chunks from the last month only.
+- Rerank chunks based on proximity to query or context vectors before passing top K chunks to the generator.
+
+**Generation**:
+
+- Dynamically construct the prompt by concatenating the question with the retrieved chunks. Maintain a coherent narrative using document sectioning.
+- Generate the final response with the language model. Manage length by adjusting number of chunks.
+- Cache generated responses to avoid duplicate work for repeated questions.
+
+The key is to build pipelines to ingest and index data incrementally, query indexes dynamically, and efficiently assemble prompts on the fly from retrieved chunks.
 
 ## LLamaIndex 🦙 vs LangChain 🔗 🦜
 
