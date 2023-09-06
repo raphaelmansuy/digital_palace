@@ -6,6 +6,8 @@ LlamaIndex is a Python library created by [Jerry Liu](https://www.linkedin.com/i
 
 Developers can use LLamaIndex to quickly add private/custom data to enhance existing LLMs. It avoids the need to retrain models, while allowing them to provide personalized and data-driven responses.
 
+![LlamaIndex](./assets/00_lama_lib.png)
+
 **Problem it solves**:
 
 LlamaIndex addresses the challenges of scaling language models to large document collections. Language models have limited context sizes, which makes processing entire large documents expensive. Additionally, retrieving information from large document collections through keyword search over raw text is inefficient at scale.
