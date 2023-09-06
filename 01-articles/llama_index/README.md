@@ -1,5 +1,11 @@
 # LlamaIndex 🦙
 
+## Information
+
+| Author         | Created    | Updated    | Version |
+| -------------- | ---------- | ---------- | ------- |
+| Raphaël MANSUY | 06/09/2023 | 06/09/2023 | 0.8.0   |
+
 ## What is LlamaIndex ?
 
 LlamaIndex is a Python library created by [Jerry Liu](https://www.linkedin.com/in/jerry-liu-64390071/) that enables efficient text search and summarization over large document collections using language models.
