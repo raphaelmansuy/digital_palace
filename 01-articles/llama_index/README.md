@@ -26,6 +26,12 @@ By chunking documents and leveraging vector embeddings, LlamaIndex enables scala
 - LlamaIndex enables knowledge agents to autonomously retrieve and make informed decisions using efficient semantic search on large document collections.
 - Structured Analytics by querying for structured data like tables, CSV files, Databases, etc.
 
+**Examples of real applications built with LlamaIndex**:
+
+| Name         | Demo Link                                             | Github Link                                         | Description                                                                                                                                |
+| ------------ | ----------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| SEC Insights | [run-llama/sec-insights](https://www.secinsights.ai/) | [Github](https://github.com/run-llama/sec-insights) | SEC Insights uses the Retrieval Augmented Generation (RAG) capabilities of LlamaIndex to answer questions about SEC 10-K & 10-Q documents. |
+
 **Key Benefits**:
 
 - Scales LM-powered search to large text collections.
