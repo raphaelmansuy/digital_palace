@@ -18,7 +18,7 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 [Design and Architecture Patterns for LLM application](./01-articles/dessign_patterns_for_llm_applications/README.md)
 
-[Framework for LLM application](./01-articles/framework_for_llm_applications/README.md)
+[Frameworks for building LLM applications](./01-articles/framework_for_llm_applications/README.md)
 
 ## LLM Applications
 
