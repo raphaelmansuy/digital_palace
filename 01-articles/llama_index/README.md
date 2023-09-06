@@ -137,6 +137,8 @@ The text is about the author's experiences and reflections during their time at 
 
 ```
 
+[Example of code](./01_lama_example.py)
+
 ## How it works ?
 
 Here is a detailed explanation of how LlamaIndex works under the hood:
