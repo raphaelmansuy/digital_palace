@@ -111,3 +111,11 @@ By applying mathematical operations on these word and sentence vectors, we can n
 This mathematical framework powers our ability to analyze and generate language in entirely new ways.
 
 Vector representations are a profound leap forward, enabling us to mathematically reason about the semantics of language.
+
+## Useful resources
+
+| Name | Description | Link |
+| --- | --- | --- |
+| Embeddings | A video lecture from Google and a series of articles that introduce the concept, applications, and challenges of embeddings, with examples and illustrations. | [Embeddings](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture) |
+| Word2vec Tutorial - The Skip-Gram Model | A blog post that explains the word2vec algorithm for learning word embeddings, with code snippets and visualizations. | [Word2vec Tutorial](https://developers.google.com/machine-learning/crash-course/embeddings/obtaining-embeddings) |
+| Introducing text and code embeddings - OpenAI | A blog post that announces the release of two new models for generating text and code embeddings, with interactive demos and benchmarks. | [Introducing text and code embeddings](https://openai.com/blog/introducing-text-and-code-embeddings/) |
