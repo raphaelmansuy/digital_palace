@@ -1,10 +1,10 @@
-# Cracking the Code: How AI Can Solve One of Programming's Biggest Headaches - Naming  … . 🧠
+# Cracking the Code: How AI Can Solve One of The Hardest Problem in Software Engineering - Naming  …  🧠
 
 ## Introduction
 
 Naming things is a critical, yet challenging task in programming. The names we give to functions, variables, classes, and other components deeply impact the understandability, maintainability, and extensibility of software systems. However, naming requires balancing many considerations including descriptiveness, conciseness, alignment with conventions, and conveyance of intent. The cognitive load of making these nuanced naming decisions repeatedly can lead to suboptimal outcomes like cryptic, generic names or misnomers that poorly reflect the underlying code.
 
-Recent advances in AI, specifically large language models (LLMs) like OpenAI/GPT-3, offer the potential to aid developers in naming tasks by analyzing code context and generating recommendations. However, while promising, the use of AI also poses risks if not thoughtfully incorporated into engineering workflows. This essay analyzes the benefits and limitations of using LLM assistance for naming in programming. 
+Recent advances in AI, specifically large language models (LLMs) like OpenAI/GPT-3, offer the potential to aid developers in naming tasks by analyzing code context and generating recommendations. However, while promising, the use of AI also poses risks if not thoughtfully incorporated into engineering workflows. This essay analyzes the benefits and limitations of using LLM assistance for naming in programming.
 
 Best practices are provided for prompting the AI and strategically integrating suggestions to augment, not replace, human skills.
 
@@ -324,28 +324,32 @@ This essay analyzed the challenges of naming in programming and the promise of l
 
 ## References
 
-[1] TwoHardThings - Martin Fowler https://martinfowler.com/bliki/TwoHardThings.html
-[2] Naming conventions in programming – a review of scientific literature - Makimo https://makimo.com/blog/scientific-perspective-on-naming-in-programming/
-[3] Effectively Naming Software Thingies | by Sagi Rabinovich - Medium https://medium.com/@rabinovichsagi/effectively-naming-software-thingies-fcea9d78a699
-[4] Debunking the infamous “Only two hard problems in Computer Science” - Darren Broemmer https://darren-broemmer.medium.com/debunking-the-infamous-only-two-hard-problems-in-computer-science-b412a31c00df
-[5] Naming convention (programming) - Wikipedia [https://en.wikipedia.org/wiki/Naming_convention_(programming)](https://en.wikipedia.org/wiki/Naming_convention_(programming))
-[6] Code Comments vs. Clear Naming Conventions: Pros and Cons for Readability and Maintainability | by Summit Kumar | Medium https://medium.com/@summitkumar/code-comments-vs-clear-naming-conventions-pros-and-cons-for-readability-and-maintainability-f4b2accadbf
-[7] Naming — one of the hardest things in Software development | by Leena | Continuous Delivery | Medium https://medium.com/continuousdelivery/naming-one-of-the-hardest-thing-in-software-development-af957d070762
-[8] The importance of naming in programming | The Man in the Arena - Carl Alexander https://carlalexander.ca/importance-naming-programming/
-[9] Programming Basics: Names matter - Federico Hatoum https://hatoum.com/blog/2016/9/4/programming-basics-names-matter
-[10] Why do people say the hardest part about programming is naming and off by one errors and not coming up with the logic? - Reddit https://www.reddit.com/r/learnprogramming/comments/w5tpjk/why_do_people_say_the_hardest_part_about/
-[11] Psychology of Code Readability. By no means should this be regarded as… | by Egon Elbre | Medium https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a
-[12] What impact does inconsistent formatting and naming conventions have on software maintenance and reuse? - Quora https://www.quora.com/What-impact-does-inconsistent-formatting-and-naming-conventions-have-on-software-maintenance-and-reuse
-[13] The naming problem in programming | On software development https://kalkus.dev/2020/02/04/the-naming-problem-in-programming/
-[14] Cognitive Perspectives on the Role of Naming in Computer Programs - [cs.wisc.edu](http://cs.wisc.edu/) https://pages.cs.wisc.edu/~liblit/ppig-2006/
-[15] Best practices to write a readable and maintainable code | Choosing meaningful names https://dev.to/pacheco/how-do-you-name-things-3jae
-[16] Why naming things is hard - Peter Hilton https://hilton.org.uk/blog/why-naming-things-is-hard
-[17] The role of visual and semantic codes in object naming - ScienceDirect https://www.sciencedirect.com/science/article/pii/0010028574900164
-[18] How do you choose meaningful and consistent names for your variables, functions, and classes? - LinkedIn https://www.linkedin.com/advice/1/how-do-you-choose-meaningful-consistent
-[19] "There are 2 hard problems in computer science: cache invalidation, naming thing... | Hacker News https://news.ycombinator.com/item?id=23113314
-[20] [PDF] Effects of Variable Names on Comprehension: An Empirical Study - CS - Huji https://www.cs.huji.ac.il/~feit/papers/Names17ICPC.pdf
-[21] Are vague variable names more maintainable? - Software Engineering Stack Exchange https://softwareengineering.stackexchange.com/questions/369850/are-vague-variable-names-more-maintainable
-[22] Naming Is Hard — Difficulties of Naming Variables - PSPDFKit https://pspdfkit.com/blog/2018/naming-is-hard/
-[23] [PDF] How Developers Choose Names - arXiv https://arxiv.org/pdf/2103.07487.pdf
-[24] [PDF] Towards a Naming Quality Model - CEUR-WS https://ceur-ws.org/Vol-2510/sattose2019_paper_8.pdf
-[25] Eloise, Keating. “Why Mark Zuckerberg and other business leaders wear the same clothes to work each day.” https://www.smartcompany.com.au/business-advice/mark-zuckerberg-business-leaders-wear-clothes-work-day/
+- [1] TwoHardThings - Martin Fowler <https://martinfowler.com/bliki/TwoHardThings.html>
+- [2] Naming conventions in programming – a review of scientific literature - Makimo <https://makimo.com/blog/scientific-perspective-on-naming-in-programming/>
+- [3] Effectively Naming Software Thingies | by Sagi Rabinovich - Medium <https://medium.com/@rabinovichsagi/effectively-naming-software-thingies-fcea9d78a699>
+- [4] Debunking the infamous “Only two hard problems in Computer Science” - Darren Broemmer <https://darren-broemmer.medium.com/debunking-the-infamous-only-two-hard-problems-in-computer-science-b412a31c00df>
+- [5] Naming convention (programming) - Wikipedia [https://en.wikipedia.org/wiki/Naming_convention_(programming)](https://en.wikipedia.org/wiki/Naming_convention_(programming))
+- [6] Code Comments vs. Clear Naming Conventions: Pros and Cons for Readability and Maintainability | by Summit Kumar | Medium <https://medium.com/@summitkumar/code-comments-vs-clear-naming-conventions-pros-and-cons-for-readability-and-maintainability-f4b2accadbf>
+- [7] Naming — one of the hardest things in Software development | by Leena | Continuous Delivery | Medium <https://medium.com/continuousdelivery/naming-one-of-the-hardest-thing-in-software-development-af957d070762>
+- [8] The importance of naming in programming | The Man in the Arena - Carl Alexander <https://carlalexander.ca/importance-naming-programming/>
+- [9] Programming Basics: Names matter - Federico Hatoum <https://hatoum.com/blog/2016/9/4/programming-basics-names-matter>
+- [10] Why do people say the hardest part about programming is naming and off by one errors and not coming up with the logic? - Reddit <https://www.reddit.com/r/learnprogramming/comments/w5tpjk/why_do_people_say_the_hardest_part_about/>
+- [11] Psychology of Code Readability. By no means should this be regarded as… | by Egon Elbre | Medium <https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a>
+- [12] What impact does inconsistent formatting and naming conventions have on software maintenance and reuse? - Quora <https://www.quora.com/What-impact-does-inconsistent-formatting-and-naming-conventions-have-on-software-maintenance-and-reuse>
+- [13] The naming problem in programming | On software development <https://kalkus.dev/2020/02/04/the-naming-problem-in-programming/>
+- [14] Cognitive Perspectives on the Role of Naming in Computer Programs - [cs.wisc.edu](http://cs.wisc.edu/) <https://pages.cs.wisc.edu/~liblit/ppig-2006/>
+- [15] Best practices to write a readable and maintainable code | Choosing meaningful names <https://dev.to/pacheco/how-do-you-name-things-3jae>
+- [16] Why naming things is hard - Peter Hilton <https://hilton.org.uk/blog/why-naming-things-is-hard>
+- [17] The role of visual and semantic codes in object naming - ScienceDirect <https://www.sciencedirect.com/science/article/pii/0010028574900164>
+- [18] How do you choose meaningful and consistent names for your variables, functions, and classes? - LinkedIn <https://www.linkedin.com/advice/1/how-do-you-choose-meaningful-consistent>
+- [19] "There are 2 hard problems in computer science: cache invalidation, naming thing... | Hacker News <https://news.ycombinator.com/item?id=23113314>
+- [20] Effects of Variable Names on Comprehension: An Empirical Study - CS - Huji <https://www.cs.huji.ac.il/~feit/papers/Names17ICPC.pdf>
+- [21] Are vague variable names more maintainable? - Software Engineering Stack Exchange <https://softwareengineering.stackexchange.com/questions/369850/are-vague-variable-names-more-maintainable>
+- [22] Naming Is Hard — Difficulties of Naming Variables - PSPDFKit <https://pspdfkit.com/blog/2018/naming-is-hard/>
+- [23] How Developers Choose Names - arXiv <https://arxiv.org/pdf/2103.07487.pdf>
+- [24] Towards a Naming Quality Model - CEUR-WS <https://ceur-ws.org/Vol-2510/sattose2019_paper_8.pdf>
+- [25] Eloise, Keating. “Why Mark Zuckerberg and other business leaders wear the same clothes to work each day.” <https://www.smartcompany.com.au/business-advice/mark-zuckerberg-business-leaders-wear-clothes-work-day/>
+
+## Books
+
+- [B1] [Tom Benner](https://leanpub.com/u/tombenner) Naming Things - The Hardest Problem in Software Engineering <https://leanpub.com/naming-things>
