@@ -27,12 +27,12 @@ Good naming is essential, but striking the right balance is challenging. The art
 mindmap
   root[The reasons]
     Why Namming things is difficult ? 
-    **Brevity vs. Clarity
+    Brevity vs. Clarity
     Ambiguity
     Consistency
     Code Evolution
     Subjectivity
-    Cognitive Load**
+    Cognitive Load
 
 ```
 
