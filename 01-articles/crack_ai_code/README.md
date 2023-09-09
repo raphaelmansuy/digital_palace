@@ -288,7 +288,6 @@ Concrete examples can illustrate the ramifications of improperly incorporating A
 ```mermaid
 mindmap
   root[Limitations]
-      Risks
       Ambiguity challenges
       Potential for bias and error
       Loss of critical human skills
