@@ -2,21 +2,19 @@
 
 ## Introduction
 
-I am passionate about compiler optimization since I studied it at university. I am excited to share with you the insights from the paper [Large Language Models for Compiler Optimization](https://arxiv.org/pdf/2309.07062.pdf), which is about the novel application of Large Language Models (LLMs) to code optimization, specifically to the task of compiler pass ordering for LLVM assembly.
+Compilers and code optimization have always fascinated me. As a computer science student, I vividly remember studying compiler design and poring over the classic "Dragon Book". Little did I know then how artificial intelligence would one day revolutionize this field.
 
-The authors show that a 7B-parameter transformer model, trained from scratch on millions of examples of unoptimized and optimized LLVM-IR, can generate pass lists that outperform the compiler’s built-in pass ordering (-Oz) and two state-of-the-art machine learning baselines (AutoPhase and Coreset-NVP) on a large test set of unseen IR functions from various domains and sources.
-
-The model also learns to generate optimized IR code as an auxiliary task, showing remarkable code reasoning abilities and achieving high accuracy and similarity with the compiler output.
-
-The authors demonstrate that LLMs can optimize code with minimal computational overhead and without requiring any specialized program representation or feature engineering. They also discuss the limitations and challenges of LLMs for code optimization, such as mathematical reasoning, data-flow analysis, and inference speed.
+A recent paper [Large Language Models for Compiler Optimization](https://arxiv.org/pdf/2309.07062.pdf) shows how the hottest AI technique - large language models (LLMs) like GPT-3 - can learn to optimize code by just looking at examples, with no hand-engineered features or domain knowledge. This is akin to a student learning compilers just by reading code examples, without taking classes!
 
 ![An illustration inspireed by the cover of the Dragon Book](./assets/DRAG04.png)
 
 Illustration inspired from the cover of the book “Compilers: Principles, Techniques, and Tools" by Aho, Sethi, and Ullman”, also known as the Dragon Book
 
-## What is a compiler ?
+## What is a and why optimize code?
 
-A compiler is a program that translates code written in a programming language, such as C, into machine code that can be executed by a computer. It takes the source code as input, analyzes it, and generates optimized object code as output. This process involves several phases, including lexical analysis, syntax analysis, semantic analysis, code generation and code optimization. The end result is an executable program that can be run on the target machine.
+A compiler like GCC or LLVM translates high-level languages like C/C++ into efficient machine code. This involves multiple steps: lexical analysis, syntax analysis, code generation and crucially - code optimization. Optimization improves performance by reducing instruction count, memory usage, runtime - yielding faster, smaller and more efficient programs.
+
+Code optimization is challenging as it requires reasoning about control and data flow, performing arithmetic simplification and applying complex algorithms. Compiler developers spend years building heuristics and rules to optimize code. Even then the fixed built-in optimization order is often suboptimal.
 
 ### The compilation process
 
