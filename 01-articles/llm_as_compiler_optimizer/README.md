@@ -1,8 +1,10 @@
-# LLMS as a Compiler Optimizer
+# The Artificial Intelligence That Taught Itself to Optimize Code ... LLMS as a Compiler Optimizer
 
 ## Introduction
 
-Compilers and code optimization have always fascinated me. As a computer science student, I vividly remember studying compiler design and poring over the classic "Dragon Book". Little did I know then how artificial intelligence would one day revolutionize this field.
+Compilers and code optimization have always fascinated me. As a computer science student, I vividly remember studying compiler design and poring over the classic "Dragon Book" with Professor [François Jacquenet](https://perso.univ-st-etienne.fr/jacquene/). 
+
+Little did I know then how artificial intelligence would one day revolutionize this field.
 
 A recent paper [Large Language Models for Compiler Optimization](https://arxiv.org/pdf/2309.07062.pdf) shows how the hottest AI technique - large language models (LLMs) like GPT-3 - can learn to optimize code by just looking at examples, with no hand-engineered features or domain knowledge. This is akin to a student learning compilers just by reading code examples, without taking classes!
 
@@ -10,7 +12,7 @@ A recent paper [Large Language Models for Compiler Optimization](https://arxiv.o
 
 Illustration inspired from the cover of the book “Compilers: Principles, Techniques, and Tools" by Aho, Sethi, and Ullman”, also known as the Dragon Book
 
-## What is a and why optimize code?
+## What is compiler and why optimize code?
 
 A compiler like GCC or LLVM translates high-level languages like C/C++ into efficient machine code. This involves multiple steps: lexical analysis, syntax analysis, code generation and crucially - code optimization. Optimization improves performance by reducing instruction count, memory usage, runtime - yielding faster, smaller and more efficient programs.
 
@@ -34,19 +36,11 @@ graph TD;
 | Phase | Description | Input Example | Output Example |
 | --- | --- | --- | --- |
 | Lexical Analysis | Reads the source code and breaks it down into individual tokens, such as keywords, identifiers, and operators. | int x = 5; | int, x, =, 5, ; |
-| Syntax Analysis | Uses the tokens generated from the lexical analysis phase to create a parse tree that represents the structure of the source code. | int x = 5; | Parse tree representing the int declaration and the assignment of 5 to x.
-  |
+| Syntax Analysis | Uses the tokens generated from the lexical analysis phase to create a parse tree that represents the structure of the source code. | int x = 5; | Parse tree representing the int declaration and the assignment of 5 to x. |
 | Semantic Analysis | Analyzes the parse tree to ensure that the code follows the rules of the programming language, such as type checking and scope rules. | int x = 5; | Checks that x is declared and that it is of type int. |
 | Code Generation | Translates the optimized code into machine code that can be executed by the target machine. | int x = 5; | Machine code that performs the int declaration and the assignment of 5 to x. |
 | Code Optimization | Optimizes the code to improve its performance, such as removing redundant instructions or simplifying expressions. | int x = 5 * 2; | int x = 10; |
 
-```mermaid
-graph TD;
-    A[Int x = 5] --> B[int];
-    A --> C[=];
-    A --> D[5];
-
-```
 
 ### The lexical analysis phase
 
@@ -62,7 +56,7 @@ end
    
 ```
 
-### The syntaxic analysis
+### The syntactic analysis
 
 ```mermaid
 graph TD;
