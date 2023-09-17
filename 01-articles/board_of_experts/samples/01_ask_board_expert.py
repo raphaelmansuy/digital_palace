@@ -61,7 +61,8 @@ def create_experts(expert_profiles: List[Dict]) -> List[Expert]:
     experts = []
 
     for profile in expert_profiles:
-        expert = Expert(profile["name"], profile["description"], profile["books"])
+        expert = Expert(profile["name"],
+                        profile["description"], profile["books"])
         experts.append(expert)
 
     return experts
@@ -191,10 +192,11 @@ experts_definition = [
 ]
 
 if __name__ == "__main__":
-    # get subset of experts, take first 1 
+    # get subset of experts, take first 1
     l = experts_definition[0:1]
     experts_list = create_experts(l)
     USER_PROFILE = "I am a startup founder looking to raise a seed round."
     USER_QUESTION = "What should I look for in a board of advisors?"
     query_experts(experts_list, USER_PROFILE, USER_QUESTION)
-    query_experts(experts_list, USER_PROFILE, "What is the best way to raise a seed round?")
+    query_experts(experts_list, USER_PROFILE,
+                  "What is the best way to raise a seed round?")
