@@ -4,9 +4,43 @@
 
 In this tutorial, we will introduce four popular evaluation metrics for NLP model (Natural Language Processing model): **ROUGE**, **BLEU**, **METEOR**, and **BERTScore**.
 
-We will describe the problems they solve, how they solve them, and provide Python code examples to illustrate their usage.
+### Importance of Evaluating LLMs
 
-Finally, we will compare these metrics in a comparison table.
+Evaluating LLMs is critical to understand their capabilities and limitations across different tasks. As LLMs continue to advance rapidly, robust evaluation metrics are needed to benchmark and compare different models. Without proper evaluation, it would be difficult to determine which models work best for specific use cases.
+
+### Challenges in Evaluating LLMs
+
+However, evaluating LLMs poses unique challenges compared to other NLP models:
+
+- LLMs exhibit some randomness and creativity in their outputs based on prompt engineering. This makes consistent evaluation difficult.
+
+- LLMs are computationally expensive, so evaluation metrics must be efficient.
+
+- Assessing qualities like coherence, factual accuracy, and bias requires going beyond simple word-matching metrics.
+
+## Overview of Key Evaluation Metrics
+
+The guide covers the most widely used metrics for evaluating NLP models:
+
+- **BLEU** - Measures precision of word n-grams between generated and reference texts.
+
+- **ROUGE** - Measures recall of word n-grams and longest common sequences.
+
+- **METEOR** - Incorporates recall, precision, and additional semantic matching based on stems and paraphrasing.
+
+- **BERTScore** - Matches words/phrases using BERT contextual embeddings and provides token-level granularity.
+
+## Why These Metrics Are Important
+
+These metrics each have strengths and limitations. Using them together provides a more comprehensive evaluation:
+
+- BLEU and ROUGE are simple and fast but rely only on word matching.
+
+- METEOR captures some semantic similarity.
+
+- BERTScore incorporates meaning and accounts for paraphrasing.
+
+Newer metrics are still compared to these standards to demonstrate improved correlation with human judgments. The guide equips researchers with knowledge to thoroughly evaluate and improve LLMs.
 
 ```mermaid
 mindmap
@@ -36,13 +70,13 @@ To calculate precision, we count the number of words in the candidate translatio
 In simpler terms, precision tells us how well a translation system or model performs by measuring the percentage of correct words in the output compared to the expected translation. The higher the precision, the more accurate the translation is considered to be.
 
 <aside>
-📔 **Precision** measures the accuracy of a system in producing relevant results. In the context of evaluation metrics like ROUGE or METEOR, precision refers to the percentage of words or phrases in the candidate translation that match with the reference translation. It indicates how well the candidate translation aligns with the expected outcome.
+📔 Precision measures the accuracy of a system in producing relevant results. In the context of evaluation metrics like ROUGE or METEOR, precision refers to the percentage of words or phrases in the candidate translation that match with the reference translation. It indicates how well the candidate translation aligns with the expected outcome.
 
 </aside>
 
 ### Recal
 
-**Recall** is a measure of how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected or desired outcome.
+Recall is a measure of how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected or desired outcome.
 
 **For example, let's consider the following sentences:**
 
@@ -54,7 +88,7 @@ To calculate recall, we count the number of words in the reference translation t
 In simpler terms, recall tells us how well a translation system or model performs by measuring the percentage of correct words in the output compared to the expected translation. The higher the recall, the more comprehensive the translation is considered to be.
 
 <aside>
-📔 **Recall** measures how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected outcome.
+📔 Recall measures how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected outcome.
 
 </aside>
 
