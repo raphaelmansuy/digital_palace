@@ -1,14 +1,16 @@
 # Making AI Hallucinate Less with Chain-of-Verification
 
-AI models like GPT-3 can generate impressively human-like text, but sometimes they “hallucinate” - produce information that sounds plausible but is actually incorrect. This remains an issue even in the largest models trained on billions of text examples, especially for rarer, long-tail facts. 
+AI models like GPT-4 can generate impressively human-like text, but sometimes they “hallucinate” - produce information that sounds plausible but is actually incorrect. This remains an issue even in the largest models trained on billions of text examples, especially for rarer, long-tail facts.
 
-How can we make AI less prone to these harmful inaccuracies? Exciting new research from Meta AI proposes a simple but effective technique called Chain-of-Verification (CoVe) to directly reduce hallucinations when generating text. 
+How can we make AI less prone to these harmful inaccuracies? Exciting new research from Meta AI proposes a simple but effective technique called **Chain-of-Verification (CoVe)** to directly reduce hallucinations when generating text.
 
-In this post, we’ll unpack how CoVe works and why it's an elegant approach to instilling more robustness against hallucination in AI systems.
+In this post, we’ll unpack how **CoVe** works and why it's an elegant approach to instilling more robustness against hallucination in AI systems.
+
+![CoVe](./assets/illustration.png)
 
 ## The Hallucination Problem
 
-Let's first understand why hallucination happens in large language models like GPT-3, which are trained to predict the next token (word) given the previous context using a technique called autoregressive generation.
+Let's first understand why hallucination happens in large language models like GPT-4, which are trained to predict the next token (word) given the previous context using a technique called autoregressive generation.
 
 ```mermaid
 graph LR
@@ -20,7 +22,7 @@ D --> E[mat]
 
 The model maximizes the probability of generating the actual next token in the training data. But it still assigns non-zero probabilities to other tokens that may seem plausible in context, even if they are incorrect.
 
-For common topics the model has seen ample training examples for, it can reliably assign very high probability to the right tokens. 
+For common topics the model has seen ample training examples for, it can reliably assign very high probability to the right tokens.
 
 But for rare or unfamiliar topics, the model is more likely to spit out high-confidence but incorrect tokens. This manifests as hallucination of plausible-sounding but false information.
 
@@ -32,7 +34,7 @@ C --> D[in]
 D --> E[Kerala]
 ```
 
-In the example above, the model might incorrectly generate "Kerala" with high probability as Ramanujan's birthplace, even though he was born in Tamil Nadu. The rarity of the context makes the model more prone to hallucinate.
+In the example above, the model might incorrectly generate "Kerala" with high probability as Ramanujan's birthplace, even though he was born in Erode. The rarity of the context makes the model more prone to hallucinate.
 
 This becomes especially problematic for open-domain conversational agents like chatbots that need to handle a diverse range of possible queries. Hallucinations undermine the accuracy and trustworthiness of such systems.
 
@@ -47,7 +49,9 @@ B --> C[Answer questions independently]
 C --> D[Revise response if needed] 
 ```
 
-1. First, generate a baseline response to the query using the language model 
+### Explanation
+
+1. First, generate a baseline response to the query using the language model
 
 2. Next, have the model automatically formulate factual verification questions about its own response, to identify potential mistakes.
 
@@ -63,14 +67,14 @@ A[Where was Ramanujan born?] --> B[Ramanujan was born in 1887 in Kerala]
 B --> C[What year was Ramanujan born?]
 C --> D[Ramanujan was born in 1887] 
 D --> E[Where was Ramanujan actually born?]
-E --> F[Ramanujan was born in 1887 in Tamil Nadu]
+E --> F[Ramanujan was born in 1887 in Erode India]
 ```
 
 Let's go through each step to better understand why CoVe works so well.
 
 ## Generating the Initial Response
 
-We start with a standard large language model like GPT-3 and provide it with a query to respond to, like:
+We start with a standard large language model like GPT-4 and provide it with a query to respond to, like:
 
 ```
 Where was Ramanujan born?
@@ -82,11 +86,11 @@ The model auto-regressively generates a top candidate response based on its trai
 Ramanujan was born in 1887 in Kerala.
 ```
 
-So far nothing new - we've just used the base model as is. The next steps are where CoVe comes in. 
+So far nothing new - we've just used the base model as is. The next steps are where CoVe comes in.
 
-## Planning Factual Verification 
+## Planning Factual Verification
 
-In the next step, we ask the model itself to formulate verification questions about its own response, to explicitly check for potential mistakes. 
+In the next step, we ask the model itself to formulate verification questions about its own response, to explicitly check for potential mistakes.
 
 The prompt for this could be:
 
@@ -97,28 +101,40 @@ Based on the response "Ramanujan was born in 1887 in Kerala", suggest 2-3 questi
 And the model may respond with:
 
 ```
-- What year was Ramanujan born?
-- Where was Ramanujan actually born? 
+Certainly! Here are 2-3 questions you can ask to verify key facts in the response:
+
+1. What was the full name of Ramanujan, and can you confirm his place of birth?
+   - This question aims to ensure that Ramanujan's full name and birthplace are accurate. If the response contains any inaccuracies, this question can help identify them.
+
+2. When exactly was Ramanujan born?
+   - This question seeks to verify the accuracy of the birth year mentioned in the response. It's important to confirm the specific year to ensure it matches historical records.
+
+3. Is Kerala the correct birthplace of Srinivasa Ramanujan?
+   - This question directly addresses the accuracy of Ramanujan's birthplace. It's crucial to confirm whether he was indeed born in Kerala or in a different location.
 ```
 
 By inspecting its own response, the model intelligently creates simple verification questions targeted at dubious or shaky parts of the response. This acts as an automatic debugging step.
 
 ## Answering Verification Questions
 
-Here is where the “chain” in chain-of-verification comes in. 
+Here is where the “chain” in chain-of-verification comes in.
 
 We answer each verification question independently, without allowing the model to see its original response. This avoids reinforcing any incorrect details from the initial response.
 
-The model is given just the verification question, without context, like: 
+The model is given just the verification question, without context, like:
 
 ```
-What year was Ramanujan born?
+What was the full name of Ramanujan, and can you confirm his place of birth?
 ```
 
 And generates the response:
 
-``` 
-Ramanujan was born in 1887.
+```
+The full name of the Indian mathematician commonly known as Ramanujan is Srinivasa Ramanujan. 
+
+However, I need to clarify that Ramanujan was not born in Kerala;
+
+he was born in Erode, which is a city in the state of Tamil Nadu, India.
 ```
 
 By answering each question from scratch, false information from the original response does not get propagated. The model is more likely to respond accurately when given a focused factual query.
@@ -127,7 +143,7 @@ We repeat this for each verification question, with the model answering based on
 
 ## Revising the Response
 
-In the final step, we show the model the initial response and the answers to each verification question. 
+In the final step, we show the model the initial response and the answers to each verification question.
 
 The model integrates this information to produce a revised, final response. Going back to our example:
 
@@ -135,10 +151,11 @@ The model integrates this information to produce a revised, final response. Goin
 Initial response: Ramanujan was born in 1887 in Kerala. 
 
 Verification questions:
-- What year was Ramanujan born? 1887
-- Where was Ramanujan actually born? Tamil Nadu
+-  What was the full name of Ramanujan, and can you confirm his place of birth? Erode, India
+-  When exactly was Ramanujan born? 1887
+-  Is Kerala the correct birthplace of Srinivasa Ramanujan? No
 
-Final response: Ramanujan was born in 1887 in Tamil Nadu.
+Final response: Ramanujan was born in 1887 in Erode India.
 ```
 
 By identifying and correcting any factual inconsistencies through targeted verification, we get an updated response that hallucinates less.
@@ -165,13 +182,13 @@ The technique bear similarities to human fact-checking workflows that also break
 
 The researchers comprehensively evaluated CoVe on a diverse set of tasks where models often hallucinate incorrect information:
 
-- **Question answering** over statements with contextual misleading facts 
+- **Question answering** over statements with contextual misleading facts
 
 - **List generation** like naming US presidents, where models often fabricate incorrect entries
 
 - **Long-form generation** like biographies where factual accuracy is critical
 
-They compared CoVe versions of models like GPT-3 against baseline implementations without verification. Some highlights of their results:
+They compared CoVe versions of models like GPT-4 against baseline implementations without verification. Some highlights of their results:
 
 - CoVe reduced hallucinations in question answering by 15-38% across different base models like T0 and T5.
 
@@ -205,13 +222,13 @@ Extensions like combining CoVe with external knowledge retrieval and recursion i
 
 Chain-of-verification is a promising technique to directly reduce harmful hallucinations in AI systems:
 
-- It works by prompting models to verify their own outputs through targeted questioning. 
+- It works by prompting models to verify their own outputs through targeted questioning.
 
 - Factoring out verification avoids propagating falsehoods.
 
 - CoVe improved factual accuracy significantly over baselines across diverse generation tasks.
 
-- The simple prompting-based approach integrates easily with modern large models like GPT-3.
+- The simple prompting-based approach integrates easily with modern large models like GPT-4.
 
 - There are still areas for improvement, but CoVe effectively trades off relevance for reduced hallucination today.
 
