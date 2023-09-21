@@ -64,10 +64,10 @@ By decomposing verification into atomic sub-tasks focused on specific facts, mod
 ```mermaid
 graph TD
 A[Where was Ramanujan born?] --> B[Ramanujan was born in 1887 in Kerala]
-B --> C[What year was Ramanujan born?]
-C --> D[Ramanujan was born in 1887] 
-D --> E[Where was Ramanujan actually born?]
-E --> F[Ramanujan was born in 1887 in Erode India]
+B --> C[What was the full name of Ramanujan, and can you confirm his place of birth?]
+C --> D[The full name of the Indian mathematician commonly known as Ramanujan is Srinivasa Ramanujan. he was born in Erode] 
+D --> E[When exactly was Ramanujan born?]
+E --> F[1887]
 ```
 
 Let's go through each step to better understand why CoVe works so well.
