@@ -1,7 +1,5 @@
 # Using AI to make better judgments
 
-# **Using AI to Make Better Judgments**
-
 Making good judgments and decisions is one of the most fundamental skills in life. 
 
 As Naval Ravikant says in his Almanack, "The quality of our decisions determines the quality of our lives." 
