@@ -1,40 +1,40 @@
 # Using AI to make better judgments
 
-Making good judgments and decisions is one of the most fundamental skills in life. 
+Making good judgments and decisions is one of the most fundamental skills in life.
 
-As Naval Ravikant says in his Almanack, "The quality of our decisions determines the quality of our lives." 
+As Naval Ravikant says in his Almanack, "The quality of our decisions determines the quality of our lives."
 
-Our judgments and choices shape our careers, relationships, health, and overall well-being. 
+Our judgments and choices shape our careers, relationships, health, and overall well-being.
 
-Yet making consistently good judgments is extraordinarily difficult. To improve our decision-making, we need tools and frameworks to counteract human biases and cognitive limitations. 
+Yet making consistently good judgments is extraordinarily difficult. To improve our decision-making, we need tools and frameworks to counteract human biases and cognitive limitations.
 
 That's where AI comes in.
 
-Specifically, large language models like GPT-4 or Anthropic offer new ways to tap into timeless wisdom and make better judgments. 
+Specifically, large language models like GPT-4 or Anthropic offer new ways to tap into timeless wisdom and make better judgments.
 
-By encoding proven mental models into prompts, we can harness these systems' vast knowledge to guide our thinking and choices. 
+By encoding proven mental models into prompts, we can harness these systems' vast knowledge to guide our thinking and choices.
 
 In this post, I'll demonstrate how to use one classic mental model—the Eisenhower Decision Matrix—to improve decisions with the help of AI.
 
 ![Eisenhower](./assets/eisenhower.png)
 
-## **The Power of Mental Models**
+## The Power of Mental Models
 
-First popularized by investors Charlie Munger and Warren Buffett, mental models are simplified representations of how the world works. 
+First popularized by investors Charlie Munger and Warren Buffett, mental models are simplified representations of how the world works.
 
-They act as intellectual frameworks to help us make sense of complex realities. 
+They act as intellectual frameworks to help us make sense of complex realities.
 
 As Munger puts it, "You need a different checklist and different mental models for different companies and different industries because they have different realities."
 
-Some excellent sources of mental models are the world's major religions and philosophies, as well as modern thinkers like Charles Darwin and Adam Smith. 
+Some excellent sources of mental models are the world's major religions and philosophies, as well as modern thinkers like Charles Darwin and Adam Smith.
 
 By studying these belief systems, we can benefit from humanity's accumulated wisdom. Mental models allow us to tap into generations of insight in a format we can apply to our specific circumstances.
 
-AI makes this process far easier. With a well-crafted prompt, we can query a system like GPT-4 or Claude to see how various mental models would approach a given issue or decision. 
+AI makes this process far easier. With a well-crafted prompt, we can query a system like GPT-4 or Claude to see how various mental models would approach a given issue or decision.
 
 This provides a fuller, wiser perspective than relying solely on our own thinking. As I'll demonstrate, combining AI and mental models leads to better judgments.
 
-## **The Eisenhower Decision Matrix**
+## The Eisenhower Decision Matrix
 
 One mental model I frequently use for decision-making is the Eisenhower Decision Matrix. Developed by President Dwight D. Eisenhower, this framework prioritizes tasks or decisions based on two variables:
 
@@ -45,48 +45,39 @@ By rating decisions on these two dimensions, we can sort them into four quadrant
 
 ```mermaid
 quadrantChart
+    title Priority Quadrant Chart
 
-    title Daily Decisions
-
-    x-axis Not Urgent --> Urgent
-
+    x-axis Urgent --> Not Urgent
     y-axis Not Important --> Important
 
-    quadrant-1 Schedule
-
-    quadrant-2 Decide
-
+    quadrant-1 Plan
+    quadrant-2 Do First
     quadrant-3 Delegate
+    quadrant-4 Eliminate
 
-    quadrant-4 Do First
+    Budget: [0.8, 0.8]
+    Board Meeting: [0.3, 0.9]
+    Employee Call: [0.9, 0.4]
+    Holiday Party: [0.7, 0.3]
+    Marketing Manager Interview: [0.3, 0.6]
+    Customer Inquiry: [0.6, 0.9]
 
-    Review quarterly budget: [0.2, 0.8] 
-
-    Prepare for upcoming board meeting: [0.6, 0.9]
-
-    Return employee call about issue: [0.1, 0.4]
-
-   Plan employee holiday party: [0.3, 0.2] 
-
-    Interview new marketing manager: [0.7, 0.6]
-
-    Respond to new customer inquiry: [0.9, 0.4]
 ```
 
 <aside>
-📔 **Example of Decision Matrix for a business executive**
+📔 Example of Decision Matrix for a business executive
 
-I gave the quarterly budget a low importance score of 0.2 since it's a routine task. But it has a high urgency score of 0.8 since the deadline is approaching.
+I gave the quarterly budget a low importance score of 8 since it's a routine task. But it has a high urgency score of 8 since the deadline is approaching.
 
-The board meeting is very important (0.9) for governance and strategic decisions. It's also urgent (0.6) to prepare adequately.
+The board meeting is very important 9 for governance and strategic decisions. It's also urgent 3 to prepare adequately.
 
-The employee call is somewhat urgent (0.4) to maintain good relations but less important (0.1) strategically.
+The employee call is somewhat urgent (4) to maintain good relations but less important (9) strategically.
 
-The holiday party has moderate importance (0.2) for employee morale but low urgency (0.3).
+The holiday party has moderate importance (2) for employee morale but low urgency (3).
 
-The marketing manager interview is important (0.6) to fill a key role but moderately urgent (0.7) with some flexibility on timing.
+The marketing manager interview is important (6) to fill a key role but moderately urgent (7) with some flexibility on timing.
 
-The customer inquiry is very urgent (0.9) to capitalize on an opportunity but of medium importance (0.4) depending on the potential deal size
+The customer inquiry is very urgent (9) to capitalize on an opportunity but of medium importance (4) depending on the potential deal size
 
 </aside>
 
@@ -174,36 +165,25 @@ Now we can even Draw the Eisenhower Matrix thanks to the Mermaid syntax:
 
 Example of quadrant charts for the mermaid syntax:
 
-```mermaid
-
+```
 quadrantChart
+    title Priority Quadrant Chart
 
-title Reach and engagement of campaigns
+    x-axis Urgent --> Not Urgent
+    y-axis Not Important --> Important
 
-x-axis Low Reach --> High Reach
+    quadrant-1 Plan
+    quadrant-2 Do First
+    quadrant-3 Delegate
+    quadrant-4 Eliminate
 
-y-axis Low Engagement --> High Engagement
-
-quadrant-1 We should expand
-
-quadrant-2 Need to promote
-
-quadrant-3 Re-evaluate
-
-quadrant-4 May be improved
-
-Campaign A: [0.3, 0.6]
-
-Campaign B: [0.45, 0.23]
-
-Campaign C: [0.57, 0.69]
-
-Campaign D: [0.78, 0.34]
-
-Campaign E: [0.40, 0.34]
-
-Campaign F: [0.35, 0.78]
-
+    Budget: [0.8, 0.8]
+    Board Meeting: [0.3, 0.9]
+    Employee Call: [0.9, 0.4]
+    Holiday Party: [0.7, 0.3]
+    Marketing Manager Interview: [0.3, 0.6]
+    Customer Inquiry: [0.6, 0.9]
+    Campaign F: [0.35, 0.78]
 ```
 
 </aside>
@@ -214,28 +194,26 @@ Here is an Eisenhower Matrix quadrant chart for the product expansion decision:
 
 ```mermaid
 quadrantChart
+    title Priority Quadrant Chart
 
-title Product Expansion Decision
+    x-axis Urgent --> Not Urgent
+    y-axis Not Important --> Important
 
-x-axis Low Urgency --> High Urgency
-y-axis Low Importance --> High Importance
+    quadrant-1 Plan
+    quadrant-2 Do First
+    quadrant-3 Delegate
+    quadrant-4 Eliminate
 
-quadrant-1 Important & Urgent
-quadrant-2 Important, Not Urgent
-quadrant-3 Not Important, Urgent
-quadrant-4 Not Important & Not Urgent
-
-Product Expansion: [0.4, 0.8]
-
+    Product Expansion: [0.6, 0.8]
 ```
 
-This plots the product expansion decision in the "Important, Not Urgent" quadrant based on the urgency rating of 0.4 and importance rating of 0.8.
+This plots the product expansion decision in the "Important, Not Urgent" quadrant based on the urgency rating of 6 and importance rating of 8.
 
 The quadrant chart visually represents the analysis that this is an important strategic decision for potential company growth, but does not require knee-jerk urgent action. Thoughtful planning and evaluation is recommended to maximize the opportunity.
 
-## **Putting It Into Practice**
+## Putting It Into Practice
 
-I encourage you to try using the Eisenhower Decision Matrix and other mental models in your prompts to GPT-4 or Claude. 
+I encourage you to try using the Eisenhower Decision Matrix and other mental models in your prompts to GPT-4 or Claude.
 
 Seek different frameworks to approach decisions from multiple wise perspectives. With practice, your judgment and decision-making abilities will keep improving.
 
@@ -245,9 +223,9 @@ Seek different frameworks to approach decisions from multiple wise perspectives.
 - **OODA Loop**
 - **First Principles Thinking**
 
-I look forward to hearing about mental models you find useful for improving judgments with AI. 
+I look forward to hearing about mental models you find useful for improving judgments with AI.
 
-Please share your experiences and prompts in the comments! 
+Please share your experiences and prompts in the comments!
 
 Together, we can become wiser decision-makers.
 
