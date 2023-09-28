@@ -18,4 +18,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [How to create a Python environment](./how_to_create_a_python_env/README.md)
 - [Package management with Conda and Pip](./package_management_conda_and_pip/README.md)
+- [Poetry: Python dependency management and packaging made easy](./poetry_a_python_best_friend/README.md)
   
