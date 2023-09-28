@@ -20,5 +20,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Package management with Conda and Pip](./package_management_conda_and_pip/README.md)
 - [Poetry: Python dependency management and packaging made easy](./poetry_a_python_best_friend/README.md)
 - [Git for beginners](./git/README.md)
-- [MLflow: An open source platform for the machine learning lifecycle](./mlflow/README.md)
+- [MLflow: An open source platform for the machine learning lifecycle](./mlfow/README.md)
   
