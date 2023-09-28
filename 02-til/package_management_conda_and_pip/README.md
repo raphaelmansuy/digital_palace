@@ -1,5 +1,11 @@
 # Python Package Management with Pip and Conda
 
+## Information
+
+| Author         | Created    | Updated    | Version |
+| -------------- | ---------- | ---------- | ------- |
+| Raphaël MANSUY | 28/09/2023 | 28/09/2023 | 1.0.0   |
+
 Python has a vast ecosystem of open source libraries and packages that make it easier to perform common tasks like data analysis, machine learning, web development, etc. Managing these packages and their dependencies can get complicated, which is why tools like `pip` and `conda` are so useful!
 
 ## Step 1 - Install Pip
@@ -8,7 +14,7 @@ Pip is the standard package manager for Python. It is usually installed by defau
 
 ```
 pip --version
-``` 
+```
 
 If pip is not installed, you can install it by running:
 
@@ -65,7 +71,7 @@ The `environment.yml` file lists all packages and versions for that environment.
 Pip and Conda give you powerful tools to install and manage Python packages. Some key commands:
 
 - `pip install` - Install Python packages with pip
-- `conda create` - Create new virtual environments 
+- `conda create` - Create new virtual environments
 - `conda activate` - Activate an environment
 - `conda env export` - Export conda environment settings
 

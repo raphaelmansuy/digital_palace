@@ -14,6 +14,36 @@ In summary, my Digital Palace provides an engaging platform for public self-expr
 
 ![Digital Palace](./00-assets/lamacard.png)
 
+## Today I Learned (TIL)
+
+The goal of a "Today I Learned" (TIL) journal is to document and reflect upon something new or interesting that you have learned on a given day.
+
+It serves as a personal knowledge base where I can record and reflect on my daily learning experiences.
+
+TIL journals are often used by programmers, developers, and other professionals to share tips, tricks, and lessons learned in their respective fields.
+
+They can also be a valuable resource for others who are looking to learn and expand their knowledge in a specific domain.
+
+[👉 Todays I Learned](/02-til/README.md)
+
+## Today I Learned
+
+A Today I Learned (TIL) journal is a place where I can document and share your daily learnings.
+
+It serves as a personal knowledge base where I can record new concepts, techniques, tips, or any other interesting information that you come across during your learning journey.
+
+The goal of a TIL journal is to capture and consolidate my learning experiences in a concise and organized manner.
+
+ It not only helps me reinforce ymy understanding of the topics U've learned but also allows me to easily revisit and review my past learnings.
+
+ Additionally, by sharing my TIL journal with others, I can contribute to the learning community and inspire others to continue their own learning journeys.
+
+ [👉 Todays I Learned](./02-til/README.md)
+
+### AI Engineering
+
+- [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
+
 ### AI Engineering
 
 - [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
