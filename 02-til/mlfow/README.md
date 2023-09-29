@@ -229,6 +229,3 @@ In this guide, we covered how to use MLflow Tracking, Projects, Models, and the 
 MLflow provides a powerful, flexible toolkit for the end-to-end machine learning lifecycle, from initial prototyping to full production deployment. Its modular components let you incorporate MLflow into your existing workflows.
 
 To learn more and see additional examples, refer to the [official MLflow documentation](https://www.mlflow.org/docs/latest/index.html).
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/585370/3f5ae54b-be7d-40c1-9789-b0a702da595d/paste.txt
