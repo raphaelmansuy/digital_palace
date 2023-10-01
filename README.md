@@ -26,6 +26,9 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [👉 Todays I Learned](/02-til/README.md)
 
+## High Quality Datasets for Fine-Tuning
+
+[👉 Top Quality Datasets](./05-top-quality-dataset/README.md)
 
 ### AI Engineering
 
