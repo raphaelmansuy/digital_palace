@@ -30,11 +30,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [👉 Top Quality Datasets](./05-top-quality-dataset/README.md)
 
-### AI Engineering
+## AI Engineering
 
-- [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
-
-### AI Engineering
 
 - [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
 
@@ -46,11 +43,11 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
-### Prompt Engineering Patterns
+## Prompt Engineering Patterns
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 
-### AI and Ethics
+## AI and Ethics
 
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
 
