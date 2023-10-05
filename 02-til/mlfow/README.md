@@ -305,3 +305,150 @@ In addition to the core components covered above, MLflow provides many advanced 
 - **Model Versioning**: Register new model versions over time and compare versions.
 - **Model Staging**: Mark models as staging vs production to control rollout.
 - **Annotations**: Take notes on experiments and
+
+
+Here is an additional chapter that covers some of the weaknesses identified in the original MLflow tutorial:
+
+## Advanced Model Training and Deployment
+
+The basic MLflow tutorial provides a good introduction to tracking experiments, packaging projects, saving models, and basic local deployment. However, it is limited to a simple linear regression model and CSV serving. 
+
+This chapter covers more advanced model training, deployment, and productionization techniques:
+
+### Training Additional Algorithms
+
+The initial tutorial only covers training a linear regression model. Here we demonstrate training other algorithms like random forests and neural networks:
+
+```python
+# Train random forest 
+from sklearn.ensemble import RandomForestRegressor
+rf = RandomForestRegressor()
+rf.fit(X_train, y_train)
+
+# Log RF model
+mlflow.sklearn.log_model(rf, "rf_model")
+
+# Train feedforward neural network
+from tensorflow import keras
+nn = keras.models.Sequential()  
+nn.add(keras.layers.Dense(64, activation='relu', input_dim=X_train.shape[1]))
+nn.add(keras.layers.Dense(1))
+nn.compile(loss='mse', optimizer='adam')
+nn.fit(X_train, y_train, epochs=100)
+
+# Log NN model
+mlflow.keras.log_model(nn, "nn_model") 
+```
+
+This demonstrates training and logging different model types with MLflow.
+
+### Modularizing Training Code
+
+The original tutorial puts all the training code in one script. Here we refactor it into separate modules:
+
+```python
+# model_training.py
+
+from sklearn.linear_model import LinearRegression
+
+def train_linear_regression(X, y):
+   model = LinearRegression()
+   model.fit(X, y)
+   return model
+
+# main.py 
+
+import model_training
+
+X, y = get_training_data()
+model = model_training.train_linear_regression(X, y) 
+mlflow.sklearn.log_model(model, "model")
+```
+
+This makes the code more modular and maintainable.
+
+### Hyperparameter Tuning
+
+The initial tutorial hard-codes the model hyperparameters. Here we demonstrate tuning them:
+
+```python 
+# Define hyperparameter search space
+params = {"alpha": [0.1, 1.0, 10.0],
+          "l1_ratio": [0.1, 0.5, 0.9]}
+
+# Use scikit-learn GridSearchCV  
+from sklearn.model_selection import GridSearchCV
+grid = GridSearchCV(LinearRegression(), param_grid=params, cv=5)
+grid.fit(X_train, y_train)
+
+print("Best Params:", grid.best_params_)
+print("Best Score:", grid.best_score_)
+
+# Log best model
+mlflow.sklearn.log_model(grid.best_estimator_, "model") 
+```
+
+This finds the optimal hyperparameters for the model.
+
+### Advanced Deployment
+
+The original tutorial shows simple local CSV serving. Here we demonstrate robust deployment options:
+
+**Flask Web App**: Containerize the model in a Flask web application:
+
+```python
+from flask import Flask
+import mlflow.pyfunc  
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])  
+def predict():
+    model = mlflow.pyfunc.load_model("model")  
+    data = request.get_json()  
+    prediction = model.predict(data)
+    return {"prediction": prediction}
+		
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=9696)
+```
+
+**Docker Container**: Package the model as a Docker container for portable predictions:
+
+```
+# Build Docker image 
+mlflow models build-docker -m runs:/<run-id>/model --no-conda -n model
+
+# Run container
+docker run -p 9696:9696 model:latest
+```
+
+**Kubernetes Deployment**: Deploy the model on Kubernetes for robust serving:
+
+```yaml
+# Kubernetes pod spec
+apiVersion: apps/v1
+kind: Deployment      
+metadata:
+  name: model
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: model
+  template:
+    metadata:
+      labels:
+        app: model
+    spec:
+      containers:
+      - name: model
+        image: model:latest
+        ports:
+        - containerPort: 9696
+```
+
+This demonstrates more advanced deployment options for taking models to production.
+
+By covering additional algorithms, modular code, hyperparameter tuning, and robust deployment, this chapter expands on the core MLflow concepts introduced in the initial tutorial. This provides a more comprehensive overview of the end-to-end ML lifecycle.
+
