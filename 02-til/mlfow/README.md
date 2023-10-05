@@ -43,6 +43,29 @@ By the end of this guide, you'll understand how to:
 
 Let's dive in!
 
+## The full ML lifecycle
+
+```mermaid
+graph TD
+A[Data Scientist] --> B[Train Model]
+B --> C[Log Model Parameters, Metrics, and Artifacts]
+C --> D[MLflow Tracking Server]
+D --> E[Compare and Select Best Model]
+E --> F[MLOps]
+F --> G[Deploy Model]
+G --> H[Model Inference in Production]
+```
+
+
+1. **Data Scientist**: The data scientist trains a machine learning model using their preferred tools and libraries.
+2. **Train Model**: The model is trained using the selected algorithms, hyperparameters, and data.
+3. **Log Model Parameters, Metrics, and Artifacts**: During the training process, the data scientist logs model parameters, metrics, and artifacts using MLflow's tracking API.
+4. **MLflow Tracking Server**: The MLflow tracking server stores the logged information, making it accessible for comparison and analysis.
+5. **Compare and Select Best Model**: The data scientist or MLOps team can compare different models' performance using the MLflow tracking server and select the best model for deployment.
+6. **MLOps**: The MLOps team takes the selected model and prepares it for deployment, ensuring it meets production requirements.
+7. **Deploy Model**: The model is deployed to a production environment, such as a REST API or a batch inference system.
+8. **Model Inference in Production**: The deployed model is used for inference in production, providing predictions or insights based on new data.
+
 ## MLflow Tracking
 
 The core functionality of MLflow centers around its tracking component. This allows you to log metrics, parameters, and artifacts for each run of your machine learning code and visualize the results. 
@@ -67,6 +90,13 @@ graph TD
 - **Parameters**: Key/value input parameters logged per run.
 - **Artifacts**: Output files like images, models, and data files. 
 - **Models**: Trained ML models logged as artifacts.
+
+### definition of accuracy, loss, RMSE
+
+- **Accuracy**: The percentage of correct predictions.
+- **Loss**: A measure of error between the predicted and actual values.
+- **RMSE**: Root mean squared error, a measure of error between the predicted and actual values.
+ 
 
 To use MLflow tracking, wrap your code in an `mlflow.start_run()` block:
 
@@ -113,6 +143,33 @@ MLflow Tracking UI
 This makes it easy to compare runs side-by-side to determine the best model. You can run the UI via `mlflow ui` or access it at http://localhost:5000.
 
 While MLflow Tracking lets you log specific runs, MLflow Projects packages code and configurations so you can reproduce runs on any platform. 
+
+## Architecture
+
+```mermaid
+graph LR
+  subgraph Backend
+    A[SQLite Database]
+  end
+  
+  subgraph MLflow Server
+    B[REST API]
+    C[Artifact Store] 
+    D[Model Registry]
+  end
+
+  E[MLflow UI] -.-> B
+  F[Jupyter Notebook] -.-> B
+  G[Python Script] -.-> B
+  
+  B -.-> A
+  B -.-> C
+  B -.-> D
+```
+
+
+
+
 
 ## MLflow Projects
 
