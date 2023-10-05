@@ -14,16 +14,33 @@ MLflow consists of four main components:
 
 - **MLflow Tracking**: Records and tracks experiments, including code, data, config, and results.
 - **MLflow Projects**: Packages code and dependencies as reproducible runs.
-- **MLflow Models**: Packages models for deployment and serving.
-- **Model Registry**: Centralized model store, model lineage, model versioning, and stage transitions.
+- **MLflow Models**: Packages models for deployment and serving. 
+- **Model Registry**: Centralized model store, model lineage, model versioning, and stage transitions. Based on SQL database (e.g. MySQL, PostgreSQL, SQLite).
 
 The tracking component is useful during development and testing, while the projects, models, and model registry components help package, validate, and deploy models to production.
 
 MLflow works with any machine learning library or framework like TensorFlow, PyTorch, XGBoost, and scikit-learn, and integrates with tools like Docker, Kubernetes, and AWS SageMaker. It can be used for projects both small and large.
 
+```mermaid
+graph TD
+    id1[Data] --> id2[Experiments]
+    id2 --> id3[Runs]
+    id3 --> id4[Metrics]
+    id3 --> id5[Parameters]
+    id3 --> id6[Artifacts]
+    id3 --> id7[Models]
+
+    class id1,id2,id3,id4,id5,id6,id7 internal-link;
+
+```
+
 ## Experiment Tracking with MLflow Tracking
 
 The core functionality of MLflow centers around its tracking component. This allows you to log metrics, parameters, and artifacts for each run of your machine learning code and visualize results.
+
+[mlflow.org](https://mlflow.org/)
+[MFlow Documentation](https://mlflow.org/docs/latest/what-is-mlflow.html)
+
 
 ### Starting an MLflow run
 
