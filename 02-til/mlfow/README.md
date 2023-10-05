@@ -1,4 +1,4 @@
-# MLFlow Tutorial
+# MLflow Tutorial
 
 ## Introduction
 
