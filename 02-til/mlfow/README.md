@@ -2,16 +2,16 @@
 
 ## Introduction
 
-MLflow is an open source platform for managing the end-to-end machine learning lifecycle, including experimentation, reproducibility, deployment, and a central model registry. 
+MLflow is an open source platform for managing the end-to-end machine learning lifecycle, including experimentation, reproducibility, deployment, and a central model registry.
 
 In this comprehensive tutorial, we'll walk through how to use MLflow's key components to:
 
-- Track experiments with code, data, config, and results
-- Package code and dependencies as reproducible runs
-- Save and deploy models for real-time serving  
-- Manage model lineage, versions, stages, and annotations
+- *Track experiments* with code, data, config, and results
+- *Package code and dependencies* as reproducible runs
+- *Save and deploy models* for real-time serving  
+- *Manage model lineage, versions, stages, and annotations*
 
-MLflow consists of four main components:
+**MLflow consists of four main components**:
 
 ```mermaid
 graph TD
@@ -26,13 +26,13 @@ graph TD
 ```
 
 - **MLflow Tracking**: Records and tracks experiments, including code, data, config, and results.
-- **MLflow Projects**: Packages code and dependencies as reproducible runs. 
+- **MLflow Projects**: Packages code and dependencies as reproducible runs.
 - **MLflow Models**: Packages models for deployment and serving.
 - **Model Registry**: Centralized model store, model lineage, model versioning, and stage transitions. Based on SQL database (e.g. MySQL, PostgreSQL, SQLite).
 
 The tracking component is useful during development and testing, while the projects, models, and model registry components help package, validate, and deploy models to production.
 
-MLflow works with any machine learning library or framework like TensorFlow, PyTorch, XGBoost, and scikit-learn, and integrates with tools like Docker, Kubernetes, and AWS SageMaker. It can be used for projects both small and large. 
+MLflow works with any machine learning library or framework like TensorFlow, PyTorch, XGBoost, and scikit-learn, and integrates with tools like Docker, Kubernetes, and AWS SageMaker. It can be used for projects both small and large.
 
 By the end of this guide, you'll understand how to:
 
@@ -56,7 +56,6 @@ F --> G[Deploy Model]
 G --> H[Model Inference in Production]
 ```
 
-
 1. **Data Scientist**: The data scientist trains a machine learning model using their preferred tools and libraries.
 2. **Train Model**: The model is trained using the selected algorithms, hyperparameters, and data.
 3. **Log Model Parameters, Metrics, and Artifacts**: During the training process, the data scientist logs model parameters, metrics, and artifacts using MLflow's tracking API.
@@ -68,9 +67,9 @@ G --> H[Model Inference in Production]
 
 ## MLflow Tracking
 
-The core functionality of MLflow centers around its tracking component. This allows you to log metrics, parameters, and artifacts for each run of your machine learning code and visualize the results. 
+The core functionality of MLflow centers around its tracking component. This allows you to log metrics, parameters, and artifacts for each run of your machine learning code and visualize the results.
 
-Here is an overview of how MLflow tracking works:
+**Here is an overview of how MLflow tracking works:**
 
 ```mermaid
 graph TD
@@ -88,7 +87,7 @@ graph TD
 - **Runs**: An execution of ML code, gets a unique run ID.  
 - **Metrics**: Evaluation metrics like accuracy, loss, RMSE logged per run.
 - **Parameters**: Key/value input parameters logged per run.
-- **Artifacts**: Output files like images, models, and data files. 
+- **Artifacts**: Output files like images, models, and data files.
 - **Models**: Trained ML models logged as artifacts.
 
 ### definition of accuracy, loss, RMSE
@@ -96,7 +95,6 @@ graph TD
 - **Accuracy**: The percentage of correct predictions.
 - **Loss**: A measure of error between the predicted and actual values.
 - **RMSE**: Root mean squared error, a measure of error between the predicted and actual values.
- 
 
 To use MLflow tracking, wrap your code in an `mlflow.start_run()` block:
 
@@ -109,11 +107,11 @@ with mlflow.start_run() as run:
 mlflow.end_run()
 ```
 
-This starts a new run with a unique ID that all metrics and parameters will be logged to. 
+This starts a new run with a unique ID that all metrics and parameters will be logged to.
 
 Within each run, log metrics like accuracy scores, loss values, or any other numeric values from your model training and evaluation:
 
-```python 
+```python
 mlflow.log_metric("accuracy", 0.91)
 mlflow.log_metric("loss", 1.83)
 ```
@@ -125,7 +123,7 @@ mlflow.log_param("learning_rate", 0.01)
 mlflow.log_param("architecture", "ResNet50")
 ```
 
-Metrics and parameters are automatically logged to MLflow Tracking Server or a local SQLite database. 
+Metrics and parameters are automatically logged to MLflow Tracking Server or a local SQLite database.
 
 Artifacts allow you to log files like images, models, and data files. Use `log_artifact` and provide a local file path:
 
@@ -134,15 +132,15 @@ mlflow.log_artifact("images/profile.jpg")
 mlflow.log_artifact("models/keras_model.h5") 
 ```
 
-Artifacts are logged to an artifact repository like S3 or Azure Blob Storage. 
+Artifacts are logged to an artifact repository like S3 or Azure Blob Storage.
 
 The MLflow Tracking UI provides a central place to visualize, compare, and search runs using metrics, parameters, tags, and artifacts:
 
 MLflow Tracking UI
 
-This makes it easy to compare runs side-by-side to determine the best model. You can run the UI via `mlflow ui` or access it at http://localhost:5000.
+This makes it easy to compare runs side-by-side to determine the best model. You can run the UI via `mlflow ui` or access it at <http://localhost:5000>.
 
-While MLflow Tracking lets you log specific runs, MLflow Projects packages code and configurations so you can reproduce runs on any platform. 
+While MLflow Tracking lets you log specific runs, MLflow Projects packages code and configurations so you can reproduce runs on any platform.
 
 ## Architecture
 
@@ -167,16 +165,12 @@ graph LR
   B -.-> D
 ```
 
-
-
-
-
 ## MLflow Projects
 
 Projects define the full computing environment required to run your code, including:
 
 - **Entry point**: Main executable code to run.
-- **Parameters**: Key/value parameters for the entry point. 
+- **Parameters**: Key/value parameters for the entry point.
 - **Dependencies**: Local Python dependencies or Conda environment file.
 - **Docker container**: Optional Docker image dependencies.
 
@@ -204,15 +198,15 @@ mlflow run . -P alpha=0.5
 
 This launches `train.py` with the Conda environment defined in `conda.yaml` and passes `alpha=0.5`.
 
-You can also run projects remotely on Databricks, Kubernetes, or AWS SageMaker backends. The project contains all the info needed to replicate the run. 
+You can also run projects remotely on Databricks, Kubernetes, or AWS SageMaker backends. The project contains all the info needed to replicate the run.
 
 ## MLflow Models
 
-Once you've trained a model, you'll want to package it so it can be deployed for real-time serving. 
+Once you've trained a model, you'll want to package it so it can be deployed for real-time serving.
 
 MLflow Models provides a standard unit for packaging and reusing models with different "flavors":
 
-- **Python Function**: Deploy Python models locally. 
+- **Python Function**: Deploy Python models locally.
 - **Docker**: Build a Docker image to containerize the model.
 - **AWS SageMaker**: Deploy on SageMaker for real-time predictions.
 - **Apache Spark**: Load PySpark models for batch predictions.
@@ -235,18 +229,18 @@ model = mlflow.pyfunc.load_model("runs:/96771d77ec124f2587b8a013f4da8c16/model")
 model.predict(input_data)
 ```
 
-The `mlflow.pyfunc` package loads models in a consistent way for local Python deployment. 
+The `mlflow.pyfunc` package loads models in a consistent way for local Python deployment.
 
 ## MLflow Model Registry
 
-For larger teams and applications, it's important to have a central model registry for discovering, versioning, and managing models. 
+For larger teams and applications, it's important to have a central model registry for discovering, versioning, and managing models.
 
 Key features of the MLflow Model Registry:
 
 - **Model lineage**: Visualize model history and compare versions.
 - **Model versioning**: Register new model versions over time.  
 - **Stage transitions**: Mark models as staging vs production.
-- **Annotations**: Take notes on model experiments. 
+- **Annotations**: Take notes on model experiments.
 - **Access control**: Limit model access to certain users.
 
 You can associate a model with the registry when logging:
