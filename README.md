@@ -32,12 +32,13 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## AI Engineering
 
-
 - [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
 
 - [Design and Architecture Patterns for LLM application](./01-articles/dessign_patterns_for_llm_applications/README.md)
 
 - [Frameworks for building LLM applications](./01-articles/framework_for_llm_applications/README.md)
+
+- [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 
 ## LLM Applications
 
