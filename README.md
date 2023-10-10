@@ -39,6 +39,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Frameworks for building LLM applications](./01-articles/framework_for_llm_applications/README.md)
 
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
+- [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
 
 ## LLM Applications
 
