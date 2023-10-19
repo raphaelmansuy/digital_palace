@@ -83,6 +83,28 @@ Let's look at how each component of SELF-RAG works:
 
 The key innovation is training the model to generate these reflection tokens along with the actual output text in an end-to-end fashion.
 
+
+```mermaid
+graph TD
+    A[Input] --> B[T5-XXL Generator]
+    B --> C{Retrieve?}
+    C -- Yes --> D[Dense Passage Retriever]
+    D --> E[Retrieved Passages]
+    C -- No --> F[Continue Generation]
+    E --> G{Relevant? <br/> ISREL} 
+    G -- Yes --> H[Grounded Generation]
+    G -- No --> I[Discard Passage]
+    H --> J{Supported? <br/> ISSUP}
+    J -- Yes --> K[Output Segment] 
+    J -- No --> L[Discard Segment]
+    K --> M{Useful? <br/> ISUSE}
+    M -- Score --> N[Segment Scoring]
+    N --> O{Next Segment}
+    O -- Yes --> C
+    O -- No --> P[Final Output]
+```
+
+
 ## Training Methodology
 
 - Use a large dataset of input-output pairs (e.g. Q&A pairs)
