@@ -6,7 +6,7 @@
 
 In this article, I will provide a comprehensive overview of this research and explain how analogical prompting allows LLMs to perform more complex reasoning by drawing analogies to previous experiences.
 
-![Analogical Prompting](./assets/../code/assets/illustration.png)
+![Analogical Prompting](./assets/illustration.png)
 
 ### Why Analogical Reasoning is Important
 
