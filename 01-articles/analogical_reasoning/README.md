@@ -368,4 +368,16 @@ X = $24,000
 Therefore, the man had $24,000 at the beginning.
 ```
 
-[Large Language Models as Analogical Reasoners](https://arxiv.org/abs/2310.01714)
+### Citations
+
+**LARGE LANGUAGE MODELS AS ANALOGICAL REASONERS**
+
+Michihiro Yasunaga,1,2 Xinyun Chen,1 Yujia Li,1 Panupong Pasupat,1 Jure Leskovec,2
+Percy Liang,2 Ed H. Chi,1 Denny Zhou1
+
+1 Google DeepMind
+2 Stanford University
+
+<myasu@cs.stanford.edu>, {xinyunchen,dennyzhou}@google.com
+
+Paper: [Large Language Models as Analogical Reasoners](https://arxiv.org/abs/2310.01714)
