@@ -212,15 +212,6 @@ The DeepMind paper provides compelling evidence that introducing abstraction int
 - This technique significantly boosted LLM performance on challenging reasoning tasks.
 - The key benefit is reducing reasoning errors by grounding logic in abstraction.
 
-## Looking Ahead
-
-This research provides a promising method for overcoming a major weakness of current LLMs. The results suggest that integrating human-inspired techniques like abstraction can enable more robust reasoning capabilities in large language models.
-
-Looking ahead, an exciting direction is exploring how to automate abstraction, so LLMs can learn to take a step back on their own rather than requiring explicit prompting. More advanced techniques that allow models to flexibly move between abstract and concrete representations could greatly expand their reasoning capacities.
-
-By continuing to draw inspiration from human cognition, researchers can pave the way for LLMs that are not just skilled mimics but genuine reasoning engines. The DeepMind team's "Take a Step Back" technique offers an important step forward on this journey.
-
-
 ## Step Back in Action with LangChain combined with RAG (Retrieval-Augmented Generation)
 
 The "step back" technique involves first prompting the model to ask a high-level, abstract version of the question.
@@ -256,6 +247,14 @@ leveraging the high-level context
 - Arrive at the answer to the original specific question (G) via reasoning guided by the abstraction
 
 LangChain example implementation combined with RAG: [https://github.com/langchain-ai/langchain/blob/master/cookbook/stepback-qa.ipynb](https://github.com/langchain-ai/langchain/blob/master/cookbook/stepback-qa.ipynb)
+
+## Looking Ahead
+
+This research provides a promising method for overcoming a major weakness of current LLMs. The results suggest that integrating human-inspired techniques like abstraction can enable more robust reasoning capabilities in large language models.
+
+Looking ahead, an exciting direction is exploring how to automate abstraction, so LLMs can learn to take a step back on their own rather than requiring explicit prompting. More advanced techniques that allow models to flexibly move between abstract and concrete representations could greatly expand their reasoning capacities.
+
+By continuing to draw inspiration from human cognition, researchers can pave the way for LLMs that are not just skilled mimics but genuine reasoning engines. The DeepMind team's "Take a Step Back" technique offers an important step forward on this journey.
 
 ## Call to Action
 
