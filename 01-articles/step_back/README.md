@@ -220,9 +220,6 @@ Looking ahead, an exciting direction is exploring how to automate abstraction, s
 
 By continuing to draw inspiration from human cognition, researchers can pave the way for LLMs that are not just skilled mimics but genuine reasoning engines. The DeepMind team's "Take a Step Back" technique offers an important step forward on this journey.
 
-## References
-
-Zheng, Huaixiu Steven, et al. "TAKE A STEP BACK: EVOKING REASONING VIA ABSTRACTION IN LARGE LANGUAGE MODELS." arXiv preprint arXiv:2310.06117 (2023).
 
 ## Step Back in Action with LangChain combined with RAG (Retrieval-Augmented Generation)
 
@@ -265,3 +262,7 @@ LangChain example implementation combined with RAG: [https://github.com/langchai
 To learn more about how abstraction can enable complex reasoning in large language models, I highly recommend reading the full paper at [https://arxiv.org/abs/2310.06117](https://arxiv.org/abs/2310.06117).
 
 The techniques explored in this research could open exciting new capabilities in LLMs.
+
+## References
+
+Zheng, Huaixiu Steven, et al. "TAKE A STEP BACK: EVOKING REASONING VIA ABSTRACTION IN LARGE LANGUAGE MODELS." arXiv preprint arXiv:2310.06117 (2023).
