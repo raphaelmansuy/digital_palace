@@ -171,8 +171,227 @@ The choice of context size and chunking strategy in RAG depends on various facto
 
 ### Agent patterns
 
-The Agent pattern is an important architectural pattern in the context of LLM applications. It addresses the need for LLMs to solve complex problems, interact with the outside world, and learn from experience. The Agent pattern enables LLMs to act as fully autonomous systems within specific environments, exhibiting generalized capabilities and demonstrating the highest level of complexity in terms of emergent behaviors. Agents are designed to perform tasks and make decisions based on their understanding of the environment and their ability to learn and adapt. They can leverage the power of LLMs to process and generate text, enabling them to handle a wide range of tasks and scenarios. For example, an agent could be developed to provide personalized customer support, generate creative content, or assist in complex decision-making processes. However, it is important to note that while there are experimental projects like AutoGPT exploring the potential of AI agent frameworks, agents are still in the proof-of-concept phase and not yet reliable for production use.
+The agent pattern is an architectural pattern that models an autonomous entity or "agent" that can perceive its environment through sensors and act upon that environment through actuators. Agents in software applications are programs that act on behalf of users or other programs to meet delegated objectives. 
 
-#### Introduction to Agent Patterns
+In the context of large language models (LLMs), the agent pattern enables creating AI agents that can leverage the natural language capabilities of LLMs to perceive textual inputs, make decisions based on internal reasoning, and take actions through text generation.
 
-To be written
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Perceive]
+B --> D[Reason]
+B --> E[Act]
+C --> F[Sensors]
+E --> G[Actuators]
+```
+
+**The key components of an LLM agent pattern are**:
+
+- **Sensors**: The mechanisms through which the agent perceives its environment. For an LLM agent, this usually means processing natural language inputs.
+
+- **Reasoning**: The decision-making capability of the agent, enabled by the reasoning capacity of the LLM. This allows the agent to determine appropriate actions based on its perceptions.
+
+- **Actuators**: The mechanisms through which the agent acts upon its environment. For an LLM agent, this usually means generating natural language responses or taking programmatic actions.
+
+- **User**: The human user or external system that delegates objectives and interacts with the agent.
+
+Some examples of how the agent pattern can be applied with LLMs:
+
+#### Personal Assistant Agent
+
+An LLM agent can act as a personal assistant that interacts conversationally with users. The agent perceives user requests through natural language, reasons about the appropriate response, and replies through generated text.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand request]
+C --> D[Reason about response] 
+D --> E[Generate reply]
+A --> E
+```
+
+The personal assistant leverages the conversational ability of LLMs like GPT-3 to provide a natural interaction flow.
+
+#### Moderation Agent 
+
+An LLM agent can moderate content by analyzing text or media inputs for policy compliance. The agent perceives the content through natural language processing, makes moderation decisions through reasoning, and takes actions like filtering content or providing explanations.
+
+```mermaid
+graph LR
+A[Content] --> B[Agent]
+B --> C[Analyze content]
+C --> D[Make moderation decision]
+D --> E[Take moderation action]
+```
+
+The moderation agent utilizes the language understanding capabilities of LLMs to interpret content based on moderation policies.
+
+#### Game-Playing Agent
+
+An LLM agent can play games that involve natural language interactions. The agent perceives game states and opponent moves through text, decides on optimal moves through planning and strategy, and acts by generating move descriptions.
+
+```mermaid
+graph LR
+A[Game Environment] --> B[Agent]
+B --> C[Perceive game state]
+C --> D[Plan strategy]
+D --> E[Generate move] 
+E --> A
+```
+
+Game-playing agents combine the language skills of LLMs with algorithms like Monte Carlo tree search to explore complex game spaces.
+
+#### Information Retrieval Agent
+
+An LLM agent can perform focused information retrieval by taking a user query, formulating an effective search strategy, and retrieving relevant information passages.
+
+```mermaid
+graph LR
+A[User Query] --> B[Agent]
+B --> C[Formulate Search Strategy]
+C --> D[Retrieve Information]
+D --> E[Return Relevant Passages]
+E --> A
+```
+
+Retrieval augmented generation techniques allow agents to retrieve external knowledge that can contextualize LLM responses.
+
+#### Task-Oriented Dialogue Agent
+
+An LLM agent can engage in task-oriented dialogues like customer support conversations. The agent perceives user requests, asks clarifying questions, gathers necessary information, and provides solutions.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand request]
+C --> D[Ask clarifying questions]
+D --> E[Gather information] 
+E --> F[Provide solution]
+F --> A
+```
+
+Goal-oriented dialogue agents can leverage LLMs to handle complex conversations with users.
+
+#### Recommendation Agent
+
+An LLM agent can provide personalized recommendations by understanding user preferences, reasoning about options, and explaining recommendations.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand preferences]
+C --> D[Reason about options]
+D --> E[Generate recommendations]
+E --> F[Explain recommendations]
+F --> A 
+```
+
+LLMs allow recommendation agents to generate natural language explanations for their suggestions.
+
+#### Automated Assistant Agent
+
+An LLM agent can automate assistant-like tasks by interpreting instructions, gathering necessary information, completing tasks, and reporting results.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Interpret instructions]
+C --> D[Gather information]
+D --> E[Complete tasks]
+E --> F[Report results]
+F --> A
+```
+
+Automated assistant agents aim to perform tasks end-to-end based on natural language instructions and conversations.
+
+#### Creative Writing Agent
+
+An LLM agent can generate creative writing like stories, poems, or lyrics based on prompts and guidelines from users.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand prompt] 
+C --> D[Generate creative content]
+D --> E[Revise & refine]
+E --> A
+```
+
+LLMs like GPT-3 demonstrate strong generative writing capabilities that creative agents can leverage.
+
+#### Intelligent Tutoring Agent
+
+An LLM agent can act as an intelligent tutor by assessing student knowledge, adapting explanations, and providing feedback.
+
+```mermaid
+graph LR
+A[Student] --> B[Agent]
+B --> C[Assess knowledge]
+C --> D[Adapt explanations]
+D --> E[Provide feedback]
+E --> A
+```
+
+Tutoring agents aim to provide personalized and pedagogically effective interactions.
+
+#### Expert System Agent 
+
+An LLM agent can serve as an expert system that answers domain-specific user queries by reasoning about specialized knowledge.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand query]
+C --> D[Reason with knowledge]
+D --> E[Generate response]
+E --> A
+```
+
+Expert system agents focus on accurately representing and reasoning about niche domains.
+
+#### Chatbot Agent
+
+An LLM agent can engage in open-ended conversations by understanding user inputs and generating relevant, coherent responses.
+
+```mermaid
+graph LR
+A[User] --> B[Agent]
+B --> C[Understand input]
+C --> D[Generate response]
+D --> A
+``` 
+
+Chatbot agents aim to sustain engaging conversations without specific functional objectives.
+
+These examples illustrate how the agent pattern enables creating AI agents with diverse capabilities by leveraging the core strengths of LLMs. The key is combining the language perception and generation skills of LLMs with reasoning, knowledge representation, and integrations tailored to the agent's objectives.
+
+#### Architectural Considerations
+
+Designing an effective LLM agent requires addressing some key architectural considerations:
+
+- **Prompt engineering**: Carefully crafting prompts and examples to provide the desired context and steer the LLM towards the right reasoning process.
+
+- **Knowledge representation**: Structuring and integrating the knowledge the agent needs for reasoning and responding accurately.
+
+- **Conversation modeling**: Designing conversation flows, variables, and context tracking to sustain coherent multi-turn interactions. 
+
+- **Learning capabilities**: Enabling agents to learn from experience through techniques like reinforcement learning.
+
+- **Integration**: Architecting integrations with external systems for real-world data and actions.
+
+- **Scalability**: Designing distributed architectures that scale through microservices, parallelization, and sharding.
+
+- **Safety**: Building guardrails for safety, like filtering dangerous outputs, limiting capabilities, and modeling ethics.
+
+Addressing these architectural considerations is key to transitioning proof-of-concept LLM agents into production. While today's agents are promising, thoughtful engineering is needed to unlock their full potential.
+
+#### The Path Forward
+
+LLM-based agents are an exciting frontier, demonstrating how AI assistants could become more intelligent, nuanced, and helpful. However, agents also introduce complex challenges around reasoning, knowledge, safety, and control.
+
+Progress will require interdisciplinary collaboration spanning AI, engineering, human-computer interaction, ethics, and more. Responsible development demands considering not just technical capabilities but also the impact on people and society.
+
+If thoughtfully pursued, LLM agents could enable AI systems that are more aligned with human needs and more beneficial for the world. But achieving this requires grounding agent development in human values and ensuring user agency through transparency and control.
+
+The agent pattern provides a powerful paradigm for creating the next generation of AI assistants. With careful, creative engineering and ethics-focused development, LLM agents could open new possibilities for AI to enhance our lives.
+
