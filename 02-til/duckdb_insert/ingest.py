@@ -62,11 +62,16 @@ def write_to_parquet(data_generator, parquet_file_prefix,target_path):
 
 
 def main():
+    table_name = 'products'
+    batch_size = 1000000
+    target_path = './data'
+    parquet_file_prefix = 'my_data'
     connection = connect_to_sqlite('testdb.sqlite')
-    data_generator = read_data_in_batches(connection, 'SELECT * FROM products', 1000000)
-    # create directory to store parquet files
-    os.mkdir('./data')
-    write_to_parquet(data_generator, 'my_data','./data')
+    data_generator = read_data_in_batches(connection, f"SELECT * FROM {table_name}", batch_size)
+    # create directory to store parquet files if it doesn't exist
+    if not os.path.exists(target_path):
+      os.mkdir(target_path)
+    write_to_parquet(data_generator=data_generator, parquet_file_prefix=parquet_file_prefix,target_path=target_path)
 
 
 if __name__ == '__main__':
