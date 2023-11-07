@@ -143,9 +143,9 @@ def read_data_in_batches(connection, query, batch_size):
 
 
 @click.command()
-@click.option('--host', required=True, help='The host of the database server.')
-@click.option('--user', required=True, help='The username to connect to the database server.')
-@click.option('--password', required=True, help='The password to connect to the database server.')
+@click.option('--host', required=False, help='The host of the database server.')
+@click.option('--user', required=False, help='The username to connect to the database server.')
+@click.option('--password', required=False, help='The password to connect to the database server.')
 @click.option('--db_type', default='sqlite', help='The type of the database possible value: sqlite,mysql, or postgres.')
 @click.option('--database', required=True, help='The name of the database.')
 @click.option('--table_name', required=True, help='The name of the table.')
@@ -186,7 +186,8 @@ def main(host, user, password, db_type, database, table_name, batch_size, target
                 return
 
     bucket, prefix = get_prefix_and_path(target_path)
-    del_s3_files(bucket, prefix, s3_client)
+    if (bucket and prefix):
+        del_s3_files(bucket, prefix, s3_client)
     ingestion_date = pd.Timestamp.now().strftime('%Y%m%d%H%M%S')
     parquet_file_prefix = f'{ingestion_date}_{table_name}'
     write_to_parquet(data_generator=data_generator, parquet_file_prefix=parquet_file_prefix,
