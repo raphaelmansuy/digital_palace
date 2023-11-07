@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./data:/var/lib/postgresql/data
+# Add port exposition
+    ports:
+      - "5432:5432"
+

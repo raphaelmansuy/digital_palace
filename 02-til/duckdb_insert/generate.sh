@@ -1,0 +1,1 @@
+python generate_db.py --db_type postgres --database postgres --host localhost --user postgres --password postgres 
