@@ -80,8 +80,6 @@ The key steps are:
 
 ## An example of XOT in action
 
-The paper "Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation" introduces a novel thought prompting approach called "Everything of Thoughts" (XOT) that aims to enhance the capabilities of Large Language Models (LLMs) in problem-solving. 
-
 Let's consider a step-by-step example of how XOT works using the Pocket Cube problem, a 2x2x2 Rubik's Cube, as described in the paper.
 
 1. **Selection**: The algorithm starts at the root node and chooses an action from the available set for single-step thought generation in the current state. This process continues until a leaf node within the current tree is reached. The selection is guided by the PUCT algorithm, aiming to maximize the Upper Confidence Bound (UCB).
