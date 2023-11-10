@@ -1,5 +1,6 @@
-import os
+import sys
 import sqlite3
+import subprocess
 import pandas as pd
 import duckdb
 import click
@@ -7,6 +8,40 @@ import mysql.connector
 import psycopg2
 import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, SSLError
+
+
+install_only = False
+
+
+def install_packages():
+    """
+    Installs required pip packages.
+    """
+    required_packages = ["duckdb", "pandas",
+                         "click", "mysql-connector-python", "psycopg2", "boto3"]
+    for package in required_packages:
+        subprocess.check_call(
+            [sys.executable, "-m", "pip", "install", package])
+
+def install_callback(ctx, param, value):
+    """
+    Callback function that installs packages if the `install_only` flag is set to True.
+
+    Args:
+        ctx: Click context object.
+        param: Click parameter object.
+        value: Value of the parameter.
+
+    Returns:
+        None
+    """
+    global install_only
+    install_only = False
+    if not value or ctx.resilient_parsing:
+        return
+    install_only = True
+    install_packages()
+    ctx.exit()
 
 
 def connect_to_s3(aws_profile):
@@ -147,47 +182,60 @@ def read_data_in_batches(connection, query, batch_size):
 @click.option('--user', required=False, help='The username to connect to the database server.')
 @click.option('--password', required=False, help='The password to connect to the database server.')
 @click.option('--db_type', default='sqlite', help='The type of the database possible value: sqlite,mysql, or postgres.')
-@click.option('--database', required=True, help='The name of the database.')
-@click.option('--table_name', required=True, help='The name of the table.')
+@click.option('--database', required=lambda: not install_only, help='The name of the database.')
+@click.option('--table_name', required=lambda: not install_only, help='The name of the table.')
 @click.option('--batch_size', default=100000, help='The batch size.')
 @click.option('--target_path', default='./data', help='The target path for the Parquet files.')
 @click.option('--aws_profile', default=None, help='The AWS profile to use for S3.')
-def main(host, user, password, db_type, database, table_name, batch_size, target_path, aws_profile):
-    """
-    Ingest data from a database table and write it to a parquet file.
+@click.option('--start_date', default=None, help='The start date to filter the SQL query.')
+@click.option('--end_date', default=None, help='The end date to filter the SQL query.')
+@click.option('--delete_files', default=False, help='Delete the target files if set to true.')
+@click.option('--createdat_column', default=None, help='The name of the column containing the creation date of the record')
+@click.option('--install', is_flag=True, callback=install_callback, expose_value=False, is_eager=True, help='Automatically install required pip packages.')
 
-    Args:
-        host (str): The hostname or IP address of the database server.
-        user (str): The username to use when connecting to the database.
-        password (str): The password to use when connecting to the database.
-        db_type (str): The type of database to connect to (e.g. 'mysql', 'postgresql', etc.).
-        database (str): The name of the database to connect to.
-        table_name (str): The name of the table to read data from.
-        batch_size (int): The number of rows to read from the table at a time.
-        target_path (str): The path to write the parquet file to. Can be a local path or an S3 URI.
-        aws_profile (str): The name of the AWS profile to use when connecting to S3 (if target_path is an S3 URI).
+def main(host, user, password, db_type, database, table_name, batch_size, target_path, aws_profile, start_date, end_date, delete_files, createdat_column, install):
+    """ Ingest data from a database table and write it to a parquet file. """
 
-    Returns:
-        None
-    """
+    # Install required packages
+    if install:
+        install_packages()
+        print("Installation of required packages is complete.")
+        sys.exit(0)
+
+    # Connect to the database
     connection = connect_to_db(db_type, host, user, password, database)
-    data_generator = read_data_in_batches(
-        connection, f"SELECT * FROM {table_name}", batch_size)
+
+    # Construct the SQL query
+    query = f"SELECT * FROM {table_name}"
+    if start_date and end_date and createdat_column:
+        # replace 'date_column' with the actual date column in your table
+        query += f" WHERE {createdat_column} BETWEEN '{start_date}' AND '{end_date}'"
+
+    # Read data in batches
+    data_generator = read_data_in_batches(connection, query, batch_size)
+
+    # Create the target directory if it doesn't exist
     if not os.path.exists(target_path) and not target_path.startswith('s3:'):
         os.mkdir(target_path)
+
+    # Connect to S3 if the target path is an S3 URI
     s3_client = None
     if target_path.startswith('s3:'):
-        if (aws_profile):
+        if aws_profile:
             s3_client = connect_to_s3(aws_profile)
         else:
             s3_client = boto3.client('s3')
-            if s3_client is None:
-                print('Failed to connect to S3. Exiting...')
-                return
+        if s3_client is None:
+            print('Failed to connect to S3. Exiting...')
+            return
 
-    bucket, prefix = get_prefix_and_path(target_path)
-    if (bucket and prefix):
-        del_s3_files(bucket, prefix, s3_client)
+    # Delete the target files if delete_files is set to true
+    if delete_files:
+        bucket, prefix = get_prefix_and_path(target_path)
+        if bucket and prefix:
+            del_s3_files(bucket, prefix, s3_client)
+
+    # Write data to Parquet files
     ingestion_date = pd.Timestamp.now().strftime('%Y%m%d%H%M%S')
     parquet_file_prefix = f'{ingestion_date}_{table_name}'
     write_to_parquet(data_generator=data_generator, parquet_file_prefix=parquet_file_prefix,
