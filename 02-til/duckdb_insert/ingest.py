@@ -1,6 +1,4 @@
-import sys
 import sqlite3
-import subprocess
 import pandas as pd
 import duckdb
 import click
@@ -8,40 +6,6 @@ import mysql.connector
 import psycopg2
 import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, SSLError
-
-
-install_only = False
-
-
-def install_packages():
-    """
-    Installs required pip packages.
-    """
-    required_packages = ["duckdb", "pandas",
-                         "click", "mysql-connector-python", "psycopg2", "boto3"]
-    for package in required_packages:
-        subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", package])
-
-def install_callback(ctx, param, value):
-    """
-    Callback function that installs packages if the `install_only` flag is set to True.
-
-    Args:
-        ctx: Click context object.
-        param: Click parameter object.
-        value: Value of the parameter.
-
-    Returns:
-        None
-    """
-    global install_only
-    install_only = False
-    if not value or ctx.resilient_parsing:
-        return
-    install_only = True
-    install_packages()
-    ctx.exit()
 
 
 def connect_to_s3(aws_profile):
@@ -137,16 +101,16 @@ def connect_to_sqlite(database):
     return sqlite3.connect(database)
 
 
-def connect_to_db(db_type, host=None, user=None, password=None, database=None):
+def connect_to_db(db_type, host=None,port=None, user=None, password=None, database=None):
     """
     Connects to a database based on the db_type.
     """
     if db_type == 'mysql':
         print(f'Connecting to MySQL database {database}')
-        return mysql.connector.connect(host=host, user=user, password=password, database=database)
+        return mysql.connector.connect(host=host, user=user, password=password, database=database, port=port)
     elif db_type == 'postgres':
         print(f'Connecting to PostgreSQL database {database}')
-        return psycopg2.connect(host=host, database=database, user=user, password=password)
+        return psycopg2.connect(host=host, database=database, user=user, password=password, port=port)
     elif db_type == 'sqlite':
         print(f'Connecting to SQLite database {database}')
         return sqlite3.connect(database)
@@ -179,6 +143,7 @@ def read_data_in_batches(connection, query, batch_size):
 
 @click.command()
 @click.option('--host', required=False, help='The host of the database server.')
+@click.option('--port', required=False, help='The port of the database server.')
 @click.option('--user', required=False, help='The username to connect to the database server.')
 @click.option('--password', required=False, help='The password to connect to the database server.')
 @click.option('--db_type', default='sqlite', help='The type of the database possible value: sqlite,mysql, or postgres.')
@@ -191,19 +156,11 @@ def read_data_in_batches(connection, query, batch_size):
 @click.option('--end_date', default=None, help='The end date to filter the SQL query.')
 @click.option('--delete_files', default=False, help='Delete the target files if set to true.')
 @click.option('--createdat_column', default=None, help='The name of the column containing the creation date of the record')
-@click.option('--install', is_flag=True, callback=install_callback, expose_value=False, is_eager=True, help='Automatically install required pip packages.')
-
-def main(host, user, password, db_type, database, table_name, batch_size, target_path, aws_profile, start_date, end_date, delete_files, createdat_column, install):
+def main(host,port, user, password, db_type, database, table_name, batch_size, target_path, aws_profile, start_date, end_date, delete_files, createdat_column):
     """ Ingest data from a database table and write it to a parquet file. """
 
-    # Install required packages
-    if install:
-        install_packages()
-        print("Installation of required packages is complete.")
-        sys.exit(0)
-
     # Connect to the database
-    connection = connect_to_db(db_type, host, user, password, database)
+    connection = connect_to_db(db_type, host,port, user, password, database)
 
     # Construct the SQL query
     query = f"SELECT * FROM {table_name}"
