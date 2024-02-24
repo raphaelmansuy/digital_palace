@@ -26,6 +26,18 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [👉 Todays I Learned](/02-til/README.md)
 
+## AI Courses
+
+[👉 Top Quality Courses](./07-courses/README.md)
+
+## Blog
+
+[👉 Top Quality Blogs](./08-blogs/README.md)
+
+## Cloud Providers
+
+[👉 Top Quality Cloud Providers](./09-cloud-providers/README.md)
+
 ## High Quality Datasets for Fine-Tuning
 
 [👉 Top Quality Datasets](./05-top-quality-dataset/README.md)
@@ -40,6 +52,17 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
+
+## Embeddings
+
+- [What are embeddings and how do they work? A book from Vicki Boykis](https://vickiboykis.com/what_are_embeddings/)
+
+  - [Github](https://github.com/veekaybee/what_are_embeddings)
+  - [PDF](https://raw.githubusercontent.com/veekaybee/what_are_embeddings/main/embeddings.pdf)
+
+- [Fine-tuning language models improves performance by enhancing existing mechanisms rather than creating new ones, as evidenced by consistent circuit functionality in entity tracking tasks](https://finetuning.baulab.info/)
+
+- [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka)
 
 ## LLM Applications
 
