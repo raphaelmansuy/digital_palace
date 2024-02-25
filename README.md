@@ -32,7 +32,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Blog
 
-[👉 Top Quality Blogs](./08-blogs/README.md)
+[👉 Top Quality Blogs](08-blogs/blogs.md)
 
 ## Cloud Providers
 
@@ -75,6 +75,10 @@ They can also be a valuable resource for others who are looking to learn and exp
 ## AI and Ethics
 
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
+
+## Articles
+
+[Arrticles list](01-articles/articles.md)
 
 ## Medium publications
 
