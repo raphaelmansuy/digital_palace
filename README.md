@@ -80,6 +80,9 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [Arrticles list](01-articles/articles.md)
 
+## LinkedIn Posts
+
+[LinkedIn Posts](06-linkedin-posts/linkedin_posts.md)
 ## Medium publications
 
 [Forget the Cloud ☁️ — A MacBook Pro with M1/M2 is the Only AI Brain You Need … 🧠](https://medium.com/p/168ac77d78ab)
