@@ -39,4 +39,7 @@ Targeted training helps models maximize their existing computational potential.
   
 What are your experiences fine-tuning AI models? I'd love to hear what insights this approach has unlocked for you. Please share in the comments!
 
+[https://arxiv.org/abs/2402.14811](https://arxiv.org/abs/2402.14811)
+
+
 ![](assets/finetuning_2402.14811.pdf)
