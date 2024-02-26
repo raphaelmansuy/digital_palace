@@ -10,7 +10,7 @@
 
 Training a large model involves significant computational resources and can be a time-consuming task. It is essential to have a clear understanding of the potential costs and time commitment involved.
 
-## timating Budget and Time with HuggingFace 🤗
+## Budget and Time with HuggingFace 🤗
 
 A Training Cluster is a service that provides infrastructure and resources for training machine learning models. It typically includes distributed computing capabilities and tools for managing and scaling training jobs.
 

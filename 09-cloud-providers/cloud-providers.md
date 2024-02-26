@@ -44,9 +44,4 @@ Groq is a company specializing in high-speed, large-scale AI inference solutions
 
 This table provides a comparison of various top-quality cloud providers: Modal, Scaleway, AnyScale, RunPods, Fireworks AI, and Groq based on their descriptions, services offered, features provided, security measures implemented, and compliance standards.
 
-Citations:
-[1] https://modal.com
-[2] https://www.scaleway.com
-[3] https://www.anyscale.com
-[4] https://www.pluralsight.com/resources/blog/cloud/aws-vs-azure-vs-gcp-artificial-intelligence-and-machine-learning
-[5] https://www.linkedin.com/advice/0/how-can-you-compare-cloud-platforms-ai
+

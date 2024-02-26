@@ -21,4 +21,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Poetry: Python dependency management and packaging made easy](./poetry_a_python_best_friend/README.md)
 - [Git for beginners](git/git.md)
 - [MLflow: An open source platform for the machine learning lifecycle](./mlfow/README.md)
-  
+- [GPT in 60 lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)
+- [How to package a python program into a binary thanks to PyOxidizer](2024-02-05-PyOxidizer.md)

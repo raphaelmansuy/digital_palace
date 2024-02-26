@@ -36,7 +36,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Cloud Providers
 
-[👉 Top Quality Cloud Providers](./09-cloud-providers/README.md)
+[👉 Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
 
 ## High Quality Datasets for Fine-Tuning
 
