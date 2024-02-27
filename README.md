@@ -28,7 +28,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## AI Courses
 
-[👉 Top Quality Courses](./07-courses/README.md)
+[👉 Top Quality Courses](07-courses/courses.md)
 
 ## Blog
 
@@ -40,7 +40,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## High Quality Datasets for Fine-Tuning
 
-[👉 Top Quality Datasets](./05-top-quality-dataset/README.md)
+[👉 Top Quality Datasets](05-top-quality-dataset/top-quality-dataset.md)
 
 ## AI Engineering
 
