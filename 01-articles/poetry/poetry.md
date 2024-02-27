@@ -150,3 +150,17 @@ Raphaël MANSUY is a seasoned CTO with a passion for data engineering and AI. Wh
 ---
 
 By following this guide, you've not only learned the basics of Poetry but also gained insights into best practices and troubleshooting. Now, go forth and code with confidence, knowing that your project's dependencies are in good hands.
+
+---
+
+
+```cardlink
+url: https://medium.com/@raphael.mansuy/effortless-python-project-management-with-poetry-d61b8958c9e7
+title: "Effortless Python Project Management with Poetry"
+description: "A step-by-step guide to mastering dependency chaos"
+host: medium.com
+favicon: https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png
+image: https://miro.medium.com/v2/resize:fit:1024/1*vOqLty5jwT4GP_pRjhM5DQ.jpeg
+```
+
+#medium #python
