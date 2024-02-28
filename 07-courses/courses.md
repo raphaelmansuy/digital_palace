@@ -31,3 +31,9 @@ Finally, you’ll learn how to apply theory to production by deploying your new 
 ![Digital Palace](https://areganti.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fdaf26bc8-1091-4fc2-9b31-193e04a676f1%2F07178a16-2371-4ab4-a86b-23b3a3db20cb%2FApplied_LLMs_(6).png?table=block&id=f200c84d-a9fd-46c5-88ee-36e4c90b366c&spaceId=daf26bc8-1091-4fc2-9b31-193e04a676f1&width=2000&userId=&cache=v2)
 
 [Applied LLMs Mastery](https://areganti.notion.site/Applied-LLMs-Mastery-2024-562ddaa27791463e9a1286199325045c)
+
+# AI orchestration with LLamaIndex and LangChain
+
+Are you ready to dive into the world of AI applications? This course was designed for you. AI orchestration frameworks let you step back from the details of artificial intelligence tools and APIs and instead focus on building more general, effective systems that solve real-world problems. Join instructor M.Joel Dubinko as he explores the business benefits of AI orchestration—faster development, smarter interfaces, lower costs, and more. This course provides an overview of AI fundamentals and key capabilities, like accessing external tools and databases, with a special focus on exploring local models running on your own hardware, alongside or instead of cloud services like those from OpenAI. Every step of the way, Joel offers hands-on demonstrations of two industry-leading frameworks: LangChain and LlamaIndex. By the end of this course, you’ll be prepared to start building chatbots, intelligent agents, and other useful tools, while monitoring for errors and troubleshooting as you go.
+
+[LinkedIn Learning Course](https://www.linkedin.com/learning/introduction-to-ai-orchestration-with-langchain-and-llamaindex/building-local-ai-apps-with-langchain-and-llamaindex)
