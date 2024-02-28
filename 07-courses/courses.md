@@ -37,3 +37,19 @@ Finally, you’ll learn how to apply theory to production by deploying your new 
 Are you ready to dive into the world of AI applications? This course was designed for you. AI orchestration frameworks let you step back from the details of artificial intelligence tools and APIs and instead focus on building more general, effective systems that solve real-world problems. Join instructor M.Joel Dubinko as he explores the business benefits of AI orchestration—faster development, smarter interfaces, lower costs, and more. This course provides an overview of AI fundamentals and key capabilities, like accessing external tools and databases, with a special focus on exploring local models running on your own hardware, alongside or instead of cloud services like those from OpenAI. Every step of the way, Joel offers hands-on demonstrations of two industry-leading frameworks: LangChain and LlamaIndex. By the end of this course, you’ll be prepared to start building chatbots, intelligent agents, and other useful tools, while monitoring for errors and troubleshooting as you go.
 
 [LinkedIn Learning Course](https://www.linkedin.com/learning/introduction-to-ai-orchestration-with-langchain-and-llamaindex/building-local-ai-apps-with-langchain-and-llamaindex)
+
+
+## [Mervian Praison](https://www.youtube.com/@MervinPraison) - You Tube Channel
+
+[https://www.youtube.com/@MervinPraison](https://www.youtube.com/@MervinPraison)
+
+[Play List](https://www.youtube.com/@MervinPraison/playlists)
+
+```cardlink
+url: https://www.youtube.com/@MervinPraison
+title: "Mervin Praison"
+description: "Mervin Praison"
+host: www.youtube.com
+favicon: https://www.youtube.com/s/desktop/fe730087/img/favicon_32x32.png
+image: https://yt3.googleusercontent.com/ZHI8UUVgJg1fKIvD3nLHTC2BIIrnivaR5HWq_-pUWFov2Xkpz7rHw1D8qAvmxZ4zW8-ciGyvAg=s900-c-k-c0x00ffffff-no-rj
+```
