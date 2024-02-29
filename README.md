@@ -68,6 +68,14 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
+- [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction)
+- [LLamaIndex]  
+
+## Serving LLMS
+
+- [vLLM](https://github.com/vllm-project/vllm) Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
+- [SkyPilot](https://docs.vllm.ai/en/latest/) Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
+- [Ollama](https://github.com/ollama/ollama) Get up and running with Llama 2, Mistral, Gemma, and other large language models. [documentation](https://ollama.com/)
 ## Prompt Engineering Patterns
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
