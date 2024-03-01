@@ -54,4 +54,32 @@ favicon: https://www.youtube.com/s/desktop/fe730087/img/favicon_32x32.png
 image: https://yt3.googleusercontent.com/ZHI8UUVgJg1fKIvD3nLHTC2BIIrnivaR5HWq_-pUWFov2Xkpz7rHw1D8qAvmxZ4zW8-ciGyvAg=s900-c-k-c0x00ffffff-no-rj
 ```
 
-[]
+
+## [FreeCodeCamp.org](https://www.youtube.com/@freecodecamp)
+
+
+[Generative AI Full Course – Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases & More](https://www.youtube.com/watch?v=mEsleV16qdo)
+
+# Generative Models and AI Frameworks Course
+
+This course is about learning generative models and different frameworks, with a focus on investigating the production of text and visual material by artificial intelligence.
+
+## Course Outline
+
+- ⌨️ (00:00:00) DAY 1: Introduction to Generative AI Community Course
+- ⌨️ (01:44:14) DAY 2: Introduction to OpenAI and understanding the OpenAI API
+- ⌨️ (03:37:49) DAY 3: Introduction to LangChain
+- ⌨️ (05:16:48) Day 4: Hugging Face API + Langchain
+- ⌨️ (07:13:08) DAY 5: Memory in Langchain
+- ⌨️ (09:07:53) DAY 6: LLM Generative AI Project using OpenAI & LangChain
+- ⌨️ (11:03:29) DAY 7: LLM Generative AI Project & Deployment
+- ⌨️ (13:09:02) DAY 8: Introduction to Vector Database for AI & LLM
+- ⌨️ (14:52:41) DAY 9: Mastering Vector Databases with Pinecone
+- ⌨️ (17:02:19) DAY 10: Mastering ChromaDB Vector Databases
+- ⌨️ (19:04:25) DAY 11: Introducing Meta Llama 2
+- ⌨️ (20:54:33) DAY 12: End to End Medical Chatbot Project, Part 1
+- ⌨️ (22:36:05) DAY 13: End to End Medical Chatbot Project, Part 2
+- ⌨️ Generative AI: Everything You need to know about Gemini Pro LLM Models
+- ⌨️ (26:16:33) End to End Gen AI Project using Google Gemini Pro
+- ⌨️ (28:24:14) Webinar - Generative AI Revolution: The Future
+
