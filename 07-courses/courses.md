@@ -53,3 +53,5 @@ host: www.youtube.com
 favicon: https://www.youtube.com/s/desktop/fe730087/img/favicon_32x32.png
 image: https://yt3.googleusercontent.com/ZHI8UUVgJg1fKIvD3nLHTC2BIIrnivaR5HWq_-pUWFov2Xkpz7rHw1D8qAvmxZ4zW8-ciGyvAg=s900-c-k-c0x00ffffff-no-rj
 ```
+
+[]
