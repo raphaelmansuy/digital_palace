@@ -14,3 +14,14 @@ The website https://karpathy.ai/ belongs to Andrej Karpathy, a prominent figure 
 
 
 Simon Willison is a prolific web developer with over 25 years of experience building websites and web applications. His personal blog at https://simonwillison.net/ covers a wide range of topics related to AI, Python, JavaScript, databases, APIs, serverless computing, and more. 
+
+# [Vicky Boykis](https://vickiboykis.com/)
+
+Vicki is a machine learning engineer currently working at Mozilla.ai, focusing on Large Language Models (LLMs) and LLM infrastructure. Prior to this, she has worked at Duo, Tumblr, Automattic, and Comcast. Vicki's interests in machine learning span Recsys search, MLOps and production, and distributed systems. She enjoys reverse-engineering neural networks and machine learning systems.
+
+Vicki's side project, Viberary, is a platform that recommends books based on vibe. She has written a paper on embeddings approaches, which can be found at DOI: 10.5281/zenodo.8015029. Vicki documents her learnings and has served as a technical editor for publications such as "Building Recommendation Systems" and "SQL for Data Scientists". She has also written for Increment Mag, contributing articles like "The Best-Laid Plans" and "Architecture for Generations".
+
+You can contact Vicki at vickiboykis@gmail.com.
+
+[Blog](https://vickiboykis.com/)
+
