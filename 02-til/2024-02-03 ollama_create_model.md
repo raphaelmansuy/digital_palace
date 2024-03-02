@@ -6,15 +6,17 @@ Ollama is a powerful tool that simplifies the process of creating, running, and 
 
 ## Step 1: Download GGUF File
 
-First, you need to download the GGUF file of the model you want from HuggingFace. For example, you can download `stablelm-2-zephyr-1_6b-Q4_1.gguf`.
+First, you need to download the GGUF file of the model you want from HuggingFace. For example, you can download `stablelm-2-zephyr-1_6b-Q4_1.gguf`. 
+
+[stabilityai/stablelm-2-zephyr-1_6b](https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b))
 
 You can use the `huggingface-cli` to download the file:
 
 ```bash
-huggingface-cli download TheBloke/CodeLlama-7B-GGUF codellama-7b.q4_K_M.gguf --local-dir . --local-dir-use-symlinks False
+huggingface-cli download stabilityai/stablelm-2-zephyr-1_6b stablelm-2-zephyr-1_6b-Q4_1.gguf --local-dir . --local-dir-use-symlinks False
 ```
 
-Replace `codellama-7b.q4_K_M.gguf` with the name of the file you want to download.
+Replace ```codellama-7b.Q2_K.gguf``` with the name of the file you want to download.
 
 ## Step 2: Create ModelFile
 
