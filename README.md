@@ -73,9 +73,11 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Serving LLMS
 
+- [llamaC++](https://github.com/ggerganov/llama.cpp) LLM inference in C/C++
 - [vLLM](https://github.com/vllm-project/vllm) Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
 - [SkyPilot](https://docs.vllm.ai/en/latest/) Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
-- [Ollama](https://github.com/ollama/ollama) Get up and running with Llama 2, Mistral, Gemma, and other large language models. [documentation](https://ollama.com/)
+- [Ollama](https://github.com/ollama/ollama) Go program that encapsulate [llamac++](https://github.com/ggerganov/llama.cpp). [documentation](https://ollama.com/)
+- [fastassert](https://github.com/phospho-app/fastassert) Dockerized LLM inference server with constrained output (JSON mode), built on top of vLLM and outlines.
 ## Prompt Engineering Patterns
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
@@ -94,3 +96,29 @@ They can also be a valuable resource for others who are looking to learn and exp
 ## Medium publications
 
 [Forget the Cloud ☁️ — A MacBook Pro with M1/M2 is the Only AI Brain You Need … 🧠](https://medium.com/p/168ac77d78ab)
+
+---
+
+```mermaid
+mindmap
+	root((AI))
+		Applications
+			LLM Applications
+			Serving LLMs
+		Engineering
+			AI Engineering
+				Framework
+					LangChain
+					LLamaIndex
+				Vector Databases
+			Prompt Engineering
+			Fine Tuning
+			RAG
+		Models
+			AI Models
+			Embeddings
+			
+		Ethics
+			AI and Ethics
+
+```
