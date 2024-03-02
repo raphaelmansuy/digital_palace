@@ -44,6 +44,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## AI Engineering
 
+### Articles
+
 - [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
 
 - [Design and Architecture Patterns for LLM application](./01-articles/dessign_patterns_for_llm_applications/README.md)
@@ -54,6 +56,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
 
 ## Embeddings
+
+### Articles
 
 - [What are embeddings and how do they work? A book from Vicki Boykis](https://vickiboykis.com/what_are_embeddings/)
 
@@ -68,10 +72,17 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
-- [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction)
-- [LLamaIndex]  
+### Toolbox
+
+- [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
+- [LLamaIndex](https://www.llamaindex.ai/)Turn your enterprise data into production-ready LLM applications 🦙
+- [HuggingFace](https://huggingface.co/) Model, Datasets, Inference Space, the GitHub of AI models. 🤗
+	- [Hub](https://huggingface.co/docs/hub/index) Your starting point to HuggingFace
+	- [cli](https://huggingface.co/docs/huggingface_hub/en/guides/cli) Command Line Interface (CLI)
 
 ## Serving LLMS
+
+### Tools
 
 - [llamaC++](https://github.com/ggerganov/llama.cpp) LLM inference in C/C++
 - [vLLM](https://github.com/vllm-project/vllm) Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
@@ -85,9 +96,13 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Synthetic data generation
 
+### Tools
+
 - [Bonito](https://github.com/BatsResearch/bonito) A lightweight library for generating synthetic instruction tuning datasets for your data without GPT.
 
 ## Fine tuning
+
+### Tools
 
 - [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) 5X faster 60% less memory QLoRA finetuning
 
