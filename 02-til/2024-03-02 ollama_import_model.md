@@ -1,6 +1,4 @@
-Sure, I can help improve the tutorial by formatting it in markdown and providing some additional context. Here's an improved version:
-
-# How to Create a New Model for Ollama
+# How to import a New Model from 🤗 for Ollama
 
 Ollama is a powerful tool that simplifies the process of creating, running, and managing large language models (LLMs). This tutorial will guide you through the steps to create a new model for Ollama.
 

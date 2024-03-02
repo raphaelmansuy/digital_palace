@@ -72,6 +72,12 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
+
+### Front End
+
+[Bionic GPT]([https://github.com/bionic-gpt/bionic-gpt/blob/main/README.md) **BionicGPT is an on-premise replacement for ChatGPT, offering the advantages of Generative AI while maintaining strict data confidentiality** BionicGPT can run on your laptop or scale into the data center.
+
+
 ### Toolbox
 
 - [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
