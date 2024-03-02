@@ -95,6 +95,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [SkyPilot](https://docs.vllm.ai/en/latest/) Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
 - [Ollama](https://github.com/ollama/ollama) Go program that encapsulate [llamac++](https://github.com/ggerganov/llama.cpp). [documentation](https://ollama.com/)
 - [fastassert](https://github.com/phospho-app/fastassert) Dockerized LLM inference server with constrained output (JSON mode), built on top of vLLM and outlines.
+- [luminal](https://github.com/jafioti/luminal) Deep learning at the speed of light coded in Rust. The aim for 0.3 is to achieve SOTA performance on an M1 pro (50 tok/s), and near SOTA on single nvidia gpus (>100 tok/s)
  
 ## Prompt Engineering
 
