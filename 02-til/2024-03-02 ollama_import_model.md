@@ -1,4 +1,4 @@
-# How to import a New Model from 🤗 for Ollama
+# How to import a New Model from HuggingFace 🤗 for Ollama
 
 Ollama is a powerful tool that simplifies the process of creating, running, and managing large language models (LLMs). This tutorial will guide you through the steps to create a new model for Ollama.
 
