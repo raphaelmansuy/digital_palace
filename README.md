@@ -24,7 +24,7 @@ TIL journals are often used by programmers, developers, and other professionals 
 
 They can also be a valuable resource for others who are looking to learn and expand their knowledge in a specific domain.
 
-[👉 Todays I Learned](/02-til/README.md)
+👉 [Todays I Learned](/02-til/README.md)
 
 ##  Courses and lectures
 
@@ -34,15 +34,15 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Blog
 
-[👉 Top Quality Blogs](08-blogs/blogs.md)
+👉  [Top Quality Blogs](08-blogs/blogs.md)
 
 ## Cloud Providers
 
-[👉 Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
+👉 [Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
 
 ## High Quality Datasets for Fine-Tuning
 
-[👉 Top Quality Datasets](05-top-quality-dataset/top-quality-dataset.md)
+👉 [Top Quality Datasets](05-top-quality-dataset/top-quality-dataset.md)
 
 ## AI Engineering
 
@@ -94,9 +94,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## AI Command tools
 
--[llms](https://llm.datasette.io/en/stable/) A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine. By [Simon Willison](https://simonwillison.net/)
--[Open Interpreter](https://github.com/KillianLucas/open-interpreter/) A natural language interface for computers
-
+- [llms](https://llm.datasette.io/en/stable/) A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine. By [Simon Willison](https://simonwillison.net/)
+- [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) A natural language interface for computers
 
 ## Serving LLMS
 
@@ -130,6 +129,12 @@ They can also be a valuable resource for others who are looking to learn and exp
 ## AI and Ethics
 
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
+
+## Development
+
+### VSCode
+
+- [Useful VSCode extensions](10-resources/vscode_extensions.md)
 
 ## Articles
 
