@@ -1,4 +1,4 @@
-# High Quality Courses
+# High Quality Course on AI and ML
 
 ## CS 886: Recent Advances on Foundation Models Winter 2024 Course Overview
 

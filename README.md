@@ -26,9 +26,11 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [👉 Todays I Learned](/02-til/README.md)
 
-## AI Courses
+##  Courses and lectures
 
-[👉 Top Quality Courses](07-courses/courses.md)
+- [AI Courses](07-courses/ai_courses.md)
+- [Prompt engineering](07-courses/prompt_engineering.md)
+- [System, Database, Operating System](07-courses/system_courses.md)
 
 ## Blog
 
