@@ -112,6 +112,19 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 
+## Models
+
+- [Gorilla OpenFunction](https://gorilla.cs.berkeley.edu/blogs/7_open_functions_v2.html)  🦍 Gorilla: Large Language Model Connected with Massive APIs
+- [Models list](https://book.premai.io/state-of-open-source-ai/models/) Open Sources model list
+
+
+## LLM Leaderboard
+
+- [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) LeaderBoard for function calling
+- [OpenLLMs Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 📐 The 🤗 Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
+- [HumanEval Leaderboard](https://evalplus.github.io/leaderboard.html) # 🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests
+- 
+
 ## Synthetic data generation
 
 ### Tools
@@ -123,6 +136,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 ### Tools
 
 - [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) 5X faster 60% less memory QLoRA finetuning
+- [Documentation from Premai about Finetuning ](https://book.premai.io/state-of-open-source-ai/fine-tuning/)
+
 
 ## AI and Ethics
 
