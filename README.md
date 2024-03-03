@@ -11,9 +11,6 @@ With my palace being public, anyone can read my entries, view my content, and le
 In summary, my Digital Palace provides an engaging platform for public self-expression, reflection, and sharing memories.
 
 [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
-
-![Digital Palace](./00-assets/lamacard.png)
-
 ## Today I Learned (TIL)
 
 The goal of a "Today I Learned" (TIL) journal is to document and reflect upon something new or interesting that you have learned on a given day.
