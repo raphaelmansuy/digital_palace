@@ -107,6 +107,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [fastassert](https://github.com/phospho-app/fastassert) Dockerized LLM inference server with constrained output (JSON mode), built on top of vLLM and outlines.
 - [luminal](https://github.com/jafioti/luminal) Deep learning at the speed of light coded in Rust. The aim for 0.3 is to achieve SOTA performance on an M1 pro (50 tok/s), and near SOTA on single nvidia gpus (>100 tok/s)
 - [LLamafile](https://github.com/Mozilla-Ocho/llamafile) Turning a LLM model into a Multiplatform executable
+- [candle](https://github.com/huggingface/candle?tab=readme-ov-file) Minimalist ML framework for Rust. Run and Serve Models in Rust.
  
 ## Prompt Engineering
 
