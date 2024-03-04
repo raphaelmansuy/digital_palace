@@ -10,5 +10,17 @@
 
 ```bash
 pip install 'llama-cpp-python[server]' 
-python3 -m llama_cpp.server --model models/7B/llama-model.gguf
+python3 -m llama_cpp.server --model models/7B/llama-model.gguf --chat_format functionary-v2
+```
+
+
+Example:
+
+```bash
+
+
+MODEL="~/.cache/lm-studio/models/MaziyarPanahi/Llama-2-7b-chat-hf-function-calling-v2-GGUF/Llama-2-7b-chat-hf-function-calling-v2.Q2_K.gguf"
+
+python3 -m llama_cpp.server --model $MODEL --chat_format functionary-v2
+
 ```
