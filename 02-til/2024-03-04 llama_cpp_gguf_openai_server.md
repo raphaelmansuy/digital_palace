@@ -24,3 +24,18 @@ MODEL="~/.cache/lm-studio/models/MaziyarPanahi/Llama-2-7b-chat-hf-function-calli
 python3 -m llama_cpp.server --model $MODEL --chat_format functionary-v2
 
 ```
+
+
+## How to serve a function calling model
+
+
+You need first to download first an AI model supporting function calling:
+
+Example:
+
+https://huggingface.co/meetkai/functionary-7b-v2-GGUF
+
+```bash
+python3 -m llama_cpp.server --model ./models/functionary-7b-v2.1.q4_0.gguf --chat_format functionary-v2 --hf_pretrained_model_name_or_path meetkai/functionary-7b-v2-GGUF
+```
+
