@@ -1,5 +1,9 @@
 # How to deduplicate a DeltaTable in scala
 
+
+[GIST](https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4)
+
+
 ```scala
 import io.delta.tables._
 
@@ -158,3 +162,6 @@ deltaTable.toDF
 
 }
 ```
+
+
+https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4
