@@ -27,4 +27,4 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [How to use llm command](2024-03-03_how_to_use_llm_command)
 - [How to transform a HuggingFace model to GGUF format](2024-03-04%20how_to_transform_a_huggingface_model_to_gguf.md)
 - [How to server a GGUF model, compatible with OpenAI API using LLamaCpp OpenAI Server](2024-03-04%20llama_cpp_gguf_openai_server.md)
-- 
+- [How to Deduplicate a DeltaTable](2024-03-05%20Deduplicate%20a%20DeltaTable.md)
