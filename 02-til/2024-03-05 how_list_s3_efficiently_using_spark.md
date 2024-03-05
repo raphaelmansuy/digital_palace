@@ -1,6 +1,9 @@
 
 # How to list AWS S3 files efficiently using Spark
 
+[GIST](https://gist.github.com/raphaelmansuy/83c7ffb52c76f66fc8d235483f782f07)
+
+
 ```scala
 import scala.collection.JavaConverters._
 
