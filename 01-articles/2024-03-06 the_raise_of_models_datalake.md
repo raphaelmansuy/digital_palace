@@ -177,7 +177,6 @@ By organizing models and metadata in this structured way, the model lake becomes
 
 With a well-designed lake, organizations can turn the flood of AI models from a challenge into an opportunity - surfacing insights, ensuring responsible usage, and driving value from their AI investments.
 
-Here is a continuation of the detailed article on "Model Lakes":
 
 ## Diving Deeper: Key Capabilities of Model Lakes
 
