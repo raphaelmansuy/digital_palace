@@ -54,6 +54,11 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
 
+
+## LLMs implementation
+
+- [LLMs from scratch](https://github.com/rasbt/LLMs-from-scratch) Implementing a ChatGPT-like LLM from scratch, step by step by from [Sebastian Raschka](https://github.com/rasbt) 
+
 ## Embeddings
 
 ### Articles
