@@ -155,7 +155,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ### VSCode
 
-- [Useful VSCode extensions](10-resources/vscode_extensions.md)
+- [Useful VSCode extensions](10-resources/vscode_extensions.md) 
+- [Open source alternatives to popular products](https://openalternative.co/) Discover **Open Source Alternatives** to Popular Software
 
 ## Articles
 
