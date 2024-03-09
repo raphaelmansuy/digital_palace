@@ -40,3 +40,35 @@ The input to an attention model is a list of token/word vectors, which can be st
 An implementation [Gist](https://gist.github.com/wolfecameron/d6ad12f6c663c73f80258fa988e465b2)
 
 [Article](https://threadreaderapp.com/thread/1766180825173803516.html?utm_campaign=topunroll)
+
+
+[Tweet from akshay pachaar](https://twitter.com/akshay_pachaar/status/1766079167614058578?s=12&t=yQMnHW0QYpKVruKBudHLAA)
+
+## Tokenisation
+
+Before we start a quick primer on tokenization! 
+
+Raw text → Tokenization → Embedding → Model Embedding is a meaningful representation of each token (roughly a word) using a bunch of numbers. This embedding is what we provide as an input to our language models.
+
+![](assets/Pasted%20image%2020240309114901.png)
+
+The core idea of Language modelling is to understand the structure and patterns within language. By modeling the relationships between words (tokens) in a sentence, we can capture the context and meaning of the text.
+
+![](assets/Pasted%20image%2020240309114915.png)
+
+Self-attention is at the heart of transformers, the architecture that led to the LLM revolution that we see today. In this post, I'll clearly explain self-attention & how it can be thought of as a directed graph.
+
+![](assets/Pasted%20image%2020240309114959.png)
+
+To understand how these probability/attention scores are obtained: We must understand 3 key terms: - Query Vector - Key Vector - Value Vector These vectors are created by multiplying the input embedding by three weight matrices that are trainable.
+
+![](assets/Pasted%20image%2020240309115032.png)
+
+Now here's a broader picture of how input embeddings are combined with Keys, Queries & Values to obtain the actual attention scores. After acquiring keys, queries, and values, we merge them to create a new set of context-aware embeddings.
+
+![](assets/Pasted%20image%2020240309115051.png)
+
+
+Code:
+
+![](assets/Pasted%20image%2020240309115110.png)

@@ -37,6 +37,22 @@ host: www.answer.ai
 ```
 
 
+## [ML Spring](https://mlspring.beehiiv.com/)
+
+
+ML Spring
+
+Join 6000+ readers to master AI Engineering and stay ahead of the curve! 🚀
+
+
+```cardlink
+url: https://mlspring.beehiiv.com/
+title: "ML Spring"
+description: "Join 6000+ readers to master AI Engineering and stay ahead of the curve! 🚀"
+host: mlspring.beehiiv.com
+favicon: https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/39426994-01e5-416d-ad8a-4427d2705032/thumb_Screenshot_2023-07-04_at_8.40.02_AM.png
+image: https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/thumbnail/39426994-01e5-416d-ad8a-4427d2705032/landscape_mlspring_thumbnail.png
+```
 
 
 
