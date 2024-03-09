@@ -158,9 +158,10 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Useful VSCode extensions](10-resources/vscode_extensions.md) 
 - [Open source alternatives to popular products](https://openalternative.co/) Discover **Open Source Alternatives** to Popular Software
 
-## Documentations tools
+## Useful tools
 
 - [Shot Scraper](https://shot-scraper.datasette.io/en/stable/)A command-line utility for taking automated screenshots of websites from Simon Willison
+- [ttok](https://github.com/simonw/ttok) Count and truncate text based on tokens from Simon  Willison
 
 ## Articles
 
