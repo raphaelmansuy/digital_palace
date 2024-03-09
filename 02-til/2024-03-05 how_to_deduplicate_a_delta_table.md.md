@@ -1,7 +1,53 @@
 # How to deduplicate a DeltaTable in scala
 
+## Function: deleteDuplicateRows
 
-[GIST](https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4)
+The `deleteDuplicateRows` function is designed to remove duplicate rows from a Delta table in Scala. It takes the path to the Delta table, a sequence of column names used to identify duplicates, and an optional column name that contains the timestamp of the last update.
+
+### Problem
+
+Duplicate rows in a Delta table can lead to data inconsistencies and inefficiencies. It is important to identify and remove these duplicate rows to maintain data integrity and optimize data processing.
+
+### Approach
+
+The `deleteDuplicateRows` function uses the DeltaTable API and Spark SQL to perform the deduplication process. Here is a high-level overview of the approach:
+
+1. Load the Delta table using the provided path.
+2. Construct the merge condition by comparing the specified keys between the target and source tables.
+3. If an `updatedAtColumn` is provided, find the latest updated timestamp for each set of duplicate keys using Spark SQL aggregation.
+4. Register the resulting DataFrame as a temporary view.
+5. Construct the full SQL command for the merge operation, specifying the target table, source table, merge condition, and delete action for matched rows.
+6. Execute the merge operation using Spark SQL.
+7. Clean up the temporary view.
+8. Return the resulting DataFrame representing the Delta table after duplicate rows have been deleted.
+
+### Usage Example
+
+Here is an example of how to use the `deleteDuplicateRows` function:
+
+```scala
+import org.apache.spark.sql.SparkSession
+
+implicit val spark: SparkSession = SparkSession.builder()
+  .appName("DeltaTableDuplicateRemoval")
+  .master("local")
+  .getOrCreate()
+
+val deltaTablePath = "/path/to/delta/table"
+val keys = Seq("id", "name")
+val updatedAtColumn = Some("updated_at")
+
+// Call the function to delete duplicate rows
+val cleanedDF = deleteDuplicateRows(deltaTablePath, keys, updatedAtColumn)
+
+// Show the result DataFrame
+cleanedDF.show()
+```
+
+Note that this function requires a Delta table and a SparkSession with Delta support enabled.
+
+For more details, you can refer to the [original Gist](https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4).
+
 
 
 ```scala

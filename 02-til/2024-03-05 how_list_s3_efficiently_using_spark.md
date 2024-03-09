@@ -1,6 +1,40 @@
 
 # How to list AWS S3 files efficiently using Spark
 
+## Function Summary: List AWS S3 Files Efficiently using Spark
+
+The `listFiles` function is designed to efficiently list files from an AWS S3 bucket and return the results as a DataFrame using Apache Spark. It recursively lists all files under a specified S3 path prefix and provides details about each file, including the bucket name, ETag, file size, key, and last modified timestamp.
+
+### Parameters:
+- `s3Path`: The S3 path from which files will be listed. It should be in the format "s3://bucket_name/path".
+- `awsRegion` (optional): The AWS region where the S3 bucket is located. Defaults to "eu-west-1".
+- `spark` (implicit): Implicit SparkSession to be used for creating the DataFrame. Defaults to the existing `spark` session.
+
+### Usage Example:
+```scala
+import org.apache.spark.sql.SparkSession
+
+implicit val spark: SparkSession = SparkSession.builder()
+  .appName("S3FileLister")
+  .master("local")
+  .getOrCreate()
+
+val s3Path = "s3://my-bucket/data"
+val awsRegion = "eu-west-1"
+
+// Call the function to list files from S3 and create a DataFrame
+val filesDF = listFiles(s3Path, awsRegion)
+
+// Show the result DataFrame
+filesDF.show()
+```
+
+### Notes:
+- This function requires the AWS SDK for Java and SparkSession with appropriate configurations.
+- Make sure that the AWS credentials are correctly configured in the environment.
+
+Overall, the `listFiles` function provides a convenient and efficient way to list AWS S3 files and create a DataFrame for further analysis or processing using Apache Spark.
+
 [GIST](https://gist.github.com/raphaelmansuy/83c7ffb52c76f66fc8d235483f782f07)
 
 
