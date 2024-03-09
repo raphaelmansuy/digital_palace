@@ -6,6 +6,14 @@ CS 886: Recent Advances on Foundation Models Winter 2024 is a course instructed 
 
 [CS 886](https://cs.uwaterloo.ca/~wenhuche/teaching/cs886/)
 
+
+```cardlink
+url: https://cs.uwaterloo.ca/~wenhuche/teaching/cs886/
+title: "CS 886: Recent Advances on Foundation Models"
+description: "Home page for CS 886"
+host: cs.uwaterloo.ca
+```
+
 ## Andrej Karpathy's YouTube Channel
 
 The YouTube channel of Andrej Karpathy focuses on topics related to deep learning, neural networks, and backpropagation. Andrej Karpathy has been training deep neural networks for over a decade and shares insights into these complex subjects. The channel provides educational content on building micrograd, understanding derivatives, and exploring the intricacies of neural network training. Viewers can expect detailed explanations and tutorials on these advanced topics in the field of artificial intelligence and machine learning.
@@ -13,6 +21,17 @@ The YouTube channel of Andrej Karpathy focuses on topics related to deep learnin
 [YouTube](https://www.youtube.com/@AndrejKarpathy)
 [Playlist](https://www.youtube.com/@AndrejKarpathy/playlists)
 [Neurail Network Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+
+
+```cardlink
+url: https://www.youtube.com/@AndrejKarpathy
+title: "Andrej Karpathy"
+description: "FAQQ: How can I pay you? Do you have a Patreon or etc?A: As YouTube partner I do share in a small amount of the ad revenue on the videos, but I don't maintain any other extra payment channels. I would prefer that people \"pay me back\" by using the knowledge to build something great."
+host: www.youtube.com
+favicon: https://www.youtube.com/s/desktop/29d8088d/img/favicon_32x32.png
+image: https://yt3.googleusercontent.com/ytc/AIdro_n8r_ah4fmhoKuTXWp1Pgtt_8i7tarvZlJ7NSfubjo=s900-c-k-c0x00ffffff-no-rj
+```
+
 
 ## AWS Generative AI DeepDive Study
 
@@ -25,6 +44,16 @@ Once you’ve developed a strong contextual understanding of foundation models a
 Finally, you’ll learn how to apply theory to production by deploying your new foundation model on Amazon SageMaker, including across multiple GPUs and using top design patterns like retrieval augmented generation and chained dialogue. As an added bonus, we’ll walk you through a Stable Diffusion deep dive, prompt engineering best practices, standing up LangChain, and more.
 
 [Generative AI Foundations on AWS Technical Deep Dive Series](https://www.youtube.com/playlist?list=PLhr1KZpdzukf-xb0lmiU3G89GJXaDbAIF)
+
+
+```cardlink
+url: https://www.youtube.com/playlist?list=PLhr1KZpdzukf-xb0lmiU3G89GJXaDbAIF
+title: "Generative AI Foundations on AWS Technical Deep Dive Series"
+description: "Generative AI Foundations on AWS is a technical deep dive course that gives you the conceptual fundamentals, practical advice, and hands-on guidance to pre-t..."
+host: www.youtube.com
+favicon: https://www.youtube.com/s/desktop/29d8088d/img/favicon_32x32.png
+image: https://i.ytimg.com/vi/oYm66fHqHUM/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBEZ-70CTCci4Ij_jcOZn_Rahf4wA&days_since_epoch=19791
+```
 
 ## Applied LLMs Mastery 2024
 
@@ -83,3 +112,28 @@ This course is about learning generative models and different frameworks, with a
 - ⌨️ (26:16:33) End to End Gen AI Project using Google Gemini Pro
 - ⌨️ (28:24:14) Webinar - Generative AI Revolution: The Future
 
+
+```cardlink
+url: https://www.youtube.com/watch?v=mEsleV16qdo
+title: "Generative AI Full Course – Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases & More"
+description: "Learn about generative models and different frameworks, investigating the production of text and visual material produced by artificial intelligence. This co..."
+host: www.youtube.com
+favicon: https://www.youtube.com/s/desktop/29d8088d/img/favicon_32x32.png
+image: https://i.ytimg.com/vi/mEsleV16qdo/maxresdefault.jpg
+```
+
+
+
+## # LLM Learning Lab
+
+[Lightning AI - Learning Lab](https://lightning.ai/pages/llm-learning-lab/?utm_source=akshay) Immerse yourself in a curated collection of blogs, tutorials, and how-to videos to help you unlock the transformative potential of large language models.
+
+
+```cardlink
+url: https://lightning.ai/pages/llm-learning-lab/?utm_source=akshay
+title: "LLM Learning Lab - Lightning AI"
+description: "Immerse yourself in a curated collection of blogs, tutorials, and how-to videos to help you unlock the transformative potential of large language models."
+host: lightning.ai
+favicon: https://lightning.ai/favicon/favicon.ico
+image: https://lightningaidev.wpengine.com/wp-content/uploads/2023/06/llm-1.jpg
+```

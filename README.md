@@ -118,7 +118,9 @@ They can also be a valuable resource for others who are looking to learn and exp
  
 ## Prompt Engineering
 
-[Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
+- [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
+- [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
+
 
 ## Models
 
