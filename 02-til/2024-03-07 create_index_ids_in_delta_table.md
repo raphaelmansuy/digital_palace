@@ -1,5 +1,44 @@
 https://gist.github.com/raphaelmansuy/0de7dd411cc04d2d912d6b4bf11002e9
 
+## Function: create_index_delta
+
+This function is designed to create and update a Delta table by processing JSON files stored in Amazon S3. It performs several steps to filter the files based on their size, construct S3 paths, process the JSON files in chunks, and append the results to the Delta table.
+
+### Problem
+
+When dealing with a large number of JSON files stored in Amazon S3, it can be challenging to efficiently process and update a Delta table with the data from these files. The `create_index_delta` function solves this problem by providing a scalable and optimized approach to filter, process, and append JSON data to a Delta table.
+
+### Approach
+
+1. **File Size Filtering**: The function filters the input `filesDataFrame` to exclude files with a file size less than or equal to zero. This ensures that only valid files are processed.
+
+2. **Construct S3 Paths**: Using the filtered file information, the function constructs S3 paths for each file by concatenating the bucket and key information.
+
+3. **JSON File Processing**: The function builds a Spark schema based on the provided keys. It then reads the JSON files from the constructed S3 paths in chunks without collecting them on the driver. The function uses a chunk size of 100,000 for efficient processing.
+
+4. **Delta Table Initialization**: The function checks if the Delta table at `s3PathDeltaTableOut` exists. If it does not exist, it initializes the Delta table with an empty DataFrame using the provided schema.
+
+5. **Delta Table Processing**: The function initializes a DeltaTable object for the `s3PathDeltaTableOut` and iterates over the chunks of S3 paths. For each chunk, it reads the JSON files using the provided schema and appends the processed data to the Delta table using the "append" mode.
+
+6. **Completion Message**: After processing all the chunks, the function prints a completion message indicating the total number of processed chunks.
+
+### Usage
+
+```scala
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.DataFrame
+
+// Example usage
+val spark = SparkSession.builder().appName("MyApp").getOrCreate()
+
+val filesDataFrame: DataFrame = // Provide your DataFrame of file information
+val keys: Seq[String] = // Provide the keys used to construct the schema
+val s3PathDeltaTableOut: String = // Provide the output path for the Delta table
+
+create_index_delta(filesDataFrame, keys, s3PathDeltaTableOut)(spark)
+```
+
+Note: The function assumes that the necessary Spark and Delta libraries are already imported and available in the environment.
 
 ```scala
 import org.apache.spark.sql.{DataFrame, SparkSession, Dataset, Row}
