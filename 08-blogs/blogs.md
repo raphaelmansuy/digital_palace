@@ -25,3 +25,31 @@ You can contact Vicki at vickiboykis@gmail.com.
 
 [Blog](https://vickiboykis.com/)
 
+## [Anwser.AI R&D Labs](https://www.answer.ai/)
+
+Answer.AI is a new kind of AI R&D lab which creates practical end-user products based on foundational research breakthroughs. To learn more about the research agenda and background behind our work, see our [launch post](https://www.answer.ai/posts/2023-12-12-launch.html) and an [independent analysis](https://www.answer.ai/posts/2024-01-26-freaktakes-lessons.html) of our lab. See below for a complete list of published articles.
+
+```cardlink
+url: https://www.answer.ai/
+title: "Answer.AI - Answer.AI - Practical AI R&D"
+description: "Practical AI R&D"
+host: www.answer.ai
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
