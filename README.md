@@ -159,6 +159,12 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Useful VSCode extensions](10-resources/vscode_extensions.md) 
 - [Open source alternatives to popular products](https://openalternative.co/) Discover **Open Source Alternatives** to Popular Software
+### UX Libraries
+
+- [React Aria](https://react-spectrum.adobe.com/react-aria/index.html)
+- [TaillwindCSS](https://tailwindcss.com/)
+- [shadcn](https://ui.shadcn.com/)
+
 
 ## Useful tools
 
