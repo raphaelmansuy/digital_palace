@@ -174,6 +174,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Shot Scraper](https://shot-scraper.datasette.io/en/stable/)A command-line utility for taking automated screenshots of websites from Simon Willison
 - [ttok](https://github.com/simonw/ttok) Count and truncate text based on tokens from Simon  Willison
+- [github2files](https://github.com/cognitivecomputations/github2file) Create a big files from a GitHub files
 
 ## Articles
 
