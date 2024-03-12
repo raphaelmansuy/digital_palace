@@ -117,6 +117,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [luminal](https://github.com/jafioti/luminal) Deep learning at the speed of light coded in Rust. The aim for 0.3 is to achieve SOTA performance on an M1 pro (50 tok/s), and near SOTA on single nvidia gpus (>100 tok/s)
 - [LLamafile](https://github.com/Mozilla-Ocho/llamafile) Turning a LLM model into a Multiplatform executable
 - [candle](https://github.com/huggingface/candle?tab=readme-ov-file) Minimalist ML framework for Rust. Run and Serve Models in Rust.
+- [Mlx Server](https://www.mlxserver.com/) This Python library is the easist way to begin building on top of Apple's machine learning library MLX
+- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
  
 ## Prompt Engineering
 
