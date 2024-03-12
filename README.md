@@ -93,6 +93,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [instructor](https://jxnl.github.io/instructor/) Instructor makes it easy to reliably get structured data like JSON from Large Language Models (LLMs) like GPT-3.5, GPT-4, GPT-4-Vision, including open source models like Mistral/Mixtral from [Together](https://jxnl.github.io/instructor/hub/together/), [Anyscale](https://jxnl.github.io/instructor/hub/anyscale/), [Ollama](https://jxnl.github.io/instructor/hub/ollama/), and [llama-cpp-python](https://jxnl.github.io/instructor/hub/llama-cpp-python/).
 - [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust. 
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
+- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
 
 ## AI Command tools
 
