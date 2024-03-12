@@ -1,4 +1,5 @@
-#  AICI: Empowering Developers to Shape LLM Output in Real-Time ... thanks to WebAssembly .. 
+
+# Real-time Shaping of Language Model Outputs using AICI and WebAssembly
 
 ## Introduction
 
