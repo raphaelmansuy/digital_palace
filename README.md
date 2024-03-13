@@ -104,6 +104,10 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter) A natural language interface for computers
 
+## Mac App
+
+- [Enchanted](https://github.com/AugustDev/enchanted) Enchanted is iOS and macOS app for chatting with private self hosted language models such as Llama2, Mistral or Vicuna using Ollama.
+
 ## Serving LLMS
 
 ### Tools
