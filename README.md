@@ -94,6 +94,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust. 
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
+- [Flowneum](https://github.com/floneum/floneum) A toolkit for controllable, private AI on consumer hardware in rust
 
 ## AI Command tools
 
@@ -123,7 +124,10 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [candle](https://github.com/huggingface/candle?tab=readme-ov-file) Minimalist ML framework for Rust. Run and Serve Models in Rust.
 - [Mlx Server](https://www.mlxserver.com/) This Python library is the easist way to begin building on top of Apple's machine learning library MLX
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
- 
+
+
+
+
 ## Prompt Engineering
 
 - [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
@@ -145,7 +149,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) LeaderBoard for function calling
 - [OpenLLMs Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 📐 The 🤗 Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
 - [HumanEval Leaderboard](https://evalplus.github.io/leaderboard.html) # 🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests
-- 
+-
 
 ## Synthetic data generation
 
