@@ -21,7 +21,9 @@ interpreter --model command-nightly
 
 ```text
 
-Your task:
+Your task Write a python 3.11 program, with bs4
+
+The program will do:
 
 Download the latest article about "Articial Intelligence" submited today and saved it to a file called with format "YYYY-MM-DD-arxiv".md on https://arxiv.org/search/cs?query=artificial+intelligence&searchtype=all&abstracts=show&order=-submitted_date&size=200.
 
