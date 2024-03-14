@@ -142,3 +142,13 @@ image: https://lightningaidev.wpengine.com/wp-content/uploads/2023/06/llm-1.jpg
 ## [Deep Mind](https://learn.deeplearning.ai/)
 
 DeepLearning.AI Short Courses
+
+## [Spreadsheet is all you need](https://spreadsheets-are-all-you-need.ai/index.html#watch-the-lessons)
+
+
+```cardlink
+url: https://spreadsheets-are-all-you-need.ai/index.html#watch-the-lessons
+title: "Spreadsheets are all you need.ai – A low-code way to learn AI"
+host: spreadsheets-are-all-you-need.ai
+```
+
