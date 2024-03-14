@@ -142,6 +142,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Gorilla OpenFunction](https://gorilla.cs.berkeley.edu/blogs/7_open_functions_v2.html)  🦍 Gorilla: Large Language Model Connected with Massive APIs
 - [Models list](https://book.premai.io/state-of-open-source-ai/models/) Open Sources model list
+- [NousResearch/Nous-Hermes-llama-2-7b](https://huggingface.co/NousResearch/Nous-Hermes-llama-2-7b/tree/main)
+
 
 
 ## LLM Leaderboard

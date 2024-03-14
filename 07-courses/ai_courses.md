@@ -137,3 +137,8 @@ host: lightning.ai
 favicon: https://lightning.ai/favicon/favicon.ico
 image: https://lightningaidev.wpengine.com/wp-content/uploads/2023/06/llm-1.jpg
 ```
+
+
+## [Deep Mind](https://learn.deeplearning.ai/)
+
+DeepLearning.AI Short Courses
