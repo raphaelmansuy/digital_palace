@@ -126,7 +126,10 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
 - [List of tools that serves AI locally](https://github.com/janhq/awesome-local-ai) An awesome repository of local AI tools
 
+## Agents
 
+- [MegaGPT](https://github.com/geekan/MetaGPT/tree/main)The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo
+- [CrewAI](https://github.com/joaomdmoura/crewAI) Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
 
 
 
