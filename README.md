@@ -91,6 +91,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 	- [Hub](https://huggingface.co/docs/hub/index) Your starting point to HuggingFace
 	- [cli](https://huggingface.co/docs/huggingface_hub/en/guides/cli) Command Line Interface (CLI)
 - [instructor](https://jxnl.github.io/instructor/) Instructor makes it easy to reliably get structured data like JSON from Large Language Models (LLMs) like GPT-3.5, GPT-4, GPT-4-Vision, including open source models like Mistral/Mixtral from [Together](https://jxnl.github.io/instructor/hub/together/), [Anyscale](https://jxnl.github.io/instructor/hub/anyscale/), [Ollama](https://jxnl.github.io/instructor/hub/ollama/), and [llama-cpp-python](https://jxnl.github.io/instructor/hub/llama-cpp-python/).
+- [instructor_ex](https://github.com/thmsmlr/instructor_ex) (Elixir version of Instructor)
 - [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust. 
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
