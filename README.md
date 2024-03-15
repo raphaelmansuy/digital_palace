@@ -126,6 +126,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Mlx Server](https://www.mlxserver.com/) This Python library is the easist way to begin building on top of Apple's machine learning library MLX
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
 - [List of tools that serves AI locally](https://github.com/janhq/awesome-local-ai) An awesome repository of local AI tools
+- [Skypilot](https://skypilot.readthedocs.io/en/latest/#)SkyPilot is a framework for running LLMs, AI, and batch jobs on any cloud, offering maximum cost savings, highest GPU availability, and managed execution.
 
 ## Agents
 
