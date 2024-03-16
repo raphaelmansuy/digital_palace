@@ -23,6 +23,9 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 👉 [Todays I Learned](/02-til/README.md)
 
+## Generative AI Use cases
+
+- [Generative AI Business Use Cases](01-articles/genai_business_use_cases)
 ##  Courses and lectures
 
 - [AI Courses](07-courses/ai_courses.md)
