@@ -105,6 +105,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Flowneum](https://github.com/floneum/floneum) A toolkit for controllable, private AI on consumer hardware in rust
 - [Kalosm](https://floneum.com/kalosm/) Kalosm is an open source framework for private language, audio, and image models in Rust
 - [PhiData](https://docs.phidata.com/introduction) Phidata is a toolkit for building AI Assistants using function calling.
+- [Microsoft AutoDev](https://github.com/unit-mesh/auto-dev) 🧙‍AutoDev: The AI-powered coding wizard with multilingual support
 
 ## AI Command tools
 
