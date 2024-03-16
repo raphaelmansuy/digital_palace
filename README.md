@@ -53,6 +53,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
+- [Mastering the Art of Training Large Language Models from Scratch](./01-articles/training_an_llm)
 
 
 ## LLMs implementation
@@ -96,6 +97,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
 - [Flowneum](https://github.com/floneum/floneum) A toolkit for controllable, private AI on consumer hardware in rust
+- [Kalosm](https://floneum.com/kalosm/) Kalosm is an open source framework for private language, audio, and image models in Rust
+- [PhiData](https://docs.phidata.com/introduction) Phidata is a toolkit for building AI Assistants using function calling.
 
 ## AI Command tools
 
