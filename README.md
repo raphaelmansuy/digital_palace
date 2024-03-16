@@ -10,7 +10,9 @@ With my palace being public, anyone can read my entries, view my content, and le
 
 In summary, my Digital Palace provides an engaging platform for public self-expression, reflection, and sharing memories.
 
+
 [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
+
 ## Today I Learned (TIL)
 
 The goal of a "Today I Learned" (TIL) journal is to document and reflect upon something new or interesting that you have learned on a given day.
@@ -25,7 +27,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 ## Generative AI Use cases
 
-- [Generative AI Business Use Cases](01-articles/genai_business_use_cases)
+- [Generative AI Business Use Cases](01-articles/genai_business_use_cases.md)
 ##  Courses and lectures
 
 - [AI Courses](07-courses/ai_courses.md)
