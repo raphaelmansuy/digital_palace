@@ -1,10 +1,10 @@
 
-# Large Language Model Engineering
+# Comprehensive Guide to Large Language Model Engineering
 
 ## 1. Data Acquisition and Preprocessing
 1. Web Data Collection (crawling, scraping, parsing)
 2. Corpus Creation and Cleaning (deduplication, filtering)  
-3. Data Augmentation Techniques (back-translation, word replacements)
+3. [Data Augmentation Techniques (back-translation, word replacements)](llm_data_acquisition_augmentation_technique)
 4. Data Labeling and Annotation
 
 ## 2. Model Architectures  
