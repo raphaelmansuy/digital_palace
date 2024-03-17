@@ -61,13 +61,44 @@ image: https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerro
 
 
 
+## [Geoffrey Litt](https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming)
+
+Musings on user agency in computing and the future of programming tools
+
+```cardlink
+url: https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming
+title: "Malleable software in the age of LLMs"
+description: "All computer users may soon have the ability to author small bits of code. What structural changes does this imply for the production and distribution of software?"
+host: www.geoffreylitt.com
+image: https://geoffreylitt.com/images/article_images/llm-eup/robot-coding.png
+```
 
 
+```cardlink
+url: https://www.geoffreylitt.com/2023/07/25/building-personal-tools-on-the-fly-with-llms
+title: "Codifying a ChatGPT workflow into a malleable GUI"
+description: "Wouldn't it be neat if you could use LLMs to create little personal utility apps as the need arises? Here's a story where I did just that..."
+host: www.geoffreylitt.com
+image: https://geoffreylitt.com/images/article_images/texting-app-teaser.png
+```
 
 
+```cardlink
+url: https://www.geoffreylitt.com/2023/01/08/for-your-next-side-project-make-a-browser-extension
+title: "For your next side project, make a browser extension"
+description: "Reflections on the benefits of tweaking an existing app, instead of starting from scratch."
+host: www.geoffreylitt.com
+image: https://geoffreylitt.com/images/article_images/gears.jpg
+```
 
 
-
+```cardlink
+url: https://www.geoffreylitt.com/2020/09/21/twitter-and-media-for-sketching
+title: "How tweet threads cured my writer's block: Twitter as a medium for sketching"
+description: "Twitter is a powerful <b>medium for sketching</b>: a tool for fluidly developing ideas in realtime. What can we learn from its design? I think it shows us the power of 1) the right constraints, 2) low barriers to starting and finishing, and 3) a social context."
+host: www.geoffreylitt.com
+image: https://geoffreylitt.com/images/gradient.jpg
+```
 
 
 
