@@ -32,6 +32,19 @@ favicon: https://www.youtube.com/s/desktop/29d8088d/img/favicon_32x32.png
 image: https://yt3.googleusercontent.com/ytc/AIdro_n8r_ah4fmhoKuTXWp1Pgtt_8i7tarvZlJ7NSfubjo=s900-c-k-c0x00ffffff-no-rj
 ```
 
+## Maxime Labonne LLM Course 
+
+[Course](https://github.com/mlabonne/llm-course)
+
+
+```cardlink
+url: https://github.com/mlabonne/llm-course
+title: "GitHub - mlabonne/llm-course: Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
+description: "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks. - mlabonne/llm-course"
+host: github.com
+favicon: https://github.githubassets.com/favicons/favicon.svg
+image: https://opengraph.githubassets.com/c98c6c525abff2ab8401f4b2a97650b46e813491ef1b20f089cbfdfbf9f16b18/mlabonne/llm-course
+```
 
 ## AWS Generative AI DeepDive Study
 
