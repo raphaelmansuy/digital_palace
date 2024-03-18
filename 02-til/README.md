@@ -30,4 +30,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [How to Deduplicate a DeltaTable](2024-03-05%20how_to_deduplicate_a_delta_table.md.md)
 - [How to efficiently list all the files recursively at a AWS path and return a Spark DataFrame as result](2024-03- how_to_list_files_efficiently_on_aws_s3.md)
 - [How to create an index of all the ids by file and store in a Delta Table](2024-03-07  create_index_ids_in_delta_table.md)
+- [How to quantize a model with LLamaCPP](2024-03-18-%20how_quantize_a_model_with_lamacpp.md)
 - 

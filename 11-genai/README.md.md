@@ -60,7 +60,7 @@ _Under construction_🏗️  ...
 
 ## 10. Model Compression and Acceleration
 1. Knowledge Distillation
-2. Quantization and Pruning
+2. [Quantization and Pruning](quantization_and_pruning)
 3. Neural Architecture Search
 
 ## 11. Robustness and Security
