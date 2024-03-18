@@ -3,3 +3,4 @@
 
 
 https://github.com/raycast/script-commands
+
