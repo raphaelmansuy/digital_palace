@@ -22,6 +22,7 @@ _Under construction_🏗️  ...
 4. Optimization (SGD, Adam, learning rate schedules)
 5. Regularization (dropout, weight decay, early stopping)
 6. Distributed and Parallel Training   
+7. [Strategy to pretrain a model](strategy_to_pretrain_a_model)
 
 ## 4. Evaluation and Benchmarking
 1. Language Modeling Metrics (perplexity, cross-entropy)

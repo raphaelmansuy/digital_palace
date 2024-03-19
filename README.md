@@ -79,6 +79,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Fine-tuning language models improves performance by enhancing existing mechanisms rather than creating new ones, as evidenced by consistent circuit functionality in entity tracking tasks](https://finetuning.baulab.info/)
 
 - [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka)
+- [Binary Embeddings Cohere](https://txt.cohere.com/int8-binary-embeddings/)
 
 ## LLM Applications
 
