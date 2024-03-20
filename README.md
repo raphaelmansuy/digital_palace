@@ -109,6 +109,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [PhiData](https://docs.phidata.com/introduction) Phidata is a toolkit for building AI Assistants using function calling.
 - [Microsoft AutoDev](https://github.com/unit-mesh/auto-dev) 🧙‍AutoDev: The AI-powered coding wizard with multilingual support
 - [Cognee](https://github.com/topoteretes/cognee?tab=readme-ov-file) Memory management for the AI Applications and AI Agents
+- [MelloTTS](https://github.com/myshell-ai/MeloTTS) High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean.
 
 ## AI Command tools
 
