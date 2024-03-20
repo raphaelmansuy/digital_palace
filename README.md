@@ -119,6 +119,12 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [plock](https://github.com/jasonjmcghee/plock) From anywhere you can type, query and stream the output of an LLM or any other script
 - [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
 
+## Controlling the generation of LLMs during decoding
+
+- [Guidance](https://github.com/guidance-ai/guidance) A guidance language for controlling large language models.
+- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
+- [Representation Ingeneering](https://vgel.me/posts/representation-engineering/) Representation Engineering Mistral-7B an Acid Trip 💊
+
 
 ## Mac App
 
