@@ -172,6 +172,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Models list](https://book.premai.io/state-of-open-source-ai/models/) Open Sources model list
 - [NousResearch/Nous-Hermes-llama-2-7b](https://huggingface.co/NousResearch/Nous-Hermes-llama-2-7b/tree/main)
 - [Ollama version of Nous-Hermes2Pro][https://ollama.com/adrienbrault/nous-hermes2pro]
+- [LLavaNext](https://huggingface.co/spaces/merve/llava-next) LLaVA-NeXT is recently merged to transformers and it outperforms many of the proprietary models like Gemini on various benchmarks!  
+- [Startling LM 7B Beta](https://huggingface.co/Nexusflow/Starling-LM-7B-beta) The best 7B Models - **Finetuned from model:** [Openchat-3.5-0106](https://huggingface.co/openchat/openchat-3.5-0106) (based on [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1)) - From Berkeley https://starling.cs.berkeley.edu/ 
 
 
 
@@ -194,6 +196,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) 5X faster 60% less memory QLoRA finetuning
 - [Documentation from Premai about Finetuning ](https://book.premai.io/state-of-open-source-ai/fine-tuning/)
+- [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) Unify Efficient Fine-tuning of 100+ LLMs
 
 
 ## AI and Ethics
