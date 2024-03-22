@@ -115,6 +115,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [llms](https://llm.datasette.io/en/stable/) A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine. By [Simon Willison](https://simonwillison.net/)
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) A natural language interface for computers
+- [Documentation Open Interpreter](https://docs.openinterpreter.com/getting-started/introduction) A new way to use computers
 - [whisper](https://github.com/openai/whisper) Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
 - [plock](https://github.com/jasonjmcghee/plock) From anywhere you can type, query and stream the output of an LLM or any other script
 - [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
