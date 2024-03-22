@@ -148,13 +148,13 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
 - [List of tools that serves AI locally](https://github.com/janhq/awesome-local-ai) An awesome repository of local AI tools
 - [Skypilot](https://skypilot.readthedocs.io/en/latest/#)SkyPilot is a framework for running LLMs, AI, and batch jobs on any cloud, offering maximum cost savings, highest GPU availability, and managed execution.
+- [Jan](https://github.com/janhq/jan) Jan is an open source alternative to ChatGPT that runs 100% offline on your computer
 
 ## Agents
 
 - [MegaGPT](https://github.com/geekan/MetaGPT/tree/main)The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo
 - [CrewAI](https://github.com/joaomdmoura/crewAI) Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
-
-
+-  [Devika](https://github.com/stitionai/devika) Devika is an Agentic AI Software Engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve the given objective. Devika aims to be a competitive open-source alternative to Devin by Cognition AI.
 
 ## Prompt Engineering
 
@@ -190,6 +190,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 - [Bonito](https://github.com/BatsResearch/bonito) A lightweight library for generating synthetic instruction tuning datasets for your data without GPT.
 
+
 ## Fine tuning
 
 ### Tools
@@ -197,11 +198,18 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) 5X faster 60% less memory QLoRA finetuning
 - [Documentation from Premai about Finetuning ](https://book.premai.io/state-of-open-source-ai/fine-tuning/)
 - [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) Unify Efficient Fine-tuning of 100+ LLMs
+- [peft](https://github.com/huggingface/peft) 🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.
+- [Tochtune](https://github.com/pytorch/torchtune) A Native-PyTorch Library for LLM Fine-tuning
 
+## Computing
+
+[Lighting thunder](https://github.com/Lightning-AI/lightning-thunder) Source to source compiler for PyTorch. It makes PyTorch programs faster on single accelerators and distributed.
 
 ## AI and Ethics
 
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
+
+
 
 ## Development
 
