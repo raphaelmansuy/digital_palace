@@ -1,1 +1,1 @@
-[Rust for the impatients](rust_for_the_impatients)
+[Rust for the impatients](07-courses/rust_for_the_impatients.md)

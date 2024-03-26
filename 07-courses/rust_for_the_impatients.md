@@ -673,9 +673,8 @@ let non_existent_score = scores.get("Green"); // None
 HashSets are collections of unique values, with constant-time insertion, removal, and membership testing.
 
 ```rust
-use std::collections::HashSet;Here's the continuation of the Rust tutorial:
+use std::collections::HashSet;
 
-```rust
 let mut numbers = HashSet::new();
 numbers.insert(2);
 numbers.insert(4);
