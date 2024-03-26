@@ -200,6 +200,7 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) Unify Efficient Fine-tuning of 100+ LLMs
 - [peft](https://github.com/huggingface/peft) 🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.
 - [Tochtune](https://github.com/pytorch/torchtune) A Native-PyTorch Library for LLM Fine-tuning
+- [LLMTuner](https://github.com/promptslab/LLMTuner) Tune LLM in few lines of code
 
 ## Computing
 
