@@ -210,6 +210,11 @@ They can also be a valuable resource for others who are looking to learn and exp
 [How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
 
 
+## AI Devices
+
+- [Friend](https://github.com/BasedHardware/friend) AI wearable with 24h+ battery
+- [Whomane](https://github.com/BasedHardware/Whomane) An open source wearable with camera
+
 
 ## Development
 
