@@ -312,9 +312,7 @@ In many cases, Rust can infer lifetimes automatically through lifetime elision r
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {
         x
-    } else {Here's the continuation of the comprehensive Rust tutorial:
-
-```rust
+    } else {
         y
     }
 }
@@ -1053,7 +1051,7 @@ fn main() {
 }
 ```
 
-In this example, we define a simple `Future` called `MyFuture` that immediately returns the value `42`. We then create an `async` function `async_example` that awaits the `MyFuHere's the continuation of the Rust tutorial:
+In this example, we define a simple `Future` called `MyFuture` that immediately returns the value `42`. We then create an `async` function `async_example` that awaits the `MyFuHere's 
 
 ## 9. Macros, Metaprogramming, and Unsafe Rust
 
@@ -1405,9 +1403,7 @@ pub fn run() {
 
     let document = window().unwrap().document().unwrap();
     let body = document.body().unwrap();
-    let heading = document.create_element("h1").unwrap();Here's the continuation of the Rust tutorial:
-
-```rust
+    let heading = document.create_element("h1").unwrap();
     heading.set_text_content(Some("Hello from Rust!"));
     body.append_child(&heading).unwrap();
 }
