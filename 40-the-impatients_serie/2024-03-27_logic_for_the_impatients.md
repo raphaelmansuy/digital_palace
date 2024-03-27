@@ -1966,3 +1966,455 @@ The exam includes a mix of translation, interpretation, proofs, and conceptual q
    Then f is injective (one-to-one) but not surjective (onto), as 4 ∈ B is not in the range of f.
 
 This correction key provides the solutions and explanations for each question in the Predicate Logic Mock Exam. It includes the translations of English sentences into predicate logic, interpretations of predicate logic formulas, predicate logic proofs using various methods (universal instantiation, existential instantiation, modus ponens, modus tollens, conditional proof, etc.), and the solutions to the advanced topics questions involving set theory and functions.
+
+
+----
+
+Certainly! Here's a comprehensive chapter on various types of induction, including detailed step-by-step examples for each technique.
+
+# Chapter: Induction Techniques
+
+Induction is a powerful proof technique used to establish the truth of a statement for all natural numbers or to prove properties of recursively defined datatypes. In this chapter, we will explore different types of induction and provide detailed examples to illustrate each technique.
+
+## Ordinary Induction over N
+
+Ordinary induction, also known as mathematical induction, is used to prove statements that involve natural numbers. It consists of two steps: the base case and the inductive step.
+
+Example: Prove that the sum of the first n positive odd numbers is equal to n^2.
+
+Step 1: Base case (n = 1)
+For n = 1, the sum of the first odd number is 1, which is equal to 1^2. The base case holds.
+
+Step 2: Inductive step
+Assume that the statement holds for n = k, i.e., the sum of the first k positive odd numbers is equal to k^2. We want to prove that the statement also holds for n = k + 1.
+
+Let's consider the sum of the first k + 1 positive odd numbers:
+(1 + 3 + 5 + ... + (2k - 1)) + (2(k + 1) - 1)
+
+By the inductive hypothesis, we know that:
+1 + 3 + 5 + ... + (2k - 1) = k^2
+
+Adding the next odd number (2(k + 1) - 1) to both sides:
+k^2 + (2(k + 1) - 1) = k^2 + 2k + 1 = (k + 1)^2
+
+Therefore, the sum of the first k + 1 positive odd numbers is equal to (k + 1)^2, which is what we wanted to prove.
+
+By the principle of mathematical induction, the statement holds for all natural numbers n.
+
+## Two-Step Induction over N
+
+Two-step induction is a variation of ordinary induction where the inductive hypothesis assumes that the statement holds for the previous two cases.
+
+Example: Prove that the Fibonacci sequence, defined by F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n ≥ 2, satisfies the inequality F(n) ≤ 2^n for all natural numbers n.
+
+Step 1: Base cases (n = 0 and n = 1)
+For n = 0, F(0) = 0 ≤ 2^0 = 1. The base case holds.
+For n = 1, F(1) = 1 ≤ 2^1 = 2. The base case holds.
+
+Step 2: Inductive step
+Assume that the statement holds for n = k-1 and n = k, i.e., F(k-1) ≤ 2^(k-1) and F(k) ≤ 2^k. We want to prove that the statement also holds for n = k + 1.
+
+Consider F(k + 1):
+F(k + 1) = F(k) + F(k - 1)
+
+By the inductive hypothesis:
+F(k) ≤ 2^k and F(k - 1) ≤ 2^(k - 1)
+
+Adding these inequalities:
+F(k + 1) ≤ 2^k + 2^(k - 1) = 2^k + 2^k / 2 = 3 * 2^(k - 1) ≤ 2^(k + 1)
+
+Therefore, F(k + 1) ≤ 2^(k + 1), which is what we wanted to prove.
+
+By the principle of two-step induction, the statement holds for all natural numbers n.
+
+## Recursive Functions over Datatypes
+
+Induction can also be used to prove properties of recursively defined functions over datatypes such as lists and trees.
+
+Example: Prove that the length of the concatenation of two lists is equal to the sum of their individual lengths.
+
+Let's define the length function for lists:
+- length([]) = 0
+- length(x:xs) = 1 + length(xs)
+
+And the concatenation function:
+- concat([], ys) = ys
+- concat(x:xs, ys) = x : concat(xs, ys)
+
+We want to prove that length(concat(xs, ys)) = length(xs) + length(ys) for all lists xs and ys.
+
+Step 1: Base case (xs = [])
+length(concat([], ys))
+= length(ys)
+= 0 + length(ys)
+= length([]) + length(ys)
+
+The base case holds.
+
+Step 2: Inductive step
+Assume that the statement holds for xs, i.e., length(concat(xs, ys)) = length(xs) + length(ys). We want to prove that the statement also holds for x:xs.
+
+length(concat(x:xs, ys))
+= length(x : concat(xs, ys))
+= 1 + length(concat(xs, ys))
+= 1 + (length(xs) + length(ys)) (by the inductive hypothesis)
+= (1 + length(xs)) + length(ys)
+= length(x:xs) + length(ys)
+
+Therefore, the statement holds for x:xs.
+
+By structural induction on lists, the statement holds for all lists xs and ys.
+
+## Structural Induction over Datatypes
+
+Structural induction is used to prove properties of recursively defined datatypes, such as lists and trees. The inductive cases correspond to the constructors of the datatype.
+
+Example: Prove that the size of a binary tree is equal to the sum of the sizes of its left and right subtrees plus one.
+
+Let's define the size function for binary trees:
+- size(Leaf) = 1
+- size(Node left _ right) = size(left) + size(right) + 1
+
+We want to prove that size(tree) = size(left) + size(right) + 1 for all binary trees, where left and right are the left and right subtrees of the tree, respectively.
+
+Step 1: Base case (tree = Leaf)
+size(Leaf) = 1 = 1 + 0 + 0 = size(Leaf) + size(Leaf) + 1
+
+The base case holds.
+
+Step 2: Inductive step
+Assume that the statement holds for the left and right subtrees of a tree, i.e., size(left) = size(left.left) + size(left.right) + 1 and size(right) = size(right.left) + size(right.right) + 1. We want to prove that the statement also holds for Node left _ right.
+
+size(Node left _ right)
+= size(left) + size(right) + 1
+= (size(left.left) + size(left.right) + 1) + (size(right.left) + size(right.right) + 1) + 1 (by the inductive hypothesis)
+= (size(left.left) + size(left.right)) + (size(right.left) + size(right.right)) + 1 + 1 + 1
+= size(left) + size(right) + 1
+
+Therefore, the statement holds for Node left _ right.
+
+By structural induction on binary trees, the statement holds for all binary trees.
+
+## Complete (Strong) Induction
+
+Complete induction, also known as strong induction, is a variant of mathematical induction where the inductive hypothesis assumes that the statement holds for all values less than or equal to n.
+
+Example: Prove that every positive integer greater than 1 is either prime or can be written as a product of primes.
+
+Step 1: Base case (n = 2)
+The number 2 is prime, so the statement holds for n = 2.
+
+Step 2: Inductive step
+Assume that the statement holds for all positive integers less than or equal to k, i.e., every number from 2 to k is either prime or can be written as a product of primes. We want to prove that the statement also holds for n = k + 1.
+
+Consider the number k + 1. There are two possibilities:
+1. If k + 1 is prime, then the statement holds for k + 1.
+2. If k + 1 is not prime, then it can be written as a product of two factors a and b, where 1 < a, b < k + 1. By the inductive hypothesis, both a and b are either prime or can be written as a product of primes. Therefore, k + 1 can be written as a product of primes.
+
+In both cases, the statement holds for k + 1.
+
+By the principle of complete induction, the statement holds for all positive integers greater than 1.
+
+## Infinite Descent
+
+Infinite descent is a proof technique that relies on the well-ordering principle of the natural numbers. It is often used to prove the impossibility of certain statements by showing that their existence would lead to an infinite sequence of strictly decreasing positive integers, which is impossible.
+
+Example: Prove that the square root of 2 is irrational.
+
+Proof by contradiction and infinite descent:
+Assume that the square root of 2 is rational. Then, it can be written as a fraction a/b in lowest terms, where a and b are positive integers with no common factors.
+
+Squaring both sides: (a/b)^2 = 2
+Multiplying by b^2: a^2 = 2b^2
+This means that a^2 is even, so a must also be even. Let a = 2c for some integer c.
+
+Substituting a = 2c into the equation a^2 = 2b^2:
+(2c)^2 = 2b^2
+4c^2 = 2b^2
+2c^2 = b^2
+This means that b^2 is even, so b must also be even.
+
+However, we assumed that a/b was in lowest terms, meaning that a and b have no common factors. This contradiction implies that our initial assumption was false.
+
+Therefore, the square root of 2 is irrational.
+
+In this proof, we showed that assuming the square root of 2 is rational leads to an infinite sequence of strictly decreasing positive integers (the common factor of a and b), which is impossible. This contradiction proves that the square root of 2 must be irrational.
+
+These examples demonstrate the power and versatility of induction techniques in proving statements and properties across various domains, from natural numbers to recursively defined datatypes. By mastering these techniques, you can tackle a wide range of problems and develop a deeper understanding of the underlying mathematical structures.
+
+----
+Certainly! Here's a full mock exam on the chapter "Induction Techniques":
+
+# Mock Exam: Induction Techniques
+
+## Question 1: Ordinary Induction over N (10 points)
+Prove that for any positive integer n, the sum of the first n positive integers is equal to n(n+1)/2.
+
+## Question 2: Two-Step Induction over N (15 points)
+Consider the sequence defined by a(0) = 1, a(1) = 2, and a(n) = 3a(n-1) - 2a(n-2) for n ≥ 2. Prove that a(n) = 2^n + 1 for all natural numbers n.
+
+## Question 3: Recursive Functions over Datatypes (20 points)
+Given the following definition of a binary tree and a function to compute its height:
+
+```
+data Tree = Leaf | Node Tree Int Tree
+
+height :: Tree -> Int
+height Leaf = 0
+height (Node left _ right) = 1 + max (height left) (height right)
+```
+
+Prove that for any binary tree t, the height of t is greater than or equal to the number of nodes in the longest path from the root to a leaf.
+
+## Question 4: Structural Induction over Datatypes (20 points)
+Consider the following definition of a natural number datatype:
+
+```
+data Nat = Zero | Succ Nat
+```
+
+Define a function `double` that takes a natural number and returns its double:
+
+```
+double :: Nat -> Nat
+double Zero = Zero
+double (Succ n) = Succ (Succ (double n))
+```
+
+Prove by structural induction that for any natural number n, `double (double n) = quadruple n`, where `quadruple n` is defined as `double (double n)`.
+
+## Question 5: Complete (Strong) Induction (15 points)
+Prove that every positive integer can be written as a sum of distinct powers of 2 (i.e., in binary representation).
+
+## Question 6: Infinite Descent (20 points)
+Prove that there are no positive integer solutions to the equation a^4 + b^4 = c^4.
+
+## Bonus Question: Induction in Action (10 points)
+The Fibonacci sequence is defined by F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n ≥ 2. Prove that for any positive integer n, F(n+1) * F(n-1) - F(n)^2 = (-1)^n.
+
+---
+
+This mock exam covers various types of induction techniques, including ordinary induction over natural numbers, two-step induction, recursive functions and structural induction over datatypes, complete (strong) induction, and infinite descent. The questions are designed to test your understanding and application of these techniques in different contexts.
+
+The exam has a total of 100 points, with an additional 10 bonus points available. The points for each question are indicated next to the question number.
+
+To answer these questions, you should provide clear and concise proofs, following the appropriate induction technique for each question. Make sure to state your base case(s), inductive hypothesis, and inductive step(s) clearly, and justify each step of your proof.
+
+Good luck!
+
+---------
+Certainly! Here's the correction for the mock exam on "Induction Techniques":
+
+## Question 1: Ordinary Induction over N (10 points)
+Prove that for any positive integer n, the sum of the first n positive integers is equal to n(n+1)/2.
+
+Proof:
+Let P(n) be the statement that the sum of the first n positive integers is equal to n(n+1)/2.
+
+Base case (n = 1): P(1) = 1 = 1(1+1)/2 = 1. The base case holds.
+
+Inductive step: Assume P(k) holds for some positive integer k. We want to prove that P(k+1) also holds.
+Assume: 1 + 2 + ... + k = k(k+1)/2
+We want to prove: 1 + 2 + ... + k + (k+1) = (k+1)(k+2)/2
+
+1 + 2 + ... + k + (k+1)
+= [1 + 2 + ... + k] + (k+1)
+= k(k+1)/2 + (k+1) (by the inductive hypothesis)
+= (k^2 + k)/2 + (2k + 2)/2
+= (k^2 + 3k + 2)/2
+= (k+1)(k+2)/2
+
+Therefore, P(k+1) holds. By the principle of mathematical induction, P(n) holds for all positive integers n.
+
+## Question 2: Two-Step Induction over N (15 points)
+Consider the sequence defined by a(0) = 1, a(1) = 2, and a(n) = 3a(n-1) - 2a(n-2) for n ≥ 2. Prove that a(n) = 2^n + 1 for all natural numbers n.
+
+Proof:
+Let P(n) be the statement that a(n) = 2^n + 1.
+
+Base cases:
+P(0): a(0) = 1 = 2^0 + 1. The base case holds.
+P(1): a(1) = 2 = 2^1 + 1. The base case holds.
+
+Inductive step: Assume P(k) and P(k-1) hold for some integer k ≥ 1. We want to prove that P(k+1) also holds.
+Assume: a(k) = 2^k + 1 and a(k-1) = 2^(k-1) + 1
+We want to prove: a(k+1) = 2^(k+1) + 1
+
+a(k+1)
+= 3a(k) - 2a(k-1) (by the definition of the sequence)
+= 3(2^k + 1) - 2(2^(k-1) + 1) (by the inductive hypothesis)
+= 3 · 2^k + 3 - 2 · 2^(k-1) - 2
+= 3 · 2^k - 2 · 2^(k-1) + 1
+= 2 · 2^k + 2^k + 1
+= 2^(k+1) + 1
+
+Therefore, P(k+1) holds. By the principle of two-step induction, P(n) holds for all natural numbers n.
+
+## Question 3: Recursive Functions over Datatypes (20 points)
+Given the following definition of a binary tree and a function to compute its height:
+
+```
+data Tree = Leaf | Node Tree Int Tree
+
+height :: Tree -> Int
+height Leaf = 0
+height (Node left _ right) = 1 + max (height left) (height right)
+```
+
+Prove that for any binary tree t, the height of t is greater than or equal to the number of nodes in the longest path from the root to a leaf.
+
+Proof:
+Let P(t) be the statement that the height of t is greater than or equal to the number of nodes in the longest path from the root to a leaf.
+
+Base case (t = Leaf):
+The height of a Leaf is 0, and the longest path from the root to a leaf in a Leaf has 0 nodes. Therefore, P(Leaf) holds.
+
+Inductive step:
+Assume P(left) and P(right) hold for the left and right subtrees of a tree t = Node left _ right. We want to prove that P(t) also holds.
+
+Let n be the number of nodes in the longest path from the root to a leaf in t.
+The longest path in t is either:
+1. The longest path in the left subtree, or
+2. The longest path in the right subtree, or
+3. The path from the root to the leaf with the maximum number of nodes among the left and right subtrees.
+
+In case 1: n = n_left, where n_left is the number of nodes in the longest path in the left subtree.
+By the inductive hypothesis, height left ≥ n_left.
+Therefore, height t = 1 + max (height left) (height right) ≥ 1 + height left ≥ 1 + n_left = n + 1 > n.
+
+In case 2: n = n_right, where n_right is the number of nodes in the longest path in the right subtree.
+By the inductive hypothesis, height right ≥ n_right.
+Therefore, height t = 1 + max (height left) (height right) ≥ 1 + height right ≥ 1 + n_right = n + 1 > n.
+
+In case 3: n = 1 + max n_left n_right, where n_left and n_right are the number of nodes in the longest paths in the left and right subtrees, respectively.
+By the inductive hypothesis, height left ≥ n_left and height right ≥ n_right.
+Therefore, height t = 1 + max (height left) (height right) ≥ 1 + max n_left n_right = n.
+
+In all cases, P(t) holds. By structural induction on binary trees, P(t) holds for all binary trees t.
+
+## Question 4: Structural Induction over Datatypes (20 points)
+Consider the following definition of a natural number datatype:
+
+```
+data Nat = Zero | Succ Nat
+```
+
+Define a function `double` that takes a natural number and returns its double:
+
+```
+double :: Nat -> Nat
+double Zero = Zero
+double (Succ n) = Succ (Succ (double n))
+```
+
+Prove by structural induction that for any natural number n, `double (double n) = quadruple n`, where `quadruple n` is defined as `double (double n)`.
+
+Proof:
+Let P(n) be the statement that double (double n) = quadruple n.
+
+Base case (n = Zero):
+double (double Zero)
+= double Zero
+= Zero
+= quadruple Zero
+
+Therefore, P(Zero) holds.
+
+Inductive step:
+Assume P(n) holds for some natural number n. We want to prove that P(Succ n) also holds.
+
+double (double (Succ n))
+= double (Succ (Succ (double n))) (by the definition of double)
+= Succ (Succ (double (Succ (Succ (double n))))) (by the definition of double)
+= Succ (Succ (Succ (Succ (double (double n))))) (by the definition of double)
+= Succ (Succ (Succ (Succ (quadruple n)))) (by the inductive hypothesis)
+= quadruple (Succ n) (by the definition of quadruple)
+
+Therefore, P(Succ n) holds. By structural induction on natural numbers, P(n) holds for all natural numbers n.
+
+## Question 5: Complete (Strong) Induction (15 points)
+Prove that every positive integer can be written as a sum of distinct powers of 2 (i.e., in binary representation).
+
+Proof:
+Let P(n) be the statement that a positive integer n can be written as a sum of distinct powers of 2.
+
+Base case (n = 1):
+1 = 2^0. The base case holds.
+
+Inductive step:
+Assume P(k) holds for all positive integers k < n. We want to prove that P(n) also holds.
+
+If n is a power of 2, then n = 2^m for some non-negative integer m, and P(n) holds.
+
+If n is not a power of 2, then let 2^m be the largest power of 2 less than n. By the inductive hypothesis, n - 2^m can be written as a sum of distinct powers of 2, say 2^a + 2^b + ... + 2^c, where 0 ≤ a < b < ... < c < m.
+
+Then, n = 2^m + (n - 2^m) = 2^m + 2^a + 2^b + ... + 2^c, which is a sum of distinct powers of 2.
+
+Therefore, P(n) holds. By the principle of complete induction, P(n) holds for all positive integers n.
+
+## Question 6: Infinite Descent (20 points)
+Prove that there are no positive integer solutions to the equation a^4 + b^4 = c^4.
+
+Proof by contradiction and infinite descent:
+Assume there exist positive integers a, b, and c such that a^4 + b^4 = c^4.
+
+Without loss of generality, assume a, b, and c are coprime (i.e., their greatest common divisor is 1). If they have a common factor, we can divide all three numbers by this factor and obtain a smaller solution.
+
+Rewrite the equation as a^4 = c^4 - b^4 = (c^2 - b^2)(c^2 + b^2).
+
+Since a^4 is a perfect square, both factors on the right-hand side must be perfect squares. Let c^2 - b^2 = d^2 and c^2 + b^2 = e^2 for some positive integers d and e.
+
+Adding the equations for d^2 and e^2, we get 2c^2 = d^2 + e^2.
+
+Since d^2 and e^2 are both odd (as the sum of two odd squares), d and e must be odd. Let d = 2f + 1 and e = 2g + 1 for some non-negative integers f and g.
+
+Substituting these expressions into the equation 2c^2 = d^2 + e^2, we get:
+2c^2 = (2f + 1)^2 + (2g + 1)^2
+2c^2 = 4f^2 + 4f + 1 + 4g^2 + 4g + 1
+2c^2 = 4(f^2 + f + g^2 + g) + 2
+c^2 = 2(f^2 + f + g^2 + g) + 1
+
+This means that c^2 is odd, so c must be odd. However, this implies that a and b are even (as the sum of two odd squares is even). This contradicts our assumption that a, b, and c are coprime.
+
+Therefore, there are no positive integer solutions to the equation a^4 + b^4 = c^4.
+
+## Bonus Question: Induction in Action (10 points)
+The Fibonacci sequence is defined by F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n ≥ 2. Prove that for any positive integer n, F(n+1) * F(n-1) - F(n)^2 = (-1)^n.
+
+Proof:
+Let P(n) be the statement that F(n+1) * F(n-1) - F(n)^2 = (-1)^n.
+
+Base cases:
+P(1): F(2) * F(0) - F(1)^2 = 1 * 0 - 1^2= -1 = (-1)^1. The base case holds.
+P(2): F(3) * F(1) - F(2)^2 = 2 * 1 - 1^2 = 1 = (-1)^2. The base case holds.
+
+Inductive step:
+Assume P(k) and P(k-1) hold for some integer k ≥ 2. We want to prove that P(k+1) also holds.
+Assume: F(k+1) * F(k-1) - F(k)^2 = (-1)^k and F(k) * F(k-2) - F(k-1)^2 = (-1)^(k-1)
+
+We want to prove: F(k+2) * F(k) - F(k+1)^2 = (-1)^(k+1)
+
+F(k+2) * F(k) - F(k+1)^2
+= [F(k+1) + F(k)] * F(k) - F(k+1)^2 (by the definition of the Fibonacci sequence)
+= F(k+1) * F(k) + F(k)^2 - F(k+1)^2
+= F(k+1) * F(k) - [F(k+1) * F(k-1) - F(k)^2] (by adding and subtracting F(k+1) * F(k-1))
+= F(k+1) * F(k) - (-1)^k (by the inductive hypothesis)
+= F(k+1) * F(k) + (-1)^(k+1)
+= F(k) * [F(k+1) + F(k-1)] + (-1)^(k+1) (by adding and subtracting F(k) * F(k-1))
+= F(k) * F(k+2) + F(k) * F(k-1) + (-1)^(k+1) (by the definition of the Fibonacci sequence)
+= F(k) * F(k+2) + [F(k) * F(k-2) - (-1)^(k-1)] + (-1)^(k+1) (by the inductive hypothesis)
+= F(k) * F(k+2) + (-1)^k + (-1)^(k+1)
+= F(k) * F(k+2) + (-1)^k * [1 - 1]
+= F(k) * F(k+2) + 0
+= F(k) * F(k+2)
+= (-1)^(k+1) (by the inductive hypothesis)
+
+Therefore, P(k+1) holds. By the principle of two-step induction, P(n) holds for all positive integers n.
+
+---
+
+This correction provides detailed proofs for each question in the mock exam, demonstrating the application of various induction techniques. The proofs are presented in a clear and structured manner, with each step justified by the appropriate inductive hypothesis, definition, or logical reasoning.
+
+The correction also includes the solution to the bonus question, which requires a slightly more complex two-step induction proof.
+
+Remember that induction is a powerful technique for proving statements that involve natural numbers, recursive functions, and datatypes. By mastering these techniques and practicing with a variety of problems, you can develop a strong foundation in mathematical reasoning and problem-solving.
