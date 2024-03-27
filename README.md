@@ -112,12 +112,6 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [MelloTTS](https://github.com/myshell-ai/MeloTTS) High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean.
 - [MemGPT](https://memgpt.ai/) Enable Next-Gen Large Language Model Applications
 
-## AI Agents
-
-- [AgentStudio](https://skyworkai.github.io/agent-studio/) AgentStudio is an open toolkit covering the entire lifespan of building virtual agents that can interact with everything on digital worlds
-- [AIOS](https://github.com/agiresearch/AIOS/tree/main) AIOS: LLM Agent Operating System
-- [CrewAI](https://www.crewai.io/) AI Agents reimagined for engineers
-- [AutoGen](https://microsoft.github.io/autogen/) Enable Next-Gen Large Language Model Applications
 
 ## AI Command tools
 
@@ -163,6 +157,13 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [MegaGPT](https://github.com/geekan/MetaGPT/tree/main)The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo
 - [CrewAI](https://github.com/joaomdmoura/crewAI) Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
 -  [Devika](https://github.com/stitionai/devika) Devika is an Agentic AI Software Engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve the given objective. Devika aims to be a competitive open-source alternative to Devin by Cognition AI.
+-  [AgentStudio](https://skyworkai.github.io/agent-studio/) AgentStudio is an open toolkit covering the entire lifespan of building virtual agents that can interact with everything on digital worlds
+- [AIOS](https://github.com/agiresearch/AIOS/tree/main) AIOS: LLM Agent Operating System
+- [AutoGen](https://microsoft.github.io/autogen/) Enable Next-Gen Large Language Model Applications
+- [Screen Agents](https://github.com/niuzaisheng/ScreenAgent) ScreenAgent: A Computer Control Agent Driven by Visual Language Large Model
+- [Synapse](https://ltzheng.github.io/Synapse/) Synapse: Trajectory-as-Exemplar Prompting  with Memory for Computer Control
+- [Cradles](https://baai-agents.github.io/Cradle/) Towards General Computer Control:  A Multimodal Agent for  Red Dead Redemption II as a Case Study
+- 
 
 ## Prompt Engineering
 
