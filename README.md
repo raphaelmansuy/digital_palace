@@ -116,7 +116,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [instructor_ex](https://github.com/thmsmlr/instructor_ex) (Elixir version of Instructor)
 - [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust. 
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
-- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
+
 - [Flowneum](https://github.com/floneum/floneum) A toolkit for controllable, private AI on consumer hardware in rust
 - [Kalosm](https://floneum.com/kalosm/) Kalosm is an open source framework for private language, audio, and image models in Rust
 - [PhiData](https://docs.phidata.com/introduction) Phidata is a toolkit for building AI Assistants using function calling.
@@ -124,6 +124,12 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Cognee](https://github.com/topoteretes/cognee?tab=readme-ov-file) Memory management for the AI Applications and AI Agents
 - [MelloTTS](https://github.com/myshell-ai/MeloTTS) High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean.
 - [MemGPT](https://memgpt.ai/) Enable Next-Gen Large Language Model Applications
+
+
+## Controlling Inference
+
+- [Transformer Head](https://github.com/center-for-humans-and-machines/transformer-heads) Toolkit for attaching, training, saving and loading of new heads for transformer models
+- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs. Controlling inference using Wasm programs.
 
 
 ## AI Command tools
