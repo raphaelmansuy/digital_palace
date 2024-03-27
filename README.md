@@ -40,7 +40,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ## Generative AI
 
-- [Generative AI Business Use Cases](01-articles/genai_business_use_cases.md)
+- [Generative AI Business Use Cases](01-articles/2024-03-12_genai_business_use_cases.md)
 - [Comprehensive Guide to Large Language Model Engineering](11-genai/README.md.md)
 ##  Courses and lectures
 
@@ -73,7 +73,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
-- [Mastering the Art of Training Large Language Models from Scratch](./01-articles/training_an_llm)
+- [Mastering the Art of Training Large Language Models from Scratch](01-articles/2024-03-12_training_an_llm.md)
 
 
 ## LLMs implementation
@@ -260,7 +260,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ## Articles
 
-[Arrticles list](01-articles/articles.md)
+[Arrticles list](01-articles/README.md.md)
 
 ## LinkedIn Posts
 

@@ -6,7 +6,7 @@ _Under construction_🏗️  ...
 ## 1. Data Acquisition and Preprocessing
 1. Web Data Collection (crawling, scraping, parsing)
 2. Corpus Creation and Cleaning (deduplication, filtering)  
-3. [Data Augmentation Techniques (back-translation, word replacements)](llm_data_acquisition_augmentation_technique)
+3. [Data Augmentation Techniques (back-translation, word replacements)](2024-03-18_llm_data_acquisition_augmentation_technique.md)
 4. Data Labeling and Annotation
 
 ## 2. Model Architectures  
@@ -22,7 +22,7 @@ _Under construction_🏗️  ...
 4. Optimization (SGD, Adam, learning rate schedules)
 5. Regularization (dropout, weight decay, early stopping)
 6. Distributed and Parallel Training   
-7. [Strategy to pretrain a model](strategy_to_pretrain_a_model)
+7. [Strategy to pretrain a model](2024-03-18_strategy_to_pretrain_a_model.md)
 
 ## 4. Evaluation and Benchmarking
 1. Language Modeling Metrics (perplexity, cross-entropy)
@@ -61,7 +61,7 @@ _Under construction_🏗️  ...
 
 ## 10. Model Compression and Acceleration
 1. Knowledge Distillation
-2. [Quantization and Pruning](quantization_and_pruning)
+2. [Quantization and Pruning](204-03-18_quantization_and_pruning.md)
 3. Neural Architecture Search
 
 ## 11. Robustness and Security
