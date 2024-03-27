@@ -25,6 +25,19 @@ They can also be a valuable resource for others who are looking to learn and exp
 
 👉 [Todays I Learned](/02-til/README.md)
 
+
+## Tutorial Series: "For the Impatient"
+
+The "For the Impatient" tutorial series is designed to provide a fast-paced and efficient way for learners to master programming languages and other technical subjects. The core idea behind this series is to cater to the needs of individuals who are eager to gain proficiency quickly, without getting bogged down in lengthy, comprehensive tutorials.
+
+The typical learner in the "Impatient" target audience might be someone who:
+
+- Has a strong motivation to learn a new skill quickly, perhaps for a time-sensitive project or job requirement
+- Prefers a more streamlined, concise learning approach that focuses on the most essential concepts and practical applications
+- Wants to get up and running with a new language or technology as rapidly as possible, without spending too much time on theoretical background or peripheral topics
+
+[The impatient series](40-the-impatients_serie/README.md.md)
+
 ## Generative AI
 
 - [Generative AI Business Use Cases](01-articles/genai_business_use_cases.md)

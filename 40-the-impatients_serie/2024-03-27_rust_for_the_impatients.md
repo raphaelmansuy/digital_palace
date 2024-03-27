@@ -14,6 +14,8 @@ Key features of Rust include:
 - **Abstraction**: Rust supports high-level abstractions like traits, generics, and functional programming constructs, enabling expressive and modular code.
 - **Cross-Platform**: Rust code can be compiled to run on various platforms, including Windows, Linux, macOS, and embedded systems.
 
+![](assets/Rust,_funny_Crab,_3D,_cartoon.png)
+
 ### Setting up the Rust Development Environment
 
 To get started with Rust, you'll need to install the Rust toolchain, which includes the Rust compiler (`rustc`), package manager (`cargo`), and other essential tools.
