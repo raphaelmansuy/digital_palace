@@ -230,6 +230,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [peft](https://github.com/huggingface/peft) 🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.
 - [Tochtune](https://github.com/pytorch/torchtune) A Native-PyTorch Library for LLM Fine-tuning
 - [LLMTuner](https://github.com/promptslab/LLMTuner) Tune LLM in few lines of code
+- [LMFlow](https://github.com/OptimalScale/LMFlow) An Extensible Toolkit for Finetuning and Inference of Large Foundation Models. Large Models for All. (Include Lisa Finetuning)
 
 ## Computing
 
