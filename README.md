@@ -183,7 +183,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Screen Agents](https://github.com/niuzaisheng/ScreenAgent) ScreenAgent: A Computer Control Agent Driven by Visual Language Large Model
 - [Synapse](https://ltzheng.github.io/Synapse/) Synapse: Trajectory-as-Exemplar Prompting  with Memory for Computer Control
 - [Cradles](https://baai-agents.github.io/Cradle/) Towards General Computer Control:  A Multimodal Agent for  Red Dead Redemption II as a Case Study
-- 
+- [kwaiagents](https://github.com/kwaikeg/kwaiagents) A generalized information-seeking agent system with Large Language Models (LLMs).
 
 ## Prompt Engineering
 
