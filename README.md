@@ -158,7 +158,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [llamaC++](https://github.com/ggerganov/llama.cpp) LLM inference in C/C++
 - [vLLM](https://github.com/vllm-project/vllm) Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
-- [nm-vllm](https://github.com/neuralmagic/nm-vllm) 
+- [nm-vllm](https://github.com/neuralmagic/nm-vllm) A high-throughput and memory-efficient inference and serving engine for LLMs (sparse compressing)
 - [LLama Cpp Python Binding](https://llama-cpp-python.readthedocs.io/en/latest/) OpenAI compatible web server
 - [SkyPilot](https://docs.vllm.ai/en/latest/) Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
 - [Ollama](https://github.com/ollama/ollama) Go program that encapsulate [llamac++](https://github.com/ggerganov/llama.cpp). [documentation](https://ollama.com/)
