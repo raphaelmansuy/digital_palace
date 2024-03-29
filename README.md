@@ -36,7 +36,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - Prefers a more streamlined, concise learning approach that focuses on the most essential concepts and practical applications
 - Wants to get up and running with a new language or technology as rapidly as possible, without spending too much time on theoretical background or peripheral topics
 
-[The impatient series](40-the-impatients_serie/README.md.md)
+[The impatient series](40-the-impatients_serie/README.md)
 
 ## Generative AI
 
