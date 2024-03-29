@@ -1,5 +1,5 @@
 
-## Languages
+## Languages serie
 
 - [C for the Impatients](2024-03-27_c_for_the_impatients.md)
 - [Haskell for the Impatients](2024-03-27_haskell_for_the_impatients.md)
@@ -7,7 +7,7 @@
 - [Rust for the Impatients](2024-03-27_rust_for_the_impatients.md)
 
 
-## Logic
+## Logic serie
 
 - [Logic for the impatients](2024-03-27_logic_for_the_impatients)
 - [Propositional logic for the impatients](2024-03-28_propositional_logic_for_the_impatients.md)
@@ -16,7 +16,7 @@
 - [Model logic](2024-03-28_modal_logic)
 
 
-# Git
+# Git 
 
 - [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients)
 - [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
