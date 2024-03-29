@@ -36,18 +36,19 @@ The typical learner in the "Impatient" target audience might be someone who:
 - Prefers a more streamlined, concise learning approach that focuses on the most essential concepts and practical applications
 - Wants to get up and running with a new language or technology as rapidly as possible, without spending too much time on theoretical background or peripheral topics
 
-[The impatient series](40-the-impatients_serie/README.md)
+👉 [The impatient series](40-the-impatients_serie/README.md)
 
 ## Generative AI
 
 - [Generative AI Business Use Cases](01-articles/2024-03-12_genai_business_use_cases.md)
 - [Comprehensive Guide to Large Language Model Engineering](11-genai/README.md.md)
+  
 ##  Courses and lectures
 
 - [AI Courses](07-courses/ai_courses.md)
 - [Prompt engineering](07-courses/prompt_engineering.md)
 - [System, Database, Operating System](07-courses/system_courses.md)
-- [🤗 GenAI Cookbook](https://huggingface.co/learn/cookbook/index)
+- [🤗 GenAI Cookbook](https://huggingface.co/learn/cookbook/index.md)
 
 ## Blog
 
