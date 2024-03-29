@@ -9,16 +9,16 @@
 
 ## Logic serie
 
-- [Logic for the impatients](2024-03-27_logic_for_the_impatients)
+- [Logic for the impatients](2024-03-27_logic_for_the_impatients.md)
 - [Propositional logic for the impatients](2024-03-28_propositional_logic_for_the_impatients.md)
 - [Predicate logic](2024-03-28_first_order_logic.md)
-- [Proof by induction](2024-03-28_proof_by_induction)
-- [Model logic](2024-03-28_modal_logic)
+- [Proof by induction](2024-03-28_proof_by_induction.md)
+- [Model logic](2024-03-28_modal_logic.md)
 
 
 # Git 
 
-- [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients)
+- [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients.md)
 - [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
 
 
