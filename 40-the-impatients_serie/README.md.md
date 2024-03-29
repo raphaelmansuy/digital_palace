@@ -10,6 +10,7 @@
 - [Predicate logic](2024-03-28_first_order_logic.md)
 - [Proof by induction](2024-03-28_proof_by_induction)
 - [Model logic](2024-03-28_modal_logic)
+- [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients)
 
 
 
