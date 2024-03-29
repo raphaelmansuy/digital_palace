@@ -148,6 +148,10 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Representation Ingeneering](https://vgel.me/posts/representation-engineering/) Representation Engineering Mistral-7B an Acid Trip 💊
 
 
+## Voice
+
+- [VoiceCraft](https://github.com/jasonppy/VoiceCraft)  Zero-Shot Speech Editing and Text-to-Speech in the Wild
+
 ## Mac App
 
 - [Enchanted](https://github.com/AugustDev/enchanted) Enchanted is iOS and macOS app for chatting with private self hosted language models such as Llama2, Mistral or Vicuna using Ollama.
