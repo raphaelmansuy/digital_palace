@@ -14,6 +14,7 @@ In this tutorial, we'll dive deep into Git's key concepts and techniques, from t
 By the end of this guide, you'll have a rock-solid understanding of Git's power and flexibility, and you'll be able to use it effectively to tackle even the most complex development challenges. Let's get started!
 
 ## Key Concepts
+
 Before we jump into hands-on examples, let's take a moment to clarify some key terms and concepts you'll encounter throughout this tutorial:
 
 - **Repository**: The "database" that stores your project's files and tracks changes to them over time. Essentially, it's the heart of Git's version control system.
