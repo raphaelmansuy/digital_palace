@@ -210,7 +210,6 @@ gitGraph
     checkout main
     merge feature2
     commit
-    tag release-1.0
 ```
 
 > 🚂 **Release Trains**

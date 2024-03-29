@@ -19,7 +19,7 @@
 # Git
 
 - [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients)
-- [Git and monorepo](2024-03-29_git_monorepo_tutorial)
+- [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
 
 
 
