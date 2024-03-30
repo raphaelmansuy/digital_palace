@@ -126,6 +126,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [MelloTTS](https://github.com/myshell-ai/MeloTTS) High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean.
 - [MemGPT](https://memgpt.ai/) Enable Next-Gen Large Language Model Applications
 - [lumentis](https://github.com/hrishioa/lumentis) Generate beautiful docs from your transcripts and unstructured information with a single command.
+- [Wantdb/OpenUI](https://github.com/wandb/openui) OpenUI let's you describe UI using your imagination, then see it rendered live.
 
 ## Controlling Inference
 
