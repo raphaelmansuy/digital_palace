@@ -133,6 +133,13 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Transformer Head](https://github.com/center-for-humans-and-machines/transformer-heads) Toolkit for attaching, training, saving and loading of new heads for transformer models
 - [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs. Controlling inference using Wasm programs.
 
+## Quantization
+
+- [Aimet](https://github.com/quic/aimet) AIMET is a library that provides advanced quantization and compression techniques for trained neural network models from Qualcomm Innovation Center.
+
+## Training Models
+
+- [OLMo](https://github.com/allenai/OLMo) Modeling, training, eval, and inference code for [OLMo](https://allenai.org/olmo)
 
 ## AI Command tools
 
