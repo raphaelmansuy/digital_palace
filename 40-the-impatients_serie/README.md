@@ -1,5 +1,5 @@
 
-## Languages serie
+## Languages
 
 - [C for the Impatients](2024-03-27_c_for_the_impatients.md)
 - [Haskell for the Impatients](2024-03-27_haskell_for_the_impatients.md)
@@ -7,7 +7,7 @@
 - [Rust for the Impatients](2024-03-27_rust_for_the_impatients.md)
 
 
-## Logic serie
+## Logic
 
 - [Logic for the impatients](2024-03-27_logic_for_the_impatients.md)
 - [Propositional logic for the impatients](2024-03-28_propositional_logic_for_the_impatients.md)
@@ -22,5 +22,8 @@
 - [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
 
 
+## Data Engineering
+
+- [Delta Lake for the Impatient: A Fast-Track Guide to Mastering Data Engineering](2024-03-30_delta_lake_for_the_impatients.md)
 
 
