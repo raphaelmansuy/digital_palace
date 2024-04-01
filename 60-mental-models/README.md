@@ -1,5 +1,5 @@
 
-## 100 mentals model explained
+## 100 mental models explained
 
 > A mental model is a compression of how something works. 
 > 
