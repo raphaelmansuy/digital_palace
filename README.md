@@ -49,6 +49,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Prompt engineering](07-courses/prompt_engineering.md)
 - [System, Database, Operating System](07-courses/system_courses.md)
 - [🤗 GenAI Cookbook](https://huggingface.co/learn/cookbook/index.md)
+- [Generative AI for Beginners Microsoft](https://microsoft.github.io/generative-ai-for-beginners/#/)
+
 
 ## Blog
 
