@@ -38,6 +38,11 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 👉 [The impatient series](40-the-impatients_serie/README.md)
 
+# Mental models
+
+ A mental model is a compression of how something works
+
+[Mental models](60-mental-models/README.md)
 ## Generative AI
 
 - [Generative AI Business Use Cases](01-articles/2024-03-12_genai_business_use_cases.md)
