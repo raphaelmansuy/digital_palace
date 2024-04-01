@@ -25,3 +25,9 @@
 At the heart of Musk's Knowledge Tree model lies the **emphasis on understanding the fundamental principles or the "roots" of a field before branching out into its more complex aspects**. Musk advocates for a deep comprehension of basic concepts, as these serve as the foundation upon which more intricate ideas are built.
 
 [How to build knowledge](https://fs.blog/elon-musk-knowledge/)
+
+## How to use AI to make better judgements
+
+[Using AI to make better judgments](https://medium.com/@raphael.mansuy/using-ai-to-make-better-judgments-9e5eb1d17181)
+
+Combining the Eisenhower Decision Matrix with AI can help improve decision-making by identifying important vs. urgent tasks and prioritizing them accordingly. This framework provides a structured approach to evaluate tradeoffs and make better judgments.
