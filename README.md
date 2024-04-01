@@ -119,6 +119,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [instructor_ex](https://github.com/thmsmlr/instructor_ex) (Elixir version of Instructor)
 - [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust. 
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) (Stream React Components from LLMs to deliver richer user experiences)
+- [easyllm](https://philschmid.github.io/easyllm/) EasyLLM is an open source project that provides helpful tools and methods for working with large language models (LLMs), both open source and closed source.
 
 - [Flowneum](https://github.com/floneum/floneum) A toolkit for controllable, private AI on consumer hardware in rust
 - [Kalosm](https://floneum.com/kalosm/) Kalosm is an open source framework for private language, audio, and image models in Rust
