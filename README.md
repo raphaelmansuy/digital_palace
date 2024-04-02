@@ -148,6 +148,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## Quantization
 
 - [Aimet](https://github.com/quic/aimet) AIMET is a library that provides advanced quantization and compression techniques for trained neural network models from Qualcomm Innovation Center.
+- [hqq](https://github.com/mobiusml/hqq) Official implementation of Half-Quadratic Quantization (HQQ). **HQQ** is a fast and accurate model quantizer that skips the need for calibration data. It's super simple to implement (just a few lines of code for the optimizer). It can crunch through quantizing the Llama2-70B model in only 4 minutes! 🚀
 
 ## Training Models
 
