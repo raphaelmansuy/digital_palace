@@ -138,7 +138,11 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ## Rag
 
-[RagFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.
+- [RagFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.
+
+## Knowledge Graph
+
+-[MindGraph](https://github.com/yoheinakajima/MindGraph) proof of concept prototype for generating and querying against an ever-expanding knowledge graph with ai
 
 ## Controlling Inference
 
