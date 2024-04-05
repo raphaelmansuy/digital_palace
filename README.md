@@ -140,6 +140,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## AI Assisted coding
 
 - [Plandex](https://github.com/plandex-ai/plandex) An AI coding engine for complex tasks
+- [Aider][https://github.com/paul-gauthier/aider] aider is AI pair programming in your terminal
 
 ## RAG
 
