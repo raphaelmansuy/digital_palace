@@ -215,6 +215,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Synapse](https://ltzheng.github.io/Synapse/) Synapse: Trajectory-as-Exemplar Prompting  with Memory for Computer Control
 - [Cradles](https://baai-agents.github.io/Cradle/) Towards General Computer Control:  A Multimodal Agent for  Red Dead Redemption II as a Case Study
 - [kwaiagents](https://github.com/kwaikeg/kwaiagents) A generalized information-seeking agent system with Large Language Models (LLMs).
+- [LLocalSearch](https://github.com/nilsherzig/LLocalSearch) LLocalSearch is a completely locally running search aggregator using LLM Agents. The user can ask a question and the system will use a chain of LLMs to find the answer. The user can see the progress of the agents and the final answer. No OpenAI or Google API keys are needed.
 
 ## Prompt Engineering
 
