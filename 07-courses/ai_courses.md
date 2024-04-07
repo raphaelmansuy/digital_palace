@@ -14,6 +14,20 @@ description: "Home page for CS 886"
 host: cs.uwaterloo.ca
 ```
 
+## Stanford
+
+- [CS25: Transformers United V4](https://web.stanford.edu/class/cs25/) 
+
+
+```cardlink
+url: https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM
+title: "Stanford CS25 - Transformers United"
+description: "Stanford CS25: Transformers United Since their introduction in 2017, transformers have revolutionized Natural Language Processing (NLP). Now, transformers ar..."
+host: www.youtube.com
+favicon: https://www.youtube.com/s/desktop/3ee2b817/img/favicon_32x32.png
+image: https://i.ytimg.com/vi/P127jhj-8-Y/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLC1iqLBy9WkQai1HPBo0QSELtI_ow&days_since_epoch=19820
+```
+
 ## Andrej Karpathy's YouTube Channel
 
 The YouTube channel of Andrej Karpathy focuses on topics related to deep learning, neural networks, and backpropagation. Andrej Karpathy has been training deep neural networks for over a decade and shares insights into these complex subjects. The channel provides educational content on building micrograd, understanding derivatives, and exploring the intricacies of neural network training. Viewers can expect detailed explanations and tutorials on these advanced topics in the field of artificial intelligence and machine learning.
