@@ -88,6 +88,10 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [LLMs from scratch](https://github.com/rasbt/LLMs-from-scratch) Implementing a ChatGPT-like LLM from scratch, step by step by from [Sebastian Raschka](https://github.com/rasbt) 
 
+## Prompt Engineering
+
+- [A list of prompt engineering techniques](https://aman.ai/primers/ai/prompt-engineering/) 
+
 ## Embeddings
 
 ### Articles
