@@ -208,6 +208,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Skypilot](https://skypilot.readthedocs.io/en/latest/#)SkyPilot is a framework for running LLMs, AI, and batch jobs on any cloud, offering maximum cost savings, highest GPU availability, and managed execution.
 - [Jan](https://github.com/janhq/jan) Jan is an open source alternative to ChatGPT that runs 100% offline on your computer
 - [LoraX](https://github.com/predibase/lorax) Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs ([Documentation](https://loraexchange.ai/))
+- [Candle](https://github.com/huggingface/candle) Minimalist ML framework for Rust from HuggingFace to run models in production.
 
 ## Agents
 
