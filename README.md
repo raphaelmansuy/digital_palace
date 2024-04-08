@@ -191,6 +191,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## Mac App
 
 - [Enchanted](https://github.com/AugustDev/enchanted) Enchanted is iOS and macOS app for chatting with private self hosted language models such as Llama2, Mistral or Vicuna using Ollama.
+- [BoltAI](https://boltai.com/docs) BoltAI is a beautiful and powerful AI chat app for Mac. It integrates ChatGPT and other large language models (LLMs) deeply into your workflows so you don’t have to go back and forth with the ChatGPT web UI.
 
 ## Serving LLMS
 
