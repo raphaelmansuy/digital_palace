@@ -230,6 +230,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [LLocalSearch](https://github.com/nilsherzig/LLocalSearch) LLocalSearch is a completely locally running search aggregator using LLM Agents. The user can ask a question and the system will use a chain of LLMs to find the answer. The user can see the progress of the agents and the final answer. No OpenAI or Google API keys are needed.
 - [SWE Agents](https://github.com/princeton-nlp/SWE-agent) SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models
 - [Presentation of Agentic Models from Angrew NG](00-assets/ng_agentic_reasoning.pdf)
+- [Zep Long term memory for Agent](https://github.com/getzep/zep) Zep: Long-Term Memory for ‍AI Assistants.
 
 ## Prompt Engineering
 
