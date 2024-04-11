@@ -257,7 +257,12 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) LeaderBoard for function calling
 - [OpenLLMs Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 📐 The 🤗 Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
 - [HumanEval Leaderboard](https://evalplus.github.io/leaderboard.html) # 🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests
--
+
+
+## Control generation
+
+- [instructor](https://github.com/jxnl/instructor) structured outputs for llms
+- [fructose](https://github.com/bananaml/fructose) LLM calls as strongly-typed functions
 
 ## Synthetic data generation
 
