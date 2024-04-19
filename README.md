@@ -139,6 +139,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [MemGPT](https://memgpt.ai/) Enable Next-Gen Large Language Model Applications
 - [lumentis](https://github.com/hrishioa/lumentis) Generate beautiful docs from your transcripts and unstructured information with a single command.
 - [Wantdb/OpenUI](https://github.com/wandb/openui) OpenUI let's you describe UI using your imagination, then see it rendered live.
+- [FireCrawl](https://github.com/mendableai/firecrawl) Turn entire websites into LLM-ready markdown
 
 
 ## AI Assisted coding
