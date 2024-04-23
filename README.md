@@ -284,6 +284,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Tochtune](https://github.com/pytorch/torchtune) A Native-PyTorch Library for LLM Fine-tuning
 - [LLMTuner](https://github.com/promptslab/LLMTuner) Tune LLM in few lines of code
 - [LMFlow](https://github.com/OptimalScale/LMFlow) An Extensible Toolkit for Finetuning and Inference of Large Foundation Models. Large Models for All. (Include Lisa Finetuning)
+- [# Efficient finetuning of Llama 3 with FSDP QDoRA](https://www.answer.ai/posts/2024-04-26-fsdp-qdora-llama3.html) A blog article that explains how to use the stat of the art QDoRA fine tuning method on LLAMA3
 
 ## Computing
 
