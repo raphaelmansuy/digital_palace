@@ -91,6 +91,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## Prompt Engineering
 
 - [A list of prompt engineering techniques](https://aman.ai/primers/ai/prompt-engineering/) 
+- [Mastering the art of prompt engineering in French](01-articles/2024-05-29_mastering_prompt_engineering_fr.md)
+- [Mastering the art of prompt engineering](01-articles/2024-05-29_mastering-prompt-engineering_us.md)
 
 ## Embeddings
 
