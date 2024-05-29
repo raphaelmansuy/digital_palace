@@ -8,4 +8,4 @@
 - [AICI: Empowering Developers to Shape LLM Output in Real-Time ... thanks to WebAssembly](2024-03-12%20microsoft_aici.md)
 - [Mastering the art of prompt engineering](2024-05-29_mastering-prompt-engineering_us.md)
 - [Mastering the art of prompt engineering (French)](2024-05-29_mastering_prompt_engineering_fr.md)
-- 
+

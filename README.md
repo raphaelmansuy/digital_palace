@@ -322,7 +322,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ## Articles
 
-[Arrticles list](01-articles/README.md.md)
+[Arrticles list](01-articles/README.md)
 
 ## LinkedIn Posts
 
