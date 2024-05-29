@@ -6,3 +6,5 @@
 - [Discovering the Logic of the World with Transformers](symbolic_regression/README.md)
 - [The raise of the models DataLake](2024-03-06%20the_raise_of_models_datalake.md)
 - [AICI: Empowering Developers to Shape LLM Output in Real-Time ... thanks to WebAssembly](2024-03-12%20microsoft_aici.md)
+- [Mastering the art of prompt engineering](mastering-prompt-engineering.md)
+- 
