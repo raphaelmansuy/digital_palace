@@ -493,7 +493,6 @@ Le réglage des prompts utilise l'apprentissage automatique pour optimiser les p
 - Une plateforme d'apprentissage en ligne a ajusté ses prompts sur des données d'interaction des apprenants pour créer des contenus de cours et des évaluations plus personnalisés et efficaces.
 - Une startup de santé mentale a ajusté ses prompts sur des conversations thérapeute-patient pour développer un compagnon AI plus empathique et soutenant pour ses utilisateurs.
 
-Bien sûr, je vais reprendre la traduction à partir de la section Technique 14.
 
 ## Technique 14 : Ensemble de Prompts
 
@@ -688,7 +687,7 @@ L'augmentation des prompts consiste à injecter des informations ou un contexte 
 - Une entreprise de listes immobilières a augmenté ses prompts de description de propriété avec des détails clés comme l'emplacement, les commodités et le prix pour générer des annonces plus convaincantes et informatives.
 - Une plateforme de journalisme sportif a injecté des statistiques de joueurs, des moments forts de jeux et des historiques d'équipes pertinents dans ses prompts d'articles, produisant un contenu plus riche et engageant.
 
-Bien sûr, je vais reprendre la traduction à partir de la section Technique 16.
+
 
 ## Technique 16 : Décomposition des Prompts
 
