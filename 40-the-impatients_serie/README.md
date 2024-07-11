@@ -27,3 +27,8 @@
 - [Delta Lake for the Impatient: A Fast-Track Guide to Mastering Data Engineering](2024-03-30_delta_lake_for_the_impatients.md)
 
 
+## Prompt Engineering
+
+- [Prompt engineering for the impatient](2024-07-11-prompt-engineering-for-the-impatient.md)
+
+
