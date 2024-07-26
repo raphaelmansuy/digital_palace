@@ -179,6 +179,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [whisper](https://github.com/openai/whisper) Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
 - [plock](https://github.com/jasonjmcghee/plock) From anywhere you can type, query and stream the output of an LLM or any other script
 - [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
+- [Code2prompt](https://github.com/raphaelmansuy/code2prompt) Convert a codebase to an AI prompt 
+- [Claude Engineer](https://github.com/Doriandarko/claude-engineer) Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks. This tool combines the capabilities of a large language model with practical file system operations and web search functionality.
 
 ## Controlling the generation of LLMs during decoding
 
@@ -239,6 +241,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 - [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
+- [ ] 
 
 ## Interesting projects
 
