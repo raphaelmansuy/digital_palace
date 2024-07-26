@@ -15,6 +15,9 @@
 - [Proof by induction](2024-03-28_proof_by_induction.md)
 - [Model logic](2024-03-28_modal_logic.md)
 
+## Software Engineering
+
+- [Jest](2024-07-27-jest.md)
 
 # Git 
 
