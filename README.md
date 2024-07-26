@@ -241,7 +241,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 - [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
-- [ ] 
+- [Navigating the Prompt Engineering Landscape: A Comprehensive Survey for NLP Practitioners](https://arxiv.org/pdf/2407.12994)
+- []
 
 ## Interesting projects
 
