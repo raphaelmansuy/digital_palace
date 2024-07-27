@@ -18,6 +18,8 @@
 ## Software Engineering
 
 - [Jest](2024-07-27-jest.md)
+- [Typesense](2024-7-27-typesense.md)
+
 
 # Git 
 
