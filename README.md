@@ -311,7 +311,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ### VSCode
 
-- [Useful VSCode extensions](10-resources/vscode_extensions.md) 
+- [Useful VSCode extensions](10-resources/01%20_vscode_extensions.md) 
 - [Open source alternatives to popular products](https://openalternative.co/) Discover **Open Source Alternatives** to Popular Software
 ### UX Libraries
 
