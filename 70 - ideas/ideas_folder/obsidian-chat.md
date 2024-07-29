@@ -4,6 +4,7 @@
 
 The Obsidian ChatGPT Plugin is a software component that integrates the OpenAI ChatGPT experience into the Obsidian note-taking application. This plugin aims to provide users with a conversational AI assistant that can help with writing, research, and organization.
 
+
 **Functional Requirements**
 
 1. **Conversational Interface**
