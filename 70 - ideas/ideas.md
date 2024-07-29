@@ -3,7 +3,7 @@
 
 ## Intelligent Markdown File Management with Generative AI
 
-- Leverage the power of Generative AI to streamline your markdown file organization. Utilize advanced tools that can:
+<label class="ob-comment" title="" style=""> - Leverage the power of Generative AI to streamline your markdown file organization. Utilize advanced tools that can: <input type="checkbox"> <span style=""> XXX Comment </span></label>
 
 * Automatically rename files using kebab case, cleverly derived from the first title heading (#), ensuring a consistent and readable file naming convention.
 ## Vim plugin
