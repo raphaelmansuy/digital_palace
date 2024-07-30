@@ -402,3 +402,6 @@ graph TD
 It's important to note that the specific regularization techniques and their hyperparameters may need to be tuned and adjusted based on the characteristics of the dataset, the complexity of the target task, and the architecture of the LLM. Careful experimentation and evaluation are necessary to find the optimal combination of regularization methods that will help the model achieve the desired level of generalization and robustness.
 
 Just as a skilled pianist practices with intention, adjusting their technique and mindset to perform at their best, LLM developers must thoughtfully apply regularization techniques to create models that can truly excel in the real world, adaptable to a wide range of linguistic challenges and contexts.
+
+
+[Training LLM from Scratch](Training LLM from Scratch)

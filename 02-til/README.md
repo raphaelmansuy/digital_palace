@@ -36,4 +36,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Create a Modelfile example for Ollama and Zephyr Model](2024-03-21_modelfile_zephyr)
 - [How to publish a Rust cli (Hiramu) to Homebrew](2024-04-14_how_to_publish_to_homebrew.md)
 - [Efficient Git Aliases](2024-07-27-git-alias.md)
-- [How call an Http API from a Databricks Notebook]()
+- [Calling an HTTP API from a Databricks Notebook](2024-07-30-call_http_api_from_databricks_notebook.md)
+- [Running a LLama model 3.1 from lama.cpp on Mac Os]()
