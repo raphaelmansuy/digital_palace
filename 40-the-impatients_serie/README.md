@@ -36,4 +36,7 @@
 
 - [Prompt engineering for the impatient](2024-07-11-prompt-engineering-for-the-impatient.md)
 
+## Fun
+
+- [Sleep Like a SEAL: Master the 2-Minute Military Method for Instant Slumber](2024-09-03-sleep-like-a-seal.md)
 
