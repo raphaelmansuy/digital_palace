@@ -6,7 +6,6 @@
 - [Haskell tutorial](2024-03-29_haskel_tutorial.md)
 - [Rust for the Impatients](2024-03-27_rust_for_the_impatients.md)
 
-
 ## Logic
 
 - [Logic for the impatients](2024-03-27_logic_for_the_impatients.md)
@@ -18,19 +17,18 @@
 ## Software Engineering
 
 - [Jest](2024-07-27-jest.md)
-- [Typesense](2024-7-27-typesense.md)
-
+- [Typesense](2024-07-27-typesense.md)
+- [Unified Diff Format](2024-08-07-unified_diff_format.md)
 
 # Git 
 
 - [A comprehensive Git tutorial for the impatients](2024-03-29_git_comprehensive_impatients.md)
 - [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
-
+- [Unified Diff Format](2024-08-07-unified_diff_format.md)
 
 ## Data Engineering
 
 - [Delta Lake for the Impatient: A Fast-Track Guide to Mastering Data Engineering](2024-03-30_delta_lake_for_the_impatients.md)
-
 
 ## Prompt Engineering
 
