@@ -21,13 +21,13 @@ To illustrate the impact of AI in finance, let's consider three examples:
 
 AI has become indispensable in stock market analysis, enabling more accurate predictions, faster decision-making, and the ability to process enormous amounts of data in real-time. The stock market, with its complex dynamics and vast amounts of data, is an ideal playground for AI applications.
 
-Let's explore three key areas where AI is making a significant impact:
+**Let's explore three key areas where AI is making a significant impact:**
 
-1. High-frequency trading: AI-powered algorithms can execute thousands of trades per second, capitalizing on minute price discrepancies across different markets. For example, Renaissance Technologies' Medallion Fund, which relies heavily on AI and machine learning, has achieved remarkable returns over the past decades.
+1. **High-frequency trading**: AI-powered algorithms can execute thousands of trades per second, capitalizing on minute price discrepancies across different markets. For example, Renaissance Technologies' Medallion Fund, which relies heavily on AI and machine learning, has achieved remarkable returns over the past decades.
 
-2. Sentiment analysis: AI models can analyze social media posts, news articles, and other textual data to gauge market sentiment. For instance, hedge funds like Two Sigma use natural language processing to analyze Twitter feeds and news articles to inform their trading strategies.
+2. **Sentiment analysis**: AI models can analyze social media posts, news articles, and other textual data to gauge market sentiment. For instance, hedge funds like Two Sigma use natural language processing to analyze Twitter feeds and news articles to inform their trading strategies.
 
-3. Predictive modeling: Machine learning models can forecast market trends and stock prices by analyzing historical data and identifying complex patterns. For example, JP Morgan's LOXM (Limit Order Execution Model) uses reinforcement learning to execute large orders with minimal market impact.
+3. **Predictive modeling**: Machine learning models can forecast market trends and stock prices by analyzing historical data and identifying complex patterns. For example, JP Morgan's LOXM (Limit Order Execution Model) uses reinforcement learning to execute large orders with minimal market impact.
 
 By leveraging AI in these ways, financial institutions and individual investors can gain a competitive edge in the fast-paced world of stock market trading.
 
@@ -39,7 +39,7 @@ As we delve deeper into this tutorial, we'll explore these concepts in greater d
 
 To effectively apply AI in finance, it's crucial to understand the fundamental concepts that underpin these technologies. Let's explore four key AI paradigms and their applications in finance:
 
-1. Supervised Learning: This is perhaps the most common form of machine learning in finance. In supervised learning, models are trained on labeled data to predict outcomes or classify new data points.
+1. **Supervised Learning**: This is perhaps the most common form of machine learning in finance. In supervised learning, models are trained on labeled data to predict outcomes or classify new data points.
 
    Example: Predicting stock prices based on historical data. We could use features like previous closing prices, trading volume, and various technical indicators to predict the next day's closing price. A simple implementation might look like this:
 
@@ -64,7 +64,7 @@ To effectively apply AI in finance, it's crucial to understand the fundamental c
    predictions = model.predict(X_test)
    ```
 
-2. Unsupervised Learning: This type of learning is used when we have unlabeled data and want to discover hidden patterns or structures within it.
+2. **Unsupervised Learning**: This type of learning is used when we have unlabeled data and want to discover hidden patterns or structures within it.
 
    Example: Clustering stocks with similar performance characteristics. We could use a K-means algorithm to group stocks based on their returns and volatility:
 
@@ -80,7 +80,7 @@ To effectively apply AI in finance, it's crucial to understand the fundamental c
    clusters = kmeans.fit_predict(stock_features)
    ```
 
-3. Reinforcement Learning: This paradigm involves an agent learning to make decisions by interacting with an environment and receiving rewards or penalties.
+3. **Reinforcement Learning**: This paradigm involves an agent learning to make decisions by interacting with an environment and receiving rewards or penalties.
 
    Example: Developing a trading bot that learns optimal strategies over time. We could use a Q-learning algorithm to learn a trading policy:
 
@@ -98,7 +98,7 @@ To effectively apply AI in finance, it's crucial to understand the fundamental c
        Q[state, action] = new_value
    ```
 
-4. Deep Learning: This subset of machine learning uses neural networks with multiple layers to learn complex patterns in data.
+4. **Deep Learning**: This subset of machine learning uses neural networks with multiple layers to learn complex patterns in data.
 
    Example: Using a Long Short-Term Memory (LSTM) network to predict stock prices based on sequential data:
 
@@ -126,7 +126,7 @@ These fundamental concepts form the building blocks for more advanced AI applica
 
 Various AI models are employed in stock market analysis, each with its strengths and suitable applications. Let's examine four popular models:
 
-1. Linear Regression: Despite its simplicity, linear regression is still widely used for trend analysis and basic price prediction.
+1. **Linear Regression**: Despite its simplicity, linear regression is still widely used for trend analysis and basic price prediction.
 
    Example: Predicting stock returns based on market returns (CAPM model):
 
@@ -146,7 +146,7 @@ Various AI models are employed in stock market analysis, each with its strengths
    beta = model.coef_[0]
    ```
 
-2. Random Forests: This ensemble method is excellent for feature importance analysis and robust predictions.
+2. **Random Forests**: This ensemble method is excellent for feature importance analysis and robust predictions.
 
    Example: Identifying important features for stock selection:
 
@@ -167,7 +167,7 @@ Various AI models are employed in stock market analysis, each with its strengths
    feature_importance = feature_importance.sort_values('importance', ascending=False)
    ```
 
-3. Long Short-Term Memory (LSTM) Networks: These are particularly useful for time series forecasting in stock market analysis.
+3. **Long Short-Term Memory (LSTM) Networks**: These are particularly useful for time series forecasting in stock market analysis.
 
    Example: Predicting future stock prices based on historical price sequence:
 
@@ -193,7 +193,7 @@ Various AI models are employed in stock market analysis, each with its strengths
    model.fit(X_train, y_train, epochs=100, batch_size=32)
    ```
 
-4. Support Vector Machines (SVM): SVMs are powerful for classification tasks in finance, such as predicting market conditions.
+4. **Support Vector Machines (SVM)**: SVMs are powerful for classification tasks in finance, such as predicting market conditions.
 
    Example: Classifying market conditions (bullish/bearish) based on technical indicators:
 
@@ -222,7 +222,7 @@ Various AI models are employed in stock market analysis, each with its strengths
 
 Reliable and diverse data sources are crucial for developing effective AI applications in finance. Let's explore four key types of data sources:
 
-1. Historical Stock Price Data: This is the foundation of many financial AI models. You can obtain this data from various sources:
+1. **Historical Stock Price Data**: This is the foundation of many financial AI models. You can obtain this data from various sources:
 
    Example: Using the yfinance library to fetch historical stock data:
 
@@ -234,7 +234,7 @@ Reliable and diverse data sources are crucial for developing effective AI applic
    print(apple_data.head())
    ```
 
-2. Economic Indicators: These provide context for market movements and can be crucial for macro-level analysis:
+2. **Economic Indicators**: These provide context for market movements and can be crucial for macro-level analysis:
 
    Example: Fetching economic data using the FRED (Federal Reserve Economic Data) API:
 
@@ -246,7 +246,7 @@ Reliable and diverse data sources are crucial for developing effective AI applic
    unemployment_data = fred.get_series('UNRATE')
    ```
 
-3. Company Financial Reports: These provide fundamental data about companies' financial health:
+3. **Company Financial Reports**: These provide fundamental data about companies' financial health:
 
    Example: Using the Financial Modeling Prep API to fetch financial statements:
 
@@ -262,7 +262,7 @@ Reliable and diverse data sources are crucial for developing effective AI applic
    income_statement = pd.DataFrame(response.json())
    ```
 
-4. Alternative Data: This includes non-traditional data sources that can provide unique insights:
+4. **Alternative Data**: This includes non-traditional data sources that can provide unique insights:
 
    Example: Using the Twitter API to fetch tweets for sentiment analysis:
 
@@ -290,43 +290,52 @@ These data sources form the raw material for AI models in finance. The ability t
 
 AutoRegressive Integrated Moving Average (ARIMA) models are popular for time series analysis in finance. They can capture trends, seasonality, and other patterns in stock price data. Let's explore four examples of using ARIMA models:
 
-1. Forecasting Next Month's Closing Prices:
+1. **Forecasting Next Month's Closing Prices**:
+
 
 ```python
 import pandas as pd
 import numpy as np
 from statsmodels.tsa.arima.model import ARIMA
 import yfinance as yf
+from datetime import datetime, timedelta
 
 # Fetch historical data
-stock_data = yf.download('AAPL', start='2010-01-01', end='2023-08-15')
+try:
+    stock_data = yf.download('MSFT', start='2010-01-01', end='2024-08-15')
+except Exception as e:
+    print(f"Error fetching data: {e}")
+    exit(1)
 
 # Prepare the data
-closing_prices = stock_data['Close'].resample('M').last()
+closing_prices = stock_data['Close'].resample('ME').last()
 
 # Fit ARIMA model
 model = ARIMA(closing_prices, order=(1,1,1))
 results = model.fit()
 
 # Forecast next month's closing price
-forecast = results.forecast(steps=1)
-print(f"Forecasted closing price for next month: {forecast[0]}")
+next_month = pd.date_range(start=closing_prices.index[-1] + timedelta(days=1), periods=1, freq='ME')[0]
+forecast_result = results.forecast(steps=1)
+
+print(f"Forecasted closing price for {next_month.strftime('%B %Y')}: ${forecast_result.iloc[0]:.2f}")
 ```
 
 2. Predicting Trading Volume Fluctuations:
 
 ```python
-# Prepare the data
 volume_data = stock_data['Volume'].resample('D').sum()
 
-# Fit ARIMA model
-model = ARIMA(volume_data, order=(2,1,2))
-results = model.fit()
+# Fit ARIMA model for volume
+volume_model = ARIMA(volume_data, order=(2,1,2))
+volume_results = volume_model.fit()
 
 # Forecast next 5 days' trading volume
-forecast = results.forecast(steps=5)
-print("Forecasted trading volumes for next 5 days:")
-print(forecast)
+volume_forecast = volume_results.forecast(steps=5)
+print("\nForecasted trading volumes for next 5 days:")
+for i, volume in enumerate(volume_forecast, 1):
+    forecast_date = volume_data.index[-1] + timedelta(days=i)
+    print(f"{forecast_date.strftime('%Y-%m-%d')}: {volume:,.0f}")
 ```
 
 3. ARIMA with External Regressors:
