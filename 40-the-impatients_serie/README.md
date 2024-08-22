@@ -44,5 +44,6 @@
 
 ## LLM
 
-- [Groq API](2024-8-23-groq-api.md)
+- [Groq API](2024-08-23-groq-api.md)
+- [Anthropic API](2024-08-23-anthropic.md)
 
