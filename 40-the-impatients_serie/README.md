@@ -36,10 +36,13 @@
 
 ## Fun
 
-- [Sleep Like a SEAL: Master the 2-Minute Military Method for Instant Slumber](2024-09-03-sleep-like-a-seal.md)
+- [Sleep Like a SEAL: Master the 2-Minute Military Method for Instant Slumber](2024-08-03-sleep-like-a-seal.md)
 
 ## Finance
 
 - [Mastering AI and Generative Application in Finance and Stock Market: A Comprehensive tutorial](2024-08-14-AI-and-finance.md)
 
+## LLM
+
+- [Groq API](2024-8-23-groq-api.md)
 
