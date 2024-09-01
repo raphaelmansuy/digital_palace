@@ -1,4 +1,6 @@
+## Prompt Engineering
 
+- [Prompt engineering for Marketing](2024-09-01-prompt-engineering-marketing.md)
 ## Languages
 
 - [C for the Impatients](2024-03-27_c_for_the_impatients.md)
