@@ -5,6 +5,7 @@
 - [Haskell for the Impatients](2024-03-27_haskell_for_the_impatients.md)
 - [Haskell tutorial](2024-03-29_haskel_tutorial.md)
 - [Rust for the Impatients](2024-03-27_rust_for_the_impatients.md)
+- [sbt for the impatients](2024-09-01-sbt-for-the-impatient.md.md)
 
 ## Logic
 
