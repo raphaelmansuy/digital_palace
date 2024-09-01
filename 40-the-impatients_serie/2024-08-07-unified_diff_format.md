@@ -1,4 +1,4 @@
-## Diff format for the impartients
+## Diff format for the impatients
 
 ## Introduction
 
