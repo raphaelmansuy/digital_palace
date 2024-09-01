@@ -32,6 +32,8 @@
 ## Data Engineering
 
 - [Delta Lake for the Impatient: A Fast-Track Guide to Mastering Data Engineering](2024-03-30_delta_lake_for_the_impatients.md)
+- [DuckDB](2024-09-01-duckdb.md)
+
 
 ## Prompt Engineering
 
