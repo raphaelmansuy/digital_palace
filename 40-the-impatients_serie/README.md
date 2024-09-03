@@ -29,6 +29,10 @@
 - [Git and monorepo](2024-03-29_git_monorepo_tutorial.md)
 - [Unified Diff Format](2024-08-07-unified_diff_format.md)
 
+## API
+
+- [Bruno](2024-09-03-bruno.md)
+
 ## Data Engineering
 
 - [Delta Lake for the Impatient: A Fast-Track Guide to Mastering Data Engineering](2024-03-30_delta_lake_for_the_impatients.md)
