@@ -22,6 +22,7 @@
 - [Jest](2024-07-27-jest.md)
 - [Typesense](2024-07-27-typesense.md)
 - [Unified Diff Format](2024-08-07-unified_diff_format.md)
+- [uv for Python](2024-09-03-uv-python.md)
 
 # Git 
 
