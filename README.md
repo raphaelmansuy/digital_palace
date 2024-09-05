@@ -121,6 +121,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ### Toolbox
 
+- [QLLM](https://github.com/quantalogic/qllm)  QLLM: A powerful CLI for seamless interaction with multiple Large Language Models. Simplify AI workflows, streamline development, and unlock the potential of cutting-edge language models. by [Quantalogic](https://www.quantalogi.app)
 - [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
 - [LLamaIndex](https://www.llamaindex.ai/)Turn your enterprise data into production-ready LLM applications 🦙
 - [HuggingFace](https://huggingface.co/) Model, Datasets, Inference Space, the GitHub of AI models. 🤗
