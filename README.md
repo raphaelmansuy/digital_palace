@@ -116,6 +116,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ### Front End
 
 [Bionic GPT]([https://github.com/bionic-gpt/bionic-gpt/blob/main/README.md) **BionicGPT is an on-premise replacement for ChatGPT, offering the advantages of Generative AI while maintaining strict data confidentiality** BionicGPT can run on your laptop or scale into the data center.
+[Lobe Chat](https://github.com/lobehub/lobe-chat) 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Azure / DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS) and plugin system. One-click FREE deployment of your private ChatGPT/ Claude application.
 
 
 
