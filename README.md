@@ -156,6 +156,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [RagFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses. 
+- [byaldi](https://github.com/AnswerDotAI/byaldi) Use late-interaction multi-modal models such as ColPali in just a few lines of code.
 
 ## Knowledge Graph
 
