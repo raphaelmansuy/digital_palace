@@ -247,7 +247,6 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
 - [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
 - [Navigating the Prompt Engineering Landscape: A Comprehensive Survey for NLP Practitioners](https://arxiv.org/pdf/2407.12994)
-- []
 
 ## Interesting projects
 
@@ -263,7 +262,9 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [LLavaNext](https://huggingface.co/spaces/merve/llava-next) LLaVA-NeXT is recently merged to transformers and it outperforms many of the proprietary models like Gemini on various benchmarks!  
 - [Startling LM 7B Beta](https://huggingface.co/Nexusflow/Starling-LM-7B-beta) The best 7B Models - **Finetuned from model:** [Openchat-3.5-0106](https://huggingface.co/openchat/openchat-3.5-0106) (based on [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1)) - From Berkeley https://starling.cs.berkeley.edu/ 
 
+## Vector Database
 
+- [pgvectorscale](https://github.com/timescale/pgvectorscale/) A complement to pgvector for high performance, cost efficient vector search on large workloads.
 
 ## LLM Leaderboard
 
