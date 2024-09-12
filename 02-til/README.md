@@ -39,3 +39,5 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [Calling an HTTP API from a Databricks Notebook](2024-07-30-call_http_api_from_databricks_notebook.md)
 - [Running a LLama model 3.1 from lama.cpp on Mac Os]()
 - [UX Micro interractions](2024-08-07_ux_micro_interractions.md)
+- [Keep 2 a Git repo synchronized between Bitbucket and Github](2024-09-13-bitbucket-syncc.md)
+
