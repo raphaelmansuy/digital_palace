@@ -24,6 +24,7 @@
 - [Unified Diff Format](2024-08-07-unified_diff_format.md)
 - [uv for Python](2024-09-03-uv-python.md)
 - [Husky](2024-09-04-husky.md)
+- [AWS S3 upload](2024-09-15-aws-s3-upload.md)
 
 # Git 
 
