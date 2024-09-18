@@ -112,6 +112,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 [What are the common use cases of LLM Applications ?](./01-articles/llm_applications_use_cases/README.md)
 
+- [ottogrid](https://ottogrid.ai/) 
+
 
 ### Front End
 
