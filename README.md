@@ -245,6 +245,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [SWE Agents](https://github.com/princeton-nlp/SWE-agent) SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models
 - [Presentation of Agentic Models from Angrew NG](00-assets/ng_agentic_reasoning.pdf)
 - [Zep Long term memory for Agent](https://github.com/getzep/zep) Zep: Long-Term Memory for ‍AI Assistants.
+- [OpenSSA](https://github.com/aitomatic/openssa) OpenSSA: Small Specialist Agents—Enabling Efficient, Domain-Specific Planning + Reasoning for AI
 
 ## Prompt Engineering
 
