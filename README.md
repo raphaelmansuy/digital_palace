@@ -330,7 +330,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## Data Engineering
 
 - [Fluvio](https://github.com/infinyon/fluvio) Lean and mean distributed stream processing system written in rust and web assembly. Alternative to Kafka + Flink in one.
-- 
+- [Unstract](https://github.com/Zipstack/unstract) No-code LLM Platform to launch APIs and ETL Pipelines to structure unstructured documents
 ## Useful tools
 
 - [Shot Scraper](https://shot-scraper.datasette.io/en/stable/) A command-line utility for taking automated screenshots of websites from Simon Willison
