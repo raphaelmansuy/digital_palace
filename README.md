@@ -326,7 +326,10 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [TaillwindCSS](https://tailwindcss.com/)
 - [shadcn](https://ui.shadcn.com/)
 
+## Data Engineering
 
+- [Fluvio](https://github.com/infinyon/fluvio) Lean and mean distributed stream processing system written in rust and web assembly. Alternative to Kafka + Flink in one.
+- 
 ## Useful tools
 
 - [Shot Scraper](https://shot-scraper.datasette.io/en/stable/) A command-line utility for taking automated screenshots of websites from Simon Willison
