@@ -54,6 +54,8 @@
 ## Finance
 
 - [Mastering AI and Generative Application in Finance and Stock Market: A Comprehensive tutorial](2024-08-14-AI-and-finance.md)
+- [The Impatient Investor's Roadmap to Risk Factor Management](2024-10-03-impatient_investors_roadmap_to_risk_management.md)
+
 
 ## LLM
 
