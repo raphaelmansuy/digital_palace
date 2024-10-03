@@ -98,7 +98,6 @@ As we conclude this introduction, remember that understanding risk factors is no
 In the next chapter, we'll dive deep into Market Risk Factors, starting with equity risk. Get ready to learn how to ride the waves of stock market volatility like a pro!
 
 
-Certainly! Here's the full Chapter 2 on Market Risk Factors:
 
 ## 2. Market Risk Factors
 
@@ -295,7 +294,7 @@ As we've seen, market risk factors – equity risk, interest rate risk, and curr
 In our next chapter, we'll dive into Credit Risk Factors, exploring how the creditworthiness of borrowers can impact your investments. Get ready to become a savvy credit risk analyst!
 
 
-Certainly! Here's the full Chapter 3 on Credit Risk Factors:
+
 
 ## 3. Credit Risk Factors
 
