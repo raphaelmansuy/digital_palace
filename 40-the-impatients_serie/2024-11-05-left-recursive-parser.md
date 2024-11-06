@@ -306,3 +306,197 @@ Resulting AST:
 ```
 
 This transformation makes the grammar suitable for recursive descent parsing while preserving the original semantics and operator precedence.
+
+
+##  👉 How to transform a "Left Recursion Free Grammar" into code
+
+I'll explain how to transform a grammar without left recursion into Python parser methods in a didactic way.
+
+## Step 1: Understanding the Grammar Structure
+
+Let's start with a simple arithmetic grammar without left recursion:
+
+```
+expr → term expr'
+expr' → + term expr' | - term expr' | ε
+term → factor term'
+term' → * factor term' | / factor term' | ε
+factor → NUMBER | ( expr )
+```
+
+## Step 2: Basic Parser Class Structure
+
+First, let's create the basic Parser class structure:
+
+```python
+class Parser:
+    def __init__(self, tokens):
+        self.tokens = tokens  # List of tokens to parse
+        self.pos = 0         # Current position in token list
+    
+    def peek(self):
+        """Look at current token without consuming it"""
+        if self.pos < len(self.tokens):
+            return self.tokens[self.pos]
+        return None
+    
+    def consume(self):
+        """Consume and return current token"""
+        token = self.peek()
+        self.pos += 1
+        return token
+```
+
+## Step 3: Transforming Grammar Rules to Methods
+
+### Rule 1: Converting Simple Productions
+
+For a simple rule like `factor → NUMBER | ( expr )`, we create a method that handles alternatives:
+
+```python
+def factor(self):
+    """factor → NUMBER | ( expr )"""
+    token = self.peek()
+    
+    if token.type == 'NUMBER':
+        return NumberNode(self.consume())
+    elif token == '(':
+        self.consume()  # consume '('
+        expr_node = self.expr()
+        if self.peek() != ')':
+            raise SyntaxError("Expected )")
+        self.consume()  # consume ')'
+        return expr_node
+    else:
+        raise SyntaxError(f"Expected number or (, got {token}")
+```
+
+### Rule 2: Converting Rules with Prime (ε alternatives)
+
+For rules like `expr' → + term expr' | - term expr' | ε`, we create a method that handles repetition:
+
+```python
+def expr_prime(self, left):
+    """expr' → + term expr' | - term expr' | ε"""
+    token = self.peek()
+    
+    # Handle ε case (return what we have if no more operators)
+    if token not in ['+', '-']:
+        return left
+        
+    # Handle operator cases
+    operator = self.consume()  # consume operator
+    right = self.term()       # parse right side
+    # Create new node combining left and right
+    new_left = BinaryOpNode(left, operator, right)
+    # Recursively handle any remaining operations
+    return self.expr_prime(new_left)
+```
+
+### Rule 3: Converting Sequential Rules
+
+For rules like `expr → term expr'`, we create a method that combines results:
+
+```python
+def expr(self):
+    """expr → term expr'"""
+    # First parse the term
+    term_node = self.term()
+    # Then handle any additional operations
+    return self.expr_prime(term_node)
+```
+
+## Step 4: Complete Example
+
+Let's see how this works with a complete example:
+
+```python
+class Parser:
+    def __init__(self, tokens):
+        self.tokens = tokens
+        self.pos = 0
+
+    def peek(self):
+        if self.pos < len(self.tokens):
+            return self.tokens[self.pos]
+        return None
+
+    def consume(self):
+        token = self.peek()
+        self.pos += 1
+        return token
+
+    def parse(self):
+        """Entry point for parsing"""
+        return self.expr()
+
+    def expr(self):
+        """expr → term expr'"""
+        term_node = self.term()
+        return self.expr_prime(term_node)
+
+    def expr_prime(self, left):
+        """expr' → + term expr' | - term expr' | ε"""
+        token = self.peek()
+        if token not in ['+', '-']:
+            return left
+        
+        operator = self.consume()
+        right = self.term()
+        new_left = BinaryOpNode(left, operator, right)
+        return self.expr_prime(new_left)
+
+    def term(self):
+        """term → factor term'"""
+        factor_node = self.factor()
+        return self.term_prime(factor_node)
+
+    def term_prime(self, left):
+        """term' → * factor term' | / factor term' | ε"""
+        token = self.peek()
+        if token not in ['*', '/']:
+            return left
+        
+        operator = self.consume()
+        right = self.factor()
+        new_left = BinaryOpNode(left, operator, right)
+        return self.term_prime(new_left)
+
+    def factor(self):
+        """factor → NUMBER | ( expr )"""
+        token = self.peek()
+        
+        if str(token).replace('.', '').isdigit():
+            return NumberNode(self.consume())
+        elif token == '(':
+            self.consume()
+            expr_node = self.expr()
+            if self.peek() != ')':
+                raise SyntaxError("Expected )")
+            self.consume()
+            return expr_node
+        else:
+            raise SyntaxError(f"Expected number or (, got {token}")
+```
+
+## Step 5: Testing the Parser
+
+```python
+# Test the parser with an expression
+tokens = ["2", "+", "3", "*", "4"]
+parser = Parser(tokens)
+ast = parser.parse()
+result = evaluate_ast(ast)
+print(f"Result: {result}")  # Should print: Result: 14
+```
+
+## Key Points to Remember:
+
+1. Each grammar rule becomes a method
+2. ε (epsilon) productions become base cases in recursive methods
+3. Left-hand side of rules becomes method name
+4. Right-hand side becomes method implementation
+5. Alternatives (|) become if/elif statements
+6. Sequential rules become sequential method calls
+
+This transformation approach ensures that the parser correctly handles operator precedence and creates an appropriate Abstract Syntax Tree (AST) for the input expression.
