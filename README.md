@@ -246,6 +246,11 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Presentation of Agentic Models from Angrew NG](00-assets/ng_agentic_reasoning.pdf)
 - [Zep Long term memory for Agent](https://github.com/getzep/zep) Zep: Long-Term Memory for ‍AI Assistants.
 - [OpenSSA](https://github.com/aitomatic/openssa) OpenSSA: Small Specialist Agents—Enabling Efficient, Domain-Specific Planning + Reasoning for AI
+- [Cognitive Architectures for Language Agents](https://arxiv.org/pdf/2309.02427)
+- [🔮 Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
+- [Wikipedia Cognitive Architecture](https://en.wikipedia.org/wiki/Cognitive_architecture)
+- [Baseline AI Agentic Architecture](https://techcommunity.microsoft.com/blog/machinelearningblog/baseline-agentic-ai-systems-architecture/4207137)
+
 
 ## Prompt Engineering
 
