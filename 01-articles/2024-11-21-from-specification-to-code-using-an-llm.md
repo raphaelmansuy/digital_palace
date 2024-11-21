@@ -4,12 +4,12 @@ Leveraging Large Language Models (LLMs) like GPT-4 for code generation can signi
 
 ```mermaid
 graph TD
-    A[Identify and Understand Requirements] -->|Provides clarity| H[Clarity and Precision]
-    A --> B[Structure the Specifications] -->|Organizes specifications| I[Structuring Specifications]
-    B --> C[Incorporate Prompts for Effective Guidance] -->|Guides AI| J[Effective Prompting]
+    A[Identify and Understand Requirements]
+    A --> B[Structure the Specifications] 
+    B --> C[Incorporate Prompts for Effective Guidance]
     C --> D[Generate Code Using the LLM]
-    D --> E[Validate and Test the Generated Code] -->|Ensures accuracy| K[Validation and Testing]
-    E --> F[Iterate and Refine] -->|Improves quality| G[Implement Best Practices for Deployment]
+    D --> E[Validate and Test the Generated Code] 
+    E --> F[Iterate and Refine] 
 
 ```
 
