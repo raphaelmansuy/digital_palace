@@ -9,5 +9,6 @@
 - [Mastering the art of prompt engineering](2024-05-29_mastering-prompt-engineering_us.md)
 - [Mastering the art of prompt engineering (French)](2024-05-29_mastering_prompt_engineering_fr.md)
 - [26 Principles for prompting](2024-07-08-26_principles_for_prompting.md)
+- [From specification to code using an LLM](2024-11-21-from-specification-to-code-using-an-llm.md)
 
 
