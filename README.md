@@ -228,6 +228,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [LoraX](https://github.com/predibase/lorax) Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs ([Documentation](https://loraexchange.ai/))
 - [Candle](https://github.com/huggingface/candle) Minimalist ML framework for Rust from HuggingFace to run models in production.
 - [ZML](https://github.com/zml/zml) High performance AI inference stack. Built for production. [@ziglang](https://github.com/ziglang) / [@openxla](https://github.com/openxla) / MLIR / [@bazelbuild](https://github.com/bazelbuild)
+- [MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server) MLX Omni Server is a local inference server powered by Apple's MLX framework, specifically designed for Apple Silicon (M-series) chips. It implements OpenAI-compatible API endpoints, enabling seamless integration with existing OpenAI SDK clients while leveraging the power of local ML inference.
 
 ## Agents
 
