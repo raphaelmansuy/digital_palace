@@ -124,6 +124,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ### Toolbox
 
+- [Quantalogic](https://github.com/quantalogic/quantalogic) A powerful Agentic Framework
 - [QLLM](https://github.com/quantalogic/qllm)  QLLM: A powerful CLI for seamless interaction with multiple Large Language Models. Simplify AI workflows, streamline development, and unlock the potential of cutting-edge language models. by [Quantalogic](https://www.quantalogi.app)
 - [ell](https://docs.ell.so/index.html#) A language model programming framework.
 - [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
@@ -154,6 +155,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Plandex](https://github.com/plandex-ai/plandex) An AI coding engine for complex tasks
 - [Aider][https://github.com/paul-gauthier/aider] aider is AI pair programming in your terminal
+- [Quantalogic](http)
 
 ## RAG
 
@@ -345,6 +347,9 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Shot Scraper](https://shot-scraper.datasette.io/en/stable/) A command-line utility for taking automated screenshots of websites from Simon Willison
 - [ttok](https://github.com/simonw/ttok) Count and truncate text based on tokens from Simon  Willison
 - [github2files](https://github.com/cognitivecomputations/github2file) Create a big files from a GitHub files
+- [terminalizer](https://github.com/faressoft/terminalizer/) Create an animated gif from recorded terminal session.
+- [Kamal](https://kamal-deploy.org/) # Deploy web apps anywher - From bare metal to cloud VMs.
+- [Bruno](https://www.usebruno.com/) Bruno is a Git-integrated, fully offline, and open-source API client
 
 ## Articles
 
