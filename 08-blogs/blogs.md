@@ -8,6 +8,10 @@ Eugene Yan's website (https://eugeneyan.com/) serves as a platform where he shar
 
 The website https://karpathy.ai/ belongs to Andrej Karpathy, a prominent figure in the field of artificial intelligence and machine learning. Andrej Karpathy is known for his significant contributions to the development of deep learning models and algorithms. His website serves as a hub for showcasing his research, projects, publications, and insights into the latest advancements in AI and machine learning. Visitors to the site can explore a wealth of resources, including blog posts, research papers, tutorials, and open-source projects that reflect Andrej Karpathy's expertise and passion for advancing the field of artificial intelligence. Additionally, the website may feature information about speaking engagements, workshops, and other events where Andrej Karpathy shares his knowledge and expertise with the broader AI community.
 
+## [Chip Huyen](https://huyenchip.com/)
+
+https://huyenchip.com//2025/01/07/agents.html
+
 
 
 # [Simmon Willison](https://simonwillison.net)
