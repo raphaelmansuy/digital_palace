@@ -355,6 +355,12 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Kamal](https://kamal-deploy.org/) # Deploy web apps anywher - From bare metal to cloud VMs.
 - [Bruno](https://www.usebruno.com/) Bruno is a Git-integrated, fully offline, and open-source API client
 
+
+
+## Starter ki
+
+- [AI Video Starter Kit](ub.com/fal-ai-community/video-starter-kit)
+
 ## Articles
 
 [Arrticles list](01-articles/README.md)
