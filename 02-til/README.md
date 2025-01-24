@@ -41,5 +41,8 @@ They can also be a valuable resource for others who are looking to learn and exp
 - [UX Micro interractions](2024-08-07_ux_micro_interractions.md)
 - [Keep 2 a Git repo synchronized between Bitbucket and Github](2024-09-13-bitbucket-syncc.md)
 - [2025-01-23-dependant-library-with-poetry](2025-01-29-dependant-library-with-poetry.md)
+- [2025-01-24-building-a-chat-interface-using-textual](2025-01-24-building-a-chat-interface-using-textual.md)
+- [2025-01-24-self-installing-python-executables-with-uv](2025-01-24-self-installing-python-executables-with-uv.md)
+- 
 
 
