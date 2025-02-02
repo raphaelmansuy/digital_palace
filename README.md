@@ -260,6 +260,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Wikipedia Cognitive Architecture](https://en.wikipedia.org/wiki/Cognitive_architecture)
 - [Baseline AI Agentic Architecture](https://techcommunity.microsoft.com/blog/machinelearningblog/baseline-agentic-ai-systems-architecture/4207137)
 - [Agentic Mesh Towards Entreprise Grade Agents](https://medium.com/towards-data-science/agentic-mesh-towards-enterprise-grade-agents-18e8de184af1) Agentic Mesh Agents 
+- [Advanced Large Language Model Agents](https://llmagents-learning.org/sp25) Course Berkeley
 
 
 ## Prompt Engineering
