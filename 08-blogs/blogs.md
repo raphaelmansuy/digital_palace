@@ -109,3 +109,11 @@ image: https://geoffreylitt.com/images/gradient.jpg
 
 
 
+```cardlink
+url: https://www.latent.space/p/2025-papers
+title: "The 2025 AI Engineering Reading List"
+description: "We picked 50 paper/models/blogs across 10 fields in AI Eng: LLMs, Benchmarks, Prompting, RAG, Agents, CodeGen, Vision, Voice, Diffusion, Finetuning. If you're starting from scratch, start here."
+host: www.latent.space
+favicon: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9e8ba5d-49c6-4abd-9200-8736306cff29%2Ffavicon-16x16.png
+image: https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9242370c-229f-453d-924a-7a5aa4d20a4c_1090x502.png
+```

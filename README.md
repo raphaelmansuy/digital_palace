@@ -61,6 +61,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 👉  [Top Quality Blogs](08-blogs/blogs.md)
 
+
 ## Cloud Providers
 
 👉 [Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
