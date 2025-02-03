@@ -149,13 +149,13 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Wantdb/OpenUI](https://github.com/wandb/openui) OpenUI let's you describe UI using your imagination, then see it rendered live.
 - [FireCrawl](https://github.com/mendableai/firecrawl) Turn entire websites into LLM-ready markdown
 - [Sammo](https://github.com/microsoft/sammo) A library for prompt engineering and optimization (SAMMO = Structure-aware Multi-Objective Metaprompt Optimization)
+- [Awesome Python](https://github.com/vinta/awesome-python) 
 
 
 ## AI Assisted coding
 
 - [Plandex](https://github.com/plandex-ai/plandex) An AI coding engine for complex tasks
 - [Aider][https://github.com/paul-gauthier/aider] aider is AI pair programming in your terminal
-- [Quantalogic](http)
 
 ## RAG
 
@@ -191,7 +191,6 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
 - [Code2prompt](https://github.com/raphaelmansuy/code2prompt) Convert a codebase to an AI prompt 
 - [Claude Engineer](https://github.com/Doriandarko/claude-engineer) Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks. This tool combines the capabilities of a large language model with practical file system operations and web search functionality.
-- [Quantalogic]()
 
 ## Controlling the generation of LLMs during decoding
 
@@ -238,6 +237,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Quantalogic](https://github.com/quantalogic/quantalogic) A powerful Agentic framework that can code.
 - [Eliza](https://github.com/elizaOS/eliza) Autonomous agents for everyone.
+- [Phidata](https://github.com/agno-agi/phidata) PhiData
 - [Pydantic Agents](https://ai.pydantic.dev/agents/) PydanticAI is a Python agent framework designed to make it less painful to build production grade applications with Generative AI.
 - [Smoll Agents](https://github.com/huggingface/smolagents) 🤗 smolagents: a barebones library for agents. Agents write python code to call tools and orchestrate other agents from Hugging Face.
 - [MegaGPT](https://github.com/geekan/MetaGPT/tree/main)The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo
