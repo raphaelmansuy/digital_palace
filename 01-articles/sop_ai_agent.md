@@ -5,6 +5,8 @@ Imagine walking into a high-end boutique such as Chanel. You’re greeted by an 
 
 Now, consider your AI agent. Much like a luxury brand, it must create a seamless and consistent experience. Just as human SOPs drive the success of a brand, carefully designed system prompts—acting as the AI’s own SOP—are essential to delivering reliable, ethical, and engaging interactions. In other words, if human employees rely on clear guidelines to consistently embody a brand’s values, your AI needs its own playbook to ensure it performs in line with organizational standards.
 
+![](assets/1_pEH2LdPNwG9ryLrxb0VCTg.webp)
+
 In this guide, we’ll explore why human SOPs matter for brand success and show you how to design your AI’s system prompt as a comprehensive SOP—with plenty of examples to spark your creativity!
 
 
@@ -13,9 +15,11 @@ In this guide, we’ll explore why human SOPs matter for brand success and show 
 A brand’s reputation is built upon consistency. Think about your favorite restaurant chain: you expect the same quality, ambiance, and service every time you visit. SOPs ensure everyone—from the front-of-house staff to the management team—knows exactly how to deliver that experience.
 
 - **Example:**  
+
     A luxury hotel chain like The Ritz-Carlton trains its staff with detailed SOPs: greet guests by name, maintain eye contact, and follow up with personalized service. The result? A memorable experience that guests rave about and return to, strengthening the brand's legacy.
     
 - **Real-World Lesson:**  
+
     When companies lose sight of these guidelines, the customer experience suffers, leading to a decline in brand loyalty. Without clear SOPs, employees might interpret tasks differently, and the brand's story becomes inconsistent.
     
 
@@ -35,13 +39,17 @@ Just as a boutique employee has a clear job description, your AI agent needs a w
     
     - What is the primary purpose of your AI?
     - What outcomes do you expect from its interactions?
-- **Example:**  
+      
+- **Example:** 
+ 
     **Use Case:** Customer support chatbot for an online fashion retailer.  
+
     **Objectives:**
     
     - Provide quick, accurate responses to order queries.
     - Maintain a friendly, on-brand tone reminiscent of the retailer’s boutique vibe.
     - Escalate complex issues (e.g., refund requests outside policy) directly to human agents.
+
 - **Counter Example:**  
     A vague directive like “Be helpful” is too ambiguous—it leaves the AI to guess what constitutes being “helpful,” which can lead to off-brand or inconsistent messaging.
     
@@ -78,6 +86,7 @@ Like a training manual for new employees, your system prompt should include expl
     - Greet the user warmly before answering their question.
     - Always verify if a query needs escalation when uncertain.
     - Avoid offering advice in sensitive areas like finance or medicine unless explicitly approved.
+      
 - **Workflow Example:**  
     For handling a refund inquiry:
     
@@ -85,6 +94,7 @@ Like a training manual for new employees, your system prompt should include expl
     2. **Acknowledge Request:** Respond with something like, “I understand you’d like to request a refund; let me check the details.”
     3. **Verify Order Details:** Retrieve order information using integrated systems.
     4. **Assess Eligibility:** Compare with policy—if within scope, confirm; if not, escalate.
+       
 - **Counter Example:**  
     Skipping the acknowledgment step might make the AI’s reaction seem abrupt, undermining the friendly tone essential for brand identity.
     
@@ -99,6 +109,7 @@ Every seasoned employee has encountered situations not covered by the rule book.
     - **Edge Case Example:**  
         A customer asks for a discount on a product that’s already on sale—a scenario not covered in standard SOPs.  
         **Strategy:** The system prompt should instruct, “If the user requests additional discounts for already discounted items, politely explain the current pricing structure and suggest signing up for exclusive deals.”
+        
 - **Counter Example:**  
     Without pre-defined strategies, the AI might either provide a generic response or, worse, an incorrect discount, which could harm both customer satisfaction and revenue.
     
@@ -161,21 +172,27 @@ Imagine we’re building a customer service chatbot for an upscale e-commerce si
     
     - **Use Case:** Answer order queries and assist with returns.
     - **Objectives:** Keep responses prompt, friendly, and aligned with the brand’s premium tone; escalate when the query doesn’t fit standard procedures.
+      
 2. **Decision-Making Flow:**
     
     - Visualize your process with a diagram similar to the one above.
+      
 3. **Rules & Workflows:**
     
     - Create detailed instructions for common queries (greetings, order lookups) and unusual requests (refund escalation).
+      
 4. **Edge Cases:**
     
     - Define fallback strategies for price negotiations, refund anomalies, and technical glitches in data retrieval.
+      
 5. **External Integration:**
     
     - Use API calls to fetch real-time order data.
+      
 6. **Mandatory Rubrics:**
     
     - List out key legal and ethical boundaries that the AI must strictly follow.
+      
 7. **Iterative Refinement:**
     
     - Regularly review customer interactions, update the SOP, and train both the AI and human operators accordingly.
