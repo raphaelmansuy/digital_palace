@@ -237,6 +237,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 ## Agents
 
 - [Quantalogic](https://github.com/quantalogic/quantalogic) A powerful Agentic framework that can code.
+- [PocketFlow](https://the-pocket.github.io/PocketFlow/multi_agent.html) 
 - [Eliza](https://github.com/elizaOS/eliza) Autonomous agents for everyone.
 - [Phidata](https://github.com/agno-agi/phidata) PhiData
 - [Pydantic Agents](https://ai.pydantic.dev/agents/) PydanticAI is a Python agent framework designed to make it less painful to build production grade applications with Generative AI.
