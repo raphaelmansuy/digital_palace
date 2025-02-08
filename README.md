@@ -204,6 +204,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [VoiceCraft](https://github.com/jasonppy/VoiceCraft)  Zero-Shot Speech Editing and Text-to-Speech in the Wild
 - [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) **Kokoro** is a frontier TTS model for its size of **82 million parameters** (text in/audio out).
+- [Kokoro Github](https://github.com/hexgrad/kokoro?tab=readme-ov-file) Kokoro JS
 
 ## Mac App
 
