@@ -127,6 +127,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [Quantalogic](https://github.com/quantalogic/quantalogic) A powerful Agentic Framework
 - [QLLM](https://github.com/quantalogic/qllm)  QLLM: A powerful CLI for seamless interaction with multiple Large Language Models. Simplify AI workflows, streamline development, and unlock the potential of cutting-edge language models. by [Quantalogic](https://www.quantalogi.app)
+- [BAML](https://github.com/BoundaryML/baml) BAML is a language that helps you get structured data from LLMs, with the best DX possible. Works with all languages. Check out the promptfiddle.com playground
 - [ell](https://docs.ell.so/index.html#) A language model programming framework.
 - [LangChain](https://www.langchain.com/) Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
 - [LLamaIndex](https://www.llamaindex.ai/)Turn your enterprise data into production-ready LLM applications 🦙
