@@ -152,6 +152,7 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [FireCrawl](https://github.com/mendableai/firecrawl) Turn entire websites into LLM-ready markdown
 - [Sammo](https://github.com/microsoft/sammo) A library for prompt engineering and optimization (SAMMO = Structure-aware Multi-Objective Metaprompt Optimization)
 - [Awesome Python](https://github.com/vinta/awesome-python) 
+- [Oumi](https://github.com/oumi-ai/oumi) Everything you need to build state-of-the-art foundation models, end-to-end.
 
 
 ## AI Assisted coding
