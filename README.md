@@ -302,6 +302,9 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [OpenLLMs Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 📐 The 🤗 Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
 - [HumanEval Leaderboard](https://evalplus.github.io/leaderboard.html) # 🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests
 
+## RAG
+
+- [Nano Graph Rag](https://github.com/gusye1234/nano-graphrag)A simple, easy-to-hack GraphRAG implementation
 
 ## Control generation
 
