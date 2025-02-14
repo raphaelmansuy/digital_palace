@@ -52,6 +52,10 @@
 
 - [Prompt engineering for the impatient](2024-07-11-prompt-engineering-for-the-impatient.md)
 
+## Project Management
+
+- [Agile for the impatient](agile_for_the_impatient.md)
+
 ## Fun
 
 - [Sleep Like a SEAL: Master the 2-Minute Military Method for Instant Slumber](2024-08-03-sleep-like-a-seal.md)
