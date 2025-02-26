@@ -160,6 +160,10 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Plandex](https://github.com/plandex-ai/plandex) An AI coding engine for complex tasks
 - [Aider][https://github.com/paul-gauthier/aider] aider is AI pair programming in your terminal
 
+## AI Haking
+
+[How to Hack AI Apps](https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.html)  How to Hack AI Agents and Applications
+
 ## RAG
 
 - [RagFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.
