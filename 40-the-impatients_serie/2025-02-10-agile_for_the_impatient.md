@@ -868,14 +868,15 @@ graph LR
     G --> H(Monitor Production);
 ```
 
-22.  **Code Commit:** Developers commit code changes to a shared repository.
-23.  **Build:** The system automatically builds the application.
-24.  **Automated Tests:** A suite of tests (unit, integration, etc.) runs to verify the code.
-25.  **Package:** If the tests pass, the application is packaged for release.
-26.  **Release to Staging:** The package is deployed to a staging environment (a replica of production).
-27.  **Automated Tests on Staging:** More tests are run in the staging environment.
-28.  **Deploy to Production:** If all tests pass, the application is deployed to the live production environment.
-29.  **Monitor Production:** Continuous monitoring to ensure the application is running smoothly.
+
+1.  **Code Commit:** Developers commit code changes to a shared repository.
+2.  **Build:** The system automatically builds the application.
+3.  **Automated Tests:** A suite of tests (unit, integration, etc.) runs to verify the code.
+4.  **Package:** If the tests pass, the application is packaged for release.
+5.  **Release to Staging:** The package is deployed to a staging environment (a replica of production).
+6.  **Automated Tests on Staging:** More tests are run in the staging environment.
+7.  **Deploy to Production:** If all tests pass, the application is deployed to the live production environment.
+8.  **Monitor Production:** Continuous monitoring to ensure the application is running smoothly.
 
 **Actionable Strategies:**
 

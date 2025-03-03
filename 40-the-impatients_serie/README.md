@@ -54,7 +54,7 @@
 
 ## Project Management
 
-- [Agile for the impatient](agile_for_the_impatient.md)
+- [Agile for the impatient](2025-02-10-agile_for_the_impatient.md)
 
 ## Fun
 
