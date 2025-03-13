@@ -284,6 +284,11 @@ The typical learner in the "Impatient" target audience might be someone who:
 - [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
 - [Navigating the Prompt Engineering Landscape: A Comprehensive Survey for NLP Practitioners](https://arxiv.org/pdf/2407.12994)
 
+## Vibe Programming
+
+- [ Awesome cursor rules](https://github.com/PatrickJS/awesome-cursorrules)  Awesome CursorRules is a curated list of .cursorrules files for the Cursor AI code editor. These .cursorrules files allow developers to customize the behavior of the AI-powered code generation, ensuring it aligns with their project's specific needs and coding standards.
+- [Cursor directory](https://cursor.directory/)  Discover Cursor Rules & MCP Servers
+
 ## Interesting projects
 
 - [MLX Swift Examples](https://github.com/ml-explore/mlx-swift-examples/tree/main) Examples using MLX Swift
