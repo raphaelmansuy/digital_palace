@@ -172,7 +172,8 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ## Knowledge Graph
 
--[MindGraph](https://github.com/yoheinakajima/MindGraph) proof of concept prototype for generating and querying against an ever-expanding knowledge graph with ai
+- [MindGraph](https://github.com/yoheinakajima/MindGraph) proof of concept prototype for generating and querying against an ever-expanding knowledge graph with ai
+- [LighRAG](https://github.com/HKUDS/LightRAG) LightRAG: Simple and Fast Retrieval-Augmented Generation". https://arxiv.org/abs/2410.05779
 
 ## Controlling Inference
 
