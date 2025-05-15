@@ -1,8 +1,12 @@
-# Comprehensive Tutorial on AWS Bedrock Data Automation with Mermaid Diagrams
+# Comprehensive Tutorial on AWS Bedrock Data Automation
 
 ## Introduction
 
-AWS Bedrock Data Automation (BDA) is a feature within Amazon Bedrock, a fully managed service designed to support the development of generative AI applications using foundation models (FMs). BDA simplifies extracting insights from unstructured multimodal content, such as documents, images, audio, and video, transforming them into structured formats ready for applications. As of May 2025, BDA offers advanced capabilities, including integration with Bedrock Knowledge Bases for Retrieval-Augmented Generation (RAG), modality enablement and routing by file type, extraction of embedded hyperlinks, and support for up to 3,000 document pages. Since its general availability in March 2025, BDA has been a reliable solution for developers.
+AWS Bedrock Data Automation (BDA) is a feature within Amazon Bedrock, a fully managed service designed to support the development of generative AI applications using foundation models (FMs). 
+
+BDA simplifies extracting insights from unstructured multimodal content, such as documents, images, audio, and video, transforming them into structured formats ready for applications. 
+
+As of May 2025, BDA offers advanced capabilities, including integration with Bedrock Knowledge Bases for Retrieval-Augmented Generation (RAG), modality enablement and routing by file type, extraction of embedded hyperlinks, and support for up to 3,000 document pages. Since its general availability in March 2025, BDA has been a reliable solution for developers.
 
 This tutorial provides a detailed guide to using BDA via the AWS Command Line Interface (CLI) and the AWS SDK for Python (Boto3). It includes extensive examples for document processing, media analysis (covering images, audio, and video), and integration with Knowledge Bases, enhanced by Mermaid diagrams to visualize architecture, API workflows, data flows, and use cases. These diagrams make complex processes accessible, enabling developers to build intelligent applications efficiently.
 
