@@ -20,7 +20,33 @@ For experienced practitioners, accelerated learning paths that leverage existing
 
 ---
 
-## 📝 **Today I Learned (TIL)**
+## �️ **Personal Knowledge Collections**
+
+My personal learning and development materials are organized across specialized directories:
+
+**📁 [Today I Learned (TIL)](./til/)**
+- Daily learning discoveries and insights (expanded from former 02-til)
+- 35+ technical tips and solutions
+- Personal knowledge base of AI development
+
+**📁 [Mental Models](./mental-models/)**
+- Thinking frameworks and decision-making tools
+- Cognitive patterns for understanding complex systems
+- Strategic thinking approaches for AI development
+
+**📁 [Ideas & Innovation](./ideas/)**
+- Project concepts and creative solutions (from former 70 - ideas)
+- Future work and experimental concepts
+- Brainstorming and innovation capture
+
+**📁 [Quick Reference Series](./impatient-series/)**
+- "For the Impatients" quick reference guides
+- Fast-track learning for experienced developers
+- Condensed knowledge for rapid skill acquisition
+
+---
+
+## �📝 **Today I Learned (TIL)**
 
 > Document daily discoveries to build knowledge systematically
 
@@ -42,10 +68,10 @@ Every day of learning from AI development should capture something new. The TIL 
 - **📊 Performance**: Optimization and benchmarking discoveries
 
 **Example TIL Entries:**
-- [What is GGUF](../02-til/2024-01-03%20What%20is%20GGUF.md) - Understanding model formats
-- [Ollama Import Model](../02-til/2024-03-02%20ollama_import_model.md) - Local deployment techniques
-- [LLM Command Line](../02-til/2024-03-03%20how_to_use_llm_command.md) - CLI productivity tools
-- [Export Model to GGUF](../02-til/2024-02-25-how_to_export_a_model_to_gguf.md) - Format conversion
+- [What is GGUF](./til/2024-01-03%20What%20is%20GGUF.md) - Understanding model formats
+- [Ollama Import Model](./til/2024-03-02%20ollama_import_model.md) - Local deployment techniques
+- [LLM Command Line](./til/2024-03-03%20how_to_use_llm_command.md) - CLI productivity tools
+- [Export Model to GGUF](./til/2024-02-25-how_to_export_a_model_to_gguf.md) - Format conversion
 
 👉 **[Complete TIL Collection](./til/README.md)**
 

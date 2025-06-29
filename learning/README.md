@@ -278,6 +278,22 @@ Leverage your existing programming skills to quickly master AI development.
 
 ---
 
+## 🗂️ **Learning Resource Collections**
+
+Our learning materials are organized across specialized directories:
+
+**📁 [Courses Directory](./courses/)**
+- AI and machine learning courses (from former 07-courses)
+- University-level curricula and online programs
+- Structured educational pathways
+
+**📁 [Learning Resources Hub](./learning-resources-hub.md)**
+- Comprehensive collection of books, articles, and tutorials
+- Curated learning materials by skill level
+- Community recommendations and reviews
+
+---
+
 ## 🎯 **Learning Strategies**
 
 ### **🧠 Mental Models for Learning**

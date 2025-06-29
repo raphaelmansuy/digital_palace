@@ -198,6 +198,27 @@ Enterprise-grade tools for deploying AI at scale
 
 ---
 
+## 🗂️ **Integrated Tool Collections**
+
+Our tools are organized across multiple specialized directories:
+
+**📁 [AI Tools Master Directory](./ai-tools-master-directory.md)**
+- Comprehensive catalog of 100+ AI tools
+- 2025 breakthrough tools and innovations
+- Categorized by purpose and expertise level
+
+**📁 [Development Tools](./development-tools/)**
+- VS Code extensions and IDE tools
+- Code analysis and productivity tools
+- From former 10-resources integration
+
+**📁 [Additional Tools](./additional-tools.md)**
+- Supplementary tool recommendations
+- Specialized utilities and helpers
+- Community-curated selections
+
+---
+
 ## 🎯 **Tool Selection Guide**
 
 ### **Choose by Project Type**

@@ -37,31 +37,14 @@ This repository is organized as a **digital palace** - each section serves a spe
 
 ```
 digital_palace/
-├── 📖 learning/           # Structured learning paths & courses
-│   └── courses/          # Educational resources (former 07-courses)
+├── 📖 learning/           # Structured learning paths & resources
 ├── 🎯 guides/            # Step-by-step implementation guides  
-│   ├── prompting/        # Prompting techniques (former 20-prompts)
-│   ├── quick-references/ # "For the Impatients" series (former 40-series)
-│   ├── image-generation/ # AI image guides (former 80-images)
-│   ├── agent-development/# AI agent SOPs (from 01-articles)
-│   └── training/         # Training resources (from 01-articles)
 ├── 🛠️ tools/             # Curated tool directories & comparisons
-│   └── development-tools/# VS Code extensions (from 10-resources)
 ├── 📚 reference/         # Quick lookups, APIs, cheat sheets
-│   ├── technical-articles/# Deep-dive articles (from 01-articles)
-│   ├── techniques/       # AI techniques (from 01-articles)
-│   ├── research-papers/  # Academic papers (former 50-research)
-│   ├── datasets/         # Training datasets (former 05-datasets)
-│   ├── cloud-platforms/  # Cloud guides (former 09-cloud)
-│   └── genai-fundamentals/# GenAI basics (former 11-genai)
 ├── 🎭 personal/          # Learning philosophy & mental models
-│   ├── til/             # Today I Learned (expanded from 02-til)
-│   ├── mental-models/   # Decision frameworks (former 60-mental)
-│   └── ideas/           # Project concepts (former 70-ideas)
+├── 📰 articles/          # Technical articles & research
+├── 🧪 projects/          # Example implementations & templates
 └── 💬 community/         # Discussions, contributions, updates
-    ├── newsletters/      # Updates (former 04-newsletter)
-    ├── social-content/   # LinkedIn posts (former 06-linkedin)
-    └── external-blogs/   # Blog recommendations (former 08-blogs)
 ```
 
 ### 🎯 **Usage Philosophy**

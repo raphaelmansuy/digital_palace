@@ -17,7 +17,46 @@
 
 ---
 
-## 📄 **Research & Papers**
+## �️ **Reference Collections**
+
+Our reference materials are organized across specialized directories:
+
+**📁 [Technical Articles](./technical-articles/)**
+- 2024-dated technical articles and deep dives (from former 01-articles)
+- In-depth analysis and comprehensive guides
+- Expert insights and case studies
+
+**📁 [AI Techniques](./techniques/)**
+- Comprehensive technique explanations (from former 01-articles)
+- Method implementations and patterns
+- Advanced AI development techniques
+
+**📁 [Research Papers](./research-papers/)**
+- Curated academic paper collection (from former 50-research-paper-selection)
+- Latest research breakthroughs and findings
+- Classic papers and foundational research
+
+**📁 [Datasets](./datasets/)**
+- High-quality training datasets (from former 05-top-quality-dataset)
+- Curated data sources for AI model training
+- Dataset recommendations and reviews
+
+**📁 [Cloud Platforms](./cloud-platforms/)**
+- Cloud provider comparisons and guides (from former 09-cloud-providers)
+- Infrastructure setup and optimization
+- Platform-specific recommendations
+
+**📁 [GenAI Fundamentals](./genai-fundamentals/)**
+- Core generative AI concepts (from former 11-genai)
+- Quantization, training strategies, and fundamentals
+- Foundation knowledge for generative AI
+
+**📁 [Uncategorized Resources](./uncategorized/)**
+- Legacy content being organized
+- Temporary holding for classification
+- Community contributions
+
+---
 
 ### **Latest Research (2025)**
 

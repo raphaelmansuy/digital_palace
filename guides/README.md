@@ -32,10 +32,40 @@ Essential knowledge for all AI practitioners
   - Testing and validation
   - Error handling and monitoring
 
-- **[Prompt Engineering Mastery](./prompt-engineering.md)**
-  - Advanced prompting techniques
+- **[Prompt Engineering Mastery](./prompting/)**
+  - Advanced prompting techniques from former 20-prompts collection
   - Framework-specific patterns
   - Optimization strategies
+
+### 🤖 **AI Agent Development**
+Build autonomous AI systems
+
+- **[AI Agent Development](./agent-development/)**
+  - System Operating Procedures for AI agents
+  - Multi-agent architectures
+  - Production agent patterns
+
+### 📚 **Quick References**
+Fast-track learning for experienced developers
+
+- **[Quick References Collection](./quick-references/)**
+  - "For the Impatients" series for 35+ technologies
+  - Rapid learning resources across multiple domains
+  - Condensed tutorials for experienced developers
+
+### 🎨 **Creative AI Applications**
+
+- **[Image Generation Guide](./image-generation/)**
+  - AI image generation prompts and techniques
+  - Best practices for visual AI
+  - Tool comparisons and workflows
+
+### 🎓 **Training & Learning**
+
+- **[Training Resources](./training/)**
+  - Model training strategies
+  - Fine-tuning guides
+  - Educational materials
 
 ### 💬 **Application-Focused Guides**
 Build specific types of AI applications

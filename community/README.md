@@ -298,6 +298,27 @@ This repository thrives through community collaboration. Whether you're here to 
 
 ---
 
+## 🗂️ **Community Content Collections**
+
+Our community-driven content is organized across specialized directories:
+
+**📁 [Newsletters](./newsletters/)**
+- Community newsletters and updates (from former 04-newsletter)
+- Regular updates on AI developments
+- Exponential AI newsletter archive
+
+**📁 [Social Content](./social-content/)**
+- LinkedIn posts and social media content (from former 06-linkedin-posts)
+- Professional networking materials
+- Thought leadership articles
+
+**📁 [External Blogs](./external-blogs/)**
+- Curated external blog recommendations (from former 08-blogs)
+- Quality content from the AI community
+- Expert insights and analysis
+
+---
+
 **🎯 Ready to contribute?** Check out our [Good First Issues](./good-first-issues.md) or jump into [Discussions](./discussions/README.md)!
 
 **💡 Have questions?** Don't hesitate to ask in our [Beginner Questions](./discussions/beginner-questions.md) forum.
