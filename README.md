@@ -1,24 +1,229 @@
 # My Digital Palace - A Personal AI Knowledge Repository
 
-## Introduction
+> Your comprehensive guide to mastering AI development - from beginner to expert
 
-I created my Digital Palace as a public platform for self-expression, reflection, and sharing my memories. It is where I openly document my thoughts, experiences, milestones, creative works - my personal journey focused on Artificial Intelligence and technology.
+## 🎯 Quick Start Guide
 
-My Digital Palace allows me to write journal entries, upload multimedia, record audio, and categorize content by date and themes. The tools help me capture thoughts to share publicly.
-
-With my palace being public, anyone can read my entries, view my content, and leave comments to connect with me and others in my community. I enjoy fostering this open dialogue and discussion around my shared stories.
-
-[Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
-
+**New to AI?** → [Getting Started Guide](./guides/getting-started.md)  
+**Want to build chatbots?** → [Conversational AI Guide](./guides/conversational-ai.md)  
+**Need tools recommendations?** → [AI Tools Master Directory](./tools/ai-tools-master-directory.md)  
+**Looking to learn?** → [Learning Resources Hub](./learning/learning-resources-hub.md)
 
 ---
 
-## 📖 Table of Contents
+## 🧭 Navigation by Goal
 
-### 🎯 Goal-Oriented Guides
+### 🌱 **"I'm new to AI development"**
+- 📚 **Start**: [Complete Beginner Path](./learning/learning-resources-hub.md#complete-beginner-path)
+- 🛠️ **Tools**: [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
+- 🚀 **First Project**: [Getting Started Guide](./guides/getting-started.md)
 
-- [🧭 Quick Navigation Guide](#-quick-navigation-guide)
-- [🎯 How To Guides](#-how-to-guides---from-goal-to-implementation)
+### 💼 **"I need to build AI for business"**
+- 💬 **Chatbots**: [Conversational AI Systems](./guides/conversational-ai.md)
+- 🔍 **Document AI**: [RAG & Knowledge Systems](./guides/rag-systems.md)
+- 📊 **Analytics**: [AI Application Monitoring](./guides/monitoring.md)
+
+### 🔬 **"I want to do AI research"**
+- 📖 **Learning**: [Advanced Practitioner Path](./learning/learning-resources-hub.md#advanced-practitioner-path)
+- 🔧 **Tools**: [Research & Production Tools](./tools/ai-tools-master-directory.md#production--research-tools)
+- 🧠 **Papers**: [Research Paper Collection](./reference/research-papers.md)
+
+### 🚀 **"I need to deploy AI in production"**
+- ⚡ **Serving**: [Model Serving & Inference](./tools/ai-tools-master-directory.md#model-serving--inference)
+- 📈 **Scaling**: [Production Deployment Guide](./guides/deployment.md)
+- 🔍 **Monitoring**: [AI System Monitoring](./guides/monitoring.md)
+
+---
+
+## 📚 Core Knowledge Areas
+
+### Essential Guides
+| Guide | Purpose | Time | Difficulty |
+|-------|---------|------|------------|
+| [Getting Started](./guides/getting-started.md) | Your first AI application | 2-4 hours | 🟢 Beginner |
+| [Conversational AI](./guides/conversational-ai.md) | Build chatbots & assistants | 4-8 hours | 🟡 Intermediate |
+| [RAG Systems](./guides/rag-systems.md) | AI with your data | 6-12 hours | 🟡 Intermediate |
+| [AI Agents](./guides/ai-agents.md) | Autonomous AI systems | 8-16 hours | 🔴 Advanced |
+| [Production Deployment](./guides/deployment.md) | Scale to real users | 12+ hours | 🔴 Advanced |
+
+### Tool Categories
+| Category | Focus | Best For |
+|----------|-------|----------|
+| [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks) | Building applications | All developers |
+| [Model Serving](./tools/ai-tools-master-directory.md#model-serving--inference) | Running models efficiently | Production teams |
+| [AI Agents](./tools/ai-tools-master-directory.md#ai-agent-frameworks) | Autonomous systems | Advanced developers |
+| [Data & RAG](./tools/ai-tools-master-directory.md#data--rag-tools) | Knowledge integration | Data-focused projects |
+
+### Learning Paths
+| Path | Target Audience | Duration | 
+|------|-----------------|----------|
+| [Complete Beginner](./learning/learning-resources-hub.md#complete-beginner-path) | No AI experience | 2-3 months |
+| [Developer](./learning/learning-resources-hub.md#developer-path) | Can code, new to AI | 1-2 months |
+| [Advanced Practitioner](./learning/learning-resources-hub.md#advanced-practitioner-path) | AI professionals | Ongoing |
+
+---
+
+## 🗂️ Repository Organization
+
+### 📁 Main Directories
+
+#### `/guides/` - **How-To Guides**
+Practical, step-by-step instructions for building AI applications
+- `getting-started.md` - Your first AI project
+- `conversational-ai.md` - Chatbots and assistants  
+- `rag-systems.md` - AI with your own data
+- `ai-agents.md` - Autonomous AI systems
+- `deployment.md` - Production scaling
+
+#### `/tools/` - **Tool Directories** 
+Curated collections of AI tools and frameworks
+- `ai-tools-master-directory.md` - Comprehensive tool catalog
+- `frameworks-comparison.md` - Framework selection guide
+- `model-serving-options.md` - Deployment solutions
+
+#### `/learning/` - **Educational Resources**
+Structured learning materials and paths
+- `learning-resources-hub.md` - Complete learning guide
+- `courses.md` - Course recommendations
+- `books.md` - Essential reading
+- `papers.md` - Important research
+
+#### `/reference/` - **Quick References**
+Fast-lookup information and cheat sheets
+- `model-comparison.md` - Model capabilities
+- `prompt-templates.md` - Reusable prompts
+- `api-references.md` - Common API patterns
+
+#### `/projects/` - **Example Projects**
+Complete project templates and examples
+- `chatbot-starter/` - Basic chatbot template
+- `rag-example/` - Document Q&A system
+- `agent-demo/` - AI agent template
+
+---
+
+## 🎭 Personal Learning Philosophy
+
+### Today I Learned (TIL)
+Document daily discoveries and insights to build knowledge systematically.
+
+**Why TIL Works:**
+- Creates learning habit
+- Builds searchable knowledge base  
+- Tracks progress over time
+- Shares insights with community
+
+👉 **[My TIL Collection](./personal/til/README.md)**
+
+### Mental Models for AI
+Frameworks for understanding complex AI systems and making better decisions.
+
+**Key Mental Models:**
+- **Emergence**: Simple rules → complex behaviors
+- **Abstraction Layers**: Hide complexity, expose interfaces
+- **Feedback Loops**: Output influences future input
+- **Trade-offs**: Speed vs accuracy, cost vs quality
+
+👉 **[Mental Models Guide](./personal/mental-models/README.md)**
+
+### "For the Impatient" Series
+Fast-track tutorials for experienced developers who want results quickly.
+
+**Philosophy**: Start building immediately, understand deeply later.
+
+👉 **[Impatient Series](./personal/impatient-series/README.md)**
+
+---
+
+## 🌟 What Makes This Different
+
+### ✅ **Goal-Oriented Organization**
+- Organized by what you want to achieve, not just technology categories
+- Clear success criteria for each guide
+- Multiple paths based on your background
+
+### ✅ **Curated Quality**
+- Every tool and resource is personally tested
+- Regular updates based on community feedback
+- No affiliate links - purely value-driven
+
+### ✅ **Production-Ready Focus**
+- Emphasis on building real applications
+- Deployment and scaling considerations
+- Monitoring and maintenance guidance
+
+### ✅ **Community-Driven**
+- Open source and collaborative
+- Regular updates from practitioners
+- Real-world experience shared
+
+---
+
+## 🚀 Getting Started
+
+### For Complete Beginners
+1. **Start here**: [Getting Started Guide](./guides/getting-started.md)
+2. **Learn basics**: [Beginner Learning Path](./learning/learning-resources-hub.md#complete-beginner-path)
+3. **Pick tools**: [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
+4. **Build first project**: Follow the 30-minute quickstart
+
+### For Developers
+1. **Choose your focus**: [Developer Path](./learning/learning-resources-hub.md#developer-path)
+2. **Pick frameworks**: [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
+3. **Build applications**: [Conversational AI](./guides/conversational-ai.md) or [RAG Systems](./guides/rag-systems.md)
+4. **Scale to production**: [Deployment Guide](./guides/deployment.md)
+
+### For AI Professionals
+1. **Stay current**: [Advanced Resources](./learning/learning-resources-hub.md#advanced-practitioner-path)
+2. **Explore tools**: [Production Tools](./tools/ai-tools-master-directory.md#production--research-tools)
+3. **Advanced patterns**: [AI Agents](./guides/ai-agents.md)
+4. **Contribute back**: Share your learnings
+
+---
+
+## 🤝 Contributing
+
+This is a living document that improves with community input.
+
+### How to Contribute
+- **🐛 Found an error?** Open an issue
+- **💡 Have a suggestion?** Submit a pull request  
+- **📚 Want to add content?** Follow the contribution guidelines
+- **⭐ Found it helpful?** Star the repository
+
+### Contribution Guidelines
+- Focus on practical, tested information
+- Include clear examples and code snippets
+- Maintain the goal-oriented organization
+- Update related cross-references
+
+---
+
+## 📧 Connect & Support
+
+**Creator**: [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
+
+**Community**: 
+- 💬 [Discussions](https://github.com/raphaelmansuy/digital-palace/discussions)
+- � [Issues](https://github.com/raphaelmansuy/digital-palace/issues)
+- 🔔 [Follow for Updates](https://github.com/raphaelmansuy/digital-palace/stargazers)
+
+---
+
+## 📊 Repository Stats
+
+- **📂 Guides**: 5+ comprehensive tutorials
+- **🛠️ Tools**: 50+ curated AI tools
+- **📚 Resources**: 100+ learning materials  
+- **⏰ Last Updated**: {{ date }}
+- **👥 Contributors**: Growing community
+- **⭐ GitHub Stars**: [Current count]
+
+---
+
+*"The best way to predict the future is to build it."*
+
+**Start your AI journey today** → [Getting Started Guide](./guides/getting-started.md)
 
 ### 📚 Learning & Development
 
@@ -313,59 +518,29 @@ Start here → [How to: Start Your AI Development Journey](#how-to-start-your-ai
 - [How to: AI Computer Control](#how-to-create-ai-that-controls-computers)
 - [Agent Frameworks](#agents)
 
----
+## � Legacy Content
 
-## 📚 Personal Learning & Reflection
+The complete content from the original README has been preserved and reorganized into focused guides. Here are the key redirects:
 
-### Today I Learned (TIL)
+### 📚 Personal Learning & Reflection
+- **Today I Learned (TIL)** → [Personal TIL Collection](./personal/til/README.md)
+- **Mental Models** → [Mental Models Guide](./personal/mental-models/README.md)  
+- **"For the Impatient" Series** → [Impatient Series](./personal/impatient-series/README.md)
 
-The goal of a "Today I Learned" (TIL) journal is to document and reflect upon something new or interesting that you have learned on a given day.
+### 🎓 Complete Learning Resources
+- **Comprehensive Learning Hub** → [Learning Resources Hub](./learning/learning-resources-hub.md)
+- **Course Collections** → [AI Courses](./reference/courses.md)
+- **Books & Reading** → [Essential Books](./reference/books.md)
 
-It serves as a personal knowledge base where I can record and reflect on my daily learning experiences.
+### 🛠️ Technical References
+- **All AI Tools** → [AI Tools Master Directory](./tools/ai-tools-master-directory.md)
+- **Framework Comparisons** → [Framework Selection Guide](./tools/framework-comparison.md)
+- **Model Information** → [Model Comparison](./reference/models.md)
 
-TIL journals are often used by programmers, developers, and other professionals to share tips, tricks, and lessons learned in their respective fields.
-
-They can also be a valuable resource for others who are looking to learn and expand their knowledge in a specific domain.
-
-👉 [Today I Learned](/02-til/README.md)
-
-### Tutorial Series: "For the Impatient"
-
-The "For the Impatient" tutorial series is designed to provide a fast-paced and efficient way for learners to master programming languages and other technical subjects. The core idea behind this series is to cater to the needs of individuals who are eager to gain proficiency quickly, without getting bogged down in lengthy, comprehensive tutorials.
-
-The typical learner in the "Impatient" target audience might be someone who:
-
-- Has a strong motivation to learn a new skill quickly, perhaps for a time-sensitive project or job requirement
-- Prefers a more streamlined, concise learning approach that focuses on the most essential concepts and practical applications
-- Wants to get up and running with a new language or technology as rapidly as possible, without spending too much time on theoretical background or peripheral topics
-
-👉 [The Impatient Series](40-the-impatients_serie/README.md)
-
-### Mental Models
-
-A mental model is a compression of how something works - frameworks for understanding complex systems.
-
-👉 [Mental Models](60-mental-models/README.md)
-
----
-
-## 🎓 Learning Resources
-
-### Courses & Education
-
-- [AI Courses](07-courses/ai_courses.md)
-- [Prompt Engineering Courses](07-courses/prompt_engineering.md)
-- [System, Database, Operating System](07-courses/system_courses.md)
-- [🤗 GenAI Cookbook](https://huggingface.co/learn/cookbook/index.md)
-- [Generative AI for Beginners Microsoft](https://microsoft.github.io/generative-ai-for-beginners/#/)
-
-### High-Quality Content Sources
-
-- 👉 [Top Quality Blogs](08-blogs/blogs.md)
-- 👉 [Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
-- 👉 [Top Quality Datasets for Fine-Tuning](05-top-quality-dataset/top-quality-dataset.md)
-- 👉 [Articles Collection](01-articles/README.md)
-- 👉 [LinkedIn Posts](06-linkedin-posts/linkedin_posts.md)
+### 📄 Article Collections
+- **All Articles** → [Article Index](./reference/articles.md)
+- **Research Papers** → [Paper Collection](./reference/research-papers.md)
+- **Blog Posts** → [Quality Blogs](./reference/blogs.md)
 
 ---
 
