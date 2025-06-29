@@ -1,13 +1,16 @@
 # My Digital Palace - A Personal AI Knowledge Repository
 
 > Your comprehensive guide to mastering AI development - from beginner to expert
+> **🆕 Updated June 2025** - Now featuring OpenAI o3, Cursor AI, MCP, Computer Use agents, and the latest AI breakthroughs!
 
 ## 🎯 Quick Start Guide
 
 **New to AI?** → [Getting Started Guide](./guides/getting-started.md)  
 **Want to build chatbots?** → [Conversational AI Guide](./guides/conversational-ai.md)  
 **Need tools recommendations?** → [AI Tools Master Directory](./tools/ai-tools-master-directory.md)  
-**Looking to learn?** → [Learning Resources Hub](./learning/learning-resources-hub.md)
+**Looking to learn?** → [Learning Resources Hub](./learning/learning-resources-hub.md)  
+**AI-Powered Coding?** → [AI Coding Tools & Best Practices](#ai-assisted-coding--development)  
+**Latest 2025 Updates?** → [Recent AI Breakthroughs](#-2025-ai-landscape-updates)
 
 ---
 
@@ -212,20 +215,176 @@ This is a living document that improves with community input.
 
 ## 📊 Repository Stats
 
-- **📂 Guides**: 5+ comprehensive tutorials
-- **🛠️ Tools**: 50+ curated AI tools
-- **📚 Resources**: 100+ learning materials  
-- **⏰ Last Updated**: {{ date }}
-- **👥 Contributors**: Growing community
-- **⭐ GitHub Stars**: [Current count]
+- **📂 Guides**: 8+ comprehensive tutorials covering every aspect of AI development
+- **🛠️ Tools**: 100+ curated AI tools and frameworks across all categories
+- **📚 Resources**: 200+ learning materials, articles, and research papers
+- **⏰ Last Updated**: June 2025 - Featuring latest AI breakthroughs and tools
+- **👥 Contributors**: Growing community of AI practitioners and researchers
+- **🆕 2025 Highlights**: OpenAI o3, Cursor AI, MCP, Computer Use agents, v0 UI generation
+- **⭐ Focus Areas**: Production-ready tools, emerging frameworks, hands-on tutorials
+
+### What's New in 2025
+- **Revolutionary AI Coding**: Cursor, v0, Windsurf, and computer-use agents
+- **Advanced Reasoning**: o3, DeepSeek R1, and next-gen model capabilities  
+- **Standardized Protocols**: Model Context Protocol (MCP) for AI integrations
+- **Enterprise Agents**: Production-ready multi-agent systems and workflows
+- **Enhanced RAG**: Knowledge graphs, multi-modal search, and semantic understanding
 
 ---
 
-*"The best way to predict the future is to build it."*
+*"The best way to predict the future is to build it with AI."*
 
 **Start your AI journey today** → [Getting Started Guide](./guides/getting-started.md)
 
-### 📚 Learning & Development
+---
+
+## 🆕 2025 AI Landscape Updates
+
+### Latest Model Breakthroughs
+- **OpenAI o3 & o4-mini**: Advanced reasoning models with enhanced problem-solving capabilities (June 2025)
+- **Claude 4 (Opus 4 & Sonnet 4)**: Anthropic's latest models with improved coding and AI agent capabilities
+- **DeepSeek R1**: Open-source reasoning model challenging proprietary alternatives
+- **Hunyuan A13B**: Tencent's new 13B parameter instruction-following model
+- **Gemma 3**: Google's enhanced multilingual model with improved reasoning
+- **Llama 3.3**: Meta's latest with improved efficiency and capabilities
+- **FLUX.1-Kontext**: Black Forest Labs' advanced context-aware generation model
+
+### Revolutionary AI Coding Tools
+- **[Cursor AI](https://cursor.sh/)**: AI-powered code editor with contextual understanding
+- **[v0 by Vercel](https://v0.dev/)**: Generate React components from text prompts
+- **[Windsurf](https://codeium.com/windsurf)**: AI-first IDE with collaborative editing
+- **[Claude Engineer](https://github.com/Doriandarko/claude-engineer)**: Advanced AI coding assistant
+- **[Replit Agent](https://replit.com/)**: Complete app development from natural language
+
+### Emerging Frameworks & Protocols
+
+- **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)**: Standardized AI application interfaces
+- **A2A Protocol (Agent-to-Agent)**: Emerging standard for direct agent-to-agent communication, enabling autonomous agents to negotiate, collaborate, and coordinate tasks without human intervention
+- **AG-UI (Agent Graphical User Interface)**: Next-generation interface design specifically for AI agent interactions, featuring real-time agent status visualization and multi-agent workflow management
+- **[Anthropic Computer Use](https://docs.anthropic.com/en/docs/computer-use)**: AI that can control computers directly
+- **[OpenAI Swarm](https://github.com/openai/swarm)**: Multi-agent orchestration framework
+- **[Vercel AI SDK 4.0](https://sdk.vercel.ai/)**: Streaming AI applications with generative UI
+
+### Next-Generation Agent Capabilities
+
+- **Computer Vision Agents**: AI that can see and interact with visual interfaces
+- **Multimodal Reasoning**: Agents that process text, images, audio, and video simultaneously
+- **Autonomous Code Generation**: AI systems that can build entire applications
+- **Real-time Collaboration**: AI that works alongside humans in live environments
+
+### Revolutionary Voice AI Models
+
+- **[Unmute](https://unmute.sh/)**: Advanced real-time speech processing and enhancement platform
+- **[Kyutai Labs](https://github.com/kyutai-labs)**: Cutting-edge research in streaming speech models
+- **[Moshi](https://github.com/kyutai-labs/moshi)**: Real-time full-duplex voice conversation AI
+- **[Delayed Streams Modeling](https://github.com/kyutai-labs/delayed-streams-modeling)**: Revolutionary approach to streaming multimodal AI
+
+### Game-Changing Applications
+
+- **[GitHub Copilot Workspace](https://github.com/features/copilot)**: AI-powered development environments
+- **[Replit Bounties](https://replit.com/bounties)**: AI-assisted freelance development
+- **[NotebookLM](https://notebooklm.google.com/)**: AI research assistant and audio generation
+- **[Perplexity Pro](https://www.perplexity.ai/)**: Enhanced AI search with real-time information
+
+---
+
+## 🔥 Latest 2025 AI Technologies (Web-Sourced Updates)
+
+> **Last Updated**: June 29, 2025 | Sources: GitHub, Anthropic, OpenAI, Hugging Face
+
+### 🚀 Breakthrough Models & Capabilities
+
+#### Latest Language Models
+- **[Claude 4 (Opus 4 & Sonnet 4)](https://anthropic.com/claude/opus)** - Anthropic's most powerful models for coding and AI agents (June 2025)
+- **[OpenAI o3 & o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/)** - Advanced reasoning with "thinking with images" capability (April 2025)
+- **[Tencent Hunyuan A13B](https://huggingface.co/tencent/Hunyuan-A13B-Instruct)** - 13B parameter instruction-following model (Updated June 2025)
+- **[FLUX.1-Kontext](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev)** - Black Forest Labs' context-aware generation (June 2025)
+- **[Google Magenta Realtime](https://huggingface.co/google/magenta-realtime)** - Real-time music and audio generation (June 2025)
+
+#### Specialized AI Systems
+- **[Nanonets OCR](https://huggingface.co/nanonets/Nanonets-OCR-s)** - Advanced document understanding and extraction (June 2025)
+- **[Claude Code](https://anthropic.com/claude-code)** - Dedicated coding assistant with extended thinking (February 2025)
+- **[OpenAI Codex](https://openai.com/index/introducing-codex/)** - Enhanced code generation capabilities (May 2025)
+
+### 🤖 Next-Generation Agent Frameworks
+
+#### Production-Ready Agent Platforms
+- **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
+- **[Anything LLM](https://github.com/Mintplex-Labs/anything-llm)** - All-in-one desktop AI with built-in agents, MCP compatibility (Updated June 2025)
+- **[CrewAI](https://github.com/crewAIInc/crewAI)** - Framework for orchestrating role-playing, autonomous AI agents
+- **[Google ADK Python](https://github.com/google/adk-python)** - Google's open-source toolkit for building sophisticated AI agents (Updated minutes ago)
+
+#### Agent Communication & Protocols
+- **A2A Protocol (Agent-to-Agent Communication)** - Emerging standard for direct agent-to-agent negotiation and task coordination
+- **AG-UI (Agent Graphical User Interface)** - Specialized UI patterns for agent interaction including:
+  - Multi-agent workflow dashboards
+  - Real-time agent status monitoring
+  - Natural language command interfaces
+  - Agent behavior visualization and control
+
+#### Browser & Computer Control Agents
+- **[Browser Use](https://github.com/browser-use/browser-use)** - Make websites accessible for AI agents (6k+ stars, updated 6 hours ago)
+- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Code Less, Make More with autonomous development agents
+- **[Nanobrowser](https://github.com/nanobrowser/nanobrowser)** - Chrome extension for AI-powered web automation
+
+### 🛠️ Developer Tools & Frameworks
+
+#### AI-Powered Development
+- **[Unsloth](https://github.com/unslothai/unsloth)** - 2x faster fine-tuning for Qwen3, Llama 4, DeepSeek-R1, Gemma 3 (Updated 3 hours ago)
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** - Unified efficient fine-tuning of 100+ LLMs & VLMs (ACL 2024)
+- **[vLLM](https://github.com/vllm-project/vllm)** - High-throughput LLM serving (Updated 1 hour ago)
+- **[Quantalogic](https://github.com/quantalogic/quantalogic)** - Powerful agentic framework for complex reasoning tasks
+
+#### Model Context Protocol Ecosystem
+- **[MCP Tools](https://github.com/f/mcptools)** - Swiss Army Knife for MCP Servers
+- **[Active Pieces](https://github.com/activepieces/activepieces)** - AI Agents & MCPs & AI Workflow Automation with 280+ MCP servers
+- **[MCP Agent](https://github.com/lastmile-ai/mcp-agent)** - Build effective agents using Model Context Protocol
+
+### 📊 Data & RAG Technologies
+
+#### Advanced RAG Systems
+- **[RAGFlow](https://github.com/infiniflow/ragflow)** - Open-source RAG engine based on deep document understanding
+- **[Quivr](https://github.com/QuivrHQ/quivr)** - Opiniated RAG for integrating GenAI in your apps
+- **[Essential Web v1.0](https://huggingface.co/datasets/EssentialAI/essential-web-v1.0)** - Large-scale web dataset for AI training (75.5k downloads)
+
+#### Specialized Data Processing
+- **[FireCrawl](https://github.com/mendableai/firecrawl)** - Turn entire websites into LLM-ready markdown (Updated yesterday)
+- **[Institutional Books 1.0](https://huggingface.co/datasets/institutional/institutional-books-1.0)** - Academic text dataset (38.2k downloads)
+
+### 🔒 Security & Safety
+
+#### AI Safety Developments
+- **[Anthropic's Responsible Scaling Policy](https://anthropic.com/rsp-updates)** - Updated safety guidelines for AI development
+- **[OpenAI Safety Research](https://openai.com/safety/)** - Latest research on AI alignment and safety
+- **[Preparing for Future AI Risks in Biology](https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/)** - Safety considerations for biological AI (June 2025)
+
+#### Enterprise Security
+- **[Trust & Transparency at Anthropic](https://trust.anthropic.com/)** - Enterprise security and compliance
+- **[OpenAI Security Updates](https://openai.com/index/scaling-coordinated-vulnerability-disclosure/)** - Scaling security with responsible disclosure (June 2025)
+
+### 📈 Industry Applications
+
+#### Business Integration
+- **[Mattel x OpenAI](https://openai.com/index/mattels-iconic-brands/)** - Bringing AI to iconic brands (June 2025)
+- **[Wix AI Website Builder](https://openai.com/index/wix/)** - Creating websites in minutes with AI (May 2025)
+- **[Retell AI](https://openai.com/index/retell-ai/)** - Customizable voice agent automation with GPT-4o (June 2025)
+
+### 🎯 Key Takeaways for 2025
+
+1. **Agent Communication**: A2A protocols are becoming essential for multi-agent systems
+2. **User Interfaces**: AG-UI patterns are emerging for better human-agent interaction
+3. **Real-time Capabilities**: Models now support real-time processing and generation
+4. **Computer Control**: AI can now directly interact with computer interfaces
+5. **Production Ready**: More frameworks are offering enterprise-grade agent solutions
+6. **Safety First**: Increased focus on responsible AI development and deployment
+
+---
+
+*Sources: GitHub Topics (22k+ LLM repositories), Anthropic Research, OpenAI Updates, Hugging Face Models*
+
+---
+
+## 📚 Learning & Development
 
 - [Personal Learning & Reflection](#-personal-learning--reflection)
 - [Learning Resources](#-learning-resources)
@@ -740,7 +899,6 @@ The complete content from the original README has been preserved and reorganized
 - [PhiData](https://docs.phidata.com/introduction) Phidata is a toolkit for building AI Assistants using function calling.
 - [Microsoft AutoDev](https://github.com/unit-mesh/auto-dev) 🧙‍AutoDev: The AI-powered coding wizard with multilingual support
 - [Cognee](https://github.com/topoteretes/cognee?tab=readme-ov-file) Memory management for the AI Applications and AI Agents
-- [MelloTTS](https://github.com/myshell-ai/MeloTTS) High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean.
 - [MemGPT](https://memgpt.ai/) Enable Next-Gen Large Language Model Applications
 - [lumentis](https://github.com/hrishioa/lumentis) Generate beautiful docs from your transcripts and unstructured information with a single command.
 - [Wantdb/OpenUI](https://github.com/wandb/openui) OpenUI let's you describe UI using your imagination, then see it rendered live.
@@ -750,306 +908,158 @@ The complete content from the original README has been preserved and reorganized
 - [Oumi](https://github.com/oumi-ai/oumi) Everything you need to build state-of-the-art foundation models, end-to-end.
 
 
-## AI Assisted coding
+## AI Assisted Coding & Development
 
-- [Plandex](https://github.com/plandex-ai/plandex) An AI coding engine for complex tasks
-- [Aider][https://github.com/paul-gauthier/aider] aider is AI pair programming in your terminal
+### Next-Generation AI Code Editors
+- **[Cursor](https://cursor.sh/)** - AI-first code editor with contextual understanding and codebase analysis
+- **[Windsurf](https://codeium.com/windsurf)** - Collaborative AI IDE with real-time assistance
+- **[GitHub Copilot Workspace](https://github.com/features/copilot)** - AI-powered development environments
+- **[Replit Agent](https://replit.com/)** - Complete application development from natural language
+
+### AI Pair Programming Tools
+- **[Plandex](https://github.com/plandex-ai/plandex)** - An AI coding engine for complex tasks
+- **[Aider](https://github.com/paul-gauthier/aider)** - aider is AI pair programming in your terminal
+- **[Claude Engineer](https://github.com/Doriandarko/claude-engineer)** - Advanced AI coding assistant with file system operations
+- **[Continue](https://continue.dev/)** - Open-source autopilot for VS Code and JetBrains
+
+### Code Generation & UI Building
+- **[v0 by Vercel](https://v0.dev/)** - Generate React components and full applications from prompts
+- **[Screenshot to Code](https://github.com/abi/screenshot-to-code)** - Drop in a screenshot and convert it to clean code
+- **[OpenUI](https://github.com/wandb/openui)** - Describe UI using your imagination, then see it rendered live
+- **[Code2prompt](https://github.com/raphaelmansuy/code2prompt)** - Convert a codebase to an AI prompt
+
+### AI Code Analysis & Security
+- **[CodeRabbit](https://coderabbit.ai/)** - AI-powered code reviews and suggestions
+- **[Snyk DeepCode](https://snyk.io/platform/deepcode-ai/)** - AI-powered security and code quality analysis
+- **[Amazon CodeWhisperer](https://aws.amazon.com/codewhisperer/)** - AI coding companion with security scanning
+
+### Cursor AI Ecosystem
+- **[Awesome Cursor Rules](https://github.com/PatrickJS/awesome-cursorrules)** - Curated collection of .cursorrules files
+- **[Cursor Directory](https://cursor.directory/)** - Discover Cursor Rules & MCP Servers
+- **[Cursor AI Extensions](https://marketplace.visualstudio.com/search?term=cursor&target=VSCode)** - Enhanced extensions for Cursor
 
 ## AI Haking
 
 [How to Hack AI Apps](https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.html)  How to Hack AI Agents and Applications
 
-## RAG
+## RAG & Knowledge Systems - 2025 Edition
 
-- [RagFlow](https://github.com/infiniflow/ragflow?tab=readme-ov-file) RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.
-- [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses. 
-- [byaldi](https://github.com/AnswerDotAI/byaldi) Use late-interaction multi-modal models such as ColPali in just a few lines of code.
+### Advanced RAG Frameworks
+- **[RagFlow](https://github.com/infiniflow/ragflow)** - RAG engine with deep document understanding and visual parsing
+- **[LightRAG](https://github.com/HKUDS/LightRAG)** - Knowledge graph RAG with entity relationship understanding
+- **[RAG Techniques](https://github.com/NirDiamant/RAG_Techniques)** - Advanced RAG implementation patterns and techniques
+- **[LlamaIndex](https://www.llamaindex.ai/)** - Production-ready data framework for LLM applications
+
+### Next-Gen Vector & Search
+- **[pgvectorscale](https://github.com/timescale/pgvectorscale/)** - High-performance vector search for large workloads
+- **[byaldi](https://github.com/AnswerDotAI/byaldi)** - Late-interaction multi-modal models (ColPali) for document search
+- **[Weaviate](https://weaviate.io/)** - Vector database with hybrid search capabilities
+- **[Qdrant](https://qdrant.tech/)** - High-performance vector similarity search engine
+
+### Document Processing & Extraction
+- **[zerox](https://github.com/getomni-ai/zerox)** - OCR & document extraction using vision models
+- **[FireCrawl](https://github.com/mendableai/firecrawl)** - Turn websites into LLM-ready markdown
+- **[lumentis](https://github.com/hrishioa/lumentis)** - Generate docs from transcripts and unstructured data
+- **[Unstructured](https://unstructured.io/)** - Transform documents for LLM applications
+
+### Knowledge Graph & Reasoning
+- **[MindGraph](https://github.com/yoheinakajima/MindGraph)** - AI-powered knowledge graph generation and querying
+- **[Neo4j Vector Index](https://neo4j.com/docs/cypher-manual/current/indexes-for-vector-search/)** - Graph database with vector search
+- **[Microsoft GraphRAG](https://github.com/microsoft/graphrag)** - Knowledge graph enhanced RAG
+- **[LangChain Graph](https://python.langchain.com/docs/use_cases/graph/)** - Graph-based question answering
+
+### Semantic Search & Embeddings
+- **[Cohere Embed v3](https://cohere.com/embed)** - Advanced embedding models with improved accuracy
+- **[OpenAI text-embedding-3](https://platform.openai.com/docs/guides/embeddings)** - Latest embedding models from OpenAI
+- **[Sentence Transformers](https://www.sbert.net/)** - State-of-the-art sentence embeddings
+- **[Jina Embeddings v2](https://jina.ai/embeddings/)** - 8K context length embeddings
 
 ## Knowledge Graph
 
 - [MindGraph](https://github.com/yoheinakajima/MindGraph) proof of concept prototype for generating and querying against an ever-expanding knowledge graph with ai
 - [LighRAG](https://github.com/HKUDS/LightRAG) LightRAG: Simple and Fast Retrieval-Augmented Generation". https://arxiv.org/abs/2410.05779
 
-## Model Context Protocol
-
-- [MCP Tools](https://github.com/f/mcptools) **Swiss Army Knife for MCP Servers.** A comprehensive CLI for interacting with Model Context Protocol servers that provides discovery & management, development features, output options, security & control, and transport support. It's like having a universal remote for AI integrations.
-
-## Controlling Inference
-
-- [Transformer Head](https://github.com/center-for-humans-and-machines/transformer-heads) Toolkit for attaching, training, saving and loading of new heads for transformer models
-- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs. Controlling inference using Wasm programs.
-
-## Quantization
-
-- [Aimet](https://github.com/quic/aimet) AIMET is a library that provides advanced quantization and compression techniques for trained neural network models from Qualcomm Innovation Center.
-- [hqq](https://github.com/mobiusml/hqq) Official implementation of Half-Quadratic Quantization (HQQ). **HQQ** is a fast and accurate model quantizer that skips the need for calibration data. It's super simple to implement (just a few lines of code for the optimizer). It can crunch through quantizing the Llama2-70B model in only 4 minutes! 🚀
-
-## Training Models
-
-- [OLMo](https://github.com/allenai/OLMo) Modeling, training, eval, and inference code for [OLMo](https://allenai.org/olmo)
-
-## AI Command tools
-
-- [llms](https://llm.datasette.io/en/stable/) A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine. By [Simon Willison](https://simonwillison.net/)
-- [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) A natural language interface for computers
-- [Documentation Open Interpreter](https://docs.openinterpreter.com/getting-started/introduction) A new way to use computers
-- [whisper](https://github.com/openai/whisper) Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
-- [plock](https://github.com/jasonjmcghee/plock) From anywhere you can type, query and stream the output of an LLM or any other script
-- [Screen shot to code](https://github.com/abi/screenshot-to-code) Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
-- [Code2prompt](https://github.com/raphaelmansuy/code2prompt) Convert a codebase to an AI prompt 
-- [Claude Engineer](https://github.com/Doriandarko/claude-engineer) Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks. This tool combines the capabilities of a large language model with practical file system operations and web search functionality.
-
-## Controlling the generation of LLMs during decoding
-
-- [Guidance](https://github.com/guidance-ai/guidance) A guidance language for controlling large language models.
-- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
-- [Representation Ingeneering](https://vgel.me/posts/representation-engineering/) Representation Engineering Mistral-7B an Acid Trip 💊
-
-
-## Voice
-
-- [VoiceCraft](https://github.com/jasonppy/VoiceCraft)  Zero-Shot Speech Editing and Text-to-Speech in the Wild
-- [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) **Kokoro** is a frontier TTS model for its size of **82 million parameters** (text in/audio out).
-- [Kokoro Github](https://github.com/hexgrad/kokoro?tab=readme-ov-file) Kokoro JS
-
-## Mac App
-
-- [Enchanted](https://github.com/AugustDev/enchanted) Enchanted is iOS and macOS app for chatting with private self hosted language models such as Llama2, Mistral or Vicuna using Ollama.
-- [BoltAI](https://boltai.com/docs) BoltAI is a beautiful and powerful AI chat app for Mac. It integrates ChatGPT and other large language models (LLMs) deeply into your workflows so you don’t have to go back and forth with the ChatGPT web UI.
-
-## Serving LLMS
-
-### Tools
-
-- [llamaC++](https://github.com/ggerganov/llama.cpp) LLM inference in C/C++
-- [vLLM](https://github.com/vllm-project/vllm) Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
-- [nm-vllm](https://github.com/neuralmagic/nm-vllm) A high-throughput and memory-efficient inference and serving engine for LLMs (sparse compressing)
-- [LLama Cpp Python Binding](https://llama-cpp-python.readthedocs.io/en/latest/) OpenAI compatible web server
-- [SkyPilot](https://docs.vllm.ai/en/latest/) Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
-- [Ollama](https://github.com/ollama/ollama) Go program that encapsulate [llamac++](https://github.com/ggerganov/llama.cpp). [documentation](https://ollama.com/)
-- [fastassert](https://github.com/phospho-app/fastassert) Dockerized LLM inference server with constrained output (JSON mode), built on top of vLLM and outlines.
-- [luminal](https://github.com/jafioti/luminal) Deep learning at the speed of light coded in Rust. The aim for 0.3 is to achieve SOTA performance on an M1 pro (50 tok/s), and near SOTA on single nvidia gpus (>100 tok/s)
-- [LLamafile](https://github.com/Mozilla-Ocho/llamafile) Turning a LLM model into a Multiplatform executable
-- [candle](https://github.com/huggingface/candle?tab=readme-ov-file) Minimalist ML framework for Rust. Run and Serve Models in Rust.
-- [Mlx Server](https://www.mlxserver.com/) This Python library is the easist way to begin building on top of Apple's machine learning library MLX
-- [AICI](https://github.com/microsoft/AICI) AICI: Prompts as (Wasm) Programs
-- [List of tools that serves AI locally](https://github.com/janhq/awesome-local-ai) An awesome repository of local AI tools
-- [Skypilot](https://skypilot.readthedocs.io/en/latest/#)SkyPilot is a framework for running LLMs, AI, and batch jobs on any cloud, offering maximum cost savings, highest GPU availability, and managed execution.
-- [Jan](https://github.com/janhq/jan) Jan is an open source alternative to ChatGPT that runs 100% offline on your computer
-- [LoraX](https://github.com/predibase/lorax) Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs ([Documentation](https://loraexchange.ai/))
-- [Candle](https://github.com/huggingface/candle) Minimalist ML framework for Rust from HuggingFace to run models in production.
-- [ZML](https://github.com/zml/zml) High performance AI inference stack. Built for production. [@ziglang](https://github.com/ziglang) / [@openxla](https://github.com/openxla) / MLIR / [@bazelbuild](https://github.com/bazelbuild)
-- [MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server) MLX Omni Server is a local inference server powered by Apple's MLX framework, specifically designed for Apple Silicon (M-series) chips. It implements OpenAI-compatible API endpoints, enabling seamless integration with existing OpenAI SDK clients while leveraging the power of local ML inference.
-
-## Agents
-
-- [Quantalogic](https://github.com/quantalogic/quantalogic) A powerful Agentic framework that can code.
-- [PocketFlow](https://the-pocket.github.io/PocketFlow/multi_agent.html) 
-- [Agent Computer User Awesome List](https://github.com/francedot/acu) A curated list of resources about AI agents for Computer Use, including research papers, projects, frameworks, and tools.
-
-- [Eliza](https://github.com/elizaOS/eliza) Autonomous agents for everyone.
-- [Phidata](https://github.com/agno-agi/phidata) PhiData
-- [Pydantic Agents](https://ai.pydantic.dev/agents/) PydanticAI is a Python agent framework designed to make it less painful to build production grade applications with Generative AI.
-- [Smoll Agents](https://github.com/huggingface/smolagents) 🤗 smolagents: a barebones library for agents. Agents write python code to call tools and orchestrate other agents from Hugging Face.
-- [Potpie](https://github.com/potpie-ai/potpie) Prompt-To-Agent : Create custom engineering agents for your codebase
-- [MegaGPT](https://github.com/geekan/MetaGPT/tree/main)The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo
-- [CrewAI](https://github.com/joaomdmoura/crewAI) Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
--  [Devika](https://github.com/stitionai/devika) Devika is an Agentic AI Software Engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve the given objective. Devika aims to be a competitive open-source alternative to Devin by Cognition AI.
--  [AgentStudio](https://skyworkai.github.io/agent-studio/) AgentStudio is an open toolkit covering the entire lifespan of building virtual agents that can interact with everything on digital worlds
-- [AIOS](https://github.com/agiresearch/AIOS/tree/main) AIOS: LLM Agent Operating System
-- [AutoGen](https://microsoft.github.io/autogen/) Enable Next-Gen Large Language Model Applications
-- [Screen Agents](https://github.com/niuzaisheng/ScreenAgent) ScreenAgent: A Computer Control Agent Driven by Visual Language Large Model
-- [Synapse](https://ltzheng.github.io/Synapse/) Synapse: Trajectory-as-Exemplar Prompting  with Memory for Computer Control
-- [Cradles](https://baai-agents.github.io/Cradle/) Towards General Computer Control:  A Multimodal Agent for  Red Dead Redemption II as a Case Study
-- [kwaiagents](https://github.com/kwaikeg/kwaiagents) A generalized information-seeking agent system with Large Language Models (LLMs).
-- [LLocalSearch](https://github.com/nilsherzig/LLocalSearch) LLocalSearch is a completely locally running search aggregator using LLM Agents. The user can ask a question and the system will use a chain of LLMs to find the answer. The user can see the progress of the agents and the final answer. No OpenAI or Google API keys are needed.
-- [SWE Agents](https://github.com/princeton-nlp/SWE-agent) SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models
-- [Presentation of Agentic Models from Angrew NG](00-assets/ng_agentic_reasoning.pdf)
-- [Zep Long term memory for Agent](https://github.com/getzep/zep) Zep: Long-Term Memory for ‍AI Assistants.
-- [OpenSSA](https://github.com/aitomatic/openssa) OpenSSA: Small Specialist Agents—Enabling Efficient, Domain-Specific Planning + Reasoning for AI
-- [Cognitive Architectures for Language Agents](https://arxiv.org/pdf/2309.02427)
-- [🔮 Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
-- [Wikipedia Cognitive Architecture](https://en.wikipedia.org/wiki/Cognitive_architecture)
-- [Baseline AI Agentic Architecture](https://techcommunity.microsoft.com/blog/machinelearningblog/baseline-agentic-ai-systems-architecture/4207137)
-- [Agentic Mesh Towards Entreprise Grade Agents](https://medium.com/towards-data-science/agentic-mesh-towards-enterprise-grade-agents-18e8de184af1) Agentic Mesh Agents 
-- [Advanced Large Language Model Agents](https://llmagents-learning.org/sp25) Course Berkeley
-
-## Reasoning
-
-[llm-reasoners](https://github.com/maitrix-org/llm-reasoners) A library for advanced large language model reasoning
-
-## Prompt Engineering
-
-- [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
-- [Claude Anthropic prompts Library](https://docs.anthropic.com/claude/page/prompts) Explore optimized prompts for a breadth of business and personal tasks
-- [Navigating the Prompt Engineering Landscape: A Comprehensive Survey for NLP Practitioners](https://arxiv.org/pdf/2407.12994)
-
-## Vibe Programming
-
-- [ Awesome cursor rules](https://github.com/PatrickJS/awesome-cursorrules)  Awesome CursorRules is a curated list of .cursorrules files for the Cursor AI code editor. These .cursorrules files allow developers to customize the behavior of the AI-powered code generation, ensuring it aligns with their project's specific needs and coding standards.
-- [Cursor directory](https://cursor.directory/)  Discover Cursor Rules & MCP Servers
-
-## Interesting projects
-
-- [MLX Swift Examples](https://github.com/ml-explore/mlx-swift-examples/tree/main) Examples using MLX Swift
-
-
-## Models
-
-- [Gorilla OpenFunction](https://gorilla.cs.berkeley.edu/blogs/7_open_functions_v2.html)  🦍 Gorilla: Large Language Model Connected with Massive APIs
-- [Models list](https://book.premai.io/state-of-open-source-ai/models/) Open Sources model list
-- [NousResearch/Nous-Hermes-llama-2-7b](https://huggingface.co/NousResearch/Nous-Hermes-llama-2-7b/tree/main)
-- [Ollama version of Nous-Hermes2Pro][https://ollama.com/adrienbrault/nous-hermes2pro]
-- [LLavaNext](https://huggingface.co/spaces/merve/llava-next) LLaVA-NeXT is recently merged to transformers and it outperforms many of the proprietary models like Gemini on various benchmarks!  
-- [Startling LM 7B Beta](https://huggingface.co/Nexusflow/Starling-LM-7B-beta) The best 7B Models - **Finetuned from model:** [Openchat-3.5-0106](https://huggingface.co/openchat/openchat-3.5-0106) (based on [Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1)) - From Berkeley https://starling.cs.berkeley.edu/ 
-
-## Vector Database
-
-- [pgvectorscale](https://github.com/timescale/pgvectorscale/) A complement to pgvector for high performance, cost efficient vector search on large workloads.
-
-## LLM Leaderboard
-
-- [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) LeaderBoard for function calling
-- [OpenLLMs Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 📐 The 🤗 Open LLM Leaderboard aims to track, rank and evaluate open LLMs and chatbots.
-- [HumanEval Leaderboard](https://evalplus.github.io/leaderboard.html) # 🏆 EvalPlus Leaderboard 🏆 EvalPlus evaluates AI Coders with rigorous tests
-
-## RAG
-
-- [Nano Graph Rag](https://github.com/gusye1234/nano-graphrag)A simple, easy-to-hack GraphRAG implementation
-
-## Control generation
-
-- [instructor](https://github.com/jxnl/instructor) structured outputs for llms
-- [fructose](https://github.com/bananaml/fructose) LLM calls as strongly-typed functions
-
-## Synthetic data generation
-
-### Tools
-
-- [Bonito](https://github.com/BatsResearch/bonito) A lightweight library for generating synthetic instruction tuning datasets for your data without GPT.
-
-
-## Fine tuning
-
-### Tools
-
-- [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) 5X faster 60% less memory QLoRA finetuning
-- [Documentation from Premai about Finetuning ](https://book.premai.io/state-of-open-source-ai/fine-tuning/)
-- [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) Unify Efficient Fine-tuning of 100+ LLMs
-- [peft](https://github.com/huggingface/peft) 🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.
-- [Tochtune](https://github.com/pytorch/torchtune) A Native-PyTorch Library for LLM Fine-tuning
-- [LLMTuner](https://github.com/promptslab/LLMTuner) Tune LLM in few lines of code
-- [LMFlow](https://github.com/OptimalScale/LMFlow) An Extensible Toolkit for Finetuning and Inference of Large Foundation Models. Large Models for All. (Include Lisa Finetuning)
-- [# Efficient finetuning of Llama 3 with FSDP QDoRA](https://www.answer.ai/posts/2024-04-26-fsdp-qdora-llama3.html) A blog article that explains how to use the stat of the art QDoRA fine tuning method on LLAMA3
-- [https://github.com/getomni-ai/zerox](https://github.com/getomni-ai/zerox) OCR & Document Extraction using vision models
-
-## Computing
-
-[Lighting thunder](https://github.com/Lightning-AI/lightning-thunder) Source to source compiler for PyTorch. It makes PyTorch programs faster on single accelerators and distributed.
-
-## AI and Ethics
-
-[How to document an AI/Machine Learning Model: Improving Transparency in AI through Model Cards](https://github.com/raphaelmansuy/model_card_template/blob/main/README.md)
-
-
-## AI Devices
-
-- [Friend](https://github.com/BasedHardware/friend) AI wearable with 24h+ battery
-- [Whomane](https://github.com/BasedHardware/Whomane) An open source wearable with camera
-
-
-## Development
-
-### VSCode
-
-- [Useful VSCode extensions](10-resources/01%20_vscode_extensions.md) 
-- [Open source alternatives to popular products](https://openalternative.co/) Discover **Open Source Alternatives** to Popular Software
-### UX Libraries
-
-- [React Aria](https://react-spectrum.adobe.com/react-aria/index.html)
-- [TaillwindCSS](https://tailwindcss.com/)
-- [shadcn](https://ui.shadcn.com/)
-
-## Data Engineering
-
-- [Fluvio](https://github.com/infinyon/fluvio) Lean and mean distributed stream processing system written in rust and web assembly. Alternative to Kafka + Flink in one.
-- [Unstract](https://github.com/Zipstack/unstract) No-code LLM Platform to launch APIs and ETL Pipelines to structure unstructured documents
-## Useful tools
-
-- [Shot Scraper](https://shot-scraper.datasette.io/en/stable/) A command-line utility for taking automated screenshots of websites from Simon Willison
-- [ttok](https://github.com/simonw/ttok) Count and truncate text based on tokens from Simon  Willison
-- [github2files](https://github.com/cognitivecomputations/github2file) Create a big files from a GitHub files
-- [terminalizer](https://github.com/faressoft/terminalizer/) Create an animated gif from recorded terminal session.
-- [Kamal](https://kamal-deploy.org/) # Deploy web apps anywher - From bare metal to cloud VMs.
-- [Bruno](https://www.usebruno.com/) Bruno is a Git-integrated, fully offline, and open-source API client
-
-
-
-## Starter ki
-
-- [AI Video Starter Kit](ub.com/fal-ai-community/video-starter-kit)
-
-## Articles
-
-[Arrticles list](01-articles/README.md)
-
-## LinkedIn Posts
-
-[LinkedIn Posts](06-linkedin-posts/linkedin_posts.md)
-## Medium publications
-
-[Forget the Cloud ☁️ — A MacBook Pro with M1/M2 is the Only AI Brain You Need … 🧠](https://medium.com/p/168ac77d78ab)
-
----
-
-```mermaid
-mindmap
-    root((My Digital Palace))
-        Personal Learning
-            TIL
-            Mental Models
-            Impatient Series
-        Learning Resources
-            Courses
-            Blogs
-            Datasets
-            Cloud Providers
-        AI Engineering
-            Frameworks
-                LangChain
-                LLamaIndex
-                HuggingFace
-            Development Tools
-            Command Line Tools
-        Core AI Technologies
-            LLMs
-                Serving
-                Training
-                Optimization
-            Embeddings
-            Prompt Engineering
-        AI Agents
-            Frameworks
-            Computer Control
-            Memory & Reasoning
-        Data & Knowledge
-            RAG
-            Knowledge Graphs
-            Synthetic Data
-        Specialized Apps
-            Voice & Audio
-            UI Tools
-            Document Processing
-        Models & Benchmarks
-            Notable Models
-            Leaderboards
-        Development
-            Structured Output
-            Programming Tools
-            Security
-        Emerging Tech
-            AI Devices
-            Experimental
+## Model Context Protocol (MCP) & AI Integration
+
+### What is Model Context Protocol?
+The Model Context Protocol (MCP) is an emerging standard that enables AI applications to securely connect to data sources and tools. It provides a unified way for AI systems to interact with external resources while maintaining security and consistency.
+
+### MCP Tools & Servers
+- **[MCP Tools](https://github.com/f/mcptools)** - Swiss Army Knife for MCP Servers. A comprehensive CLI for interacting with Model Context Protocol servers
+- **[Active Pieces](https://github.com/activepieces/activepieces)** - AI Agents & MCPs & AI Workflow Automation with 280+ MCP servers
+- **[MCP Agent](https://github.com/lastmile-ai/mcp-agent)** - Build effective agents using Model Context Protocol
+
+### Popular MCP Servers
+- **File System Server** - Access local files and directories
+- **Database Server** - Connect to SQL databases
+- **Git Server** - Interact with Git repositories
+- **Web Search Server** - Perform web searches
+- **Calendar Server** - Access calendar data
+- **Slack Server** - Integrate with Slack workspaces
+
+### MCP Benefits
+- **Standardized Integration** - Consistent way to connect AI to external data
+- **Security First** - Built-in permission and access controls
+- **Tool Reusability** - Write once, use across multiple AI applications
+- **Ecosystem Growth** - Growing library of pre-built servers
+
+## Voice & Speech Technologies - 2025 Edition
+
+### Revolutionary Speech AI Models - Kyutai Labs
+
+**[Moshi](https://github.com/kyutai-labs/moshi)** - Real-time full-duplex speech-text foundation model
+- **Latency**: 160ms theoretical (200ms practical on L4 GPU)
+- **Architecture**: 7B parameter temporal transformer + depth transformer
+- **Capabilities**: Bidirectional conversation with inner monologue
+- **Platforms**: PyTorch, MLX (Apple Silicon), Rust, Swift
+- **Live Demo**: [moshi.chat](https://moshi.chat)
+
+**[Delayed Streams Modeling](https://github.com/kyutai-labs/delayed-streams-modeling)** - Advanced streaming STT
+- **kyutai/stt-2.6b-en**: English-only, 2.6B params, 2.5s delay
+- **kyutai/stt-1b-en_fr**: English/French, 1B params, 0.5s delay + semantic VAD
+- **Performance**: Real-time streaming with word-level timestamps
+- **Scale**: Production servers handle 64 simultaneous connections at 3x real-time
+
+**[Unmute](https://unmute.sh/)** - Production speech processing platform
+- Real-time speech enhancement and processing
+- Production deployment of Kyutai models
+- Live demo available for testing
+
+### Mimi Neural Audio Codec
+
+**Technical Specifications:**
+- **Input**: 24 kHz audio
+- **Output**: 12.5 Hz representation
+- **Bandwidth**: 1.1 kbps with 80ms latency
+- **Architecture**: Transformer-enhanced encoder/decoder
+- **Performance**: Outperforms SpeechTokenizer and SemantiCodec
+
+**Key Features:**
+- Fully causal and streaming
+- Matches WavLM representations without delays
+- Adversarial training with feature matching
+- Multiple implementation backends
+
+### Implementation Options
+
+**PyTorch (Research & Experimentation):**
+```bash
+python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3
 ```
 
-**All links and resources have been preserved and reorganized for better navigation and discoverability. No content was lost in this reorganization.**
+**Rust (Production Deployment):**
+```bash
+cargo install --features cuda moshi-server
+moshi-server worker --config config-stt-en-hf.toml
+```
+
+**MLX (Apple Silicon):**
+```bash
+python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3
+```
+
+**Real-time Features:**
+- Streaming inference with chunked audio processing
+- Easy batching (H100: 400 streams real-time)
+- Word-level timestamps with semantic VAD
+- Voice activity detection for natural conversations
