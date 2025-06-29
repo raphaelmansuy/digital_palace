@@ -27,6 +27,23 @@
 
 ---
 
+## 🤖 Next-Generation Agent Frameworks
+
+### Google ADK (Agent Development Kit) 🆕
+- **[Google ADK](https://google.github.io/adk-docs/)** - Google's official framework for building and deploying AI agents
+- **Key Features**: Model-agnostic, deployment-agnostic, multi-agent support, built-in evaluation
+- **Language Support**: Python, Java
+- **Deployment**: Local, Cloud Run, Vertex AI Agent Engine
+- **Integration**: MCP (Model Context Protocol), A2A (Agent-to-Agent) protocol support
+- **Status**: Production-ready, actively maintained by Google
+
+### Enhanced MCP Ecosystem
+- **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)** - Standardized way for AI applications to integrate with external systems
+- **[Agent-to-Agent (A2A) Protocol](https://github.com/google/A2A/)** - Framework for agent communication and coordination
+- **Third-party integrations**: LangChain, CrewAI, and custom agent frameworks
+
+---
+
 ## 💻 Revolutionary AI Coding Tools
 
 ### Next-Generation AI Code Editors

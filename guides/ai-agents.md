@@ -43,6 +43,80 @@ graph TD
 
 ---
 
+## 🛠️ Agent Development Frameworks
+
+### Google ADK (Agent Development Kit) 🆕
+
+**Google's official framework for building production-ready AI agents**
+
+```python
+# Quick start with Google ADK
+from google.ai import adk
+
+# Create a simple agent
+agent = adk.Agent(
+    name="research_assistant",
+    model="gemini-pro",
+    tools=["search", "calculator", "code_executor"],
+    instructions="You are a helpful research assistant."
+)
+
+# Run the agent
+response = agent.run("What are the latest developments in quantum computing?")
+print(response)
+```
+
+**Key ADK Features:**
+- **Multi-Agent Support**: Build teams of specialized agents
+- **Flexible Orchestration**: Sequential, parallel, and loop workflows
+- **Rich Tool Ecosystem**: Built-in tools + custom functions
+- **Production Ready**: Deploy to Vertex AI, Cloud Run, or local
+- **Model Agnostic**: Works with Gemini, OpenAI, Anthropic, and more
+
+**Advanced ADK Example:**
+```python
+from google.ai.adk import Sequential, Parallel, LlmAgent
+
+# Create specialized agents
+researcher = LlmAgent(
+    name="researcher",
+    model="gemini-pro",
+    tools=["search", "web_scraper"],
+    instructions="Research and gather information."
+)
+
+analyst = LlmAgent(
+    name="analyst", 
+    model="gemini-pro",
+    tools=["calculator", "data_processor"],
+    instructions="Analyze data and provide insights."
+)
+
+writer = LlmAgent(
+    name="writer",
+    model="gemini-pro", 
+    tools=["formatter", "document_creator"],
+    instructions="Create well-structured reports."
+)
+
+# Orchestrate the workflow
+workflow = Sequential([
+    researcher,
+    analyst, 
+    writer
+])
+
+result = workflow.run("Create a market analysis report for renewable energy")
+```
+
+**🔗 Resources:**
+- [Google ADK Documentation](https://google.github.io/adk-docs/)
+- [Getting Started Guide](https://google.github.io/adk-docs/get-started/quickstart/)
+- [Sample Agents](https://github.com/google/adk-samples)
+- [Python SDK](https://github.com/google/adk-python)
+
+---
+
 ## 🏗️ Agent Architecture Patterns
 
 ### 1. ReAct Pattern (Reasoning + Acting)
@@ -581,6 +655,8 @@ class MultiModalAgent:
 - [ ] Planned scaling and production deployment
 
 **Ready for the next challenge?** → [Production Deployment Guide](./deployment.md)
+
+**Want to use Google's official framework?** → [Google ADK Complete Guide](./google-adk-guide.md)
 
 ---
 

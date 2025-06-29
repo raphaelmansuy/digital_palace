@@ -82,6 +82,21 @@
 
 ### Production-Grade Agents
 
+#### **[Google ADK (Agent Development Kit)](https://google.github.io/adk-docs/)** 🆕⭐
+- **Purpose**: Flexible and modular framework for developing and deploying AI agents
+- **Best for**: Enterprise-grade agent development, multi-agent systems, complex workflows
+- **Key Features**:
+  - Model-agnostic (optimized for Gemini, works with others)
+  - Deployment-agnostic (local, Cloud Run, Vertex AI)
+  - Rich tool ecosystem with built-in and custom tools
+  - Multi-agent architecture support
+  - Built-in evaluation and safety features
+  - Streaming and real-time capabilities
+- **Languages**: Python, Java
+- **Installation**: `pip install google-adk`
+- **Status**: Production-ready, officially supported by Google
+- **Links**: [Docs](https://google.github.io/adk-docs/) | [Python SDK](https://github.com/google/adk-python) | [Java SDK](https://github.com/google/adk-java) | [Samples](https://github.com/google/adk-samples)
+
 #### **[Quantalogic](https://github.com/quantalogic/quantalogic)** ⭐
 - **Purpose**: Powerful agentic framework
 - **Best for**: Complex automation, code generation

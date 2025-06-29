@@ -12,6 +12,7 @@
 | **Build a chatbot** | [Conversational AI](./conversational-ai.md) | 🟡 Intermediate | 4-8h | Basic Python |
 | **Create AI with my data** | [RAG Systems](./rag-systems.md) | 🟡 Intermediate | 6-12h | Python, databases |
 | **Build autonomous AI** | [AI Agents](./ai-agents.md) | 🔴 Advanced | 8-16h | APIs, async programming |
+| **Use Google ADK** | [Google ADK Guide](./google-adk-guide.md) | 🟡 Intermediate | 4-8h | Python, basic AI knowledge |
 | **Deploy to production** | [Production Deployment](./deployment.md) | 🔴 Advanced | 12+ h | DevOps, cloud platforms |
 | **Build business AI** | [Business AI](./business-ai.md) | 🟡 Intermediate | 4-8h | Business domain knowledge |
 | **Add voice capabilities** | [Voice AI](./voice-ai.md) | 🟡 Intermediate | 4-6h | Audio processing basics |

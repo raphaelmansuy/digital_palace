@@ -9,7 +9,7 @@
         <img src="https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge" alt="Last Updated"/>
     </a>
     <a href="./tools/ai-tools-master-directory.md">
-        <img src="https://img.shields.io/badge/AI%20Tools-155+-blue?style=for-the-badge" alt="AI Tools"/>
+        <img src="https://img.shields.io/badge/AI%20Tools-156+-blue?style=for-the-badge" alt="AI Tools"/>
     </a>
     <a href="./guides/README.md">
         <img src="https://img.shields.io/badge/Guides-25+-orange?style=for-the-badge" alt="Guides"/>
@@ -85,7 +85,7 @@
 
 | Metric | Count | Last Updated |
 |--------|-------|--------------|
-| **🛠️ AI Tools Cataloged** | 155+ | Weekly |
+| **🛠️ AI Tools Cataloged** | 156+ | Weekly |
 | **📚 Learning Resources** | 300+ | Daily |
 | **🎯 Implementation Guides** | 25+ | Weekly |
 | **📄 Research Papers** | 100+ | Monthly |
@@ -96,6 +96,7 @@
 
 - [OpenAI o3 Analysis](./reference/2025-ai-updates.md#openai-o3) - 2.1K views
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
+- [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
 
 
@@ -286,7 +287,7 @@ digital_palace/
 
 ### **🛠️ Comprehensive Tool Coverage**
 
-- **[150+ AI Tools](./tools/ai-tools-master-directory.md)** - Categorized by purpose and expertise level
+- **[156+ AI Tools](./tools/ai-tools-master-directory.md)** - Categorized by purpose and expertise level
 - **[2025 Breakthrough Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** - Latest innovations reshaping AI development
 - **[Production-Ready Solutions](./tools/ai-tools-master-directory.md#production--research-tools)** - Enterprise-grade platforms and frameworks
 
