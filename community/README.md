@@ -308,11 +308,15 @@ Our community-driven content is organized across specialized directories:
 - Exponential AI newsletter archive
 
 **📁 [Social Content](./social-content/)**
-- LinkedIn posts and social media content (from former 06-linkedin-posts)
-- Professional networking materials
-- Thought leadership articles
+
+- **[Raphaël MANSUY's Articles](./social-content/README.md)** - Comprehensive archive organized by month/year
+- LinkedIn posts and social media content
+- Professional insights on AI development
+- Interactive AI agents, frontend integration, ML techniques
+- **Latest:** [Building Interactive AI Agents in Frontend](./social-content/2025-06-29-building-interactive-ai-agents-frontend.md)
 
 **📁 [External Blogs](./external-blogs/)**
+
 - Curated external blog recommendations (from former 08-blogs)
 - Quality content from the AI community
 - Expert insights and analysis

@@ -98,6 +98,7 @@
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
 - [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
+- [Hidden Cost of AI Agent Frontend Development](./community/social-content/2025-06-29-building-interactive-ai-agents-frontend.md) - New!
 
 
 
