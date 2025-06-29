@@ -58,35 +58,47 @@ AI agents operate in two primary modes:
 
 Both modes require efficient context management to ensure relevant information is accessible without overwhelming the token limit.
 
+#### Agent Session Flow
+
 ```mermaid
 flowchart TD
     A[New Session Start] --> B{Session Type}
-    
     B -->|Single Goal| C[Load System Context]
     B -->|Multi-Session| D[Load System Context<br/>+ Historical Summaries]
-    
     C --> E[Goal Processing Loop]
     D --> E
     
-    E --> F[User Input]
-    F --> G[Tool Execution]
-    G --> H[Reasoning]
-    H --> I[Response Generation]
-    
-    I --> J{Goal Complete?}
-    J -->|No| K[Context Overflow Check]
-    K --> L[Relevance Scoring]
-    L --> M[Context Pruning]
-    M --> N[Knowledge Graph Update]
-    N --> F
-    
-    J -->|Yes| O[Session Synthesis]
-    O --> P[Summary Creation]
-    P --> Q[Knowledge Graph Storage]
-    Q --> R[Session End]
-    
     style E fill:#ccffcc
-    style O fill:#ffcccc
+```
+
+#### Processing Loop
+
+```mermaid
+flowchart TD
+    A[User Input] --> B[Tool Execution]
+    B --> C[Reasoning]
+    C --> D[Response Generation]
+    D --> E{Goal Complete?}
+    E -->|No| F[Continue Loop]
+    E -->|Yes| G[Session End]
+    
+    style A fill:#e1f5fe
+    style G fill:#ffcccc
+```
+
+#### Context Management Cycle
+
+```mermaid
+flowchart TD
+    A[Context Overflow Check] --> B[Relevance Scoring]
+    B --> C[Context Pruning]
+    C --> D[Knowledge Graph Update]
+    D --> E[Session Synthesis]
+    E --> F[Summary Creation]
+    F --> G[Knowledge Graph Storage]
+    
+    style A fill:#fff3e0
+    style G fill:#e8f5e8
 ```
 
 ---
@@ -150,6 +162,8 @@ Score = (0.3 * Recency) + (0.2 * Frequency) + (0.3 * Similarity) + (0.2 * TaskRe
 
 Where each dimension is normalized to [0, 1].
 
+#### Relevance Scoring Factors
+
 ```mermaid
 flowchart LR
     A[Content Item] --> B[Relevance Engine]
@@ -159,23 +173,39 @@ flowchart LR
     B --> E[Semantic Alignment<br/>30%]
     B --> F[Task-Specific Weight<br/>20%]
     
-    C --> G[Exponential Decay<br/>1-hour half-life]
-    D --> H[Reference Count<br/>Tracking]
-    E --> I[Embedding Similarity<br/>Current Context]
-    F --> J[Goal Alignment<br/>Score]
+    style B fill:#ffcccc
+```
+
+#### Scoring Calculation
+
+```mermaid
+flowchart TD
+    A[Temporal Relevance] --> E[Exponential Decay<br/>1-hour half-life]
+    B[Usage Frequency] --> F[Reference Count<br/>Tracking]
+    C[Semantic Alignment] --> G[Embedding Similarity<br/>Current Context]
+    D[Task-Specific Weight] --> H[Goal Alignment<br/>Score]
     
-    G --> K[Final Score]
-    H --> K
-    I --> K
-    J --> K
+    E --> I[Final Score]
+    F --> I
+    G --> I
+    H --> I
     
-    K --> L{Score Threshold}
-    L -->|High| M[Working Zone]
-    L -->|Medium| N[History Zone<br/>Compressed]
-    L -->|Low| O[External Storage]
+    style I fill:#ccffcc
+```
+
+#### Score-Based Classification
+
+```mermaid
+flowchart TD
+    A[Final Score] --> B{Score Threshold}
+    B -->|High| C[Working Zone]
+    B -->|Medium| D[History Zone<br/>Compressed]
+    B -->|Low| E[External Storage]
     
-    style K fill:#ffcccc
-    style L fill:#ffffcc
+    style B fill:#ffffcc
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
 ```
 
 #### Application
@@ -212,11 +242,13 @@ To overcome context window limitations, we implement a persistent knowledge grap
 A customer service agent stores a user's support ticket history in the graph, with nodes for each ticket and edges linking related issues. A pointer in the history zone references this data, and the agent retrieves specific tickets when the user mentions a recurring problem.
 
 **Implementation:**
+
 - Use a graph database (e.g., Neo4j) for storage and traversal.
 - Implement semantic search with embeddings for efficient retrieval.
 - Limit retrieved data to 5-10% of the working zone to avoid overloading.
 
 **Benefits:**
+
 - Expands memory capacity beyond context window limits.
 - Maintains awareness of historical data without permanent token consumption.
 - Supports complex relationship mapping for informed decision-making.
@@ -235,11 +267,13 @@ Dynamic augmentation allows the agent to temporarily expand its context with rel
 In a multi-session project, the agent retrieves notes from a prior meeting when a stakeholder references a past discussion. After addressing the query, the notes are removed to free up space.
 
 **Implementation:**
+
 - Use a retrieval module that combines keyword matching and semantic search.
 - Track augmented content with unique IDs for cleanup.
 - Monitor working zone usage to prevent overflow during augmentation.
 
 **Benefits:**
+
 - Provides on-demand access to historical context.
 - Maintains context efficiency by releasing temporary data.
 - Enhances responsiveness to context-dependent queries.
@@ -247,6 +281,8 @@ In a multi-session project, the agent retrieves notes from a prior meeting when 
 ### 5. Progressive Information Compression
 
 To maximize context efficiency, we employ sophisticated summarization techniques that distill historical interactions into compact, actionable insights.
+
+#### Data Compression Process
 
 ```mermaid
 flowchart TD
@@ -257,24 +293,36 @@ flowchart TD
     C -->|Decision| E[Key Outcome Extraction]
     C -->|Process| F[Step Sequence Distillation]
     
-    D --> G[Hierarchical Summary<br/>Multi-level Detail]
-    E --> H[Decision Record<br/>Context + Result]
-    F --> I[Process Flow<br/>Key Steps Only]
-    
-    G --> J[Compressed Summary<br/>500 tokens]
-    H --> J
-    I --> J
-    
-    J --> K[History Zone Storage]
-    J --> L[Knowledge Graph Pointer]
-    
-    A --> M[Full Detail Archive]
-    M --> N[External Storage]
-    L --> N
-    
     style A fill:#ffcccc
-    style J fill:#ccffcc
-    style N fill:#ffffcc
+```
+
+#### Compression Techniques
+
+```mermaid
+flowchart TD
+    A[Dialogue Summarization] --> D[Hierarchical Summary<br/>Multi-level Detail]
+    B[Key Outcome Extraction] --> E[Decision Record<br/>Context + Result]
+    C[Step Sequence Distillation] --> F[Process Flow<br/>Key Steps Only]
+    
+    D --> G[Compressed Summary<br/>500 tokens]
+    E --> G
+    F --> G
+    
+    style G fill:#ccffcc
+```
+
+#### Storage Architecture
+
+```mermaid
+flowchart TD
+    A[Compressed Summary<br/>500 tokens] --> B[History Zone Storage]
+    A --> C[Knowledge Graph Pointer]
+    
+    D[Full Detail Archive] --> E[External Storage]
+    C --> E
+    
+    style A fill:#ccffcc
+    style E fill:#ffffcc
 ```
 
 #### Techniques
@@ -289,11 +337,13 @@ flowchart TD
 A 10,000-token customer support transcript is compressed into a 500-token summary capturing the issue, resolution, and follow-up actions, with a pointer to the full transcript.
 
 **Implementation:**
+
 - Use abstractive summarization models (e.g., fine-tuned LLMs) for insight distillation.
 - Store summaries in the history zone with metadata for retrieval.
 - Validate compression quality by monitoring downstream task performance.
 
 **Benefits:**
+
 - Reduces token usage while preserving essential information.
 - Supports efficient storage of historical context.
 - Enables selective detail retrieval when needed.
@@ -347,20 +397,22 @@ sequenceDiagram
 A project management agent summarizes a planning session, noting assigned tasks and deadlines. In the next session, it loads this summary for a stakeholder requesting updates.
 
 **Implementation:**
+
 - Use session metadata (e.g., user ID, task category) for continuity mapping.
 - Prioritize summaries with high relevance scores for loading.
 - Limit loaded summaries to 10-15% of the working zone.
 
 **Benefits:**
+
 - Preserves institutional memory across sessions.
 - Enhances decision-making consistency.
 - Reduces manual context reconstruction by users.
 
 ---
 
-## Mermaid Diagram: Context Management Architecture
+## Context Management Architecture Overview
 
-The following Mermaid diagram illustrates the hierarchical context architecture and its integration with external storage and dynamic processes.
+### Context Window Structure
 
 ```mermaid
 graph TD
@@ -371,42 +423,56 @@ graph TD
     B --> B1[System Prompt]
     B --> B2[SOP]
     B --> B3[Tool Descriptions]
+```
 
-    C --> C1[Current Goal]
+### Working Zone Components
+
+```mermaid
+graph TD
+    C[Working Zone] --> C1[Current Goal]
     C --> C2[User Inputs]
     C --> C3[Tool Outputs]
     C --> C4[Reasoning]
+    
+    C --> F[Relevance Engine]
+    F --> F1[Temporal Relevance]
+    F --> F2[Usage Frequency]
+    F --> F3[Semantic Alignment]
+    F --> F4[Task-Specific Weight]
+```
 
-    D --> D1[Compressed Summaries]
+### External Storage Integration
+
+```mermaid
+graph TD
+    D[History Zone] --> D1[Compressed Summaries]
     D --> D2[Pointers to Knowledge Graph]
 
     D --> E[External Knowledge Graph]
     E --> E1[Entity Nodes]
     E --> E2[Relationship Edges]
     E --> E3[Full Interaction Records]
+```
 
-    C --> F[Relevance Engine]
-    F --> F1[Temporal Relevance]
-    F --> F2[Usage Frequency]
-    F --> F3[Semantic Alignment]
-    F --> F4[Task-Specific Weight]
+### Dynamic Operations
 
-    C --> G[Dynamic Retrieval]
-    G --> E
-    G --> C4[Augmented Context]
-
-    D --> H[Compression Module]
-    H --> D1
-    H --> E
-
-    A --> I[Session Synthesis]
-    I --> D
+```mermaid
+graph TD
+    A[Working Zone] --> B[Dynamic Retrieval]
+    B --> C[External Knowledge Graph]
+    B --> D[Augmented Context]
+    
+    E[History Zone] --> F[Compression Module]
+    F --> G[Compressed Summaries]
+    F --> C
+    
+    H[Session End] --> I[Session Synthesis]
     I --> E
-    I --> J[Next Session]
-    J --> C
+    I --> C
 ```
 
 **Explanation:**
+
 - The LLM Context Window is divided into three zones: Fixed, Working, and History.
 - The Fixed Zone holds static instructions, ensuring consistent behavior.
 - The Working Zone manages dynamic task data, augmented by the Relevance Engine and Dynamic Retrieval.
@@ -651,7 +717,7 @@ To illustrate the framework in action, we provide two detailed examples: a singl
 
 **Scenario:** A project management agent oversees a software development project across three sessions: planning, progress review, and issue resolution.
 
-#### Context Setup
+#### Initial Configuration
 
 - **Fixed Zone**: Contains the agent's SOP (e.g., "Facilitate stakeholder alignment, track task progress"), role definition ("Project Management Agent"), and tool descriptions (e.g., project management software, email integration).
 - **Working Zone**: Initially empty, ready for session-specific data.
@@ -719,6 +785,8 @@ To illustrate the framework in action, we provide two detailed examples: a singl
 
 To ensure the framework's effectiveness, we track key performance indicators (KPIs) and implement adaptive tuning.
 
+### Performance Monitoring System
+
 ```mermaid
 flowchart LR
     A[Context Management System] --> B[Performance Metrics]
@@ -727,29 +795,34 @@ flowchart LR
     B --> D[Information Retrieval<br/>Accuracy]
     B --> E[Session Continuity<br/>Score]
     
-    C --> F[Monitoring Dashboard]
-    D --> F
-    E --> F
-    
-    F --> G{Performance<br/>Threshold?}
-    G -->|Below| H[Adaptive Tuning]
-    G -->|Above| I[Maintain Settings]
-    
-    H --> J[Usage Pattern<br/>Learning]
-    H --> K[Compression Quality<br/>Optimization]
-    H --> L[Retrieval Timing<br/>Optimization]
-    
-    J --> M[Update Relevance<br/>Weights]
-    K --> N[Refine Summarization<br/>Techniques]
-    L --> O[Optimize Augmentation<br/>Triggers]
-    
-    M --> A
-    N --> A
-    O --> A
-    
-    style F fill:#ccffcc
-    style G fill:#ffffcc
     style A fill:#ffcccc
+```
+
+### Monitoring Dashboard
+
+```mermaid
+flowchart TD
+    A[Performance Metrics] --> B[Monitoring Dashboard]
+    
+    B --> C{Performance<br/>Threshold?}
+    C -->|Below| D[Adaptive Tuning]
+    C -->|Above| E[Maintain Settings]
+    
+    style B fill:#ccffcc
+    style C fill:#ffffcc
+```
+
+### Adaptive Optimization
+
+```mermaid
+flowchart TD
+    A[Adaptive Tuning] --> B[Usage Pattern<br/>Learning]
+    A --> C[Compression Quality<br/>Optimization]
+    A --> D[Retrieval Timing<br/>Optimization]
+    
+    B --> E[Update Relevance<br/>Weights]
+    C --> F[Refine Summarization<br/>Techniques]
+    D --> G[Optimize Augmentation<br/>Triggers]
 ```
 
 ### Context Efficiency Metrics
@@ -790,6 +863,7 @@ By iteratively layering these components, organizations can unlock the full pote
 ---
 
 **Related Articles:**
+
 - [AI Agent Development Guide](../../guides/ai-agents.md)
 - [Advanced AI Agent Frameworks](../../tools/ai-tools-master-directory.md#ai-agent-frameworks)
 - [2025 AI Updates](../2025-ai-updates.md)
