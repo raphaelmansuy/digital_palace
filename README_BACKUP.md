@@ -21,9 +21,9 @@
 | Resource Type | Quick Access | Purpose |
 |---------------|-------------|---------|
 | **🛠️ Tools** | [Master Directory](./tools/ai-tools-master-directory.md) | Find the right tool for any task |
-| **� Learning** | [Learning Hub](./learning/README.md) | Structured learning paths |
-| **� Articles** | [Article Collection](./reference/articles.md) | Technical deep dives |
-| **� Mental Models** | [Mental Models](./personal/mental-models/README.md) | Decision-making frameworks |
+| **👉 Learning** | [Learning Hub](./learning/README.md) | Structured learning paths |
+| **👉 Articles** | [Article Collection](./reference/articles.md) | Technical deep dives |
+| **👉 Mental Models** | [Mental Models](./personal/mental-models/README.md) | Decision-making frameworks |
 | **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
 | **🆕 2025 Updates** | [Latest AI Breakthroughs](./reference/2025-ai-updates.md) | Cutting-edge developments |
 
@@ -56,7 +56,7 @@ digital_palace/
 
 ---
 
-## � What's Inside
+## 👉 What's Inside
 
 ### **🆕 Latest 2025 Breakthroughs**
 - **[Revolutionary AI Models](./reference/2025-ai-updates.md#revolutionary-model-breakthroughs)** - o3, Claude 4, DeepSeek R1, and next-gen reasoning
@@ -271,7 +271,7 @@ Access comprehensive technical documentation, framework comparisons, and impleme
 
 ---
 
-## � Legacy Content Organization
+## 👉 Legacy Content Organization
 
 All detailed content from the original README has been systematically organized into focused, navigable sections:
 

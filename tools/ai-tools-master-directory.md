@@ -18,9 +18,9 @@
 | **Use latest 2025 tools** | [2025 Breakthroughs](#-2025-breakthrough-tools) | Early adopters |
 
 ### 🔗 **Quick Navigation**
-- � **Beginner**: [Getting Started Tools](#-beginner-tools)
+- 👉 **Beginner**: [Getting Started Tools](#-beginner-tools)
 - 🟡 **Intermediate**: [Development Frameworks](#-development-frameworks)  
-- � **Advanced**: [Production & Research Tools](#-production--research-tools)
+- 👉 **Advanced**: [Production & Research Tools](#-production--research-tools)
 - 🆕 **Latest**: [2025 AI Breakthroughs](#-2025-breakthrough-tools)
 
 ---
