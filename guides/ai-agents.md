@@ -114,6 +114,63 @@ agent = Agent(
 response = agent.step("What did we discuss yesterday about the project?")
 ```
 
+### 4. Strands Agents - Modern Lightweight Framework
+
+**When to use**: Production applications requiring clean, maintainable code with multi-provider support
+
+**Key Features:**
+
+- **Lightweight**: Minimal overhead, gets out of your way
+- **Production-ready**: Built-in observability, tracing, and deployment options
+- **Multi-provider**: Works with AWS Bedrock, OpenAI, Anthropic, Ollama, and more
+- **MCP Integration**: Model Context Protocol support for standardized tool interfaces
+
+```python
+# Basic Strands Agent
+from strands import Agent
+
+# Create an agent with default settings
+agent = Agent()
+
+# Ask the agent a question
+response = agent("Analyze this data and provide insights")
+print(response)
+```
+
+**Advanced Configuration:**
+```python
+from strands import Agent
+from strands.tools import PythonTool, WebSearchTool
+
+# Configure agent with specific model and tools
+agent = Agent(
+    model_provider="openai",
+    model_config={"model_id": "gpt-4"},
+    tools=[
+        PythonTool(),
+        WebSearchTool()
+    ]
+)
+
+# Execute complex task
+result = agent("Create a data visualization of stock prices for the last 30 days")
+```
+
+**CLI Usage for Quick Testing:**
+```bash
+# Install CLI
+pipx install strands-agents-builder
+
+# Interactive mode
+strands
+
+# Direct queries
+strands "What's the current time?"
+
+# With custom model
+strands --model-provider ollama --model-config '{"model_id": "llama3.3"}'
+```
+
 ---
 
 ## 🛠️ Essential Tools & Frameworks

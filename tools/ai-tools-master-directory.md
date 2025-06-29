@@ -97,6 +97,19 @@
 - **Best for**: Team-based AI workflows
 - **Status**: Popular choice
 
+#### **[Strands Agents](https://strandsagents.com/)** 🆕
+
+- **Purpose**: Lightweight, production-ready agent framework
+- **Best for**: Simple-to-use, code-first agent development
+- **Unique Features**:
+  - Multi-provider support (AWS Bedrock, OpenAI, Anthropic, Ollama)
+  - Model Context Protocol (MCP) integration
+  - Full observability and deployment options
+  - CLI tool for instant agent interaction
+- **Status**: Production-ready, public preview
+- **Installation**: `pip install strands-agents`
+- **CLI**: `pipx install strands-agents-builder`
+
 ### Specialized Agent Tools
 
 #### Computer Control

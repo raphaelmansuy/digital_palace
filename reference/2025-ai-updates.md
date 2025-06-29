@@ -67,6 +67,12 @@
   - Agent behavior visualization and control
 
 ### Production-Ready Agent Platforms
+
+- **[Strands Agents](https://strandsagents.com/)** - Lightweight, production-ready agent framework with MCP support (June 2025)
+  - **Key Features**: Code-first development, multi-provider support, full observability
+  - **Deployment**: AWS Lambda, Fargate, EKS, EC2
+  - **CLI**: Interactive agent development and testing
+  - **Installation**: `pip install strands-agents` | CLI: `pipx install strands-agents-builder`
 - **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
 - **[Anything LLM](https://github.com/Mintplex-Labs/anything-llm)** - All-in-one desktop AI with built-in agents, MCP compatibility (Updated June 2025)
 - **[CrewAI](https://github.com/crewAIInc/crewAI)** - Framework for orchestrating role-playing, autonomous AI agents
