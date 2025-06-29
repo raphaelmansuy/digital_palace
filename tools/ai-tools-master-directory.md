@@ -1,20 +1,27 @@
-# 🤖 AI Tools & Frameworks - Master Directory
+# 🛠️ AI Tools Master Directory
 
-> Comprehensive catalog of AI tools organized by purpose and use case
+> The complete catalog of AI tools, frameworks, and platforms - organized by purpose and expertise level
 
-## 🎯 Quick Tool Finder
+## 🎯 **Quick Tool Finder**
 
-### By Experience Level
-- 🟢 **Beginner**: [Getting Started Tools](#beginner-friendly-tools)
-- 🟡 **Intermediate**: [Development Frameworks](#development-frameworks)
-- 🔴 **Advanced**: [Production & Research Tools](#production--research-tools)
+| I need to... | Best Tool Category | Recommended For |
+|-------------|-------------------|-----------------|
+| **Start with AI** | [Beginner Tools](#-beginner-tools) | First-time users |
+| **Build applications** | [Development Frameworks](#-development-frameworks) | Developers |
+| **Serve models** | [Model Serving](#-model-serving--inference) | Production teams |
+| **Create AI agents** | [Agent Frameworks](#-ai-agent-frameworks) | Advanced developers |
+| **Work with data** | [RAG & Data Tools](#-rag--data-tools) | Data-focused projects |
+| **Generate code** | [AI Coding Tools](#-ai-coding-tools) | Development teams |
+| **Deploy at scale** | [Production Tools](#-production--research-tools) | Infrastructure teams |
+| **Fine-tune models** | [Training & Fine-tuning](#-model-training--fine-tuning) | ML Engineers |
+| **Work with voice** | [Voice & Speech](#-voice--speech-technologies) | Audio applications |
+| **Use latest 2025 tools** | [2025 Breakthroughs](#-2025-breakthrough-tools) | Early adopters |
 
-### By Use Case
-- 💬 [Conversational AI](#conversational-ai-tools)
-- 🔍 [Data & RAG](#data--rag-tools)
-- 🤖 [AI Agents](#ai-agent-frameworks)
-- 🚀 [Model Serving](#model-serving--inference)
-- 🔧 [Development](#development-utilities)
+### 🔗 **Quick Navigation**
+- � **Beginner**: [Getting Started Tools](#-beginner-tools)
+- 🟡 **Intermediate**: [Development Frameworks](#-development-frameworks)  
+- � **Advanced**: [Production & Research Tools](#-production--research-tools)
+- 🆕 **Latest**: [2025 AI Breakthroughs](#-2025-breakthrough-tools)
 
 ---
 
@@ -283,5 +290,63 @@
 
 ---
 
+## 🆕 **2025 Breakthrough Tools**
+*The latest AI innovations reshaping the landscape*
+
+### **Revolutionary AI Code Editors**
+- **[Cursor AI](https://cursor.sh/)** - AI-powered code editor with contextual understanding and codebase analysis
+- **[Windsurf](https://codeium.com/windsurf)** - AI-first IDE with collaborative editing capabilities  
+- **[GitHub Copilot Workspace](https://github.com/features/copilot)** - AI-powered development environments
+- **[Replit Agent](https://replit.com/)** - Complete app development from natural language descriptions
+
+### **Revolutionary UI Generation**
+- **[v0 by Vercel](https://v0.dev/)** - Generate React components and full applications from text prompts
+- **[Claude Engineer](https://github.com/Doriandarko/claude-engineer)** - Advanced AI coding assistant with file system operations
+- **[Screenshot to Code](https://github.com/abi/screenshot-to-code)** - Drop in a screenshot and convert it to clean code
+- **[OpenUI](https://github.com/wandb/openui)** - Describe UI using your imagination, then see it rendered live
+
+### **Next-Generation Agent Platforms**
+- **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
+- **[Anything LLM](https://github.com/Mintplex-Labs/anything-llm)** - All-in-one desktop AI with built-in agents, MCP compatibility
+- **[Google ADK Python](https://github.com/google/adk-python)** - Google's toolkit for building sophisticated AI agents
+- **[OpenAI Swarm](https://github.com/openai/swarm)** - Multi-agent orchestration framework
+
+### **Computer Control & Browser Automation**
+- **[Browser Use](https://github.com/browser-use/browser-use)** - Make websites accessible for AI agents (6k+ stars, actively maintained)
+- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Code Less, Make More with autonomous development agents
+- **[Nanobrowser](https://github.com/nanobrowser/nanobrowser)** - Chrome extension for AI-powered web automation
+- **[Anthropic Computer Use](https://docs.anthropic.com/en/docs/computer-use)** - AI that can control computers directly
+
+### **Model Context Protocol (MCP) Ecosystem**
+- **[Model Context Protocol](https://modelcontextprotocol.io/)** - Standardized AI application interfaces
+- **[MCP Tools](https://github.com/f/mcptools)** - Swiss Army Knife for MCP Servers
+- **[Active Pieces](https://github.com/activepieces/activepieces)** - AI Agents & MCPs & AI Workflow Automation with 280+ MCP servers
+- **[MCP Agent](https://github.com/lastmile-ai/mcp-agent)** - Build effective agents using Model Context Protocol
+
+### **Revolutionary Voice AI Models - Kyutai Labs**
+- **[Moshi](https://github.com/kyutai-labs/moshi)** - Real-time full-duplex voice conversation AI
+  - **Latency**: 160ms theoretical (200ms practical on L4 GPU)
+  - **Live Demo**: [moshi.chat](https://moshi.chat)
+- **[Delayed Streams Modeling](https://github.com/kyutai-labs/delayed-streams-modeling)** - Advanced streaming speech processing
+- **[Unmute](https://unmute.sh/)** - Production speech processing platform
+
+### **Advanced Fine-Tuning & Model Optimization**
+- **[Unsloth](https://github.com/unslothai/unsloth)** - 2x faster fine-tuning for Qwen3, Llama 4, DeepSeek-R1, Gemma 3 (Updated continuously)
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** - Unified efficient fine-tuning of 100+ LLMs & VLMs (ACL 2024)
+- **[vLLM](https://github.com/vllm-project/vllm)** - High-throughput LLM serving (Updated hourly)
+
+### **2025 Model Breakthroughs**
+- **[OpenAI o3 & o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/)** - Advanced reasoning with "thinking with images" capability
+- **[Claude 4 (Opus 4 & Sonnet 4)](https://anthropic.com/claude/opus)** - Anthropic's most powerful models for coding and AI agents
+- **[DeepSeek R1](https://deepseek.com/)** - Open-source reasoning model challenging proprietary alternatives
+- **[Tencent Hunyuan A13B](https://huggingface.co/tencent/Hunyuan-A13B-Instruct)** - 13B parameter instruction-following model
+
+### **Advanced RAG & Knowledge Systems**
+- **[RAGFlow](https://github.com/infiniflow/ragflow)** - Open-source RAG engine based on deep document understanding
+- **[LightRAG](https://github.com/HKUDS/LightRAG)** - Knowledge graph RAG with entity relationship understanding
+- **[Quivr](https://github.com/QuivrHQ/quivr)** - Opinionated RAG for integrating GenAI in your apps
+- **[FireCrawl](https://github.com/mendableai/firecrawl)** - Turn entire websites into LLM-ready markdown (Updated daily)
+
+---
 *Last updated: {{ date }}*
 *Tools count: 50+ curated selections*

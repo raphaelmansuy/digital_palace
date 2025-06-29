@@ -1,140 +1,89 @@
 # My Digital Palace - A Personal AI Knowledge Repository
 
-> Your comprehensive guide to mastering AI development - from beginner to expert
-> **🆕 Updated June 2025** - Now featuring OpenAI o3, Cursor AI, MCP, Computer Use agents, and the latest AI breakthroughs!
+> **Your comprehensive guide to AI technologies, tools, and implementation strategies**  
+> **🆕 Updated June 2025** - OpenAI o3, Claude 4, AI Agents, Computer Use & Latest Breakthroughs
 
-## 🎯 Quick Start Guide
+## 🚀 Quick Navigation
 
-**New to AI?** → [Getting Started Guide](./guides/getting-started.md)  
-**Want to build chatbots?** → [Conversational AI Guide](./guides/conversational-ai.md)  
-**Need tools recommendations?** → [AI Tools Master Directory](./tools/ai-tools-master-directory.md)  
-**Looking to learn?** → [Learning Resources Hub](./learning/learning-resources-hub.md)  
-**AI-Powered Coding?** → [AI Coding Tools & Best Practices](#ai-assisted-coding--development)  
-**Latest 2025 Updates?** → [Recent AI Breakthroughs](#-2025-ai-landscape-updates)
+### 🎯 **Choose Your Path**
 
----
+| Your Goal | Best Starting Point | Estimated Time |
+|-----------|-------------------|----------------|
+| **🌱 Learn AI Basics** | [Complete Beginner Guide](./learning/README.md#beginner-path) | 4-8 weeks |
+| **💼 Build Business AI** | [Business AI Guide](./guides/business-ai.md) | 2-4 weeks |
+| **🔧 Develop AI Apps** | [Development Guide](./guides/getting-started.md) | 1-2 weeks |
+| **🤖 Create AI Agents** | [AI Agents Guide](./guides/ai-agents.md) | 3-6 weeks |
+| **🔬 Research & Experiment** | [Research Hub](./reference/README.md) | Ongoing |
+| **🚀 Deploy to Production** | [Production Guide](./guides/deployment.md) | 2-3 weeks |
 
-## 🧭 Navigation by Goal
+### 📚 **Essential Resources**
 
-### 🌱 **"I'm new to AI development"**
-- 📚 **Start**: [Complete Beginner Path](./learning/learning-resources-hub.md#complete-beginner-path)
-- 🛠️ **Tools**: [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
-- 🚀 **First Project**: [Getting Started Guide](./guides/getting-started.md)
-
-### 💼 **"I need to build AI for business"**
-- 💬 **Chatbots**: [Conversational AI Systems](./guides/conversational-ai.md)
-- 🔍 **Document AI**: [RAG & Knowledge Systems](./guides/rag-systems.md)
-- 📊 **Analytics**: [AI Application Monitoring](./guides/monitoring.md)
-
-### 🔬 **"I want to do AI research"**
-- 📖 **Learning**: [Advanced Practitioner Path](./learning/learning-resources-hub.md#advanced-practitioner-path)
-- 🔧 **Tools**: [Research & Production Tools](./tools/ai-tools-master-directory.md#production--research-tools)
-- 🧠 **Papers**: [Research Paper Collection](./reference/research-papers.md)
-
-### 🚀 **"I need to deploy AI in production"**
-- ⚡ **Serving**: [Model Serving & Inference](./tools/ai-tools-master-directory.md#model-serving--inference)
-- 📈 **Scaling**: [Production Deployment Guide](./guides/deployment.md)
-- 🔍 **Monitoring**: [AI System Monitoring](./guides/monitoring.md)
+| Resource Type | Quick Access | Purpose |
+|---------------|-------------|---------|
+| **🛠️ Tools** | [Master Directory](./tools/ai-tools-master-directory.md) | Find the right tool for any task |
+| **� Learning** | [Learning Hub](./learning/README.md) | Structured learning paths |
+| **� Articles** | [Article Collection](./reference/articles.md) | Technical deep dives |
+| **� Mental Models** | [Mental Models](./personal/mental-models/README.md) | Decision-making frameworks |
+| **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
+| **🆕 2025 Updates** | [Latest AI Breakthroughs](./reference/2025-ai-updates.md) | Cutting-edge developments |
 
 ---
 
-## 📚 Core Knowledge Areas
+## 🏛️ Repository Architecture
 
-### Essential Guides
-| Guide | Purpose | Time | Difficulty |
-|-------|---------|------|------------|
-| [Getting Started](./guides/getting-started.md) | Your first AI application | 2-4 hours | 🟢 Beginner |
-| [Conversational AI](./guides/conversational-ai.md) | Build chatbots & assistants | 4-8 hours | 🟡 Intermediate |
-| [RAG Systems](./guides/rag-systems.md) | AI with your data | 6-12 hours | 🟡 Intermediate |
-| [AI Agents](./guides/ai-agents.md) | Autonomous AI systems | 8-16 hours | 🔴 Advanced |
-| [Production Deployment](./guides/deployment.md) | Scale to real users | 12+ hours | 🔴 Advanced |
+This repository is organized as a **digital palace** - each section serves a specific purpose in your AI learning journey:
 
-### Tool Categories
-| Category | Focus | Best For |
-|----------|-------|----------|
-| [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks) | Building applications | All developers |
-| [Model Serving](./tools/ai-tools-master-directory.md#model-serving--inference) | Running models efficiently | Production teams |
-| [AI Agents](./tools/ai-tools-master-directory.md#ai-agent-frameworks) | Autonomous systems | Advanced developers |
-| [Data & RAG](./tools/ai-tools-master-directory.md#data--rag-tools) | Knowledge integration | Data-focused projects |
+### 📁 **Core Directories**
 
-### Learning Paths
-| Path | Target Audience | Duration | 
-|------|-----------------|----------|
-| [Complete Beginner](./learning/learning-resources-hub.md#complete-beginner-path) | No AI experience | 2-3 months |
-| [Developer](./learning/learning-resources-hub.md#developer-path) | Can code, new to AI | 1-2 months |
-| [Advanced Practitioner](./learning/learning-resources-hub.md#advanced-practitioner-path) | AI professionals | Ongoing |
+```
+digital_palace/
+├── 📖 learning/           # Structured learning paths & resources
+├── 🎯 guides/            # Step-by-step implementation guides  
+├── 🛠️ tools/             # Curated tool directories & comparisons
+├── 📚 reference/         # Quick lookups, APIs, cheat sheets
+├── 🎭 personal/          # Learning philosophy & mental models
+├── 📰 articles/          # Technical articles & research
+├── 🧪 projects/          # Example implementations & templates
+└── 💬 community/         # Discussions, contributions, updates
+```
 
----
+### 🎯 **Usage Philosophy**
 
-## 🗂️ Repository Organization
-
-### 📁 Main Directories
-
-#### `/guides/` - **How-To Guides**
-Practical, step-by-step instructions for building AI applications
-- `getting-started.md` - Your first AI project
-- `conversational-ai.md` - Chatbots and assistants  
-- `rag-systems.md` - AI with your own data
-- `ai-agents.md` - Autonomous AI systems
-- `deployment.md` - Production scaling
-
-#### `/tools/` - **Tool Directories** 
-Curated collections of AI tools and frameworks
-- `ai-tools-master-directory.md` - Comprehensive tool catalog
-- `frameworks-comparison.md` - Framework selection guide
-- `model-serving-options.md` - Deployment solutions
-
-#### `/learning/` - **Educational Resources**
-Structured learning materials and paths
-- `learning-resources-hub.md` - Complete learning guide
-- `courses.md` - Course recommendations
-- `books.md` - Essential reading
-- `papers.md` - Important research
-
-#### `/reference/` - **Quick References**
-Fast-lookup information and cheat sheets
-- `model-comparison.md` - Model capabilities
-- `prompt-templates.md` - Reusable prompts
-- `api-references.md` - Common API patterns
-
-#### `/projects/` - **Example Projects**
-Complete project templates and examples
-- `chatbot-starter/` - Basic chatbot template
-- `rag-example/` - Document Q&A system
-- `agent-demo/` - AI agent template
+**🌱 Learn by Doing**: Start with practical projects, understand theory as you build  
+**🔄 Iterative Discovery**: Return to concepts as your understanding deepens  
+**🤝 Community Growth**: Share learnings, contribute improvements, help others  
+**📈 Continuous Updates**: Stay current with the rapidly evolving AI landscape
 
 ---
 
-## 🎭 Personal Learning Philosophy
+## � What's Inside
 
-### Today I Learned (TIL)
-Document daily discoveries and insights to build knowledge systematically.
+### **🆕 Latest 2025 Breakthroughs**
+- **[Revolutionary AI Models](./reference/2025-ai-updates.md#revolutionary-model-breakthroughs)** - o3, Claude 4, DeepSeek R1, and next-gen reasoning
+- **[AI Coding Revolution](./reference/2025-ai-updates.md#revolutionary-ai-coding-tools)** - Cursor, v0, Windsurf, and computer-use agents
+- **[Voice AI Breakthrough](./reference/2025-ai-updates.md#revolutionary-voice-ai-models)** - Real-time conversation with Moshi and Kyutai Labs
+- **[Agent Communication](./reference/2025-ai-updates.md#next-generation-agent-frameworks)** - MCP, A2A protocols, and standardized AI integrations
 
-**Why TIL Works:**
-- Creates learning habit
-- Builds searchable knowledge base  
-- Tracks progress over time
-- Shares insights with community
+### **🛠️ Comprehensive Tool Coverage**
+- **[100+ AI Tools](./tools/ai-tools-master-directory.md)** - Categorized by purpose and expertise level
+- **[2025 Breakthrough Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** - Latest innovations reshaping AI development
+- **[Production-Ready Solutions](./tools/ai-tools-master-directory.md#production--research-tools)** - Enterprise-grade platforms and frameworks
 
-👉 **[My TIL Collection](./personal/til/README.md)**
+### **🎯 Goal-Oriented Guides**
+- **[Build Your First AI App](./guides/goal-oriented-guides.md#getting-started)** - Zero to production in hours
+- **[Create AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)** - Autonomous systems that take actions
+- **[RAG & Knowledge Systems](./guides/goal-oriented-guides.md#knowledge--data-integration)** - AI with your own data
+- **[Production Deployment](./guides/goal-oriented-guides.md#production-deployment)** - Scale to real users
 
-### Mental Models for AI
-Frameworks for understanding complex AI systems and making better decisions.
+### **📚 Deep Technical Knowledge**
+- **[Core AI Technologies](./reference/core-technologies.md)** - LLMs, embeddings, inference, and optimization
+- **[200+ Research Articles](./reference/articles.md)** - Cutting-edge papers and techniques
+- **[Learning Pathways](./learning/README.md)** - Structured education for all levels
 
-**Key Mental Models:**
-- **Emergence**: Simple rules → complex behaviors
-- **Abstraction Layers**: Hide complexity, expose interfaces
-- **Feedback Loops**: Output influences future input
-- **Trade-offs**: Speed vs accuracy, cost vs quality
-
-👉 **[Mental Models Guide](./personal/mental-models/README.md)**
-
-### "For the Impatient" Series
-Fast-track tutorials for experienced developers who want results quickly.
-
-**Philosophy**: Start building immediately, understand deeply later.
-
-👉 **[Impatient Series](./personal/impatient-series/README.md)**
+### **🎭 Personal Learning Philosophy**
+- **[Today I Learned](./personal/til/README.md)** - Daily discoveries and insights
+- **[Mental Models](./personal/mental-models/README.md)** - Frameworks for understanding AI
+- **[For the Impatient](./personal/impatient-series/README.md)** - Fast-track tutorials for experienced developers
 
 ---
 
@@ -143,44 +92,44 @@ Fast-track tutorials for experienced developers who want results quickly.
 ### ✅ **Goal-Oriented Organization**
 - Organized by what you want to achieve, not just technology categories
 - Clear success criteria for each guide
-- Multiple paths based on your background
+- Multiple paths based on your background and goals
 
-### ✅ **Curated Quality**
-- Every tool and resource is personally tested
-- Regular updates based on community feedback
-- No affiliate links - purely value-driven
+### ✅ **Curated Quality Over Quantity**
+- Every tool and resource is personally tested and evaluated
+- Regular updates based on community feedback and latest developments
+- No affiliate links - purely value-driven recommendations
 
 ### ✅ **Production-Ready Focus**
-- Emphasis on building real applications
-- Deployment and scaling considerations
-- Monitoring and maintenance guidance
+- Emphasis on building real applications that solve real problems
+- Deployment and scaling considerations from day one
+- Monitoring and maintenance guidance for sustainable AI systems
 
-### ✅ **Community-Driven**
-- Open source and collaborative
-- Regular updates from practitioners
-- Real-world experience shared
+### ✅ **Community-Driven Evolution**
+- Open source and collaborative development approach
+- Regular updates from practitioners and researchers worldwide
+- Real-world experience and lessons learned shared openly
 
 ---
 
 ## 🚀 Getting Started
 
-### For Complete Beginners
-1. **Start here**: [Getting Started Guide](./guides/getting-started.md)
-2. **Learn basics**: [Beginner Learning Path](./learning/learning-resources-hub.md#complete-beginner-path)
-3. **Pick tools**: [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
+### **For Complete Beginners**
+1. **Start here**: [Getting Started Guide](./guides/goal-oriented-guides.md#getting-started)
+2. **Learn basics**: [Beginner Learning Path](./learning/README.md#beginner-path)
+3. **Pick tools**: [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-tools)
 4. **Build first project**: Follow the 30-minute quickstart
 
-### For Developers
-1. **Choose your focus**: [Developer Path](./learning/learning-resources-hub.md#developer-path)
+### **For Developers**
+1. **Choose your focus**: [Developer Path](./learning/README.md#developer-path)
 2. **Pick frameworks**: [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
-3. **Build applications**: [Conversational AI](./guides/conversational-ai.md) or [RAG Systems](./guides/rag-systems.md)
-4. **Scale to production**: [Deployment Guide](./guides/deployment.md)
+3. **Build applications**: [Conversational AI](./guides/goal-oriented-guides.md#building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#knowledge--data-integration)
+4. **Scale to production**: [Deployment Guide](./guides/goal-oriented-guides.md#production-deployment)
 
-### For AI Professionals
-1. **Stay current**: [Advanced Resources](./learning/learning-resources-hub.md#advanced-practitioner-path)
-2. **Explore tools**: [Production Tools](./tools/ai-tools-master-directory.md#production--research-tools)
-3. **Advanced patterns**: [AI Agents](./guides/ai-agents.md)
-4. **Contribute back**: Share your learnings
+### **For AI Professionals**
+1. **Stay current**: [2025 AI Updates](./reference/2025-ai-updates.md)
+2. **Explore cutting-edge**: [Latest Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
+3. **Advanced patterns**: [AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)
+4. **Contribute back**: Share your learnings and improvements
 
 ---
 
@@ -188,17 +137,17 @@ Fast-track tutorials for experienced developers who want results quickly.
 
 This is a living document that improves with community input.
 
-### How to Contribute
-- **🐛 Found an error?** Open an issue
-- **💡 Have a suggestion?** Submit a pull request  
-- **📚 Want to add content?** Follow the contribution guidelines
-- **⭐ Found it helpful?** Star the repository
+### **How to Contribute**
+- **🐛 Found an error?** Open an issue with details
+- **💡 Have a suggestion?** Submit a pull request with improvements
+- **📚 Want to add content?** Follow our contribution guidelines
+- **⭐ Found it helpful?** Star the repository and share with others
 
-### Contribution Guidelines
-- Focus on practical, tested information
-- Include clear examples and code snippets
-- Maintain the goal-oriented organization
-- Update related cross-references
+### **Contribution Guidelines**
+- Focus on practical, tested information that adds real value
+- Include clear examples and code snippets where relevant
+- Maintain the goal-oriented organization structure
+- Update related cross-references and navigation links
 
 ---
 
@@ -206,35 +155,40 @@ This is a living document that improves with community input.
 
 **Creator**: [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
 
-**Community**: 
-- 💬 [Discussions](https://github.com/raphaelmansuy/digital-palace/discussions)
-- � [Issues](https://github.com/raphaelmansuy/digital-palace/issues)
-- 🔔 [Follow for Updates](https://github.com/raphaelmansuy/digital-palace/stargazers)
+**Community Channels**: 
+- 💬 [Discussions](https://github.com/raphaelmansuy/digital-palace/discussions) - Ask questions, share ideas
+- 🐛 [Issues](https://github.com/raphaelmansuy/digital-palace/issues) - Report bugs, request features
+- 🔔 [Follow for Updates](https://github.com/raphaelmansuy/digital-palace/stargazers) - Stay notified of new content
 
 ---
 
 ## 📊 Repository Stats
 
-- **📂 Guides**: 8+ comprehensive tutorials covering every aspect of AI development
+- **📂 Guides**: 15+ comprehensive tutorials covering every aspect of AI development
 - **🛠️ Tools**: 100+ curated AI tools and frameworks across all categories
 - **📚 Resources**: 200+ learning materials, articles, and research papers
-- **⏰ Last Updated**: June 2025 - Featuring latest AI breakthroughs and tools
-- **👥 Contributors**: Growing community of AI practitioners and researchers
-- **🆕 2025 Highlights**: OpenAI o3, Cursor AI, MCP, Computer Use agents, v0 UI generation
-- **⭐ Focus Areas**: Production-ready tools, emerging frameworks, hands-on tutorials
+- **⏰ Last Updated**: June 29, 2025 - Featuring latest AI breakthroughs and tools
+- **👥 Contributors**: Growing community of AI practitioners and researchers worldwide
+- **🆕 2025 Highlights**: OpenAI o3, Cursor AI, MCP, Computer Use agents, v0 UI generation, voice AI revolution
+- **⭐ Focus Areas**: Production-ready tools, emerging frameworks, hands-on tutorials, goal-oriented learning
 
-### What's New in 2025
-- **Revolutionary AI Coding**: Cursor, v0, Windsurf, and computer-use agents
-- **Advanced Reasoning**: o3, DeepSeek R1, and next-gen model capabilities  
-- **Standardized Protocols**: Model Context Protocol (MCP) for AI integrations
-- **Enterprise Agents**: Production-ready multi-agent systems and workflows
+### **What's New in June 2025**
+- **Revolutionary AI Coding**: Cursor, v0, Windsurf, and computer-use agents changing how we develop
+- **Advanced Reasoning**: o3, DeepSeek R1, and next-gen model capabilities surpassing human performance
+- **Standardized Protocols**: Model Context Protocol (MCP) enabling seamless AI integrations
+- **Enterprise Agents**: Production-ready multi-agent systems and autonomous workflows
+- **Voice AI Revolution**: Real-time conversation AI with Moshi achieving human-like latency
 - **Enhanced RAG**: Knowledge graphs, multi-modal search, and semantic understanding
 
 ---
 
 *"The best way to predict the future is to build it with AI."*
 
-**Start your AI journey today** → [Getting Started Guide](./guides/getting-started.md)
+**Start your AI journey today** → [Choose Your Path](#-choose-your-path)
+
+---
+
+*🔗 **Quick Links**: [Tools](./tools/README.md) | [Guides](./guides/README.md) | [Learning](./learning/README.md) | [2025 Updates](./reference/2025-ai-updates.md) | [Articles](./reference/articles.md)*
 
 ---
 
