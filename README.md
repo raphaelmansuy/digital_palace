@@ -67,7 +67,7 @@
 </tr>
 <tr>
 <td><strong>🛠️ Find Perfect Tool</strong></td>
-<td><a href="./tools/README.md">Tools Hub →</a></td>
+<td><a href="./tools/ai-tools-master-directory.md">Tools Hub →</a></td>
 <td>2 minutes</td>
 <td>Tool recommendation for your use case</td>
 </tr>
@@ -83,8 +83,6 @@
 
 ### 📊 **Repository Statistics & Health**
 
-
-
 | Metric | Count | Last Updated |
 |--------|-------|--------------|
 | **🛠️ AI Tools Cataloged** | 150+ | Weekly |
@@ -95,6 +93,7 @@
 | **⭐ GitHub Stars** | Check badge above | Real-time |
 
 **🔥 Most Popular This Month:**
+
 - [OpenAI o3 Analysis](./reference/2025-ai-updates.md#openai-o3) - 2.1K views
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
@@ -119,10 +118,9 @@
 <summary><strong>🎯 Quick Navigation</strong></summary>
 
 - [🚀 Getting Started](#-getting-started)
-- [🏛️ Repository Architecture](#️-repository-architecture) 
+- [🏛️ Repository Architecture](#️-repository-architecture)
 - [🌟 What's Inside](#-whats-inside)
 - [🎯 Quick Start Guide](#-quick-start-guide)
-- [📈 Community & Stats](#-community--stats)
 - [🔍 How to Search This Repository](#-how-to-search-this-repository)
 - [🤝 Contributing](#-contributing)
 - [📧 Connect & Support](#-connect--support)
@@ -142,6 +140,7 @@
 5. **📊 Check Popular Content**: See most-viewed resources above
 
 **Search Tips:**
+
 - Use specific terms: "RAG system", "LangChain setup", "production deployment"
 - Look for emoji indicators: 🟢 Beginner, 🟡 Intermediate, 🔴 Advanced  
 - Check the "Quick Access" tables in each section
@@ -239,6 +238,7 @@ _Select the path that matches your goals and experience level_
 This repository is organized as a **digital palace** - each section serves a specific purpose in your AI learning journey:
 
 ### 📁 **Core Directories**
+
 ```
 digital_palace/
 ├── 📖 learning/            
