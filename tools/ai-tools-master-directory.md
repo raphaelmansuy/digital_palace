@@ -37,6 +37,8 @@
 ### Getting Started Frameworks
 | Tool | Purpose | Learning Curve |
 |------|---------|----------------|
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Google's official AI workflow tool | 🟢 Easy |
+| [Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow) | Workflow automation with YAML & Python APIs | 🟢 Easy |
 | [LangChain](https://langchain.com/) | LLM application framework | 🟡 Moderate |
 | [instructor](https://jxnl.github.io/instructor/) | Structured outputs | 🟢 Easy |
 | [QLLM](https://github.com/quantalogic/qllm) | CLI for multiple LLMs | 🟢 Easy |
@@ -67,6 +69,10 @@
 - **[marvin](https://www.askmarvin.ai/)** - AI toolkit for natural language interfaces
   - **Use for**: Reliable, scalable AI interfaces
   - **Strength**: Production-ready patterns
+  
+- **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse
+  - **Use for**: Structured workflows, LLM-powered pipelines
+  - **Strength**: YAML declarative + Python API, built-in validation
 
 ### Structured Output Tools
 
@@ -98,9 +104,25 @@
 - **Links**: [Docs](https://google.github.io/adk-docs/) | [Python SDK](https://github.com/google/adk-python) | [Java SDK](https://github.com/google/adk-java) | [Samples](https://github.com/google/adk-samples)
 
 #### **[Quantalogic](https://github.com/quantalogic/quantalogic)** ⭐
-- **Purpose**: Powerful agentic framework
-- **Best for**: Complex automation, code generation
+
+- **Purpose**: Powerful agentic framework with ReAct agents and conversational AI
+- **Best for**: Complex automation, code generation, multi-agent systems
 - **Status**: Production-ready
+
+#### **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** 🆕⭐
+
+- **Purpose**: Workflow automation powerhouse with YAML and Python APIs
+- **Best for**: Structured workflows, LLM-powered pipelines, enterprise automation
+- **Key Features**:
+  - Declarative YAML workflows and Fluent Python API
+  - LLM integration (OpenAI, Gemini, DeepSeek via LiteLLM)
+  - Template rendering with Jinja2
+  - Advanced logic: branching, looping, parallel execution
+  - Built-in validation, error handling, and observability
+  - Structured data extraction with Pydantic
+- **Installation**: `pip install quantalogic-flow`
+- **Status**: Production-ready, part of QuantaLogic ecosystem
+- **Links**: [GitHub](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow) | [PyPI](https://pypi.org/project/quantalogic-flow)
 
 #### **[Pydantic Agents](https://ai.pydantic.dev/agents/)**
 - **Purpose**: Production-grade agent framework  
@@ -238,6 +260,7 @@
 ### Command Line Tools
 | Tool | Purpose | Workflow Integration |
 |------|---------|---------------------|
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Official Google AI workflow tool | Complete development lifecycle |
 | [llm](https://llm.datasette.io/en/stable/) | CLI for multiple LLMs | Terminal workflows |
 | [Code2prompt](https://github.com/raphaelmansuy/code2prompt) | Codebase to AI prompt | Code analysis |
 | [plock](https://github.com/jasonjmcghee/plock) | Query LLM from anywhere | System integration |
@@ -326,6 +349,7 @@
 - **[Windsurf](https://codeium.com/windsurf)** - AI-first IDE with collaborative editing capabilities  
 - **[GitHub Copilot Workspace](https://github.com/features/copilot)** - AI-powered development environments
 - **[Replit Agent](https://replit.com/)** - Complete app development from natural language descriptions
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** - Google's official AI command-line workflow tool with 1M token context
 
 ### **Revolutionary UI Generation**
 - **[v0 by Vercel](https://v0.dev/)** - Generate React components and full applications from text prompts
@@ -335,6 +359,7 @@
 
 ### **Next-Generation Agent Platforms**
 - **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
+- **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse with YAML & Python APIs
 - **[Anything LLM](https://github.com/Mintplex-Labs/anything-llm)** - All-in-one desktop AI with built-in agents, MCP compatibility
 - **[Google ADK Python](https://github.com/google/adk-python)** - Google's toolkit for building sophisticated AI agents
 - **[OpenAI Swarm](https://github.com/openai/swarm)** - Multi-agent orchestration framework

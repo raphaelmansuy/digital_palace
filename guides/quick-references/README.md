@@ -1,6 +1,9 @@
 ## Prompt Engineering
 
 - [Prompt engineering for Marketing](2024-09-01-prompt-engineering-marketing.md)
+- [Google Gemini CLI for the Impatient](2025-06-29-gemini-cli-for-the-impatient.md)
+- [Quantalogic Flow for the Impatient](2025-01-16-quantalogic-flow-for-the-impatient.md)
+
 ## Languages
 
 - [C for the Impatients](2024-03-27_c_for_the_impatients.md)
