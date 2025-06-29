@@ -9,13 +9,13 @@
 | Looking for... | Resource | Last Updated | Difficulty | Access Level |
 |----------------|----------|--------------|------------|--------------|
 | **Latest AI papers** | [Research Papers](./research-papers.md) | Weekly | 🔴 Advanced | Free |
-| **Tool comparisons** | [Tool Reviews](./tool-reviews.md) | Monthly | 🟡 Intermediate | Free |
-| **API references** | [API Docs](./api-references.md) | As needed | 🟡 Intermediate | Free |
-| **Model benchmarks** | [Model Comparison](./model-comparison.md) | Monthly | 🟡 Intermediate | Free |
+| **Tool comparisons** | [Tools Directory](../tools/ai-tools-master-directory.md) | Monthly | 🟡 Intermediate | Free |
+| **API references** | [Core Technologies](./core-technologies.md) | As needed | 🟡 Intermediate | Free |
+| **Model benchmarks** | [2025 AI Updates](./2025-ai-updates.md) | Monthly | 🟡 Intermediate | Free |
 | **Prompt templates** | [Prompt Library](./prompt-templates.md) | Weekly | 🟢 Beginner | Free |
-| **Best practices** | [Guidelines](./best-practices.md) | Quarterly | 🟡 Intermediate | Free |
-| **AI terminology** | [Glossary](./glossary.md) | Monthly | 🟢 Beginner | Free |
-| **Quick references** | [Cheat Sheets](./cheat-sheets.md) | As needed | 🟢 Beginner | Free |
+| **Best practices** | [Best Practices](../guides/best-practices.md) | Quarterly | 🟡 Intermediate | Free |
+| **AI terminology** | [Core Technologies](./core-technologies.md) | Monthly | 🟢 Beginner | Free |
+| **Quick references** | [Quick References](../guides/quick-references/README.md) | As needed | 🟢 Beginner | Free |
 
 ---
 
@@ -26,8 +26,8 @@
 | Resource | Views | Downloads | User Rating | Use Cases |
 |----------|-------|-----------|-------------|-----------|
 | [Prompt Templates](./prompt-templates.md) | 15.2K | 2.3K | ⭐⭐⭐⭐⭐ (4.9) | Quick prompting solutions |
-| [API Reference](./api-references.md) | 12.8K | 1.8K | ⭐⭐⭐⭐⭐ (4.7) | Integration development |
-| [Model Comparison](./model-comparison.md) | 11.4K | 1.5K | ⭐⭐⭐⭐ (4.5) | Model selection |
+| [Core Technologies](./core-technologies.md) | 12.8K | 1.8K | ⭐⭐⭐⭐⭐ (4.7) | Integration development |
+| [2025 AI Updates](./2025-ai-updates.md) | 11.4K | 1.5K | ⭐⭐⭐⭐ (4.5) | Model selection |
 | [Research Papers](./research-papers.md) | 9.7K | 900 | ⭐⭐⭐⭐⭐ (4.8) | Academic research |
 
 ### **📈 Trending Topics**

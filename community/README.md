@@ -33,10 +33,10 @@ This repository thrives through community collaboration. Whether you're here to 
 ### **🔥 Trending Discussions**
 
 **This Week's Hot Topics:**
-- 💬 [OpenAI o3 vs Claude 4 Comparison](./discussions/o3-vs-claude4.md) - 234 comments
-- 💬 [Building Production RAG Systems](./discussions/production-rag.md) - 187 comments
-- 💬 [Career Path: From Web Dev to AI](./discussions/career-transition.md) - 156 comments
-- 💬 [Best AI Tools for 2025](./discussions/best-tools-2025.md) - 143 comments
+- 💬 [OpenAI o3 vs Claude 4 Comparison](../reference/2025-ai-updates.md#openai-o3) - 234 comments
+- 💬 [Building Production RAG Systems](../guides/rag-systems.md) - 187 comments
+- 💬 [Career Path: From Web Dev to AI](../learning/README.md#developer-path) - 156 comments
+- 💬 [Best AI Tools for 2025](../tools/ai-tools-master-directory.md#2025-breakthrough-tools) - 143 comments
 
 ---
 

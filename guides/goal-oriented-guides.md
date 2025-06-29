@@ -17,7 +17,7 @@
 
 **Learning Path**:
 1. Start with → [AI Courses](../07-courses/ai_courses.md)
-2. Practice with → [Today I Learned](../02-til/README.md)
+2. Practice with → [Today I Learned](../personal/til/README.md)
 3. Build first app → [LangChain documentation](https://python.langchain.com/docs/get_started/introduction)
 
 **Success Criteria**: Successfully run a local LLM and build a simple Q&A application
@@ -36,7 +36,7 @@
 - [Ollama](https://ollama.com/) - Local model serving
 - [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) - UI components
 
-**Key Concepts**: [Prompt Engineering Patterns](../01-articles/prompt_engineering_patterns/README.md)
+**Key Concepts**: [Prompt Engineering Patterns](../reference/techniques/prompt_engineering_patterns/README.md)
 
 **Success Criteria**: Chatbot that maintains context and provides relevant responses
 
@@ -65,7 +65,7 @@
 - [pgvectorscale](https://github.com/timescale/pgvectorscale/) - Vector database
 - [FireCrawl](https://github.com/mendableai/firecrawl) - Website to LLM-ready markdown
 
-**Key Concepts**: [Embeddings Guide](../01-articles/embeddings/README.md)
+**Key Concepts**: [Embeddings Guide](../reference/techniques/embeddings/README.md)
 
 **Success Criteria**: AI that accurately answers questions using your documents
 
@@ -121,7 +121,7 @@
 - [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) - Unified fine-tuning for 100+ LLMs
 - [peft](https://github.com/huggingface/peft) - Parameter-efficient fine-tuning
 
-**Key Concepts**: [Training LLMs Guide](../01-articles/2024-03-12_training_an_llm.md)
+**Key Concepts**: [Training LLMs Guide](../reference/technical-articles/2024-03-12_training_an_llm.md)
 
 **Success Criteria**: Model that significantly outperforms base model on your domain
 

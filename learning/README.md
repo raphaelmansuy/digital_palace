@@ -109,8 +109,8 @@
 - Creating simple AI workflows
 
 **📚 Learning Resources:**
-- [LangChain Course](../07-courses/ai_courses.md#langchain)
-- [Building AI Applications](../01-articles/llm_applications_use_cases/README.md)
+- [LangChain Course](../reference/courses.md#langchain)
+- [Building AI Applications](../reference/techniques/llm_applications_use_cases/README.md)
 - [Framework Comparison](../tools/framework-comparison.md)
 
 **🛠️ Tools to Learn:**
@@ -132,9 +132,9 @@
 - Learning from the community
 
 **📚 Learning Resources:**
-- [Project Templates](../projects/README.md)
+- [Project Templates](../community/README.md)
 - [Best Practices Guide](../guides/best-practices.md)
-- [Community Discussions](../community/discussions.md)
+- [Community Resources](../community/README.md)
 
 **🛠️ Tools to Learn:**
 - [Git](https://git-scm.com/) - Version control
@@ -202,13 +202,13 @@ Leverage your existing programming skills to quickly master AI development.
 
 **📚 Essential Resources:**
 - [Latest AI Technologies](../README.md#latest-2025-ai-technologies)
-- [Research Paper Selection](../50-research-paper-selection/README.md)
+- [Research Paper Selection](../reference/research-papers/README.md)
 - [Advanced Articles](../reference/articles.md#advanced-topics)
 
 **🛠️ Cutting-Edge Tools:**
 - [Latest frameworks](../tools/README.md#emerging-tools)
-- [Research implementations](../projects/research/README.md)
-- [Community projects](../community/projects.md)
+- [Research implementations](../reference/research-papers/README.md)
+- [Community projects](../community/README.md)
 
 ### **Specialization Tracks**
 
@@ -299,18 +299,18 @@ Leverage your existing programming skills to quickly master AI development.
 
 ### **📰 Articles & Blogs**
 - [Technical Articles](../reference/articles.md)
-- [Industry Insights](../reference/blogs.md)
-- [Research Summaries](../reference/research-summaries.md)
+- [Community Blogs](../community/external-blogs/blogs.md)
+- [Research Papers](../reference/research-papers.md)
 
 ### **🎥 Video Content**
-- [Tutorial Videos](../learning/videos.md)
-- [Conference Talks](../learning/conferences.md)
-- [Webinar Series](../learning/webinars.md)
+- [Course Videos](./courses/README.md)
+- [Community Resources](../community/README.md)
+- [Educational Links](./learning-resources-hub.md)
 
 ### **🛠️ Hands-On Practice**
-- [Coding Exercises](../learning/exercises.md)
-- [Project Templates](../projects/README.md)
-- [Kaggle Competitions](../learning/competitions.md)
+- [Learning Exercises](./learning-resources-hub.md)
+- [Community Projects](../community/README.md)
+- [Guide Collections](../guides/README.md)
 
 ---
 
@@ -340,14 +340,14 @@ Use proven frameworks to accelerate understanding:
 
 ### **📝 Active Learning Techniques**
 - [Today I Learned (TIL)](../personal/til/README.md) - Daily knowledge capture
-- [Project-Based Learning](../projects/README.md) - Learn by building
+- [Project-Based Learning](../community/README.md) - Learn by building
 - [Community Learning](../community/README.md) - Learn with others
 
 ### **⚡ For the Impatient**
 Fast-track learning for experienced professionals:
 - [Impatient Series](../personal/impatient-series/README.md)
-- [Quick Reference Guides](../reference/quick-refs.md)
-- [Accelerated Tutorials](../learning/fast-track.md)
+- [Quick Reference Guides](../guides/quick-references/README.md)
+- [Fast-Track Guides](../guides/README.md)
 
 ---
 
