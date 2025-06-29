@@ -1,8 +1,8 @@
-# Optimal Context Management Strategies for LLM-Based AI Agents
+# ContextFlow: Intelligent Context Management Framework for LLM-Based AI Agents
 
 **Author:** Raphaël MANSUY  
 **Date:** June 29, 2025  
-**Tags:** AI Agents, LLM, Context Management, Technical Framework, Implementation  
+**Tags:** AI Agents, LLM, Context Management, ContextFlow, Technical Framework, Implementation  
 **Difficulty:** 🔴 Advanced  
 **Reading Time:** 25 minutes
 
@@ -57,6 +57,37 @@ AI agents operate in two primary modes:
 2. **Multi-Session**: The agent handles a sequence of goals across sessions, each building on prior interactions. Example: Managing a long-term project with multiple milestones.
 
 Both modes require efficient context management to ensure relevant information is accessible without overwhelming the token limit.
+
+```mermaid
+flowchart TD
+    A[New Session Start] --> B{Session Type}
+    
+    B -->|Single Goal| C[Load System Context]
+    B -->|Multi-Session| D[Load System Context<br/>+ Historical Summaries]
+    
+    C --> E[Goal Processing Loop]
+    D --> E
+    
+    E --> F[User Input]
+    F --> G[Tool Execution]
+    G --> H[Reasoning]
+    H --> I[Response Generation]
+    
+    I --> J{Goal Complete?}
+    J -->|No| K[Context Overflow Check]
+    K --> L[Relevance Scoring]
+    L --> M[Context Pruning]
+    M --> N[Knowledge Graph Update]
+    N --> F
+    
+    J -->|Yes| O[Session Synthesis]
+    O --> P[Summary Creation]
+    P --> Q[Knowledge Graph Storage]
+    Q --> R[Session End]
+    
+    style E fill:#ccffcc
+    style O fill:#ffcccc
+```
 
 ---
 
@@ -118,6 +149,34 @@ Score = (0.3 * Recency) + (0.2 * Frequency) + (0.3 * Similarity) + (0.2 * TaskRe
 ```
 
 Where each dimension is normalized to [0, 1].
+
+```mermaid
+flowchart LR
+    A[Content Item] --> B[Relevance Engine]
+    
+    B --> C[Temporal Relevance<br/>30%]
+    B --> D[Usage Frequency<br/>20%]
+    B --> E[Semantic Alignment<br/>30%]
+    B --> F[Task-Specific Weight<br/>20%]
+    
+    C --> G[Exponential Decay<br/>1-hour half-life]
+    D --> H[Reference Count<br/>Tracking]
+    E --> I[Embedding Similarity<br/>Current Context]
+    F --> J[Goal Alignment<br/>Score]
+    
+    G --> K[Final Score]
+    H --> K
+    I --> K
+    J --> K
+    
+    K --> L{Score Threshold}
+    L -->|High| M[Working Zone]
+    L -->|Medium| N[History Zone<br/>Compressed]
+    L -->|Low| O[External Storage]
+    
+    style K fill:#ffcccc
+    style L fill:#ffffcc
+```
 
 #### Application
 
@@ -189,6 +248,35 @@ In a multi-session project, the agent retrieves notes from a prior meeting when 
 
 To maximize context efficiency, we employ sophisticated summarization techniques that distill historical interactions into compact, actionable insights.
 
+```mermaid
+flowchart TD
+    A[Raw Interaction Data<br/>10,000 tokens] --> B[Compression Analysis]
+    
+    B --> C{Content Type}
+    C -->|Conversation| D[Dialogue Summarization]
+    C -->|Decision| E[Key Outcome Extraction]
+    C -->|Process| F[Step Sequence Distillation]
+    
+    D --> G[Hierarchical Summary<br/>Multi-level Detail]
+    E --> H[Decision Record<br/>Context + Result]
+    F --> I[Process Flow<br/>Key Steps Only]
+    
+    G --> J[Compressed Summary<br/>500 tokens]
+    H --> J
+    I --> J
+    
+    J --> K[History Zone Storage]
+    J --> L[Knowledge Graph Pointer]
+    
+    A --> M[Full Detail Archive]
+    M --> N[External Storage]
+    L --> N
+    
+    style A fill:#ffcccc
+    style J fill:#ccffcc
+    style N fill:#ffffcc
+```
+
 #### Techniques
 
 - **Hierarchical Summarization**: Creates summaries at multiple levels of detail, from brief overviews (e.g., "Resolved customer issue X") to comprehensive session recaps.
@@ -213,6 +301,39 @@ A 10,000-token customer support transcript is compressed into a 500-token summar
 ### 6. Cross-Session Continuity
 
 To ensure seamless information transfer across sessions, we implement mechanisms for synthesizing and loading relevant historical context.
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as Agent
+    participant KG as Knowledge Graph
+    participant HS as History Store
+    
+    Note over U,HS: Session 1 - Planning
+    U->>A: Project requirements
+    A->>A: Process & reason
+    A->>U: Task assignments
+    A->>HS: Store session summary
+    A->>KG: Archive full details
+    
+    Note over U,HS: Session 2 - Progress Review
+    U->>A: Progress update request
+    A->>HS: Load session 1 summary
+    A->>KG: Retrieve task details
+    A->>A: Augment context
+    A->>U: Status report
+    A->>HS: Update summaries
+    A->>KG: Archive new details
+    
+    Note over U,HS: Session 3 - Issue Resolution
+    U->>A: Report conflict
+    A->>HS: Load previous summaries
+    A->>KG: Retrieve related context
+    A->>A: Synthesize solution
+    A->>U: Resolution plan
+    A->>HS: Final summary
+    A->>KG: Complete archive
+```
 
 #### Mechanisms
 
@@ -597,6 +718,39 @@ To illustrate the framework in action, we provide two detailed examples: a singl
 ## Performance Optimization and Monitoring
 
 To ensure the framework's effectiveness, we track key performance indicators (KPIs) and implement adaptive tuning.
+
+```mermaid
+flowchart LR
+    A[Context Management System] --> B[Performance Metrics]
+    
+    B --> C[Context Utilization<br/>Rate 85-95%]
+    B --> D[Information Retrieval<br/>Accuracy]
+    B --> E[Session Continuity<br/>Score]
+    
+    C --> F[Monitoring Dashboard]
+    D --> F
+    E --> F
+    
+    F --> G{Performance<br/>Threshold?}
+    G -->|Below| H[Adaptive Tuning]
+    G -->|Above| I[Maintain Settings]
+    
+    H --> J[Usage Pattern<br/>Learning]
+    H --> K[Compression Quality<br/>Optimization]
+    H --> L[Retrieval Timing<br/>Optimization]
+    
+    J --> M[Update Relevance<br/>Weights]
+    K --> N[Refine Summarization<br/>Techniques]
+    L --> O[Optimize Augmentation<br/>Triggers]
+    
+    M --> A
+    N --> A
+    O --> A
+    
+    style F fill:#ccffcc
+    style G fill:#ffffcc
+    style A fill:#ffcccc
+```
 
 ### Context Efficiency Metrics
 
