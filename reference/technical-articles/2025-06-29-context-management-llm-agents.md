@@ -68,7 +68,11 @@ flowchart TD
     C --> E[Goal Processing Loop]
     D --> E
     
-    style E fill:#ccffcc
+    style A fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style B fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style C fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style D fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style E fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
 ```
 
 #### Processing Loop
@@ -82,8 +86,13 @@ flowchart TD
     E -->|No| F[Continue Loop]
     E -->|Yes| G[Session End]
     
-    style A fill:#e1f5fe
-    style G fill:#ffcccc
+    style A fill:#E1F5FE,stroke:#039BE5,stroke-width:2px,color:#01579B
+    style B fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style C fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style D fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style E fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style F fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style G fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
 ```
 
 #### Context Management Cycle
@@ -97,8 +106,13 @@ flowchart TD
     E --> F[Summary Creation]
     F --> G[Knowledge Graph Storage]
     
-    style A fill:#fff3e0
-    style G fill:#e8f5e8
+    style A fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style B fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style C fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style D fill:#E1F5FE,stroke:#039BE5,stroke-width:2px,color:#01579B
+    style E fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style F fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style G fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
 ```
 
 ---
@@ -173,7 +187,12 @@ flowchart LR
     B --> E[Semantic Alignment<br/>30%]
     B --> F[Task-Specific Weight<br/>20%]
     
-    style B fill:#ffcccc
+    style A fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style B fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style C fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style D fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style E fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style F fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
 ```
 
 #### Scoring Calculation
@@ -190,7 +209,15 @@ flowchart TD
     G --> I
     H --> I
     
-    style I fill:#ccffcc
+    style A fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style B fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style C fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style D fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style E fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style F fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style G fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style H fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style I fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
 ```
 
 #### Score-Based Classification
@@ -202,10 +229,11 @@ flowchart TD
     B -->|Medium| D[History Zone<br/>Compressed]
     B -->|Low| E[External Storage]
     
-    style B fill:#ffffcc
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
+    style A fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style B fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style C fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style D fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style E fill:#F8E8FF,stroke:#AB47BC,stroke-width:2px,color:#6A1B9A
 ```
 
 #### Application
@@ -293,7 +321,12 @@ flowchart TD
     C -->|Decision| E[Key Outcome Extraction]
     C -->|Process| F[Step Sequence Distillation]
     
-    style A fill:#ffcccc
+    style A fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style B fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style C fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style D fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style E fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style F fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
 ```
 
 #### Compression Techniques
@@ -308,7 +341,13 @@ flowchart TD
     E --> G
     F --> G
     
-    style G fill:#ccffcc
+    style A fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style B fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style C fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style D fill:#E1F5FE,stroke:#039BE5,stroke-width:2px,color:#01579B
+    style E fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style F fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style G fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
 ```
 
 #### Storage Architecture
@@ -321,8 +360,11 @@ flowchart TD
     D[Full Detail Archive] --> E[External Storage]
     C --> E
     
-    style A fill:#ccffcc
-    style E fill:#ffffcc
+    style A fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style B fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style C fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style D fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style E fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
 ```
 
 #### Techniques
@@ -383,6 +425,8 @@ sequenceDiagram
     A->>U: Resolution plan
     A->>HS: Final summary
     A->>KG: Complete archive
+    
+    %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#E8F4FD', 'primaryTextColor': '#1A365D', 'primaryBorderColor': '#2E86AB', 'lineColor': '#2E86AB', 'secondaryColor': '#F0F9E8', 'tertiaryColor': '#FFF8E1', 'background': '#FFFFFF', 'actorBorder': '#2E86AB', 'actorBkg': '#E8F4FD', 'actorTextColor': '#1A365D', 'noteBkgColor': '#FFF2E8', 'noteTextColor': '#744210', 'noteBorderColor': '#D4A574'}}}%%
 ```
 
 #### Mechanisms
@@ -423,6 +467,14 @@ graph TD
     B --> B1[System Prompt]
     B --> B2[SOP]
     B --> B3[Tool Descriptions]
+    
+    style A fill:#E8F4FD,stroke:#2E86AB,stroke-width:3px,color:#1A365D
+    style B fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style C fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style D fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style B1 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
+    style B2 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
+    style B3 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
 ```
 
 ### Working Zone Components
@@ -439,6 +491,17 @@ graph TD
     F --> F2[Usage Frequency]
     F --> F3[Semantic Alignment]
     F --> F4[Task-Specific Weight]
+    
+    style C fill:#E8F5E8,stroke:#4CAF50,stroke-width:3px,color:#1B5C1E
+    style C1 fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style C2 fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style C3 fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style C4 fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style F fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style F1 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
+    style F2 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
+    style F3 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
+    style F4 fill:#F8E8FF,stroke:#AB47BC,stroke-width:1px,color:#6A1B9A
 ```
 
 ### External Storage Integration
@@ -452,6 +515,14 @@ graph TD
     E --> E1[Entity Nodes]
     E --> E2[Relationship Edges]
     E --> E3[Full Interaction Records]
+    
+    style D fill:#FFF8E1,stroke:#FFB300,stroke-width:3px,color:#E65100
+    style D1 fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style D2 fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style E fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style E1 fill:#E8F4FD,stroke:#2E86AB,stroke-width:1px,color:#1A365D
+    style E2 fill:#E8F4FD,stroke:#2E86AB,stroke-width:1px,color:#1A365D
+    style E3 fill:#E8F4FD,stroke:#2E86AB,stroke-width:1px,color:#1A365D
 ```
 
 ### Dynamic Operations
@@ -469,6 +540,16 @@ graph TD
     H[Session End] --> I[Session Synthesis]
     I --> E
     I --> C
+    
+    style A fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style B fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style C fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style D fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style E fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style F fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style G fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
+    style H fill:#F8E8FF,stroke:#AB47BC,stroke-width:2px,color:#6A1B9A
+    style I fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
 ```
 
 **Explanation:**
@@ -795,7 +876,11 @@ flowchart LR
     B --> D[Information Retrieval<br/>Accuracy]
     B --> E[Session Continuity<br/>Score]
     
-    style A fill:#ffcccc
+    style A fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style B fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style C fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style D fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style E fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
 ```
 
 ### Monitoring Dashboard
@@ -808,8 +893,11 @@ flowchart TD
     C -->|Below| D[Adaptive Tuning]
     C -->|Above| E[Maintain Settings]
     
-    style B fill:#ccffcc
-    style C fill:#ffffcc
+    style A fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style B fill:#E8F5E8,stroke:#4CAF50,stroke-width:2px,color:#1B5C1E
+    style C fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style D fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style E fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
 ```
 
 ### Adaptive Optimization
@@ -823,6 +911,14 @@ flowchart TD
     B --> E[Update Relevance<br/>Weights]
     C --> F[Refine Summarization<br/>Techniques]
     D --> G[Optimize Augmentation<br/>Triggers]
+    
+    style A fill:#FFEBEE,stroke:#E57373,stroke-width:2px,color:#C62828
+    style B fill:#E8F4FD,stroke:#2E86AB,stroke-width:2px,color:#1A365D
+    style C fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C
+    style D fill:#FFF8E1,stroke:#FFB300,stroke-width:2px,color:#E65100
+    style E fill:#F0F9E8,stroke:#6B9C23,stroke-width:2px,color:#2D4A0A
+    style F fill:#F0F4FF,stroke:#5C6BC0,stroke-width:2px,color:#283593
+    style G fill:#FFF2E8,stroke:#D4A574,stroke-width:2px,color:#744210
 ```
 
 ### Context Efficiency Metrics
