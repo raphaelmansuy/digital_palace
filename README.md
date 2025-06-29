@@ -49,25 +49,25 @@
 </tr>
 <tr>
 <td><strong>🤖 Try AI Now</strong></td>
-<td><a href="./tools/ai-tools-master-directory.md#conversational-ai">Best AI Tools →</a></td>
+<td><a href="./tools/ai-tools-master-directory.md#beginner-friendly-tools">Best AI Tools →</a></td>
 <td>30 seconds</td>
 <td>Working AI interface, no setup required</td>
 </tr>
 <tr>
 <td><strong>💻 Build an App</strong></td>
-<td><a href="./guides/getting-started.md">Zero-to-App Guide →</a></td>
+<td><a href="./guides/goal-oriented-guides.md#getting-started">Zero-to-App Guide →</a></td>
 <td>5 minutes</td>
 <td>Live AI application running locally</td>
 </tr>
 <tr>
 <td><strong>📚 Learn Systematically</strong></td>
-<td><a href="./learning/README.md">Learning Roadmap →</a></td>
+<td><a href="./learning/README.md#find-your-learning-path">Learning Roadmap →</a></td>
 <td>10 minutes</td>
 <td>Personalized learning path</td>
 </tr>
 <tr>
 <td><strong>🛠️ Find Perfect Tool</strong></td>
-<td><a href="./tools/ai-tools-master-directory.md">Tools Hub →</a></td>
+<td><a href="./tools/ai-tools-master-directory.md#quick-tool-finder">Tools Hub →</a></td>
 <td>2 minutes</td>
 <td>Tool recommendation for your use case</td>
 </tr>
@@ -170,7 +170,7 @@ _Select the path that matches your goals and experience level_
 
 1. [Getting Started Guide](./guides/getting-started.md)
 2. [Beginner Learning Path](./learning/README.md#complete-beginner-path)
-3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-tools)
+3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
 4. Build your first project (30-min quickstart)
 
 **⏱️ Time Investment:** 4-8 weeks  
@@ -199,7 +199,7 @@ _Select the path that matches your goals and experience level_
 **🧠 Start Here:**
 
 1. [2025 AI Updates](./reference/2025-ai-updates.md)
-2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
+2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#-2025-breakthrough-tools)
 3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)
 4. Contribute your expertise back
 
@@ -216,10 +216,10 @@ _Select the path that matches your goals and experience level_
 
 | I want to...               | Fastest path                                                                        | Time to first result |
 | -------------------------- | ----------------------------------------------------------------------------------- | -------------------- |
-| **🤖 Try AI now**          | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#conversational-ai) | 30 seconds           |
+| **🤖 Try AI now**          | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds           |
 | **💻 Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)               | 5 minutes            |
-| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md)                                            | 10 minutes           |
-| **🛠️ Find tools**          | [AI Tools Directory](./tools/ai-tools-master-directory.md)                          | 2 minutes            |
+| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                                            | 10 minutes           |
+| **🛠️ Find tools**          | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)                          | 2 minutes            |
 
 ### 📚 **Essential Resources**
 
@@ -320,10 +320,10 @@ digital_palace/
 
 | **Goal**                    | **Best Path**                                                                  | **Time**   | **Outcome**        |
 | --------------------------- | ------------------------------------------------------------------------------ | ---------- | ------------------ |
-| 🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#conversational-ai) | 30 seconds | Working AI demo    |
+| 🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo    |
 | 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)          | 5 minutes  | Live application   |
-| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md)                                       | 10 minutes | Structured path    |
-| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md)                     | 2 minutes  | Perfect tool match |
+| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                                       | 10 minutes | Structured path    |
+| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)                     | 2 minutes  | Perfect tool match |
 
 ---
 
