@@ -42,13 +42,13 @@
 <details>
 <summary><strong>🎯 Quick Navigation</strong></summary>
 
-- [🚀 Quick Start](#-quick-start)
+- [🚀 Getting Started](#-getting-started)
 - [🎯 Choose Your Path](#-choose-your-path)
 - [📚 Essential Resources](#-essential-resources)
 - [🏛️ Repository Architecture](#️-repository-architecture)
 - [🌟 What's Inside](#-whats-inside)
 - [🆕 Latest 2025 AI Breakthroughs](#-latest-2025-ai-breakthroughs)
-- [🚀 Getting Started](#-getting-started)
+- [🎯 Goal-Oriented Implementation Guides](#-goal-oriented-implementation-guides)
 - [📊 Repository Stats & Achievements](#-repository-stats--achievements)
 - [🤝 Contributing](#-contributing)
 - [🎯 Ready to Transform Your Business with AI?](#-ready-to-transform-your-business-with-ai)
@@ -58,36 +58,74 @@
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-**New to AI?** → [Getting Started](#-getting-started) • **Developer?** → [Build Your First AI App](./guides/goal-oriented-guides.md#getting-started) • **Professional?** → [Latest 2025 Updates](./reference/2025-ai-updates.md)
+### 🎯 **Choose Your Journey**
 
-<div align="center">
+*Select the path that matches your goals and experience level*
 
-### ⚡ **Get Started in 30 Seconds**
+<table>
+<tr>
+<th width="33%">🌱 Complete Beginners</th>
+<th width="33%">🔧 Developers</th>
+<th width="33%">🧠 AI Professionals</th>
+</tr>
+<tr>
+<td>
 
-| I want to... | Click here | Time needed |
-|--------------|------------|-------------|
-| **🌱 Learn AI from scratch** | [Beginner Path →](./learning/README.md#beginner-path) | 5 min setup |
-| **🔧 Build something now** | [Quick Start Guide →](./guides/goal-oriented-guides.md#getting-started) | 2 min setup |
-| **🤖 Create AI agents** | [Agent Development →](./guides/ai-agents.md) | 10 min setup |
-| **📚 Explore resources** | [Browse All Tools →](./tools/ai-tools-master-directory.md) | 1 min browse |
-| **🏢 Need expert help?** | [Schedule Consultation →](https://www.linkedin.com/in/raphaelmansuy/) | 30 min call |
+**Perfect if you're new to AI**
 
-</div>
+**📚 Start Here:**
+1. [Getting Started Guide](./guides/getting-started.md)
+2. [Beginner Learning Path](./learning/README.md#beginner-path)  
+3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-tools)
+4. Build your first project (30-min quickstart)
 
-## 🚀 Quick Navigation
+**⏱️ Time Investment:** 4-8 weeks  
+**� Outcome:** Working AI application
 
-### 🎯 **Choose Your Path**
+</td>
+<td>
 
-| Your Goal | Best Starting Point | Estimated Time |
-|-----------|-------------------|----------------|
-| **🌱 Learn AI Basics** | [Complete Beginner Guide](./learning/README.md#beginner-path) 📚 | 4-8 weeks |
-| **💼 Build Business AI** | [Business AI Implementation](./guides/goal-oriented-guides.md#business-implementation) 🏢 | 2-4 weeks |
-| **🔧 Develop AI Apps** | [Developer Getting Started](./guides/getting-started.md) ⚡ | 1-2 weeks |
-| **🤖 Create AI Agents** | [AI Agents Complete Guide](./guides/ai-agents.md) 🚀 | 3-6 weeks |
-| **🔬 Research & Experiment** | [Research Resources Hub](./reference/README.md) 🧪 | Ongoing |
-| **🚀 Deploy to Production** | [Production Deployment Guide](./guides/deployment.md) 🏭 | 2-3 weeks |
+**Perfect if you can code**
+
+**🔧 Start Here:**
+1. [Developer Path](./learning/README.md#developer-path)
+2. [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
+3. [Build AI Apps](./guides/goal-oriented-guides.md#building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#knowledge--data-integration)
+4. [Deploy to Production](./guides/goal-oriented-guides.md#production-deployment)
+
+**⏱️ Time Investment:** 1-3 weeks  
+**🎯 Outcome:** Production-ready AI system
+
+</td>
+<td>
+
+**Perfect if you know AI**
+
+**🧠 Start Here:**
+1. [2025 AI Updates](./reference/2025-ai-updates.md)
+2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
+3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)
+4. Contribute your expertise back
+
+**⏱️ Time Investment:** Ongoing  
+**🎯 Outcome:** Stay at the forefront
+
+</td>
+</tr>
+</table>
+
+### 🚀 **30-Second Quick Actions**
+
+**Want to dive in immediately?** Here are the fastest paths to value:
+
+| I want to... | Fastest path | Time to first result |
+|--------------|-------------|---------------------|
+| **🤖 Try AI now** | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#conversational-ai) | 30 seconds |
+| **� Build an app** | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started) | 5 minutes |
+| **� Learn systematically** | [Learning Roadmap](./learning/README.md) | 10 minutes |
+| **�️ Find tools** | [AI Tools Directory](./tools/ai-tools-master-directory.md) | 2 minutes |
 
 ### 📚 **Essential Resources**
 
@@ -108,7 +146,7 @@ This repository is organized as a **digital palace** - each section serves a spe
 
 ### 📁 **Core Directories**
 
-```
+```text
 digital_palace/
 ├── 📖 learning/           # Structured learning paths & courses
 │   └── courses/          # Educational resources (former 07-courses)
@@ -225,81 +263,6 @@ digital_palace/
 - **🌍 Community-Driven**: Built by practitioners, for practitioners
 - **📚 Comprehensive**: From basics to cutting-edge research
 - **🚀 Production-Ready**: Focus on real-world applications
-
----
-
-## 🚀 Getting Started
-
-<div align="center">
-
-### 🎯 **Choose Your Journey**
-
-*Select the path that matches your goals and experience level*
-
-</div>
-
-<table>
-<tr>
-<th width="33%">🌱 Complete Beginners</th>
-<th width="33%">🔧 Developers</th>
-<th width="33%">🧠 AI Professionals</th>
-</tr>
-<tr>
-<td>
-
-**Perfect if you're new to AI**
-
-**📚 Start Here:**
-1. [Getting Started Guide](./guides/getting-started.md)
-2. [Beginner Learning Path](./learning/README.md#beginner-path)  
-3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-tools)
-4. Build your first project (30-min quickstart)
-
-**⏱️ Time Investment:** 4-8 weeks  
-**🎯 Outcome:** Working AI application
-
-</td>
-<td>
-
-**Perfect if you can code**
-
-**🔧 Start Here:**
-1. [Developer Path](./learning/README.md#developer-path)
-2. [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
-3. [Build AI Apps](./guides/goal-oriented-guides.md#building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#knowledge--data-integration)
-4. [Deploy to Production](./guides/goal-oriented-guides.md#production-deployment)
-
-**⏱️ Time Investment:** 1-3 weeks  
-**🎯 Outcome:** Production-ready AI system
-
-</td>
-<td>
-
-**Perfect if you know AI**
-
-**🧠 Start Here:**
-1. [2025 AI Updates](./reference/2025-ai-updates.md)
-2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
-3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)
-4. Contribute your expertise back
-
-**⏱️ Time Investment:** Ongoing  
-**🎯 Outcome:** Stay at the forefront
-
-</td>
-</tr>
-</table>
-
-### 🚀 **30-Second Quick Start**
-
-**Want to dive in immediately?** Here are the fastest paths to value:
-
-| I want to... | Fastest path | Time to first result |
-|--------------|-------------|---------------------|
-| **🤖 Try AI now** | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#conversational-ai) | 30 seconds |
-| **🔧 Build an app** | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started) | 5 minutes |
-| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md) | 10 minutes |
-| **🛠️ Find tools** | [AI Tools Directory](./tools/ai-tools-master-directory.md) | 2 minutes |
 
 ---
 
@@ -444,8 +407,6 @@ Contributors are recognized in:
 - Community showcase (for significant contributions)
 
 **Ready to contribute?** Start with [Good First Issues](https://github.com/raphaelmansuy/digital_palace/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or [propose new content](https://github.com/raphaelmansuy/digital_palace/issues/new).
-
----
 
 ---
 
