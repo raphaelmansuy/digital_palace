@@ -1,10 +1,10 @@
-<div align="center">
+<div>
 
 # 🏛️ My Digital Palace
 
 ## A Personal AI Knowledge Repository
 
-<p align="center">
+<p>
     <a href="./reference/2025-ai-updates.md">
         <img src="https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge" alt="Last Updated"/>
     </a>
@@ -83,7 +83,7 @@
 
 ### 📊 **Repository Statistics & Health**
 
-<div align="center">
+
 
 | Metric | Count | Last Updated |
 |--------|-------|--------------|
@@ -99,31 +99,7 @@
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
 
-</div>
 
----
-
-### 🌟 **Success Stories & Community Impact**
-
-<blockquote>
-<p><strong>"This repository saved me 3 months of research time. The structured learning paths and goal-oriented guides are incredible!"</strong><br>
-<em>— Senior AI Engineer, Fortune 500 Company</em></p>
-
-<p><strong>"Built our first AI product using these guides. From zero to production in 2 weeks!"</strong><br>
-<em>— CTO, Tech Startup (Series A)</em></p>
-
-<p><strong>"The 'For the Impatient' series is perfect for experienced developers. Exactly what I needed."</strong><br>
-<em>— Principal Engineer, Big Tech</em></p>
-
-<p><strong>"Our team uses this as the single source of truth for AI development decisions."</strong><br>
-<em>— Head of AI, Financial Services</em></p>
-</blockquote>
-
-**📈 Community Achievements:**
-- **10,000+** developers helped in learning AI
-- **500+** AI applications built using our guides  
-- **100+** companies implementing our strategies
-- **25+** different countries in our community
 
 ---
 
@@ -263,37 +239,34 @@ _Select the path that matches your goals and experience level_
 This repository is organized as a **digital palace** - each section serves a specific purpose in your AI learning journey:
 
 ### 📁 **Core Directories**
-
-```text
-digital_palace/
-├── 📖 learning/           # Structured learning paths & courses
-│   └── courses/          # Educational resources (former 07-courses)
-├── 🎯 guides/            # Step-by-step implementation guides
-│   ├── prompting/        # Prompting techniques (former 20-prompts)
-│   ├── quick-references/ # "For the Impatients" series (former 40-series)
-│   ├── image-generation/ # AI image guides (former 80-images)
-│   ├── agent-development/# AI agent SOPs (from 01-articles)
-│   └── training/         # Training resources (from 01-articles)
-├── 🛠️ tools/             # Curated tool directories & comparisons
-│   └── development-tools/# VS Code extensions (from 10-resources)
-├── 📚 reference/         # Quick lookups, APIs, cheat sheets
-│   ├── technical-articles/# Deep-dive articles (from 01-articles)
-│   ├── techniques/       # AI techniques (from 01-articles)
-│   ├── research-papers/  # Academic papers (former 50-research)
-│   ├── datasets/         # Training datasets (former 05-datasets)
-│   ├── cloud-platforms/  # Cloud guides (former 09-cloud)
-│   └── genai-fundamentals/# GenAI basics (former 11-genai)
-├── 🎭 personal/          # Learning philosophy & mental models
-│   ├── til/             # Today I Learned (expanded from 02-til)
-│   ├── mental-models/   # Decision frameworks (former 60-mental)
-│   └── ideas/           # Project concepts (former 70-ideas)
-└── 💬 community/         # Discussions, contributions, updates
-    ├── newsletters/      # Updates (former 04-newsletter)
-    ├── social-content/   # LinkedIn posts (former 06-linkedin)
-    └── external-blogs/   # Blog recommendations (former 08-blogs)
 ```
-
-### 🎯 **Usage Philosophy**
+digital_palace/
+├── 📖 learning/            
+│   └── courses/           
+├── 🎯 guides/              
+│   ├── prompting/         
+│   ├── quick-references/  
+│   ├── image-generation/  
+│   ├── agent-development/ 
+│   └── training/          
+├── 🛠️ tools/               
+│   └── development-tools/ 
+├── 📚 reference/           
+│   ├── technical-articles/
+│   ├── techniques/        
+│   ├── research-papers/   
+│   ├── datasets/          
+│   ├── cloud-platforms/   
+│   └── genai-fundamentals/
+├── 🎭 personal/            
+│   ├── til/              
+│   ├── mental-models/    
+│   └── ideas/            
+└── 💬 community/           
+    ├── newsletters/       
+    ├── social-content/    
+    └── external-blogs/    
+```
 
 **🌱 Learn by Doing**: Start with practical projects, understand theory as you build  
 **🔄 Iterative Discovery**: Return to concepts as your understanding deepens  
@@ -410,7 +383,7 @@ Need AI implementation for your business? Raphaël offers:
 
 ---
 
-<div align="center">
+<div>
 
 **⭐ If this repository helps you, please give it a star! ⭐**
 
