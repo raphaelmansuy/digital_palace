@@ -1079,69 +1079,23 @@ ContextFlow addresses the critical challenge of context management for LLM-based
 
 Our framework builds upon cutting-edge research in AI agent memory systems, integrating advances in contextual memory intelligence (Wedel, 2025) [10] and cognitive knowledge synthesis (Vishwakarma et al., 2025) [11]. Through structured zone management, dynamic information prioritization, external storage leverage, on-demand context augmentation, efficient data compression, and robust session continuity, ContextFlow enables agents to achieve human-like contextual awareness within technical constraints.
 
-Organizations implementing ContextFlow can expect enhanced decision-making consistency, improved multi-session continuity, and optimal context utilization. Success requires treating context management as an active curation challenge, continuously adapting to evolving task requirements and user needs. As AI agent development advances, sophisticated memory systems like ContextFlow will prove essential for handling complex, evolving tasks with the intelligence and awareness users demand.
-
-### Implementation Roadmap
-
-#### Phase 1: Foundation (Weeks 1-2)
-
-1. Implement Hierarchical Context Architecture with zone allocation and token management
-2. Deploy basic relevance scoring engine with calibrated weights for specific use cases
-
-#### Phase 2: Integration (Weeks 3-4)
-
-1. Build Knowledge Graph Integration using graph databases for external storage
-2. Establish efficient retrieval mechanisms with semantic search capabilities
-
-#### Phase 3: Optimization (Weeks 5-6)
-
-1. Monitor performance KPIs and refine strategies based on empirical data
-2. Implement adaptive tuning for continuous improvement
-
-This iterative approach allows organizations to build ContextFlow capabilities progressively, ensuring each component functions effectively before adding complexity. The result: AI agents that remain efficient, contextually aware, and capable of delivering intelligent, consistent results across diverse operational scenarios.
-
 ---
 
-## References
+## BibTeX Citation
 
-1. **Zhou, Z., Qu, A., Wu, Z., Kim, S., Prakash, A., Rus, D., Zhao, J., Low, B. K. H., & Liang, P. P.** (2025). MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents. *arXiv preprint arXiv:2506.15841*. [https://arxiv.org/abs/2506.15841](https://arxiv.org/abs/2506.15841)
-
-2. **Zhang, G., Fu, M., Wan, G., Yu, M., Wang, K., & Yan, S.** (2025). G-Memory: Tracing Hierarchical Memory for Multi-Agent Systems. *arXiv preprint arXiv:2506.07398*. [https://arxiv.org/abs/2506.07398](https://arxiv.org/abs/2506.07398)
-
-3. **Kang, J., Ji, M., Zhao, Z., & Bai, T.** (2025). Memory OS of AI Agent. *arXiv preprint arXiv:2506.06326*. [https://arxiv.org/abs/2506.06326](https://arxiv.org/abs/2506.06326)
-
-4. **Patlan, A. S., Hebbar, A., Viswanath, P., & Mittal, P.** (2025). Context manipulation attacks: Web agents are susceptible to corrupted memory. *arXiv preprint arXiv:2506.17318*. [https://arxiv.org/abs/2506.17318](https://arxiv.org/abs/2506.17318)
-
-5. **Xu, D., Wen, Y., Jia, P., Zhang, Y., Zhang, W., Wang, Y., Guo, H., Tang, R., Zhao, X., Chen, E., & Xu, T.** (2025). Towards Multi-Granularity Memory Association and Selection for Long-Term Conversational Agents. *arXiv preprint arXiv:2505.19549*. [https://arxiv.org/abs/2505.19549](https://arxiv.org/abs/2505.19549)
-
-6. **Ye, Y.** (2025). Task Memory Engine: Spatial Memory for Robust Multi-Step LLM Agents. *arXiv preprint arXiv:2505.19436*. [https://arxiv.org/abs/2505.19436](https://arxiv.org/abs/2505.19436)
-
-7. **Xiong, Z., Lin, Y., Xie, W., He, P., Tang, J., Lakkaraju, H., & Xiang, Z.** (2025). How Memory Management Impacts LLM Agents: An Empirical Study of Experience-Following Behavior. *arXiv preprint arXiv:2505.16067*. [https://arxiv.org/abs/2505.16067](https://arxiv.org/abs/2505.16067)
-
-8. **Rezazadeh, A., Li, Z., Lou, A., Zhao, Y., Wei, W., & Bao, Y.** (2025). Collaborative Memory: Multi-User Memory Sharing in LLM Agents with Dynamic Access Control. *arXiv preprint arXiv:2505.18279*. [https://arxiv.org/abs/2505.18279](https://arxiv.org/abs/2505.18279)
-
-9. **Tan, Z., Yan, J., Hsu, I.-H., Han, R., Wang, Z., Le, L. T., Song, Y., Chen, Y., Palangi, H., Lee, G., Iyer, A., Chen, T., Liu, H., Lee, C.-Y., & Pfister, T.** (2025). In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents. *arXiv preprint arXiv:2503.08026*. [https://arxiv.org/abs/2503.08026](https://arxiv.org/abs/2503.08026)
-
-10. **Wedel, K.** (2025). Contextual Memory Intelligence -- A Foundational Paradigm for Human-AI Collaboration and Reflective Generative AI Systems. *arXiv preprint arXiv:2506.05370*. [https://arxiv.org/abs/2506.05370](https://arxiv.org/abs/2506.05370)
-
-11. **Vishwakarma, A., Lee, H., Suresh, M., Sharma, P. S., Vishwakarma, R., Gupta, S., & Chauhan, Y. A.** (2025). Cognitive Weave: Synthesizing Abstracted Knowledge with a Spatio-Temporal Resonance Graph. *arXiv preprint arXiv:2506.08098*. [https://arxiv.org/abs/2506.08098](https://arxiv.org/abs/2506.08098)
-
-12. **Chang, E. Y., & Geng, L.** (2025). SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning. *arXiv preprint arXiv:2503.11951*. [https://arxiv.org/abs/2503.11951](https://arxiv.org/abs/2503.11951)
-
-13. **Xu, W., Mei, K., Gao, H., Tan, J., Liang, Z., & Zhang, Y.** (2025). A-MEM: Agentic Memory for LLM Agents. *arXiv preprint arXiv:2502.12110*. [https://arxiv.org/abs/2502.12110](https://arxiv.org/abs/2502.12110)
-
-14. **Hu, Y., Wang, Y., & McAuley, J.** (2025). Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions. *ICML 2025 Workshop on Long-Context Foundation Models*. [https://openreview.net/forum?id=ZgQ0t3zYTQ](https://openreview.net/forum?id=ZgQ0t3zYTQ)
-
-15. **Ferrag, M. A., Tihanyi, N., & Debbah, M.** (2025). From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review. *arXiv preprint arXiv:2504.19678*. [https://arxiv.org/abs/2504.19678](https://arxiv.org/abs/2504.19678)
-
-16. **Tran, K. T., Dao, D., Nguyen, M. D., Pham, Q. V., Hwang, W. J., & Nguyen, T. T.** (2025). Multi-Agent Collaboration Mechanisms: A Survey of LLMs. *arXiv preprint arXiv:2501.06322*. [https://arxiv.org/abs/2501.06322](https://arxiv.org/abs/2501.06322)
-
-## Citations in Text
-
-This framework builds upon recent advances in memory systems for LLM agents, particularly the work of Zhou et al. (2025) on MEM1, which demonstrated the effectiveness of end-to-end reinforcement learning for memory consolidation in long-horizon tasks [1]. The hierarchical memory architecture proposed here extends concepts from Zhang et al. (2025), who introduced G-Memory for multi-agent systems with three-tier graph hierarchies [2], and Kang et al. (2025), who developed MemoryOS with operating system-inspired memory management principles [3].
-
-The relevance scoring mechanism draws inspiration from multi-granularity memory approaches proposed by Xu et al. (2025) for conversational agents [5], while the external knowledge graph integration aligns with spatial memory concepts from Ye (2025) [6]. The framework addresses security concerns raised by Patlan et al. (2025) regarding context manipulation attacks on web agents [4], and incorporates insights from collaborative memory sharing research by Rezazadeh et al. (2025) [8].
-
-The cross-session continuity mechanisms build upon reflective memory management approaches demonstrated by Tan et al. (2025) for personalized dialogue agents [9], while the contextual intelligence paradigm aligns with foundational work by Wedel (2025) on human-AI collaboration systems [10]. The cognitive aspects of the framework incorporate spatio-temporal knowledge synthesis concepts from Vishwakarma et al. (2025) [11], and the multi-agent planning validation draws from SagaLLM's transaction guarantee approaches by Chang and Geng (2025) [12].
-
-The agentic memory architecture particularly benefits from recent innovations in dynamic memory organization, notably Xu et al.'s A-MEM system (2025), which combines Zettelkasten principles with agent-driven decision making for adaptive context-aware memory management [13]. The framework's evaluation methodology is informed by comprehensive benchmarking approaches developed by Hu et al. (2025), who introduced MemAE for assessing memory agent competencies including accurate retrieval, test-time learning, long-range understanding, and conflict resolution [14]. The comprehensive review by Ferrag et al. (2025) provides foundational understanding of the progression from LLM reasoning to autonomous AI agents [15], while multi-agent collaboration insights from Tran et al. (2025) inform the framework's approach to distributed memory management [16].
+```bibtex
+@article{mansuy2025contextflow,
+  title={ContextFlow: Intelligent Context Management Framework for LLM-Based AI Agents},
+  author={Mansuy, Rapha{\"e}l},
+  journal={Digital Palace Technical Articles},
+  year={2025},
+  month={June},
+  day={29},
+  pages={1--25},
+  keywords={AI Agents, LLM, Context Engineering, ContextFlow, Technical Framework, Implementation},
+  difficulty={Advanced},
+  readingtime={25 minutes},
+  abstract={Large Language Model (LLM)-based AI agents face strict technical constraints: fixed context windows of 1-2 million tokens and inference caching systems that continuously append data. This article presents ContextFlow, a systematic framework for intelligent context management integrating six key strategies: hierarchical context organization, intelligent relevance scoring, external knowledge graph storage, dynamic retrieval, progressive compression, and cross-session continuity.},
+  url={https://github.com/raphaelmansuy/digital_palace/blob/main/reference/technical-articles/2025-06-29-context-management-llm-agents.md}
+}
+```
