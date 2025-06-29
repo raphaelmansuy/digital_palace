@@ -88,12 +88,13 @@
 | **🛠️ AI Tools Cataloged** | 80+ | Weekly |
 | **📚 Learning Resources** | 60+ | Weekly |
 | **🎯 Implementation Guides** | 60+ | Weekly |
-| **📄 Research Papers** | 25+ | Monthly |
+| **📄 Research Papers** | 26+ | Monthly |
 | **🌍 Community Contributors** | Growing | Ongoing |
 | **⭐ GitHub Stars** | Check badge above | Real-time |
 
 **🔥 Most Popular This Month:**
 
+- [Optimal Context Management for AI Agents](./reference/technical-articles/2025-06-29-context-management-llm-agents.md) - New! 🆕
 - [OpenAI o3 Analysis](./reference/2025-ai-updates.md#openai-o3) - 2.1K views
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
 - [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
