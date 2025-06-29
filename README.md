@@ -1,5 +1,8 @@
 # My Digital Palace - A Personal AI Knowledge Repository
 
+> *"In the age of AI, knowledge isn't just power—it's architecture. Like the ancient Library of Alexandria, but for the digital mind, this palace houses not just information, but the wisdom to wield it. Every room is a pathway, every guide a bridge between curiosity and creation."*  
+> **— Raphaël MANSUY**
+
 > **Your comprehensive guide to AI technologies, tools, and implementation strategies**  
 > **🆕 Updated June 2025** - OpenAI o3, Claude 4, AI Agents, Computer Use & Latest Breakthroughs
 
