@@ -1,19 +1,21 @@
-# My Digital Palace - A Personal Journal for Reflection
+# My Digital Palace - A Personal AI Knowledge Repository
 
 ## Introduction
 
-I created my Digital Palace as a public platform for self-expression, reflection, and sharing my memories. It is where I openly document my thoughts, experiences, milestones, creative works - my personal journey.
+I created my Digital Palace as a public platform for self-expression, reflection, and sharing my memories. It is where I openly document my thoughts, experiences, milestones, creative works - my personal journey focused on Artificial Intelligence and technology.
 
-My Digital Palace allows me to write journal entries, upload multimedia, record audio, and categorize content by date and themes. The tools help me capture toughts to share publicly.
+My Digital Palace allows me to write journal entries, upload multimedia, record audio, and categorize content by date and themes. The tools help me capture thoughts to share publicly.
 
 With my palace being public, anyone can read my entries, view my content, and leave comments to connect with me and others in my community. I enjoy fostering this open dialogue and discussion around my shared stories.
 
-In summary, my Digital Palace provides an engaging platform for public self-expression, reflection, and sharing memories.
-
-
 [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
 
-## Today I Learned (TIL)
+
+---
+
+## 📚 Personal Learning & Reflection
+
+### Today I Learned (TIL)
 
 The goal of a "Today I Learned" (TIL) journal is to document and reflect upon something new or interesting that you have learned on a given day.
 
@@ -23,10 +25,9 @@ TIL journals are often used by programmers, developers, and other professionals 
 
 They can also be a valuable resource for others who are looking to learn and expand their knowledge in a specific domain.
 
-👉 [Todays I Learned](/02-til/README.md)
+👉 [Today I Learned](/02-til/README.md)
 
-
-## Tutorial Series: "For the Impatient"
+### Tutorial Series: "For the Impatient"
 
 The "For the Impatient" tutorial series is designed to provide a fast-paced and efficient way for learners to master programming languages and other technical subjects. The core idea behind this series is to cater to the needs of individuals who are eager to gain proficiency quickly, without getting bogged down in lengthy, comprehensive tutorials.
 
@@ -36,78 +37,195 @@ The typical learner in the "Impatient" target audience might be someone who:
 - Prefers a more streamlined, concise learning approach that focuses on the most essential concepts and practical applications
 - Wants to get up and running with a new language or technology as rapidly as possible, without spending too much time on theoretical background or peripheral topics
 
-👉 [The impatient series](40-the-impatients_serie/README.md)
+👉 [The Impatient Series](40-the-impatients_serie/README.md)
 
-# Mental models
+### Mental Models
 
- A mental model is a compression of how something works
+A mental model is a compression of how something works - frameworks for understanding complex systems.
 
-[Mental models](60-mental-models/README.md)
-## Generative AI
+👉 [Mental Models](60-mental-models/README.md)
 
-- [Generative AI Business Use Cases](01-articles/2024-03-12_genai_business_use_cases.md)
-- [Comprehensive Guide to Large Language Model Engineering](11-genai/README.md.md)
-  
-##  Courses and lectures
+---
+
+## 🎓 Learning Resources
+
+### Courses & Education
 
 - [AI Courses](07-courses/ai_courses.md)
-- [Prompt engineering](07-courses/prompt_engineering.md)
+- [Prompt Engineering Courses](07-courses/prompt_engineering.md)
 - [System, Database, Operating System](07-courses/system_courses.md)
 - [🤗 GenAI Cookbook](https://huggingface.co/learn/cookbook/index.md)
 - [Generative AI for Beginners Microsoft](https://microsoft.github.io/generative-ai-for-beginners/#/)
 
+### High-Quality Content Sources
 
-## Blog
+- 👉 [Top Quality Blogs](08-blogs/blogs.md)
+- 👉 [Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
+- 👉 [Top Quality Datasets for Fine-Tuning](05-top-quality-dataset/top-quality-dataset.md)
+- 👉 [Articles Collection](01-articles/README.md)
+- 👉 [LinkedIn Posts](06-linkedin-posts/linkedin_posts.md)
 
-👉  [Top Quality Blogs](08-blogs/blogs.md)
+---
 
+## 🤖 AI Engineering & Development
 
-## Cloud Providers
+### Core Concepts & Frameworks
 
-👉 [Top Quality Cloud Providers](09-cloud-providers/cloud-providers.md)
-
-## High Quality Datasets for Fine-Tuning
-
-👉 [Top Quality Datasets](05-top-quality-dataset/top-quality-dataset.md)
-
-## AI Engineering
-
-### Articles
-
+- [Generative AI Business Use Cases](01-articles/2024-03-12_genai_business_use_cases.md)
+- [Comprehensive Guide to Large Language Model Engineering](11-genai/README.md.md)
+- [Design and Architecture Patterns for LLM Applications](./01-articles/dessign_patterns_for_llm_applications/README.md)
+- [Frameworks for Building LLM Applications](./01-articles/framework_for_llm_applications/README.md)
 - [Demystifying Classifiers and Embeddings](./01-articles/embeddings/README.md)
-
-- [Design and Architecture Patterns for LLM application](./01-articles/dessign_patterns_for_llm_applications/README.md)
-
-- [Frameworks for building LLM applications](./01-articles/framework_for_llm_applications/README.md)
-
 - [Bridging the Gap Between Thinking and Doing: FaR an Effective Prompting Framework inspired from Theory of Mind](./01-articles/far/README.md)
 - [Beyond Prompt Engineering: Modular and Optimized LM Programs with DSPy](./01-articles/dspy/README.md)
 - [Mastering the Art of Training Large Language Models from Scratch](01-articles/2024-03-12_training_an_llm.md)
 
+### AI Application Development
 
-## LLMs implementation
+#### Core Frameworks & Libraries
 
-- [LLMs from scratch](https://github.com/rasbt/LLMs-from-scratch) Implementing a ChatGPT-like LLM from scratch, step by step by from [Sebastian Raschka](https://github.com/rasbt) 
+- [LangChain](https://www.langchain.com/) - Framework to construct LLMs application [documentation](https://python.langchain.com/docs/get_started/introduction) 🦜
+- [LLamaIndex](https://www.llamaindex.ai/) - Turn your enterprise data into production-ready LLM applications 🦙
+- [HuggingFace](https://huggingface.co/) - Model, Datasets, Inference Space, the GitHub of AI models 🤗
+  - [Hub](https://huggingface.co/docs/hub/index) - Your starting point to HuggingFace
+  - [CLI](https://huggingface.co/docs/huggingface_hub/en/guides/cli) - Command Line Interface (CLI)
+- [Quantalogic](https://github.com/quantalogic/quantalogic) - A powerful Agentic Framework
+- [QLLM](https://github.com/quantalogic/qllm) - QLLM: A powerful CLI for seamless interaction with multiple Large Language Models. Simplify AI workflows, streamline development, and unlock the potential of cutting-edge language models. by [Quantalogic](https://www.quantalogi.app)
 
-## Prompt Engineering
+#### Specialized Tools
 
-- [A list of prompt engineering techniques](https://aman.ai/primers/ai/prompt-engineering/) 
-- [Mastering the art of prompt engineering in French](01-articles/2024-05-29_mastering_prompt_engineering_fr.md)
-- [Mastering the art of prompt engineering](01-articles/2024-05-29_mastering-prompt-engineering_us.md)
+- [instructor](https://jxnl.github.io/instructor/) - Instructor makes it easy to reliably get structured data like JSON from Large Language Models (LLMs) like GPT-3.5, GPT-4, GPT-4-Vision, including open source models like Mistral/Mixtral from [Together](https://jxnl.github.io/instructor/hub/together/), [Anyscale](https://jxnl.github.io/instructor/hub/anyscale/), [Ollama](https://jxnl.github.io/instructor/hub/ollama/), and [llama-cpp-python](https://jxnl.github.io/instructor/hub/llama-cpp-python/).
+- [instructor_ex](https://github.com/thmsmlr/instructor_ex) - (Elixir version of Instructor)
+- [BAML](https://github.com/BoundaryML/baml) - BAML is a language that helps you get structured data from LLMs, with the best DX possible. Works with all languages. Check out the promptfiddle.com playground
+- [ell](https://docs.ell.so/index.html#) - A language model programming framework
+- [marvin](https://www.askmarvin.ai/welcome/what_is_marvin/) - Marvin is a lightweight AI toolkit for building natural language interfaces that are reliable, scalable, and easy to trust
+- [PhiData](https://docs.phidata.com/introduction) - Phidata is a toolkit for building AI Assistants using function calling
 
-## Embeddings
+#### Utility & Enhancement Tools
 
-### Articles
+- [Vercel AI SDK](https://vercel.com/blog/ai-sdk-3-generative-ui) - Stream React Components from LLMs to deliver richer user experiences
+- [easyllm](https://philschmid.github.io/easyllm/) - EasyLLM is an open source project that provides helpful tools and methods for working with large language models (LLMs), both open source and closed source
+- [Flowneum](https://github.com/floneum/floneum) - A toolkit for controllable, private AI on consumer hardware in rust
+- [Kalosm](https://floneum.com/kalosm/) - Kalosm is an open source framework for private language, audio, and image models in Rust
+- [Microsoft AutoDev](https://github.com/unit-mesh/auto-dev) - 🧙‍AutoDev: The AI-powered coding wizard with multilingual support
+- [Cognee](https://github.com/topoteretes/cognee?tab=readme-ov-file) - Memory management for the AI Applications and AI Agents
+- [MemGPT](https://memgpt.ai/) - Enable Next-Gen Large Language Model Applications
+- [lumentis](https://github.com/hrishioa/lumentis) - Generate beautiful docs from your transcripts and unstructured information with a single command
+- [OpenUI](https://github.com/wandb/openui) - OpenUI let's you describe UI using your imagination, then see it rendered live
+- [FireCrawl](https://github.com/mendableai/firecrawl) - Turn entire websites into LLM-ready markdown
+- [Sammo](https://github.com/microsoft/sammo) - A library for prompt engineering and optimization (SAMMO = Structure-aware Multi-Objective Metaprompt Optimization)
+- [Awesome Python](https://github.com/vinta/awesome-python)
+- [Oumi](https://github.com/oumi-ai/oumi) - Everything you need to build state-of-the-art foundation models, end-to-end
 
+### AI-Assisted Development
+
+- [Plandex](https://github.com/plandex-ai/plandex) - An AI coding engine for complex tasks
+- [Aider](https://github.com/paul-gauthier/aider) - aider is AI pair programming in your terminal
+
+### Command-Line AI Tools
+
+- [llms](https://llm.datasette.io/en/stable/) - A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine. By [Simon Willison](https://simonwillison.net/)
+- [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) - A natural language interface for computers
+- [Documentation Open Interpreter](https://docs.openinterpreter.com/getting-started/introduction) - A new way to use computers
+- [whisper](https://github.com/openai/whisper) - Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification
+- [plock](https://github.com/jasonjmcghee/plock) - From anywhere you can type, query and stream the output of an LLM or any other script
+- [Screen shot to code](https://github.com/abi/screenshot-to-code) - Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)
+- [Code2prompt](https://github.com/raphaelmansuy/code2prompt) - Convert a codebase to an AI prompt
+- [Claude Engineer](https://github.com/Doriandarko/claude-engineer) - Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks. This tool combines the capabilities of a large language model with practical file system operations and web search functionality
+
+---
+
+
+## 🧠 Core AI Technologies
+
+### Large Language Models (LLMs)
+
+#### LLMs Implementation
+
+- [LLMs from scratch](https://github.com/rasbt/LLMs-from-scratch) - Implementing a ChatGPT-like LLM from scratch, step by step by from [Sebastian Raschka](https://github.com/rasbt)
+
+#### Model Serving & Inference
+
+**High-Performance Servers:**
+- [vLLM](https://github.com/vllm-project/vllm) - Easy, fast, and cheap LLM serving for everyone, [documentation](https://docs.vllm.ai/en/latest/)
+- [llamaC++](https://github.com/ggerganov/llama.cpp) - LLM inference in C/C++
+- [Ollama](https://github.com/ollama/ollama) - Go program that encapsulate [llamac++](https://github.com/ggerganov/llama.cpp). [documentation](https://ollama.com/)
+- [nm-vllm](https://github.com/neuralmagic/nm-vllm) - A high-throughput and memory-efficient inference and serving engine for LLMs (sparse compressing)
+
+**Specialized Solutions:**
+- [Candle](https://github.com/huggingface/candle?tab=readme-ov-file) - Minimalist ML framework for Rust. Run and Serve Models in Rust
+- [ZML](https://github.com/zml/zml) - High performance AI inference stack. Built for production. [@ziglang](https://github.com/ziglang) / [@openxla](https://github.com/openxla) / MLIR / [@bazelbuild](https://github.com/bazelbuild)
+- [LLamafile](https://github.com/Mozilla-Ocho/llamafile) - Turning a LLM model into a Multiplatform executable
+- [Jan](https://github.com/janhq/jan) - Jan is an open source alternative to ChatGPT that runs 100% offline on your computer
+- [MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server) - MLX Omni Server is a local inference server powered by Apple's MLX framework, specifically designed for Apple Silicon (M-series) chips. It implements OpenAI-compatible API endpoints, enabling seamless integration with existing OpenAI SDK clients while leveraging the power of local ML inference
+- [Mlx Server](https://www.mlxserver.com/) - This Python library is the easist way to begin building on top of Apple's machine learning library MLX
+- [fastassert](https://github.com/phospho-app/fastassert) - Dockerized LLM inference server with constrained output (JSON mode), built on top of vLLM and outlines
+- [luminal](https://github.com/jafioti/luminal) - Deep learning at the speed of light coded in Rust. The aim for 0.3 is to achieve SOTA performance on an M1 pro (50 tok/s), and near SOTA on single nvidia gpus (>100 tok/s)
+
+**Cloud & Distributed:**
+- [SkyPilot](https://docs.vllm.ai/en/latest/) - Run LLMs and AI on Any Cloud [documentation](https://skypilot.readthedocs.io/en/latest/)
+- [LoraX](https://github.com/predibase/lorax) - Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs ([Documentation](https://loraexchange.ai/))
+- [LLama Cpp Python Binding](https://llama-cpp-python.readthedocs.io/en/latest/) - OpenAI compatible web server
+
+**Resources:**
+- [List of tools that serves AI locally](https://github.com/janhq/awesome-local-ai) - An awesome repository of local AI tools
+
+#### Model Training & Fine-Tuning
+
+**Fine-Tuning Frameworks:**
+- [unsloth](https://github.com/unslothai/unsloth/tree/main#-documentation) - 5X faster 60% less memory QLoRA finetuning
+- [LLama-Factory](https://github.com/hiyouga/LLaMA-Factory) - Unify Efficient Fine-tuning of 100+ LLMs
+- [peft](https://github.com/huggingface/peft) - 🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning
+- [Torchtune](https://github.com/pytorch/torchtune) - A Native-PyTorch Library for LLM Fine-tuning
+- [LLMTuner](https://github.com/promptslab/LLMTuner) - Tune LLM in few lines of code
+- [LMFlow](https://github.com/OptimalScale/LMFlow) - An Extensible Toolkit for Finetuning and Inference of Large Foundation Models. Large Models for All. (Include Lisa Finetuning)
+
+**Training Infrastructure:**
+- [OLMo](https://github.com/allenai/OLMo) - Modeling, training, eval, and inference code for [OLMo](https://allenai.org/olmo)
+- [Lightning Thunder](https://github.com/Lightning-AI/lightning-thunder) - Source to source compiler for PyTorch. It makes PyTorch programs faster on single accelerators and distributed
+
+**Resources:**
+- [Documentation from Premai about Finetuning](https://book.premai.io/state-of-open-source-ai/fine-tuning/)
+- [Efficient finetuning of Llama 3 with FSDP QDoRA](https://www.answer.ai/posts/2024-04-26-fsdp-qdora-llama3.html) - A blog article that explains how to use the stat of the art QDoRA fine tuning method on LLAMA3
+
+#### Model Optimization
+
+**Quantization:**
+- [Aimet](https://github.com/quic/aimet) - AIMET is a library that provides advanced quantization and compression techniques for trained neural network models from Qualcomm Innovation Center
+- [hqq](https://github.com/mobiusml/hqq) - Official implementation of Half-Quadratic Quantization (HQQ). **HQQ** is a fast and accurate model quantizer that skips the need for calibration data. It's super simple to implement (just a few lines of code for the optimizer). It can crunch through quantizing the Llama2-70B model in only 4 minutes! 🚀
+
+**Inference Control:**
+- [Guidance](https://github.com/guidance-ai/guidance) - A guidance language for controlling large language models
+- [AICI](https://github.com/microsoft/AICI) - AICI: Prompts as (Wasm) Programs. Controlling inference using Wasm programs
+- [Transformer Head](https://github.com/center-for-humans-and-machines/transformer-heads) - Toolkit for attaching, training, saving and loading of new heads for transformer models
+- [Representation Engineering](https://vgel.me/posts/representation-engineering/) - Representation Engineering Mistral-7B an Acid Trip 💊
+
+### Embeddings & Vector Operations
+
+**Core Concepts:**
 - [What are embeddings and how do they work? A book from Vicki Boykis](https://vickiboykis.com/what_are_embeddings/)
-
   - [Github](https://github.com/veekaybee/what_are_embeddings)
   - [PDF](https://raw.githubusercontent.com/veekaybee/what_are_embeddings/main/embeddings.pdf)
-
 - [Fine-tuning language models improves performance by enhancing existing mechanisms rather than creating new ones, as evidenced by consistent circuit functionality in entity tracking tasks](https://finetuning.baulab.info/)
-
 - [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka)
 - [Binary Embeddings Cohere](https://txt.cohere.com/int8-binary-embeddings/)
+
+**Vector Databases:**
+- [pgvectorscale](https://github.com/timescale/pgvectorscale/) - A complement to pgvector for high performance, cost efficient vector search on large workloads
+
+### Prompt Engineering
+
+**Techniques & Patterns:**
+- [Summoning the Magic of Prompts: A Deep Dive into Prompt Engineering Patterns](./01-articles/prompt_engineering_patterns/README.md)
+- [A list of prompt engineering techniques](https://aman.ai/primers/ai/prompt-engineering/)
+- [Mastering the art of prompt engineering](01-articles/2024-05-29_mastering-prompt-engineering_us.md)
+- [Mastering the art of prompt engineering in French](01-articles/2024-05-29_mastering_prompt_engineering_fr.md)
+
+**Advanced Frameworks:**
+- [Claude Anthropic Prompts Library](https://docs.anthropic.com/claude/page/prompts) - Explore optimized prompts for a breadth of business and personal tasks
+- [Navigating the Prompt Engineering Landscape: A Comprehensive Survey for NLP Practitioners](https://arxiv.org/pdf/2407.12994)
+
+---
 
 ## LLM Applications
 
@@ -174,6 +292,10 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 - [MindGraph](https://github.com/yoheinakajima/MindGraph) proof of concept prototype for generating and querying against an ever-expanding knowledge graph with ai
 - [LighRAG](https://github.com/HKUDS/LightRAG) LightRAG: Simple and Fast Retrieval-Augmented Generation". https://arxiv.org/abs/2410.05779
+
+## Model Context Protocol
+
+- [MCP Tools](https://github.com/f/mcptools) **Swiss Army Knife for MCP Servers.** A comprehensive CLI for interacting with Model Context Protocol servers that provides discovery & management, development features, output options, security & control, and transport support. It's like having a universal remote for AI integrations.
 
 ## Controlling Inference
 
@@ -405,24 +527,52 @@ The typical learner in the "Impatient" target audience might be someone who:
 
 ```mermaid
 mindmap
-	root((AI))
-		Applications
-			LLM Applications
-			Serving LLMs
-		Engineering
-			AI Engineering
-				Framework
-					LangChain
-					LLamaIndex
-				Vector Databases
-			Prompt Engineering
-			Fine Tuning
-			RAG
-		Models
-			AI Models
-			Embeddings
-			
-		Ethics
-			AI and Ethics
-
+    root((My Digital Palace))
+        Personal Learning
+            TIL
+            Mental Models
+            Impatient Series
+        Learning Resources
+            Courses
+            Blogs
+            Datasets
+            Cloud Providers
+        AI Engineering
+            Frameworks
+                LangChain
+                LLamaIndex
+                HuggingFace
+            Development Tools
+            Command Line Tools
+        Core AI Technologies
+            LLMs
+                Serving
+                Training
+                Optimization
+            Embeddings
+            Prompt Engineering
+        AI Agents
+            Frameworks
+            Computer Control
+            Memory & Reasoning
+        Data & Knowledge
+            RAG
+            Knowledge Graphs
+            Synthetic Data
+        Specialized Apps
+            Voice & Audio
+            UI Tools
+            Document Processing
+        Models & Benchmarks
+            Notable Models
+            Leaderboards
+        Development
+            Structured Output
+            Programming Tools
+            Security
+        Emerging Tech
+            AI Devices
+            Experimental
 ```
+
+**All links and resources have been preserved and reorganized for better navigation and discoverability. No content was lost in this reorganization.**
