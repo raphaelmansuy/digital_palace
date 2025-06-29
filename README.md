@@ -240,34 +240,38 @@ This repository is organized as a **digital palace** - each section serves a spe
 
 ### 📁 **Core Directories**
 
-```
+
+
+```text
 digital_palace/
-├── 📖 learning/            
-│   └── courses/           
-├── 🎯 guides/              
-│   ├── prompting/         
-│   ├── quick-references/  
-│   ├── image-generation/  
-│   ├── agent-development/ 
-│   └── training/          
-├── 🛠️ tools/               
-│   └── development-tools/ 
-├── 📚 reference/           
-│   ├── technical-articles/
-│   ├── techniques/        
-│   ├── research-papers/   
-│   ├── datasets/          
-│   ├── cloud-platforms/   
-│   └── genai-fundamentals/
-├── 🎭 personal/            
-│   ├── til/              
-│   ├── mental-models/    
-│   └── ideas/            
-└── 💬 community/           
-    ├── newsletters/       
-    ├── social-content/    
-    └── external-blogs/    
+├── 📖 learning/           # Structured learning paths & courses
+│   └── courses/          # Educational resources
+├── 🎯 guides/            # Step-by-step implementation guides
+│   ├── prompting/        # Prompting techniques
+│   ├── quick-references/ # "For the Impatients" series
+│   ├── image-generation/ # AI image guides
+│   ├── agent-development/# AI agent SOPs
+│   └── training/         # Training resources
+├── 🛠️ tools/             # Curated tool directories & comparisons
+│   └── development-tools/# VS Code extensions
+├── 📚 reference/         # Quick lookups, APIs, cheat sheets
+│   ├── technical-articles/# Deep-dive articles
+│   ├── techniques/       # AI techniques
+│   ├── research-papers/  # Academic papers
+│   ├── datasets/         # Training datasets
+│   ├── cloud-platforms/  # Cloud guides
+│   └── genai-fundamentals/# GenAI basics
+├── 🎭 personal/          # Learning philosophy & mental models
+│   ├── til/             # Today I Learned
+│   ├── mental-models/   # Decision frameworks
+│   └── ideas/           # Project concepts
+└── 💬 community/         # Discussions, contributions, updates
+    ├── newsletters/      # Updates
+    ├── social-content/   # LinkedIn posts
+    └── external-blogs/   # Blog recommendations
 ```
+
+### 🎯 **Usage Philosophy**
 
 **🌱 Learn by Doing**: Start with practical projects, understand theory as you build  
 **🔄 Iterative Discovery**: Return to concepts as your understanding deepens  

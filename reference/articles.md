@@ -3,18 +3,18 @@
 ## Featured Articles
 
 ### AI Fundamentals
-- **[The Rise of Models Datalake](../01-articles/2024-03-06%20the_raise_of_models_datalake.md)** - Understanding modern AI data architecture
-- **[Training an LLM](../01-articles/2024-03-12_training_an_llm.md)** - Complete guide to language model training
-- **[From Specification to Code Using an LLM](../01-articles/2024-11-21-from-specification-to-code-using-an-llm.md)** - Practical code generation techniques
+- **[The Rise of Models Datalake](./technical-articles/2024-03-06%20the_raise_of_models_datalake.md)** - Understanding modern AI data architecture
+- **[Training an LLM](./technical-articles/2024-03-12_training_an_llm.md)** - Complete guide to language model training
+- **[From Specification to Code Using an LLM](./technical-articles/2024-11-21-from-specification-to-code-using-an-llm.md)** - Practical code generation techniques
 
 ### Prompt Engineering
-- **[Mastering Prompt Engineering (FR)](../01-articles/2024-05-29_mastering_prompt_engineering_fr.md)** - French version
-- **[Mastering Prompt Engineering (EN)](../01-articles/2024-05-29_mastering-prompt-engineering_us.md)** - English version
-- **[26 Principles for Prompting](../01-articles/2024-07-08-26_principles_for_prompting.md)** - Essential prompting guidelines
+- **[Mastering Prompt Engineering (FR)](./technical-articles/2024-05-29_mastering_prompt_engineering_fr.md)** - French version
+- **[Mastering Prompt Engineering (EN)](./technical-articles/2024-05-29_mastering-prompt-engineering_us.md)** - English version
+- **[26 Principles for Prompting](./technical-articles/2024-07-08-26_principles_for_prompting.md)** - Essential prompting guidelines
 
 ### Business Applications
-- **[GenAI Business Use Cases](../01-articles/2024-03-12_genai_business_use_cases.md)** - Real-world AI implementations
-- **[Microsoft AICI](../01-articles/2024-03-12%20microsoft_aici.md)** - Microsoft's AI initiatives
+- **[GenAI Business Use Cases](./technical-articles/2024-03-12_genai_business_use_cases.md)** - Real-world AI implementations
+- **[Microsoft AICI](./technical-articles/2024-03-12%20microsoft_aici.md)** - Microsoft's AI initiatives
 
 ## Technical Deep Dives
 
