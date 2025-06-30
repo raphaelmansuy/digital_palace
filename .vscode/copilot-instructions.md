@@ -17,7 +17,7 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 #### Heading Structure
 
-```markdown
+``````markdow
 # Main Title (H1) - One per file only
 
 ## Section Headers (H2)
@@ -25,7 +25,7 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 ### Subsections (H3)
 
 #### Details (H4) - Maximum depth
-```
+``````
 
 **Rules:**
 
@@ -38,17 +38,17 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 **✅ ALWAYS USE:** Standard markdown links
 
-```markdown
+``````markdow
 [Link Text](./relative/path/file.md)
 [External Link](https://example.com)
 [Section Link](#section-heading)
-```
+``````
 
 **❌ NEVER USE:** Obsidian wiki-links
 
-```markdown
+``````markdow
 [[Internal Links]] // ❌ GitHub incompatible
-```
+``````
 
 **Exception:** When maintaining existing content that already uses cardlinks, preserve them as they add value in Obsidian while being ignored by GitHub.
 
@@ -56,14 +56,13 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 **Always specify language for syntax highlighting:**
 
-````markdown
+``````markdow
 ```python
 def hello_world():
     print("Hello, World!")
 ```
-````
+``````
 
-````
 
 **Supported languages:**
 - `python`, `javascript`, `typescript`, `bash`, `json`, `yaml`
@@ -72,11 +71,11 @@ def hello_world():
 #### Tables
 
 **Use GitHub-compatible table syntax:**
-```markdown
+``````markdow
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Data     | Data     | Data     |
-````
+``````
 
 **Best practices:**
 
@@ -88,32 +87,33 @@ def hello_world():
 
 **Use HTML details/summary for GitHub compatibility:**
 
-```markdown
+``````markdow
 <details>
 <summary><strong>📋 Click to Expand</strong></summary>
 
 Content here renders in both Obsidian and GitHub.
 
 </details>
-```
+``````
 
 #### Lists and Checkboxes
 
 **Task lists (GitHub compatible):**
 
-```markdown
+`````````markdow
 - [x] Completed task
 - [ ] Pending task
-```
+``````
 
 **Nested lists:**
-
-```markdown
+`
+`````````markdow
 1. Main item
    - Sub item
    - Another sub item
 2. Second main item
-```
+```````
+
 
 ### 🎨 Visual Enhancement Guidelines
 
@@ -128,9 +128,7 @@ Content here renders in both Obsidian and GitHub.
 
 **Use shields.io for dynamic badges:**
 
-```markdown
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge)](./reference/2025-ai-updates.md)
-```
 
 ### 📊 Content Organization Patterns
 
@@ -138,17 +136,17 @@ Content here renders in both Obsidian and GitHub.
 
 **Create quick access tables at the top of major sections:**
 
-```markdown
+``````markdow
 | 🎯 Your Goal      | ⚡ Quick Access             | 🕒 Time    | 💡 What You'll Get   |
 | ----------------- | --------------------------- | ---------- | -------------------- |
 | **🤖 Try AI Now** | [Best AI Tools →](./tools/) | 30 seconds | Working AI interface |
-```
+``````
 
 #### Cross-References
 
 **Always provide navigation breadcrumbs:**
 
-```markdown
+``````markdow
 _🔗 **Quick Links**: [Tools](./tools/README.md) | [Guides](./guides/README.md) | [Learning](./learning/README.md)_
 ```
 
@@ -156,7 +154,7 @@ _🔗 **Quick Links**: [Tools](./tools/README.md) | [Guides](./guides/README.md)
 
 **Use text-based directory trees:**
 
-````markdown
+```````markdow
 ```text
 digital_palace/
 ├── 📖 learning/           # Structured learning paths
@@ -200,7 +198,7 @@ The Digital Palace follows a **hierarchical hub architecture** where information
 
 **Every main hub MUST include:**
 
-```markdown
+``````markdow
 # 🎯 [Hub Name] Hub - Digital Palace
 
 > **🎯 Purpose**: One-sentence description of what this hub contains and who it serves.
@@ -262,7 +260,7 @@ _🏰 Part of [Digital Palace](../../README.md) Knowledge Hub_
 
 **Every sub-hub MUST include:**
 
-```markdown
+``````markdow
 # 🤖 [Sub-Hub Name] - [Parent Hub]
 
 > **🎯 Focus**: Specific area of expertise within the parent hub domain.
@@ -334,7 +332,7 @@ _🏰 [Digital Palace](../../README.md) > [Parent Hub](../README.md) > Current S
 
 **1. Progressive Disclosure**
 
-```markdown
+``````markdow
 ## 🚀 Quick Start (Always first)
 
 Basic actions for immediate value
@@ -353,7 +351,7 @@ Detailed technical information
 
 **2. Multi-Entry Navigation**
 
-```markdown
+``````markdow
 ## 🗺️ Multiple Ways to Explore
 
 ### 👤 By Role
@@ -387,7 +385,7 @@ Every hub must link to:
 
 **2. Contextual Pathways**
 
-```markdown
+``````markdow
 ## 🛤️ Learning Pathways
 
 ### 🎯 Suggested Sequences
@@ -406,7 +404,7 @@ Every hub must link to:
 
 #### Content Freshness Indicators
 
-```markdown
+``````markdow
 [![Last Updated](https://img.shields.io/badge/Updated-June%202025-brightgreen?style=flat-square)](./CHANGELOG.md)
 [![Content Review](https://img.shields.io/badge/Reviewed-Q2%202025-blue?style=flat-square)](./REVIEW.md)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)](./STATUS.md)
@@ -423,7 +421,7 @@ Every hub must link to:
 
 #### Hub Review Checklist
 
-```markdown
+``````markdow
 ### 📋 Hub Health Check
 
 **Navigation & Structure:**
@@ -504,7 +502,7 @@ Don't use Hub Analytics has we don't have the infrastructure to support it yet.
 
 **Both platforms support Mermaid:**
 
-````markdown
+```````markdow
 ```mermaid
 graph TD
     A[Start] --> B{Decision}
