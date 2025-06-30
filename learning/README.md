@@ -2,30 +2,19 @@
 
 > Structured learning paths for mastering AI development at every level
 
-## 🎯 **Find Your Learning Path**
+## 🚀 Quick Start
 
-| Background | Recommended Path | Duration | Focus | Success Rate |
-|------------|------------------|-----------|-------|--------------|
-| **No AI Experience** | [Complete Beginner](#complete-beginner-path) | 2-3 months | Fundamentals & first projects | 95% completion |
-| **Can Code, New to AI** | [Developer Fast Track](#developer-path) | 1-2 months | AI frameworks & applications | 90% completion |
-| **AI Professional** | [Advanced Practitioner](#advanced-practitioner-path) | Ongoing | Cutting-edge techniques | 85% active |
-| **Business Leader** | [Executive Overview](#executive-path) | 2-4 weeks | Strategy & implementation | 88% satisfaction |
-| **Researcher** | [Research Track](#research-path) | Ongoing | Latest papers & methods | 92% active |
+| 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
+|-------------|----------------|---------|-------------------|
+| **New to AI completely** | [Complete Beginner Path →](#complete-beginner-path) | 2-3 months | AI fundamentals + first project |
+| **Developer learning AI** | [Developer Fast Track →](#developer-path) | 1-2 months | AI frameworks mastery |
+| **Advance AI skills** | [Advanced Practitioner →](#advanced-practitioner-path) | Ongoing | Cutting-edge techniques |
+| **Business AI strategy** | [Executive Overview →](#executive-path) | 2-4 weeks | Strategic AI implementation |
+| **Research & academia** | [Research Track →](#research-path) | Ongoing | Latest papers & methods |
+| **Structured courses** | [Courses Directory →](./courses/README.md) | Varies | Comprehensive curriculum |
+| **Self-paced learning** | [Learning Resources →](./learning-resources-hub.md) | Flexible | Curated resource collection |
+| **Track progress** | [Learning Tracker →](../personal/learning-tracker.md) | 5 min setup | Personal progress monitoring |
 
----
-
-## 📊 **Learning Path Analytics**
-
-<div align="center">
-
-| Path | Learners | Avg. Completion Time | Success Stories | Satisfaction |
-|------|----------|---------------------|-----------------|--------------|
-| **🌱 Beginner** | 2,500+ | 10 weeks | 95% get first job | ⭐⭐⭐⭐⭐ |
-| **💻 Developer** | 1,800+ | 6 weeks | 90% deploy to prod | ⭐⭐⭐⭐⭐ |
-| **🔬 Advanced** | 900+ | Ongoing | 85% publish papers | ⭐⭐⭐⭐⭐ |
-| **💼 Executive** | 400+ | 3 weeks | 88% successful adoption | ⭐⭐⭐⭐ |
-
-</div>
 
 ---
 

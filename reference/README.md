@@ -2,43 +2,22 @@
 
 > Quick-access reference materials, APIs, research papers, and essential information
 
-## 🎯 **Smart Reference Finder**
+## 🚀 Quick Start
 
-**What do you need? We'll find it instantly:**
-
-| Looking for... | Resource | Last Updated | Difficulty | Access Level |
-|----------------|----------|--------------|------------|--------------|
-| **Latest AI papers** | [Research Papers](./research-papers.md) | Weekly | 🔴 Advanced | Free |
-| **Tool comparisons** | [Tools Directory](../tools/ai-tools-master-directory.md) | Monthly | 🟡 Intermediate | Free |
-| **API references** | [Core Technologies](./core-technologies.md) | As needed | 🟡 Intermediate | Free |
-| **Model benchmarks** | [2025 AI Updates](./2025-ai-updates.md) | Monthly | 🟡 Intermediate | Free |
-| **Prompt templates** | [Prompt Library](./prompt-templates.md) | Weekly | 🟢 Beginner | Free |
-| **Best practices** | [Best Practices](../guides/best-practices.md) | Quarterly | 🟡 Intermediate | Free |
-| **AI terminology** | [Core Technologies](./core-technologies.md) | Monthly | 🟢 Beginner | Free |
-| **Quick references** | [Quick References](../guides/quick-references/README.md) | As needed | 🟢 Beginner | Free |
+| 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
+|-------------|----------------|---------|-------------------|
+| **Find latest AI papers** | [Research Papers →](./research-papers/README.md) | 5-30 min | Cutting-edge research |
+| **Read technical articles** | [Technical Articles →](./technical-articles/README.md) | 10-60 min | Expert insights |
+| **Compare tools** | [Tools Directory →](../tools/ai-tools-master-directory.md) | 15-45 min | Best tool for your needs |
+| **Get prompt templates** | [Prompt Library →](./prompt-templates.md) | 5-20 min | Ready-to-use prompts |
+| **Check API references** | [Core Technologies →](./core-technologies.md) | 10-30 min | Integration guidance |
+| **See latest models** | [2025 AI Updates →](./2025-ai-updates.md) | 15-45 min | Current AI landscape |
+| **Learn terminology** | [Core Technologies →](./core-technologies.md) | 20-60 min | AI vocabulary mastery |
+| **Find quick answers** | [Quick References →](../guides/quick-references/README.md) | 5-15 min | Fast skill lookup |
 
 ---
 
-## 📊 **Reference Usage Analytics**
 
-### **🔥 Most Accessed References (This Month)**
-
-| Resource | Views | Downloads | User Rating | Use Cases |
-|----------|-------|-----------|-------------|-----------|
-| [Prompt Templates](./prompt-templates.md) | 15.2K | 2.3K | ⭐⭐⭐⭐⭐ (4.9) | Quick prompting solutions |
-| [Core Technologies](./core-technologies.md) | 12.8K | 1.8K | ⭐⭐⭐⭐⭐ (4.7) | Integration development |
-| [2025 AI Updates](./2025-ai-updates.md) | 11.4K | 1.5K | ⭐⭐⭐⭐ (4.5) | Model selection |
-| [Research Papers](./research-papers.md) | 9.7K | 900 | ⭐⭐⭐⭐⭐ (4.8) | Academic research |
-
-### **📈 Trending Topics**
-
-**This Week's Hot Topics:**
-- 🔥 **OpenAI o3 Analysis** - 2.4K searches
-- 🔥 **Computer Use Agents** - 1.9K searches  
-- 🔥 **MCP Protocol** - 1.6K searches
-- 📈 **RAG Optimization** - 1.3K searches
-
----
 
 ## 🧭 **Reference Navigator**
 
@@ -85,7 +64,7 @@
 
 **Perfect for research and optimization:**
 
-- [Latest Research Papers](./research-papers.md) - Cutting-edge developments
+- [Latest Research Papers](./research-papers/README.md) - Cutting-edge developments
 - [Advanced Techniques](./techniques/) - State-of-the-art methods
 - [Performance Optimization](./optimization.md) - Scale and efficiency
 - [Enterprise Architecture](./enterprise.md) - Large-scale patterns
@@ -105,10 +84,10 @@
 
 **Academic and cutting-edge content:**
 
-- [2025 Breakthrough Papers](./research-papers.md#2025-breakthroughs) - Latest discoveries
-- [Foundational Papers](./research-papers.md#foundational) - Essential reading
-- [Implementation Guides](./research-papers.md#implementations) - Code examples
-- [Paper Summaries](./research-papers.md#summaries) - Quick overviews
+- [2025 Breakthrough Papers](./research-papers/README.md#2025-breakthroughs) - Latest discoveries
+- [Foundational Papers](./research-papers/README.md#foundational) - Essential reading
+- [Implementation Guides](./research-papers/README.md#implementations) - Code examples
+- [Paper Summaries](./research-papers/README.md#summaries) - Quick overviews
 
 **Research Categories:**
 - 🧠 **Reasoning & Planning** - Cognitive AI capabilities
@@ -176,5 +155,29 @@
 - **Popular Now**: [/reference/trending](./trending.md) - Most-viewed content
 - **Quick Lookup**: [/reference/search](./search.md) - Instant search interface
 - **Personal Bookmarks**: [/reference/bookmarks](./bookmarks.md) - Save favorites
+
+---
+
+## 🏠 **Reference Sub-Hubs**
+
+### **📄 Specialized Reference Areas**
+
+Dive deeper into specific reference domains:
+
+- **[Research Papers Hub](./research-papers/README.md)** 📚
+  - Latest academic research and breakthroughs
+  - Organized by topic, date, and impact
+  - Implementation guides and code examples
+
+- **[Technical Articles Hub](./technical-articles/README.md)** 🔬
+  - Expert insights and analysis
+  - Industry trends and best practices
+  - Detailed technical deep-dives
+
+### **🔗 Related Reference Resources**
+
+- **[Core Technologies](./core-technologies.md)** - API references and technical specs
+- **[Prompt Templates](./prompt-templates.md)** - Ready-to-use prompt library
+- **[2025 AI Updates](./2025-ai-updates.md)** - Latest model releases and updates
 
 ---

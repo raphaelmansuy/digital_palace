@@ -2,34 +2,21 @@
 
 > Step-by-step tutorials for building real AI applications
 
-## 🚀 **Smart Guide Selector**
+## 🚀 Quick Start
 
-**Answer a few questions to get your perfect guide:**
-
-| I want to... | Best Guide | Difficulty | Time | Prerequisites |
-|-------------|------------|------------|------|---------------|
-| **Get started with AI** | [Getting Started](./getting-started.md) | 🟢 Beginner | 2-4h | None |
-| **Build a chatbot** | [Conversational AI](./conversational-ai.md) | 🟡 Intermediate | 4-8h | Basic Python |
-| **Create AI with my data** | [RAG Systems](./rag-systems.md) | 🟡 Intermediate | 6-12h | Python, databases |
-| **Build autonomous AI** | [AI Agents](./ai-agents.md) | 🔴 Advanced | 8-16h | APIs, async programming |
-| **Use Google ADK** | [Google ADK Guide](./google-adk-guide.md) | 🟡 Intermediate | 4-8h | Python, basic AI knowledge |
-| **Deploy to production** | [Production Deployment](./deployment.md) | 🔴 Advanced | 12+ h | DevOps, cloud platforms |
-| **Build business AI** | [Business AI](./business-ai.md) | 🟡 Intermediate | 4-8h | Business domain knowledge |
-| **Add voice capabilities** | [Voice AI](./voice-ai.md) | 🟡 Intermediate | 4-6h | Audio processing basics |
-| **Create UI with AI** | [AI-Powered UIs](./ai-ui.md) | 🟡 Intermediate | 3-6h | Frontend development |
+| 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
+|-------------|----------------|---------|-------------------|
+| **Get started with AI** | [Getting Started →](./getting-started.md) | 2-4h | Your first AI application |
+| **Build a chatbot** | [Conversational AI →](./conversational-ai.md) | 4-8h | Production-ready chatbot |
+| **Create AI with your data** | [RAG Systems →](./rag-systems.md) | 6-12h | Smart document search |
+| **Build autonomous AI** | [AI Agents →](./ai-agents.md) | 8-16h | Self-operating AI system |
+| **Master prompt engineering** | [Prompting Hub →](./prompting/README.md) | 2-6h | Advanced prompting skills |
+| **Generate AI images** | [Image Generation →](./image-generation/README.md) | 1-4h | Professional AI visuals |
+| **Quick reference lookup** | [Quick References →](./quick-references/README.md) | 15-60 min | Fast skill acquisition |
+| **Deploy to production** | [Production Deployment →](./deployment.md) | 12+ h | Scalable AI deployment |
 
 ---
 
-## 📈 **Guide Completion Analytics**
-
-### **🏆 Most Successful Guides (This Month)**
-
-| Guide | Completions | Success Rate | Avg. Time | User Rating |
-|-------|-------------|--------------|-----------|-------------|
-| [Getting Started](./getting-started.md) | 1,247 | 94% ✅ | 3.2h | ⭐⭐⭐⭐⭐ (4.8) |
-| [RAG Systems](./rag-systems.md) | 892 | 87% ✅ | 8.1h | ⭐⭐⭐⭐⭐ (4.7) |
-| [AI Agents](./ai-agents.md) | 634 | 79% ✅ | 11.5h | ⭐⭐⭐⭐ (4.3) |
-| [Conversational AI](./conversational-ai.md) | 743 | 91% ✅ | 5.8h | ⭐⭐⭐⭐⭐ (4.6) |
 
 ### **🎯 Learning Path Integration**
 
