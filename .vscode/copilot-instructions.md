@@ -100,14 +100,14 @@ Content here renders in both Obsidian and GitHub.
 
 **Task lists (GitHub compatible):**
 
-`````````markdow
+``````markdow
 - [x] Completed task
 - [ ] Pending task
 ``````
 
 **Nested lists:**
-`
-`````````markdow
+
+``````markdow
 1. Main item
    - Sub item
    - Another sub item
@@ -136,25 +136,21 @@ Content here renders in both Obsidian and GitHub.
 
 **Create quick access tables at the top of major sections:**
 
-``````markdow
 | 🎯 Your Goal      | ⚡ Quick Access             | 🕒 Time    | 💡 What You'll Get   |
 | ----------------- | --------------------------- | ---------- | -------------------- |
 | **🤖 Try AI Now** | [Best AI Tools →](./tools/) | 30 seconds | Working AI interface |
-``````
+| **📚 Learn AI**   | [Learning Paths →](./learning/) | 5 minutes  | Structured learning  |
 
 #### Cross-References
 
 **Always provide navigation breadcrumbs:**
 
-``````markdow
 _🔗 **Quick Links**: [Tools](./tools/README.md) | [Guides](./guides/README.md) | [Learning](./learning/README.md)_
-```
 
 #### File Structure References
 
 **Use text-based directory trees:**
 
-```````markdow
 ```text
 digital_palace/
 ├── 📖 learning/           # Structured learning paths
@@ -162,9 +158,7 @@ digital_palace/
 ├── 🛠️ tools/             # Curated tool directories
 └── 📚 reference/         # Quick lookups, APIs, cheat sheets
 ```
-````
 
-````
 
 ## 🏰 Knowledge Hub Architecture
 
@@ -198,7 +192,6 @@ The Digital Palace follows a **hierarchical hub architecture** where information
 
 **Every main hub MUST include:**
 
-``````markdow
 # 🎯 [Hub Name] Hub - Digital Palace
 
 > **🎯 Purpose**: One-sentence description of what this hub contains and who it serves.
@@ -254,13 +247,11 @@ _Navigate to related knowledge areas:_
 ---
 
 _🏰 Part of [Digital Palace](../../README.md) Knowledge Hub_
-```
 
 #### Sub-Hub Page Template
 
 **Every sub-hub MUST include:**
 
-``````markdow
 # 🤖 [Sub-Hub Name] - [Parent Hub]
 
 > **🎯 Focus**: Specific area of expertise within the parent hub domain.
@@ -324,7 +315,6 @@ _🏰 Part of [Digital Palace](../../README.md) Knowledge Hub_
 ---
 
 _🏰 [Digital Palace](../../README.md) > [Parent Hub](../README.md) > Current Sub-Hub_
-```
 
 ### 🎯 Hub Content Strategy
 
@@ -332,7 +322,6 @@ _🏰 [Digital Palace](../../README.md) > [Parent Hub](../README.md) > Current S
 
 **1. Progressive Disclosure**
 
-``````markdow
 ## 🚀 Quick Start (Always first)
 
 Basic actions for immediate value
@@ -347,11 +336,9 @@ Essential information organized by user goals
 <summary><strong>🎓 Expert-Level Content</strong></summary>
 Detailed technical information
 </details>
-```
 
 **2. Multi-Entry Navigation**
 
-``````markdow
 ## 🗺️ Multiple Ways to Explore
 
 ### 👤 By Role
@@ -371,7 +358,6 @@ Detailed technical information
 - **[🟢 Beginner](./beginner/)** - Start here
 - **[🟡 Intermediate](./intermediate/)** - Build on basics
 - **[🔴 Advanced](./advanced/)** - Expert techniques
-```
 
 #### Hub Interconnection Strategy
 
@@ -385,7 +371,6 @@ Every hub must link to:
 
 **2. Contextual Pathways**
 
-``````markdow
 ## 🛤️ Learning Pathways
 
 ### 🎯 Suggested Sequences
@@ -398,17 +383,14 @@ Every hub must link to:
 
 - **Coming from [Other Hub](../other/README.md)?** Start with [Bridge Content](./bridge.md)
 - **Going to [Next Hub](../next/README.md)?** Prepare with [Prerequisites](./prep.md)
-```
 
 ### 📊 Hub Maintenance Standards
 
 #### Content Freshness Indicators
 
-``````markdow
 [![Last Updated](https://img.shields.io/badge/Updated-June%202025-brightgreen?style=flat-square)](./CHANGELOG.md)
 [![Content Review](https://img.shields.io/badge/Reviewed-Q2%202025-blue?style=flat-square)](./REVIEW.md)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)](./STATUS.md)
-```
 
 #### Hub Quality Metrics
 
@@ -421,7 +403,6 @@ Every hub must link to:
 
 #### Hub Review Checklist
 
-``````markdow
 ### 📋 Hub Health Check
 
 **Navigation & Structure:**
@@ -451,7 +432,6 @@ Every hub must link to:
 - [ ] Content ownership assigned
 - [ ] Review process documented
 - [ ] Feedback mechanism active
-```
 
 ### 🔧 Implementation Tools & Techniques
 
@@ -502,14 +482,12 @@ Don't use Hub Analytics has we don't have the infrastructure to support it yet.
 
 **Both platforms support Mermaid:**
 
-```````markdow
 ```mermaid
 graph TD
     A[Start] --> B{Decision}
     B -->|Yes| C[Action 1]
     B -->|No| D[Action 2]
 ```
-````
 
 **Always test diagrams in both environments before committing.**
 
