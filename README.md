@@ -1,32 +1,14 @@
-<div>
-
 # 🏛️ My Digital Palace
 
 ## A Personal AI Knowledge Repository
 
-<p>
-    <a href="./reference/2025-ai-updates.md">
-        <img src="https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge" alt="Last Updated"/>
-    </a>
-    <a href="./tools/ai-tools-master-directory.md">
-        <img src="https://img.shields.io/badge/AI%20Tools-158+-blue?style=for-the-badge" alt="AI Tools"/>
-    </a>
-    <a href="./guides/README.md">
-        <img src="https://img.shields.io/badge/Guides-25+-orange?style=for-the-badge" alt="Guides"/>
-    </a>
-    <a href="./reference/articles.md">
-        <img src="https://img.shields.io/badge/Articles-300+-purple?style=for-the-badge" alt="Articles"/>
-    </a>
-    <a href="./learning/README.md">
-        <img src="https://img.shields.io/badge/Learning%20Paths-8+-teal?style=for-the-badge" alt="Learning Paths"/>
-    </a>
-    <a href="https://github.com/raphaelmansuy/digital_palace/stargazers">
-        <img src="https://img.shields.io/github/stars/raphaelmansuy/digital_palace?style=for-the-badge&logo=github&color=gold" alt="GitHub Stars"/>
-    </a>
-    <a href="https://github.com/raphaelmansuy/digital_palace/discussions">
-        <img src="https://img.shields.io/badge/Community-Join%20Us-success?style=for-the-badge&logo=users" alt="Community"/>
-    </a>
-</p>
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge)](./reference/2025-ai-updates.md)
+[![AI Tools](https://img.shields.io/badge/AI%20Tools-158+-blue?style=for-the-badge)](./tools/ai-tools-master-directory.md)
+[![Guides](https://img.shields.io/badge/Guides-25+-orange?style=for-the-badge)](./guides/README.md)
+[![Articles](https://img.shields.io/badge/Articles-300+-purple?style=for-the-badge)](./reference/articles.md)
+[![Learning Paths](https://img.shields.io/badge/Learning%20Paths-8+-teal?style=for-the-badge)](./learning/README.md)
+[![GitHub Stars](https://img.shields.io/github/stars/raphaelmansuy/digital_palace?style=for-the-badge&logo=github&color=gold)](https://github.com/raphaelmansuy/digital_palace/stargazers)
+[![Community](https://img.shields.io/badge/Community-Join%20Us-success?style=for-the-badge&logo=users)](https://github.com/raphaelmansuy/digital_palace/discussions)
 
 ---
 
@@ -40,68 +22,35 @@
 
 ### 🚀 **Instant Navigation - Choose Your Path**
 
-<table>
-<tr>
-<th width="20%">🎯 Your Goal</th>
-<th width="25%">⚡ Quick Access</th>
-<th width="20%">🕒 Time</th>
-<th width="35%">💡 What You'll Get</th>
-</tr>
-<tr>
-<td><strong>🤖 Try AI Now</strong></td>
-<td><a href="./tools/ai-tools-master-directory.md#beginner-friendly-tools">Best AI Tools →</a></td>
-<td>30 seconds</td>
-<td>Working AI interface, no setup required</td>
-</tr>
-<tr>
-<td><strong>💻 Build an App</strong></td>
-<td><a href="./guides/goal-oriented-guides.md#getting-started">Zero-to-App Guide →</a></td>
-<td>5 minutes</td>
-<td>Live AI application running locally</td>
-</tr>
-<tr>
-<td><strong>📚 Learn Systematically</strong></td>
-<td><a href="./learning/README.md#find-your-learning-path">Learning Roadmap →</a></td>
-<td>10 minutes</td>
-<td>Personalized learning path</td>
-</tr>
-<tr>
-<td><strong>🛠️ Find Perfect Tool</strong></td>
-<td><a href="./tools/ai-tools-master-directory.md#quick-tool-finder">Tools Hub →</a></td>
-<td>2 minutes</td>
-<td>Tool recommendation for your use case</td>
-</tr>
-<tr>
-<td><strong>🔍 Search Everything</strong></td>
-<td><em>Use Ctrl+F / Cmd+F in any section</em></td>
-<td>Instant</td>
-<td>Find exactly what you need</td>
-</tr>
-</table>
+| 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
+|-------------|----------------|---------|-------------------|
+| **🤖 Try AI Now** | [Best AI Tools →](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI interface, no setup required |
+| **💻 Build an App** | [Zero-to-App Guide →](./guides/goal-oriented-guides.md#getting-started) | 5 minutes | Live AI application running locally |
+| **📚 Learn Systematically** | [Learning Roadmap →](./learning/README.md#find-your-learning-path) | 10 minutes | Personalized learning path |
+| **🛠️ Find Perfect Tool** | [Tools Hub →](./tools/ai-tools-master-directory.md#quick-tool-finder) | 2 minutes | Tool recommendation for your use case |
+| **🔍 Search Everything** | _Use Ctrl+F / Cmd+F in any section_ | Instant | Find exactly what you need |
 
 ---
 
 ### 📊 **Repository Statistics & Health**
 
-| Metric | Count | Last Updated |
-|--------|-------|--------------|
-| **🛠️ AI Tools Cataloged** | 80+ | Weekly |
-| **📚 Learning Resources** | 60+ | Weekly |
-| **🎯 Implementation Guides** | 60+ | Weekly |
-| **📄 Research Papers** | 26+ | Monthly |
-| **🌍 Community Contributors** | Growing | Ongoing |
-| **⭐ GitHub Stars** | Check badge above | Real-time |
+| Metric                        | Count             | Last Updated |
+| ----------------------------- | ----------------- | ------------ |
+| **🛠️ AI Tools Cataloged**     | 80+               | Weekly       |
+| **📚 Learning Resources**     | 60+               | Weekly       |
+| **🎯 Implementation Guides**  | 60+               | Weekly       |
+| **📄 Research Papers**        | 26+               | Monthly      |
+| **🌍 Community Contributors** | Growing           | Ongoing      |
+| **⭐ GitHub Stars**           | Check badge above | Real-time    |
 
 **🔥 Most Popular This Month:**
 
 - [Optimal Context Management for AI Agents](./reference/technical-articles/2025-06-29-context-management-llm-agents.md) - New! 🆕
 - [OpenAI o3 Analysis](./reference/2025-ai-updates.md#openai-o3) - 2.1K views
-- [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views  
+- [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views
 - [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
 - [Hidden Cost of AI Agent Frontend Development](./community/social-content/2025-06-29-building-interactive-ai-agents-frontend.md) - New!
-
-
 
 ---
 
@@ -111,14 +60,11 @@
 
 **[Schedule a Consultation →](https://www.linkedin.com/in/raphaelmansuy/)**
 
-</div>
-
 ---
 
 ## 📖 Table of Contents
 
-<details>
-<summary><strong>🎯 Quick Navigation</strong></summary>
+**🎯 Quick Navigation**
 
 - [🚀 Getting Started](#-getting-started)
 - [🏛️ Repository Architecture](#️-repository-architecture)
@@ -127,8 +73,6 @@
 - [🔍 How to Search This Repository](#-how-to-search-this-repository)
 - [🤝 Contributing](#-contributing)
 - [📧 Connect & Support](#-connect--support)
-
-</details>
 
 ---
 
@@ -145,7 +89,7 @@
 **Search Tips:**
 
 - Use specific terms: "RAG system", "LangChain setup", "production deployment"
-- Look for emoji indicators: 🟢 Beginner, 🟡 Intermediate, 🔴 Advanced  
+- Look for emoji indicators: 🟢 Beginner, 🟡 Intermediate, 🔴 Advanced
 - Check the "Quick Access" tables in each section
 - Use browser search (Ctrl+F) within any README file
 
@@ -155,16 +99,9 @@
 
 ### 🎯 **Choose Your Journey**
 
-_Select the path that matches your goals and experience level_
+Select the path that matches your goals and experience level:
 
-<table>
-<tr>
-<th width="33%">🌱 Complete Beginners</th>
-<th width="33%">🔧 Developers</th>
-<th width="33%">🧠 AI Professionals</th>
-</tr>
-<tr>
-<td>
+#### 🌱 Complete Beginners
 
 **Perfect if you're new to AI**
 
@@ -178,8 +115,7 @@ _Select the path that matches your goals and experience level_
 **⏱️ Time Investment:** 4-8 weeks  
 **🎯 Outcome:** Working AI application
 
-</td>
-<td>
+#### 🔧 Developers
 
 **Perfect if you can code**
 
@@ -193,8 +129,7 @@ _Select the path that matches your goals and experience level_
 **⏱️ Time Investment:** 1-3 weeks  
 **🎯 Outcome:** Production-ready AI system
 
-</td>
-<td>
+#### 🧠 AI Professionals
 
 **Perfect if you know AI**
 
@@ -208,20 +143,16 @@ _Select the path that matches your goals and experience level_
 **⏱️ Time Investment:** Ongoing  
 **🎯 Outcome:** Stay at the forefront
 
-</td>
-</tr>
-</table>
-
 ### 🚀 **30-Second Quick Actions**
 
 **Want to dive in immediately?** Here are the fastest paths to value:
 
-| I want to...               | Fastest path                                                                        | Time to first result |
-| -------------------------- | ----------------------------------------------------------------------------------- | -------------------- |
-| **🤖 Try AI now**          | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds           |
-| **💻 Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)               | 5 minutes            |
-| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                                            | 10 minutes           |
-| **🛠️ Find tools**          | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)                          | 2 minutes            |
+| I want to...                | Fastest path                                                                              | Time to first result |
+| --------------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
+| **🤖 Try AI now**           | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds           |
+| **💻 Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                     | 5 minutes            |
+| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                          | 10 minutes           |
+| **🛠️ Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)              | 2 minutes            |
 
 ### 📚 **Essential Resources**
 
@@ -241,8 +172,6 @@ _Select the path that matches your goals and experience level_
 This repository is organized as a **digital palace** - each section serves a specific purpose in your AI learning journey:
 
 ### 📁 **Core Directories**
-
-
 
 ```text
 digital_palace/
@@ -320,12 +249,12 @@ digital_palace/
 
 ## 🎯 **Quick Start Guide**
 
-| **Goal**                    | **Best Path**                                                                  | **Time**   | **Outcome**        |
-| --------------------------- | ------------------------------------------------------------------------------ | ---------- | ------------------ |
+| **Goal**                    | **Best Path**                                                                        | **Time**   | **Outcome**        |
+| --------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------------------ |
 | 🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo    |
-| 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)          | 5 minutes  | Live application   |
-| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                                       | 10 minutes | Structured path    |
-| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)                     | 2 minutes  | Perfect tool match |
+| 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                | 5 minutes  | Live application   |
+| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                     | 10 minutes | Structured path    |
+| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)         | 2 minutes  | Perfect tool match |
 
 ---
 
@@ -390,10 +319,6 @@ Need AI implementation for your business? Raphaël offers:
 
 ---
 
-<div>
-
 **⭐ If this repository helps you, please give it a star! ⭐**
 
-*Built with ❤️ by [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/) for the AI community*
-
-</div>
+_Built with ❤️ by [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/) for the AI community_
