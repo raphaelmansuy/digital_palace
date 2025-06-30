@@ -77,14 +77,11 @@ By providing this comprehensive self-description, you enable the AI-powered plat
 
 ### Example define yourself : Mark CEO of small consulting company
 
-<aside>
-📔 As the CEO of a small consulting firm specialized in Microsoft technology, you have a background in technology and a deep understanding of Microsoft products and services. Your expertise lies in providing IT solutions and consulting services to clients, helping them optimize their use of Microsoft technologies.
-
-Your goals include expanding your client base, increasing revenue, and staying up-to-date with the latest developments in Microsoft technology. You aim to provide exceptional consulting services to your clients, helping them leverage Microsoft products to achieve their business objectives.
-
-However, you face challenges in navigating the rapidly evolving landscape of Microsoft technology. Keeping up with the latest updates, understanding licensing models, and identifying the right solutions for your clients can be overwhelming.
-
-</aside>
+> 📔 **As the CEO of a small consulting firm specialized in Microsoft technology, you have a background in technology and a deep understanding of Microsoft products and services. Your expertise lies in providing IT solutions and consulting services to clients, helping them optimize their use of Microsoft technologies.**
+>
+> **Your goals include expanding your client base, increasing revenue, and staying up-to-date with the latest developments in Microsoft technology. You aim to provide exceptional consulting services to your clients, helping them leverage Microsoft products to achieve their business objectives.**
+>
+> **However, you face challenges in navigating the rapidly evolving landscape of Microsoft technology. Keeping up with the latest updates, understanding licensing models, and identifying the right solutions for your clients can be overwhelming.**
 
 ### Describe what you are currently struggling with and what make use of it ?
 
@@ -94,12 +91,9 @@ Next, clearly articulate your goals and what you hope to achieve by seeking advi
 
 By explaining your problem and goals in a focused and coherent manner, you enable the AI-powered board to provide tailored recommendations and insights that align with your specific needs. Remember to be as specific as possible in your description to ensure the AI fully understands your situation and can offer the most relevant guidance.
 
-<aside>
-📔 Your goals include expanding your client base, increasing revenue, and staying up-to-date with the latest developments in Microsoft technology. You aim to provide exceptional consulting services to your clients, helping them leverage Microsoft products to achieve their business objectives.
-
-However, you face challenges in navigating the rapidly evolving landscape of Microsoft technology. Keeping up with the latest updates, understanding licensing models, and identifying the right solutions for your clients can be overwhelming.
-
-</aside>
+> 📔 **Your goals include expanding your client base, increasing revenue, and staying up-to-date with the latest developments in Microsoft technology. You aim to provide exceptional consulting services to your clients, helping them leverage Microsoft products to achieve their business objectives.**
+>
+> **However, you face challenges in navigating the rapidly evolving landscape of Microsoft technology. Keeping up with the latest updates, understanding licensing models, and identifying the right solutions for your clients can be overwhelming.**
 
 ## Step 1: harness the knowledge of out of box AI Large Langage Model
 
@@ -280,20 +274,19 @@ However, you face challenges in navigating the rapidly evolving landscape of Mic
 
 ### Result
 
-<aside>
-📔 Here are detailed recommendations from the Board of experts on strategies to expand your client base, increase revenue, and stay current with Microsoft technologies as a Microsoft consulting firm CEO:
-
-From the Industry Veteran:
-
-Step 1: Focus on disruptive innovations in Microsoft's product lineup to identify new opportunities
-
-- Read "The Innovator's Dilemma" to understand how to spot disruptive innovations that upend markets. Examine Microsoft's emerging products like Azure cloud, Dynamics 365, and Power Platform for disruptive potential.
-- Focus on these high-growth areas early on rather than established products to gain a competitive advantage. Ride the wave as these disruptive innovations gain mainstream adoption.
-
-Step 2: Look for "blue ocean" spaces in Microsoft's ecosystem
-
-- Use the "Blue Ocean Strategy" framework to identify uncontested market spaces with low competition in Microsoft's ecosystem. Expand into offering services around new capabilities like AI, IoT, mixed reality that lack specialist firms.
-- Don't get caught in the "red ocean" of fighting for share in crowded markets like Office 365 consulting. Create new "blue ocean" space with differentiated offerings.
+> 📔 **Here are detailed recommendations from the Board of experts on strategies to expand your client base, increase revenue, and stay current with Microsoft technologies as a Microsoft consulting firm CEO:**
+>
+> **From the Industry Veteran:**
+>
+> **Step 1: Focus on disruptive innovations in Microsoft's product lineup to identify new opportunities**
+>
+> - Read "The Innovator's Dilemma" to understand how to spot disruptive innovations that upend markets. Examine Microsoft's emerging products like Azure cloud, Dynamics 365, and Power Platform for disruptive potential.
+> - Focus on these high-growth areas early on rather than established products to gain a competitive advantage. Ride the wave as these disruptive innovations gain mainstream adoption.
+>
+> **Step 2: Look for "blue ocean" spaces in Microsoft's ecosystem**
+>
+> - Use the "Blue Ocean Strategy" framework to identify uncontested market spaces with low competition in Microsoft's ecosystem. Expand into offering services around new capabilities like AI, IoT, mixed reality that lack specialist firms.
+> - Don't get caught in the "red ocean" of fighting for share in crowded markets like Office 365 consulting. Create new "blue ocean" space with differentiated offerings.
 
 Step 3: Develop "multiplier" mindset to grow your team
 

@@ -64,22 +64,19 @@ quadrantChart
 
 ```
 
-<aside>
-📔 Example of Decision Matrix for a business executive
-
-I gave the quarterly budget a low importance score of 8 since it's a routine task. But it has a high urgency score of 8 since the deadline is approaching.
-
-The board meeting is very important 9 for governance and strategic decisions. It's also urgent 3 to prepare adequately.
-
-The employee call is somewhat urgent (4) to maintain good relations but less important (9) strategically.
-
-The holiday party has moderate importance (2) for employee morale but low urgency (3).
-
-The marketing manager interview is important (6) to fill a key role but moderately urgent (7) with some flexibility on timing.
-
-The customer inquiry is very urgent (9) to capitalize on an opportunity but of medium importance (4) depending on the potential deal size
-
-</aside>
+> 📔 **Example of Decision Matrix for a business executive**
+>
+> I gave the quarterly budget a low importance score of 8 since it's a routine task. But it has a high urgency score of 8 since the deadline is approaching.
+>
+> The board meeting is very important 9 for governance and strategic decisions. It's also urgent 3 to prepare adequately.
+>
+> The employee call is somewhat urgent (4) to maintain good relations but less important (9) strategically.
+>
+> The holiday party has moderate importance (2) for employee morale but low urgency (3).
+>
+> The marketing manager interview is important (6) to fill a key role but moderately urgent (7) with some flexibility on timing.
+>
+> The customer inquiry is very urgent (9) to capitalize on an opportunity but of medium importance (4) depending on the potential deal size
 
 **Do First (Important + Urgent)** - Crises, deadline-driven projects, meetings. These require immediate attention.
 
@@ -97,96 +94,87 @@ Let's walk through an example prompt combining GPT-3 and the Eisenhower framewor
 
 ### Framing the problem using a detailled prompt
 
-<aside>
-📔 *I'm the CEO of a fast-growing technology startup. We currently have 50 employees and $5M in annual recurring revenue. I'm facing a key decision on whether to expand into a new product line. Here are the key considerations:*
-
-- *My head of products believes the new offering could double our revenue in 2 years.*
-- *However, several of my senior engineers have reservations about our ability to deliver this additional product without compromising quality.*
-- *My CFO estimates we'll need to invest $1M upfront over the next 6 months to develop and launch the new product.*
-
-*If I decide to expand, it will require significant time and focus from me and my leadership team over the next year. I risk spreading myself and my team too thin. However, if successful, it could dramatically increase our growth.*
-
-*Using the framework of the Eisenhower Decision Matrix, how would you assess the importance and urgency of this potential expansion decision? What quadrant does it fit in and why? Provide a detailed analysis and recommendation on how I should think about this decision and potential tradeoffs through the lens of the Eisenhower Matrix.*
-
-You must reason step by step to give a score to each decision or task between 0.0 to 1.0   on to axis importance and urgency.
-
-</aside>
+> 📔 *I'm the CEO of a fast-growing technology startup. We currently have 50 employees and $5M in annual recurring revenue. I'm facing a key decision on whether to expand into a new product line. Here are the key considerations:*
+>
+> - *My head of products believes the new offering could double our revenue in 2 years.*
+> - *However, several of my senior engineers have reservations about our ability to deliver this additional product without compromising quality.*
+> - *My CFO estimates we'll need to invest $1M upfront over the next 6 months to develop and launch the new product.*
+>
+> *If I decide to expand, it will require significant time and focus from me and my leadership team over the next year. I risk spreading myself and my team too thin. However, if successful, it could dramatically increase our growth.*
+>
+> *Using the framework of the Eisenhower Decision Matrix, how would you assess the importance and urgency of this potential expansion decision? What quadrant does it fit in and why? Provide a detailed analysis and recommendation on how I should think about this decision and potential tradeoffs through the lens of the Eisenhower Matrix.*
+>
+> You must reason step by step to give a score to each decision or task between 0.0 to 1.0   on to axis importance and urgency.
 
 ### Reply from Anthropic Claude
 
 Here is an example response Claude from Anthropric could provide:
 
-<aside>
-📔 Based on the details provided, here is how I would assess this potential expansion decision through the lens of the Eisenhower Matrix:
-
-**Importance**
-
-I would rate the importance of this decision as 0.8 out of 1.0.
-
-The rationale is:
-
-- Expanding into a new product line could potentially double revenue in 2 years, which would be a major growth opportunity for the company.
-- However, it's not necessarily existential to the survival and core business of the company, so not a 1.0.
-
-**Urgency**
-
-I would rate the urgency as 0.4 out of 1.0.
-
-The rationale is:
-
-- There is an estimate of needing to invest $1M over the next 6 months to develop and launch. This creates some timeframe urgency.
-- However, the opportunity is projected to take 2 years to materialize, so there is no immediate do-or-die urgency. There is time to thoughtfully evaluate the pros and cons.
-
-**Quadrant**
-
-Based on an importance rating of 0.8 and urgency rating of 0.4, this decision would fall into the **Important but Not Urgent** quadrant.
-
-**Recommendation**
-
-For issues in this quadrant, Eisenhower recommends tackling them without delay by scheduling time to focus on them.
-
-Given the high importance but lower urgency, I would recommend:
-
-- Schedule a dedicated strategic planning session with your leadership team to fully analyze the pros/cons.
-- Ensure you have the necessary data and market validation of the opportunity before committing.
-- Develop a detailed business plan and internal resource/execution plan before moving forward.
-- Given limited resources, carefully evaluate what other priorities may need to be deprioritized to make room for this initiative if pursued.
-
-The key is to avoid rushing into this because of a false sense of urgency, while also not delaying action because it's not an immediate crisis. A thoughtful, strategic approach can help maximize the opportunity while mitigating the risks and tradeoffs.
-
-</aside>
+> 📔 **Based on the details provided, here is how I would assess this potential expansion decision through the lens of the Eisenhower Matrix:**
+>
+> #### Importance
+>
+> I would rate the importance of this decision as 0.8 out of 1.0.
+>
+> The rationale is:
+>
+> - Expanding into a new product line could potentially double revenue in 2 years, which would be a major growth opportunity for the company.
+> - However, it's not necessarily existential to the survival and core business of the company, so not a 1.0.
+>
+> #### Urgency
+>
+> I would rate the urgency as 0.4 out of 1.0.
+>
+> The rationale is:
+>
+> - There is an estimate of needing to invest $1M over the next 6 months to develop and launch. This creates some timeframe urgency.
+> - However, the opportunity is projected to take 2 years to materialize, so there is no immediate do-or-die urgency. There is time to thoughtfully evaluate the pros and cons.
+>
+> #### Quadrant
+>
+> Based on an importance rating of 0.8 and urgency rating of 0.4, this decision would fall into the **Important but Not Urgent** quadrant.
+>
+> #### Recommendation
+>
+> For issues in this quadrant, Eisenhower recommends tackling them without delay by scheduling time to focus on them.
+>
+> Given the high importance but lower urgency, I would recommend:
+>
+> - Schedule a dedicated strategic planning session with your leadership team to fully analyze the pros/cons.
+> - Ensure you have the necessary data and market validation of the opportunity before committing.
+> - Develop a detailed business plan and internal resource/execution plan before moving forward.
+> - Given limited resources, carefully evaluate what other priorities may need to be deprioritized to make room for this initiative if pursued.
+>
+> The key is to avoid rushing into this because of a false sense of urgency, while also not delaying action because it's not an immediate crisis. A thoughtful, strategic approach can help maximize the opportunity while mitigating the risks and tradeoffs.
 
 ### Draw the Eisenhower Matrix
 
 Now we can even Draw the Eisenhower Matrix thanks to the Mermaid syntax:
 
-<aside>
-📔 Can you now represent theses decisions using a Eisenhower decision matrix using the quadrantChart syntax available with the mermaid language.
-
-Example of quadrant charts for the mermaid syntax:
-
-```
-quadrantChart
-    title Priority Quadrant Chart
-
-    x-axis Urgent --> Not Urgent
-    y-axis Not Important --> Important
-
-    quadrant-1 Plan
-    quadrant-2 Do First
-    quadrant-3 Delegate
-    quadrant-4 Eliminate
-
-    Budget: [0.8, 0.8]
-    Board Meeting: [0.3, 0.9]
-    Employee Call: [0.9, 0.4]
-    Holiday Party: [0.7, 0.3]
-    Marketing Manager Interview: [0.3, 0.6]
-    Customer Inquiry: [0.6, 0.9]
-    Campaign F: [0.35, 0.78]
-```
-
-</aside>
+> 📔 **Can you now represent theses decisions using a Eisenhower decision matrix using the quadrantChart syntax available with the mermaid language.**
+>
+> Example of quadrant charts for the mermaid syntax:
+>
+> ```mermaid
+> quadrantChart
+>     title Priority Quadrant Chart
+> 
+>     x-axis Urgent --> Not Urgent
+>     y-axis Not Important --> Important
+> 
+>     quadrant-1 Plan
+>     quadrant-2 Do First
+>     quadrant-3 Delegate
+>     quadrant-4 Eliminate
+> 
+>     Budget: [0.8, 0.8]
+>     Board Meeting: [0.3, 0.9]
+>     Employee Call: [0.9, 0.4]
+>     Holiday Party: [0.7, 0.3]
+>     Marketing Manager Interview: [0.3, 0.6]
+>     Customer Inquiry: [0.6, 0.9]
+>     Campaign F: [0.35, 0.78]
+> ```
 
 ### Claude answer
 

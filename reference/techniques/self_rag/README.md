@@ -32,7 +32,7 @@ Output:
 11 of 50 states names come from persons.
 Retrieve
 
-<p>LOUISIANA: Named in honor of Louis XIV of France.</p>
+**LOUISIANA: Named in honor of Louis XIV of France.**
 ISREL: Relevant
 
 For instance, Louisiana was named after King Louis XIV, and Georgia was named after King George II.  
@@ -147,7 +147,7 @@ Let's see some examples that illustrate the benefits of SELF-RAG:
 **SELF-RAG**: 
 Marie Curie was a pioneering scientist who conducted groundbreaking research on radioactivity. She discovered the elements polonium and radium.
 Retrieve
-<p>Marie Curie won two Nobel Prizes, in physics (1903) and chemistry (1911). She was the first woman to win a Nobel Prize.</p>
+**Marie Curie won two Nobel Prizes, in physics (1903) and chemistry (1911). She was the first woman to win a Nobel Prize.**
 ISREL: Relevant
 For example, Curie won two Nobel Prizes - one in physics in 1903 and another in chemistry in 1911. She was the first woman to ever win a Nobel Prize. Her discoveries of radium and polonium fundamentally advanced scientific understanding of radioactivity.
 ISSUP: Supported
@@ -162,7 +162,7 @@ Here we can see SELF-RAG retrieving a relevant fact and ensuring its output is s
 **SELF-RAG**: 
 The capital city of Australia is Canberra.
 Retrieve
-<p>Canberra, located in the Australian Capital Territory, has been the capital of Australia since 1927.</p>
+**Canberra, located in the Australian Capital Territory, has been the capital of Australia since 1927.**
 ISREL: Relevant  
 For instance, the capital of Australia is Canberra, not Sydney. Canberra has been the capital since 1927.
 ISSUP: Supported
