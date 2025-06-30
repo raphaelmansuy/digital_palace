@@ -69,10 +69,7 @@ To calculate precision, we count the number of words in the candidate translatio
 
 In simpler terms, precision tells us how well a translation system or model performs by measuring the percentage of correct words in the output compared to the expected translation. The higher the precision, the more accurate the translation is considered to be.
 
-<aside>
-📔 Precision measures the accuracy of a system in producing relevant results. In the context of evaluation metrics like ROUGE or METEOR, precision refers to the percentage of words or phrases in the candidate translation that match with the reference translation. It indicates how well the candidate translation aligns with the expected outcome.
-
-</aside>
+> 📔 **Precision measures the accuracy of a system in producing relevant results. In the context of evaluation metrics like ROUGE or METEOR, precision refers to the percentage of words or phrases in the candidate translation that match with the reference translation. It indicates how well the candidate translation aligns with the expected outcome.**
 
 ### Recal
 
@@ -87,10 +84,7 @@ To calculate recall, we count the number of words in the reference translation t
 
 In simpler terms, recall tells us how well a translation system or model performs by measuring the percentage of correct words in the output compared to the expected translation. The higher the recall, the more comprehensive the translation is considered to be.
 
-<aside>
-📔 Recall measures how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected outcome.
-
-</aside>
+> 📔 **Recall measures how well a system retrieves relevant information. In the context of evaluation metrics like ROUGE or METEOR, recall refers to the percentage of words or phrases in the reference translation that are also present in the candidate translation. It indicates how well the candidate translation captures the expected outcome.**
 
 ## ROUGE method
 

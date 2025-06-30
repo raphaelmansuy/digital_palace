@@ -73,18 +73,15 @@ The key innovations enabling this achievement are:
 
 By combining these ideas with the powerful pattern recognition capabilities of transformers, Boolformer demonstrates an unprecedented ability to learn and reason with pure Boolean logic using modern deep learning.
 
-<aside>
-📔 A seq2seq (sequence-to-sequence) model is a type of model used in machine learning that takes a sequence of input data and produces a sequence of output data. It is commonly used in tasks such as machine translation, text summarization, and question answering.
-
-The model consists of two main components: an **encoder** and a **decoder**. The encoder takes the input sequence and processes it, encoding the information into a fixed-size vector called the "context vector." The context vector contains a condensed representation of the input sequence.
-
-The decoder then takes the context vector and generates the output sequence, one element at a time. At each step, it uses the previously generated elements as input to predict the next element in the sequence. This process continues until the entire output sequence is generated.
-
-The goal of the seq2seq model is to learn the mapping between the input sequence and the output sequence, capturing the underlying patterns and dependencies in the data.
-
-By training the model on a large dataset with known input-output pairs, it learns to generate the correct output sequence given an input sequence.
-
-</aside>
+> 📔 **A seq2seq (sequence-to-sequence) model is a type of model used in machine learning that takes a sequence of input data and produces a sequence of output data. It is commonly used in tasks such as machine translation, text summarization, and question answering.**
+>
+> **The model consists of two main components: an encoder and a decoder. The encoder takes the input sequence and processes it, encoding the information into a fixed-size vector called the "context vector." The context vector contains a condensed representation of the input sequence.**
+>
+> **The decoder then takes the context vector and generates the output sequence, one element at a time. At each step, it uses the previously generated elements as input to predict the next element in the sequence. This process continues until the entire output sequence is generated.**
+>
+> **The goal of the seq2seq model is to learn the mapping between the input sequence and the output sequence, capturing the underlying patterns and dependencies in the data.**
+>
+> **By training the model on a large dataset with known input-output pairs, it learns to generate the correct output sequence given an input sequence.**
 
 ### **How Boolformer Works**
 
