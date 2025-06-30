@@ -119,22 +119,8 @@ Ensure all main hubs (learning/, guides/, tools/, reference/) use consistent tab
 | **Advanced Goal** | [Link →](./path) | Z min | Specific outcome |
 ```
 
-#### Standardize Analytics Presentation
-Use consistent metrics format across all hubs:
+#### Remove Analytics Presentation
 
-```markdown
-## 📊 Hub Analytics
-
-### 🏆 Most Popular (This Month)
-| Resource | Views | Rating | Completion | Category |
-|----------|-------|--------|------------|----------|
-| **[Item 1](./item1.md)** | X.Xk | ⭐⭐⭐⭐⭐ (4.8) | XX% | Type |
-| **[Item 2](./item2.md)** | X.Xk | ⭐⭐⭐⭐ (4.5) | XX% | Type |
-
-### 📈 Trending This Week
-- 🔥 **Topic 1** - X.Xk searches
-- 📈 **Topic 2** - X.Xk searches
-```
 
 #### Implement Unified Navigation Breadcrumbs
 Standardize footer navigation across all hubs:
