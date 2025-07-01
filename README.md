@@ -24,10 +24,10 @@
 
 | 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
 |-------------|----------------|---------|-------------------|
-| **🤖 Try AI Now** | [Best AI Tools →](./tools/ai-tools-master-directory.md#-beginner-friendly-tools) | 30 seconds | Working AI interface, no setup required |
+| **🤖 Try AI Now** | [Best AI Tools →](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI interface, no setup required |
 | **💻 Build an App** | [Zero-to-App Guide →](./guides/goal-oriented-guides.md#getting-started) | 5 minutes | Live AI application running locally |
-| **📚 Learn Systematically** | [Learning Roadmap →](./learning/README.md#-interactive-learning-navigator) | 10 minutes | Personalized learning path |
-| **🛠️ Find Perfect Tool** | [Tools Hub →](./tools/ai-tools-master-directory.md#-quick-tool-finder) | 2 minutes | Tool recommendation for your use case |
+| **📚 Learn Systematically** | [Learning Roadmap →](./learning/README.md#interactive-learning-navigator) | 10 minutes | Personalized learning path |
+| **🛠️ Find Perfect Tool** | [Tools Hub →](./tools/ai-tools-master-directory.md#quick-tool-finder) | 2 minutes | Tool recommendation for your use case |
 | **🔍 Search Everything** | _Use Ctrl+F / Cmd+F in any section_ | Instant | Find exactly what you need |
 
 ---
@@ -46,7 +46,7 @@
 **🔥 Most Popular This Month:**
 
 - [Optimal Context Management for AI Agents](./reference/technical-articles/2025-06-29-context-management-llm-agents.md) - New! 🆕
-- [OpenAI o3 Analysis](./reference/2025-ai-updates.md#-revolutionary-model-breakthroughs) - 2.1K views
+- [OpenAI o3 Analysis](./reference/2025-ai-updates.md#revolutionary-model-breakthroughs) - 2.1K views
 - [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views
 - [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
 - [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
@@ -66,13 +66,13 @@
 
 **🎯 Quick Navigation**
 
-- [🚀 Getting Started](#-getting-started)
-- [🏛️ Repository Architecture](#️-repository-architecture)
-- [🌟 What's Inside](#-whats-inside)
-- [🎯 Quick Start Guide](#-quick-start-guide)
-- [🔍 How to Search This Repository](#-how-to-search-this-repository)
-- [🤝 Contributing](#-contributing)
-- [📧 Connect & Support](#-connect--support)
+- [🚀 Getting Started](#getting-started)
+- [🏛️ Repository Architecture](#repository-architecture)
+- [🌟 What's Inside](#whats-inside)
+- [🎯 Quick Start Guide](#quick-start-guide)
+- [🔍 How to Search This Repository](#how-to-search-this-repository)
+- [🤝 Contributing](#contributing)
+- [📧 Connect & Support](#connect-support)
 
 ---
 
@@ -108,8 +108,8 @@ Select the path that matches your goals and experience level:
 **📚 Start Here:**
 
 1. [Getting Started Guide](./guides/getting-started.md)
-2. [Beginner Learning Path](./learning/README.md#-complete-beginner-path)
-3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#-beginner-friendly-tools)
+2. [Beginner Learning Path](./learning/README.md#complete-beginner-path)
+3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
 4. Build your first project (30-min quickstart)
 
 **⏱️ Time Investment:** 4-8 weeks  
@@ -121,10 +121,10 @@ Select the path that matches your goals and experience level:
 
 **🔧 Start Here:**
 
-1. [Developer Path](./learning/README.md#-developer-path)
-2. [Development Frameworks](./tools/ai-tools-master-directory.md#-development-frameworks)
-3. [Build AI Apps](./guides/goal-oriented-guides.md#-building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#-knowledge--data-integration)
-4. [Deploy to Production](./guides/goal-oriented-guides.md#-production-deployment)
+1. [Developer Path](./learning/README.md#developer-path)
+2. [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
+3. [Build AI Apps](./guides/goal-oriented-guides.md#building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#knowledge-data-integration)
+4. [Deploy to Production](./guides/goal-oriented-guides.md#production-deployment)
 
 **⏱️ Time Investment:** 1-3 weeks  
 **🎯 Outcome:** Production-ready AI system
@@ -136,8 +136,8 @@ Select the path that matches your goals and experience level:
 **🧠 Start Here:**
 
 1. [2025 AI Updates](./reference/2025-ai-updates.md)
-2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#-2025-breakthrough-tools)
-3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)
+2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
+3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents-automation)
 4. Contribute your expertise back
 
 **⏱️ Time Investment:** Ongoing  
@@ -149,10 +149,10 @@ Select the path that matches your goals and experience level:
 
 | I want to...                | Fastest path                                                                              | Time to first result |
 | --------------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
-| **🤖 Try AI now**           | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#-beginner-friendly-tools) | 30 seconds           |
+| **🤖 Try AI now**           | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds           |
 | **💻 Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                     | 5 minutes            |
-| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#-interactive-learning-navigator)                          | 10 minutes           |
-| **🛠️ Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#-quick-tool-finder)              | 2 minutes            |
+| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#interactive-learning-navigator)                          | 10 minutes           |
+| **🛠️ Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)              | 2 minutes            |
 
 ### 📚 **Essential Resources**
 
@@ -224,13 +224,13 @@ digital_palace/
 
 - **[156+ AI Tools](./tools/ai-tools-master-directory.md)** - Categorized by purpose and expertise level
 - **[2025 Breakthrough Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** - Latest innovations reshaping AI development
-- **[Production-Ready Solutions](./tools/ai-tools-master-directory.md#production--research-tools)** - Enterprise-grade platforms and frameworks
+- **[Production-Ready Solutions](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise-grade platforms and frameworks
 
 ### **🎯 Goal-Oriented Guides**
 
 - **[Build Your First AI App](./guides/goal-oriented-guides.md#getting-started)** - Zero to production in hours
-- **[Create AI Agents](./guides/goal-oriented-guides.md#ai-agents--automation)** - Autonomous systems that take actions
-- **[RAG & Knowledge Systems](./guides/goal-oriented-guides.md#knowledge--data-integration)** - AI with your own data
+- **[Create AI Agents](./guides/goal-oriented-guides.md#ai-agents-automation)** - Autonomous systems that take actions
+- **[RAG & Knowledge Systems](./guides/goal-oriented-guides.md#knowledge-data-integration)** - AI with your own data
 - **[Production Deployment](./guides/goal-oriented-guides.md#production-deployment)** - Scale to real users
 
 ### **📚 Deep Technical Knowledge**
