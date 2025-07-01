@@ -1,3 +1,6 @@
+
+[[Back to Guides Overview]](./README.md)
+
 # 🔗 Model Context Protocol (MCP) Servers - Complete Guide
 
 > **🚀 Quick Start**: Get MCP servers running with AI coding assistants in under 10 minutes
@@ -28,21 +31,69 @@ The Model Context Protocol (MCP) is a standardized way for AI applications to se
 
 ## 🚀 **Getting Started**
 
+
+### **Configuring MCP Servers in VS Code**
+
+To enable MCP servers in Visual Studio Code, you need to add your server configuration to the VS Code settings file in JSON format. This can be done at the workspace level or globally.
+
+**File Location:**
+
+- **Workspace:** `.vscode/settings.json` in your project root
+- **User (global):** VS Code user settings (open Command Palette → Preferences: Open Settings (JSON))
+
+**Format:**
+
+Add or update the `mcpServers` key in your settings JSON. Example:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/allowed/files"
+      ],
+      "env": {}
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "."]
+    }
+  }
+}
+```
+
+**Tips:**
+- You can manage and scan MCP server configs across apps (VS Code, Cursor, Claude, etc.) using [MCP Tools](https://github.com/f/mcptools):
+  - `mcp configs scan` — find all configs
+  - `mcp configs set vscode my-server npx -y @modelcontextprotocol/server-filesystem ~` — add/update a server
+- For more, see [MCP official docs](https://modelcontextprotocol.io/) and [MCP Tools](https://github.com/f/mcptools).
+
+---
+
 ### **Quick Setup with Cline (VS Code)**
 
 1. **Install Cline Extension**
+
    ```bash
    # In VS Code: Extensions → Search "Cline" → Install
    ```
 
 2. **Configure MCP Server**
+
    ```json
    // In Cline settings
    {
      "mcpServers": {
        "filesystem": {
          "command": "npx",
-         "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/files"],
+         "args": [
+           "-y",
+           "@modelcontextprotocol/server-filesystem",
+           "/path/to/allowed/files"
+         ],
          "env": {}
        }
      }
@@ -56,6 +107,7 @@ The Model Context Protocol (MCP) is a standardized way for AI applications to se
 ### **Setup with Continue (VS Code/JetBrains)**
 
 1. **Install Continue**
+
    ```bash
    # VS Code: Extensions → Search "Continue" → Install
    ```
@@ -75,53 +127,56 @@ The Model Context Protocol (MCP) is a standardized way for AI applications to se
 
 ### **🗂️ File & System Management**
 
-| Server | Purpose | Installation | Use Case |
-|--------|---------|--------------|----------|
-| **[Filesystem](https://github.com/modelcontextprotocol/servers)** | File operations | `npx @modelcontextprotocol/server-filesystem` | Read/write files safely |
-| **[Git](https://github.com/modelcontextprotocol/git)** | Version control | `npx @modelcontextprotocol/server-git` | Commit, branch, merge operations |
-| **[Docker](https://github.com/modelcontextprotocol/docker)** | Container management | `npx @modelcontextprotocol/server-docker` | Deploy and manage containers |
+| Server                                                            | Purpose              | Installation                                  | Use Case                         |
+| ----------------------------------------------------------------- | -------------------- | --------------------------------------------- | -------------------------------- |
+| **[Filesystem](https://github.com/modelcontextprotocol/servers)** | File operations      | `npx @modelcontextprotocol/server-filesystem` | Read/write files safely          |
+| **[Git](https://mcpservers.org/)**                                | Version control      | `npx @modelcontextprotocol/server-git`        | Commit, branch, merge operations |
+| **[Docker](https://mcpservers.org/)**                             | Container management | `npx @modelcontextprotocol/server-docker`     | Deploy and manage containers     |
 
 ### **🌐 Web & APIs**
 
-| Server | Purpose | Installation | Use Case |
-|--------|---------|--------------|----------|
-| **[Brave Search](https://github.com/modelcontextprotocol/brave-search)** | Web search | `npx @modelcontextprotocol/server-brave-search` | Real-time web information |
-| **[Puppeteer](https://github.com/modelcontextprotocol/puppeteer)** | Browser automation | `npx @modelcontextprotocol/server-puppeteer` | Web scraping, testing |
-| **[Fetch](https://github.com/modelcontextprotocol/fetch)** | HTTP requests | `npx @modelcontextprotocol/server-fetch` | API integrations |
+| Server                                      | Purpose            | Installation                                    | Use Case                  |
+| ------------------------------------------- | ------------------ | ----------------------------------------------- | ------------------------- |
+| **[Brave Search](https://mcpservers.org/)** | Web search         | `npx @modelcontextprotocol/server-brave-search` | Real-time web information |
+| **[Puppeteer](https://mcpservers.org/)**    | Browser automation | `npx @modelcontextprotocol/server-puppeteer`    | Web scraping, testing     |
+| **[Fetch](https://mcpservers.org/)**        | HTTP requests      | `npx @modelcontextprotocol/server-fetch`        | API integrations          |
 
 ### **💾 Database & Storage**
 
-| Server | Purpose | Installation | Use Case |
-|--------|---------|--------------|----------|
-| **[SQLite](https://github.com/modelcontextprotocol/sqlite)** | Database operations | `npx @modelcontextprotocol/server-sqlite` | Local database management |
-| **[PostgreSQL](https://github.com/modelcontextprotocol/postgres)** | Database operations | `npx @modelcontextprotocol/server-postgres` | Production database access |
-| **[Memory](https://github.com/modelcontextprotocol/memory)** | Persistent memory | `npx @modelcontextprotocol/server-memory` | Context retention |
+| Server                                    | Purpose             | Installation                                | Use Case                   |
+| ----------------------------------------- | ------------------- | ------------------------------------------- | -------------------------- |
+| **[SQLite](https://mcpservers.org/)**     | Database operations | `npx @modelcontextprotocol/server-sqlite`   | Local database management  |
+| **[PostgreSQL](https://mcpservers.org/)** | Database operations | `npx @modelcontextprotocol/server-postgres` | Production database access |
+| **[Memory](https://mcpservers.org/)**     | Persistent memory   | `npx @modelcontextprotocol/server-memory`   | Context retention          |
 
 ### **🔧 Development Tools**
 
-| Server | Purpose | Installation | Use Case |
-|--------|---------|--------------|----------|
-| **[GitHub](https://github.com/modelcontextprotocol/github)** | Repository management | `npx @modelcontextprotocol/server-github` | Issues, PRs, releases |
-| **[Jira](https://github.com/modelcontextprotocol/jira)** | Project management | `npx @modelcontextprotocol/server-jira` | Ticket management |
-| **[Slack](https://github.com/modelcontextprotocol/slack)** | Team communication | `npx @modelcontextprotocol/server-slack` | Message, channel management |
+| Server                                | Purpose               | Installation                              | Use Case                    |
+| ------------------------------------- | --------------------- | ----------------------------------------- | --------------------------- |
+| **[GitHub](https://mcpservers.org/)** | Repository management | `npx @modelcontextprotocol/server-github` | Issues, PRs, releases       |
+| **[Jira](https://mcpservers.org/)**   | Project management    | `npx @modelcontextprotocol/server-jira`   | Ticket management           |
+| **[Slack](https://mcpservers.org/)**  | Team communication    | `npx @modelcontextprotocol/server-slack`  | Message, channel management |
 
 ---
 
 ## 🤖 **AI Tool Integrations**
 
 ### **Cline (VS Code)**
+
 - **Native MCP Support**: Built-in MCP server management
 - **Configuration**: JSON-based server definitions
 - **Capabilities**: File operations, git commands, web search
 - **Best For**: Development workflows, code analysis
 
 ### **Continue (VS Code/JetBrains)**
+
 - **YAML Configuration**: Easy server setup
 - **Multi-Model Support**: Works with various LLMs
 - **Extensible**: Plugin architecture for custom servers
 - **Best For**: Code completion, refactoring
 
 ### **Cursor AI**
+
 - **Directory Integration**: MCP servers via [Cursor Directory](https://cursor.directory/)
 - **Pre-configured Setups**: Ready-to-use server configurations
 - **Community Servers**: Curated collection of MCP servers
@@ -176,46 +231,59 @@ if __name__ == "__main__":
 
 ```typescript
 // my-mcp-server.ts
-import { Server } from '@modelcontextprotocol/sdk/server/index.js';
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
-const server = new Server('my-custom-server', '1.0.0');
+const server = new Server("my-custom-server", "1.0.0");
 
-server.setRequestHandler('tools/list', async () => ({
-  tools: [{
-    name: 'calculate',
-    description: 'Perform basic calculations',
-    inputSchema: {
-      type: 'object',
-      properties: {
-        operation: { type: 'string', enum: ['add', 'subtract', 'multiply', 'divide'] },
-        a: { type: 'number' },
-        b: { type: 'number' }
+server.setRequestHandler("tools/list", async () => ({
+  tools: [
+    {
+      name: "calculate",
+      description: "Perform basic calculations",
+      inputSchema: {
+        type: "object",
+        properties: {
+          operation: {
+            type: "string",
+            enum: ["add", "subtract", "multiply", "divide"],
+          },
+          a: { type: "number" },
+          b: { type: "number" },
+        },
+        required: ["operation", "a", "b"],
       },
-      required: ['operation', 'a', 'b']
-    }
-  }]
+    },
+  ],
 }));
 
-server.setRequestHandler('tools/call', async (request) => {
+server.setRequestHandler("tools/call", async (request) => {
   const { name, arguments: args } = request.params;
-  
-  if (name === 'calculate') {
+
+  if (name === "calculate") {
     const { operation, a, b } = args;
     let result: number;
-    
+
     switch (operation) {
-      case 'add': result = a + b; break;
-      case 'subtract': result = a - b; break;
-      case 'multiply': result = a * b; break;
-      case 'divide': result = a / b; break;
+      case "add":
+        result = a + b;
+        break;
+      case "subtract":
+        result = a - b;
+        break;
+      case "multiply":
+        result = a * b;
+        break;
+      case "divide":
+        result = a / b;
+        break;
     }
-    
+
     return {
-      content: [{ type: 'text', text: `Result: ${result}` }]
+      content: [{ type: "text", text: `Result: ${result}` }],
     };
   }
-  
+
   throw new Error(`Unknown tool: ${name}`);
 });
 
@@ -230,22 +298,22 @@ server.connect(transport);
 ### **Docker Deployment**
 
 ```dockerfile
-# Dockerfile
+# Dockerfile (Node.js MCP Server Example)
 FROM node:18-alpine
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm ci --omit=dev
 
 COPY . .
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD ["node", "dist/server.js"]
 ```
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 services:
   mcp-server:
     build: .
@@ -255,7 +323,12 @@ services:
       - NODE_ENV=production
     volumes:
       - ./data:/app/data
+    restart: unless-stopped
 ```
+
+      - ./data:/app/data
+
+````
 
 ### **AWS Lambda Deployment**
 
@@ -273,26 +346,26 @@ export const handler = async (event: any) => {
   const transport = new LambdaServerTransport(event);
   return await server.connect(transport);
 };
-```
+````
 
 ### **Monitoring & Logging**
 
 ```javascript
 // monitoring.js
-import { createLogger } from 'winston';
+import { createLogger } from "winston";
 
 const logger = createLogger({
-  level: 'info',
+  level: "info",
   format: winston.format.json(),
   transports: [
-    new winston.transports.File({ filename: 'error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'combined.log' })
-  ]
+    new winston.transports.File({ filename: "error.log", level: "error" }),
+    new winston.transports.File({ filename: "combined.log" }),
+  ],
 });
 
 // Add to your MCP server
 server.onerror = (error) => {
-  logger.error('MCP Server Error:', error);
+  logger.error("MCP Server Error:", error);
 };
 ```
 
@@ -301,17 +374,20 @@ server.onerror = (error) => {
 ## 🔗 **Related Resources**
 
 ### **Documentation**
+
 - [MCP Official Docs](https://modelcontextprotocol.io/)
 - [MCP SDK Reference](https://github.com/modelcontextprotocol/typescript-sdk)
 - [Community Examples](https://github.com/modelcontextprotocol/examples)
 
 ### **Digital Palace Guides**
+
 - [AI Agents Development](./ai-agents.md)
 - [AI Tools Directory](../tools/ai-tools-master-directory.md)
 - [Core Technologies](../reference/core-technologies.md#model-context-protocol-mcp)
 
 ### **Community Resources**
-- [Awesome MCP](https://github.com/punkpeye/awesome-mcp) - Curated list of MCP resources
+
+- [Awesome MCP](https://mcpservers.org/) - Curated list of MCP resources
 - [MCP Tools](https://github.com/f/mcptools) - Swiss Army Knife for MCP Servers
 - [Active Pieces](https://github.com/activepieces/activepieces) - 280+ MCP servers
 
@@ -324,5 +400,10 @@ server.onerror = (error) => {
 - **📖 Learning**: [Digital Palace Learning Hub](../learning/README.md)
 
 ---
+
+
+---
+
+[[Back to Guides Overview]](./README.md)
 
 **⭐ Star this guide** if it helped you set up MCP servers successfully!
