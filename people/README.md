@@ -2,7 +2,7 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-4-blue?style=flat-square)](#alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-5-blue?style=flat-square)](#alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-green?style=flat-square)](#recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#by-category)
 
@@ -26,11 +26,11 @@
 ### 🌟 [Geoffrey Hinton](./geoffrey-hinton.md)
 **Professor Emeritus, University of Toronto** at Vector Institute (Co-founder), Former Google Research
 
+### 🌟 [Raphaël MANSUY](./raphaël-mansuy.md)
+**AI/ML Consultant & Digital Palace Creator** at Independent Consultant
+
 ### 🌟 [Sam Altman](./sam-altman.md)
 **CEO and Co-founder** at OpenAI
-
-### 🌟 [Timnit Gebru](./timnit-gebru.md)
-**Founder & Executive Director** at Distributed Artificial Intelligence Research Institute (DAIR)
 
 ---
 
@@ -40,6 +40,7 @@
 |------|------|--------------|------|
 | [Andrej Karpathy](./andrej-karpathy.md) | Independent AI Researcher & Educator | Self-employed (2023-present) | `ai, ml` |
 | [Geoffrey Hinton](./geoffrey-hinton.md) | Professor Emeritus, University of Toronto | Vector Institute (Co-founder), Former Google Research | `ai, ml` |
+| [Raphaël MANSUY](./raphaël-mansuy.md) | AI/ML Consultant & Digital Palace Creator | Independent Consultant | `ai, ml` |
 | [Sam Altman](./sam-altman.md) | CEO and Co-founder | OpenAI | `ai, ml` |
 | [Timnit Gebru](./timnit-gebru.md) | Founder & Executive Director | Distributed Artificial Intelligence Research Institute (DAIR) | `ai, ml` |
 
@@ -51,17 +52,20 @@
 *Academic researchers and university professors advancing AI/ML theory*
 
 - 🎓 [Geoffrey Hinton](./geoffrey-hinton.md)
+- 🎓 [Raphaël MANSUY](./raphaël-mansuy.md)
 - 🎓 [Timnit Gebru](./timnit-gebru.md)
 
 ### 🏢 Industry & CEOs
 *Industry leaders and executives driving AI adoption*
 
+- 🏢 [Raphaël MANSUY](./raphaël-mansuy.md)
 - 🏢 [Sam Altman](./sam-altman.md)
 
 ### 🛡️ AI Safety & Ethics
 *Researchers focused on responsible AI development*
 
 - 🛡️ [Geoffrey Hinton](./geoffrey-hinton.md)
+- 🛡️ [Raphaël MANSUY](./raphaël-mansuy.md)
 - 🛡️ [Timnit Gebru](./timnit-gebru.md)
 
 ---
@@ -84,7 +88,7 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 4 people
+- **Total Profiles**: 5 people
 - **Categories**: 7 primary categories
 - **Last Updated**: July 2025
 - **Update Frequency**: Monthly maintenance
@@ -94,9 +98,9 @@
 
 *Latest profiles added to the People Hub*
 
+- 🆕 [Raphaël MANSUY](./raphaël-mansuy.md)
 - 🆕 [Timnit Gebru](./timnit-gebru.md)
 - 🆕 [Andrej Karpathy](./andrej-karpathy.md)
-- 🆕 [Sam Altman](./sam-altman.md)
 
 ---
 
@@ -129,7 +133,7 @@ Help us expand the People Hub!
 
 ---
 
-*Generated automatically on: Tue Jul  1 19:15:53 HKT 2025*  
+*Generated automatically on: Tue Jul  1 19:19:35 HKT 2025*  
 *Next update: Monthly via maintenance script*
 
 **Legend**: 🎓 Academic • 🏢 Industry • 🛡️ Safety • 🚀 Startup • 📚 Author • 💻 Open Source • 🎤 Communicator
