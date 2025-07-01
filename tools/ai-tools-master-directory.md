@@ -229,6 +229,7 @@
 ### Document Processing
 | Tool | Purpose | Input Types |
 |------|---------|-------------|
+| [Docling](https://docling-project.github.io/docling/) | Advanced document parsing, RAG, multimodal (PDF, DOCX, images, audio), agentic AI integrations (LangChain, LlamaIndex, Crew AI, Haystack), local & cloud | PDF, DOCX, PPTX, XLSX, HTML, images, audio (WAV, MP3), more |
 | [zerox](https://github.com/getomni-ai/zerox) | OCR & extraction | PDFs, images |
 | [FireCrawl](https://github.com/mendableai/firecrawl) | Website to markdown | Web pages |
 | [lumentis](https://github.com/hrishioa/lumentis) | Docs from transcripts | Audio, video |

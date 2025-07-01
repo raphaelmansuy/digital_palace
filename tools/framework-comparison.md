@@ -8,6 +8,7 @@
 |-----------|----------|----------|----------------|-----------|------------------|
 | **LangChain** | RAG, Agents, Chains | Python, JS | 🟡 Medium | 🟢 Large | ✅ Yes |
 | **LlamaIndex** | Data ingestion, RAG | Python | 🟢 Easy | 🟡 Growing | ✅ Yes |
+| **Docling** | Document parsing, RAG, multimodal, integrations | Python, CLI | 🟢 Easy | 🟡 Growing | ✅ Yes |
 | **AutoGen** | Multi-agent systems | Python | 🔴 Hard | 🟡 Growing | ⚠️ Experimental |
 | **CrewAI** | Team-based agents | Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
 | **Haystack** | Search, RAG | Python | 🟡 Medium | 🟡 Medium | ✅ Yes |
@@ -65,11 +66,12 @@
 - Extensive customization
 - Rich ecosystem of tools
 
-### Choose **LlamaIndex** if you need:
-- Quick RAG implementation
-- Simple data ingestion
-- Straightforward document Q&A
-- Minimal complexity
+
+### Choose **Docling** if you need:
+- Advanced document parsing (PDF, DOCX, images, audio, more)
+- Multimodal and OCR support
+- Plug-and-play RAG integrations (LangChain, LlamaIndex, Crew AI, Haystack)
+- Local or cloud execution
 
 ### Choose **AutoGen** if you need:
 - Multi-agent conversations
@@ -114,7 +116,10 @@ query_engine = index.as_query_engine()
 response = query_engine.query("What is this document about?")
 ```
 
+
 ## 🔗 **Related Resources**
+- [Docling Project](https://docling-project.github.io/docling/)
+- [Docling GitHub](https://github.com/docling-project/docling)
 
 - [LangChain Official Docs](https://docs.langchain.com/)
 - [LlamaIndex Documentation](https://docs.llamaindex.ai/)

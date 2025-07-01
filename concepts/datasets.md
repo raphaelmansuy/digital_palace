@@ -17,6 +17,7 @@ Datasets are curated collections of data used to train, evaluate, and benchmark 
 - [Hugging Face Datasets](https://huggingface.co/datasets) — Community-driven dataset repository
 - [OpenML](https://www.openml.org/) — Open platform for sharing datasets
 - [Google Dataset Search](https://datasetsearch.research.google.com/) — Dataset discovery tool
+- [Docling](https://docling-project.github.io/docling/) — Document extraction, multimodal dataset creation, RAG-ready formats
 
 ---
 

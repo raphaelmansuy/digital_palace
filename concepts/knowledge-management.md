@@ -19,6 +19,7 @@ Knowledge management in AI refers to the processes and tools for capturing, orga
 - [Neo4j Vector Index](https://neo4j.com/docs/cypher-manual/current/indexes-for-vector-search/) — Graph database with vector search
 - [Microsoft GraphRAG](https://github.com/microsoft/graphrag) — Knowledge graph enhanced RAG
 - [LlamaIndex](https://www.llamaindex.ai/) — Knowledge management for LLMs
+- [Docling](https://docling-project.github.io/docling/) — Advanced document parsing, multimodal, RAG integrations
 
 ---
 

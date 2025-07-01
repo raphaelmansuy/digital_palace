@@ -90,6 +90,7 @@ Documents → Entity Extraction → Knowledge Graph → Graph Traversal → LLM 
 #### **Text Extraction**
 | Tool | Best For | Accuracy |
 |------|----------|----------|
+| [Docling](https://docling-project.github.io/docling/) | Advanced parsing, multimodal, RAG integrations | ⭐ Excellent |
 | [PyPDF2](https://github.com/py-pdf/PyPDF2) | Simple PDFs | 🟡 Medium |
 | [pdfplumber](https://github.com/jsvine/pdfplumber) | Complex layouts | 🟢 High |
 | [zerox](https://github.com/getomni-ai/zerox) | OCR + Vision models | ⭐ Excellent |
