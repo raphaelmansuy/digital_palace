@@ -38,6 +38,7 @@
 | Tool | Purpose | Learning Curve |
 |------|---------|----------------|
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Google's official AI workflow tool | 🟢 Easy |
+| [Fabric](https://github.com/danielmiessler/fabric) | Open-source prompt manager & AI workflow automation (CLI & GUI, Patterns, Obsidian integration) | 🟢 Easy |
 | [Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow) | Workflow automation with YAML & Python APIs | 🟢 Easy |
 | [LangChain](https://langchain.com/) | LLM application framework | 🟡 Moderate |
 | [instructor](https://jxnl.github.io/instructor/) | Structured outputs | 🟢 Easy |
@@ -62,6 +63,11 @@
   - **Best fit**: When working with proprietary data
 
 #### **Modern Alternatives**
+- **[Fabric](https://github.com/danielmiessler/fabric)** - Open-source framework for prompt management, workflow automation, and AI augmentation
+  - **Use for**: Organizing, sharing, and running AI prompts (Patterns) for real-world tasks
+  - **Strength**: CLI & GUI, integrates with Obsidian, supports custom workflows, extensible with Patterns and strategies
+  - **Best fit**: Anyone needing to manage, experiment, or automate with prompts across tools and platforms
+  - **Docs**: [GitHub README](https://github.com/danielmiessler/fabric)
 - **[ell](https://docs.ell.so/)** - Language model programming framework
   - **Use for**: Clean, type-safe LLM programming
   - **Strength**: Modern Python patterns, excellent DX

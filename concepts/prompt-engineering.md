@@ -19,6 +19,8 @@ Prompt engineering is the art and science of crafting effective inputs (prompts)
 - [LangChain](https://www.langchain.com/) — Prompt templates and chaining
 - [DSPy](https://github.com/stanfordnlp/dspy) — Modular prompt programming
 - [Instructor](https://jxnl.github.io/instructor/) — Structured outputs from LLMs
+- [Fabric](https://github.com/danielmiessler/fabric) — Open-source prompt manager & workflow automation (Patterns, CLI/GUI, Obsidian integration)
+  - [Origin Story](https://danielmiessler.com/blog/fabric-origin-story): Fabric was created to make AI accessible for everyone by breaking down complex tasks into components, applying AI to each, and chaining them into powerful workflows. Its philosophy is to augment human capability with a universal, open-source AI layer for life and work.
 
 ---
 
@@ -33,7 +35,7 @@ Prompt engineering is the art and science of crafting effective inputs (prompts)
 ## 🚀 Best Practices & Next Steps
 
 - Start with [Prompt Engineering Guide](../guides/prompting/README.md)
-- Experiment with [DSPy](https://github.com/stanfordnlp/dspy) and [LangChain](https://www.langchain.com/)
+- Experiment with [DSPy](https://github.com/stanfordnlp/dspy), [LangChain](https://www.langchain.com/), and [Fabric](https://github.com/danielmiessler/fabric) for hands-on prompt management and automation
 - See [Learning Pathways](./learning-pathways.md) for skill progression
 
 [Back to Concepts Hub](./README.md)

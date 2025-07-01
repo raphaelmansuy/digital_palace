@@ -83,11 +83,13 @@
 
 ## 🤖 **AI Agents & Automation**
 
+
 ### How to: Build AI Agents That Take Actions
 
 **What I want to achieve**: Create AI that can perform tasks autonomously in digital environments
 
 **Essential Tools**:
+- [Fabric](https://github.com/danielmiessler/fabric) - Prompt management, workflow automation, and agentic AI via Patterns (CLI & GUI, Obsidian integration)
 - [Quantalogic](https://github.com/quantalogic/quantalogic) - Powerful agentic framework
 - [CrewAI](https://github.com/joaomdmoura/crewAI) - Multi-agent collaboration
 - [AutoGen](https://microsoft.github.io/autogen/) - Multi-agent conversation framework

@@ -13,6 +13,32 @@
 | **CrewAI** | Team-based agents | Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
 | **Haystack** | Search, RAG | Python | 🟡 Medium | 🟡 Medium | ✅ Yes |
 | **Semantic Kernel** | Enterprise AI | C#, Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
+| **Fabric** | Prompt management, workflow automation, Patterns, CLI/GUI | Go, JS | 🟢 Easy | 🟢 Large | ✅ Yes |
+
+
+## 🎯 **Fabric: Prompt Management & Workflow Automation**
+
+**Best for:** Organizing, sharing, and running AI prompts (Patterns), workflow automation, and augmenting human productivity with AI
+
+**Pros:**
+- 🛠️ CLI & GUI for prompt management and automation
+- 🧩 Integrates with Obsidian and note-taking workflows
+- 🔄 Extensible with Patterns, strategies, and custom workflows
+- 🌐 Active community and frequent updates
+
+**Cons:**
+- 🆕 Newer ecosystem than LangChain/LlamaIndex
+- 🏗️ Some advanced features require setup
+
+**Use Cases:**
+- Prompt management and experimentation
+- Workflow automation for AI tasks
+- Integrating AI into daily productivity tools
+- Sharing and reusing prompt Patterns
+
+**Docs:** [GitHub README](https://github.com/danielmiessler/fabric)
+
+---
 
 ## 🎯 **LangChain vs LlamaIndex: The Popular Choice**
 
