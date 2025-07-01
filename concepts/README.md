@@ -13,6 +13,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 ## 📚 Concept Index
 
+
 ### 🤖 **Core AI Technologies**
 
 - [AI Agents](./ai-agents.md) — Autonomous systems, agent architectures, and multi-agent frameworks. See [Agent Communication](./agent-communication.md) and [Agent Protocols](./agent-protocols.md).
@@ -24,6 +25,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Computer Vision](./computer-vision.md) — Visual understanding and image processing. Related: [Multimodal AI](./multimodal-ai.md).
 - [Tool Use](./tool-use.md) — AI systems interacting with external tools and APIs. See [AI Agents](./ai-agents.md), [MCP](./mcp.md).
 - [Computer Use & Interface Control](./computer-use.md) — AI systems that directly control computer interfaces, applications, and operating systems through visual understanding and automated actions. Related: [AI Agents](./ai-agents.md), [Computer Vision](./computer-vision.md).
+- [Guided LLM Generation (Structured Output)](./guided-llm-generation.md) — Techniques for schema-based, XML/JSON, and structured output generation with LLMs. Covers structured prompting, schema introspection, and feedback-driven refinement for reliable, interpretable, and secure outputs. See also: [Prompt Engineering](./prompt-engineering.md), [Datasets](./datasets.md).
 
 ### 🔍 **Data & Knowledge Systems**
 
