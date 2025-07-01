@@ -59,6 +59,7 @@
 - **[OpenUI](https://github.com/wandb/openui)** - Describe UI using your imagination, then see it rendered live
 
 ### Enhanced Development Tools
+- **[Cline](https://github.com/cline/cline)** - VS Code AI assistant with MCP server integration, autonomous task execution, and advanced debugging capabilities
 - **[Continue](https://continue.dev/)** - Open-source autopilot for VS Code and JetBrains
 - **[Plandex](https://github.com/plandex-ai/plandex)** - An AI coding engine for complex tasks
 - **[Aider](https://github.com/paul-gauthier/aider)** - AI pair programming in your terminal

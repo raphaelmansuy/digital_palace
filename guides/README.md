@@ -11,6 +11,7 @@
 | **Create AI with your data** | [RAG Systems →](./rag-systems.md) | 6-12h | Smart document search |
 | **Build autonomous AI** | [AI Agents →](./ai-agents.md) | 8-16h | Self-operating AI system |
 | **Master prompt engineering** | [Prompting Hub →](./prompting/README.md) | 2-6h | Advanced prompting skills |
+| **Setup MCP servers** | [MCP Servers Guide →](./mcp-servers.md) | 1-3h | AI tool integrations |
 | **Generate AI images** | [Image Generation →](./image-generation/README.md) | 1-4h | Professional AI visuals |
 | **Quick reference lookup** | [Quick References →](./quick-references/README.md) | 15-60 min | Fast skill acquisition |
 | **Deploy to production** | [Production Deployment →](./deployment.md) | 12+ h | Scalable AI deployment |

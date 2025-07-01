@@ -347,6 +347,7 @@
 ### **Revolutionary AI Code Editors**
 - **[Cursor AI](https://cursor.sh/)** - AI-powered code editor with contextual understanding and codebase analysis
 - **[Windsurf](https://codeium.com/windsurf)** - AI-first IDE with collaborative editing capabilities  
+- **[Cline](https://github.com/cline/cline)** - AI coding assistant for VS Code with MCP server integration and autonomous development capabilities
 - **[GitHub Copilot Workspace](https://github.com/features/copilot)** - AI-powered development environments
 - **[Replit Agent](https://replit.com/)** - Complete app development from natural language descriptions
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** - Google's official AI command-line workflow tool with 1M token context

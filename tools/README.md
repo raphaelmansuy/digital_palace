@@ -12,6 +12,7 @@
 | **Serve models** | [Model Serving →](#model-serving) | 3-6h | Scalable model deployment |
 | **Create AI agents** | [Agent Frameworks →](#agent-frameworks) | 4-8h | Autonomous AI system |
 | **Work with data** | [RAG & Data Tools →](#rag--data-tools) | 2-6h | Smart data processing |
+| **Setup MCP servers** | [MCP Servers Guide →](../guides/mcp-servers.md) | 1-3h | AI tool integrations |
 | **Generate code** | [AI Coding Tools →](#ai-coding-tools) | 15 min | AI-powered development |
 | **Deploy at scale** | [Production Tools →](#production-tools) | 8+ h | Enterprise deployment |
 

@@ -354,6 +354,24 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 - **Web Search Server** - Perform web searches
 - **Calendar Server** - Access calendar data
 - **Slack Server** - Integrate with Slack workspaces
+- **GitHub Server** - Repository management and CI/CD integration
+- **Jira Server** - Issue tracking and project management
+- **Docker Server** - Container management and deployment
+- **AWS Server** - Cloud resource management and automation
+
+### **MCP Integration Examples**
+
+#### **With AI Coding Assistants**
+- **[Cline](https://github.com/cline/cline)** - VS Code extension with native MCP server support for enhanced development workflows
+- **[Continue](https://continue.dev/)** - Open-source autopilot with MCP integrations
+- **[Cursor Directory](https://cursor.directory/)** - Discover MCP servers optimized for Cursor AI
+
+#### **Popular MCP Server Implementations**
+- **[MCP Server SQLite](https://github.com/modelcontextprotocol/sqlite)** - Database operations and schema management
+- **[MCP Server Filesystem](https://github.com/modelcontextprotocol/servers)** - File operations with safety controls
+- **[MCP Server Git](https://github.com/modelcontextprotocol/git)** - Version control operations
+- **[MCP Server Brave Search](https://github.com/modelcontextprotocol/brave-search)** - Web search capabilities
+- **[MCP Server Puppeteer](https://github.com/modelcontextprotocol/puppeteer)** - Browser automation and web scraping
 
 ### **MCP Benefits**
 - **Standardized Integration** - Consistent way to connect AI to external data
