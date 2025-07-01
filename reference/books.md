@@ -1,4 +1,19 @@
+
 # 📖 Essential Books
+## Modern Q&A-Style AI & ML
+
+### Machine Learning Q and AI (Sebastian Raschka, 2024-2025)
+- **Author**: Sebastian Raschka
+- **Edition**: 1st Edition (2024, No Starch Press)
+- **Level**: Beginner to Advanced
+- **Pages**: 30 chapters (free online)
+- **Best For**: Bite-sized, practical Q&A on modern ML/AI
+- **Key Topics**: Embeddings, self-supervised learning, few-shot, transformers, computer vision, NLP, production, evaluation, and more
+- **Why Essential**: Free, up-to-date, and highly practical resource from a leading educator
+- **Read Online**: [Machine Learning Q and AI (Full Book, Free)](https://sebastianraschka.com/books/ml-q-and-ai/#table-of-contents)
+- **Table of Contents**: [Direct chapter links](https://sebastianraschka.com/books/ml-q-and-ai/#table-of-contents)
+- **Publisher**: [No Starch Press](https://nostarch.com/machine-learning-q-and-ai)
+
 
 ## Foundational AI & Machine Learning
 
