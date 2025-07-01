@@ -1,80 +1,42 @@
-# 🏛️ My Digital Palace
+# 🏛️ Digital Palace
 
-## A Personal AI Knowledge Repository
+> **Your AI Knowledge Hub** - From concepts to production in minutes, not months
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge)](./reference/2025-ai-updates.md)
 [![AI Tools](https://img.shields.io/badge/AI%20Tools-158+-blue?style=for-the-badge)](./tools/ai-tools-master-directory.md)
-[![Guides](https://img.shields.io/badge/Guides-25+-orange?style=for-the-badge)](./guides/README.md)
-[![Articles](https://img.shields.io/badge/Articles-300+-purple?style=for-the-badge)](./reference/articles.md)
-[![Learning Paths](https://img.shields.io/badge/Learning%20Paths-8+-teal?style=for-the-badge)](./learning/README.md)
-[![GitHub Stars](https://img.shields.io/github/stars/raphaelmansuy/digital_palace?style=for-the-badge&logo=github&color=gold)](https://github.com/raphaelmansuy/digital_palace/stargazers)
 [![Community](https://img.shields.io/badge/Community-Join%20Us-success?style=for-the-badge&logo=users)](https://github.com/raphaelmansuy/digital_palace/discussions)
 
----
+**🎯 Cut through AI complexity. Get to results faster.**  
+**🆕 June 2025** - OpenAI o3, Claude 4, Computer Use & Production-Ready Agents
 
-> _"In the age of AI, knowledge isn't just power—it's architecture. Like the ancient Library of Alexandria, but for the digital mind, this palace houses not just information, but the wisdom to wield it. Every room is a pathway, every guide a bridge between curiosity and creation."_  
-> **— Raphaël MANSUY**
+## 🚀 Start Here - Choose Your Path
 
-**🌟 Your comprehensive guide to AI technologies, tools, and implementation strategies**  
-**🆕 Updated June 2025** - OpenAI o3, Claude 4, AI Agents, Computer Use & Latest Breakthroughs
+| 🎯 **I want to...** | ⚡ **Go to** | 🕒 **Time** | 💡 **Result** |
+|---------------------|-------------|-------------|---------------|
+| **🧠 Understand AI** | [Concepts Hub](./concepts/README.md) | 15 min | Clear foundation |
+| **🤖 Try AI Tools** | [Best Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 sec | Working AI now |
+| **💻 Build an App** | [Zero-to-App](./guides/goal-oriented-guides.md#getting-started) | 5 min | Live application |
+| **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator) | 10 min | Structured roadmap |
+| **🛠️ Find Right Tool** | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder) | 2 min | Perfect match |
 
----
+## 🔥 What's Hot Right Now
 
-### 🚀 **Instant Navigation - Choose Your Path**
+- **[OpenAI o3 & Claude 4](./reference/2025-ai-updates.md)** - Revolutionary reasoning models
+- **[Computer Use Agents](./concepts/computer-use.md)** - AI that controls your screen
+- **[Voice AI Breakthrough](./concepts/voice-ai.md)** - Real-time conversation
+- **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR guide
 
-| 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
-|-------------|----------------|---------|-------------------|
-| **🤖 Try AI Now** | [Best AI Tools →](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI interface, no setup required |
-| **💻 Build an App** | [Zero-to-App Guide →](./guides/goal-oriented-guides.md#getting-started) | 5 minutes | Live AI application running locally |
-| **📚 Learn Systematically** | [Learning Roadmap →](./learning/README.md#interactive-learning-navigator) | 10 minutes | Personalized learning path |
-| **🛠️ Find Perfect Tool** | [Tools Hub →](./tools/ai-tools-master-directory.md#quick-tool-finder) | 2 minutes | Tool recommendation for your use case |
-| **🔍 Search Everything** | _Use Ctrl+F / Cmd+F in any section_ | Instant | Find exactly what you need |
+## 🧩 Concepts Hub - Your Knowledge Foundation
 
----
+**The core of Digital Palace** - Master AI concepts with intelligent cross-linking.
 
-### 📊 **Repository Statistics & Health**
+**Why Start Here?**
+- **🧠 Build Understanding**: 70+ concepts from basics to cutting-edge
+- **🔗 Smart Navigation**: Every concept connects to related areas  
+- **🛠️ Tool Integration**: Direct links to relevant tools and guides
+- **⚡ Quick Reference**: Fast lookup for definitions and examples
 
-| Metric                        | Count             | Last Updated |
-| ----------------------------- | ----------------- | ------------ |
-| **🛠️ AI Tools Cataloged**     | 85+               | Weekly       |
-| **📚 Learning Resources**     | 60+               | Weekly       |
-| **🎯 Implementation Guides**  | 60+               | Weekly       |
-| **📄 Research Papers**        | 26+               | Monthly      |
-| **🌍 Community Contributors** | Growing           | Ongoing      |
-| **⭐ GitHub Stars**           | Check badge above | Real-time    |
-
-**🔥 Most Popular This Month:**
-
-- [Optimal Context Management for AI Agents](./reference/technical-articles/2025-06-29-context-management-llm-agents.md) - New! 🆕
-- [OpenAI o3 Analysis](./reference/2025-ai-updates.md#revolutionary-model-breakthroughs) - 2.1K views
-- [AI Agent Development Guide](./guides/ai-agents.md) - 1.8K views
-- [Google ADK Framework](./guides/google-adk-guide.md) - 1.2K views
-- [LangChain vs LlamaIndex](./tools/framework-comparison.md) - 1.5K views
-- [Hidden Cost of AI Agent Frontend Development](./community/social-content/2025-06-29-building-interactive-ai-agents-frontend.md) - New!
-
----
-
-### 🚀 **Need AI Implementation Help?**
-
-**Get expert guidance from Raphaël MANSUY** - Oxford AI Tutor, Enterprise AI Consultant & Founder of [Quantalogic.app](https://quantalogic.app), [StudentCentral.ai](https://studentcentral.ai) & [Elitizon.com](https://elitizon.com)
-
-**[Schedule a Consultation →](https://www.linkedin.com/in/raphaelmansuy/)**
-
----
-
-## 📖 Table of Contents
-
-
-**🎯 Quick Navigation**
-
-- [🚀 Getting Started](#getting-started)
-- [🏛️ Repository Architecture](#repository-architecture)
-- [🌟 What's Inside](#whats-inside)
-- [🎯 Quick Start Guide](#quick-start-guide)
-- [🔍 How to Search This Repository](#how-to-search-this-repository)
-- [🧩 Concepts Hub](./concepts/README.md)  <!-- Sub hub for concept pages -->
-- [🤝 Contributing](#contributing)
-- [📧 Connect & Support](#connect-support)
+**[🚀 Explore the Concepts Hub →](./concepts/README.md)**
 
 ---
 
@@ -99,73 +61,29 @@
 
 ## 🚀 Getting Started
 
-### 🎯 **Choose Your Journey**
+### Pick Your Level
 
-Select the path that matches your goals and experience level:
+#### 🌱 New to AI
+**[Start Here](./learning/README.md#complete-beginner-path)** → **[Try Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)** → **[First Project](./guides/getting-started.md)**  
+*Time: 2-4 weeks → Working AI app*
 
-#### 🌱 Complete Beginners
+#### 🔧 Can Code
+**[Developer Path](./learning/README.md#developer-path)** → **[Build Apps](./guides/goal-oriented-guides.md#building-conversational-ai)** → **[Production](./guides/goal-oriented-guides.md#production-deployment)**  
+*Time: 1-2 weeks → Production system*
 
-**Perfect if you're new to AI**
+#### 🧠 AI Expert
+**[2025 Updates](./reference/2025-ai-updates.md)** → **[Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** → **[Advanced Agents](./guides/goal-oriented-guides.md#ai-agents-automation)**  
+*Time: Ongoing → Frontier knowledge*
 
-**📚 Start Here:**
+### 📚 Core Resources
 
-1. [Getting Started Guide](./guides/getting-started.md)
-2. [Beginner Learning Path](./learning/README.md#complete-beginner-path)
-3. [Beginner-Friendly Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)
-4. Build your first project (30-min quickstart)
-
-**⏱️ Time Investment:** 4-8 weeks  
-**🎯 Outcome:** Working AI application
-
-#### 🔧 Developers
-
-**Perfect if you can code**
-
-**🔧 Start Here:**
-
-1. [Developer Path](./learning/README.md#developer-path)
-2. [Development Frameworks](./tools/ai-tools-master-directory.md#development-frameworks)
-3. [Build AI Apps](./guides/goal-oriented-guides.md#building-conversational-ai) or [RAG Systems](./guides/goal-oriented-guides.md#knowledge-data-integration)
-4. [Deploy to Production](./guides/goal-oriented-guides.md#production-deployment)
-
-**⏱️ Time Investment:** 1-3 weeks  
-**🎯 Outcome:** Production-ready AI system
-
-#### 🧠 AI Professionals
-
-**Perfect if you know AI**
-
-**🧠 Start Here:**
-
-1. [2025 AI Updates](./reference/2025-ai-updates.md)
-2. [Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)
-3. [Advanced AI Agents](./guides/goal-oriented-guides.md#ai-agents-automation)
-4. Contribute your expertise back
-
-**⏱️ Time Investment:** Ongoing  
-**🎯 Outcome:** Stay at the forefront
-
-### 🚀 **30-Second Quick Actions**
-
-**Want to dive in immediately?** Here are the fastest paths to value:
-
-| I want to...                | Fastest path                                                                              | Time to first result |
-| --------------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
-| **🤖 Try AI now**           | [ChatGPT Alternative Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds           |
-| **💻 Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                     | 5 minutes            |
-| **📚 Learn systematically** | [Learning Roadmap](./learning/README.md#interactive-learning-navigator)                          | 10 minutes           |
-| **🛠️ Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)              | 2 minutes            |
-
-### 📚 **Essential Resources**
-
-| Resource Type        | Quick Access                                              | Purpose                          |
-| -------------------- | --------------------------------------------------------- | -------------------------------- |
-| **🛠️ Tools**         | [Master Directory](./tools/ai-tools-master-directory.md)  | Find the right tool for any task |
-| **📚 Learning**      | [Learning Hub](./learning/README.md)                      | Structured learning paths        |
-| **📄 Articles**      | [Article Collection](./reference/articles.md)             | Technical deep dives             |
-| **🧠 Mental Models** | [Mental Models](./personal/mental-models/README.md)       | Decision-making frameworks       |
-| **🎯 Guides**        | [How-To Guides](./guides/goal-oriented-guides.md)         | Step-by-step tutorials           |
-| **🆕 2025 Updates**  | [Latest AI Breakthroughs](./reference/2025-ai-updates.md) | Cutting-edge developments        |
+| Type | Link | Purpose |
+|------|------|---------|
+| **🧩 Concepts** | [Concepts Hub](./concepts/README.md) | Knowledge foundation |
+| **🛠️ Tools** | [AI Tools](./tools/ai-tools-master-directory.md) | Find the right tool |
+| **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
+| **📚 Learning** | [Learning Paths](./learning/README.md) | Structured education |
+| **🆕 Latest** | [2025 Updates](./reference/2025-ai-updates.md) | Cutting-edge AI |
 
 ---
 
@@ -177,6 +95,7 @@ This repository is organized as a **digital palace** - each section serves a spe
 
 ```text
 digital_palace/
+├── 🧩 concepts/          # **CORE: Master concept index with cross-links**
 ├── 📖 learning/           # Structured learning paths & courses
 │   └── courses/          # Educational resources
 ├── 🎯 guides/            # Step-by-step implementation guides
@@ -215,37 +134,27 @@ digital_palace/
 
 ## 🌟 What's Inside
 
-### **🆕 Latest 2025 Breakthroughs**
+### 🆕 2025 Breakthroughs
+- **[o3 & Claude 4](./reference/2025-ai-updates.md)** - Revolutionary reasoning models
+- **[Computer Use Agents](./concepts/computer-use.md)** - AI that controls your screen
+- **[Voice AI](./concepts/voice-ai.md)** - Real-time conversation
+- **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR
 
-- **[Revolutionary AI Models](./reference/2025-ai-updates.md#revolutionary-model-breakthroughs)** - o3, Claude 4, DeepSeek R1, and next-gen reasoning
-- **[AI Coding Revolution](./reference/2025-ai-updates.md#revolutionary-ai-coding-tools)** - Cursor, v0, Windsurf, and computer-use agents
-- **[Voice AI Breakthrough](./reference/2025-ai-updates.md#revolutionary-voice-ai-models)** - Real-time conversation with Moshi and Kyutai Labs
-- **[Agent Communication](./reference/2025-ai-updates.md#next-generation-agent-frameworks)** - MCP, A2A protocols, and standardized AI integrations
+### 🛠️ Tools & Frameworks
+- **[158+ AI Tools](./tools/ai-tools-master-directory.md)** - Comprehensive directory
+- **[Framework Comparisons](./tools/framework-comparison.md)** - LangChain vs alternatives
+- **[Production Tools](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise solutions
 
-### **🛠️ Comprehensive Tool Coverage**
+### 🎯 Practical Guides
+- **[Zero-to-App](./guides/goal-oriented-guides.md)** - Build AI apps fast
+- **[AI Agents](./guides/ai-agents.md)** - Autonomous systems
+- **[RAG Systems](./guides/rag-systems.md)** - AI with your data
+- **[Production Deployment](./guides/deployment.md)** - Scale to users
 
-- **[156+ AI Tools](./tools/ai-tools-master-directory.md)** - Categorized by purpose and expertise level
-- **[2025 Breakthrough Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** - Latest innovations reshaping AI development
-- **[Production-Ready Solutions](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise-grade platforms and frameworks
-
-### **🎯 Goal-Oriented Guides**
-
-- **[Build Your First AI App](./guides/goal-oriented-guides.md#getting-started)** - Zero to production in hours
-- **[Create AI Agents](./guides/goal-oriented-guides.md#ai-agents-automation)** - Autonomous systems that take actions
-- **[RAG & Knowledge Systems](./guides/goal-oriented-guides.md#knowledge-data-integration)** - AI with your own data
-- **[Production Deployment](./guides/goal-oriented-guides.md#production-deployment)** - Scale to real users
-
-### **📚 Deep Technical Knowledge**
-
-- **[Core AI Technologies](./reference/core-technologies.md)** - LLMs, embeddings, inference, and optimization
-- **[300+ Research Articles](./reference/articles.md)** - Cutting-edge papers and techniques
-- **[Learning Pathways](./learning/README.md)** - Structured education for all levels
-
-### **🎭 Personal Learning Philosophy**
-
-- **[Today I Learned](./personal/til/README.md)** - Daily discoveries and insights
-- **[Mental Models](./personal/mental-models/README.md)** - Frameworks for understanding AI
-- **[For the Impatient](./personal/impatient-series/README.md)** - Fast-track tutorials for experienced developers
+### 📚 Learning Resources
+- **[Structured Paths](./learning/README.md)** - Beginner to expert
+- **[Research Papers](./reference/research-papers.md)** - Latest findings
+- **[Mental Models](./personal/mental-models/README.md)** - Think like an expert
 
 ---
 
@@ -253,7 +162,8 @@ digital_palace/
 
 | **Goal**                    | **Best Path**                                                                        | **Time**   | **Outcome**        |
 | --------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------------------ |
-| 🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo    |
+| � **Understand AI concepts** | [Concepts Hub](./concepts/README.md) | 15 minutes | Clear conceptual foundation |
+| �🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo    |
 | 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                | 5 minutes  | Live application   |
 | 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                     | 10 minutes | Structured path    |
 | 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)         | 2 minutes  | Perfect tool match |

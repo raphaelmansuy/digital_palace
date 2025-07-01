@@ -225,6 +225,7 @@ ROI = (Total Benefits - Total Costs) / Total Costs × 100%
 - [AI Tools Directory](../tools/ai-tools-master-directory.md) - Business-friendly tools
 - [Production Deployment](./deployment.md) - Scaling considerations
 - [AI Strategy Framework](../reference/core-technologies.md) - Technical deep dive
+- [AI Legal & Regulatory Compliance](../concepts/ai-legal-regulatory.md) - Legal frameworks and compliance requirements
 
 ## 📚 **Recommended Reading**
 

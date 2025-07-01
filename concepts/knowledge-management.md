@@ -27,6 +27,16 @@ Knowledge management in AI refers to the processes and tools for capturing, orga
 - **Knowledge Graphs:** [Knowledge Graph Integration](../reference/core-technologies.md#knowledge-graph-integration)
 - **RAG Systems:** [RAG & Knowledge Systems](../reference/core-technologies.md#rag--knowledge-systems)
 - **Learning Resources:** [Learning Resources Hub](../learning/learning-resources-hub.md)
+- **Data Governance:** [AI Legal & Regulatory](./ai-legal-regulatory.md), [GDPR Compliance](./ai-legal-regulatory.md)
+
+---
+
+## 🔗 **Related Concepts**
+
+- **[AI Legal & Regulatory Compliance](./ai-legal-regulatory.md)** — Legal frameworks and data governance requirements
+- **[RAG Systems](./rag.md)** — Knowledge retrieval and augmentation
+- **[Knowledge Graphs](./knowledge-graphs.md)** — Structured knowledge representation
+- **[Context Management](./context-management.md)** — Information flow and organization
 
 ---
 
