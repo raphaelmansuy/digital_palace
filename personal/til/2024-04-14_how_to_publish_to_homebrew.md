@@ -1,3 +1,4 @@
+# [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 # How to publish a Rust cli tool to homebrew
 
 Here is a step-by-step guide on how to publish your hiramu-cli tool to Homebrew:

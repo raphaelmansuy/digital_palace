@@ -1,6 +1,8 @@
 
 # GPT in 60 lines of NumPy
 
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
 ## Summary
 
 [Jay Mody's](https://jaykmody.com/) article, ["GPT in 60 Lines of NumPy"](https://jaykmody.com/blog/gpt-from-scratch/) published on January 30, 2023, provides a concise guide to implementing a Generative Pre-trained Transformer (GPT) using just 60 lines of NumPy code. The post is designed for readers with a basic understanding of Python, NumPy, and neural network training. It deliberately omits many features to maintain simplicity while offering a complete introduction to GPT architecture as an educational tool. The implementation involves loading trained GPT-2 model weights from OpenAI and generating text, showcasing the fundamental aspects of GPTs, including their generative capabilities, pre-training on diverse datasets, and transformer-based architecture.

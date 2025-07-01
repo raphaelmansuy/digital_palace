@@ -1,6 +1,8 @@
 
 # Today I Learned: Building an AI Chat TUI with Textual
 
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
 **Source:** [Anatomy of a Textual User Interface](https://textual.textualize.io/blog/2024/09/15/anatomy-of-a-textual-user-interface/) 
 
 ## Key Takeaways

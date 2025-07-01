@@ -1,3 +1,6 @@
+
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
 https://gist.github.com/raphaelmansuy/0de7dd411cc04d2d912d6b4bf11002e9
 
 ## Function: create_index_delta

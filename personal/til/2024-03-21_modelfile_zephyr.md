@@ -1,5 +1,5 @@
 ### Downloading a GGUF file from 🤗
-
+ [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 ```bash
 huggingface-cli download bartowski/Starling-LM-7B-beta-GGUF Starling-LM-7B-beta-Q6_K.gguf --local-dir .
 ```

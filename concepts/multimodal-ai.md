@@ -1,5 +1,7 @@
 # Multimodal AI
 
+[← Back to Concepts Hub](./README.md)
+
 Multimodal AI refers to systems that can process, understand, and generate content across multiple modalities such as text, images, audio, and video. These systems enable richer interactions and more comprehensive understanding of complex real-world scenarios.
 
 ---
@@ -38,5 +40,3 @@ Multimodal AI refers to systems that can process, understand, and generate conte
 - Explore [LLaVA](https://llava-vl.github.io/) and [CLIP](https://openai.com/research/clip)
 - See [Voice AI Guide](../guides/voice-ai.md) for audio processing
 - Follow [Image Generation](../guides/image-generation/README.md) for visual AI
-
-[Back to Concepts Hub](./README.md)

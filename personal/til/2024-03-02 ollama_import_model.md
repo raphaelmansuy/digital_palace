@@ -1,56 +1,80 @@
-# How to import a New Model from HuggingFace 🤗 for Ollama
 
-Ollama is a powerful tool that simplifies the process of creating, running, and managing large language models (LLMs). This tutorial will guide you through the steps to create a new model for Ollama.
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-## Step 1: Download GGUF File
+# How to Import a HuggingFace Model (GGUF) for Ollama
 
-First, you need to download the GGUF file of the model you want from HuggingFace. For example, you can download `stablelm-2-zephyr-1_6b-Q4_1.gguf`. 
+> Ollama lets you run, customize, and manage LLMs locally. You can import models from HuggingFace (in GGUF format) and use them with your own prompts and templates.
 
-[stabilityai/stablelm-2-zephyr-1_6b](https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b))
+---
 
-You can use the `huggingface-cli` to download the file:
+## 🪄 Step 1: Download the GGUF Model File
+
+Use the [HuggingFace CLI](https://huggingface.co/docs/huggingface_hub/guides/download) to download a GGUF model:
 
 ```bash
 huggingface-cli download stabilityai/stablelm-2-zephyr-1_6b stablelm-2-zephyr-1_6b-Q4_1.gguf --local-dir . --local-dir-use-symlinks False
 ```
+Replace the model and file name as needed. (You can also download manually from the HuggingFace model page.)
 
-Replace ```codellama-7b.Q2_K.gguf``` with the name of the file you want to download.
+---
 
-## Step 2: Create ModelFile
+## 📝 Step 2: Create a Modelfile
 
-Next, you need to create a ModelFile. This is a configuration file that defines the model’s behavior. Here's an example:
+Create a file named `Modelfile` with the following content:
 
-```bash
+```Dockerfile
 FROM ./stablelm-2-zephyr-1_6b-Q4_1.gguf
 
 TEMPLATE "<|system|>{{ .System }}<|endoftext|><|user|>{{ .Prompt }}<|endoftext|><|assistant|>"
 ```
+You can customize the `TEMPLATE` or add [parameters](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#parameters) as needed.
 
-Replace `./stablelm-2-zephyr-1_6b-Q4_1.gguf` with the path to the GGUF file you downloaded.
+---
 
-## Step 3: Build the Model
+## 🏗️ Step 3: Build the Model in Ollama
 
-Now, you can build the model using the `ollama create` command:
+Run:
 
 ```bash
-ollama create "stablelm-2-zephyr-1_6b-Q4_1" -f Modelfile
+ollama create stablelm-2-zephyr-1_6b-Q4_1 -f Modelfile
 ```
+Replace the model name and Modelfile path as needed.
 
-Replace `"stablelm-2-zephyr-1_6b-Q4_1"` with the name you want to give to your model, and `Modelfile` with the path to your ModelFile.
+---
 
-## Step 4: Run and Try the Model
-
-Finally, you can run and try your model using the `ollama run` command:
+## 🚀 Step 4: Run and Test Your Model
 
 ```bash
 ollama run stablelm-2-zephyr-1_6b-Q4_1:latest
 ```
+Or just:
+```bash
+ollama run stablelm-2-zephyr-1_6b-Q4_1
+```
 
-Replace `stablelm-2-zephyr-1_6b-Q4_1:latest` with the name of your model.
+---
 
-That's it! You have successfully created and run a new model for Ollama.
+## 🧑‍💻 Tips & Best Practices
 
-Remember to replace the placeholders with your actual file names and paths. Also, make sure you have the necessary permissions to download and run the models.
+- **Model names**: Use lowercase, no spaces, and avoid special characters.
+- **Modelfile**: You can add `PARAMETER` lines to set temperature, system prompts, etc.
+- **List models**: `ollama list`
+- **Show info**: `ollama show <model>`
+- **Remove model**: `ollama rm <model>`
+- **Update model**: `ollama pull <model>`
+- **Copy model**: `ollama cp <model> <newname>`
+- **Troubleshooting**: Check [Ollama issues](https://github.com/ollama/ollama/issues) for common problems.
 
-For more information, you can refer to the [Ollama documentation](https://github.com/ollama/ollama) and the [Hugging Face model hub](https://huggingface.co/models).
+---
+
+## 📚 Resources
+
+- [Ollama Docs: Import from GGUF](https://github.com/ollama/ollama#customize-a-model)
+- [Ollama Modelfile Reference](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
+- [Ollama CLI Reference](https://github.com/ollama/ollama#cli-reference)
+- [HuggingFace Model Hub](https://huggingface.co/models)
+
+---
+
+**You can now run custom HuggingFace models locally with Ollama!**
 

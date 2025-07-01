@@ -1,5 +1,9 @@
 # Today I Learned: Setting Up Optional Dependencies in a Python Library with Poetry
 
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
+Today, I made significant progress on my monolithic library project, **Quantlogic**. I wanted to simplify the installation process so that users could easily install optional modules, similar to how they might use `pip install quantalogic[db]`. Here's a step-by-step breakdown of how I set up **Poetry** to manage my project and its dependencies efficiently.oday I Learned: Setting Up Optional Dependencies in a Python Library with Poetry
+
 Today, I made significant progress on my monolithic library project, **Quantlogic**. I wanted to simplify the installation process so that users could easily install optional modules, similar to how they might use `pip install quantalogic[db]`. Here’s a step-by-step breakdown of how I set up **Poetry** to manage my project and its dependencies efficiently.
 
 ## 1. Installing Poetry
