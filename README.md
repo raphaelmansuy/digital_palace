@@ -14,6 +14,7 @@
 | 🎯 **I want to...** | ⚡ **Go to** | 🕒 **Time** | 💡 **Result** |
 |---------------------|-------------|-------------|---------------|
 | **🧠 Understand AI** | [Concepts Hub](./concepts/README.md) | 15 min | Clear foundation |
+| **👥 Meet AI Leaders** | [People Hub](./people/README.md) | 5 min | Key figures & bios |
 | **🤖 Try AI Tools** | [Best Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 sec | Working AI now |
 | **💻 Build an App** | [Zero-to-App](./guides/goal-oriented-guides.md#getting-started) | 5 min | Live application |
 | **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator) | 10 min | Structured roadmap |
@@ -81,7 +82,8 @@
 | Type | Link | Purpose |
 |------|------|---------|
 | **🧩 Concepts** | [Concepts Hub](./concepts/README.md) | Knowledge foundation |
-| **🛠️ Tools** | [AI Tools](./tools/ai-tools-master-directory.md) | Find the right tool |
+| **� People** | [People Hub](./people/README.md) | AI/ML influential figures |
+| **�🛠️ Tools** | [AI Tools](./tools/ai-tools-master-directory.md) | Find the right tool |
 | **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
 | **📚 Learning** | [Learning Paths](./learning/README.md) | Structured education |
 | **💡 TIL** | [Today I Learned](./personal/til/README.md) | Daily discoveries |
@@ -98,7 +100,8 @@ This repository is organized as a **digital palace** - each section serves a spe
 ```text
 digital_palace/
 ├── 🧩 concepts/          # **CORE: Master concept index with cross-links**
-├── 📖 learning/           # Structured learning paths & courses
+├── � people/            # AI/ML influential figures & leaders
+├── �📖 learning/           # Structured learning paths & courses
 │   └── courses/          # Educational resources
 ├── 🎯 guides/            # Step-by-step implementation guides
 │   ├── prompting/        # Prompting techniques
