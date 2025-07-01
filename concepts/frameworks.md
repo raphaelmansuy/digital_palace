@@ -19,7 +19,6 @@ Frameworks are structured platforms and libraries that accelerate the developmen
 - [LlamaIndex](https://www.llamaindex.ai/) — Data framework for LLMs
 - [Apple MLX](https://github.com/ml-explore/mlx) — High-performance ML framework for Apple Silicon
 - [DSPy](https://github.com/stanfordnlp/dspy) — Modular prompt programming
-- [marvin](https://www.askmarvin.ai/) — Reliable AI interfaces
 - [ell](https://docs.ell.so/) — Type-safe LLM programming
 
 ---
