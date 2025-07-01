@@ -25,6 +25,7 @@
 - **[Computer Use Agents](./concepts/computer-use.md)** - AI that controls your screen
 - **[Voice AI Breakthrough](./concepts/voice-ai.md)** - Real-time conversation
 - **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR guide
+- **[Today I Learned](./personal/til/README.md)** - Daily AI discoveries & insights
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation
 
@@ -83,6 +84,7 @@
 | **🛠️ Tools** | [AI Tools](./tools/ai-tools-master-directory.md) | Find the right tool |
 | **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
 | **📚 Learning** | [Learning Paths](./learning/README.md) | Structured education |
+| **💡 TIL** | [Today I Learned](./personal/til/README.md) | Daily discoveries |
 | **🆕 Latest** | [2025 Updates](./reference/2025-ai-updates.md) | Cutting-edge AI |
 
 ---

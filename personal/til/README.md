@@ -1,48 +1,99 @@
-# TIL: Today I Learned
+# 💡 Today I Learned (TIL)
 
-| Author         | Created    | Updated    | Version |
-| -------------- | ---------- | ---------- | ------- |
-| Raphaël MANSUY | 07/09/2023 | 07/09/2023 | 1.0.0   |
+> **Daily AI discoveries and insights** - Bite-sized knowledge from the frontlines
 
-## Description
+[![Back to Digital Palace](https://img.shields.io/badge/←%20Back%20to-Digital%20Palace-blue?style=for-the-badge)](../../README.md)
 
-The purpose of a "Today I Learned" (TIL) blog is to document and share small, bite-sized pieces of knowledge or insights that an individual has learned on a particular day.
+## 🎯 What is TIL?
 
-It serves as a personal knowledge base where individuals can record and reflect on their daily learning experiences.
+A **"Today I Learned"** collection documents small, actionable insights and discoveries from daily AI work. Each entry captures:
 
-TIL blogs are often used by programmers, developers, and other professionals to share tips, tricks, and lessons learned in their respective fields.
+- **🔧 Practical solutions** to real problems
+- **💡 Quick wins** and productivity hacks  
+- **⚡ Code snippets** that actually work
+- **🎓 Lessons learned** from projects and experiments
 
-They can also be a valuable resource for others who are looking to learn and expand their knowledge in a specific domain.
+Perfect for developers, AI practitioners, and anyone building with modern tools.
 
+---
 
-## List of TILs
+## 🔥 Latest Discoveries
 
-- [How to create a Python environment](./how_to_create_a_python_env/README.md)
-- [Package management with Conda and Pip](./package_management_conda_and_pip/README.md)
-- [Poetry: Python dependency management and packaging made easy](./poetry_a_python_best_friend/README.md)
-- [Git for beginners](git/git.md)
-- [MLflow: An open source platform for the machine learning lifecycle](./mlfow/README.md)
+### 2025 Entries
+- **[Self-Installing Python Executables with uv](2025-01-24-self-installing-python-executables-with-uv.md)** - Modern Python packaging
+- **[Building Chat Interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)** - Terminal-based AI chat
+- **[Dependent Library Management with Poetry](2025-01-29-dependant-library-with-poetry.md)** - Python dependency mastery
+
+### 2024 Highlights  
+- **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular
+- **[HuggingFace to GGUF Conversion](2024-03-04%20how_to_transform_a_huggingface_model_to_gguf.md)** - Model optimization
+- **[Efficient Git Aliases](2024-07-27-git-alias.md)** - Developer productivity
+- **[UX Micro-Interactions](2024-08-07_ux_micro_interractions.md)** - Design insights
+
+---
+
+## 📚 Complete Collection
+
+### 🤖 AI & Machine Learning
 - [GPT in 60 lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)
-- [How to package a python program into a binary thanks to PyOxidizer](2024-02-05%20PyOxidizer.md)
-- [How to import an 🤗 HuggingFace model for Ollama](2024-03-02%20ollama_import_model.md)
-- [How to use llm command](2024-03-03%20how_to_use_llm_command.md)
-- [How to transform a HuggingFace model to GGUF format](2024-03-04%20how_to_transform_a_huggingface_model_to_gguf.md)
-- [How to server a GGUF model, compatible with OpenAI API using LLamaCpp OpenAI Server](2024-03-04%20llama_cpp_gguf_openai_server.md)
-- [How to Deduplicate a DeltaTable](2024-03-05%20how_to_deduplicate_a_delta_table.md.md)
-- [How to efficiently list all the files recursively at a AWS path and return a Spark DataFrame as result]()
-- [How to create an index of all the ids by file and store in a Delta Table](2024-03-07  create_index_ids_in_delta_table.md)
-- [How to quantize a model with LLamaCPP](2024-03-18-%20how_quantize_a_model_with_lamacpp.md)
-- [How to publish a python package](2024-03-19 how_to_publish_a_python_package)
-- [Create a Modelfile example for Ollama and Zephyr Model](2024-03-21_modelfile_zephyr)
-- [How to publish a Rust cli (Hiramu) to Homebrew](2024-04-14_how_to_publish_to_homebrew.md)
-- [Efficient Git Aliases](2024-07-27-git-alias.md)
-- [Calling an HTTP API from a Databricks Notebook](2024-07-30-call_http_api_from_databricks_notebook.md)
-- [Running a LLama model 3.1 from lama.cpp on Mac Os]()
-- [UX Micro interractions](2024-08-07_ux_micro_interractions.md)
-- [Keep 2 a Git repo synchronized between Bitbucket and Github](2024-09-13-bitbucket-syncc.md)
-- [2025-01-23-dependant-library-with-poetry](2025-01-29-dependant-library-with-poetry.md)
-- [2025-01-24-building-a-chat-interface-using-textual](2025-01-24-building-a-chat-interface-using-textual.md)
-- [2025-01-24-self-installing-python-executables-with-uv](2025-01-24-self-installing-python-executables-with-uv.md)
-- [2025-02-04-]
+- [MLflow: ML lifecycle platform](./mlfow/README.md)
+- [HuggingFace model to Ollama import](2024-03-02%20ollama_import_model.md)
+- [HuggingFace to GGUF format transformation](2024-03-04%20how_to_transform_a_huggingface_model_to_gguf.md)
+- [GGUF model serving with OpenAI API](2024-03-04%20llama_cpp_gguf_openai_server.md)
+- [Model quantization with LLamaCPP](2024-03-18-%20how_quantize_a_model_with_lamacpp.md)
+- [Ollama Modelfile for Zephyr](2024-03-21_modelfile_zephyr)
+- [Running Llama 3.1 on macOS](2024-08-01-running-llama-model-macos.md) *
+
+### 🐍 Python Development
+- [Python environment creation](./how_to_create_a_python_env/README.md)
+- [Package management: Conda vs Pip](./package_management_conda_and_pip/README.md)
+- [Poetry dependency management](./poetry_a_python_best_friend/README.md)
+- [Python packaging with PyOxidizer](2024-02-05%20PyOxidizer.md)
+- [Python package publishing](2024-03-19%20how_to_publish_a_python_package)
+- [Self-installing executables with uv](2025-01-24-self-installing-python-executables-with-uv.md)
+- [Dependent libraries with Poetry](2025-01-29-dependant-library-with-poetry.md)
+- [Chat interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)
+
+### 🛠️ Development Tools
+- [Git for beginners](git/git.md)
+- [Efficient Git aliases](2024-07-27-git-alias.md)
+- [LLM command usage](2024-03-03%20how_to_use_llm_command.md)
+- [Rust CLI publishing to Homebrew](2024-04-14_how_to_publish_to_homebrew.md)
+- [Git repo sync: Bitbucket ↔ GitHub](2024-09-13-bitbucket-syncc.md)
+
+### ☁️ Data Engineering
+- [DeltaTable deduplication](2024-03-05%20how_to_deduplicate_a_delta_table.md.md)
+- [AWS file listing to Spark DataFrame](2024-03-06-aws-spark-file-listing.md) *
+- [Delta Table ID indexing](2024-03-07%20create_index_ids_in_delta_table.md)
+- [Databricks HTTP API calls](2024-07-30-call_http_api_from_databricks_notebook.md)
+
+### 🎨 Design & UX
+- [UX micro-interactions](2024-08-07_ux_micro_interractions.md)
+
+---
+
+## 🔍 Quick Search
+
+**Looking for something specific?**
+
+| **Topic** | **Keywords** | **Best Entries** |
+|-----------|------------|------------------|
+| **AI Models** | LLM, GPT, quantization, GGUF | GPT NumPy, Model quantization, GGUF conversion |
+| **Python** | packaging, poetry, environment | Poetry guide, PyOxidizer, uv executables |
+| **Git** | version control, sync, aliases | Git aliases, Repo sync, Git basics |
+| **Data** | spark, delta, databricks | DeltaTable, Spark DataFrame, Databricks API |
+
+---
+
+## 🚀 Navigation
+
+- **[🏠 Back to Digital Palace](../../README.md)** - Main repository
+- **[🧩 Concepts Hub](../../concepts/README.md)** - Core AI concepts  
+- **[🛠️ Tools Directory](../../tools/ai-tools-master-directory.md)** - AI tools collection
+- **[🎯 Implementation Guides](../../guides/goal-oriented-guides.md)** - Step-by-step tutorials
+
+---
+
+*Items marked with * indicate entries that may need file path verification or completion.
 
 
