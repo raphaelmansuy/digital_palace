@@ -222,11 +222,27 @@ Revolutionize software development with AI
 ### 🎨 **Specialized Applications**
 Domain-specific AI tools and applications
 
-**Voice & Audio**
+
+
+### Voice & Audio
+
 - [whisper](https://github.com/openai/whisper) - Speech recognition
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) - High-quality text-to-speech
 - [Moshi](https://github.com/kyutai-labs/moshi) - Real-time voice conversation
 - [VoiceCraft](https://github.com/jasonppy/VoiceCraft) - Zero-shot speech editing
+- [Kyutai STT](https://kyutai.org/next/stt) - **Streaming speech-to-text** with ultra-low latency, semantic voice activity detection, and real-time batching ([demo](https://unmute.sh/), [GitHub](https://github.com/kyutai-labs/delayed-streams-modeling), [HuggingFace 1B EN/FR](https://huggingface.co/kyutai/stt-1b-en_fr), [HuggingFace 2.6B EN](https://huggingface.co/kyutai/stt-2.6b-en))
+
+    **Key Features:**
+    - Real-time streaming STT (500ms/2.5s delay)
+    - English & French (1B), English-only (2.6B)
+    - Semantic VAD for natural turn-taking
+    - Word-level timestamps, punctuation
+    - PyTorch (research), Rust (production), MLX (Apple Silicon)
+
+    **Why it matters:**
+    - Outperforms Whisper for real-time, high-throughput use cases
+    - Open source, production-ready, and on-device support
+    - [Read the official Kyutai STT overview](https://kyutai.org/next/stt)
 
 **Vision & Multimodal**
 - [CLIP](https://github.com/openai/CLIP) - Vision-language understanding
