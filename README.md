@@ -64,6 +64,7 @@
 
 ## 📖 Table of Contents
 
+
 **🎯 Quick Navigation**
 
 - [🚀 Getting Started](#getting-started)
@@ -71,6 +72,7 @@
 - [🌟 What's Inside](#whats-inside)
 - [🎯 Quick Start Guide](#quick-start-guide)
 - [🔍 How to Search This Repository](#how-to-search-this-repository)
+- [🧩 Concepts Hub](./concepts/README.md)  <!-- Sub hub for concept pages -->
 - [🤝 Contributing](#contributing)
 - [📧 Connect & Support](#connect-support)
 
