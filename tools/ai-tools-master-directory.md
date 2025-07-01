@@ -66,9 +66,7 @@
   - **Use for**: Clean, type-safe LLM programming
   - **Strength**: Modern Python patterns, excellent DX
   
-- **[marvin](https://www.askmarvin.ai/)** - AI toolkit for natural language interfaces
-  - **Use for**: Reliable, scalable AI interfaces
-  - **Strength**: Production-ready patterns
+
   
 - **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse
   - **Use for**: Structured workflows, LLM-powered pipelines
