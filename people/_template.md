@@ -1,4 +1,3 @@
-
 ---
 name: "[Person Name]"
 slug: "[slug-lowercase-hyphens]"
@@ -50,6 +49,7 @@ last_updated: "[YYYY-MM-DD]"
 ## 📖 Biography
 
 [2-3 paragraph biography covering:
+
 - Birth year and background
 - Educational journey
 - Career progression
@@ -133,27 +133,29 @@ last_updated: "[YYYY-MM-DD]"
 ## 🌟 Special Sections (use as applicable)
 
 ### 🏢 Companies & Investments (for entrepreneurs/investors)
+
 - **[Company]** - [Role and description]
 - **[Investment]** - [Details of involvement]
 
 ### 📺 Educational Impact (for educators)
+
 - **[Course/Program]** - [Description and reach]
 - **[Content Type]** - [Educational content created]
 
 ### 🔬 Research Philosophy (for researchers)
+
 - [Research approach and methodology]
 - [Key principles or beliefs]
 
 ### 🌍 Global Impact (for leaders)
+
 - [International influence or initiatives]
 - [Policy or societal impact]
 
 ---
 
-*Last updated: [Date]*  
-*Next review: [Date]*
-
-
+_Last updated: [Date]_  
+_Next review: [Date]_
 
 ---
 
@@ -170,18 +172,21 @@ last_updated: "[YYYY-MM-DD]"
 7. **Use consistent formatting** with other person pages
 
 **Photo Guidelines:**
+
 - Use Wikipedia Commons or official photos when possible
 - Resize to ~256px width for consistency
 - Include alt text for accessibility
 - Credit source if required
 
 **Tag Guidelines:**
+
 - Include role tags: #researcher, #ceo, #founder, #educator
 - Include area tags: #ai-safety, #deep-learning, #computer-vision
 - Include location tags: #stanford, #google, #san-francisco
 - Include affiliation tags: #openai, #tesla, #mit
 
 **Update Schedule:**
+
 - **Monthly**: Recent news and updates
 - **Quarterly**: Links verification
 - **Annually**: Full profile review
