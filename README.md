@@ -11,14 +11,14 @@
 
 ## 🚀 Start Here - Choose Your Path
 
-| 🎯 **I want to...** | ⚡ **Go to** | 🕒 **Time** | 💡 **Result** |
-|---------------------|-------------|-------------|---------------|
-| **🧠 Understand AI** | [Concepts Hub](./concepts/README.md) | 15 min | Clear foundation |
-| **👥 Meet AI Leaders** | [People Hub](./people/README.md) | 5 min | Key figures & bios |
-| **🤖 Try AI Tools** | [Best Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 sec | Working AI now |
-| **💻 Build an App** | [Zero-to-App](./guides/goal-oriented-guides.md#getting-started) | 5 min | Live application |
-| **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator) | 10 min | Structured roadmap |
-| **🛠️ Find Right Tool** | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder) | 2 min | Perfect match |
+| 🎯 **I want to...**         | ⚡ **Go to**                                                               | 🕒 **Time** | 💡 **Result**      |
+| --------------------------- | -------------------------------------------------------------------------- | ----------- | ------------------ |
+| **🧠 Understand AI**        | [Concepts Hub](./concepts/README.md)                                       | 15 min      | Clear foundation   |
+| **👥 Meet AI Leaders**      | [People Hub](./people/README.md)                                           | 5 min       | Key figures & bios |
+| **🤖 Try AI Tools**         | [Best Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 sec      | Working AI now     |
+| **💻 Build an App**         | [Zero-to-App](./guides/goal-oriented-guides.md#getting-started)            | 5 min       | Live application   |
+| **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator)       | 10 min      | Structured roadmap |
+| **🛠️ Find Right Tool**      | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder)      | 2 min       | Perfect match      |
 
 ## 🔥 What's Hot Right Now
 
@@ -33,8 +33,9 @@
 **The core of Digital Palace** - Master AI concepts with intelligent cross-linking.
 
 **Why Start Here?**
+
 - **🧠 Build Understanding**: 70+ concepts from basics to cutting-edge
-- **🔗 Smart Navigation**: Every concept connects to related areas  
+- **🔗 Smart Navigation**: Every concept connects to related areas
 - **🛠️ Tool Integration**: Direct links to relevant tools and guides
 - **⚡ Quick Reference**: Fast lookup for definitions and examples
 
@@ -66,28 +67,31 @@
 ### Pick Your Level
 
 #### 🌱 New to AI
+
 **[Start Here](./learning/README.md#complete-beginner-path)** → **[Try Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools)** → **[First Project](./guides/getting-started.md)**  
-*Time: 2-4 weeks → Working AI app*
+_Time: 2-4 weeks → Working AI app_
 
 #### 🔧 Can Code
+
 **[Developer Path](./learning/README.md#developer-path)** → **[Build Apps](./guides/goal-oriented-guides.md#building-conversational-ai)** → **[Production](./guides/goal-oriented-guides.md#production-deployment)**  
-*Time: 1-2 weeks → Production system*
+_Time: 1-2 weeks → Production system_
 
 #### 🧠 AI Expert
+
 **[2025 Updates](./reference/2025-ai-updates.md)** → **[Cutting-Edge Tools](./tools/ai-tools-master-directory.md#2025-breakthrough-tools)** → **[Advanced Agents](./guides/goal-oriented-guides.md#ai-agents-automation)**  
-*Time: Ongoing → Frontier knowledge*
+_Time: Ongoing → Frontier knowledge_
 
 ### 📚 Core Resources
 
-| Type | Link | Purpose |
-|------|------|---------|
-| **🧩 Concepts** | [Concepts Hub](./concepts/README.md) | Knowledge foundation |
-| **� People** | [People Hub](./people/README.md) | AI/ML influential figures |
-| **�🛠️ Tools** | [AI Tools](./tools/ai-tools-master-directory.md) | Find the right tool |
-| **🎯 Guides** | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials |
-| **📚 Learning** | [Learning Paths](./learning/README.md) | Structured education |
-| **💡 TIL** | [Today I Learned](./personal/til/README.md) | Daily discoveries |
-| **🆕 Latest** | [2025 Updates](./reference/2025-ai-updates.md) | Cutting-edge AI |
+| Type            | Link                                              | Purpose                   |
+| --------------- | ------------------------------------------------- | ------------------------- |
+| **🧩 Concepts** | [Concepts Hub](./concepts/README.md)              | Knowledge foundation      |
+| **� People**    | [People Hub](./people/README.md)                  | AI/ML influential figures |
+| **�🛠️ Tools**   | [AI Tools](./tools/ai-tools-master-directory.md)  | Find the right tool       |
+| **🎯 Guides**   | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials    |
+| **📚 Learning** | [Learning Paths](./learning/README.md)            | Structured education      |
+| **💡 TIL**      | [Today I Learned](./personal/til/README.md)       | Daily discoveries         |
+| **🆕 Latest**   | [2025 Updates](./reference/2025-ai-updates.md)    | Cutting-edge AI           |
 
 ---
 
@@ -140,23 +144,27 @@ digital_palace/
 ## 🌟 What's Inside
 
 ### 🆕 2025 Breakthroughs
+
 - **[o3 & Claude 4](./reference/2025-ai-updates.md)** - Revolutionary reasoning models
 - **[Computer Use Agents](./concepts/computer-use.md)** - AI that controls your screen
 - **[Voice AI](./concepts/voice-ai.md)** - Real-time conversation
 - **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR
 
 ### 🛠️ Tools & Frameworks
+
 - **[158+ AI Tools](./tools/ai-tools-master-directory.md)** - Comprehensive directory
 - **[Framework Comparisons](./tools/framework-comparison.md)** - LangChain vs alternatives
 - **[Production Tools](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise solutions
 
 ### 🎯 Practical Guides
+
 - **[Zero-to-App](./guides/goal-oriented-guides.md)** - Build AI apps fast
 - **[AI Agents](./guides/ai-agents.md)** - Autonomous systems
 - **[RAG Systems](./guides/rag-systems.md)** - AI with your data
 - **[Production Deployment](./guides/deployment.md)** - Scale to users
 
 ### 📚 Learning Resources
+
 - **[Structured Paths](./learning/README.md)** - Beginner to expert
 - **[Research Papers](./reference/research-papers.md)** - Latest findings
 - **[Mental Models](./personal/mental-models/README.md)** - Think like an expert
@@ -165,13 +173,13 @@ digital_palace/
 
 ## 🎯 **Quick Start Guide**
 
-| **Goal**                    | **Best Path**                                                                        | **Time**   | **Outcome**        |
-| --------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------------------ |
-| � **Understand AI concepts** | [Concepts Hub](./concepts/README.md) | 15 minutes | Clear conceptual foundation |
-| �🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo    |
-| 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                | 5 minutes  | Live application   |
-| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                     | 10 minutes | Structured path    |
-| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)         | 2 minutes  | Perfect tool match |
+| **Goal**                     | **Best Path**                                                                        | **Time**   | **Outcome**                 |
+| ---------------------------- | ------------------------------------------------------------------------------------ | ---------- | --------------------------- |
+| � **Understand AI concepts** | [Concepts Hub](./concepts/README.md)                                                 | 15 minutes | Clear conceptual foundation |
+| �🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo             |
+| 💻 **Build an app**          | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                | 5 minutes  | Live application            |
+| 📚 **Learn systematically**  | [Learning Roadmap](./learning/README.md#find-your-learning-path)                     | 10 minutes | Structured path             |
+| 🛠️ **Find tools**            | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)         | 2 minutes  | Perfect tool match          |
 
 ---
 
