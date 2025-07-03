@@ -5,33 +5,32 @@ photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sam_Altman
 birth_year: 1985
 nationality: "American"
 current_role:
-title: "CEO and Co-founder"
-organization: "OpenAI"
-location: "San Francisco, California"
-start_date: "2015"
+  title: "CEO and Co-founder"
+  organization: "OpenAI"
+  location: "San Francisco, California"
+  start_date: "2015"
 links:
-website: "https://blog.samaltman.com/"
-twitter: "https://twitter.com/sama"
-linkedin: "https://www.linkedin.com/in/sam-altman-6b8b459/"
-openai: "https://openai.com/about/"
-ycombinator: "https://www.ycombinator.com/"
+  website: "https://blog.samaltman.com/"
+  twitter: "https://twitter.com/sama"
+  github: ""
+  linkedin: "https://www.linkedin.com/in/sam-altman-6b8b459/"
+  scholar: ""
+  personal: "https://blog.samaltman.com/"
 expertise_areas:
-
-- "Artificial General Intelligence (AGI)"
-- "Startup Strategy & Scaling"
-- "AI Policy & Regulation"
-- "Technology Investment"
-- "Product Strategy"
-- "Public Communication"
-- "Organizational Leadership"
-  categories:
-- "entrepreneur"
-- "ceo"
-- "investor"
-- "ai-leader"
-  last_updated: "2025-07-03"
-  priority: "high"
-  status: "active"
+  - "Artificial General Intelligence (AGI)"
+  - "Startup Strategy & Scaling"
+  - "AI Policy & Regulation"
+  - "Technology Investment"
+  - "Product Strategy"
+  - "Public Communication"
+  - "Organizational Leadership"
+categories:
+  - "entrepreneur"
+  - "ceo"
+  - "investor"
+last_updated: "2025-07-03"
+priority: "high"
+status: "active"
 ---
 
 # Sam Altman

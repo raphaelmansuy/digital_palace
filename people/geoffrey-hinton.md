@@ -8,13 +8,14 @@ current_role:
   title: "Professor Emeritus"
   organization: "University of Toronto, Vector Institute (Co-founder), Former Google Research"
   location: "Toronto, Canada"
-  start_date: "N/A"
+  start_date: null
 links:
   website: "https://vectorinstitute.ai/team/geoffrey-hinton/"
   twitter: "https://twitter.com/geoffreyhinton"
   github: ""
   linkedin: ""
   scholar: "https://scholar.google.com/citations?user=JicYPdAAAAAJ"
+  personal: ""
 expertise_areas:
   - "Deep Learning"
   - "Neural Networks"
