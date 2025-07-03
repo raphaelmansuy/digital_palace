@@ -1,9 +1,4 @@
-# ---
-
-# YAML Frontmatter for Sam Altman
-
 ---
-
 name: "Sam Altman"
 slug: "sam-altman"
 photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sam_Altman_2019.jpg/256px-Sam_Altman_2019.jpg"
@@ -37,7 +32,6 @@ expertise_areas:
   last_updated: "2025-07-03"
   priority: "high"
   status: "active"
-
 ---
 
 # Sam Altman

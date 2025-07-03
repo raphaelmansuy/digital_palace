@@ -1,7 +1,4 @@
-#
-
 ---
-
 name: "Raphaël MANSUY"
 slug: "raphael-mansuy"
 photo_url: "https://avatars.githubusercontent.com/u/1003084?v=4"
@@ -38,7 +35,6 @@ expertise_areas:
   last_updated: "2025-07-03"
   priority: "high"
   status: "active"
-
 ---
 
 # Raphaël MANSUY
