@@ -1,4 +1,4 @@
-# � People Hub - AI/ML Influential Figures
+# 🧍 People Hub - AI/ML Influential Figures
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
