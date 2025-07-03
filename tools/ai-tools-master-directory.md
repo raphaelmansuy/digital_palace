@@ -263,6 +263,7 @@
 | [whisper](https://github.com/openai/whisper) | Speech recognition | ⭐ Industry standard |
 | [MeloTTS](https://github.com/myshell-ai/MeloTTS) | Text-to-speech | High quality, multilingual |
 | [VoiceCraft](https://github.com/jasonppy/VoiceCraft) | Speech editing | Zero-shot editing |
+| [Chatterbox](https://github.com/resemble-ai/chatterbox) | SoTA open-source TTS with emotion exaggeration, watermarking, and ElevenLabs-level quality | ⭐ 9k+ stars, production-grade |
 
 ### UI & Interface Tools
 | Tool | Purpose | Output |
