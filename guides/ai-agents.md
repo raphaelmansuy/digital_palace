@@ -192,12 +192,14 @@ response = agent.step("What did we discuss yesterday about the project?")
 
 **When to use**: Production applications requiring clean, maintainable code with multi-provider support
 
+
 **Key Features:**
 
 - **Lightweight**: Minimal overhead, gets out of your way
 - **Production-ready**: Built-in observability, tracing, and deployment options
 - **Multi-provider**: Works with AWS Bedrock, OpenAI, Anthropic, Ollama, and more
 - **MCP Integration**: Model Context Protocol support for standardized tool interfaces
+- **AWS Bedrock Agent Observability**: [Amazon Bedrock Agent Observability Tools](https://github.com/awslabs/amazon-bedrock-agent-samples/tree/main/examples/agent_observability) and [Langfuse Bedrock Integration](https://langfuse.com/docs/integrations/bedrock/example-bedrock-agents) provide open-source tracing, monitoring, and analytics for Bedrock agents using OpenTelemetry and Langfuse.
 
 ```python
 # Basic Strands Agent
