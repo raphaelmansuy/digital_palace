@@ -19,6 +19,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 ## 🔥 Latest Discoveries
 
+
 ### 2025 Entries
 - **[AWS Stack Deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)** - Cloud infrastructure as code
 - **[Kamal: Deploy Web Apps Anywhere](2025-01-14-kamal-deploy-web-app-anywere.md)** - Modern deployment tool
@@ -26,6 +27,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - **[Building Chat Interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)** - Terminal-based AI chat
 - **[Dependent Library Management with Poetry](2025-01-29-dependant-library-with-poetry.md)** - Python dependency mastery
 - **[Image Generation Prompt for Realistic Photos](2025-07-03-image-generation-realistic.md)** - Create authentic, human-like images with AI
+- **[Capture and Reuse Illustration Style for Variants](2025-07-03-capture-illustration-style.md)** - Extract style from real art and generate new variants
 
 ### 2024 Highlights  
 - **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular
