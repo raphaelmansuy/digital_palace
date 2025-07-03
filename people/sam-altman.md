@@ -28,6 +28,9 @@ categories:
   - "entrepreneur"
   - "ceo"
   - "investor"
+position: "CEO and Co-founder"
+organization: "OpenAI"
+tags: [ceo, entrepreneur, investor]
 last_updated: "2025-07-03"
 priority: "high"
 status: "active"

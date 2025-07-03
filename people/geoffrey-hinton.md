@@ -28,6 +28,9 @@ categories:
   - "educator"
 last_updated: "2025-07-03"
 priority: "high"
+position: "Professor Emeritus"
+organization: "University of Toronto, Vector Institute"
+tags: [deep-learning, researcher, educator]
 status: "active"
 ---
 

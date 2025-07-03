@@ -1,3 +1,39 @@
+
+---
+name: "[Person Name]"
+slug: "[slug-lowercase-hyphens]"
+photo_url: "[link_to_photo_or_placeholder]"
+birth_year: [Year]
+nationality: "[Nationality]"
+position: "[Current Title/Role]"
+organization: "[Current Company/Institution]"
+tags: [tag1, tag2, tag3, area, location, role-type]
+current_role:
+  title: "[Current Title/Role]"
+  organization: "[Current Company/Institution]"
+  location: "[City, Country]"
+  start_date: "[Year or N/A]"
+links:
+  website: "[Personal website or institutional page]"
+  twitter: "[Twitter/X handle or URL]"
+  github: "[GitHub username or URL]"
+  linkedin: "[LinkedIn profile URL]"
+  scholar: "[Google Scholar profile URL]"
+  youtube: "[YouTube channel if applicable]"
+  other: "[Additional relevant links]"
+expertise_areas:
+  - "[Primary expertise area 1]"
+  - "[Primary expertise area 2]"
+  - "[Primary expertise area 3]"
+  - "[Secondary expertise area 1]"
+  - "[Secondary expertise area 2]"
+  - "[Secondary expertise area 3]"
+categories:
+  - "[role-type]"
+  - "[area]"
+last_updated: "[YYYY-MM-DD]"
+---
+
 # [Person Name]
 
 ## 📸 Photo
@@ -117,7 +153,7 @@
 *Last updated: [Date]*  
 *Next review: [Date]*
 
-**Tags**: #[tag1] #[tag2] #[tag3] #[tag4] #[tag5] #[area] #[location] #[role-type]
+
 
 ---
 

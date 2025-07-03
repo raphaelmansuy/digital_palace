@@ -28,6 +28,9 @@ categories:
   - "researcher"
   - "educator"
 last_updated: "2025-07-03"
+position: "Independent AI Researcher & Educator"
+organization: "Self-employed"
+tags: [deep-learning, researcher, educator]
 priority: "high"
 status: "active"
 ---

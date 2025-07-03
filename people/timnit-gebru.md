@@ -28,6 +28,9 @@ categories:
   - "researcher"
   - "educator"
   - "entrepreneur"
+position: "Founder & Executive Director"
+organization: "DAIR Institute"
+tags: [ai-ethics, researcher, entrepreneur]
 last_updated: "2025-07-03"
 priority: "high"
 status: "active"

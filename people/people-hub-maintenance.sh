@@ -11,9 +11,13 @@ echo "========================================"
 PEOPLE_DIR="."
 CURRENT_DATE=$(date "+%B %Y")
 
-# Function to count people files
+# Function to count people files (ignore README, _template, and files starting with _)
 count_people() {
-    find "$PEOPLE_DIR" -name "*.md" -not -name "README.md" -not -name "_template.md" | wc -l
+    find "$PEOPLE_DIR" -name "*.md" \
+        -not -name "README.md" \
+        -not -name "_template.md" \
+        -not -name "DATA-SCHEMA.md" \
+        -not -name '_*' | wc -l
 }
 
 # Function to check for broken links
@@ -45,37 +49,23 @@ update_stats() {
     fi
 }
 
-# Function to validate person pages
+# Function to validate person pages using front matter
 validate_pages() {
-    echo "✅ Validating person pages..."
-    
+    echo "✅ Validating person pages (front matter)..."
     for file in "$PEOPLE_DIR"/*.md; do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
         filename=$(basename "$file")
-        
-        # Check if file has required sections
-        if ! grep -q "## 🎯 Current Role" "$file"; then
-            echo "⚠️  $filename missing Current Role section"
-        fi
-        
-        if ! grep -q "## 📖 Biography" "$file"; then
-            echo "⚠️  $filename missing Biography section"
-        fi
-        
-        if ! grep -q "## 🏆 Key Contributions" "$file"; then
-            echo "⚠️  $filename missing Key Contributions section"
-        fi
-        
-        if ! grep -q "## 🔗 Social Media & Links" "$file"; then
-            echo "⚠️  $filename missing Social Media & Links section"
-        fi
-        
-        if ! grep -q "**Tags**:" "$file"; then
-            echo "⚠️  $filename missing tags"
-        fi
+        # Extract front matter block
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        # Check for required front matter keys
+        for key in name position organization tags; do
+            if ! echo "$frontmatter" | grep -q "^$key:"; then
+                echo "⚠️  $filename missing front matter key: $key"
+            fi
+        done
     done
 }
 
@@ -115,32 +105,31 @@ EOF
     # Add featured profiles (first 4 files alphabetically)
     local count=0
     for file in "$PEOPLE_DIR"/*.md; do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]] || [[ "$file" == *"DATA-SCHEMA.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
         if [ $count -ge 4 ]; then
             break
         fi
-        
         filename=$(basename "$file" .md)
-        title=$(head -1 "$file" | sed 's/# //')
-        
-        # Extract role/organization from current role section
-        local role=$(grep -A 3 "## 🎯 Current Role" "$file" | grep "Position" | sed 's/.*Position\*\*: //' | head -1)
-        local org=$(grep -A 5 "## 🎯 Current Role" "$file" | grep "Organization" | sed 's/.*Organization\*\*: //' | head -1)
-        
+        # Extract front matter
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+        role=$(echo "$frontmatter" | grep '^position:' | sed 's/position:[ ]*//')
+        org=$(echo "$frontmatter" | grep '^organization:' | sed 's/organization:[ ]*//')
+        if [[ -z "$title" ]]; then
+            title="$filename"
+        fi
         if [[ -z "$role" ]]; then
             role="AI/ML Leader"
         fi
         if [[ -z "$org" ]]; then
             org="Various"
         fi
-        
         echo "### 🌟 [$title](./$filename.md)" >> "$temp_file"
         echo "**$role** at $org" >> "$temp_file"
         echo "" >> "$temp_file"
-        
         count=$((count + 1))
     done
     
@@ -154,20 +143,19 @@ EOF
     
     # Sort people files alphabetically and create table
     for file in $(ls "$PEOPLE_DIR"/*.md | sort); do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]] || [[ "$file" == *"DATA-SCHEMA.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
         filename=$(basename "$file" .md)
-        title=$(head -1 "$file" | sed 's/# //')
-        
-        # Extract role and organization
-        local role=$(grep -A 3 "## 🎯 Current Role" "$file" | grep "Position" | sed 's/.*Position\*\*: //' | head -1)
-        local org=$(grep -A 5 "## 🎯 Current Role" "$file" | grep "Organization" | sed 's/.*Organization\*\*: //' | head -1)
-        
-        # Extract first few tags
-        local tags=$(grep "**Tags**:" "$file" | sed 's/.*Tags\*\*: //' | sed 's/#//g' | awk '{print $1 "," $2 "," $3}' | sed 's/,$//g')
-        
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+        role=$(echo "$frontmatter" | grep '^position:' | sed 's/position:[ ]*//')
+        org=$(echo "$frontmatter" | grep '^organization:' | sed 's/organization:[ ]*//')
+        tags=$(echo "$frontmatter" | grep '^tags:' | sed 's/tags:[ ]*//;s/\[//;s/\]//;s/,/, /g')
+        if [[ -z "$title" ]]; then
+            title="$filename"
+        fi
         if [[ -z "$role" ]]; then
             role="AI/ML Expert"
         fi
@@ -177,7 +165,6 @@ EOF
         if [[ -z "$tags" ]]; then
             tags="ai, ml"
         fi
-        
         echo "| [$title](./$filename.md) | $role | $org | \`$tags\` |" >> "$temp_file"
     done
     
@@ -197,15 +184,19 @@ EOF
 
 EOF
     
-    # List researchers (files with #researcher tag)
+    # List researchers (files with researcher/academia tag in front matter)
     for file in "$PEOPLE_DIR"/*.md; do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]] || [[ "$file" == *"DATA-SCHEMA.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
-        if grep -q "#researcher\|#academia" "$file" 2>/dev/null; then
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        if echo "$frontmatter" | grep -q 'tags:.*researcher\|tags:.*academia'; then
             filename=$(basename "$file" .md)
-            title=$(head -1 "$file" | sed 's/# //')
+            title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+            if [[ -z "$title" ]]; then
+                title="$filename"
+            fi
             echo "- 🎓 [$title](./$filename.md)" >> "$temp_file"
         fi
     done
@@ -217,15 +208,19 @@ EOF
 
 EOF
     
-    # List industry leaders
+    # List industry leaders (tags in front matter)
     for file in "$PEOPLE_DIR"/*.md; do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]] || [[ "$file" == *"DATA-SCHEMA.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
-        if grep -q "#ceo\|#entrepreneur\|#industry" "$file" 2>/dev/null; then
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        if echo "$frontmatter" | grep -q 'tags:.*ceo\|tags:.*entrepreneur\|tags:.*industry'; then
             filename=$(basename "$file" .md)
-            title=$(head -1 "$file" | sed 's/# //')
+            title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+            if [[ -z "$title" ]]; then
+                title="$filename"
+            fi
             echo "- 🏢 [$title](./$filename.md)" >> "$temp_file"
         fi
     done
@@ -237,15 +232,19 @@ EOF
 
 EOF
     
-    # List AI safety experts
+    # List AI safety experts (tags in front matter)
     for file in "$PEOPLE_DIR"/*.md; do
-        if [[ "$file" == *"README.md" ]] || [[ "$file" == *"_template.md" ]] || [[ "$file" == *"DATA-SCHEMA.md" ]]; then
+        base=$(basename "$file")
+        if [[ "$base" == README.md ]] || [[ "$base" == _* ]]; then
             continue
         fi
-        
-        if grep -q "#ai-safety\|#ai-ethics\|#ethics\|#fairness" "$file" 2>/dev/null; then
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        if echo "$frontmatter" | grep -q 'tags:.*ai-safety\|tags:.*ai-ethics\|tags:.*ethics\|tags:.*fairness'; then
             filename=$(basename "$file" .md)
-            title=$(head -1 "$file" | sed 's/# //')
+            title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+            if [[ -z "$title" ]]; then
+                title="$filename"
+            fi
             echo "- 🛡️ [$title](./$filename.md)" >> "$temp_file"
         fi
     done
@@ -286,11 +285,14 @@ EOF
 EOF
     
     # Add recent files (last 3 modified)
-    local recent_files=$(ls -t "$PEOPLE_DIR"/*.md | grep -v "README.md\|_template.md\|DATA-SCHEMA.md" | head -3)
-    
+    local recent_files=$(ls -t "$PEOPLE_DIR"/*.md | grep -v "README.md\|^_" | head -3)
     for file in $recent_files; do
         filename=$(basename "$file" .md)
-        title=$(head -1 "$file" | sed 's/# //')
+        frontmatter=$(awk '/^---/{flag=!flag; next} flag' "$file")
+        title=$(echo "$frontmatter" | grep '^name:' | sed 's/name:[ ]*//')
+        if [[ -z "$title" ]]; then
+            title="$filename"
+        fi
         echo "- 🆕 [$title](./$filename.md)" >> "$temp_file"
     done
     

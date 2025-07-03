@@ -1,8 +1,8 @@
-# 🧍 People Hub - AI/ML Influential Figures
+# � People Hub - AI/ML Influential Figures
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-5-blue?style=flat-square)](#alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-7-blue?style=flat-square)](#alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-green?style=flat-square)](#recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#by-category)
 
@@ -20,17 +20,17 @@
 
 ## 🏆 Featured Profiles
 
-### 🌟 [Andrej Karpathy](./andrej-karpathy.md)
-**Independent AI Researcher & Educator** at Self-employed (2023-present)
+### 🌟 ["Andrej Karpathy"](./andrej-karpathy.md)
+**"Independent AI Researcher & Educator"** at "Self-employed"
 
-### 🌟 [Geoffrey Hinton](./geoffrey-hinton.md)
-**Professor Emeritus, University of Toronto** at Vector Institute (Co-founder), Former Google Research
+### 🌟 ["Geoffrey Hinton"](./geoffrey-hinton.md)
+**"Professor Emeritus"** at "University of Toronto, Vector Institute"
 
-### 🌟 [Raphaël MANSUY](./raphaël-mansuy.md)
-**AI/ML Consultant & Digital Palace Creator** at Independent Consultant
+### 🌟 ["Raphaël MANSUY"](./raphaël-mansuy.md)
+**"CTO & Co-founder"** at "ELITIZON Ltd"
 
-### 🌟 [Sam Altman](./sam-altman.md)
-**CEO and Co-founder** at OpenAI
+### 🌟 ["Sam Altman"](./sam-altman.md)
+**"CEO and Co-founder"** at "OpenAI"
 
 ---
 
@@ -38,11 +38,11 @@
 
 | Name | Role | Organization | Tags |
 |------|------|--------------|------|
-| [Andrej Karpathy](./andrej-karpathy.md) | Independent AI Researcher & Educator | Self-employed (2023-present) | `ai, ml` |
-| [Geoffrey Hinton](./geoffrey-hinton.md) | Professor Emeritus, University of Toronto | Vector Institute (Co-founder), Former Google Research | `ai, ml` |
-| [Raphaël MANSUY](./raphaël-mansuy.md) | AI/ML Consultant & Digital Palace Creator | Independent Consultant | `ai, ml` |
-| [Sam Altman](./sam-altman.md) | CEO and Co-founder | OpenAI | `ai, ml` |
-| [Timnit Gebru](./timnit-gebru.md) | Founder & Executive Director | Distributed Artificial Intelligence Research Institute (DAIR) | `ai, ml` |
+| ["Andrej Karpathy"](./andrej-karpathy.md) | "Independent AI Researcher & Educator" | "Self-employed" | `deep-learning,  researcher,  educator` |
+| ["Geoffrey Hinton"](./geoffrey-hinton.md) | "Professor Emeritus" | "University of Toronto, Vector Institute" | `deep-learning,  researcher,  educator` |
+| ["Raphaël MANSUY"](./raphaël-mansuy.md) | "CTO & Co-founder" | "ELITIZON Ltd" | `cto,  ai,  founder` |
+| ["Sam Altman"](./sam-altman.md) | "CEO and Co-founder" | "OpenAI" | `ceo,  entrepreneur,  investor` |
+| ["Timnit Gebru"](./timnit-gebru.md) | "Founder & Executive Director" | "DAIR Institute" | `ai-ethics,  researcher,  entrepreneur` |
 
 ---
 
@@ -51,22 +51,20 @@
 ### 🔬 Researchers & Academics
 *Academic researchers and university professors advancing AI/ML theory*
 
-- 🎓 [Geoffrey Hinton](./geoffrey-hinton.md)
-- 🎓 [Raphaël MANSUY](./raphaël-mansuy.md)
-- 🎓 [Timnit Gebru](./timnit-gebru.md)
+- 🎓 ["Andrej Karpathy"](./andrej-karpathy.md)
+- 🎓 ["Geoffrey Hinton"](./geoffrey-hinton.md)
+- 🎓 ["Timnit Gebru"](./timnit-gebru.md)
 
 ### 🏢 Industry & CEOs
 *Industry leaders and executives driving AI adoption*
 
-- 🏢 [Raphaël MANSUY](./raphaël-mansuy.md)
-- 🏢 [Sam Altman](./sam-altman.md)
+- 🏢 ["Sam Altman"](./sam-altman.md)
+- 🏢 ["Timnit Gebru"](./timnit-gebru.md)
 
 ### 🛡️ AI Safety & Ethics
 *Researchers focused on responsible AI development*
 
-- 🛡️ [Geoffrey Hinton](./geoffrey-hinton.md)
-- 🛡️ [Raphaël MANSUY](./raphaël-mansuy.md)
-- 🛡️ [Timnit Gebru](./timnit-gebru.md)
+- 🛡️ ["Timnit Gebru"](./timnit-gebru.md)
 
 ---
 
@@ -88,7 +86,7 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 5 people
+- **Total Profiles**: 7 people
 - **Categories**: 7 primary categories
 - **Last Updated**: July 2025
 - **Update Frequency**: Monthly maintenance
@@ -98,9 +96,9 @@
 
 *Latest profiles added to the People Hub*
 
-- 🆕 [Raphaël MANSUY](./raphaël-mansuy.md)
-- 🆕 [Timnit Gebru](./timnit-gebru.md)
-- 🆕 [Andrej Karpathy](./andrej-karpathy.md)
+- 🆕 ["Timnit Gebru"](./timnit-gebru.md)
+- 🆕 ["[Person Name]"](./_template.md)
+- 🆕 ["Raphaël MANSUY"](./raphaël-mansuy.md)
 
 ---
 
@@ -133,7 +131,7 @@ Help us expand the People Hub!
 
 ---
 
-*Generated automatically on: Tue Jul  1 19:19:35 HKT 2025*  
+*Generated automatically on: Thu Jul  3 10:22:54 HKT 2025*  
 *Next update: Monthly via maintenance script*
 
 **Legend**: 🎓 Academic • 🏢 Industry • 🛡️ Safety • 🚀 Startup • 📚 Author • 💻 Open Source • 🎤 Communicator
