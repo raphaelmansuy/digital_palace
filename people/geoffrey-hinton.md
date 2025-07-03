@@ -1,6 +1,39 @@
+---
+name: "Geoffrey Hinton"
+slug: "geoffrey-hinton"
+photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Geoffrey_Hinton_at_UofT_%28cropped%29.jpg/256px-Geoffrey_Hinton_at_UofT_%28cropped%29.jpg"
+birth_year: 1947
+nationality: "British-Canadian"
+current_role:
+  title: "Professor Emeritus"
+  organization: "University of Toronto, Vector Institute (Co-founder), Former Google Research"
+  location: "Toronto, Canada"
+  start_date: "N/A"
+links:
+  website: "https://vectorinstitute.ai/team/geoffrey-hinton/"
+  twitter: "https://twitter.com/geoffreyhinton"
+  github: ""
+  linkedin: ""
+  scholar: "https://scholar.google.com/citations?user=JicYPdAAAAAJ"
+expertise_areas:
+  - "Deep Learning"
+  - "Neural Networks"
+  - "Unsupervised Learning"
+  - "Computer Vision"
+  - "Cognitive Science"
+  - "AI Safety and Alignment"
+categories:
+  - "researcher"
+  - "educator"
+last_updated: "2025-07-03"
+priority: "high"
+status: "active"
+---
+
 # Geoffrey Hinton
 
 ## 📸 Photo
+
 ![Geoffrey Hinton](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Geoffrey_Hinton_at_UofT_%28cropped%29.jpg/256px-Geoffrey_Hinton_at_UofT_%28cropped%29.jpg)
 
 ## 🎯 Current Role
@@ -89,7 +122,7 @@ Hinton spent decades working on neural networks when they were unfashionable, pe
 
 ---
 
-*Last updated: July 2025*  
-*Next review: August 2025*
+_Last updated: July 2025_  
+_Next review: August 2025_
 
 **Tags**: #researcher #deep-learning #toronto #turing-award #ai-safety #neural-networks #google #academia

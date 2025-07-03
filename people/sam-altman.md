@@ -1,6 +1,49 @@
+# ---
+
+# YAML Frontmatter for Sam Altman
+
+---
+
+name: "Sam Altman"
+slug: "sam-altman"
+photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sam_Altman_2019.jpg/256px-Sam_Altman_2019.jpg"
+birth_year: 1985
+nationality: "American"
+current_role:
+title: "CEO and Co-founder"
+organization: "OpenAI"
+location: "San Francisco, California"
+start_date: "2015"
+links:
+website: "https://blog.samaltman.com/"
+twitter: "https://twitter.com/sama"
+linkedin: "https://www.linkedin.com/in/sam-altman-6b8b459/"
+openai: "https://openai.com/about/"
+ycombinator: "https://www.ycombinator.com/"
+expertise_areas:
+
+- "Artificial General Intelligence (AGI)"
+- "Startup Strategy & Scaling"
+- "AI Policy & Regulation"
+- "Technology Investment"
+- "Product Strategy"
+- "Public Communication"
+- "Organizational Leadership"
+  categories:
+- "entrepreneur"
+- "ceo"
+- "investor"
+- "ai-leader"
+  last_updated: "2025-07-03"
+  priority: "high"
+  status: "active"
+
+---
+
 # Sam Altman
 
 ## 📸 Photo
+
 ![Sam Altman](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sam_Altman_2019.jpg/256px-Sam_Altman_2019.jpg)
 
 ## 🎯 Current Role
@@ -103,7 +146,7 @@ Before OpenAI, Altman was president of Y Combinator, one of the most successful 
 
 ---
 
-*Last updated: July 2025*  
-*Next review: August 2025*
+_Last updated: July 2025_  
+_Next review: August 2025_
 
 **Tags**: #ceo #openai #entrepreneur #agi #y-combinator #ai-policy #san-francisco #startup #investment

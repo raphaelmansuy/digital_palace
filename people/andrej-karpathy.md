@@ -1,4 +1,3 @@
-
 ---
 name: "Andrej Karpathy"
 slug: "andrej-karpathy"
@@ -141,7 +140,7 @@ Karpathy gained prominence through his work on convolutional neural networks and
 
 ---
 
-*Last updated: July 2025*  
-*Next review: August 2025*
+_Last updated: July 2025_  
+_Next review: August 2025_
 
 **Tags**: #educator #tesla #stanford #computer-vision #neural-networks #autopilot #openai #teacher #youtube #pytorch

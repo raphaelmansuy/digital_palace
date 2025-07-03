@@ -1,3 +1,38 @@
+---
+name: "Timnit Gebru"
+slug: "timnit-gebru"
+photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Timnit_Gebru_2018.jpg/256px-Timnit_Gebru_2018.jpg"
+birth_year: 1983
+nationality: "Eritrean-Ethiopian-American"
+current_role:
+  title: "Founder & Executive Director"
+  organization: "Distributed Artificial Intelligence Research Institute (DAIR)"
+  location: "Remote/Global"
+  start_date: "2021"
+links:
+  website: "https://www.dair-institute.org/"
+  twitter: "https://twitter.com/timnitGebru"
+  github: ""
+  linkedin: "https://www.linkedin.com/in/timnit-gebru-7b3b2b6/"
+  scholar: "https://scholar.google.com/citations?user=lemnAcwAAAAJ"
+  personal: "https://www.timnitgebru.com/"
+expertise_areas:
+  - "AI Ethics & Fairness"
+  - "Algorithmic Bias Detection"
+  - "Computer Vision"
+  - "Social Impact of AI"
+  - "Diversity & Inclusion in Tech"
+  - "Data Science for Social Good"
+  - "Machine Learning Fairness"
+categories:
+  - "researcher"
+  - "educator"
+  - "entrepreneur"
+last_updated: "2025-07-03"
+priority: "high"
+status: "active"
+---
+
 # Timnit Gebru
 
 ## 📸 Photo
@@ -119,7 +154,7 @@ Gebru gained international attention for her groundbreaking research on algorith
 
 ---
 
-*Last updated: July 2025*  
-*Next review: August 2025*
+_Last updated: July 2025_  
+_Next review: August 2025_
 
 **Tags**: #ai-ethics #researcher #dair #google #algorithmic-bias #diversity #computer-vision #fairness #social-justice #stanford
