@@ -1,3 +1,31 @@
+
+---
+name: "Andrej Karpathy"
+slug: "andrej-karpathy"
+photo_url: "https://karpathy.ai/assets/me_new.jpg"
+birth_year: 1986
+nationality: "Slovak-Canadian"
+current_role:
+  title: "Independent AI Researcher & Educator"
+  organization: "Self-employed"
+  location: "San Francisco, California"
+  start_date: "2023"
+links:
+  website: "https://karpathy.ai/"
+  twitter: "https://twitter.com/karpathy"
+  github: "https://github.com/karpathy"
+expertise_areas:
+  - "Deep Learning"
+  - "Computer Vision"
+  - "AI Education"
+categories:
+  - "researcher"
+  - "educator"
+last_updated: "2025-07-03"
+priority: "high"
+status: "active"
+---
+
 # Andrej Karpathy
 
 ## 📸 Photo

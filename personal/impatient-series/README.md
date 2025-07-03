@@ -24,11 +24,11 @@ The "For the Impatient" series is designed for developers who:
 | [API in 30 Minutes](#api-in-30-minutes) | Production AI API | 30 min | Web development |
 
 ### 1-Hour Deep Dives
-| Guide | What You'll Build | Time | Prerequisites |
-|-------|-------------------|------|---------------|
-| [Agents in 1 Hour](#agents-in-1-hour) | Autonomous AI agent | 60 min | LLM experience |
-| [Fine-tuning in 1 Hour](#fine-tuning-in-1-hour) | Custom model | 60 min | ML basics |
-| [Production in 1 Hour](#production-in-1-hour) | Deployed system | 60 min | DevOps basics |
+| Guide                                           | What You'll Build   | Time   | Prerequisites  |
+| ----------------------------------------------- | ------------------- | ------ | -------------- |
+| [Agents in 1 Hour](#agents-in-1-hour)           | Autonomous AI agent | 60 min | LLM experience |
+| [Fine-tuning in 1 Hour](#fine-tuning-in-1-hour) | Custom model        | 60 min | ML basics      |
+| [Production in 1 Hour](#production-in-1-hour)   | Deployed system     | 60 min | DevOps basics  |
 
 ---
 
