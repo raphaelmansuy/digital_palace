@@ -4,6 +4,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 
 ---
 
+
 ## 📖 Learn More
 
 - [AI Agents Guide](../guides/ai-agents.md) — Comprehensive implementation, patterns, and best practices
@@ -14,6 +15,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [Design Patterns for LLM Agents](../reference/techniques/dessign_patterns_for_llm_applications/README.md#agent-patterns)
 - [2025 AI Updates: Agent Communication](../reference/2025-ai-updates.md#1-agent-communication-revolution)
 - [AI Agent Frameworks & Tools](../tools/ai-tools-master-directory.md#ai-agent-frameworks)
+- [Converting ADK Agents for A2A (Google Cloud Blog)](../guides/agent-development/adk-to-a2a-guide.md) 🆕 — Step-by-step guide to agent interoperability
 
 ---
 

@@ -21,11 +21,13 @@
 ### 🎯 Standard Operating Procedures
 - **[AI Agent SOP](./sop_ai_agent.md)** 🟡 - Comprehensive standard operating procedures for AI agent development
 
+
 ### 🔗 Related Core Guides
 - **[AI Agents Main Guide](../ai-agents.md)** - Complete implementation guide
 - **[Best Practices](../best-practices.md)** - Expert recommendations and patterns
 - **[Business AI](../business-ai.md)** - Enterprise-focused AI solutions
 - **[Deployment](../deployment.md)** - Production deployment strategies
+- **[ADK to A2A Integration Guide](./adk-to-a2a-guide.md)** 🆕 - Convert Google ADK/MCP agents for A2A interoperability
 
 ### 🛠️ Tools & Frameworks
 - **[AutoGen Framework](../../reference/techniques/autogen/README.md)** - Microsoft's multi-agent framework

@@ -4,6 +4,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 ---
 
+
 ## 📖 Learn More
 
 - [Agent Communication Revolution (2025)](../reference/2025-ai-updates.md#1-agent-communication-revolution)
@@ -11,6 +12,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 - [MCP Protocol](./mcp.md) — Model Context Protocol for AI applications
 - [AutoGen Framework](../reference/techniques/autogen/README.md) — Multi-agent orchestration
 - [CAMEL Communication](../reference/techniques/camel/README.md) — Role-playing agents
+- [Converting ADK Agents for A2A (Google Cloud Blog)](../guides/agent-development/adk-to-a2a-guide.md) 🆕 — Step-by-step guide to agent interoperability
 
 ---
 
