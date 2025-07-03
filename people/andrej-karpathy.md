@@ -1,7 +1,8 @@
 # Andrej Karpathy
 
 ## 📸 Photo
-![Andrej Karpathy](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Andrej_Karpathy_2016.jpg/256px-Andrej_Karpathy_2016.jpg)
+
+![Andrej Karpathy](https://karpathy.ai/assets/me_new.jpg)
 
 ## 🎯 Current Role
 
