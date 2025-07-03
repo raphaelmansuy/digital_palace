@@ -107,7 +107,20 @@
 - **Status**: Production-ready, officially supported by Google
 - **Links**: [Docs](https://google.github.io/adk-docs/) | [Python SDK](https://github.com/google/adk-python) | [Java SDK](https://github.com/google/adk-java) | [Samples](https://github.com/google/adk-samples)
 
-#### **[Quantalogic](https://github.com/quantalogic/quantalogic)** ⭐
+
+#### **[Motia](https://github.com/MotiaDev/motia)** 🆕⭐
+- **Purpose**: Unified backend framework for APIs, events, background jobs, and AI agents
+- **Best for**: Building event-driven, multi-language (TypeScript, Python) backends with integrated observability and state management
+- **Key Features**:
+  - Step-based architecture (like React components for backends)
+  - Write steps in TypeScript, Python, and more (multi-language support)
+  - Unified state management and end-to-end tracing
+  - Event-driven workflows (emit/subscribe model)
+  - Built-in observability, logging, and visual debugger (Workbench)
+  - One-click deployment, hot reload, and real-time streams
+- **Status**: Actively developed, open source (MIT)
+- **Quickstart**: `npx motia@latest create -i` then `npx motia dev`
+- **Links**: [GitHub](https://github.com/MotiaDev/motia) | [Docs](https://motia.dev/docs) | [Quick Start](https://motia.dev/docs/getting-started/quick-start) | [Discord](https://discord.gg/EnfDRFYW)
 
 - **Purpose**: Powerful agentic framework with ReAct agents and conversational AI
 - **Best for**: Complex automation, code generation, multi-agent systems

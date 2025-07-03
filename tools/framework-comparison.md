@@ -7,6 +7,7 @@
 | Framework | Best For | Language | Learning Curve | Community | Production Ready |
 |-----------|----------|----------|----------------|-----------|------------------|
 | **LangChain** | RAG, Agents, Chains | Python, JS | 🟡 Medium | 🟢 Large | ✅ Yes |
+| **Motia** | Unified APIs, events, agents, jobs | TypeScript, Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
 | **LlamaIndex** | Data ingestion, RAG | Python | 🟢 Easy | 🟡 Growing | ✅ Yes |
 | **Docling** | Document parsing, RAG, multimodal, integrations | Python, CLI | 🟢 Easy | 🟡 Growing | ✅ Yes |
 | **AutoGen** | Multi-agent systems | Python | 🔴 Hard | 🟡 Growing | ⚠️ Experimental |
@@ -15,6 +16,31 @@
 | **Semantic Kernel** | Enterprise AI | C#, Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
 | **Fabric** | Prompt management, workflow automation, Patterns, CLI/GUI | Go, JS | 🟢 Easy | 🟢 Large | ✅ Yes |
 
+
+
+## 🎯 **Motia: Unified Backend for APIs, Events & Agents**
+
+**Best for:** Building event-driven, multi-language (TypeScript, Python) backends with integrated observability, state management, and agent orchestration
+
+**Pros:**
+- 🧱 Step-based architecture (like React components for backends)
+- 🌍 Multi-language: Write steps in TypeScript, Python, and more
+- ⚡ Unified state, event-driven workflows, and built-in observability
+- 👁️ Visual debugger (Workbench), hot reload, and real-time streams
+- 🚀 One-click deployment, open source (MIT)
+
+**Cons:**
+- 🆕 Ecosystem is newer than LangChain, Temporal, or Celery
+- 🟡 Some advanced integrations are evolving
+
+**Use Cases:**
+- Unified backend for APIs, background jobs, and AI agents
+- Event-driven automation and workflow orchestration
+- Multi-language agent systems with shared state
+
+**Docs:** [GitHub](https://github.com/MotiaDev/motia) | [Official Docs](https://motia.dev/docs) | [Quick Start](https://motia.dev/docs/getting-started/quick-start)
+
+---
 
 ## 🎯 **Fabric: Prompt Management & Workflow Automation**
 
