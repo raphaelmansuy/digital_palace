@@ -25,6 +25,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - **[Self-Installing Python Executables with uv](2025-01-24-self-installing-python-executables-with-uv.md)** - Modern Python packaging
 - **[Building Chat Interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)** - Terminal-based AI chat
 - **[Dependent Library Management with Poetry](2025-01-29-dependant-library-with-poetry.md)** - Python dependency mastery
+- **[Image Generation Prompt for Realistic Photos](2025-07-03-image-generation-realistic.md)** - Create authentic, human-like images with AI
 
 ### 2024 Highlights  
 - **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular
@@ -82,6 +83,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 ### 🎨 Design & UX
 - [UX micro-interactions](2024-08-07_ux_micro_interractions.md)
+- [Image generation prompt for realistic photos](2025-07-03-image-generation-realistic.md)
 
 ---
 
