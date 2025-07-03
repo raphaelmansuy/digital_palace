@@ -127,11 +127,13 @@ def generate_text(model, prompt_tokens, max_tokens=100):
 - **[MLX-NN](https://github.com/ml-explore/mlx/tree/main/python/mlx/nn)** - Neural network building blocks
 - **[MLX-Optimizers](https://github.com/ml-explore/mlx/tree/main/python/mlx/optimizers)** - Optimization algorithms
 
+
 ### **MLX-Powered Tools**
-- **[MLX-LM](https://github.com/ml-explore/mlx-examples/tree/main/llms)** - Large language model inference
-- **[MLX Server](https://www.mlxserver.com/)** - Easy MLX development server
-- **[MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server)** - OpenAI-compatible API server
-- **[Chat with MLX](https://github.com/madroidmaq/chat-with-mlx)** - Native RAG on macOS
+- **[MLX-LM](https://github.com/ml-explore/mlx-examples/tree/main/llms)** – Large language model inference
+- **[MLX-LM-LoRA](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora)** – Fine-tune large language models (LLMs) on Apple Silicon using LoRA, DoRA, full-precision, SFT, DPO, CPO, ORPO, RLHF, and GRPO. Supports a wide range of models (Llama, Qwen, Gemma, etc.) and provides notebook examples for advanced training and preference optimization. Highly recommended for efficient, on-device LLM training and experimentation.
+- **[MLX Server](https://www.mlxserver.com/)** – Easy MLX development server
+- **[MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server)** – OpenAI-compatible API server
+- **[Chat with MLX](https://github.com/madroidmaq/chat-with-mlx)** – Native RAG on macOS
 
 ### **Model Conversion Tools**
 - **[MLX-Convert](https://github.com/ml-explore/mlx-examples/tree/main/convert)** - Convert models to MLX format

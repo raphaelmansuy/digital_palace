@@ -12,12 +12,15 @@
 - **Low-Rank Factorization**: Decompose weight matrices
 - **Weight Sharing**: Share parameters across model components
 
-### **Optimization Goals**
 
+### **Optimization Goals**
 - **Model Size**: Reduce storage and memory requirements
 - **Inference Speed**: Faster prediction times
 - **Energy Efficiency**: Lower power consumption
 - **Hardware Compatibility**: Enable deployment on resource-constrained devices
+
+### **Apple Silicon LLM Compression & Fine-Tuning**
+- **[MLX-LM-LoRA](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora)** – Fine-tune and compress large language models on Apple Silicon using LoRA, DoRA, and advanced preference optimization. Integrates with MLX for efficient, on-device training and supports quantization-aware fine-tuning.
 
 ## 🛠️ Popular Tools & Frameworks
 

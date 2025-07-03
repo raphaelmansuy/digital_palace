@@ -13,11 +13,12 @@ Fine-tuning is the process of adapting pre-trained models to specific tasks, dom
 
 ---
 
-## 🛠️ Key Frameworks & Tools
 
+## 🛠️ Key Frameworks & Tools
 - [Unsloth](https://github.com/unslothai/unsloth) — 2x faster, 50% less memory fine-tuning
 - [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) — Streamlined fine-tuning toolkit
 - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) — Easy-to-use fine-tuning framework
+- [MLX-LM-LoRA](https://github.com/Goekdeniz-Guelmez/mlx-lm-lora) — Fine-tune LLMs on Apple Silicon with LoRA, DoRA, SFT, DPO, and more. Supports efficient, on-device training and advanced preference optimization.
 - [LoRA](https://arxiv.org/abs/2106.09685) — Low-Rank Adaptation technique
 - [QLoRA](https://arxiv.org/abs/2305.14314) — Quantized LoRA for efficient training
 
