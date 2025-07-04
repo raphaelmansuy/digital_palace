@@ -1,7 +1,14 @@
 # Agent Protocols
 
 
+
 Agent protocols are standardized communication frameworks that enable AI agents to interact, collaborate, and coordinate effectively. These protocols define how agents exchange information, negotiate tasks, and maintain consistency across multi-agent systems.
+
+---
+
+**[Vertex AI RAG Engine Overview – Google Cloud Documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-overview)** 📝 — *Official guide to Vertex AI RAG Engine, Google Cloud’s managed platform for Retrieval-Augmented Generation (RAG). Explains how to build context-augmented LLM applications using data ingestion, transformation, embedding, indexing, retrieval, and generation. Essential for designing enterprise-grade, context-aware agentic systems that leverage private and public knowledge sources for more accurate, grounded responses.*
+
+**[A guide to Google ADK and MCP integration with an external server – Google Cloud Blog](https://cloud.google.com/blog/topics/developers-practitioners/use-google-adk-and-mcp-with-an-external-server)** 📝 — *Comprehensive walkthrough for connecting Google ADK agents to external Model Context Protocol (MCP) servers. Explains real-time communication using Server-Sent Events (SSE) and the new Streamable HTTP protocol, with practical code examples and security considerations. Essential for developers building robust, interoperable multi-agent systems that leverage external tools and data.*
 
 ---
 
