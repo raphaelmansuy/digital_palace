@@ -182,6 +182,7 @@
 | [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) | Natural language computer interface | General automation |
 | [Screen Agents](https://github.com/niuzaisheng/ScreenAgent)           | Visual computer control             | GUI automation     |
 | [SWE Agents](https://github.com/princeton-nlp/SWE-agent)              | Software engineering                | Code-related tasks |
+| [MCP Remote MacOS Use](https://github.com/baryhuang/mcp-remote-macos-use) | Full remote Mac control via MCP, no extra API keys, Claude Desktop integration, WebRTC support | macOS remote desktop, agentic computer use |
 
 #### Memory & Learning
 

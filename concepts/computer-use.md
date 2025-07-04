@@ -55,7 +55,20 @@
 - **[Blue Prism](https://www.blueprism.com/)** - Intelligent automation software
 - **[Microsoft Power Automate Desktop](https://powerautomate.microsoft.com/)** - Low-code desktop automation
 
+
 ## 🏗️ Implementation Examples
+
+### **MCP Remote MacOS Use**
+
+**[MCP Remote MacOS Use](https://github.com/baryhuang/mcp-remote-macos-use)** — Open-source MCP server for full remote Mac control by AI agents. No extra API keys required, integrates with Claude Desktop, supports WebRTC for low-latency screen sharing, and works with any LLM via MCP. Ideal for agentic computer use and production-ready automation on macOS.
+
+**Key Features:**
+- Native macOS experience, no extra software needed on target Mac (just enable Screen Sharing)
+- Universal LLM compatibility (OpenAI, Anthropic, etc.)
+- Secure, open architecture, MIT licensed
+- Example use cases: AI recruiter, marketing automation, research automation
+
+See also: [Official GitHub repository](https://github.com/baryhuang/mcp-remote-macos-use)
 
 ### **Claude Computer Use Integration**
 

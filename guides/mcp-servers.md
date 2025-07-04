@@ -125,6 +125,13 @@ Add or update the `mcpServers` key in your settings JSON. Example:
 
 ## 🛠️ **Popular MCP Servers**
 
+
+### **🖥️ Remote Desktop & Computer Use**
+
+| Server | Purpose | Installation | Use Case |
+| ------ | ------- | ------------ | ------- |
+| **[MCP Remote MacOS Use](https://github.com/baryhuang/mcp-remote-macos-use)** | Full remote Mac control via MCP, no extra API keys, Claude Desktop integration, WebRTC support | See [GitHub](https://github.com/baryhuang/mcp-remote-macos-use) | Agentic computer use, macOS automation |
+
 ### **🗂️ File & System Management**
 
 | Server                                                            | Purpose              | Installation                                  | Use Case                         |
