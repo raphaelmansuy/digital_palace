@@ -4,12 +4,14 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 
 ---
 
-## 📖 Learn More
+
+## � Learn More
 
 - [Model Context Protocol Overview](../reference/core-technologies.md#model-context-protocol-mcp)
 - [MCP Official Documentation](https://modelcontextprotocol.io/)
 - [MCP Agent Guide](../guides/mcp-servers.md)
 - [2025 Breakthrough Tools - MCP Ecosystem](../tools/ai-tools-master-directory.md#model-context-protocol-mcp-ecosystem)
+- **[Google Codelab – Agent Stack in Action: ADK, A2A, MCP on Google Cloud](https://codelabs.developers.google.com/instavibe-adk-multi-agents/instructions#0)** 🧑‍💻 — *Practical lab for building and deploying MCP-powered multi-agent systems on Google Cloud. Covers agent orchestration, context, and production.*
 
 ---
 

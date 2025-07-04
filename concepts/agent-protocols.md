@@ -5,7 +5,8 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 ---
 
 
-## 📖 Learn More
+
+## � Learn More
 
 - [Agent Communication Revolution (2025)](../reference/2025-ai-updates.md#1-agent-communication-revolution)
 - [A2A Protocol (Google)](https://github.com/google/A2A/) — Agent-to-agent communication
@@ -13,6 +14,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 - [AutoGen Framework](../reference/techniques/autogen/README.md) — Multi-agent orchestration
 - [CAMEL Communication](../reference/techniques/camel/README.md) — Role-playing agents
 - [Converting ADK Agents for A2A (Google Cloud Blog)](../guides/agent-development/adk-to-a2a-guide.md) 🆕 — Step-by-step guide to agent interoperability
+- **[Google Codelab – Agent Stack in Action: ADK, A2A, MCP on Google Cloud](https://codelabs.developers.google.com/instavibe-adk-multi-agents/instructions#0)** 🧑‍💻 — *Hands-on lab for building collaborative multi-agent systems with Google's ADK, MCP, and A2A. Covers orchestration, context management, and production deployment.*
 
 ---
 

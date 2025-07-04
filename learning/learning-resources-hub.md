@@ -311,6 +311,7 @@
    - Knowledge graph building
    - Citation management
 
+
 #### Advanced Projects (3-6 months)
 1. **Fine-tuned Domain Model**
    - Collect domain-specific data
@@ -321,6 +322,8 @@
    - Coordinated AI agents
    - Tool use and planning
    - Complex task automation
+   - **Hands-on Lab:** [Google Codelab – Agent Stack in Action: ADK, A2A, MCP on Google Cloud](https://codelabs.developers.google.com/instavibe-adk-multi-agents/instructions#0)  
+     *Build a collaborative multi-agent system using Google's ADK, Model Context Protocol, and A2A. Covers agent orchestration, context management, and production deployment on Google Cloud. Highly recommended for advanced practitioners.*
 
 ### Competitions & Challenges
 
