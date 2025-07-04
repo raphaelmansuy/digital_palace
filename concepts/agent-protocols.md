@@ -10,6 +10,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 
 
+
 ## 📚 Learn More
 
 - [Agent Communication Revolution (2025)](../reference/2025-ai-updates.md#1-agent-communication-revolution)
@@ -23,6 +24,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 - **[Using Google’s Agent Development Kit (ADK) with MCP Toolbox and Neo4j – Google Cloud Community Article](https://www.googlecloudcommunity.com/gc/Cloud-Product-Articles/Using-Google-s-Agent-Development-Kit-ADK-with-MCP-Toolbox-and/ta-p/898512)** 📝 — *In-depth tutorial and architecture guide for building multi-agent systems with ADK, MCP Toolbox, and Neo4j. Includes code, deployment, and real-world use cases on Google Cloud.*
 - **[Google Codelab – Travel Agent with MCP Toolbox and ADK](https://codelabs.developers.google.com/travel-agent-mcp-toolbox-adk#0)** 🧑‍💻 — *Practical codelab for building a travel agent using ADK and MCP Toolbox for Databases. Covers database setup, agent design, and deployment on Google Cloud. Suitable for all levels.*
 - **[A2A, MCP, and ADK: Clarifying Their Roles in the AI Ecosystem – Google Cloud Community Blog](https://www.googlecloudcommunity.com/gc/Community-Blogs/A2A-MCP-and-ADK-Clarifying-Their-Roles-in-the-AI-Ecosystem/ba-p/911235)** 📝 — *Clear, up-to-date guide comparing A2A, MCP, and ADK. Explains their differences, synergy, and how to architect modern agentic systems using all three. Highly recommended for understanding the agent stack.*
+- **[MCP Toolbox for Databases now supports Model Context Protocol – Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/mcp-toolbox-for-databases-now-supports-model-context-protocol)** 📝 — *Official announcement and technical overview of MCP Toolbox for Databases with MCP support. Explains how to connect agents to enterprise data securely and use MCP/ADK together for production systems.*
 
 ---
 
