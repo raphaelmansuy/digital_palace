@@ -9,6 +9,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 
 
+
 ## 📚 Learn More
 
 - [Agent Communication Revolution (2025)](../reference/2025-ai-updates.md#1-agent-communication-revolution)
@@ -21,6 +22,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 - **[Google Codelab – Your First Agent with ADK](https://codelabs.developers.google.com/your-first-agent-with-adk#0)** 🧑‍💻 — *Step-by-step beginner lab for building your first AI agent using Google's Agent Development Kit (ADK). Covers agent basics, project setup, and deployment on Google Cloud.*
 - **[Using Google’s Agent Development Kit (ADK) with MCP Toolbox and Neo4j – Google Cloud Community Article](https://www.googlecloudcommunity.com/gc/Cloud-Product-Articles/Using-Google-s-Agent-Development-Kit-ADK-with-MCP-Toolbox-and/ta-p/898512)** 📝 — *In-depth tutorial and architecture guide for building multi-agent systems with ADK, MCP Toolbox, and Neo4j. Includes code, deployment, and real-world use cases on Google Cloud.*
 - **[Google Codelab – Travel Agent with MCP Toolbox and ADK](https://codelabs.developers.google.com/travel-agent-mcp-toolbox-adk#0)** 🧑‍💻 — *Practical codelab for building a travel agent using ADK and MCP Toolbox for Databases. Covers database setup, agent design, and deployment on Google Cloud. Suitable for all levels.*
+- **[A2A, MCP, and ADK: Clarifying Their Roles in the AI Ecosystem – Google Cloud Community Blog](https://www.googlecloudcommunity.com/gc/Community-Blogs/A2A-MCP-and-ADK-Clarifying-Their-Roles-in-the-AI-Ecosystem/ba-p/911235)** 📝 — *Clear, up-to-date guide comparing A2A, MCP, and ADK. Explains their differences, synergy, and how to architect modern agentic systems using all three. Highly recommended for understanding the agent stack.*
 
 ---
 
