@@ -21,6 +21,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
+- **[Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md)** - Manage environment variables and secrets easily in Python
 - **[AWS Stack Deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)** - Cloud infrastructure as code
 - **[Kamal: Deploy Web Apps Anywhere](2025-01-14-kamal-deploy-web-app-anywere.md)** - Modern deployment tool
 - **[Self-Installing Python Executables with uv](2025-01-24-self-installing-python-executables-with-uv.md)** - Modern Python packaging
