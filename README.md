@@ -20,6 +20,7 @@
 | **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator)       | 10 min      | Structured roadmap |
 | **🛠️ Find Right Tool**      | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder)      | 2 min       | Perfect match      |
 
+
 ## 🔥 What's Hot Right Now
 
 - **[OpenAI o3 & Claude 4](./reference/2025-ai-updates.md)** - Revolutionary reasoning models
@@ -27,6 +28,7 @@
 - **[Voice AI Breakthrough](./concepts/voice-ai.md)** - Real-time conversation
 - **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR guide
 - **[Today I Learned](./personal/til/README.md)** - Daily AI discoveries & insights
+- **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** - In-depth analysis of ambient agents, agent UX, tools, and training
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation
 

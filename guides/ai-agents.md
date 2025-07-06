@@ -637,11 +637,13 @@ class MultiModalAgent:
 - Explore agent-environment interfaces
 - Research emerging agent patterns
 
+
 ### Learning Resources
 - [Berkeley Course on LLM Agents](https://llmagents-learning.org/sp25)
 - [Cognitive Architecture Wikipedia](https://en.wikipedia.org/wiki/Cognitive_architecture)
 - [Microsoft Agentic Architecture](https://techcommunity.microsoft.com/blog/machinelearningblog/baseline-agentic-ai-systems-architecture/4207137)
 - [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
+- [The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/) – In-depth, up-to-date analysis of ambient agents, agent UX, tools, and training
 
 ---
 

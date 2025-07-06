@@ -6,6 +6,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 
 
 
+
 ## � Learn More
 
 - [AI Agents Guide](../guides/ai-agents.md) — Comprehensive implementation, patterns, and best practices
@@ -18,6 +19,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [AI Agent Frameworks & Tools](../tools/ai-tools-master-directory.md#ai-agent-frameworks)
 - [Converting ADK Agents for A2A (Google Cloud Blog)](../guides/agent-development/adk-to-a2a-guide.md) 🆕 — Step-by-step guide to agent interoperability
 - **[Google Codelab – Agent Stack in Action: ADK, A2A, MCP on Google Cloud](https://codelabs.developers.google.com/instavibe-adk-multi-agents/instructions#0)** 🧑‍💻 — *End-to-end hands-on lab for building, orchestrating, and deploying collaborative AI agents using Google's ADK, MCP, and A2A protocols.*
+- **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** — *In-depth, up-to-date analysis of ambient agents, agent UX, tools, and training*
 
 ---
 
