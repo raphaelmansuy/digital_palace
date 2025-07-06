@@ -68,6 +68,11 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [AG-UI (Agent Graphical User Interface)](./ag-ui.md) — Next-generation interface design for human-agent interaction, multi-agent orchestration, and real-time agent management. Related: [AI Agents](./ai-agents.md), [Agent Communication](./agent-communication.md).
 - [Workflow Automation](./workflow-automation.md) — AI-powered business process automation, RPA integration, and decision automation. Related: [AI Agents](./ai-agents.md), [Tool Use](./tool-use.md).
 
+
+### 🧠 **Advanced Topic: Context Engineering for Agents**
+
+- **[Context Engineering for Agents (Lance Martin, 2025)](https://rlancemartin.github.io/2025/06/23/context_engineering/)** — In-depth guide to context engineering strategies for LLM agents: writing, selecting, compressing, and isolating context. Covers practical patterns, pitfalls, and state-of-the-art research. Highly recommended for advanced users and agent developers.
+
 ### 📚 **Resources & Research**
 
 - [Technical Articles](./technical-articles.md) — Deep dives, research, and advanced guides. See [LLMs](./llms.md), [Prompt Engineering](./prompt-engineering.md).
