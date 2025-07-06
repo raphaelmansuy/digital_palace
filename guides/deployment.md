@@ -473,7 +473,12 @@ groups:
 
 ---
 
+
 ## 🔒 Security & Compliance
+
+### Sandboxing & Isolation
+
+- **[Microsandbox](https://github.com/microsandbox/microsandbox)** — Secure, instant microVM sandboxing for untrusted user/AI code. Supports Python, JS, Rust, C, and more. MCP-ready, open source. Recommended for production agent infrastructure and robust isolation.
 
 ### Authentication & Authorization
 

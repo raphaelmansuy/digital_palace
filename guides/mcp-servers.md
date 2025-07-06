@@ -65,11 +65,13 @@ Add or update the `mcpServers` key in your settings JSON. Example:
 }
 ```
 
+
 **Tips:**
 - You can manage and scan MCP server configs across apps (VS Code, Cursor, Claude, etc.) using [MCP Tools](https://github.com/f/mcptools):
   - `mcp configs scan` — find all configs
   - `mcp configs set vscode my-server npx -y @modelcontextprotocol/server-filesystem ~` — add/update a server
 - For more, see [MCP official docs](https://modelcontextprotocol.io/) and [MCP Tools](https://github.com/f/mcptools).
+- For secure, production-ready sandboxing of untrusted user/AI code, see [Microsandbox](https://github.com/microsandbox/microsandbox) — supports MCP, Python, JS, Rust, C, and more.
 
 ---
 

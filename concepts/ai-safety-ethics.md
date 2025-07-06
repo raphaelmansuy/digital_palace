@@ -14,6 +14,7 @@ AI Safety and Ethics encompasses the principles, practices, and frameworks for d
 
 ---
 
+
 ## 🛠️ Key Frameworks & Tools
 
 - [Constitutional AI](https://www.anthropic.com/constitutional-ai) — Training AI to be helpful, harmless, and honest
@@ -21,6 +22,7 @@ AI Safety and Ethics encompasses the principles, practices, and frameworks for d
 - [What-If Tool](https://pair-code.github.io/what-if-tool/) — Google's tool for ML fairness
 - [Responsible AI Toolkit](https://responsibleaitoolkit.ai/) — Microsoft's responsible AI resources
 - [AI Ethics Checklist](https://www.deon.io/) — Ethics checklist for data scientists
+- [Microsandbox](https://github.com/microsandbox/microsandbox) — Secure, open-source microVM sandboxing for running untrusted user/AI code. Recommended for agent safety, robust isolation, and production deployment.
 
 ---
 

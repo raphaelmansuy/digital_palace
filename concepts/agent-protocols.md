@@ -36,6 +36,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 - [A2A Protocol](https://github.com/google/A2A/) — Google's agent-to-agent communication standard
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — AI application interfaces
+- [Microsandbox](https://github.com/microsandbox/microsandbox) — Secure, MCP-ready sandboxing for agent code execution (Python, JS, Rust, C, more). Open source, production-grade.
 - [AutoGen](https://microsoft.github.io/autogen/) — Conversational multi-agent framework
 - [CAMEL](../reference/techniques/camel/README.md) — Communicative agents for role-playing
 - [CrewAI](https://github.com/joaomdmoura/crewAI) — Multi-agent collaboration platform

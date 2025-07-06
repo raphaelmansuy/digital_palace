@@ -183,6 +183,7 @@
 | [Screen Agents](https://github.com/niuzaisheng/ScreenAgent)           | Visual computer control             | GUI automation     |
 | [SWE Agents](https://github.com/princeton-nlp/SWE-agent)              | Software engineering                | Code-related tasks |
 | [MCP Remote MacOS Use](https://github.com/baryhuang/mcp-remote-macos-use) | Full remote Mac control via MCP, no extra API keys, Claude Desktop integration, WebRTC support | macOS remote desktop, agentic computer use |
+| [Microsandbox](https://github.com/microsandbox/microsandbox)           | Secure, instant microVM sandboxing for untrusted user/AI code. Supports Python, JS, Rust, C, and more. MCP-ready, open source. | Secure agent execution, production AI infra |
 
 #### Memory & Learning
 
