@@ -27,6 +27,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Computer Use & Interface Control](./computer-use.md) — AI systems that directly control computer interfaces, applications, and operating systems through visual understanding and automated actions. Related: [AI Agents](./ai-agents.md), [Computer Vision](./computer-vision.md).
 - [Guided LLM Generation (Structured Output)](./guided-llm-generation.md) — Techniques for schema-based, XML/JSON, and structured output generation with LLMs. Covers structured prompting, schema introspection, and feedback-driven refinement for reliable, interpretable, and secure outputs. See also: [Prompt Engineering](./prompt-engineering.md), [Datasets](./datasets.md).
 
+
 ### 🔍 **Data & Knowledge Systems**
 
 - [RAG (Retrieval-Augmented Generation)](./rag.md) — Combine LLMs with external knowledge, vector search, and knowledge graphs. Related: [Embeddings](./embeddings.md), [Datasets](./datasets.md).
@@ -35,6 +36,9 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Context Management](./context-management.md) — Handling information flow in AI systems with limited context windows. See [AI Agents](./ai-agents.md).
 - [Datasets](./datasets.md) — Data for training, evaluation, and benchmarking. See [RAG](./rag.md), [Fine-Tuning](./fine-tuning.md).
 - [Synthetic Data Generation](./synthetic-data.md) — Creating artificial datasets for training, privacy protection, and data augmentation. Related: [Datasets](./datasets.md), [Fine-Tuning](./fine-tuning.md).
+
+- [SkyReels-V2 (Infinite-Length Video Generation)](./skyreels-v2.md) — SOTA open-source autoregressive diffusion model for long-form, high-quality video generation. See [Multimodal AI](./multimodal-ai.md), [Synthetic Data Generation](./synthetic-data.md).
+
 
 ### 🛠️ **Development & Engineering**
 
@@ -46,6 +50,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Observability](./observability.md) — Monitoring, debugging, and analytics for AI systems. Related: [Production Deployment](./production-deployment.md).
 - [MLOps](./mlops.md) — Model lifecycle management, CI/CD for ML, versioning, and governance. See [Production Deployment](./production-deployment.md), [Observability](./observability.md).
 - [AI Testing & Validation](./ai-testing.md) — Testing methodologies, evaluation frameworks, bias detection, and quality assurance for AI systems. Related: [Observability](./observability.md), [AI Safety & Ethics](./ai-safety-ethics.md).
+- [App Template (Mckay's)](./app-template.md) — Modern full-stack Next.js/TypeScript SaaS/AI starter with Supabase, Clerk, Stripe, and best practices. See [Frameworks](./frameworks.md), [Production Deployment](./production-deployment.md).
 
 ### 🚀 **Performance & Optimization**
 

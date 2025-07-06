@@ -6,8 +6,10 @@ Multimodal AI refers to systems that can process, understand, and generate conte
 
 ---
 
+
 ## 📖 Learn More
 
+- [SkyReels-V2: Infinite-Length Film Generative Model](./skyreels-v2.md)
 - [Advanced Practitioner Path - Multimodal AI](../learning/learning-resources-hub.md#multimodal-ai)
 - [LLaVA](https://llava-vl.github.io/) — Vision-language models
 - [CLIP Research](https://openai.com/research/clip) — Image-text understanding

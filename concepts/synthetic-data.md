@@ -2,7 +2,10 @@
 
 **Synthetic Data Generation** involves creating artificial datasets that preserve the statistical properties and structure of real data while protecting privacy and enabling scalable training for AI models.
 
+
 ## Key Benefits
+
+**See also:** [SkyReels-V2: Infinite-Length Film Generative Model](./skyreels-v2.md)
 
 - **Privacy Protection:** No real personal or sensitive data exposure
 - **Data Augmentation:** Expand training datasets for improved model performance

@@ -4,8 +4,10 @@ Computer Vision enables machines to interpret and understand visual information 
 
 ---
 
+
 ## 📖 Learn More
 
+- [SkyReels-V2: Infinite-Length Film Generative Model](./skyreels-v2.md)
 - [OpenAI CLIP Research](https://openai.com/research/clip) — Connecting text and images
 - [LLaVA Vision-Language](https://llava-vl.github.io/) — Large Language and Vision Assistant
 - [GPT-4 Vision](https://openai.com/research/gpt-4v-system-card) — Multimodal language model

@@ -28,6 +28,7 @@
 - **[Voice AI Breakthrough](./concepts/voice-ai.md)** - Real-time conversation
 - **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR guide
 - **[Today I Learned](./personal/til/README.md)** - Daily AI discoveries & insights
+- **[SkyReels-V2: Infinite-Length Video Generation](./concepts/skyreels-v2.md)** - SOTA open-source autoregressive diffusion model for long-form, high-quality video generation
 - **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** - In-depth analysis of ambient agents, agent UX, tools, and training
 - **[Vibe Coding & Benchmark (April 2025) – Lance Martin](https://rlancemartin.github.io/2025/04/03/vibe-code/)** - How context and retrieval methods shape agent coding performance
 
