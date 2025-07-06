@@ -17,6 +17,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 ### 🤖 **Core AI Technologies**
 
 - [AI Agents](./ai-agents.md) — Autonomous systems, agent architectures, and multi-agent frameworks. See [Agent Communication](./agent-communication.md) and [Agent Protocols](./agent-protocols.md).
+- [Vibe Coding](./vibe-coding.md) — AI-powered, context-driven coding with autonomous agents and optimized retrieval. See [Vibe Code Benchmark](https://rlancemartin.github.io/2025/04/03/vibe-code/).
 - [LLMs (Large Language Models)](./llms.md) — Model architectures, training, fine-tuning, and deployment. Related: [Fine-Tuning](./fine-tuning.md), [Inference](./inference.md).
 - [Embeddings](./embeddings.md) — Semantic vectors for search, retrieval, and clustering. See [RAG](./rag.md) and [Knowledge Management](./knowledge-management.md).
 - [Inference](./inference.md) — Model serving, optimization, scaling, and cloud deployment. Related: [Production Deployment](./production-deployment.md), [Cloud Platforms](./cloud-platforms.md).
