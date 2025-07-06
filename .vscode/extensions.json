@@ -1,0 +1,35 @@
+{
+  "recommendations": [
+    // Markdown support
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "davidanson.vscode-markdownlint",
+    
+    // Git support
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    
+    // AI and MCP support
+    "github.copilot",
+    "github.copilot-chat",
+    "modelcontextprotocol.vscode-mcp",
+    
+    // Knowledge management
+    "foam.foam-vscode",
+    "tchayen.markdown-links",
+    "kortina.vscode-markdown-notes",
+    
+    // Diagrams and visualization
+    "bierner.markdown-mermaid",
+    "pomdtr.excalidraw-editor",
+    
+    // General productivity
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-python.python",
+    
+    // Obsidian-like features
+    "dendron.dendron",
+    "mushan.vscode-paste-image"
+  ]
+}

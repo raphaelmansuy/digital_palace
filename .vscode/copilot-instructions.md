@@ -17,7 +17,7 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 #### Heading Structure
 
-``````markdow
+```markdow
 # Main Title (H1) - One per file only
 
 ## Section Headers (H2)
@@ -25,7 +25,7 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 ### Subsections (H3)
 
 #### Details (H4) - Maximum depth
-``````
+```
 
 **Rules:**
 
@@ -38,17 +38,17 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 **✅ ALWAYS USE:** Standard markdown links
 
-``````markdow
+```markdow
 [Link Text](./relative/path/file.md)
 [External Link](https://example.com)
 [Section Link](#section-heading)
-``````
+```
 
 **❌ NEVER USE:** Obsidian wiki-links
 
-``````markdow
+```markdow
 [[Internal Links]] // ❌ GitHub incompatible
-``````
+```
 
 **Exception:** When maintaining existing content that already uses cardlinks, preserve them as they add value in Obsidian while being ignored by GitHub.
 
@@ -56,26 +56,27 @@ This is a personal AI knowledge repository that serves as both an Obsidian vault
 
 **Always specify language for syntax highlighting:**
 
-``````markdow
+````markdow
 ```python
 def hello_world():
     print("Hello, World!")
 ```
-``````
-
+````
 
 **Supported languages:**
+
 - `python`, `javascript`, `typescript`, `bash`, `json`, `yaml`
 - `markdown`, `html`, `css`, `sql`, `mermaid`
 
 #### Tables
 
 **Use GitHub-compatible table syntax:**
-``````markdow
+
+```markdow
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Data     | Data     | Data     |
-``````
+```
 
 **Best practices:**
 
@@ -87,33 +88,32 @@ def hello_world():
 
 **Use HTML details/summary for GitHub compatibility:**
 
-``````markdow
+```markdow
 <details>
 <summary><strong>📋 Click to Expand</strong></summary>
 
 Content here renders in both Obsidian and GitHub.
 
 </details>
-``````
+```
 
 #### Lists and Checkboxes
 
 **Task lists (GitHub compatible):**
 
-``````markdow
+```markdow
 - [x] Completed task
 - [ ] Pending task
-``````
+```
 
 **Nested lists:**
 
-``````markdow
+```markdow
 1. Main item
    - Sub item
    - Another sub item
 2. Second main item
-```````
-
+```
 
 ### 🎨 Visual Enhancement Guidelines
 
@@ -136,9 +136,9 @@ Content here renders in both Obsidian and GitHub.
 
 **Create quick access tables at the top of major sections:**
 
-| 🎯 Your Goal      | ⚡ Quick Access             | 🕒 Time    | 💡 What You'll Get   |
-| ----------------- | --------------------------- | ---------- | -------------------- |
-| **🤖 Try AI Now** | [Best AI Tools →](./tools/) | 30 seconds | Working AI interface |
+| 🎯 Your Goal      | ⚡ Quick Access                 | 🕒 Time    | 💡 What You'll Get   |
+| ----------------- | ------------------------------- | ---------- | -------------------- |
+| **🤖 Try AI Now** | [Best AI Tools →](./tools/)     | 30 seconds | Working AI interface |
 | **📚 Learn AI**   | [Learning Paths →](./learning/) | 5 minutes  | Structured learning  |
 
 #### Cross-References
@@ -158,7 +158,6 @@ digital_palace/
 ├── 🛠️ tools/             # Curated tool directories
 └── 📚 reference/         # Quick lookups, APIs, cheat sheets
 ```
-
 
 ## 🏰 Knowledge Hub Architecture
 
@@ -184,7 +183,7 @@ The Digital Palace follows a **hierarchical hub architecture** where information
     ├── individual-guide.md
     ├── tool-review.md
     └── tutorial.md
-````
+```
 
 ### 🛠️ Hub Creation Guidelines
 
@@ -618,3 +617,7 @@ When creating or improving hub pages:
 - [ ] Update and review schedules established
 
 This repository serves thousands of developers and researchers - ensure your contributions maintain the high standard of accessibility and usability across all platforms while following the hub architecture principles for optimal knowledge discovery and navigation.
+
+## Tools and MCP server
+
+Use chroma mcp to search in the repository. The MCP server is used to search and retrieve information from the knowledge base, allowing for efficient access to relevant content.

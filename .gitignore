@@ -3,3 +3,5 @@ working_doc/
 data/
 .obsidian/
 ./tasks/
+chroma_data/
+chroma.sqlite3

@@ -1,0 +1,187 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Chroma MCP Server",
+      "type": "shell",
+      "command": "uvx",
+      "args": [
+        "chroma-mcp",
+        "--client-type",
+        "persistent",
+        "--data-dir",
+        "${workspaceFolder}/chroma_data"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Check MCP Dependencies",
+      "type": "shell",
+      "command": "echo 'Checking MCP dependencies...' && which uvx && uvx --version && echo 'uvx found' || echo 'uvx not found - install with: curl -LsSf https://astral.sh/uv/install.sh | sh'",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {
+        "shell": {
+          "executable": "/bin/zsh",
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "Install Chroma MCP",
+      "type": "shell",
+      "command": "uvx install chroma-mcp",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Test Chroma MCP",
+      "type": "shell",
+      "command": "uvx chroma-mcp --help",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Start Chroma MCP Server (Foreground)",
+      "type": "shell",
+      "command": "uvx chroma-mcp --client-type persistent --data-dir '${workspaceFolder}/chroma_data'",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop Chroma MCP Server",
+      "type": "shell",
+      "command": "pkill -f 'chroma-mcp'",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "MCP Server Status",
+      "type": "shell",
+      "command": "ps aux | grep chroma-mcp | grep -v grep",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Initialize Chroma Database",
+      "type": "shell",
+      "command": "python3 .vscode/init_chroma.py",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Git: Add All and Commit",
+      "type": "shell",
+      "command": "git add . && git commit -m 'Update knowledge base'",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {
+        "shell": {
+          "executable": "/bin/zsh",
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "Generate README Index",
+      "type": "shell",
+      "command": "find",
+      "args": [
+        ".",
+        "-name",
+        "*.md",
+        "-not",
+        "-path",
+        "./.obsidian/*",
+        "-not",
+        "-path",
+        "./.git/*",
+        "-not",
+        "-path",
+        "./tmp/*"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Check Markdown Links",
+      "type": "shell",
+      "command": "find",
+      "args": [
+        ".",
+        "-name",
+        "*.md",
+        "-exec",
+        "grep",
+        "-l",
+        "\\[\\[.*\\]\\]",
+        "{}",
+        "\\;"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}

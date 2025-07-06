@@ -1,0 +1,79 @@
+{
+  // MCP (Model Context Protocol) Server Configuration
+  "mcp.servers": {
+    "chroma": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp",
+        "--client-type",
+        "persistent",
+        "--data-dir",
+        "/Users/raphaelmansuy/Library/Mobile Documents/iCloud~md~obsidian/Documents/digital_palace/chroma_data"
+      ],
+      "env": {
+        "PATH": "/Users/raphaelmansuy/.venv/bin:${env:PATH}"
+      }
+    }
+  },
+  
+  // GitHub Copilot Chat MCP Configuration
+  "github.copilot.chat.mcp.servers": {
+    "chroma": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp",
+        "--client-type", 
+        "persistent",
+        "--data-dir",
+        "/Users/raphaelmansuy/Library/Mobile Documents/iCloud~md~obsidian/Documents/digital_palace/chroma_data"
+      ]
+    }
+  },
+  
+  // Markdown and Obsidian-specific settings
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  
+  // Better markdown editing experience
+  "markdown.preview.breaks": true,
+  "markdown.preview.linkify": true,
+  "markdown.preview.typographer": true,
+  
+  // File explorer settings for better navigation
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.assets.md,${capture}.excalidraw.md"
+  },
+  
+  // Search settings for better content discovery
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/tmp": true,
+    "**/.obsidian": true
+  },
+  
+  // Editor settings for markdown
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80, 120],
+  
+  // Auto-save for better workflow
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  
+  // Git settings
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  
+  // Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true
+  }
+}
