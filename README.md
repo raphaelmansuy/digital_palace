@@ -51,6 +51,10 @@ Stay ahead with these high-quality, technical blog posts and deep dives from the
 - **[A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)**  
   A clear, illustrated walkthrough of quantization techniques for neural networks. Great for understanding how quantization reduces model size and speeds up inference, with visuals and code examples.
 
+
+- **[Block's Playbook for Designing MCP Servers](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)**  
+  A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers. Covers design principles, architecture patterns, and practical lessons for scalable, production-grade AI infrastructure.
+
 For more author-centric and community blog links, see [External Blogs](./community/external-blogs/blogs.md).
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation
