@@ -30,6 +30,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - **[Dependent Library Management with Poetry](2025-01-29-dependant-library-with-poetry.md)** - Python dependency mastery
 - **[Image Generation Prompt for Realistic Photos](2025-07-03-image-generation-realistic.md)** - Create authentic, human-like images with AI
 - **[Capture and Reuse Illustration Style for Variants](2025-07-03-capture-illustration-style.md)** - Extract style from real art and generate new variants
+- **[Block's Playbook for Designing MCP Servers](2025-07-07-blocks-mcp-server-playbook.md)** - End-to-end guide to building secure, scalable, and standards-compliant MCP servers with practical code, deployment, and testing patterns (fact-checked, 2025)
 
 ### 2024 Highlights  
 - **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular

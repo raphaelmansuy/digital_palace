@@ -53,7 +53,34 @@ Stay ahead with these high-quality, technical blog posts and deep dives from the
 
 
 - **[Block's Playbook for Designing MCP Servers](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)**  
-  A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers. Covers design principles, architecture patterns, and practical lessons for scalable, production-grade AI infrastructure.
+  A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers. 
+  
+  **Key takeaways:**
+  - **Design Principles:** Emphasizes modularity, statelessness, and separation of concerns for scalable MCP server architecture. See: [Agent Protocols](./concepts/agent-protocols.md), [MCP](./concepts/mcp.md)
+  - **Scalability Patterns:** Async APIs, load balancing, and horizontal scaling for high-throughput. See: [Production Deployment Guide](./guides/deployment.md)
+  - **Security & Observability:** Best practices for authentication, authorization, and monitoring. See: [Observability](./concepts/observability.md)
+  - **Real-World Lessons:** Managing context size, optimizing latency, and supporting multiple client types. Example: Truncate or summarize old messages for long-running agent sessions.
+  - **Open Source & Community:** Encourages open standards and community-driven development for MCP infrastructure.
+  
+  **Example (Python/FastAPI):**
+  ```python
+  from fastapi import FastAPI, Request
+  import uvicorn
+
+  app = FastAPI()
+
+  @app.post("/mcp/context")
+  async def handle_context(request: Request):
+      data = await request.json()
+      # Validate and store context
+      # ...
+      return {"status": "ok"}
+
+  if __name__ == "__main__":
+      uvicorn.run(app, host="0.0.0.0", port=8000)
+  ```
+  
+  For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
 
 For more author-centric and community blog links, see [External Blogs](./community/external-blogs/blogs.md).
 
