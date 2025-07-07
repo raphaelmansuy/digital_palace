@@ -280,6 +280,7 @@
 | [Docling](https://docling-project.github.io/docling/) | Advanced document parsing, RAG, multimodal (PDF, DOCX, images, audio), agentic AI integrations (LangChain, LlamaIndex, Crew AI, Haystack), local & cloud | PDF, DOCX, PPTX, XLSX, HTML, images, audio (WAV, MP3), more |
 | [zerox](https://github.com/getomni-ai/zerox)          | OCR & extraction                                                                                                                                         | PDFs, images                                                |
 | [FireCrawl](https://github.com/mendableai/firecrawl)  | Website to markdown                                                                                                                                      | Web pages                                                   |
+| [linkedin_scraper](https://github.com/joeyism/linkedin_scraper) | Scrape LinkedIn profiles, companies, and jobs (Python, open-source, active)                                         | LinkedIn profiles, companies, jobs |
 | [lumentis](https://github.com/hrishioa/lumentis)      | Docs from transcripts                                                                                                                                    | Audio, video                                                |
 
 ---
