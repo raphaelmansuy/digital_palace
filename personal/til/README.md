@@ -21,6 +21,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
+- **[Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)** - Crafting cinematic, ASMR-style video prompts for Veo3
 - **[Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md)** - Manage environment variables and secrets easily in Python
 - **[AWS Stack Deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)** - Cloud infrastructure as code
 - **[Kamal: Deploy Web Apps Anywhere](2025-01-14-kamal-deploy-web-app-anywere.md)** - Modern deployment tool
@@ -85,6 +86,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - [Kamal: Deploy web apps anywhere](2025-01-14-kamal-deploy-web-app-anywere.md)
 
 ### 🎨 Design & UX
+- [Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)
 - [UX micro-interactions](2024-08-07_ux_micro_interractions.md)
 - [Image generation prompt for realistic photos](2025-07-03-image-generation-realistic.md)
 
