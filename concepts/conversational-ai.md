@@ -8,6 +8,7 @@ Conversational AI encompasses systems designed to interact with users through na
 
 - [Conversational AI Guide](../guides/conversational-ai.md) — Implementation patterns and best practices
 - [Chatbot Design Patterns](../reference/techniques/dessign_patterns_for_llm_applications/README.md#chatbot-agent) — LLM chatbot architectures
+- [Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory) — Hands-on guide to building chatbots with persistent, user-specific memory
 - [Dialogue Systems](https://web.stanford.edu/~jurafsky/slp3/24.pdf) — Stanford NLP course on dialogue
 - [Rasa Documentation](https://rasa.com/docs/) — Open source conversational AI
 - [Botpress Guide](https://botpress.com/docs) — Modern chatbot development

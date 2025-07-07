@@ -11,6 +11,7 @@ Embeddings are numerical vector representations of words, sentences, or document
 - [Design Patterns for LLM Applications](../reference/techniques/dessign_patterns_for_llm_applications/README.md#what-is-embedding)
 - [Fine-tuning and Advanced Embeddings](https://finetuning.baulab.info/)
 - [Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka)
+- [Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory) — Example of using embeddings for long-term conversational memory
 
 ---
 

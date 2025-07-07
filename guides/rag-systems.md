@@ -263,6 +263,9 @@ class MultiDocumentRAG:
         return self.llm.predict(synthesis_prompt)
 ```
 
+#### Further Reading
+- **[Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory)** — Practical walkthrough of adding persistent memory to Gemini-based chatbots using Mem0 and vector search.
+
 ---
 
 ## 🔗 Knowledge Graph Integration
