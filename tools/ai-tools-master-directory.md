@@ -227,6 +227,7 @@
 | ---------------------------------------------------------------- | --------------------- | ------------- |
 | [MLX Omni Server](https://github.com/madroidmaq/mlx-omni-server) | MLX-powered inference | Apple Silicon |
 | [MLX Server](https://www.mlxserver.com/)                         | Easy MLX development  | macOS         |
+| [MLX-GUI](https://github.com/RamboRogers/mlx-gui) | MLX Inference Server with GUI | Apple Silicon Mac users |
 
 ### Cloud & Distributed
 
