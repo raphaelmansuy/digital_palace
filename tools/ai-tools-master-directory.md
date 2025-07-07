@@ -271,6 +271,7 @@
 | Tool                                                         | Purpose                        | Scale      |
 | ------------------------------------------------------------ | ------------------------------ | ---------- |
 | [pgvectorscale](https://github.com/timescale/pgvectorscale/) | High-performance vector search | Enterprise |
+| [pgvector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp) | Infrastructure-as-code for PostgreSQL with PGVector on Google Cloud SQL | Production |
 | [byaldi](https://github.com/AnswerDotAI/byaldi)              | Multi-modal search             | Research   |
 
 ### Document Processing

@@ -1,6 +1,10 @@
-# Cloud Platforms
+# Cloud Platfor## 🛠️ Key Platforms & Tools
 
-Cloud platforms provide scalable infrastructure, tools, and services for developing, deploying, and managing AI and LLM applications. They enable rapid experimentation, production deployment, and integration with other cloud-native technologies.
+- [AWS SageMaker](https://aws.amazon.com/sagemaker/) — Managed ML platform
+- [Google Vertex AI](https://cloud.google.com/vertex-ai) — End-to-end AI platform
+- [Azure AI](https://azure.microsoft.com/en-us/products/ai-services/) — Microsoft's AI services
+- [SkyPilot](https://skypilot.readthedocs.io/en/latest/) — Multi-cloud deployment
+- [PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp) — PostgreSQL with PGVector on Google Cloud SQL (Infrastructure-as-Code)oud platforms provide scalable infrastructure, tools, and services for developing, deploying, and managing AI and LLM applications. They enable rapid experimentation, production deployment, and integration with other cloud-native technologies.
 
 ---
 

@@ -51,9 +51,11 @@ Stay ahead with these high-quality, technical blog posts and deep dives from the
 - **[A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)**  
   A clear, illustrated walkthrough of quantization techniques for neural networks. Great for understanding how quantization reduces model size and speeds up inference, with visuals and code examples.
 
+- **[PGVector on CloudSQL for GCP](https://github.com/sciences44/pgvector_cloudsql_gcp)**  
+  A comprehensive infrastructure-as-code solution for deploying PostgreSQL with PGVector extension on Google Cloud SQL. Features Terraform automation, multi-environment support (dev/preprod/prod), and practical examples for vector-based applications like RAG systems, semantic search, and product recommendations. Includes detailed setup guides, architecture diagrams, and best practices for production deployment.
 
 - **[Block's Playbook for Designing MCP Servers](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)**  
-  A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers. 
+  A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers.
   
   **Key takeaways:**
   - **Design Principles:** Emphasizes modularity, statelessness, and separation of concerns for scalable MCP server architecture. See: [Agent Protocols](./concepts/agent-protocols.md), [MCP](./concepts/mcp.md)

@@ -260,6 +260,68 @@ spec:
   type: LoadBalancer
 ```
 
+#### Vector Database with PostgreSQL and PGVector
+
+For applications requiring vector similarity search and embeddings storage, deploying PostgreSQL with PGVector on Google Cloud SQL provides a robust, managed solution.
+
+**[PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp)** - Complete infrastructure-as-code solution with:
+
+- 🏗️ **Infrastructure as Code**: Terraform automation for consistent deployments
+- 🌐 **Multi-Environment Support**: Development, pre-production, and production configurations
+- 🔒 **Security Best Practices**: VPC networks, private IPs, and proper access controls
+- 📊 **Production-Ready**: High availability, backups, and monitoring
+- 🚀 **Quick Setup**: Makefile commands for streamlined operations
+
+**Key Features:**
+
+```hcl
+# terraform example configuration
+resource "google_sql_database_instance" "postgresql" {
+  name             = "pgvector-${var.environment}"
+  database_version = "POSTGRES_15"
+  region           = var.region
+
+  settings {
+    tier = var.machine_type
+    
+    database_flags {
+      name  = "shared_preload_libraries"
+      value = "vector"
+    }
+    
+    backup_configuration {
+      enabled                        = true
+      start_time                    = "02:00"
+      point_in_time_recovery_enabled = true
+      backup_retention_settings {
+        retained_backups = 7
+      }
+    }
+  }
+}
+```
+
+**Use Cases:**
+
+- RAG (Retrieval-Augmented Generation) systems
+- Semantic search applications
+- Product recommendation engines
+- Content deduplication
+- Anomaly detection
+
+**Quick Start:**
+
+```bash
+# Deploy development environment
+make tf-apply ENV=dev
+
+# Setup database and extensions
+make setup-db ENV=dev
+
+# Add sample data
+make add-sample-data ENV=dev
+```
+
 ### Azure Container Instances
 
 ```yaml

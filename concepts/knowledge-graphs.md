@@ -33,6 +33,7 @@
 - **[Amazon Neptune](https://aws.amazon.com/neptune/)** - Fully managed graph database
 - **[ArangoDB](https://www.arangodb.com/)** - Multi-model database with graph support
 - **[TigerGraph](https://www.tigergraph.com/)** - Scalable graph analytics platform
+- **[PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp)** - PostgreSQL with vector extensions on Google Cloud SQL (Infrastructure-as-Code)
 
 ### **Knowledge Graph Frameworks**
 

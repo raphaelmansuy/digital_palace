@@ -20,6 +20,7 @@ Embeddings are numerical vector representations of words, sentences, or document
 - [Qdrant](https://qdrant.tech/) — Vector similarity search
 - [LlamaIndex](https://www.llamaindex.ai/) — Embedding integration
 - [Cohere](https://txt.cohere.com/int8-binary-embeddings/) — Binary embeddings
+- [PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp) — PostgreSQL with PGVector on Google Cloud SQL (Infrastructure-as-Code)
 
 ---
 
