@@ -1,4 +1,3 @@
-
 # 🧩 Concepts Hub
 
 Welcome to the **Concepts Hub**! This is your gateway to the essential AI and software concepts that power the Digital Palace. Each topic below links to a dedicated page with:
@@ -7,6 +6,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - Framework and tool recommendations
 - Cross-links to related concepts
 - Curated resources for deeper learning
+- **[Curated X Accounts for AI →](../reference/curated-x-accounts.md)**
 
 ---
 
@@ -72,6 +72,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [AI UX/UI Design](./ai-ux-design.md) — Human-AI interaction patterns, agent interfaces, and conversational UI design. See [Conversational AI](./conversational-ai.md), [AI Agents](./ai-agents.md).
 - [AG-UI (Agent Graphical User Interface)](./ag-ui.md) — Next-generation interface design for human-agent interaction, multi-agent orchestration, and real-time agent management. Related: [AI Agents](./ai-agents.md), [Agent Communication](./agent-communication.md).
 - [Workflow Automation](./workflow-automation.md) — AI-powered business process automation, RPA integration, and decision automation. Related: [AI Agents](./ai-agents.md), [Tool Use](./tool-use.md).
+- [UI/UX Design Challenges](./ui-ux-challenges.md) — Resources for daily UI/UX design challenges.
 
 
 

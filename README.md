@@ -63,6 +63,7 @@
 - Look for emoji indicators: 🟢 Beginner, 🟡 Intermediate, 🔴 Advanced
 - Check the "Quick Access" tables in each section
 - Use browser search (Ctrl+F) within any README file
+- **Browse [Curated X Accounts](./reference/curated-x-accounts.md) for top AI voices and news**
 
 ---
 
@@ -96,6 +97,7 @@ _Time: Ongoing → Frontier knowledge_
 | **📚 Learning** | [Learning Paths](./learning/README.md)            | Structured education      |
 | **💡 TIL**      | [Today I Learned](./personal/til/README.md)       | Daily discoveries         |
 | **🆕 Latest**   | [2025 Updates](./reference/2025-ai-updates.md)    | Cutting-edge AI           |
+| **🐦 X Accounts** | [Curated X Accounts](./reference/curated-x-accounts.md) | Top AI voices & updates   |
 
 ---
 

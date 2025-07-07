@@ -14,6 +14,7 @@ Multimodal AI refers to systems that can process, understand, and generate conte
 - [LLaVA](https://llava-vl.github.io/) — Vision-language models
 - [CLIP Research](https://openai.com/research/clip) — Image-text understanding
 - [Whisper](https://openai.com/research/whisper) — Speech recognition and transcription
+- [Emily2050 on X (Video AI Generation)](https://x.com/IamEmily2050) — Curated updates and insights on video AI and generative media
 
 ---
 
