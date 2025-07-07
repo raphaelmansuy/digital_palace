@@ -133,6 +133,10 @@ client = instructor.patch(OpenAI(base_url="http://localhost:11434/v1", api_key="
 | **[Zep](https://github.com/getzep/zep)** | Production | Database | Medium |
 | **[MemGPT](https://memgpt.ai/)** | Advanced | Long-term | Large |
 | **[Cognee](https://github.com/topoteretes/cognee)** | AI Apps | Flexible | Medium |
+| **[Mem0](https://github.com/mem0ai/mem0)** | AI Agents | Vector-based | Medium |
+
+**📚 Implementation Examples:**
+
 
 ### Model Options
 
