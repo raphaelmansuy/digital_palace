@@ -134,6 +134,7 @@ text_splitter = SemanticChunker(
 | **[Pinecone](https://www.pinecone.io/)** | Managed, scalable | Enterprise |
 | **[Weaviate](https://weaviate.io/)** | Open source, flexible | Custom deployments |
 | **[pgvectorscale](https://github.com/timescale/pgvectorscale/)** | PostgreSQL-based | Existing PostgreSQL setups |
+| **[PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp)** | Infrastructure-as-Code PostgreSQL with PGVector on Google Cloud SQL | Production-ready GCP deployments |
 
 ### Embedding Models
 
