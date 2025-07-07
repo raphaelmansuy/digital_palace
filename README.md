@@ -21,6 +21,7 @@
 | **🛠️ Find Right Tool**      | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder)      | 2 min       | Perfect match      |
 
 
+
 ## 🔥 What's Hot Right Now
 
 - **[OpenAI o3 & Claude 4](./reference/2025-ai-updates.md)** - Revolutionary reasoning models
@@ -31,6 +32,26 @@
 - **[SkyReels-V2: Infinite-Length Video Generation](./concepts/skyreels-v2.md)** - SOTA open-source autoregressive diffusion model for long-form, high-quality video generation
 - **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** - In-depth analysis of ambient agents, agent UX, tools, and training
 - **[Vibe Coding & Benchmark (April 2025) – Lance Martin](https://rlancemartin.github.io/2025/04/03/vibe-code/)** - How context and retrieval methods shape agent coding performance
+
+---
+
+## 🌐 Curated Blogs & Recommended Reading
+
+Stay ahead with these high-quality, technical blog posts and deep dives from the AI community:
+
+- **[Context Kills VRAM: How to Run LLMs on consumer GPUs](https://medium.com/@lyx_62906/context-kills-vram-how-to-run-llms-on-consumer-gpus-a785e8035632)**  
+  A practical guide to optimizing context size and memory usage for running large language models on consumer-grade GPUs. Covers real-world benchmarks, trade-offs, and actionable tips for maximizing VRAM efficiency.
+
+- **[Training a Rust 1.5B Coder LM with Reinforcement Learning (GRPO)](https://www.oxen.ai/blog/training-a-rust-1-5b-coder-lm-with-reinforcement-learning-grpo)**  
+  An in-depth look at building a 1.5B parameter code LLM in Rust, using reinforcement learning and the GRPO algorithm. Explains the training pipeline, challenges, and lessons learned for open-source code models.
+
+- **[Getafix: How Facebook tools learn to fix bugs automatically](https://ai.facebook.com/blog/getafix-how-facebook-tools-learn-to-fix-bugs-automatically/)**  
+  Facebook's Getafix system uses machine learning to suggest and apply bug fixes at scale. This post details the approach, real-world impact, and how AI is transforming software maintenance.
+
+- **[A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)**  
+  A clear, illustrated walkthrough of quantization techniques for neural networks. Great for understanding how quantization reduces model size and speeds up inference, with visuals and code examples.
+
+For more author-centric and community blog links, see [External Blogs](./community/external-blogs/blogs.md).
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation
 
