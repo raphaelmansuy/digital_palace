@@ -84,6 +84,9 @@ Stay ahead with these high-quality, technical blog posts and deep dives from the
   
   For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
 
+- **[GPT-4.1 Coding Agent System Prompt (VS Code Tools Edition) – Burke Holland](https://gist.github.com/burkeholland/7aa408554550e36d4e951a1ead2bc3ac)**  
+  A production-grade, open-source system prompt for building advanced coding agents in VS Code. Includes detailed tool usage, todo list management, and communication guidelines for agentic workflows. Highly useful for anyone customizing Copilot or building their own AI coding agents.
+
 - **[Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory)**  
   A hands-on guide to building chatbots with persistent, user-specific memory using Google Gemini 2.5 and the open-source Mem0 library. Covers architecture, code, and practical tips for context-aware, personalized AI assistants.
 
