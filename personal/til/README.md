@@ -21,6 +21,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
+- **[How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)** - Set up custom AI coding assistants with specialized prompts and tool configurations
 - **[Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)** - Crafting cinematic, ASMR-style video prompts for Veo3
 - **[Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md)** - Manage environment variables and secrets easily in Python
 - **[AWS Stack Deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)** - Cloud infrastructure as code
@@ -71,6 +72,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - [Chat interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)
 
 ### 🛠️ Development Tools
+- [How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)
 - [Git for beginners](git/git.md)
 - [Efficient Git aliases](2024-07-27-git-alias.md)
 - [LLM command usage](2024-03-03%20how_to_use_llm_command.md)
