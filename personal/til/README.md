@@ -21,6 +21,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
+- **[VS Code & GitHub Configuration Files: Complete Guide](2025-07-09-vscode-github-configuration-files.md)** - All config file types, paths, and actionable examples for modern development workflows (2025)
 - **[Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)** - Complete guide to setting up Model Context Protocol servers for enhanced AI agent capabilities in VSCode
 - **[VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)** - Comprehensive reference for all standard tools available in GitHub Copilot Agent Mode
 - **[Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)** - Deep analysis of Burke Holland's professional coding agent prompt with community insights
