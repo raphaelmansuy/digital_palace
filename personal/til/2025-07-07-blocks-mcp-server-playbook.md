@@ -1,283 +1,514 @@
-# Today I Learned: Block's Playbook for Designing MCP Servers
+# Today I Learned: Comprehensive Guide to MCP Server Design and Best Practices
 
-**Date:** 2025-07-07  
-**Source:** [Block's Playbook for Designing MCP Servers](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)
+**Date:** 2025-07-07
+
+**Sources:**
+
+- [Model Context Protocol Official Documentation](https://modelcontextprotocol.io/)
+- [MCP Server Quickstart](https://modelcontextprotocol.io/quickstart/server)
+- [MCP Specification 2025-06-18](https://spec.modelcontextprotocol.io/)
+- [MCP Tools, Resources, and Prompts Concepts](https://modelcontextprotocol.io/docs/concepts/)
 
 ## Overview
-Today, I explored Block's comprehensive guide on designing **Model Context Protocol (MCP)** servers, a standardized protocol for integrating large language models (LLMs) with external tools and data sources. Published on June 16, 2025, this playbook offers practical insights for building scalable, secure, and production-ready MCP servers, aligning with best practices from OpenAI, Google, and the MCP open-source community. Below, I summarize key takeaways, enhanced with actionable examples and clear explanations.
+
+Today, I dove deep into the **Model Context Protocol (MCP)** - an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications: it provides a standardized way to connect AI models to different data sources and tools. This comprehensive guide synthesizes the latest official documentation and best practices for designing robust, production-ready MCP servers.
 
 ## Key Takeaways
 
-### 1. Core Design Principles
-- **Modularity & Statelessness**: Design components (e.g., context manager, request handler) to be independent and stateless, enabling easy scaling and deployment. This mirrors OpenAI’s API design and Google’s Vertex AI agent infrastructure.
-- **Separation of Concerns**: Isolate context management, authentication, and business logic. For example, use a dedicated context store like Redis or a vector database instead of mixing with request processing.
-- **Why It Matters**: Modular, stateless designs simplify updates and scaling, critical for handling dynamic LLM workloads.
+### 1. Understanding MCP Core Concepts
 
-### 2. Scalability Strategies
-- **Async Processing**: Leverage async frameworks like FastAPI to manage high concurrent request volumes efficiently, a standard in LLM serving (e.g., vLLM).
-- **Load Balancing**: Deploy multiple server instances behind a load balancer (e.g., NGINX, AWS ALB) to distribute traffic evenly.
-- **Horizontal Scaling**: Use container orchestration tools like Kubernetes or Docker Compose to add instances as demand grows, ensuring resilience.
-- **Why It Matters**: These patterns support thousands of simultaneous users, maintaining low latency under heavy loads.
+MCP servers provide three main types of capabilities to LLM applications:
 
-### 3. Security & Observability
-- **Authentication**: Implement OAuth2, API keys, or OpenID Connect (e.g., JWT tokens) to secure endpoints.
-- **Monitoring**: Use Prometheus, Grafana, and OpenTelemetry for metrics, tracing, and alerts. Structured logging (JSON format) aids cloud-native debugging.
-- **Why It Matters**: Robust security prevents unauthorized access, while observability ensures quick issue detection in production.
+- **Resources**: File-like data that can be read by clients (API responses, file contents, database records)
+- **Tools**: Functions that can be called by the LLM with user approval (system commands, API integrations, data processing)
+- **Prompts**: Pre-written templates that help users accomplish specific tasks (workflows, slash commands)
 
-### 4. Practical Lessons
-- **Context Size Management**: Limit context windows to avoid memory overload, using truncation, summarization, or chunking techniques.
-- **Latency Optimization**: Cache frequent context lookups and apply model quantization or distillation for faster inference.
-- **Multi-Client Support**: Design APIs for both synchronous (HTTP) and streaming (WebSocket, Server-Sent Events) clients, supporting agentic and RAG systems.
-- **Why It Matters**: These optimizations balance performance and resource usage, critical for real-time LLM applications.
+**Why It Matters**: These primitives enable LLMs to access external data, execute actions, and provide guided interactions while maintaining security through user consent.
 
-### 5. Community & Standards
-- **MCP Standard**: Adhere to the [Model Context Protocol](https://modelcontextprotocol.io/) for interoperability with major agent frameworks like OpenAI’s Agents SDK.
-- **Open Source**: Contribute to the MCP ecosystem via [GitHub](https://github.com/modelcontextprotocol) or [community forums](https://modelcontextprotocol.io/).
-- **Why It Matters**: Following open standards ensures compatibility and fosters collaboration, accelerating adoption.
+### 2. MCP Architecture and Transport
 
-## Supported Protocols and Transports in MCP
+MCP follows a client-server architecture with flexible transport options:
 
-Modern MCP servers are designed to be transport-agnostic, supporting multiple communication protocols to maximize compatibility and flexibility. The most common transport types are:
+- **JSON-RPC 2.0**: All communication uses JSON-RPC for request/response and notifications
+- **Stdio Transport**: Standard input/output for local processes (ideal for development)
+- **Streamable HTTP**: HTTP POST with optional Server-Sent Events for production deployments
+- **Client-Server Model**: Hosts maintain 1:1 connections with servers through MCP clients
 
-- **Streamable HTTP**: The primary and recommended transport, using HTTP POST for client-to-server JSON-RPC messages and supporting both standard JSON responses and streaming via Server-Sent Events (SSE) for real-time updates. This enables both synchronous and streaming workflows.
-- **Standard Input/Output (stdio)**: Useful for local integrations, command-line tools, and process-to-process communication, allowing MCP servers to communicate over standard input/output streams.
-- **Server-Sent Events (SSE) [Deprecated]**: Previously used for server-to-client streaming, now replaced by Streamable HTTP with built-in SSE support. Legacy SSE endpoints may still be supported for backward compatibility.
-- **Custom Transports**: MCP’s architecture allows for custom transports (e.g., gRPC, WebSocket, or domain-specific protocols) as long as they conform to the MCP Transport interface and JSON-RPC message format.
+**Why It Matters**: This architecture ensures standardized communication while supporting both local development and scalable production deployments.
 
-**Best Practice:** For new deployments, use Streamable HTTP for broadest client compatibility and robust session management. For advanced or specialized use cases, custom transports can be implemented as needed.
+### 3. Security and Trust Principles
 
-*Reference: [MCP Transports Documentation](https://modelcontextprotocol.io/docs/concepts/transports)*
+MCP emphasizes user-controlled security with these core principles:
 
-## Visual Flow: Basic MCP Server
-Below is a simplified flow of an MCP server handling user messages, designed for clarity and accessibility.
+- **User Consent**: Users must explicitly consent to all data access and tool operations
+- **Data Privacy**: Hosts must obtain consent before exposing user data to servers
+- **Tool Safety**: All tool executions require explicit user approval with clear descriptions
+- **Input Validation**: Comprehensive validation of all parameters, URIs, and data inputs
 
-```mermaid
-%%{init: { 'themeVariables': { 'primaryColor': '#e6f3ff', 'edgeLabelBackground':'#d9e8ff', 'secondaryColor': '#a3c9e6', 'tertiaryColor': '#f0e6ff', 'fontFamily': 'Inter, sans-serif', 'fontSize': '14px', 'textColor': '#1a2a44', 'lineColor': '#6b9ed6', 'nodeTextColor': '#1a2a44' } } }%%
-flowchart TD
-    A([User/Agent]):::user -->|Sends message| B["MCP Server\n(FastAPI)"]:::server
-    B -->|Stores message| C[(Context Store)]:::store
-    B -->|Returns history| A
-    classDef user fill:#f0e6ff,stroke:#6b9ed6,stroke-width:2px,color:#1a2a44;
-    classDef server fill:#a3c9e6,stroke:#6b9ed6,stroke-width:2px,color:#1a2a44;
-    classDef store fill:#e6f3ff,stroke:#6b9ed6,stroke-width:2px,color:#1a2a44;
-```
+**Why It Matters**: Security is built into the protocol design, ensuring users maintain control over their data and AI actions.
 
-*Caption*: A user or agent sends a message to the MCP server, which stores it in a context store and returns the conversation history. Pastel colors ensure visual clarity.
+### 4. Tool Design Best Practices
 
-## Example: Basic MCP Server (FastAPI)
-Here’s a minimal FastAPI-based MCP server for storing and retrieving chat history, ideal for development and testing. Comments explain key design choices.
+When implementing MCP tools, follow these patterns:
+
+- **Atomic Operations**: Keep tool operations focused and single-purpose
+- **Descriptive Schemas**: Use detailed JSON Schema definitions with clear descriptions
+- **Error Handling**: Return errors within results (not as protocol errors) so LLMs can see and handle them
+- **Annotations**: Use tool annotations (readOnlyHint, destructiveHint, idempotentHint) for better UX
+
+**Why It Matters**: Well-designed tools enable more effective LLM interactions while maintaining safety and predictability.
+
+### 5. Resource Management Strategies
+
+Effective resource handling requires:
+
+- **URI Schemes**: Define clear, consistent URI patterns for resource identification
+- **Content Types**: Support both text (UTF-8) and binary (base64) resources with proper MIME types
+- **Dynamic Resources**: Use URI templates for parameterized resource access
+- **Subscriptions**: Implement resource change notifications for real-time updates
+
+**Why It Matters**: Proper resource management enables efficient data access and real-time collaboration between LLMs and external systems.
+
+## MCP Server Implementation Examples
+
+### Complete Weather Server (Python FastMCP)
+
+Based on the official MCP quickstart, here's a production-ready weather server implementation:
 
 ```python
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from typing import List, Dict, Any
+from typing import Any
+import httpx
+from mcp.server.fastmcp import FastMCP
 
-# Initialize FastAPI app
-app = FastAPI(title="Basic MCP Server")
-# In-memory store (not for production)
-chat_history: Dict[str, List[Dict[str, Any]]] = {}
+# Initialize FastMCP server
+mcp = FastMCP("weather-server")
 
-# Define data models for request validation
-class Message(BaseModel):
-    role: str  # e.g., "user", "assistant"
-    content: str
+# Constants
+NWS_API_BASE = "https://api.weather.gov"
+USER_AGENT = "mcp-weather-server/1.0"
 
-class ChatRequest(BaseModel):
-    session_id: str
-    message: Message
-
-# Endpoint to store a message
-@app.post("/mcp/chat")
-async def add_message(request: ChatRequest):
-    # Initialize session if new
-    if request.session_id not in chat_history:
-        chat_history[request.session_id] = []
-    # Append message to session history
-    chat_history[request.session_id].append(request.message.dict())
-    return {
-        "status": "ok",
-        "session_id": request.session_id,
-        "message_count": len(chat_history[request.session_id])
+async def make_nws_request(url: str) -> dict[str, Any] | None:
+    """Make a request to the NWS API with proper error handling."""
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "application/geo+json"
     }
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.get(url, headers=headers, timeout=30.0)
+            response.raise_for_status()
+            return response.json()
+        except Exception:
+            return None
 
-# Endpoint to retrieve chat history
-@app.get("/mcp/chat/{session_id}")
-async def get_chat_history(session_id: str):
-    if session_id not in chat_history:
-        raise HTTPException(status_code=404, detail="Session not found")
-    return {"session_id": session_id, "history": chat_history[session_id]}
+@mcp.tool()
+async def get_alerts(state: str) -> str:
+    """Get weather alerts for a US state.
 
-# Health check endpoint for monitoring
-@app.get("/health")
-async def health():
-    return {"status": "healthy"}
+    Args:
+        state: Two-letter US state code (e.g. CA, NY)
+    """
+    url = f"{NWS_API_BASE}/alerts/active/area/{state}"
+    data = await make_nws_request(url)
+
+    if not data or "features" not in data:
+        return "Unable to fetch alerts or no alerts found."
+
+    if not data["features"]:
+        return "No active alerts for this state."
+
+    alerts = []
+    for feature in data["features"]:
+        props = feature["properties"]
+        alert = f"""
+Event: {props.get('event', 'Unknown')}
+Area: {props.get('areaDesc', 'Unknown')}
+Severity: {props.get('severity', 'Unknown')}
+Description: {props.get('description', 'No description available')}
+"""
+        alerts.append(alert)
+    return "\n---\n".join(alerts)
+
+@mcp.tool()
+async def get_forecast(latitude: float, longitude: float) -> str:
+    """Get weather forecast for a location.
+
+    Args:
+        latitude: Latitude of the location
+        longitude: Longitude of the location
+    """
+    # First get the forecast grid endpoint
+    points_url = f"{NWS_API_BASE}/points/{latitude},{longitude}"
+    points_data = await make_nws_request(points_url)
+
+    if not points_data:
+        return "Unable to fetch forecast data for this location."
+
+    # Get the forecast URL from the points response
+    forecast_url = points_data["properties"]["forecast"]
+    forecast_data = await make_nws_request(forecast_url)
+
+    if not forecast_data:
+        return "Unable to fetch detailed forecast."
+
+    # Format the periods into a readable forecast
+    periods = forecast_data["properties"]["periods"]
+    forecasts = []
+    for period in periods[:5]:  # Only show next 5 periods
+        forecast = f"""
+{period['name']}:
+Temperature: {period['temperature']}°{period['temperatureUnit']}
+Wind: {period['windSpeed']} {period['windDirection']}
+Forecast: {period['detailedForecast']}
+"""
+        forecasts.append(forecast)
+
+    return "\n---\n".join(forecasts)
+
+if __name__ == "__main__":
+    # Initialize and run the server
+    mcp.run(transport='stdio')
 ```
 
-**Usage**:
-1. Send `POST /mcp/chat` with `{"session_id": "s1", "message": {"role": "user", "content": "Hi!"}}`.
-2. Send `POST /mcp/chat` with `{"session_id": "s1", "message": {"role": "assistant", "content": "Hello!"}}`.
-3. Send `GET /mcp/chat/s1` to retrieve the session’s history.
+### TypeScript MCP Server with Tools, Resources, and Prompts
 
-**Note**: In-memory storage is simple but unsuitable for production due to lack of persistence and scalability.
+Here's a comprehensive MCP server implementation in TypeScript:
 
-## Example: Intermediate MCP Server (Redis)
-This example adds Redis for persistence and validation, suitable for small-scale production. It includes error handling and logging.
+```typescript
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import {
+  ListResourcesRequestSchema,
+  ReadResourceRequestSchema,
+  ListToolsRequestSchema,
+  CallToolRequestSchema,
+  ListPromptsRequestSchema,
+  GetPromptRequestSchema,
+} from "@modelcontextprotocol/sdk/types.js";
 
-```python
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
-import redis
-import logging
-import json
-from typing import Dict, Any, Optional
+// Initialize the server
+const server = new Server({
+  name: "comprehensive-mcp-server",
+  version: "1.0.0"
+}, {
+  capabilities: {
+    resources: {},
+    tools: {},
+    prompts: {}
+  }
+});
 
-# Configure structured logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+// Resources implementation
+server.setRequestHandler(ListResourcesRequestSchema, async () => {
+  return {
+    resources: [
+      {
+        uri: "logs://application",
+        name: "Application Logs",
+        description: "Current application logs",
+        mimeType: "text/plain"
+      },
+      {
+        uri: "config://app",
+        name: "Application Config",
+        description: "Current application configuration",
+        mimeType: "application/json"
+      }
+    ]
+  };
+});
 
-# Initialize FastAPI app
-app = FastAPI(title="Intermediate MCP Server")
-
-# Connect to Redis
-try:
-    redis_client = redis.Redis(host='localhost', port=6379, decode_responses=True)
-    redis_client.ping()
-except redis.ConnectionError:
-    logger.error("Redis connection failed")
-    raise Exception("Cannot connect to Redis")
-
-# Data models with validation
-class ContextRequest(BaseModel):
-    session_id: str = Field(..., min_length=1, max_length=100)
-    context: Dict[str, Any]
-    max_tokens: int = Field(default=4000, gt=0, le=32000)
-    ttl: Optional[int] = Field(default=3600, gt=0, le=86400)  # 1-24 hours
-
-# Store context in Redis
-@app.post("/mcp/context")
-async def store_context(request: ContextRequest):
-    try:
-        # Serialize and validate context size
-        context_str = json.dumps(request.context)
-        if len(context_str) > request.max_tokens:
-            raise HTTPException(
-                status_code=413,
-                detail=f"Context size {len(context_str)} exceeds limit {request.max_tokens}"
-            )
-        # Store in Redis with TTL
-        key = f"mcp:context:{request.session_id}"
-        redis_client.setex(key, request.ttl, context_str)
-        logger.info(f"Stored context for session {request.session_id}, size: {len(context_str)}")
-        return {
-            "status": "ok",
-            "session_id": request.session_id,
-            "stored_tokens": len(context_str),
-            "expires_in": request.ttl
+server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
+  const uri = request.params.uri;
+  
+  if (uri === "logs://application") {
+    const logs = "2025-01-07 10:00:00 INFO Server started\n2025-01-07 10:01:00 INFO Request processed";
+    return {
+      contents: [
+        {
+          uri,
+          mimeType: "text/plain",
+          text: logs
         }
-    except Exception as e:
-        logger.error(f"Error storing context: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+      ]
+    };
+  }
+  
+  if (uri === "config://app") {
+    const config = JSON.stringify({ port: 8000, debug: true }, null, 2);
+    return {
+      contents: [
+        {
+          uri,
+          mimeType: "application/json", 
+          text: config
+        }
+      ]
+    };
+  }
+  
+  throw new Error(`Resource not found: ${uri}`);
+});
 
-# Retrieve context
-@app.get("/mcp/context/{session_id}")
-async def get_context(session_id: str):
-    key = f"mcp:context:{session_id}"
-    context_str = redis_client.get(key)
-    if not context_str:
-        raise HTTPException(status_code=404, detail="Context not found or expired")
-    return {"context": json.loads(context_str)}
+// Tools implementation
+server.setRequestHandler(ListToolsRequestSchema, async () => {
+  return {
+    tools: [
+      {
+        name: "calculate_sum",
+        description: "Add two numbers together",
+        inputSchema: {
+          type: "object",
+          properties: {
+            a: { type: "number", description: "First number" },
+            b: { type: "number", description: "Second number" }
+          },
+          required: ["a", "b"]
+        },
+        annotations: {
+          title: "Calculator",
+          readOnlyHint: true,
+          openWorldHint: false
+        }
+      },
+      {
+        name: "log_message",
+        description: "Log a message to the system",
+        inputSchema: {
+          type: "object",
+          properties: {
+            message: { type: "string", description: "Message to log" },
+            level: { type: "string", enum: ["info", "warn", "error"], description: "Log level" }
+          },
+          required: ["message"]
+        },
+        annotations: {
+          title: "Logger",
+          readOnlyHint: false,
+          destructiveHint: false,
+          openWorldHint: false
+        }
+      }
+    ]
+  };
+});
 
-# Health check
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy", "redis": "connected"}
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
+  const { name, arguments: args } = request.params;
+  
+  if (name === "calculate_sum") {
+    const { a, b } = args as { a: number; b: number };
+    const result = a + b;
+    return {
+      content: [
+        {
+          type: "text",
+          text: `The sum of ${a} and ${b} is ${result}`
+        }
+      ]
+    };
+  }
+  
+  if (name === "log_message") {
+    const { message, level = "info" } = args as { message: string; level?: string };
+    const timestamp = new Date().toISOString();
+    const logEntry = `${timestamp} ${level.toUpperCase()} ${message}`;
+    
+    return {
+      content: [
+        {
+          type: "text",
+          text: `Logged: ${logEntry}`
+        }
+      ]
+    };
+  }
+  
+  throw new Error(`Tool not found: ${name}`);
+});
+
+// Prompts implementation
+server.setRequestHandler(ListPromptsRequestSchema, async () => {
+  return {
+    prompts: [
+      {
+        name: "analyze-logs",
+        description: "Analyze application logs for issues",
+        arguments: [
+          {
+            name: "timeframe",
+            description: "Time period to analyze (e.g., '1h', '1d')",
+            required: false
+          }
+        ]
+      },
+      {
+        name: "debug-issue",
+        description: "Help debug a specific issue",
+        arguments: [
+          {
+            name: "error_message",
+            description: "The error message to debug",
+            required: true
+          }
+        ]
+      }
+    ]
+  };
+});
+
+server.setRequestHandler(GetPromptRequestSchema, async (request) => {
+  const { name, arguments: args } = request.params;
+  
+  if (name === "analyze-logs") {
+    const timeframe = args?.timeframe || "1h";
+    return {
+      description: `Analyze application logs for the last ${timeframe}`,
+      messages: [
+        {
+          role: "user",
+          content: {
+            type: "text",
+            text: `Please analyze the application logs for any issues in the last ${timeframe}. Look for errors, warnings, and unusual patterns.`
+          }
+        }
+      ]
+    };
+  }
+  
+  if (name === "debug-issue") {
+    const errorMessage = args?.error_message;
+    return {
+      description: "Debug assistance for specific error",
+      messages: [
+        {
+          role: "user",
+          content: {
+            type: "text",
+            text: `I'm encountering this error: "${errorMessage}". Can you help me debug this issue? Please suggest potential causes and solutions.`
+          }
+        }
+      ]
+    };
+  }
+  
+  throw new Error(`Prompt not found: ${name}`);
+});
+
+// Start the server
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error("MCP Server running on stdio");
+}
+
+main().catch((error) => {
+  console.error("Server error:", error);
+  process.exit(1);
+});
 ```
 
-**Setup**: Install Redis (`pip install redis`) and ensure a Redis server runs on `localhost:6379`.
-**Security Note**: For production, enable Redis authentication, use firewalls or private networking, and never expose Redis directly to the internet.
-**Usage**: Store context with `POST /mcp/context` and retrieve with `GET /mcp/context/{session_id}`.
+## Testing and Development
 
-## Testing the Server
-Testing ensures reliability. Here’s a basic unit test using `pytest` for the FastAPI server.
+### Using MCP Inspector
+
+The MCP Inspector provides an interactive debugging interface:
+
+1. **Install**: Use `npx @modelcontextprotocol/inspector`
+2. **Test Tools**: Directly invoke server tools and see results
+3. **Debug Protocol**: Monitor JSON-RPC message exchanges
+4. **Validate Schema**: Ensure proper tool and resource definitions
+
+### Integration with Claude Desktop
+
+Add your server to Claude Desktop configuration:
+
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/absolute/path/to/weather-server",
+        "run",
+        "weather.py"
+      ]
+    },
+    "comprehensive": {
+      "command": "node",
+      "args": ["/absolute/path/to/comprehensive-server.js"]
+    }
+  }
+}
+```
+
+### Testing with Python
 
 ```python
 import pytest
-from fastapi.testclient import TestClient
-from your_basic_server import app
+import asyncio
+from mcp.server.fastmcp import FastMCP
 
-client = TestClient(app)
-
-def test_store_and_retrieve():
-    # Store a message
-    response = client.post("/mcp/chat", json={
-        "session_id": "test1",
-        "message": {"role": "user", "content": "Hello!"}
-    })
-    assert response.status_code == 200
-    assert response.json()["status"] == "ok"
-
-    # Retrieve history
-    response = client.get("/mcp/chat/test1")
-    assert response.status_code == 200
-    assert len(response.json()["history"]) == 1
-    assert response.json()["history"][0]["content"] == "Hello!"
+@pytest.mark.asyncio
+async def test_weather_alerts():
+    mcp = FastMCP("test-weather")
+    
+    # Test tool registration
+    tools = await mcp.list_tools()
+    assert len(tools.tools) == 2
+    assert any(tool.name == "get_alerts" for tool in tools.tools)
+    
+    # Test tool execution
+    result = await mcp.call_tool("get_alerts", {"state": "CA"})
+    assert result.content
 ```
 
-**Run**: `pytest test_mcp.py` after installing `pytest` (`pip install pytest`).
+## Best Practices Summary
 
-## Deployment: Docker
-Deploy the intermediate server using Docker for consistency.
+### Security
 
-```dockerfile
-# Dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
+- Always validate inputs against JSON schemas
+- Implement proper error handling that doesn't leak sensitive information
+- Use tool annotations to indicate potential side effects
+- Enable user consent for all tool executions
 
-**requirements.txt**:
-```
-fastapi==0.103.0
-uvicorn==0.23.2
-pydantic==2.4.2
-redis==5.0.1
-```
+### Performance
 
-**Run**: Build with `docker build -t mcp-server .` and run with `docker run -p 8000:8000 mcp-server`.
+- Implement async operations for I/O-bound tasks
+- Use appropriate timeouts for external API calls
+- Cache frequently accessed resources when possible
+- Monitor server performance and resource usage
 
----
+### Debugging
 
-**Production Security Best Practices:**
-- Always use HTTPS (TLS) for all endpoints.
-- Require authentication (API keys, OAuth2, or OpenID Connect) for all production APIs.
-- Monitor and audit access logs for unusual activity.
-- Regularly update dependencies to patch security vulnerabilities.
+- Use structured logging with appropriate log levels
+- Implement comprehensive error handling
+- Test with MCP Inspector during development
+- Monitor protocol-level communication for issues
 
----
+### Deployment
 
-## Practical: Testing with VSCode MCP Client
-The [MCP Client VSCode extension](https://marketplace.visualstudio.com/items?itemName=modelcontextprotocol.mcp-client) simplifies testing.
+- Use absolute paths in configuration files
+- Implement proper environment variable management
+- Consider containerization for production deployments
+- Document server capabilities and usage patterns
 
-1. **Install**: Search `MCP Client` in VSCode Extensions and install.
-2. **Add Server**: Use Command Palette (`Ctrl+Shift+P`), select `MCP: Add Server`, and enter `http://localhost:8000`.
-3. **Test**: In the MCP sidebar, send a `POST /mcp/context` request with:
-   ```json
-   {
-     "session_id": "test123",
-     "context": {"message": "Hello from VSCode!"}
-   }
-   ```
-4. **Debug**: Use the [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) for protocol-level insights.
+## Why MCP Matters
 
-## Why It’s Valuable
-Block’s playbook provides a clear roadmap for building MCP servers, from prototypes to enterprise systems. Its emphasis on modularity, scalability, and security ensures robust LLM integrations, while the open-source MCP standard fosters interoperability. This guide is a must-read for developers crafting AI-driven applications in 2025.
+The Model Context Protocol represents a significant step forward in AI application architecture by:
+
+1. **Standardizing Integration**: Provides a unified way to connect LLMs with external systems
+2. **Ensuring Security**: Built-in user consent and validation mechanisms
+3. **Enabling Composability**: Mix and match different MCP servers for complex workflows
+4. **Supporting Scalability**: From local development to production deployments
+5. **Fostering Ecosystem**: Open protocol encourages innovation and interoperability
 
 ## References
-- [Block’s Playbook](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)
-- [MCP Documentation](https://modelcontextprotocol.io/)
-- [MCP GitHub](https://github.com/modelcontextprotocol)
-- [VSCode MCP Client](https://marketplace.visualstudio.com/items?itemName=modelcontextprotocol.mcp-client)
+
+- [Model Context Protocol Official Documentation](https://modelcontextprotocol.io/)
+- [MCP Specification](https://spec.modelcontextprotocol.io/)
+- [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+- [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
+- [MCP Server Examples](https://modelcontextprotocol.io/examples)
+- [MCP GitHub Organization](https://github.com/modelcontextprotocol)
