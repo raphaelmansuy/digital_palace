@@ -76,4 +76,14 @@
     "markdown": true,
     "plaintext": true
   }
+  ,
+  // Tool sets configuration for chat/agent modes
+  "chat.modeFilesLocations": [
+    ".chatmodes",
+    ".github/chatmodes"
+  ],
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  "chat.mcp.enabled": true,
+  "chat.extensionTools.enabled": true
 }
