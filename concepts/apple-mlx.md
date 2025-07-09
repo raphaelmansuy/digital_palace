@@ -271,6 +271,7 @@ class MLXInference {
 - **[MLX Swift](https://github.com/ml-explore/mlx-swift)** - Swift bindings for MLX
 - **[MLX Community](https://github.com/ml-explore/mlx/discussions)** - Community discussions
 - **[MLX Tutorials](https://github.com/ml-explore/mlx-examples/tree/main/llms)** - Hands-on tutorials
+- **[MLX-LM-LENS](https://github.com/Goekdeniz-Guelmez/mlx-lm-lens)** - Research tool for interpreting MLX language models, inspired by TransformerLens
 
 ### **Integration Guides**
 - **[HuggingFace Integration](https://github.com/ml-explore/mlx-examples/tree/main/llms/hf_llm)** - Using HuggingFace models

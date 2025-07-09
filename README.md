@@ -48,6 +48,9 @@ Stay ahead with these high-quality, technical blog posts, hands-on guides, and d
 - **[Context Kills VRAM: How to Run LLMs on consumer GPUs](https://medium.com/@lyx_62906/context-kills-vram-how-to-run-llms-on-consumer-gpus-a785e8035632)**  
   A practical guide to optimizing context size and memory usage for running large language models on consumer-grade GPUs. Covers real-world benchmarks, trade-offs, and actionable tips for maximizing VRAM efficiency.
 
+- **[MLX-LM-LENS: Interpreting MLX Language Models (Goekdeniz Gülmez)](https://github.com/Goekdeniz-Guelmez/mlx-lm-lens)**  
+  Research tool for inspecting hidden states, attention scores, and embeddings in MLX-based language models. Inspired by TransformerLens, designed for Apple Silicon and MLX-LM. Useful for model interpretability and research workflows.
+
 - **[Training a Rust 1.5B Coder LM with Reinforcement Learning (GRPO)](https://www.oxen.ai/blog/training-a-rust-1-5b-coder-lm-with-reinforcement-learning-grpo)**  
   An in-depth look at building a 1.5B parameter code LLM in Rust, using reinforcement learning and the GRPO algorithm. Explains the training pipeline, challenges, and lessons learned for open-source code models.
 
