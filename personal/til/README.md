@@ -37,6 +37,8 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - **[Capture and Reuse Illustration Style for Variants](2025-07-03-capture-illustration-style.md)** - Extract style from real art and generate new variants
 - **[Block's Playbook for Designing MCP Servers](2025-07-07-blocks-mcp-server-playbook.md)** - End-to-end guide to building secure, scalable, and standards-compliant MCP servers with practical code, deployment, and testing patterns (fact-checked, 2025)
 
+- **[PEP 621 & uv: Modern Python Project Metadata and Management](2025-07-09-pep621-uv.md)** – Standardizing Python project metadata and fast project management with uv (2025)
+
 ### 2024 Highlights  
 - **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular
 - **[HuggingFace to GGUF Conversion](2024-03-04%20how_to_transform_a_huggingface_model_to_gguf.md)** - Model optimization
