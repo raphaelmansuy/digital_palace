@@ -21,6 +21,9 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
+- **[Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)** - Complete guide to setting up Model Context Protocol servers for enhanced AI agent capabilities in VSCode
+- **[VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)** - Comprehensive reference for all standard tools available in GitHub Copilot Agent Mode
+- **[Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)** - Deep analysis of Burke Holland's professional coding agent prompt with community insights
 - **[How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)** - Set up custom AI coding assistants with specialized prompts and tool configurations
 - **[Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)** - Crafting cinematic, ASMR-style video prompts for Veo3
 - **[Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md)** - Manage environment variables and secrets easily in Python
@@ -72,7 +75,10 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - [Chat interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)
 
 ### 🛠️ Development Tools
+- [Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)
+- [VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)
 - [How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)
+- [Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)
 - [Git for beginners](git/git.md)
 - [Efficient Git aliases](2024-07-27-git-alias.md)
 - [LLM command usage](2024-03-03%20how_to_use_llm_command.md)
