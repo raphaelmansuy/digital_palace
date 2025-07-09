@@ -39,7 +39,11 @@
 
 ## 🌐 Curated Blogs & Recommended Reading
 
-Stay ahead with these high-quality, technical blog posts and deep dives from the AI community:
+
+Stay ahead with these high-quality, technical blog posts, hands-on guides, and deep dives from the AI community:
+
+- **[LLMs from Scratch (Sebastian Raschka)](https://github.com/rasbt/LLMs-from-scratch)**  
+  Step-by-step, open-source code and book for building a GPT-like LLM from the ground up in PyTorch. Ideal for learners and practitioners who want to understand every detail of LLMs.
 
 - **[Context Kills VRAM: How to Run LLMs on consumer GPUs](https://medium.com/@lyx_62906/context-kills-vram-how-to-run-llms-on-consumer-gpus-a785e8035632)**  
   A practical guide to optimizing context size and memory usage for running large language models on consumer-grade GPUs. Covers real-world benchmarks, trade-offs, and actionable tips for maximizing VRAM efficiency.

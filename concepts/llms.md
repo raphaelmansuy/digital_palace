@@ -4,6 +4,7 @@ Large Language Models (LLMs) are deep learning models trained on vast text corpo
 
 ---
 
+
 ## 📖 Learn More
 
 - [LLM Technical Reference](../reference/core-technologies.md#large-language-models-llms)
@@ -12,6 +13,7 @@ Large Language Models (LLMs) are deep learning models trained on vast text corpo
 - [LLM Training & Fine-Tuning](../reference/core-technologies.md#model-training--fine-tuning)
 - [2025 AI Updates](../reference/2025-ai-updates.md)
 - [Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory) — Real-world example of LLMs with persistent memory
+- **[LLMs from Scratch (Sebastian Raschka)](https://github.com/rasbt/LLMs-from-scratch)** — Step-by-step, open-source code and book for building a GPT-like LLM from the ground up in PyTorch.
 
 ---
 
