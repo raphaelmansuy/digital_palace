@@ -60,7 +60,11 @@
 
 ### **MCP Remote MacOS Use**
 
-**[MCP Remote MacOS Use](https://github.com/baryhuang/mcp-remote-macos-use)** — Open-source MCP server for full remote Mac control by AI agents. No extra API keys required, integrates with Claude Desktop, supports WebRTC for low-latency screen sharing, and works with any LLM via MCP. Ideal for agentic computer use and production-ready automation on macOS.
+
+
+**Further Reading:**
+
+- [Choosing the best WebRTC signaling protocol for your application (BlogGeek.me)](https://bloggeek.me/choosing-webrtc-signaling-protocol/) – In-depth guide to signaling options (SIP, XMPP, MQTT, Matrix, WHIP/WHEP, proprietary) and best practices for WebRTC-based systems.
 
 **Key Features:**
 - Native macOS experience, no extra software needed on target Mac (just enable Screen Sharing)

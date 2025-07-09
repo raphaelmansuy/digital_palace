@@ -119,6 +119,7 @@ text_splitter = SemanticChunker(
 )
 ```
 
+
 ### Vector Databases
 
 #### **Local Development**
@@ -135,6 +136,11 @@ text_splitter = SemanticChunker(
 | **[Weaviate](https://weaviate.io/)** | Open source, flexible | Custom deployments |
 | **[pgvectorscale](https://github.com/timescale/pgvectorscale/)** | PostgreSQL-based | Existing PostgreSQL setups |
 | **[PGVector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp)** | Infrastructure-as-Code PostgreSQL with PGVector on Google Cloud SQL | Production-ready GCP deployments |
+
+**Advanced Example:**
+
+- **[Hands-on Multi-Vector Retrieval with Reason-ModernColBERT in Weaviate (LightOn)](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb)**  
+  Step-by-step notebook: advanced RAG with multi-vector embeddings and late interaction retrieval using Reason-ModernColBERT in Weaviate. Covers setup, code, and reasoning-intensive search for agentic RAG and production use cases.
 
 ### Embedding Models
 

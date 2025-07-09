@@ -270,6 +270,13 @@ start_server = websockets.serve(
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
+
+
+#### Further Reading
+
+- [Choosing the best WebRTC signaling protocol for your application (BlogGeek.me)](https://bloggeek.me/choosing-webrtc-signaling-protocol/) – Comprehensive guide to signaling options (SIP, XMPP, MQTT, Matrix, WHIP/WHEP, proprietary) and best practices for WebRTC applications.
+
+- [LiveTok Voice Agents Cost Estimator](https://www.livetok.io/cost-calculator) – Interactive calculator to estimate and compare the cost of running voice agents across major providers (Retell AI, ElevenLabs, VAPI, Ultravox, Deepgram, Twilio, OpenAI, Gemini, and more). Includes links to additional calculators for deeper analysis.
 ```
 
 ### Voice Interface with Emotion Detection

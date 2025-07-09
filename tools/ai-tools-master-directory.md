@@ -266,6 +266,7 @@
 - **Strength**: Relationship understanding
 - **Best for**: Connected knowledge systems
 
+
 ### Vector Databases & Search
 
 | Tool                                                         | Purpose                        | Scale      |
@@ -273,6 +274,9 @@
 | [pgvectorscale](https://github.com/timescale/pgvectorscale/) | High-performance vector search | Enterprise |
 | [pgvector CloudSQL GCP](https://github.com/sciences44/pgvector_cloudsql_gcp) | Infrastructure-as-code for PostgreSQL with PGVector on Google Cloud SQL | Production |
 | [byaldi](https://github.com/AnswerDotAI/byaldi)              | Multi-modal search             | Research   |
+| [Weaviate Reason-ModernColBERT Notebook](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb) | Hands-on multi-vector retrieval, late interaction, advanced RAG | Production, Research |
+
+> **Hands-on notebook:** Advanced RAG with multi-vector embeddings and Reason-ModernColBERT in Weaviate. Step-by-step code, setup, and reasoning-intensive retrieval for agentic RAG and production use cases.
 
 ### Document Processing
 
