@@ -316,22 +316,581 @@ Agent Mode supports **Model Context Protocol (MCP)** servers for extended functi
 "chat.tools.autoApprove": true       // Auto-approve (convenience)
 ```
 
-## 🔗 Related Resources
+## 📁 Configuration File Locations & Setup
 
-- [VSCode Agent Mode Documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode) - Official guide
-- [VSCode Chat Context Management](https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context) - Context and tools reference
-- [GitHub Copilot Chat Cheat Sheet](https://docs.github.com/en/copilot/using-github-copilot/github-copilot-chat-cheat-sheet) - Complete command reference
-- [MCP Servers Documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) - Extending with external tools
-- [GPT-4.1 Coding Agent TIL](./2025-07-09-dissecting-gpt4-coding-agent-prompt.md) - Advanced prompt engineering
-- [VSCode Chat Mode Configuration TIL](./2025-07-09-vscode-chat-mode-configuration.md) - Custom chat modes
+This section provides specific file paths and actionable examples for configuring VSCode Agent Mode tools.
 
-## Key Takeaways
+### **🗂️ Configuration File Hierarchy**
 
-1. **Comprehensive Toolset**: 20+ built-in tools covering development, testing, and integration
-2. **Autonomous Operation**: Tools work together without manual intervention
-3. **Quality Assurance**: Built-in error checking and iterative refinement
-4. **Extensible Architecture**: MCP servers and extensions expand capabilities
-5. **Enterprise Ready**: Centralized configuration and approval workflows
-6. **Performance Optimized**: Intelligent tool selection and request management
+VSCode loads configuration from multiple locations with the following priority:
 
-*Agent Mode represents a paradigm shift from assisted coding to autonomous development, where AI systems can complete complex, multi-step programming tasks with minimal human oversight while maintaining quality and safety standards.*
+1. **Workspace Settings** (highest priority)
+2. **Folder Settings** 
+3. **User Settings**
+4. **Default Settings** (lowest priority)
+
+#### **File Locations by Operating System**
+
+**macOS:**
+```bash
+# User Settings
+~/Library/Application Support/Code/User/settings.json
+
+# Workspace Settings  
+<workspace>/.vscode/settings.json
+
+# Tool Sets Configuration
+~/Library/Application Support/Code/User/toolsets.jsonc
+
+# MCP Servers (Workspace)
+<workspace>/.vscode/mcp.json
+
+# Chat Modes (User)
+~/Library/Application Support/Code/User/chatmodes/
+
+# Chat Modes (Workspace)
+<workspace>/.vscode/chatmodes/
+<workspace>/.github/chatmodes/
+```
+
+**Windows:**
+```bash
+# User Settings
+%APPDATA%\Code\User\settings.json
+
+# Workspace Settings
+<workspace>\.vscode\settings.json
+
+# Tool Sets Configuration
+%APPDATA%\Code\User\toolsets.jsonc
+
+# MCP Servers (Workspace)
+<workspace>\.vscode\mcp.json
+
+# Chat Modes (User)
+%APPDATA%\Code\User\chatmodes\
+
+# Chat Modes (Workspace)
+<workspace>\.vscode\chatmodes\
+<workspace>\.github\chatmodes\
+```
+
+**Linux:**
+```bash
+# User Settings
+~/.config/Code/User/settings.json
+
+# Workspace Settings
+<workspace>/.vscode/settings.json
+
+# Tool Sets Configuration
+~/.config/Code/User/toolsets.jsonc
+
+# MCP Servers (Workspace)
+<workspace>/.vscode/mcp.json
+
+# Chat Modes (User)
+~/.config/Code/User/chatmodes/
+
+# Chat Modes (Workspace)
+<workspace>/.vscode/chatmodes/
+<workspace>/.github/chatmodes/
+```
+
+### **⚙️ Actionable Configuration Examples**
+
+#### **1. User Settings Configuration**
+
+**File:** `~/Library/Application Support/Code/User/settings.json` (macOS)
+
+```json
+{
+  // Agent Mode Core Settings
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 20,
+  "github.copilot.chat.agent.autoFix": true,
+  "github.copilot.chat.agent.runTasks": true,
+  
+  // Tool Management
+  "chat.extensionTools.enabled": true,
+  "chat.tools.autoApprove": false,
+  "chat.mcp.discovery.enabled": true,
+  
+  // Enhanced Features
+  "github.copilot.chat.codesearch.enabled": true,
+  "chat.editing.autoAcceptDelay": 3000,
+  
+  // MCP Global Configuration
+  "mcp": {
+    "servers": {
+      "github-tools": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@github/github-mcp-server"],
+        "env": {
+          "GITHUB_TOKEN": "${input:github-token}"
+        }
+      },
+      "fetch-tools": {
+        "type": "stdio", 
+        "command": "uvx",
+        "args": ["mcp-server-fetch"]
+      }
+    }
+  },
+  
+  // Input Variables for MCP
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "github-token",
+      "description": "GitHub Personal Access Token",
+      "password": true
+    }
+  ]
+}
+```
+
+**How to Apply:**
+1. Open Command Palette: `Cmd+Shift+P` (macOS) / `Ctrl+Shift+P` (Windows/Linux)
+2. Type: "Preferences: Open User Settings (JSON)"
+3. Copy the configuration above
+4. Restart VSCode
+
+#### **2. Workspace Settings Configuration**
+
+**File:** `<your-project>/.vscode/settings.json`
+
+```json
+{
+  // Project-specific Agent Mode settings
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  
+  // Project-specific tool restrictions
+  "chat.tools.autoApprove": false,
+  
+  // Disable certain tools for this project
+  "chat.agent.disallowedTools": [
+    "runCommands"
+  ],
+  
+  // Allow only specific tools
+  "chat.agent.allowedTools": [
+    "codebase",
+    "editFiles", 
+    "search",
+    "problems",
+    "usages",
+    "fetch",
+    "githubRepo"
+  ],
+  
+  // Project-specific MCP server discovery
+  "chat.mcp.discovery.enabled": true,
+  
+  // Custom chat mode locations
+  "chat.modeFilesLocations": [
+    ".vscode/chatmodes",
+    ".github/chatmodes"
+  ]
+}
+```
+
+**How to Apply:**
+1. Navigate to your project root
+2. Create `.vscode/` folder if it doesn't exist
+3. Create or edit `settings.json` in that folder
+4. Add the configuration above
+
+#### **3. MCP Servers Configuration**
+
+**File:** `<your-project>/.vscode/mcp.json`
+
+```json
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "openai-api-key",
+      "description": "OpenAI API Key",
+      "password": true
+    },
+    {
+      "type": "promptString", 
+      "id": "database-url",
+      "description": "PostgreSQL Database URL",
+      "password": true
+    }
+  ],
+  "servers": {
+    "postgres-tools": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-postgres"],
+      "env": {
+        "DATABASE_URL": "${input:database-url}"
+      }
+    },
+    "file-manager": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-server-filesystem"],
+      "env": {
+        "ALLOWED_PATHS": "${workspaceFolder}"
+      }
+    },
+    "aws-tools": {
+      "type": "stdio",
+      "command": "uvx", 
+      "args": ["mcp-server-aws"],
+      "env": {
+        "AWS_REGION": "us-east-1"
+      }
+    },
+    "docker-tools": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-docker"]
+    }
+  }
+}
+```
+
+**How to Apply:**
+1. Navigate to your project root
+2. Create `.vscode/` folder if it doesn't exist
+3. Create `mcp.json` with the configuration above
+4. Install required MCP servers:
+   ```bash
+   # Install MCP servers globally
+   pip install mcp-server-postgres
+   npm install -g mcp-server-filesystem
+   pip install mcp-server-aws
+   pip install mcp-server-docker
+   ```
+
+#### **4. Tool Sets Configuration**
+
+**File:** `~/Library/Application Support/Code/User/toolsets.jsonc` (macOS)
+
+```jsonc
+{
+  // Development workflow tool sets
+  "backend-dev": {
+    "tools": [
+      "codebase",
+      "editFiles", 
+      "runCommands",
+      "runTasks",
+      "postgres-tools",
+      "docker-tools",
+      "problems"
+    ],
+    "description": "Backend development and database work",
+    "icon": "server"
+  },
+  
+  "frontend-dev": {
+    "tools": [
+      "codebase",
+      "editFiles",
+      "openSimpleBrowser", 
+      "runCommands",
+      "runTasks",
+      "fetch",
+      "problems"
+    ],
+    "description": "Frontend development and testing",
+    "icon": "browser"
+  },
+  
+  "security-audit": {
+    "tools": [
+      "codebase",
+      "search",
+      "usages",
+      "fetch",
+      "githubRepo",
+      "problems"
+    ],
+    "description": "Security analysis and code review",
+    "icon": "shield"
+  },
+  
+  "data-science": {
+    "tools": [
+      "newJupyterNotebook",
+      "runNotebooks",
+      "postgres-tools",
+      "fetch",
+      "codebase",
+      "editFiles"
+    ],
+    "description": "Data analysis and machine learning",
+    "icon": "graph"
+  },
+  
+  "devops": {
+    "tools": [
+      "runCommands",
+      "runTasks", 
+      "docker-tools",
+      "aws-tools",
+      "codebase",
+      "problems"
+    ],
+    "description": "DevOps and infrastructure management", 
+    "icon": "cloud"
+  }
+}
+```
+
+**How to Apply:**
+1. Open Command Palette: `Cmd+Shift+P`
+2. Type: "Chat: Configure Tool Sets"
+3. Select: "Create new tool sets file"
+4. Replace content with configuration above
+
+#### **5. Custom Chat Mode Examples**
+
+**File:** `<project>/.vscode/chatmodes/code-review.md`
+
+```markdown
+---
+description: 'Comprehensive code review mode with security focus'
+tools: ['codebase', 'usages', 'problems', 'fetch', 'githubRepo', 'security-audit']
+model: 'gpt-4'
+---
+
+# Code Review Assistant
+
+You are a senior software engineer conducting a thorough code review. Focus on:
+
+## 🔍 Code Quality
+- **Architecture**: Assess overall design patterns
+- **Performance**: Identify potential bottlenecks  
+- **Maintainability**: Check for code clarity and documentation
+- **Testing**: Ensure adequate test coverage
+
+## 🔒 Security Analysis
+- **Vulnerabilities**: Look for common security issues (OWASP Top 10)
+- **Input Validation**: Check for proper sanitization
+- **Authentication**: Verify secure auth implementations
+- **Dependencies**: Check for vulnerable packages
+
+## 📋 Best Practices
+- **Standards Compliance**: Compare with #githubRepo airbnb/javascript
+- **Industry Patterns**: Reference #fetch https://web.dev/security
+- **Team Guidelines**: Follow project conventions
+
+Always provide actionable feedback with specific examples and suggested improvements.
+```
+
+**File:** `<project>/.github/chatmodes/feature-planning.md`
+
+```markdown
+---
+description: 'Feature planning and architecture design mode'
+tools: ['codebase', 'new', 'fetch', 'githubRepo', 'backend-dev', 'frontend-dev']
+---
+
+# Feature Planning Assistant
+
+You are an experienced tech lead planning new features. Your approach:
+
+## 🎯 Requirements Analysis
+1. **Understand** the feature requirements thoroughly
+2. **Identify** technical dependencies and constraints  
+3. **Research** similar implementations #githubRepo
+4. **Plan** the implementation strategy
+
+## 🏗️ Architecture Design
+1. **Database Schema**: Design data models
+2. **API Design**: Plan endpoints and contracts
+3. **Frontend Components**: Design UI architecture
+4. **Integration Points**: Identify external services
+
+## 📋 Implementation Plan
+1. **Task Breakdown**: Create detailed development tasks
+2. **Dependencies**: Map prerequisite work
+3. **Testing Strategy**: Plan unit, integration, and e2e tests
+4. **Deployment**: Consider rollout and monitoring
+
+Use #codebase to understand existing patterns and #new to scaffold components.
+```
+
+**How to Apply Chat Modes:**
+1. Create the folders: `.vscode/chatmodes/` or `.github/chatmodes/`
+2. Add the `.md` files with configurations above
+3. Restart VSCode or reload window
+4. Access via Chat Mode dropdown in Chat view
+
+#### **6. Team Configuration Template**
+
+**File:** `<project>/.vscode/settings.json` (Team Settings)
+
+```json
+{
+  // Team-wide Agent Mode configuration
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 12,
+  
+  // Safety settings for team use
+  "chat.tools.autoApprove": false,
+  "github.copilot.chat.agent.autoFix": false,
+  
+  // Allowed tools for team projects
+  "chat.agent.allowedTools": [
+    "codebase",
+    "editFiles",
+    "search", 
+    "problems",
+    "usages",
+    "changes",
+    "fetch",
+    "githubRepo",
+    "findTestFiles",
+    "testFailure"
+  ],
+  
+  // Restricted tools
+  "chat.agent.disallowedTools": [
+    "runCommands",
+    "runTasks"
+  ],
+  
+  // Chat mode locations
+  "chat.modeFilesLocations": [
+    ".github/chatmodes",
+    ".vscode/chatmodes"
+  ],
+  
+  // Enhanced search for better context
+  "github.copilot.chat.codesearch.enabled": true
+}
+```
+
+### **🚀 Quick Setup Scripts**
+
+#### **macOS/Linux Setup Script**
+
+```bash
+#!/bin/bash
+# VSCode Agent Mode Quick Setup
+
+echo "Setting up VSCode Agent Mode configuration..."
+
+# Create necessary directories
+VSCODE_USER_DIR="$HOME/Library/Application Support/Code/User"
+mkdir -p "$VSCODE_USER_DIR/chatmodes"
+mkdir -p ".vscode/chatmodes"
+mkdir -p ".github/chatmodes"
+
+# Create basic user settings
+cat > "$VSCODE_USER_DIR/settings.json" << 'EOF'
+{
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 20,
+  "github.copilot.chat.agent.autoFix": true,
+  "chat.extensionTools.enabled": true,
+  "chat.mcp.discovery.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true
+}
+EOF
+
+# Create workspace settings
+cat > ".vscode/settings.json" << 'EOF'
+{
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  "chat.tools.autoApprove": false,
+  "chat.modeFilesLocations": [
+    ".vscode/chatmodes",
+    ".github/chatmodes"
+  ]
+}
+EOF
+
+# Create MCP configuration
+cat > ".vscode/mcp.json" << 'EOF'
+{
+  "servers": {
+    "fetch-tools": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    }
+  }
+}
+EOF
+
+echo "✅ VSCode Agent Mode configuration complete!"
+echo "🔄 Please restart VSCode to apply changes"
+```
+
+#### **Windows PowerShell Setup Script**
+
+```powershell
+# VSCode Agent Mode Quick Setup for Windows
+
+Write-Host "Setting up VSCode Agent Mode configuration..." -ForegroundColor Green
+
+# Create necessary directories
+$VSCodeUserDir = "$env:APPDATA\Code\User"
+New-Item -ItemType Directory -Force -Path "$VSCodeUserDir\chatmodes"
+New-Item -ItemType Directory -Force -Path ".vscode\chatmodes"  
+New-Item -ItemType Directory -Force -Path ".github\chatmodes"
+
+# Create basic user settings
+$userSettings = @{
+    "chat.agent.enabled" = $true
+    "chat.agent.maxRequests" = 20
+    "github.copilot.chat.agent.autoFix" = $true
+    "chat.extensionTools.enabled" = $true
+    "chat.mcp.discovery.enabled" = $true
+    "github.copilot.chat.codesearch.enabled" = $true
+} | ConvertTo-Json -Depth 10
+
+$userSettings | Out-File -FilePath "$VSCodeUserDir\settings.json" -Encoding UTF8
+
+# Create workspace settings
+$workspaceSettings = @{
+    "chat.agent.enabled" = $true
+    "chat.agent.maxRequests" = 15
+    "chat.tools.autoApprove" = $false
+    "chat.modeFilesLocations" = @(".vscode/chatmodes", ".github/chatmodes")
+} | ConvertTo-Json -Depth 10
+
+$workspaceSettings | Out-File -FilePath ".vscode\settings.json" -Encoding UTF8
+
+Write-Host "✅ VSCode Agent Mode configuration complete!" -ForegroundColor Green
+Write-Host "🔄 Please restart VSCode to apply changes" -ForegroundColor Yellow
+```
+
+### **📋 Configuration Validation Checklist**
+
+Use this checklist to verify your configuration:
+
+- [ ] **Agent Mode Enabled**: `chat.agent.enabled: true` in settings
+- [ ] **Tool Access**: Can see tools in Chat view Tools picker
+- [ ] **MCP Servers**: `MCP: List Servers` shows configured servers
+- [ ] **Chat Modes**: Available in Chat Mode dropdown
+- [ ] **Tool Sets**: Visible in Tools picker under tool sets section
+- [ ] **File Permissions**: Configuration files have correct permissions
+- [ ] **Restart Applied**: VSCode restarted after configuration changes
+
+**Validation Commands:**
+```bash
+# Check if Agent Mode is working
+Cmd/Ctrl + Shift + P → "Chat: Show Available Tools"
+
+# Verify MCP servers
+Cmd/Ctrl + Shift + P → "MCP: List Servers"
+
+# Test tool sets
+Open Chat → Tools picker → Look for custom tool sets
+
+# Validate chat modes  
+Open Chat → Mode dropdown → Look for custom modes
+```
