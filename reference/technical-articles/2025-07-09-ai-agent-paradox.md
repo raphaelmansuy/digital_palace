@@ -31,7 +31,7 @@ flowchart LR
 
 ```
 
-While everyone chases the $131.5 billion AI investment boom, the reality is more nuanced. Organizations often find that larger budgets don't guarantee better outcomes with AI agents. This counterintuitive pattern suggests that success depends more on focused problem-solving and realistic scope than on budget size.
+While everyone chases the $130 billion AI investment boom, the reality is more nuanced. Organizations often find that larger budgets don't guarantee better outcomes with AI agents. This counterintuitive pattern suggests that success depends more on focused problem-solving and realistic scope than on budget size.
 
 The promise of AI agents is intoxicating: autonomous systems that can handle complex tasks, make decisions, and operate with minimal human intervention. Yet for every success story, there are dozens of failed implementations that cost organizations millions while delivering little value.
 
