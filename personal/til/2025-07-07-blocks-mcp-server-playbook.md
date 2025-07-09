@@ -504,6 +504,163 @@ The Model Context Protocol represents a significant step forward in AI applicati
 4. **Supporting Scalability**: From local development to production deployments
 5. **Fostering Ecosystem**: Open protocol encourages innovation and interoperability
 
+## 🔧 VS Code Integration
+
+VS Code provides excellent support for MCP servers through its agent mode and Copilot extensibility platform. Here's how to integrate MCP servers with VS Code:
+
+### Configuration Methods
+
+VS Code supports multiple ways to add MCP servers:
+
+1. **Workspace Configuration** (`.vscode/mcp.json`):
+
+```json
+{
+  "servers": {
+    "my-custom-server": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "my_mcp_server"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "API_KEY": "${env:MY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+1. **User/Remote Settings** - Global configuration in VS Code settings
+1. **Extension Registration** - Programmatic registration via extensions
+1. **URL Handler** - Install via `vscode:mcp/install?...` links
+1. **Command Line** - `code --add-mcp server-config.json`
+
+### Supported MCP Features
+
+VS Code implements the full MCP specification:
+
+- **Tools**: Available in agent mode for automated invocation
+- **Resources**: Accessible via "Add Context" or direct browsing
+- **Prompts**: Invokable via slash commands (`/mcp.servername.promptname`)
+- **Authorization**: OAuth support for GitHub and Microsoft Entra
+- **Sampling**: LLM access for server-side processing
+
+### Development & Debugging
+
+Enable development mode for easier testing:
+
+```json
+{
+  "servers": {
+    "dev-server": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["server.py"],
+      "dev": {
+        "watch": "src/**/*.py",
+        "debug": { "type": "python" }
+      }
+    }
+  }
+}
+```
+
+Features include:
+
+- File watching with automatic restart
+- Debugger attachment (Node.js/Python)
+- Error logging in Output panel
+- Server status monitoring
+
+### Extension Development
+
+Register MCP servers programmatically in VS Code extensions:
+
+```typescript
+// package.json
+{
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "myServerProvider",
+        "label": "My Custom MCP Server"
+      }
+    ]
+  }
+}
+
+// Extension code
+vscode.lm.registerMcpServerDefinitionProvider('myServerProvider', {
+  provideMcpServerDefinitions() {
+    return [{
+      name: 'my-server',
+      type: 'stdio',
+      command: 'python',
+      args: ['-m', 'my_server']
+    }];
+  },
+  resolveMcpServerDefinition(definition) {
+    // Handle authentication, validation, etc.
+    return definition;
+  }
+});
+```
+
+### Best Practices for VS Code
+
+1. **Tool Design**: Focus on atomic operations for agent mode
+2. **Error Handling**: Provide clear error messages for the Problems panel
+3. **Progress Reporting**: Use progress indicators for long operations
+4. **Resource Templates**: Support parameterized resources with completions
+5. **Security**: Implement proper authorization for sensitive operations
+
+### Example: File System MCP Server
+
+```python
+import asyncio
+from typing import Any, Sequence
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("File System Tools")
+
+@mcp.tool()
+def read_file(path: str) -> str:
+    """Read contents of a file."""
+    try:
+        with open(path, 'r') as f:
+            return f.read()
+    except Exception as e:
+        return f"Error reading file: {e}"
+
+@mcp.tool()
+def list_directory(path: str = ".") -> list[str]:
+    """List contents of a directory."""
+    import os
+    try:
+        return os.listdir(path)
+    except Exception as e:
+        return [f"Error: {e}"]
+
+if __name__ == "__main__":
+    asyncio.run(mcp.run())
+```
+
+Configure in `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["filesystem_server.py"]
+    }
+  }
+}
+```
+
+This server provides file system tools that VS Code's agent mode can automatically invoke when users ask to read files or explore directories.
+
 ## References
 
 - [Model Context Protocol Official Documentation](https://modelcontextprotocol.io/)
@@ -512,3 +669,9 @@ The Model Context Protocol represents a significant step forward in AI applicati
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [MCP Server Examples](https://modelcontextprotocol.io/examples)
 - [MCP GitHub Organization](https://github.com/modelcontextprotocol)
+- [VS Code MCP Developer Guide](https://code.visualstudio.com/api/extension-guides/ai/mcp)
+- [VS Code MCP Servers Gallery](https://code.visualstudio.com/mcp)
+- [VS Code Chat Participant API](https://code.visualstudio.com/api/extension-guides/ai/chat)
+- [VS Code Extension Samples (MCP)](https://github.com/microsoft/vscode-extension-samples/blob/main/mcp-extension-sample)
+- [FastMCP Python Framework](https://github.com/jlowin/fastmcp)
+- [MCP Inspector Tool](https://github.com/modelcontextprotocol/inspector)
