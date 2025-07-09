@@ -102,6 +102,10 @@ Stay ahead with these high-quality, technical blog posts, hands-on guides, and d
 - **[Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory)**  
   A hands-on guide to building chatbots with persistent, user-specific memory using Google Gemini 2.5 and the open-source Mem0 library. Covers architecture, code, and practical tips for context-aware, personalized AI assistants.
 
+
+- **[Announcing Vertex AI Agent Engine Memory Bank (Google Cloud Blog)](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en)**  
+  Official announcement and deep dive on Vertex AI's new managed Memory Bank service for agents. Explains how Memory Bank enables persistent, contextual, and personalized memory for conversational agents, with hands-on guides, architecture diagrams, and integration examples for ADK, LangGraph, and CrewAI. Includes links to [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory). Highly recommended for anyone building production-grade, context-aware AI agents on Google Cloud.
+
 For more author-centric and community blog links, see [External Blogs](./community/external-blogs/blogs.md).
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation

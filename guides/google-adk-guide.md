@@ -97,7 +97,7 @@ loop_agent = Loop(
 |-----------|---------|-------------|
 | **Agent** | Core AI entity | Single-purpose tasks |
 | **Tools** | External capabilities | API calls, calculations |
-| **Memory** | State management | Conversation history |
+| **Memory** | State management | Conversation history, persistent user preferences (see [Vertex AI Agent Engine Memory Bank](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en)) |
 | **Session** | Execution context | User interactions |
 | **Runtime** | Execution engine | Production deployment |
 
@@ -332,7 +332,15 @@ if __name__ == "__main__":
     runtime.start()
 ```
 
-### Vertex AI Agent Engine
+
+### Vertex AI Agent Engine & Memory Bank
+
+> **New (2025):** Vertex AI Agent Engine now supports [Memory Bank](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en), a managed service for persistent, contextual agent memory. Memory Bank enables agents to remember user preferences, maintain context across sessions, and personalize interactions. See the [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory) for hands-on integration with ADK, LangGraph, and CrewAI.
+
+```python
+# Example: Enable Memory Bank in your ADK agent (see official docs for details)
+# ...
+```
 
 ```python
 from google.ai.adk.deploy import VertexAIDeploy
