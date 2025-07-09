@@ -18,6 +18,7 @@
 | **🤖 Try AI Tools**         | [Best Tools](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 sec      | Working AI now     |
 | **💻 Build an App**         | [Zero-to-App](./guides/goal-oriented-guides.md#getting-started)            | 5 min       | Live application   |
 | **📚 Learn Systematically** | [Learning Path](./learning/README.md#interactive-learning-navigator)       | 10 min      | Structured roadmap |
+| **🏫 Today I Learned (TIL)** | [TIL Hub](./personal/til/README.md)                                        | 1 min       | Daily discoveries  |
 | **🛠️ Find Right Tool**      | [Tool Finder](./tools/ai-tools-master-directory.md#quick-tool-finder)      | 2 min       | Perfect match      |
 
 
