@@ -25,6 +25,7 @@
 - **[Mastering Prompt Engineering (EN)](./2024-05-29_mastering-prompt-engineering_us.md)** 🟢 - Advanced prompting techniques
 - **[Mastering Prompt Engineering (FR)](./2024-05-29_mastering_prompt_engineering_fr.md)** 🟢 - French version of prompting guide
 - **[Context Management for LLM Agents](./2025-06-29-context-management-llm-agents.md)** 🟡 - Agent context strategies
+- **[New Article Title](./path-to-article.md)** 🟡 - Short description of the new article
 
 ### 🤖 LLM Development & Training
 
