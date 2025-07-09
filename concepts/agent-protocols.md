@@ -10,7 +10,8 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 **[Quickstart: Build an agent with the Agent Development Kit – Google Cloud Documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-development-kit/quickstart)** 📝 — *Step-by-step official guide to building your first agent using Google’s Agent Development Kit (ADK). Covers project setup, ADK installation, agent creation, and testing in both web and CLI environments. Ideal for developers seeking a practical, hands-on introduction to agent development workflows on Vertex AI.*
 
 
-**[Announcing Vertex AI Agent Engine Memory Bank – Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en)** 📝 — *Official announcement and deep dive on Vertex AI's new managed Memory Bank service for agents. Explains how Memory Bank enables persistent, contextual, and personalized memory for conversational agents, with hands-on guides, architecture diagrams, and integration examples for ADK, LangGraph, and CrewAI. See the [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory) for implementation details.*
+
+**[Topic-based Memory for Long-term Conversational Agents (arXiv, 2024)](https://arxiv.org/pdf/2503.08026)** 🧑‍� — *The foundational research behind Vertex AI Memory Bank. Proposes a topic-based approach for extracting, storing, and retrieving persistent memories in conversational agents, enabling more natural, context-aware, and personalized AI interactions.*
 
 
 

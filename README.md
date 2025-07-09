@@ -106,6 +106,10 @@ Stay ahead with these high-quality, technical blog posts, hands-on guides, and d
 - **[Announcing Vertex AI Agent Engine Memory Bank (Google Cloud Blog)](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en)**  
   Official announcement and deep dive on Vertex AI's new managed Memory Bank service for agents. Explains how Memory Bank enables persistent, contextual, and personalized memory for conversational agents, with hands-on guides, architecture diagrams, and integration examples for ADK, LangGraph, and CrewAI. Includes links to [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory). Highly recommended for anyone building production-grade, context-aware AI agents on Google Cloud.
 
+
+- **[Topic-based Memory for Long-term Conversational Agents (arXiv, 2024)](https://arxiv.org/pdf/2503.08026)**  
+  The foundational research behind Vertex AI Memory Bank. Proposes a novel, topic-based approach for extracting, storing, and retrieving persistent memories in conversational agents. Demonstrates how this method enables more natural, context-aware, and personalized AI interactions. Highly recommended for those interested in the science powering production agent memory.
+
 For more author-centric and community blog links, see [External Blogs](./community/external-blogs/blogs.md).
 
 ## 🧩 Concepts Hub - Your Knowledge Foundation

@@ -333,7 +333,10 @@ if __name__ == "__main__":
 ```
 
 
+
 ### Vertex AI Agent Engine & Memory Bank
+
+> **New (2025):** Vertex AI Agent Engine now supports [Memory Bank](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en), a managed service for persistent, contextual agent memory. Memory Bank enables agents to remember user preferences, maintain context across sessions, and personalize interactions. See the [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview), [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory), and the foundational [arXiv research article](https://arxiv.org/pdf/2503.08026) for the science behind topic-based agent memory.
 
 > **New (2025):** Vertex AI Agent Engine now supports [Memory Bank](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en), a managed service for persistent, contextual agent memory. Memory Bank enables agents to remember user preferences, maintain context across sessions, and personalize interactions. See the [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory) for hands-on integration with ADK, LangGraph, and CrewAI.
 
