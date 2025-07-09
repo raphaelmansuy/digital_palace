@@ -102,10 +102,15 @@ MCP Tools:
 
 ### Tool Sets Configuration
 
-Create reusable tool groups in `.jsonc` format:
+Create reusable tool groups in `.jsonc` format stored in your **user profile**.
+
+**Location**: Tool sets files are stored in your user profile directory (not workspace-specific)
+**Access**: Command Palette → "Chat: Configure Tool Sets" → "Create new tool sets file"
+**File Format**: `.jsonc` file in user profile
 
 ```json
 // Tool sets file (created via "Chat: Configure Tool Sets")
+// File location: User profile directory (cross-workspace)
 {
   "reader": {
     "tools": [
@@ -133,6 +138,12 @@ Create reusable tool groups in `.jsonc` format:
   }
 }
 ```
+
+**Key Notes:**
+- Tool sets are **user-level configuration** (not workspace-specific)
+- Available across all workspaces once created
+- Use Command Palette to create and manage tool sets
+- Reference tool sets in chat prompts with `#toolset-name`
 
 ### MCP Server Integration
 
@@ -502,8 +513,10 @@ Ctrl+Cmd+I (Mac) or Ctrl+Alt+I (Windows/Linux) → Select "Agent"
 .vscode/mcp.json          # Workspace
 settings.json             # User profile
 
-# Tool sets configuration  
-~/.vscode/toolsets.jsonc  # User profile only
+# Tool sets configuration (user profile only)
+# Created via Command Palette: "Chat: Configure Tool Sets"
+# Stored in user profile directory - accessible across all workspaces
+User profile directory/.jsonc  # Exact path managed by VS Code
 ```
 
 ### Essential Settings
