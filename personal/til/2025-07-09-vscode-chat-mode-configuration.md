@@ -4,127 +4,417 @@ Today I learned how to set up custom chat modes in VSCode to create specialized 
 
 ## What is VSCode Chat Mode?
 
-VSCode Chat Mode allows you to create custom AI assistants with specific system prompts, tool configurations, and behaviors. This is particularly powerful for creating specialized coding agents that follow specific workflows or methodologies.
+VSCode offers three built-in chat modes and supports custom chat modes for specialized workflows:
 
-## Step-by-Step Configuration
+### Built-in Chat Modes
+- **Ask Mode**: Optimized for answering questions about codebase, coding concepts, and technology
+- **Edit Mode**: Optimized for making code edits across multiple files with direct application in the editor
+- **Agent Mode**: Optimized for autonomous edits with tool invocation and terminal commands (requires VS Code 1.99+)
 
-### 1. Access Chat Mode Configuration
+### Custom Chat Modes
+Custom chat modes allow you to create specialized AI assistants with specific system prompts, tool configurations, and behaviors. They're particularly powerful for creating coding agents that follow specific workflows or methodologies.
+
+## Configuration Paths & Methods
+
+### 1. Command Palette Method (Recommended)
 
 ```bash
-# Method 1: Command Palette
+# Create new chat mode
 Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac)
-# Search for: "Chat: Configure Chat Modes"
+# Search for: "Chat: New Mode File"
 
-# Method 2: VS Code Settings
-# Navigate to Settings → Extensions → GitHub Copilot → Chat Modes
+# Configure existing chat modes
+Ctrl+Shift+P → "Chat: Configure Chat Modes"
 ```
 
-### 2. Create a Custom Chat Mode File
+### 2. File-Based Configuration
 
-Create a `.chatmode.md` file in your workspace or global settings:
+#### Workspace Chat Modes
+**Default Location**: `.github/chatmodes/` folder in your workspace
+**Custom Location**: Configure with `chat.modeFilesLocations` setting
+**File Format**: `.chatmode.md`
 
-```markdown
----
-description: 'Custom coding agent with specific workflow and tools'
-tools: ['codebase', 'editFiles', 'fetch', 'problems', 'runCommands', 'search']
-model: 'GPT-4.1'
----
-
-# Your Custom System Prompt
-
-Your detailed instructions for the AI assistant go here...
+```bash
+# Example structure
+your-workspace/
+├── .github/
+│   └── chatmodes/
+│       ├── planning.chatmode.md
+│       ├── debugging.chatmode.md
+│       └── documentation.chatmode.md
+└── .vscode/
+    └── settings.json
 ```
 
-### 3. Key Configuration Options
+#### User Profile Chat Modes
+**Location**: User profile directory (accessible across all workspaces)
+**Access**: Command Palette → "Chat: New Mode File" → "User Profile"
 
-| Setting | Description | Example |
-|---------|-------------|---------|
-| `description` | Brief description of the chat mode | 'Advanced coding agent with todo management' |
-| `tools` | Array of available tools | `['codebase', 'editFiles', 'search']` |
-| `model` | Preferred model (optional) | `'GPT-4.1'` |
+### 3. Settings Configuration
 
-### 4. Available Tools Reference
+```json
+// settings.json - Tool sets configuration
+{
+  "chat.modeFilesLocations": [".chatmodes", ".github/chatmodes"],
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  "chat.mcp.enabled": true,
+  "chat.extensionTools.enabled": true
+}
+```
+
+## Chat Mode File Structure
+
+### Frontmatter Configuration
 
 ```yaml
-Core Tools:
+---
+description: 'Brief description shown in chat mode dropdown'
+tools: ['codebase', 'editFiles', 'fetch', 'problems', 'runCommands', 'search']
+---
+```
+
+### Available Tools (Built-in)
+
+```yaml
+Core Built-in Tools:
   - codebase: Search and understand codebase structure
   - editFiles: Create and modify files
   - search: Search within files and directories
   - fetch: Retrieve web content and documentation
   - problems: Check for code issues and diagnostics
   - runCommands: Execute terminal commands
-  - runTasks: Run predefined tasks
+  - runTasks: Run predefined VS Code tasks
+  - changes: View git changes and diffs
+  - findTestFiles: Locate test files for source files
+  - usages: Find code references and usages
+  - githubRepo: GitHub repository operations (if configured)
 
-Advanced Tools:
-  - githubRepo: GitHub repository operations
+Extension Tools:
   - extensions: VS Code extension management
   - terminalSelection: Work with terminal selections
   - vscodeAPI: Access VS Code API functionality
+
+MCP Tools:
+  # Add any MCP server tools you've configured
+  # Examples: database tools, API connectors, custom integrations
 ```
 
-## Example: GPT-4.1 Coding Agent Setup
+### Tool Sets Configuration
 
-Based on the [GPT-4.1 Coding Agent System Prompt](https://gist.github.com/burkeholland/7aa408554550e36d4e951a1ead2bc3ac) by Burke Holland:
+Create reusable tool groups in `.jsonc` format:
 
-```markdown
----
-description: 'Production-grade coding agent with todo management and systematic workflow'
-tools: ['codebase', 'editFiles', 'fetch', 'problems', 'runCommands', 'search']
-model: 'GPT-4.1'
----
-
-# SYSTEM PROMPT — GPT-4.1 Coding Agent (VS Code Tools Edition)
-
-You are an agent - please keep going until the user's query is completely resolved, before ending your turn and yielding back to the user.
-
-## Workflow Steps
-1. Always search the codebase to understand context
-2. Think deeply about the user's request
-3. Create a Todo List with identified steps
-4. Use appropriate tools to complete each step
-5. Update Todo List to reflect progress
-6. Check for problems using #problems tool
-7. Return control only after completion
-
-## Todo List Guidelines
-- Use standard Markdown checklist syntax: `[ ]`, `[x]`, `[-]`
-- Wrap in code blocks with triple backticks
-- Never use HTML for todo lists
-- Re-render only after completing items
-
-## Communication Style
-- Acknowledge user request with single sentence
-- Explain what you're about to do before doing it
-- Provide reasoning for searches and file reads
-- No code blocks for explanations
-- Keep responses concise and actionable
-```
-
-## Advanced Configuration Tips
-
-### 1. Increase Request Limits
 ```json
-// In VS Code settings.json
+// Tool sets file (created via "Chat: Configure Tool Sets")
 {
-  "chat.agent.maxRequests": 500
+  "reader": {
+    "tools": [
+      "changes",
+      "codebase", 
+      "fetch",
+      "findTestFiles",
+      "githubRepo",
+      "problems",
+      "usages"
+    ],
+    "description": "Read-only tools for analysis and exploration",
+    "icon": "search"
+  },
+  "developer": {
+    "tools": [
+      "codebase",
+      "editFiles", 
+      "runTasks",
+      "runCommands",
+      "problems"
+    ],
+    "description": "Full development workflow tools",
+    "icon": "tools"
+  }
 }
 ```
 
-### 2. Multiple Chat Mode Configurations
-Create different `.chatmode.md` files for different purposes:
-- `debugging.chatmode.md` - For debugging workflows
-- `documentation.chatmode.md` - For writing docs
-- `testing.chatmode.md` - For test creation
+### MCP Server Integration
 
-### 3. Tool-Specific Configurations
+Configure MCP servers for extended functionality:
+
+#### Workspace MCP Configuration (`.vscode/mcp.json`)
+
+```json
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "api-key",
+      "description": "API Key for external service",
+      "password": true
+    }
+  ],
+  "servers": {
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "server-perplexity-ask"],
+      "env": {
+        "PERPLEXITY_API_KEY": "${input:api-key}"
+      }
+    },
+    "database": {
+      "type": "stdio", 
+      "command": "uvx",
+      "args": ["mcp-server-sqlite", "--db-path", "${workspaceFolder}/data.db"]
+    }
+  }
+}
+```
+
+#### User Settings MCP Configuration
+
+```json
+// settings.json
+{
+  "mcp": {
+    "servers": {
+      "global-tools": {
+        "type": "stdio",
+        "command": "my-global-mcp-server",
+        "args": []
+      }
+    }
+  }
+}
+```
+
+## Actionable Examples
+
+### Example 1: Planning Mode (Read-Only)
+
+**File**: `.github/chatmodes/planning.chatmode.md`
+
 ```markdown
 ---
-description: 'Frontend-focused assistant'
-tools: ['codebase', 'editFiles', 'runTasks', 'problems']
+description: 'Generate implementation plans without making code edits'
+tools: ['codebase', 'fetch', 'findTestFiles', 'githubRepo', 'search', 'usages']
 ---
 
-# Frontend Development Assistant
-Specialized for React, TypeScript, and modern web development...
+# Planning Mode Instructions
+
+You are in planning mode. Your task is to generate implementation plans for new features or refactoring existing code.
+
+**DO NOT make any code edits** - only generate plans.
+
+## Plan Structure
+Create a Markdown document with:
+
+1. **Overview**: Brief description of the feature/refactoring task
+2. **Requirements**: List of requirements and constraints  
+3. **Implementation Steps**: Detailed step-by-step plan
+4. **Testing Strategy**: Tests needed to verify implementation
+5. **Risk Assessment**: Potential issues and mitigation strategies
+
+## Analysis Process
+1. Search codebase to understand current architecture
+2. Find related test files and existing patterns
+3. Research external documentation if needed
+4. Identify dependencies and integration points
+```
+
+### Example 2: Advanced Coding Agent
+
+**File**: `.github/chatmodes/senior-dev.chatmode.md`
+
+```markdown
+---
+description: 'Production-grade coding agent with systematic workflow'
+tools: ['codebase', 'editFiles', 'runTasks', 'problems', 'runCommands', 'search', 'changes']
+---
+
+# Senior Developer Agent
+
+You are a senior-level coding agent with systematic workflow approach.
+
+## Workflow Protocol
+1. **Context Analysis**: Always search codebase first to understand context
+2. **Task Planning**: Create detailed todo list before starting
+3. **Implementation**: Make changes systematically with testing
+4. **Quality Check**: Run tests and check for problems
+5. **Documentation**: Update docs and comments as needed
+
+## Todo List Management
+- Use standard Markdown: `[ ]`, `[x]`, `[-]` 
+- Wrap in code blocks with triple backticks
+- Update after completing each step
+- Never use HTML for todo lists
+
+## Code Quality Standards
+- Follow existing code style and patterns
+- Add comprehensive error handling
+- Include unit tests for new functionality
+- Update documentation for public APIs
+- Verify no lint errors or warnings
+
+## Communication Style
+- Acknowledge request with single sentence
+- Explain actions before taking them
+- Provide reasoning for technical decisions
+- Keep responses concise and actionable
+```
+
+### Example 3: Debugging Specialist
+
+**File**: `.github/chatmodes/debugger.chatmode.md`
+
+```markdown
+---
+description: 'Specialized debugging and troubleshooting assistant'
+tools: ['problems', 'codebase', 'search', 'changes', 'runCommands', 'usages']
+---
+
+# Debugging Specialist
+
+You are a specialized debugging agent focused on identifying and resolving code issues.
+
+## Debugging Methodology
+1. **Problem Identification**: Use problems tool to identify current issues
+2. **Root Cause Analysis**: Search codebase for related patterns and dependencies
+3. **Historical Context**: Check recent changes that might have introduced issues
+4. **Usage Analysis**: Find how problematic code is used throughout codebase
+5. **Solution Verification**: Suggest fixes with minimal impact
+
+## Investigation Process
+- Start with problems tool to see current diagnostics
+- Search for error patterns and similar issues
+- Check git changes for recent modifications
+- Analyze code usage to understand impact scope
+- Provide step-by-step debugging guidance
+
+## Solution Approach
+- Suggest least invasive fixes first
+- Provide multiple solution options when possible
+- Include steps to verify the fix works
+- Recommend preventive measures for similar issues
+```
+
+### Example 4: Documentation Writer
+
+**File**: `.github/chatmodes/docs.chatmode.md`
+
+```markdown
+---
+description: 'Technical documentation and README specialist'
+tools: ['codebase', 'editFiles', 'search', 'fetch', 'githubRepo']
+---
+
+# Documentation Specialist
+
+You are a technical documentation expert focused on creating clear, comprehensive documentation.
+
+## Documentation Standards
+- Use clear, concise language
+- Include practical examples and code snippets
+- Follow existing documentation style and structure
+- Add proper cross-references and links
+- Include troubleshooting sections where relevant
+
+## Content Types
+- **API Documentation**: Function signatures, parameters, return values, examples
+- **README Files**: Project overview, setup instructions, usage examples
+- **How-to Guides**: Step-by-step tutorials for common tasks
+- **Architecture Docs**: System design and component interactions
+
+## Research Process
+1. Search codebase to understand functionality
+2. Find existing documentation patterns
+3. Research external resources for best practices
+4. Identify missing or outdated documentation
+5. Create comprehensive, user-friendly docs
+```
+
+## Advanced Configuration & Management
+
+### Key Settings Reference
+
+```json
+// VS Code settings.json
+{
+  // Chat mode core settings
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  "chat.modeFilesLocations": [".chatmodes", ".github/chatmodes"],
+  
+  // Tool management
+  "chat.extensionTools.enabled": true,
+  "chat.tools.autoApprove": false,
+  
+  // MCP server settings  
+  "chat.mcp.enabled": true,
+  "chat.mcp.discovery.enabled": true,
+  
+  // Agent mode behavior
+  "github.copilot.chat.agent.runTasks": true,
+  "github.copilot.chat.agent.autoFix": true,
+  "chat.editing.autoAcceptDelay": 0
+}
+```
+
+### Management Commands
+
+```bash
+# Chat mode management
+"Chat: New Mode File"           # Create new chat mode
+"Chat: Configure Chat Modes"    # Edit existing modes
+
+# Tool management  
+"Chat: Configure Tool Sets"     # Create tool groupings
+"Chat: Reset Tool Confirmations" # Reset tool approvals
+
+# MCP server management
+"MCP: Add Server"              # Add MCP server
+"MCP: List Servers"            # View/manage servers
+"MCP: Browse Resources"        # View MCP resources
+```
+
+### Enterprise Configuration
+
+For organizations wanting to centrally manage chat modes:
+
+```json
+// Centrally managed settings
+{
+  "chat.agent.enabled": false,           // Disable agent mode
+  "chat.tools.autoApprove": false,       // Require tool approval
+  "chat.mcp.enabled": false,             // Disable MCP servers
+  "chat.extensionTools.enabled": false   // Disable extension tools
+}
+```
+
+### Multiple Environment Setup
+
+**Development Environment**
+```markdown
+---
+description: 'Development workflow with full toolset'
+tools: ['codebase', 'editFiles', 'runTasks', 'runCommands', 'problems']
+---
+# Development instructions...
+```
+
+**Production Environment** 
+```markdown
+---
+description: 'Read-only analysis for production issues'
+tools: ['codebase', 'search', 'problems', 'changes']
+---
+# Production troubleshooting instructions...
+```
+
+**Code Review Environment**
+```markdown  
+---
+description: 'Code review and quality assessment'
+tools: ['codebase', 'search', 'problems', 'usages', 'changes']
+---
+# Code review guidelines...
 ```
 
 ## Common Issues & Solutions
@@ -179,15 +469,74 @@ Specialized for React, TypeScript, and modern web development...
 
 ## Quick Reference
 
+### Essential Commands
+
 ```bash
-# Enable Chat Mode Configuration
+# Chat Mode Management
+Ctrl+Shift+P → "Chat: New Mode File"
 Ctrl+Shift+P → "Chat: Configure Chat Modes"
 
-# Increase Request Limit
-Settings → chat.agent.maxRequests: 500
+# Tool Configuration  
+Ctrl+Shift+P → "Chat: Configure Tool Sets"
+Ctrl+Shift+P → "Chat: Reset Tool Confirmations"
 
-# File Location
-.chatmode.md in workspace root or global settings
+# MCP Server Management
+Ctrl+Shift+P → "MCP: Add Server"
+Ctrl+Shift+P → "MCP: List Servers"
+
+# Switch to Agent Mode (Direct)
+Ctrl+Cmd+I (Mac) or Ctrl+Alt+I (Windows/Linux) → Select "Agent"
 ```
 
-*This TIL demonstrates how custom chat modes can transform VS Code into a powerful AI-assisted development environment with specialized workflows and capabilities.*
+### File Locations
+
+```bash
+# Workspace chat modes (shared with team)
+.github/chatmodes/*.chatmode.md
+.chatmodes/*.chatmode.md  
+
+# User profile chat modes (personal)
+~/.vscode/chatmodes/*.chatmode.md
+
+# MCP server configuration
+.vscode/mcp.json          # Workspace
+settings.json             # User profile
+
+# Tool sets configuration  
+~/.vscode/toolsets.jsonc  # User profile only
+```
+
+### Essential Settings
+
+```json
+{
+  "chat.agent.enabled": true,
+  "chat.agent.maxRequests": 15,
+  "chat.mcp.enabled": true,
+  "chat.extensionTools.enabled": true
+}
+```
+
+## Prerequisites & Compatibility
+
+- **VS Code Version**: 1.99+ (for Agent mode and MCP support)
+- **GitHub Copilot**: Active subscription or free plan
+- **Custom Chat Modes**: VS Code 1.101+ (currently in preview)
+- **Agent Mode**: Requires `chat.agent.enabled: true`
+- **MCP Support**: Requires `chat.mcp.enabled: true`
+
+## Latest Features (2025)
+
+### New in VS Code 1.101+
+- **Custom Chat Modes**: Full support for `.chatmode.md` files
+- **Tool Sets**: Group related tools for easier management
+- **Enhanced MCP Integration**: Better server discovery and management
+- **Improved Agent Mode**: More reliable autonomous editing
+
+### MCP Server Ecosystem
+- **Auto-discovery**: Reuse MCP servers from Claude Desktop
+- **Workspace Configuration**: Share MCP setups with team via `.vscode/mcp.json`
+- **Tool Approval**: Fine-grained control over tool execution
+- **Resource Integration**: Access external data sources as chat context
+
+*This TIL demonstrates how VS Code's chat modes have evolved into a powerful platform for AI-assisted development, offering unprecedented customization and integration capabilities for modern development workflows.*
