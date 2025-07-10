@@ -7,7 +7,8 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 
 
 
-## � Learn More
+
+## 📚 Learn More
 
 - [AI Agents Guide](../guides/ai-agents.md) — Comprehensive implementation, patterns, and best practices
 - [Agent Development SOP](../guides/agent-development/sop_ai_agent.md) — Standard operating procedures for agent projects
@@ -20,6 +21,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [Converting ADK Agents for A2A (Google Cloud Blog)](../guides/agent-development/adk-to-a2a-guide.md) 🆕 — Step-by-step guide to agent interoperability
 - **[Google Codelab – Agent Stack in Action: ADK, A2A, MCP on Google Cloud](https://codelabs.developers.google.com/instavibe-adk-multi-agents/instructions#0)** 🧑‍💻 — *End-to-end hands-on lab for building, orchestrating, and deploying collaborative AI agents using Google's ADK, MCP, and A2A protocols.*
 - **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** — *In-depth, up-to-date analysis of ambient agents, agent UX, tools, and training*
+- **[The Consciousness Question: When AI Systems Start Wanting Things](../personal/reflexions/2025-07-10-ai-and-desire.md)** — *Philosophical and ethical challenges of agent consciousness, desire, and moral risk*
 
 ---
 
@@ -35,6 +37,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 
 ---
 
+
 ## 🧠 Core Concepts
 
 - **Agent Architectures:** [See patterns](../reference/techniques/dessign_patterns_for_llm_applications/README.md#agent-patterns), [Agent Architecture Guide](../guides/ai-agents.md#🏗️-agent-architecture-patterns)
@@ -42,6 +45,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - **Memory & Context:** [ContextFlow framework](../reference/technical-articles/2025-06-29-context-management-llm-agents.md), [MemGPT](https://memgpt.ai/)
 - **Communication Protocols:** [A2A Protocol](https://github.com/google/A2A/), [MCP](https://modelcontextprotocol.io/), [Agent Communication](../reference/2025-ai-updates.md#1-agent-communication-revolution)
 - **Use Cases:** [Chatbots](../reference/techniques/dessign_patterns_for_llm_applications/README.md#chatbot-agent), [Automation](../guides/ai-agents.md#build-ai-apps), [Orchestration](../guides/ai-agents.md#multi-agent-orchestration)
+- **AI Consciousness & Desire:** [The Consciousness Question: When AI Systems Start Wanting Things](../personal/reflexions/2025-07-10-ai-and-desire.md)
 
 ---
 

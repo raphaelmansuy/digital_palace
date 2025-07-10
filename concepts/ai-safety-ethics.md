@@ -26,6 +26,7 @@ AI Safety and Ethics encompasses the principles, practices, and frameworks for d
 
 ---
 
+
 ## 🧠 Core Concepts
 
 - **AI Alignment:** [Constitutional AI](https://arxiv.org/abs/2212.08073), [Value Learning](https://www.anthropic.com/research)
@@ -33,8 +34,10 @@ AI Safety and Ethics encompasses the principles, practices, and frameworks for d
 - **Transparency:** [Explainable AI](https://pair-code.github.io/what-if-tool/), [Model Interpretability](https://christophm.github.io/interpretable-ml-book/)
 - **Safety Measures:** [AI Safety Fundamentals](https://aisafetyfundamentals.com/), [Robustness Testing](../guides/best-practices.md)
 - **Legal Compliance:** [AI Legal & Regulatory](./ai-legal-regulatory.md), [GDPR](./ai-legal-regulatory.md), [EU AI Act](./ai-legal-regulatory.md)
+- **AI Consciousness & Moral Uncertainty:** [The Consciousness Question: When AI Systems Start Wanting Things](../personal/reflexions/2025-07-10-ai-and-desire.md)
 
 ---
+
 
 ## 🔗 **Related Concepts**
 
@@ -42,6 +45,7 @@ AI Safety and Ethics encompasses the principles, practices, and frameworks for d
 - **[MLOps](./mlops.md)** — Model governance and lifecycle management
 - **[Observability](./observability.md)** — Monitoring and auditing AI systems
 - **[AI Testing](./ai-testing.md)** — Validation and bias detection
+- **[AI Consciousness & Desire](../personal/reflexions/2025-07-10-ai-and-desire.md)** — Philosophical and ethical challenges of AI consciousness, desire, and moral risk
 
 ---
 
