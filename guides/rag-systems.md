@@ -511,7 +511,26 @@ class RealTimeRAG:
 
 ---
 
+
 ## 📈 Performance Optimization
+
+> **2025 Perspective: Beyond RAG for Coding Agents**
+>
+> 🚀 **The landscape is shifting:** While RAG architectures remain powerful for knowledge retrieval, leading teams in 2025 are achieving dramatic performance gains for coding agents by moving beyond RAG. Instead of embedding search and complex retrieval, they leverage direct tool access, sequential file reading, and progressive summarization.
+>
+> **Key Framework:**
+> 1. **Sequential File Reading**: Let agents read files in full, preserving narrative integrity and enabling organic exploration of codebases.
+> 2. **Plan First, Act Second**: Separate planning from execution—gather all context before acting, reducing mid-task distractions.
+> 3. **Direct Tool Access**: Equip agents with terminal commands, file readers, and code definitions—skip preprocessing layers.
+> 4. **Progressive Summarization**: For long tasks, use detailed progress summaries instead of complex truncation.
+>
+> **Evidence:**
+> - [Stanford AI Index 2025](https://aiindex.stanford.edu/report/) shows agents excel in short-horizon tasks, but humans still outperform in longer, complex workflows.
+> - Research indicates that larger context windows alone do not solve complex reasoning—direct approaches are often more effective for coding agents.
+>
+> **Read the full analysis and see the professional Mermaid diagram:**
+> [How to 10x your coding agent performance (without RAG)](../personal/linkedin/2025-07-10-no-need-rag.md)
+
 
 ### Retrieval Optimization
 
