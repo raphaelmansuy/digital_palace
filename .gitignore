@@ -5,3 +5,4 @@ data/
 ./tasks/
 chroma_data/
 chroma.sqlite3
+.prompts/
