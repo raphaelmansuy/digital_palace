@@ -21,11 +21,18 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 
 ### 2025 Entries
-- **[VS Code & GitHub Configuration Files: Complete Guide](2025-07-09-vscode-github-configuration-files.md)** - All config file types, paths, and actionable examples for modern development workflows (2025)
-- **[Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)** - Complete guide to setting up Model Context Protocol servers for enhanced AI agent capabilities in VSCode
-- **[VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)** - Comprehensive reference for all standard tools available in GitHub Copilot Agent Mode
-- **[Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)** - Deep analysis of Burke Holland's professional coding agent prompt with community insights
-- **[How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)** - Set up custom AI coding assistants with specialized prompts and tool configurations
+
+- **[VS Code 1.102: 7 Features That Actually Matter](2025-07-11-vscode-1.102.md)** - Practical guide to VS Code 1.102's most impactful features with actionable setup instructions and real-world productivity gains (July 2025) → *See also: [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md), [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md)*
+
+- **[VS Code & GitHub Configuration Files: Complete Guide](2025-07-09-vscode-github-configuration-files.md)** - All config file types, paths, and actionable examples for modern development workflows (2025) → *Related: [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md)*
+
+- **[Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)** - Complete guide to setting up Model Context Protocol servers for enhanced AI agent capabilities in VSCode → *See also: [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md), [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md), [Block's MCP Playbook](2025-07-07-blocks-mcp-server-playbook.md)*
+
+- **[VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)** - Comprehensive reference for all standard tools available in GitHub Copilot Agent Mode → *Related: [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md), [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md)*
+
+- **[Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)** - Deep analysis of Burke Holland's professional coding agent prompt with community insights → *Related: [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md)*
+
+- **[How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)** - Set up custom AI coding assistants with specialized prompts and tool configurations → *See also: [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md), [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md), [VS Code 1.102](2025-07-11-vscode-1.102.md)*
 - **[Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)** - Crafting cinematic, ASMR-style video prompts for Veo3
 - **[Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md)** - Manage environment variables and secrets easily in Python
 - **[AWS Stack Deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)** - Cloud infrastructure as code
@@ -35,9 +42,9 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - **[Dependent Library Management with Poetry](2025-01-29-dependant-library-with-poetry.md)** - Python dependency mastery
 - **[Image Generation Prompt for Realistic Photos](2025-07-03-image-generation-realistic.md)** - Create authentic, human-like images with AI
 - **[Capture and Reuse Illustration Style for Variants](2025-07-03-capture-illustration-style.md)** - Extract style from real art and generate new variants
-- **[Block's Playbook for Designing MCP Servers](2025-07-07-blocks-mcp-server-playbook.md)** - End-to-end guide to building secure, scalable, and standards-compliant MCP servers with practical code, deployment, and testing patterns (fact-checked, 2025)
+- **[Block's Playbook for Designing MCP Servers](2025-07-07-blocks-mcp-server-playbook.md)** - End-to-end guide to building secure, scalable, and standards-compliant MCP servers with practical code, deployment, and testing patterns (fact-checked, 2025) → *Related: [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md)*
 
-- **[PEP 621 & uv: Modern Python Project Metadata and Management](2025-07-09-pep621-uv.md)** – Standardizing Python project metadata and fast project management with uv (2025)
+- **[PEP 621 & uv: Modern Python Project Metadata and Management](2025-07-09-pep621-uv.md)** – Standardizing Python project metadata and fast project management with uv (2025) → *See also: [Self-Installing Python Executables with uv](2025-01-24-self-installing-python-executables-with-uv.md), [Poetry Dependency Management](2025-01-29-dependant-library-with-poetry.md)*
 
 ### 2024 Highlights  
 - **[GPT in 60 Lines of NumPy](2024-02-26-gpt_60_lines_of_code.md)** ⭐ Most Popular
@@ -67,21 +74,20 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - [OpenAI API usage guide](./openai_api/README.md)
 
 ### 🐍 Python Development
-- [Python environment creation](./how_to_create_a_python_env/README.md)
-- [Package management: Conda vs Pip](./package_management_conda_and_pip/README.md)
-- [Poetry dependency management](./poetry_a_python_best_friend/README.md)
-- [Using Poetry with Python](2024-02-27%20use-poetry-with-python.md)
-- [Python packaging with PyOxidizer](2024-02-05%20PyOxidizer.md)
-- [Package preparation for distribution](2024-03-19%20how_to_prepare_a_package_for_distribution.md)
-- [Self-installing executables with uv](2025-01-24-self-installing-python-executables-with-uv.md)
-- [Dependent libraries with Poetry](2025-01-29-dependant-library-with-poetry.md)
-- [Chat interface with Textual](2025-01-24-building-a-chat-interface-using-textual.md)
+
+- [PEP 621 & uv: Modern Python Project Metadata and Management](2025-07-09-pep621-uv.md) → *Modern packaging standards*
+- [Self-installing executables with uv](2025-01-24-self-installing-python-executables-with-uv.md) → *Portable Python apps*
+- [Dependent libraries with Poetry](2025-01-29-dependant-library-with-poetry.md) → *Advanced dependency management*
+- [Using dotenv for Python Environment Management](2025-07-05-dotenv-usage.md) → *Environment variable handling*
 
 ### 🛠️ Development Tools
-- [Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md)
-- [VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md)
-- [How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md)
-- [Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md)
+
+- [VS Code 1.102: 7 Features That Actually Matter](2025-07-11-vscode-1.102.md) → *Essential VS Code productivity features*
+- [Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md) → *Core MCP setup guide*
+- [VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md) → *Complete tool reference*
+- [How to Configure Chat Mode in VSCode](2025-07-09-vscode-chat-mode-configuration.md) → *Custom AI assistants*
+- [VS Code & GitHub Configuration Files: Complete Guide](2025-07-09-vscode-github-configuration-files.md) → *All config patterns*
+- [Dissecting GPT-4.1 Coding Agent System Prompt](2025-07-09-dissecting-gpt4-coding-agent-prompt.md) → *Agent prompt analysis*
 - [Git for beginners](git/git.md)
 - [Efficient Git aliases](2024-07-27-git-alias.md)
 - [LLM command usage](2024-03-03%20how_to_use_llm_command.md)
@@ -90,17 +96,15 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 - [Git repo sync: Bitbucket ↔ GitHub](2024-09-13-bitbucket-syncc.md)
 
 ### ☁️ Data Engineering & Cloud
-- [DeltaTable deduplication](2024-03-05%20how_to_deduplicate_a_delta_table.md.md)
-- [S3 file listing with Spark](2024-03-05%20how_list_s3_efficiently_using_spark.md)
-- [Delta Table ID indexing](2024-03-07%20create_index_ids_in_delta_table.md)
-- [Databricks HTTP API calls](2024-07-30-call_http_api_from_databricks_notebook.md)
-- [AWS Stack deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md)
-- [Kamal: Deploy web apps anywhere](2025-01-14-kamal-deploy-web-app-anywere.md)
+
+- [AWS Stack deployment with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md) → *Infrastructure as code*
+- [Kamal: Deploy web apps anywhere](2025-01-14-kamal-deploy-web-app-anywere.md) → *Modern deployment tool*
 
 ### 🎨 Design & UX
-- [Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md)
-- [UX micro-interactions](2024-08-07_ux_micro_interractions.md)
-- [Image generation prompt for realistic photos](2025-07-03-image-generation-realistic.md)
+
+- [Veo3 Fast Video Generation Example](2025-07-07-veo3-fast.md) → *Cinematic AI video prompts*
+- [Image generation prompt for realistic photos](2025-07-03-image-generation-realistic.md) → *Authentic AI photos*
+- [Capture and Reuse Illustration Style for Variants](2025-07-03-capture-illustration-style.md) → *Style transfer techniques*
 
 ---
 
@@ -108,12 +112,12 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 **Looking for something specific?**
 
-| **Topic** | **Keywords** | **Best Entries** |
-|-----------|------------|------------------|
-| **AI Models** | LLM, GPT, quantization, GGUF | GPT NumPy, Model quantization, GGUF conversion |
-| **Python** | packaging, poetry, environment | Poetry guide, PyOxidizer, uv executables |
-| **Git** | version control, sync, aliases | Git aliases, Repo sync, Git basics |
-| **Data** | spark, delta, databricks | DeltaTable, Spark DataFrame, Databricks API |
+| **Topic** | **Keywords** | **Best Entries** | **Cross-References** |
+|-----------|------------|------------------|---------------------|
+| **VS Code & AI** | agent mode, copilot, MCP, chat | [VS Code 1.102](2025-07-11-vscode-1.102.md), [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md) | → [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md), [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md) |
+| **AI Models** | LLM, GPT, quantization, GGUF | GPT NumPy, Model quantization, GGUF conversion | → [AI concepts](../../concepts/README.md) |
+| **Python** | packaging, poetry, environment, uv | [PEP 621 & uv](2025-07-09-pep621-uv.md), [Poetry](2025-01-29-dependant-library-with-poetry.md) | → [Self-installing executables](2025-01-24-self-installing-python-executables-with-uv.md) |
+| **Cloud & Deployment** | AWS, CDK, Kamal, infrastructure | [AWS Stack with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md), [Kamal](2025-01-14-kamal-deploy-web-app-anywere.md) | → [Development Tools](#️-development-tools) |
 
 ---
 
