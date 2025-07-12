@@ -18,7 +18,7 @@ graph LR
     D --> E[Attracts More Users]
     E --> A
     
-    F[Network Value] --> G[N × (N-1) connections]
+    F[Network Value] --> G["N × (N-1) connections"]
     H[Metcalfe's Law] --> I[Value ∝ Users²]
 ```
 
