@@ -4,6 +4,7 @@
 **Type:** Professional Announcement  
 **Target:** MLOps professionals, AI practitioners, tech leaders  
 **Hook:** Packt Publishing Approach + Production Reality Focus  
+**Published:** [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7349278678779871232/)
 
 ---
 

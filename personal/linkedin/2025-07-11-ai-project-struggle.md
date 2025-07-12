@@ -1,4 +1,14 @@
-# Why Most AI Projects Struggle ...
+# LinkedIn Post - Why Most AI Projects Struggle
+
+**Date:** July 11, 2025  
+**Type:** Technical Deep Dive  
+**Target:** AI practitioners, CTOs, ML leaders, product managers  
+**Hook:** First Principle Thinking & Systems That Actually Work  
+**Published:** [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7349278678779871232/)
+
+---
+
+## Why Most AI Projects Struggle
 
 _And How to Build Systems That Actually Work using First Principle Thinking_
 

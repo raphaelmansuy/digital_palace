@@ -1,3 +1,13 @@
+# LinkedIn Post - 10x Coding Agent Performance Without RAG
+
+**Date:** July 10, 2025  
+**Type:** Technical Insight  
+**Target:** AI engineers, ML practitioners, coding agent developers  
+**Hook:** Direct Tool Access vs Complex RAG Systems  
+**Published:** [LinkedIn Post](URL_TO_BE_ADDED)
+
+---
+
 How to 10x your coding agent performance (without RAG) 📈
 
 While everyone's building complex RAG systems, the smartest teams are doing the opposite.

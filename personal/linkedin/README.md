@@ -1,12 +1,47 @@
 # LinkedIn Posts Index
 
-This folder contains LinkedIn post drafts and related content. Below is an index of all Markdown files with a short description:
+This folder contains LinkedIn post drafts and published content. All posts follow a standardized metadata structure for consistency and tracking.
 
-- [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Exposes the risks and realities of "faked" progress in AI safety and alignment research.
-- [2025-07-10-no-need-rag.md](2025-07-10-no-need-rag.md): Argues for direct tool access and sequential reading over complex RAG systems for coding agents.
-- [2025-07-11-ai-project-struggle.md](2025-07-11-ai-project-struggle.md): Analyzes why most AI projects fail and how to overcome common organizational and technical pitfalls.
-- [2025-07-11-mlops-book-announcement.md](2025-07-11-mlops-book-announcement.md): Announces a new book on MLOps, highlighting key lessons and best practices for production AI.
+## Metadata Structure
+
+Each LinkedIn post follows this standardized header format:
+
+```markdown
+# LinkedIn Post - [Title]
+
+**Date:** [Month Day, Year]  
+**Type:** [Post Category]  
+**Target:** [Audience Description]  
+**Hook:** [Key Attraction/Value Proposition]  
+**Published:** [LinkedIn Post](URL_TO_BE_ADDED_OR_ACTUAL_URL)
+
+---
+```
+
+### Metadata Fields
+
+- **Date**: Publication date in "Month Day, Year" format
+- **Type**: Category of post (e.g., Research Highlight, Technical Insight, Professional Announcement, Technical Deep Dive)
+- **Target**: Primary audience segments
+- **Hook**: The main value proposition or attention-grabbing element
+- **Published**: Link to the actual LinkedIn post (use placeholder "URL_TO_BE_ADDED" for drafts)
+
+## Posts Index
+
+- [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Research Highlight - Exposes counterintuitive findings about alignment faking in AI safety research, challenging conventional wisdom in the field.
+
+- [2025-07-10-no-need-rag.md](2025-07-10-no-need-rag.md): Technical Insight - Advocates for direct tool access and sequential reading over complex RAG systems to improve coding agent performance.
+
+- [2025-07-11-ai-project-struggle.md](2025-07-11-ai-project-struggle.md): Technical Deep Dive - Comprehensive analysis of why most AI projects fail and practical frameworks for building systems that actually work using first principle thinking.
+
+- [2025-07-11-mlops-book-announcement.md](2025-07-11-mlops-book-announcement.md): Professional Announcement - Announces MLOps book collaboration with Packt Publishing, highlighting production reality focus and lessons from building ML systems at scale.
+
+- [2025-07-12-breaking-token-barrier.md](2025-07-12-breaking-token-barrier.md): Research Highlight - Discusses H-Net dynamic chunking as a revolutionary approach to eliminate tokenization in language models, with performance metrics and industry impact analysis.
 
 ---
 
-_Add new posts to this index as you create them._
+_When adding new posts:_
+
+1. Follow the standardized metadata structure above
+2. Add the entry to this index with format: `[filename](filename): Type - Brief description`
+3. Update the Published field with actual LinkedIn URL once posted
