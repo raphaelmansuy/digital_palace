@@ -31,6 +31,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Guided LLM Generation (Structured Output)](./guided-llm-generation.md) — Techniques for schema-based, XML/JSON, and structured output generation with LLMs. Covers structured prompting, schema introspection, and feedback-driven refinement for reliable, interpretable, and secure outputs. See also: [Prompt Engineering](./prompt-engineering.md), [Datasets](./datasets.md).
 
 
+
 ### 🔍 **Data & Knowledge Systems**
 
 - [RAG (Retrieval-Augmented Generation)](./rag.md) — Combine LLMs with external knowledge, vector search, and knowledge graphs. Related: [Embeddings](./embeddings.md), [Datasets](./datasets.md).
@@ -39,6 +40,8 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Context Management](./context-management.md) — Handling information flow in AI systems with limited context windows. See [AI Agents](./ai-agents.md).
 - [Datasets](./datasets.md) — Data for training, evaluation, and benchmarking. See [RAG](./rag.md), [Fine-Tuning](./fine-tuning.md).
 - [Synthetic Data Generation](./synthetic-data.md) — Creating artificial datasets for training, privacy protection, and data augmentation. Related: [Datasets](./datasets.md), [Fine-Tuning](./fine-tuning.md).
+
+- [Malloy](./malloy.md) — Composable query language for nested, non-rectangular data. Designed for modularity, reusability, and seamless integration with modern data engines. See also: [Knowledge Management](./knowledge-management.md), [Datasets](./datasets.md).
 
 - [SkyReels-V2 (Infinite-Length Video Generation)](./skyreels-v2.md) — SOTA open-source autoregressive diffusion model for long-form, high-quality video generation. See [Multimodal AI](./multimodal-ai.md), [Synthetic Data Generation](./synthetic-data.md).
 
