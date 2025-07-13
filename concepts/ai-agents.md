@@ -13,6 +13,10 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [AI Agents Guide](../guides/ai-agents.md) — Comprehensive implementation, patterns, and best practices
 - [12-Factor Agents](../guides/agent-development/12-factor-agents.md) — Production reliability patterns for LLM applications
 - [Agent Development SOP](../guides/agent-development/sop_ai_agent.md) — Standard operating procedures for agent projects
+- [Human-in-the-Loop](./human-in-the-loop.md) — Human oversight patterns for AI agents
+- [Agent Deployment Patterns](./agent-deployment-patterns.md) — Production deployment strategies
+- [Pause and Resume Workflows](./pause-resume-workflows.md) — Workflow interruption and continuation patterns
+- [Stateless Agent Design](./stateless-agent-design.md) — Scalable, fault-tolerant agent architectures
 - [AutoGen Framework](../reference/techniques/autogen/README.md) — Multi-agent orchestration by Microsoft
 - [CAMEL: Communicative Agents](../reference/techniques/camel/README.md) — Role-playing and multi-agent dialog
 - [Context Management for LLM Agents](../reference/technical-articles/2025-06-29-context-management-llm-agents.md) — Advanced context strategies

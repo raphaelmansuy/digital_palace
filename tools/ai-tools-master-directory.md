@@ -175,6 +175,14 @@
 
 ### Specialized Agent Tools
 
+#### Human-in-the-Loop Platforms
+
+| Tool                                           | Capability                          | Use Case                    |
+| ---------------------------------------------- | ----------------------------------- | --------------------------- |
+| [HumanLayer](https://humanlayer.dev/)         | Human approval workflows for agents | Production agent oversight  |
+| [Scale AI](https://scale.com/)                | Human-in-the-loop ML                | Training data & evaluation  |
+| [Label Studio](https://labelstud.io/)         | Data annotation platform            | ML dataset creation         |
+
 #### Computer Control
 
 | Tool                                                                  | Capability                          | Use Case           |

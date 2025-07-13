@@ -57,20 +57,35 @@ The idea for HumanLayer emerged from his own experience building autonomous AI a
 
 ## 🏆 Key Contributions
 
-- **HumanLayer Platform**: Built the leading human-in-the-loop API for AI agents, enabling safe deployment of autonomous systems
-- **AI Agent Safety**: Pioneered practical approaches to AI agent oversight and approval workflows
-- **12-Factor Agents**: Articulated principles for building reliable, production-ready AI applications
+- **HumanLayer Platform**: Built the leading human-in-the-loop API for AI agents, enabling safe deployment of autonomous systems with approval workflows and oversight mechanisms
+- **12-Factor Agents Methodology**: Developed and articulated comprehensive principles for building reliable, production-ready AI applications based on 12-factor app methodology adapted for LLM agents:
+  - **Codebase**: One codebase tracked in revision control, many deploys
+  - **Dependencies**: Explicitly declare and isolate dependencies (models, tools, data sources)
+  - **Config**: Store config (API keys, model parameters) in the environment
+  - **Backing Services**: Treat backing services (databases, APIs, model endpoints) as attached resources
+  - **Build/Release/Run**: Strictly separate build, release, and run stages for agent deployments
+  - **Processes**: Execute agents as stateless processes with externalized state
+  - **Port Binding**: Export services (agent APIs) via port binding for horizontal scaling
+  - **Concurrency**: Scale out via the process model (multiple agent instances)
+  - **Disposability**: Maximize robustness with fast startup and graceful shutdown
+  - **Dev/Prod Parity**: Keep development, staging, and production environments as similar as possible
+  - **Logs**: Treat logs as event streams for comprehensive agent observability
+  - **Admin Processes**: Run admin/management tasks (training, evaluation) as one-off processes
+- **AI Agent Safety**: Pioneered practical approaches to AI agent oversight, approval workflows, and human-in-the-loop patterns for production systems
+- **Agent Deployment Patterns**: Established best practices for stateless agent design, pause/resume workflows, and production deployment strategies
 - **Developer Experience**: Led GTM organization at Replicated, improving developer experience for enterprise Kubernetes deployments
-- **Container Orchestration**: Contributed to container orchestrator technology at Replicated
-- **AI Tinkerers Community**: Organizes and runs AI Tinkerers meetups in San Francisco
+- **Container Orchestration**: Contributed to container orchestrator technology at Replicated, bringing DevOps principles to agent deployment
+- **AI Tinkerers Community**: Organizes and runs AI Tinkerers meetups in San Francisco, fostering practical AI development practices
 
 ## 📚 Notable Publications/Work
 
-- "[12-Factor Agents: Patterns of reliable LLM applications](https://www.youtube.com/watch?v=8kMaTybvDUw)" (2024) - AI Engineer Conference presentation
-- **[12-Factor Agents Implementation Guide](../guides/agent-development/12-factor-agents.md)** - Comprehensive methodology for production-ready AI agents
-- HumanLayer Documentation and API - Developer tools for human-in-the-loop AI
-- Replicated Platform Contributions - Enterprise Kubernetes deployment tools
-- AI Tinkerers Presentations - Regular speaking at San Francisco AI community events
+- **"[12-Factor Agents: Patterns of reliable LLM applications](https://www.youtube.com/watch?v=8kMaTybvDUw)"** (2024) - AI Engineer Conference presentation outlining production patterns for LLM applications
+- **[12-Factor Agents GitHub Repository](https://github.com/humanlayer/12-factor-agents)** - Comprehensive guide with implementation patterns, examples, and best practices for production AI agents
+- **[HumanLayer Platform](https://humanlayer.dev)** - Production-ready human-in-the-loop infrastructure with approval workflows, oversight mechanisms, and safety controls
+- **Agent Architecture Patterns**: Documented stateless agent design, pause/resume workflows, and deployment strategies for scalable AI systems
+- **Human-in-the-Loop Best Practices**: Established patterns for approval workflows, confidence-based escalation, and collaborative AI systems
+- **Replicated Platform Contributions** - Enterprise Kubernetes deployment tools and container orchestration technology
+- **AI Tinkerers Presentations** - Regular speaking at San Francisco AI community events on practical agent development
 
 ## 🔗 Social Media & Links
 
@@ -89,14 +104,24 @@ The idea for HumanLayer emerged from his own experience building autonomous AI a
 
 > "The future of AI Applications is not gonna be humans sitting at a chat interface, the future is 'outer loop' or 'headless' agents."
 
+> "12-factor methodology provides a tried-and-true foundation for building reliable software. Adapting these principles for LLM applications ensures our agents can scale, deploy reliably, and operate in production environments."
+
+> "Stateless agents that externalize all state to backing services can scale horizontally, recover from failures gracefully, and maintain consistency across distributed deployments."
+
+> "The key to production AI agents is treating them like any other production software - with proper observability, deployment practices, and operational discipline."
+
 ## 🎯 Areas of Expertise
 
-- AI Agents & Autonomous Systems
-- Human-in-the-Loop AI
-- Developer Tools & APIs
-- Container Orchestration
-- Product Management
-- AI Safety & Oversight
+- **AI Agents & Autonomous Systems**: Production deployment, scaling, and operational patterns for LLM-powered applications
+- **12-Factor Agent Methodology**: Principles for reliable, scalable, and maintainable AI agent architectures
+- **Human-in-the-Loop AI**: Approval workflows, oversight mechanisms, and safety controls for autonomous systems
+- **Stateless Agent Design**: Architecture patterns for horizontally scalable, fault-tolerant agent systems
+- **Agent Deployment Patterns**: Production best practices, CI/CD pipelines, and operational discipline for AI applications
+- **Developer Tools & APIs**: Building developer-focused products and improving developer experience
+- **Container Orchestration**: Kubernetes-native applications and enterprise deployment strategies
+- **Product Management**: Go-to-market strategy and product development for developer tools
+- **AI Safety & Oversight**: Practical approaches to safe deployment of autonomous AI systems
+- **Production AI Operations**: Monitoring, observability, and operational practices for AI applications
 
 ## 📰 Recent News/Updates
 
