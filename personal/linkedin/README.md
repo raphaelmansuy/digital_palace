@@ -28,7 +28,7 @@ Each LinkedIn post follows this standardized header format:
 
 ## Posts Index
 
-- [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Research Highlight - Exposes counterintuitive findings about alignment faking in AI safety research, challenging conventional wisdom in the field.
+- [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Research Highlight - Exposes counterintuitive findings about alignment faking in AI safety research, challenging conventional wisdom in the field. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7348935402772140032/)
 
 - [2025-07-10-no-need-rag.md](2025-07-10-no-need-rag.md): Technical Insight - Advocates for direct tool access and sequential reading over complex RAG systems to improve coding agent performance. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7348927542763884546/)
 

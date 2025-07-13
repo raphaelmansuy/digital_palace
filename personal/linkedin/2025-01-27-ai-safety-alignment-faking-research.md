@@ -4,7 +4,7 @@
 **Type:** Research Highlight  
 **Target:** AI researchers, ML practitioners, tech leaders  
 **Hook:** Alignment Faking & Counterintuitive AI Safety Findings  
-**Published:** [LinkedIn Post](URL_TO_BE_ADDED)
+**Published:** [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7348935402772140032/)
 
 ---
 
