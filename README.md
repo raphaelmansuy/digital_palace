@@ -4,7 +4,7 @@
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge)](./reference/2025-ai-updates.md)
 [![AI Tools](https://img.shields.io/badge/AI%20Tools-158+-blue?style=for-the-badge)](./tools/ai-tools-master-directory.md)
-[![Community](https://img.shields.io/badge/Community-Join%20Us-success?style=for-the-badge&logo=users)](https://github.com/raphaelmansuy/digital_palace/discussions)
+
 
 **🎯 Cut through AI complexity. Get to results faster.**  
 **🆕 June 2025** - OpenAI o3, Claude 4, Computer Use & Production-Ready Agents
@@ -69,35 +69,11 @@ Stay ahead with these high-quality, technical blog posts, hands-on guides, and d
 - **[12-Factor Agents: Patterns of reliable LLM applications (Dex Horthy)](./guides/agent-development/12-factor-agents.md)**  
   Production-ready AI agent patterns adapted from the 12-factor app methodology. Essential for teams deploying agents at scale. Covers structured output, prompt ownership, context engineering, and production deployment patterns.
 
+
 - **[Hands-on Multi-Vector Retrieval with Reason-ModernColBERT in Weaviate (LightOn)](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb)**  
-  Step-by-step notebook: advanced RAG with multi-vector embeddings and late interaction retrieval using Reason-ModernColBERT in Weaviate. Covers setup, code, and reasoning-intensive search for agentic RAG and production use cases.
-  
-  **Key takeaways:**
-  - **Design Principles:** Emphasizes modularity, statelessness, and separation of concerns for scalable MCP server architecture. See: [Agent Protocols](./concepts/agent-protocols.md), [MCP](./concepts/mcp.md)
-  - **Scalability Patterns:** Async APIs, load balancing, and horizontal scaling for high-throughput. See: [Production Deployment Guide](./guides/deployment.md)
-  - **Security & Observability:** Best practices for authentication, authorization, and monitoring. See: [Observability](./concepts/observability.md)
-  - **Real-World Lessons:** Managing context size, optimizing latency, and supporting multiple client types. Example: Truncate or summarize old messages for long-running agent sessions.
-  - **Open Source & Community:** Encourages open standards and community-driven development for MCP infrastructure.
-  
-  **Example (Python/FastAPI):**
-  ```python
-  from fastapi import FastAPI, Request
-  import uvicorn
+  Step-by-step notebook for advanced RAG with multi-vector embeddings and late interaction retrieval in Weaviate.
 
-  app = FastAPI()
-
-  @app.post("/mcp/context")
-  async def handle_context(request: Request):
-      data = await request.json()
-      # Validate and store context
-      # ...
-      return {"status": "ok"}
-
-  if __name__ == "__main__":
-      uvicorn.run(app, host="0.0.0.0", port=8000)
-  ```
-  
-  For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
+For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
 
 - **[GPT-4.1 Coding Agent System Prompt (VS Code Tools Edition) – Burke Holland](https://gist.github.com/burkeholland/7aa408554550e36d4e951a1ead2bc3ac)**  
   A production-grade, open-source system prompt for building advanced coding agents in VS Code. Includes detailed tool usage, todo list management, and communication guidelines for agentic workflows. Highly useful for anyone customizing Copilot or building their own AI coding agents.
@@ -174,8 +150,8 @@ _Time: Ongoing → Frontier knowledge_
 | Type            | Link                                              | Purpose                   |
 | --------------- | ------------------------------------------------- | ------------------------- |
 | **🧩 Concepts** | [Concepts Hub](./concepts/README.md)              | Knowledge foundation      |
-| **� People**    | [People Hub](./people/README.md)                  | AI/ML influential figures |
-| **�🛠️ Tools**   | [AI Tools](./tools/ai-tools-master-directory.md)  | Find the right tool       |
+| **People**      | [People Hub](./people/README.md)                  | AI/ML influential figures |
+| **🛠️ Tools**    | [AI Tools](./tools/ai-tools-master-directory.md)  | Find the right tool       |
 | **🎯 Guides**   | [How-To Guides](./guides/goal-oriented-guides.md) | Step-by-step tutorials    |
 | **📚 Learning** | [Learning Paths](./learning/README.md)            | Structured education      |
 | **💡 TIL**      | [Today I Learned](./personal/til/README.md)       | Daily discoveries         |
@@ -260,15 +236,17 @@ digital_palace/
 
 ---
 
-## 🎯 **Quick Start Guide**
 
-| **Goal**                     | **Best Path**                                                                        | **Time**   | **Outcome**                 |
-| ---------------------------- | ------------------------------------------------------------------------------------ | ---------- | --------------------------- |
-| � **Understand AI concepts** | [Concepts Hub](./concepts/README.md)                                                 | 15 minutes | Clear conceptual foundation |
-| �🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools) | 30 seconds | Working AI demo             |
-| 💻 **Build an app**          | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                | 5 minutes  | Live application            |
-| 📚 **Learn systematically**  | [Learning Roadmap](./learning/README.md#find-your-learning-path)                     | 10 minutes | Structured path             |
-| 🛠️ **Find tools**            | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)         | 2 minutes  | Perfect tool match          |
+## 🎯 Quick Start Guide
+
+| **Goal**                    | **Best Path**                                                                         | **Time**     | **Outcome**                  |
+|-----------------------------|---------------------------------------------------------------------------------------|--------------|------------------------------|
+| **Understand AI concepts**  | [Concepts Hub](./concepts/README.md)                                                  | 15 minutes   | Clear conceptual foundation  |
+| 🤖 **Try AI now**           | [ChatGPT Alternatives](./tools/ai-tools-master-directory.md#beginner-friendly-tools)  | 30 seconds   | Working AI demo              |
+| 💻 **Build an app**         | [Zero-to-App Guide](./guides/goal-oriented-guides.md#getting-started)                 | 5 minutes    | Live application             |
+| 📚 **Learn systematically** | [Learning Roadmap](./learning/README.md#find-your-learning-path)                      | 10 minutes   | Structured path              |
+| 🛠️ **Find tools**           | [AI Tools Directory](./tools/ai-tools-master-directory.md#quick-tool-finder)          | 2 minutes    | Perfect tool match           |
+
 
 ---
 
@@ -306,11 +284,11 @@ We welcome contributions from the AI community! Here's how you can help improve 
 
 ## 📧 Connect & Support
 
+
 ### 🤝 **Get In Touch**
 
-- **💼 Professional Consultation**: [LinkedIn - Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/)
-- **🐦 Latest Updates**: [Twitter/X - @raphaelmansuy](https://twitter.com/raphaelmansuy)
-- **💬 Community Discussions**: [GitHub Discussions](https://github.com/raphaelmansuy/digital_palace/discussions)
+- **💼 Professional Consultation**: [LinkedIn - Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/) _(If you see an error, try again later—LinkedIn sometimes rate-limits bots)_
+- **🐦 Latest Updates**: [Twitter/X - @raphaelmansuy](https://twitter.com/raphaelmansuy) _(If you see an error, try again later—Twitter sometimes rate-limits bots)_
 - **📧 Direct Contact**: [Email](mailto:raphael.mansuy@gmail.com)
 
 ### 🌟 **Support This Project**
@@ -329,7 +307,7 @@ Need AI implementation for your business? Raphaël offers:
 - **📚 Team Training** - Upskill your developers and data teams
 - **🔧 Custom Solutions** - Tailored AI applications for your specific needs
 
-**[Schedule a consultation →](https://www.linkedin.com/in/raphaelmansuy/)**
+
 
 ---
 
