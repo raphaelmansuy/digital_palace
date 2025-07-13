@@ -6,6 +6,7 @@
 
 | 🎯 Your Goal | ⚡ Quick Access | 🕒 Time | 💡 What You'll Get |
 |-------------|----------------|---------|-------------------|
+| **Master 58 prompt techniques** | [58 Techniques Reference →](./prompt-engineering-58-techniques-reference.md) | 30-90 min | Complete technique mastery |
 | **Find latest AI papers** | [Research Papers →](./research-papers/README.md) | 5-30 min | Cutting-edge research |
 | **Read technical articles** | [Technical Articles →](./technical-articles/README.md) | 10-60 min | Expert insights |
 | **Compare tools** | [Tools Directory →](../tools/ai-tools-master-directory.md) | 15-45 min | Best tool for your needs |
@@ -17,7 +18,27 @@
 
 ---
 
+## 🔬 **Featured Resource: Complete Prompt Engineering Reference**
 
+### **[58 Text-Based Prompting Techniques →](./prompt-engineering-58-techniques-reference.md)**
+
+**The most comprehensive reference for systematic prompt engineering mastery:**
+
+- **58 Research-Validated Techniques** from "The Prompt Report" academic survey
+- **6 Major Categories** with systematic organization
+- **Business Applications** for each technique type
+- **Current Coverage Analysis** of LinkedIn content series
+- **Implementation Roadmap** for 100% technique mastery
+
+**Quick Category Navigation:**
+- **[In-Context Learning (14 techniques)](./prompt-engineering-58-techniques-reference.md#-i-in-context-learning-icl---14-techniques)** - Few-shot prompting mastery
+- **[Thought Generation (12 techniques)](./prompt-engineering-58-techniques-reference.md#-ii-thought-generation---12-techniques)** - Chain-of-thought reasoning
+- **[Decomposition (9 techniques)](./prompt-engineering-58-techniques-reference.md#-iii-decomposition---9-techniques)** - Problem breakdown strategies
+- **[Ensembling (8 techniques)](./prompt-engineering-58-techniques-reference.md#-iv-ensembling---8-techniques)** - Multiple prompt coordination
+- **[Self-Criticism (6 techniques)](./prompt-engineering-58-techniques-reference.md#-v-self-criticism---6-techniques)** - Quality assurance methods
+- **[Prompt Engineering (7 techniques)](./prompt-engineering-58-techniques-reference.md#-vi-prompt-engineering---7-techniques)** - Automated optimization
+
+---
 
 ## 🧭 **Reference Navigator**
 
@@ -179,5 +200,3 @@ Dive deeper into specific reference domains:
 - **[Core Technologies](./core-technologies.md)** - API references and technical specs
 - **[Prompt Templates](./prompt-templates.md)** - Ready-to-use prompt library
 - **[2025 AI Updates](./2025-ai-updates.md)** - Latest model releases and updates
-
----
