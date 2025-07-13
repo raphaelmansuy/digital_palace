@@ -1,15 +1,23 @@
+
 # 🏛️ Digital Palace
 
-> **Your AI Knowledge Hub** - From concepts to production in minutes, not months
+> **Your AI Knowledge Hub**  
+> _From concepts to production in minutes, not months_
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-June%202025-brightgreen?style=for-the-badge)](./reference/2025-ai-updates.md)
 [![AI Tools](https://img.shields.io/badge/AI%20Tools-158+-blue?style=for-the-badge)](./tools/ai-tools-master-directory.md)
 
+**Cut through AI complexity. Get to results faster.**
 
-**🎯 Cut through AI complexity. Get to results faster.**  
-**🆕 June 2025** - OpenAI o3, Claude 4, Computer Use & Production-Ready Agents
+🌟 **Why Digital Palace?**
 
-## 🚀 Start Here - Choose Your Path
+- **Instant AI Knowledge**: Go from zero to production in minutes, not months
+- **Curated, Actionable Content**: No fluff—just what you need, when you need it
+- **Always Up-to-Date**: [See what's new](./reference/2025-ai-updates.md) (June 2025: OpenAI o3, Claude 4, Computer Use Agents)
+
+---
+
+## 🚀 Start Here — Choose Your Path
 
 | 🎯 **I want to...**         | ⚡ **Go to**                                                               | 🕒 **Time** | 💡 **Result**      |
 | --------------------------- | -------------------------------------------------------------------------- | ----------- | ------------------ |
@@ -40,7 +48,9 @@
 ## 🌐 Curated Blogs & Recommended Reading
 
 
-Stay ahead with these high-quality, technical blog posts, hands-on guides, and deep dives from the AI community:
+**Stay ahead with the best in AI — handpicked, technical, and practical.**
+
+Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
 
 - **[LLMs from Scratch (Sebastian Raschka)](https://github.com/rasbt/LLMs-from-scratch)**  
   Step-by-step, open-source code and book for building a GPT-like LLM from the ground up in PyTorch. Ideal for learners and practitioners who want to understand every detail of LLMs.
@@ -97,7 +107,7 @@ For more author-centric and community blog links, see [External Blogs](./communi
 
 **Why Start Here?**
 
-- **🧠 Build Understanding**: 70+ concepts from basics to cutting-edge
+- **🧠 Build Understanding**: 70+ concepts from basics to cutting-edge ([Mental Models](./personal/mental-models/README.md))
 - **🔗 Smart Navigation**: Every concept connects to related areas
 - **🛠️ Tool Integration**: Direct links to relevant tools and guides
 - **⚡ Quick Reference**: Fast lookup for definitions and examples
@@ -168,33 +178,33 @@ This repository is organized as a **digital palace** - each section serves a spe
 
 ```text
 digital_palace/
-├── 🧩 concepts/          # **CORE: Master concept index with cross-links**
-├── � people/            # AI/ML influential figures & leaders
-├── �📖 learning/           # Structured learning paths & courses
-│   └── courses/          # Educational resources
-├── 🎯 guides/            # Step-by-step implementation guides
-│   ├── prompting/        # Prompting techniques
-│   ├── quick-references/ # "For the Impatients" series
-│   ├── image-generation/ # AI image guides
-│   ├── agent-development/# AI agent SOPs
-│   └── training/         # Training resources
-├── 🛠️ tools/             # Curated tool directories & comparisons
-│   └── development-tools/# VS Code extensions
-├── 📚 reference/         # Quick lookups, APIs, cheat sheets
-│   ├── technical-articles/# Deep-dive articles
-│   ├── techniques/       # AI techniques
-│   ├── research-papers/  # Academic papers
-│   ├── datasets/         # Training datasets
-│   ├── cloud-platforms/  # Cloud guides
-│   └── genai-fundamentals/# GenAI basics
-├── 🎭 personal/          # Learning philosophy & mental models
-│   ├── til/             # Today I Learned
-│   ├── mental-models/   # Decision frameworks
-│   └── ideas/           # Project concepts
-└── 💬 community/         # Discussions, contributions, updates
-    ├── newsletters/      # Updates
-    ├── social-content/   # LinkedIn posts
-    └── external-blogs/   # Blog recommendations
+├── 🧩 concepts/           # Master concept index with cross-links
+├── 👥 people/             # AI/ML influential figures & leaders
+├── 📖 learning/           # Structured learning paths & courses
+│   └── 📚 courses/        # Educational resources
+├── 🎯 guides/             # Step-by-step implementation guides
+│   ├── ✍️ prompting/      # Prompting techniques
+│   ├── ⚡ quick-references/ # "For the Impatients" series
+│   ├── 🖼️ image-generation/ # AI image guides
+│   ├── 🤖 agent-development/ # AI agent SOPs
+│   └── 🏋️ training/       # Training resources
+├── 🛠️ tools/              # Curated tool directories & comparisons
+│   └── 🧰 development-tools/ # VS Code extensions
+├── 📚 reference/          # Quick lookups, APIs, cheat sheets
+│   ├── 📑 technical-articles/ # Deep-dive articles
+│   ├── 🧠 techniques/     # AI techniques
+│   ├── 📄 research-papers/ # Academic papers
+│   ├── 🗂️ datasets/       # Training datasets
+│   ├── ☁️ cloud-platforms/ # Cloud guides
+│   └── 🧬 genai-fundamentals/ # GenAI basics
+├── 🎭 personal/           # Learning philosophy & mental models
+│   ├── 💡 til/            # Today I Learned
+│   ├── 🧠 mental-models/  # Decision frameworks
+│   └── 💭 ideas/          # Project concepts
+└── 💬 community/          # Discussions, contributions, updates
+    ├── 📰 newsletters/    # Updates
+    ├── 🗣️ social-content/ # LinkedIn posts
+    └── 🌐 external-blogs/ # Blog recommendations
 ```
 
 ### 🎯 **Usage Philosophy**
