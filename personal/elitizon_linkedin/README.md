@@ -68,7 +68,9 @@ These comprehensive academic surveys provide the theoretical foundation and late
 |--------|----------|-------|--------|----------------|
 | 21-Day Foundational | 3 weeks | 21 posts | ✅ Complete | 340% productivity increase |
 | Advanced Extension | 3 weeks | 21 posts | 🚧 7/21 complete | 500% ROI potential |
-| **Total Program** | **6 weeks** | **42 posts** | **🎯 67% complete** | **Transformational** |
+| **Phase 2A: Business-Critical** | **3 weeks** | **21 posts** | **🎯 Planned** | **60% technique coverage** |
+| **Phase 2B: Complete Mastery** | **3 weeks** | **21 posts** | **🎯 Planned** | **100% technique coverage** |
+| **Total Program** | **12 weeks** | **84 posts** | **🎯 33% complete** | **Transformational** |
 
 ## Featured Content Series
 
