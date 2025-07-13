@@ -66,6 +66,9 @@ Stay ahead with these high-quality, technical blog posts, hands-on guides, and d
 - **[Block's Playbook for Designing MCP Servers](https://engineering.block.xyz/blog/blocks-playbook-for-designing-mcp-servers)**  
   A detailed engineering guide from Block on building robust Model Context Protocol (MCP) servers.
 
+- **[12-Factor Agents: Patterns of reliable LLM applications (Dex Horthy)](./guides/agent-development/12-factor-agents.md)**  
+  Production-ready AI agent patterns adapted from the 12-factor app methodology. Essential for teams deploying agents at scale. Covers structured output, prompt ownership, context engineering, and production deployment patterns.
+
 - **[Hands-on Multi-Vector Retrieval with Reason-ModernColBERT in Weaviate (LightOn)](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb)**  
   Step-by-step notebook: advanced RAG with multi-vector embeddings and late interaction retrieval using Reason-ModernColBERT in Weaviate. Covers setup, code, and reasoning-intensive search for agentic RAG and production use cases.
   

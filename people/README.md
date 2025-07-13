@@ -2,7 +2,7 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-7-blue?style=flat-square)](#alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-8-blue?style=flat-square)](#alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-green?style=flat-square)](#recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#by-category)
 
@@ -39,6 +39,7 @@
 | Name | Role | Organization | Tags |
 |------|------|--------------|------|
 | ["Andrej Karpathy"](./andrej-karpathy.md) | "Independent AI Researcher & Educator" | "Self-employed" | `deep-learning,  researcher,  educator` |
+| ["Dex Horthy"](./dex-horthy.md) | "CEO & Founder" | "HumanLayer" | `founder,  ai-agents,  y-combinator,  human-in-the-loop` |
 | ["Geoffrey Hinton"](./geoffrey-hinton.md) | "Professor Emeritus" | "University of Toronto, Vector Institute" | `deep-learning,  researcher,  educator` |
 | ["Raphaël MANSUY"](./raphaël-mansuy.md) | "CTO & Co-founder" | "ELITIZON Ltd" | `cto,  ai,  founder` |
 | ["Sam Altman"](./sam-altman.md) | "CEO and Co-founder" | "OpenAI" | `ceo,  entrepreneur,  investor` |
@@ -58,6 +59,7 @@
 ### 🏢 Industry & CEOs
 *Industry leaders and executives driving AI adoption*
 
+- 🏢 ["Dex Horthy"](./dex-horthy.md)
 - 🏢 ["Sam Altman"](./sam-altman.md)
 - 🏢 ["Timnit Gebru"](./timnit-gebru.md)
 
@@ -86,7 +88,7 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 7 people
+- **Total Profiles**: 8 people
 - **Categories**: 7 primary categories
 - **Last Updated**: July 2025
 - **Update Frequency**: Monthly maintenance
@@ -96,6 +98,7 @@
 
 *Latest profiles added to the People Hub*
 
+- 🆕 ["Dex Horthy"](./dex-horthy.md)
 - 🆕 ["Timnit Gebru"](./timnit-gebru.md)
 - 🆕 ["[Person Name]"](./_template.md)
 - 🆕 ["Raphaël MANSUY"](./raphaël-mansuy.md)

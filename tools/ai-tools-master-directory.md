@@ -317,6 +317,7 @@
 
 | Tool                                                        | Purpose                          | Workflow Integration           |
 | ----------------------------------------------------------- | -------------------------------- | ------------------------------ |
+| [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/personal-settings/configuring-github-copilot-in-the-cli) | AI command suggestions & explanations | Terminal AI assistance |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli)   | Official Google AI workflow tool | Complete development lifecycle |
 | [llm](https://llm.datasette.io/en/stable/)                  | CLI for multiple LLMs            | Terminal workflows             |
 | [Code2prompt](https://github.com/raphaelmansuy/code2prompt) | Codebase to AI prompt            | Code analysis                  |

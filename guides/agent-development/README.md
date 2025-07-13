@@ -20,7 +20,7 @@
 
 ### 🎯 Standard Operating Procedures
 - **[AI Agent SOP](./sop_ai_agent.md)** 🟡 - Comprehensive standard operating procedures for AI agent development
-
+- **[12-Factor Agents](./12-factor-agents.md)** 🟢 - Production reliability patterns for LLM applications
 
 ### 🔗 Related Core Guides
 - **[AI Agents Main Guide](../ai-agents.md)** - Complete implementation guide

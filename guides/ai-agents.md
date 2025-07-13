@@ -579,6 +579,31 @@ async def execute_task(request: TaskRequest, background_tasks: BackgroundTasks):
 
 ## 📚 Advanced Topics
 
+### 12-Factor Agents: Production Reliability Patterns
+
+**[12-Factor Agents: Patterns of reliable LLM applications](https://www.youtube.com/watch?v=8kMaTybvDUw)** by [Dex Horthy](../people/dex-horthy.md) (HumanLayer CEO)
+
+A comprehensive framework for building production-ready AI agents based on the 12-factor app methodology. Essential viewing for teams deploying agents at scale.
+
+**🔗 Complete Guide**: [12-Factor Agents Implementation Guide](./agent-development/12-factor-agents.md)
+
+**Key Principles Summary:**
+
+- **Structured Output**: Turn sentences into actionable JSON
+- **Own Your Prompts**: Control every token for maximum quality
+- **Context Engineering**: Everything depends on getting the right tokens to the model
+- **Tool Use as JSON + Code**: Abandon mystical views of tool use
+- **Error Handling**: Manage failures intelligently in context windows
+- **Human-in-the-Loop**: Push interaction decisions to natural language tokens
+- **Multi-Channel Integration**: Meet users where they are
+- **Own Your Control Flow**: Control when to continue, break, or summarize
+- **Micro-Agents**: Build small, focused agents (3-10 steps) over monoliths
+- **Stateless Design**: Externalize state management for scalability
+- **Pause/Resume**: Enable workflows to handle long-running tasks
+- **Production Patterns**: Apply cloud-native deployment practices
+
+---
+
 ### Learning & Adaptation
 
 **Reinforcement Learning:**

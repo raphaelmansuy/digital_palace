@@ -165,10 +165,16 @@ Fast-track learning for experienced developers
 
 ### 🎓 **Training & Learning**
 
-- **[Training Resources](./training/)**
+
+**[Training Resources](./training/)**
   - Model training strategies
   - Fine-tuning guides
   - Educational materials
+
+**[AI Engineer YouTube Channel](https://www.youtube.com/@aiDotEngineer)**
+  - Talks, workshops, and events for AI engineers
+  - Production RAG, agent systems, and real-world AI engineering
+  - Playlists from major AI events and hands-on tutorials
 
 ### 💬 **Application-Focused Guides**
 Build specific types of AI applications

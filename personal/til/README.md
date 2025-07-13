@@ -22,6 +22,8 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 ### 2025 Entries
 
+- **[GitHub Copilot CLI Aliases Setup](2025-07-13-github-copilot-cli-aliases.md)** - Quick productivity boost with `ghcs` and `ghce` aliases for AI-powered command suggestions and explanations in terminal workflows (July 2025) → *See also: [Git Aliases](2024-07-27-git-alias.md), [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md)*
+
 - **[VS Code 1.102: 7 Features That Actually Matter](2025-07-11-vscode-1.102.md)** - Practical guide to VS Code 1.102's most impactful features with actionable setup instructions and real-world productivity gains (July 2025) → *See also: [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md), [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md)*
 
 - **[VS Code & GitHub Configuration Files: Complete Guide](2025-07-09-vscode-github-configuration-files.md)** - All config file types, paths, and actionable examples for modern development workflows (2025) → *Related: [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md)*
@@ -82,6 +84,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 ### 🛠️ Development Tools
 
+- [GitHub Copilot CLI Aliases Setup](2025-07-13-github-copilot-cli-aliases.md) → *Terminal AI assistance shortcuts*
 - [VS Code 1.102: 7 Features That Actually Matter](2025-07-11-vscode-1.102.md) → *Essential VS Code productivity features*
 - [Configuring MCP Servers in VSCode](2025-01-09-vscode-mcp-server-configuration.md) → *Core MCP setup guide*
 - [VSCode Agent Mode Standard Tools](2025-01-09-vscode-agent-mode-standard-tools.md) → *Complete tool reference*
@@ -115,6 +118,7 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 | **Topic** | **Keywords** | **Best Entries** | **Cross-References** |
 |-----------|------------|------------------|---------------------|
 | **VS Code & AI** | agent mode, copilot, MCP, chat | [VS Code 1.102](2025-07-11-vscode-1.102.md), [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md) | → [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md), [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md) |
+| **CLI & Terminal** | aliases, terminal, command line, github copilot cli | [GitHub Copilot CLI Aliases](2025-07-13-github-copilot-cli-aliases.md), [Git Aliases](2024-07-27-git-alias.md) | → [Development Tools](#️-development-tools) |
 | **AI Models** | LLM, GPT, quantization, GGUF | GPT NumPy, Model quantization, GGUF conversion | → [AI concepts](../../concepts/README.md) |
 | **Python** | packaging, poetry, environment, uv | [PEP 621 & uv](2025-07-09-pep621-uv.md), [Poetry](2025-01-29-dependant-library-with-poetry.md) | → [Self-installing executables](2025-01-24-self-installing-python-executables-with-uv.md) |
 | **Cloud & Deployment** | AWS, CDK, Kamal, infrastructure | [AWS Stack with CDK](2025-01-14-deploy-an-aws-stack-with-cdk.md), [Kamal](2025-01-14-kamal-deploy-web-app-anywere.md) | → [Development Tools](#️-development-tools) |

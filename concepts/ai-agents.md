@@ -11,6 +11,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 ## 📚 Learn More
 
 - [AI Agents Guide](../guides/ai-agents.md) — Comprehensive implementation, patterns, and best practices
+- [12-Factor Agents](../guides/agent-development/12-factor-agents.md) — Production reliability patterns for LLM applications
 - [Agent Development SOP](../guides/agent-development/sop_ai_agent.md) — Standard operating procedures for agent projects
 - [AutoGen Framework](../reference/techniques/autogen/README.md) — Multi-agent orchestration by Microsoft
 - [CAMEL: Communicative Agents](../reference/techniques/camel/README.md) — Role-playing and multi-agent dialog
