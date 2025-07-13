@@ -38,7 +38,7 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-12-breaking-token-barrier.md](2025-07-12-breaking-token-barrier.md): Research Highlight - Discusses H-Net dynamic chunking as a revolutionary approach to eliminate tokenization in language models, with performance metrics and industry impact analysis.
 
-- [2025-07-13-12-factor-agents-reliability.md](2025-07-13-12-factor-agents-reliability.md): Technical Deep Dive - Explores Dex Horthy's 12-Factor Agents framework for building reliable AI systems, featuring battle-tested patterns from 100+ production implementations.
+- [2025-07-13-12-factor-agents-reliability.md](2025-07-13-12-factor-agents-reliability.md): Technical Deep Dive - Explores Dex Horthy's 12-Factor Agents framework for building reliable AI systems, featuring battle-tested patterns from 100+ production implementations. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7350161396627607552/)
 
 ---
 
