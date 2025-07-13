@@ -30,7 +30,7 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Research Highlight - Exposes counterintuitive findings about alignment faking in AI safety research, challenging conventional wisdom in the field.
 
-- [2025-07-10-no-need-rag.md](2025-07-10-no-need-rag.md): Technical Insight - Advocates for direct tool access and sequential reading over complex RAG systems to improve coding agent performance.
+- [2025-07-10-no-need-rag.md](2025-07-10-no-need-rag.md): Technical Insight - Advocates for direct tool access and sequential reading over complex RAG systems to improve coding agent performance. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7348927542763884546/)
 
 - [2025-07-11-ai-project-struggle.md](2025-07-11-ai-project-struggle.md): Technical Deep Dive - Comprehensive analysis of why most AI projects fail and practical frameworks for building systems that actually work using first principle thinking.
 

@@ -4,7 +4,7 @@
 **Type:** Technical Insight  
 **Target:** AI engineers, ML practitioners, coding agent developers  
 **Hook:** Direct Tool Access vs Complex RAG Systems  
-**Published:** [LinkedIn Post](URL_TO_BE_ADDED)
+**Published:** [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7348927542763884546/)
 
 ---
 
