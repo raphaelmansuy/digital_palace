@@ -40,6 +40,8 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-13-12-factor-agents-reliability.md](2025-07-13-12-factor-agents-reliability.md): Technical Deep Dive - Explores Dex Horthy's 12-Factor Agents framework for building reliable AI systems, featuring battle-tested patterns from 100+ production implementations. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7350161396627607552/)
 
+- [2025-07-14-mirix-memory-system-ai-assistants.md](2025-07-14-mirix-memory-system-ai-assistants.md): Research Highlight - Exposes how MIRIX's six specialized memory types solve AI's forgetting problem, delivering 35% higher accuracy and 99.9% storage efficiency over traditional systems.
+
 ---
 
 _When adding new posts:_
