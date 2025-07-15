@@ -85,7 +85,11 @@ Explore these high-quality blog posts, hands-on guides, and deep dives from the 
   Step-by-step notebook for advanced RAG with multi-vector embeddings and late interaction retrieval in Weaviate.
 
 
+
 For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
+
+- **[How to Run Kimi K2 Locally (Unsloth Docs)](https://docs.unsloth.ai/basics/kimi-k2-how-to-run-locally)**  
+  Step-by-step guide to running the SOTA open-source Kimi K2 model on your own hardware. Covers quantization, hardware requirements, llama.cpp setup, prompt formatting, and real-world coding/reasoning tests. Ideal for anyone deploying advanced LLMs locally or exploring efficient model hosting.
 
 - **[OpenHands: All-Hands.dev – Autonomous AI Developer Agents & Platform](https://docs.all-hands.dev/)**  
   Comprehensive documentation for OpenHands, a leading open-source platform for autonomous AI developer agents. Features quick start guides for [OpenHands Cloud](https://app.all-hands.dev/), local installation, and advanced usage. Join the [GitHub project](https://github.com/All-Hands-AI/OpenHands), [Slack](https://join.slack.com/t/openhands-ai/shared_invite/zt-3847of6xi-xuYJIPa6YIPg4ElbDWbtSA), or [Discord](https://discord.gg/ESHStjSjD4) to connect with the community. OpenHands agents can modify code, run commands, browse the web, and automate developer workflows—ideal for anyone interested in next-generation AI coding agents and agentic automation.
