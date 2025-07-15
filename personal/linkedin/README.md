@@ -42,6 +42,8 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-14-mirix-memory-system-ai-assistants.md](2025-07-14-mirix-memory-system-ai-assistants.md): Research Highlight - Exposes how MIRIX's six specialized memory types solve AI's forgetting problem, delivering 35% higher accuracy and 99.9% storage efficiency over traditional systems.
 
+- [2025-07-15-codejudgebench-ai-code-quality-evaluation.md](2025-07-15-codejudgebench-ai-code-quality-evaluation.md): Research Highlight - Reveals critical challenges in AI code evaluation, showing how reasoning-capable models outperform specialized judges by 25% and exposing persistent position bias in LLM judgment systems.
+
 ---
 
 _When adding new posts:_
