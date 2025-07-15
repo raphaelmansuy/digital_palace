@@ -30,7 +30,7 @@
 ### **AI-Powered Computer Control**
 
 - **[Anthropic Computer Use](https://docs.anthropic.com/en/docs/computer-use)** - Claude's direct computer interface control
-- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Autonomous development agents with computer control
+- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Autonomous development agents with computer control. [See official docs](https://docs.all-hands.dev/) for setup, cloud, and advanced usage.
 - **[Browser Use](https://github.com/browser-use/browser-use)** - Make websites accessible for AI agents
 - **[MultiOn](https://multion.ai/)** - AI that can use any software like a human
 

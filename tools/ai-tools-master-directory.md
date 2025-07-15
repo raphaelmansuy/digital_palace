@@ -422,8 +422,10 @@
 
 _The latest AI innovations reshaping the landscape_
 
+
 ### **Revolutionary AI Code Editors**
 
+- **[Kiro](https://kiro.dev/)** - Agentic IDE for spec-driven development. Generates requirements, technical designs, tasks, and automates code quality with hooks. [Intro Blog](https://kiro.dev/blog/introducing-kiro/) | [Docs](https://kiro.dev/docs/) | [Download](https://kiro.dev/downloads/)
 - **[Cursor AI](https://cursor.sh/)** - AI-powered code editor with contextual understanding and codebase analysis
 - **[Windsurf](https://codeium.com/windsurf)** - AI-first IDE with collaborative editing capabilities
 - **[Cline](https://github.com/cline/cline)** - AI coding assistant for VS Code with MCP server integration and autonomous development capabilities
@@ -449,7 +451,7 @@ _The latest AI innovations reshaping the landscape_
 ### **Computer Control & Browser Automation**
 
 - **[Browser Use](https://github.com/browser-use/browser-use)** - Make websites accessible for AI agents (6k+ stars, actively maintained)
-- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Code Less, Make More with autonomous development agents
+- **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** - Code Less, Make More with autonomous development agents. [Official Docs](https://docs.all-hands.dev/) | [OpenHands Cloud](https://app.all-hands.dev/)
 - **[Nanobrowser](https://github.com/nanobrowser/nanobrowser)** - Chrome extension for AI-powered web automation
 - **[Anthropic Computer Use](https://docs.anthropic.com/en/docs/computer-use)** - AI that can control computers directly
 

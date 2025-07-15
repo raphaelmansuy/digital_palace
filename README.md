@@ -52,8 +52,9 @@
 
 Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
 
-- **[LLMs from Scratch (Sebastian Raschka)](https://github.com/rasbt/LLMs-from-scratch)**  
-  Step-by-step, open-source code and book for building a GPT-like LLM from the ground up in PyTorch. Ideal for learners and practitioners who want to understand every detail of LLMs.
+
+- **[Kiro: Agentic IDE for Spec-Driven Development](https://kiro.dev/blog/introducing-kiro/)**  
+  Kiro is a next-generation agentic IDE that helps you go from prompt to production with spec-driven workflows. It unpacks requirements from a single prompt, generates technical designs, creates and sequences tasks, and automates code quality with event-driven hooks. Features deep integration with your codebase, Model Context Protocol (MCP) support, and a modern AI coding experience. [Docs](https://kiro.dev/docs/) | [Download](https://kiro.dev/downloads/)
 
 - **[Context Kills VRAM: How to Run LLMs on consumer GPUs](https://medium.com/@lyx_62906/context-kills-vram-how-to-run-llms-on-consumer-gpus-a785e8035632)**  
   A practical guide to optimizing context size and memory usage for running large language models on consumer-grade GPUs. Covers real-world benchmarks, trade-offs, and actionable tips for maximizing VRAM efficiency.
@@ -83,7 +84,11 @@ Explore these high-quality blog posts, hands-on guides, and deep dives from the 
 - **[Hands-on Multi-Vector Retrieval with Reason-ModernColBERT in Weaviate (LightOn)](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb)**  
   Step-by-step notebook for advanced RAG with multi-vector embeddings and late interaction retrieval in Weaviate.
 
+
 For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
+
+- **[OpenHands: All-Hands.dev – Autonomous AI Developer Agents & Platform](https://docs.all-hands.dev/)**  
+  Comprehensive documentation for OpenHands, a leading open-source platform for autonomous AI developer agents. Features quick start guides for [OpenHands Cloud](https://app.all-hands.dev/), local installation, and advanced usage. Join the [GitHub project](https://github.com/All-Hands-AI/OpenHands), [Slack](https://join.slack.com/t/openhands-ai/shared_invite/zt-3847of6xi-xuYJIPa6YIPg4ElbDWbtSA), or [Discord](https://discord.gg/ESHStjSjD4) to connect with the community. OpenHands agents can modify code, run commands, browse the web, and automate developer workflows—ideal for anyone interested in next-generation AI coding agents and agentic automation.
 
 - **[GPT-4.1 Coding Agent System Prompt (VS Code Tools Edition) – Burke Holland](https://gist.github.com/burkeholland/7aa408554550e36d4e951a1ead2bc3ac)**  
   A production-grade, open-source system prompt for building advanced coding agents in VS Code. Includes detailed tool usage, todo list management, and communication guidelines for agentic workflows. Highly useful for anyone customizing Copilot or building their own AI coding agents.
