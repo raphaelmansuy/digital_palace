@@ -99,6 +99,7 @@ Context engineering is the art and science of managing what information is inclu
 ### 📖 Foundational Articles (2025)
 - **[Provence: Efficient and Robust Context Pruning for RAG (ICLR 2025)](https://arxiv.org/abs/2501.16214)** — Breakthrough research on dynamic context pruning with sequence labeling and unified reranking capabilities.
 + **[How to 10x your coding agent performance (without RAG) – LinkedIn Post (2025)](../personal/linkedin/2025-07-10-no-need-rag.md)** — 2025 perspective: Why leading teams are moving beyond RAG for coding agents, with a 4-step framework, evidence, and a professional Mermaid diagram. Summarizes the shift to direct tool access, sequential reading, and progressive summarization for agent performance.
+ - **[Context Engineering (DeepWiki, 2025)](https://deepwiki.com/davidkimai/Context-Engineering)** — Community-driven wiki and resource hub for context engineering concepts, patterns, and research.
 
 - **[Context Engineering for Agents (Lance Martin, 2025)](https://rlancemartin.github.io/2025/06/23/context_engineering/)** — In-depth guide to context engineering strategies for LLM agents: writing, selecting, compressing, and isolating context. Covers practical patterns, pitfalls, and state-of-the-art research.
 - **[Context Engineering for Agents (LangChain Blog, 2025)](https://blog.langchain.com/context-engineering-for-agents/)** — Practical breakdown of context engineering strategies (write, select, compress, isolate) with agent and product examples, and how LangGraph supports them.
