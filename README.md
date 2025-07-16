@@ -105,6 +105,9 @@ For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-play
   A hands-on guide to building chatbots with persistent, user-specific memory using Google Gemini 2.5 and the open-source Mem0 library. Covers architecture, code, and practical tips for context-aware, personalized AI assistants.
 
 
+- **[How to build Web3 AI agents with Google Cloud (Google Cloud Blog, July 2025)](https://cloud.google.com/blog/products/ai-machine-learning/build-web3-ai-agents-with-google-cloud)**  
+  A comprehensive, up-to-date guide to designing and deploying autonomous Web3 AI agents using Google Cloud’s Vertex AI, Agent Development Kit (ADK), and open-source frameworks (A2A, CrewAI, LangGraph). Covers agent architectures, crypto wallet integration, decentralized workflows, and production deployment patterns. Includes diagrams, code samples, and links to official tools and further resources. Essential reading for anyone building next-generation AI agents on decentralized infrastructure.
+
 - **[Announcing Vertex AI Agent Engine Memory Bank (Google Cloud Blog)](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview/?hl=en)**  
   Official announcement and deep dive on Vertex AI's new managed Memory Bank service for agents. Explains how Memory Bank enables persistent, contextual, and personalized memory for conversational agents, with hands-on guides, architecture diagrams, and integration examples for ADK, LangGraph, and CrewAI. Includes links to [official docs](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) and [sample notebooks](https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/agent-engine/memory). Highly recommended for anyone building production-grade, context-aware AI agents on Google Cloud.
 
