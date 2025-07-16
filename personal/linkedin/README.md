@@ -44,6 +44,8 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-15-codejudgebench-ai-code-quality-evaluation.md](2025-07-15-codejudgebench-ai-code-quality-evaluation.md): Research Highlight - Reveals critical challenges in AI code evaluation, showing how reasoning-capable models outperform specialized judges by 25% and exposing persistent position bias in LLM judgment systems.
 
+- [2025-07-16-llm-instruction-limits-agent-reliability.md](2025-07-16-llm-instruction-limits-agent-reliability.md): Research Highlight - Exposes the hidden cognitive limits of LLMs when following multiple instructions, revealing how agent reliability degrades exponentially with instruction count and providing production-ready strategies for building reliable AI systems.
+
 ---
 
 _When adding new posts:_
