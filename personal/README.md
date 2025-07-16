@@ -266,4 +266,30 @@ When this model breaks down
 
 ---
 
+### **📱 X (Twitter) Posts Collection**
+
+**[X Posts Collection](./x/README.md)** - Transform academic insights into viral social media
+
+**Content Types:**
+
+- **🧵 Twitter Threads** - Multi-part educational content
+- **📊 Data Visualizations** - Shareable charts and infographics
+- **🎯 Hook Templates** - Proven engagement patterns
+- **📈 Viral Analysis** - What makes content spread
+
+**Recent High-Impact Content:**
+
+- [AI Cognitive Cliffs Thread](./x/2025-07-16-ai-cognitive-cliffs-thread.md) - Research paper → 5-tweet thread
+- Expected reach: 1,000+ likes, potential viral scaling
+
+**Content Strategy Framework:**
+
+- ✅ **Hook + Problem** - Grab attention with controversy
+- ✅ **Data + Evidence** - Support with concrete numbers
+- ✅ **Stakes + Implications** - Show why it matters
+- ✅ **Solutions + Actions** - Provide practical value
+- ✅ **Engagement + CTA** - Drive interaction
+
+---
+
 *This philosophy drives continuous growth and mastery in the rapidly evolving AI landscape.*
