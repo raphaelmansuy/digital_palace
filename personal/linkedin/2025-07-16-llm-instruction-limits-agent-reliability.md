@@ -4,13 +4,15 @@
 **Type:** Research Highlight  
 **Target:** AI Engineers, Agent Developers, MLOps Engineers, Technical Leaders  
 **Hook:** Why even top LLMs fail at 500 instructions and what this means for agent reliability  
-**Published:** [LinkedIn Post](URL_TO_BE_ADDED)
+**Published:** [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7351094314615091200/)
 
 ---
 
 🚨 **Reality Check**: Your AI agent isn't unreliable because it's "not smart enough" - it's drowning in instruction overload.
 
 A groundbreaking paper just revealed something every production engineer suspects but nobody talks about: **LLMs have hard cognitive limits**.
+
+📄 **Research Paper:** [How Many Instructions Can LLMs Follow At Once?](https://arxiv.org/abs/2507.11538)
 
 **The Hidden Problem:**
 • Your agent works great with 10 instructions
