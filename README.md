@@ -48,7 +48,11 @@
 ## 🌐 Curated Blogs & Recommended Reading
 
 
+
 **Stay ahead with the best in AI — handpicked, technical, and practical.**
+
+- **[Rules for Writing Software Tutorials (Michael Lynch, 2025)](https://refactoringenglish.com/chapters/rules-for-software-tutorials/)**  
+  A practical, research-backed guide to writing clear, effective, and beginner-friendly software tutorials. Covers structure, code examples, copy-pasteability, and more—essential reading for anyone creating technical guides or documentation.
 
 Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
 
@@ -282,6 +286,8 @@ We welcome contributions from the AI community! Here's how you can help improve 
 - **🔍 Fact Checking**: Help keep information accurate and current
 
 ### 📋 **Contribution Guidelines**
+
+**Before submitting a tutorial or documentation, please review [Rules for Writing Software Tutorials (Michael Lynch, 2025)](https://refactoringenglish.com/chapters/rules-for-software-tutorials/). Following these best practices ensures your contribution is clear, effective, and beginner-friendly.**
 
 1. **Fork this repository**
 2. **Create a feature branch** (`git checkout -b feature/amazing-contribution`)
