@@ -28,6 +28,7 @@
 - **[Business AI](../business-ai.md)** - Enterprise-focused AI solutions
 - **[Deployment](../deployment.md)** - Production deployment strategies
 - **[ADK to A2A Integration Guide](./adk-to-a2a-guide.md)** 🆕 - Convert Google ADK/MCP agents for A2A interoperability
+- **[Building a Multi-Agent Learning System with LlamaIndex and Mem0](./llamaindex-multi-agent-learning-system.md)** 🆕 - Tutorial on creating a multi-agent system with persistent memory.
 
 ### 🛠️ Tools & Frameworks
 - **[AutoGen Framework](../../reference/techniques/autogen/README.md)** - Microsoft's multi-agent framework
