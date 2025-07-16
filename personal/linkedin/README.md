@@ -26,6 +26,7 @@ Each LinkedIn post follows this standardized header format:
 - **Hook**: The main value proposition or attention-grabbing element
 - **Published**: Link to the actual LinkedIn post (use placeholder "URL_TO_BE_ADDED" for drafts)
 
+
 ## Posts Index
 
 - [2025-01-27-ai-safety-alignment-faking-research.md](2025-01-27-ai-safety-alignment-faking-research.md): Research Highlight - Exposes counterintuitive findings about alignment faking in AI safety research, challenging conventional wisdom in the field. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7348935402772140032/)
@@ -45,6 +46,8 @@ Each LinkedIn post follows this standardized header format:
 - [2025-07-15-codejudgebench-ai-code-quality-evaluation.md](2025-07-15-codejudgebench-ai-code-quality-evaluation.md): Research Highlight - Reveals critical challenges in AI code evaluation, showing how reasoning-capable models outperform specialized judges by 25% and exposing persistent position bias in LLM judgment systems.
 
 - [2025-07-16-llm-instruction-limits-agent-reliability.md](2025-07-16-llm-instruction-limits-agent-reliability.md): Research Highlight - Exposes the hidden cognitive limits of LLMs when following multiple instructions, revealing how agent reliability degrades exponentially with instruction count and providing production-ready strategies for building reliable AI systems. [Published](https://www.linkedin.com/feed/update/urn:li:activity:7351094314615091200/)
+
+- [2025-07-16-amazon-s3-vectors-disrupts-vector-db.md](2025-07-16-amazon-s3-vectors-disrupts-vector-db.md): Technical Insight - Amazon S3 Vectors disrupts the vector database market with native, massive-scale, low-cost vector storage and search for AI workloads.
 
 ---
 
