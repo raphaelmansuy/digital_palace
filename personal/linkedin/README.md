@@ -49,6 +49,8 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-16-amazon-s3-vectors-disrupts-vector-db.md](2025-07-16-amazon-s3-vectors-disrupts-vector-db.md): Technical Insight - Amazon S3 Vectors disrupts the vector database market with native, massive-scale, low-cost vector storage and search for AI workloads.
 
+- [2025-07-17-aws-bedrock-agentcore-runtime-revolution.md](2025-07-17-aws-bedrock-agentcore-runtime-revolution.md): Technical Deep Dive - AWS Bedrock AgentCore addresses the fundamental runtime challenges of AI agents versus traditional software, providing secure execution, tool authentication, and state persistence.
+
 ---
 
 _When adding new posts:_
