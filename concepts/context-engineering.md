@@ -109,6 +109,7 @@ Context engineering is the art and science of managing what information is inclu
 
 ### 🛠️ Technical Resources
 
+- **[Context Engineering: A First-Principles Handbook (davidkimai)](https://github.com/davidkimai/Context-Engineering)** — Comprehensive, frontier handbook for moving beyond prompt engineering to context design, orchestration, and optimization. Features progressive learning from atomic prompts to neural field theory, with hands-on tutorials, reusable templates, and research evidence from top institutions.
 - **[Context Engineering Tutorial (GitHub)](https://github.com/raphaelmansuy/tutorials/blob/main/32_context_engineering/README.md)** — Step-by-step tutorial on context engineering concepts and implementation patterns.
 - **[Context Engineering Data Model (GitHub)](https://github.com/raphaelmansuy/tutorials/blob/main/35_context_engineering_context_datamodel.md)** — Data modeling for context management in agentic systems.
 - **[LangGraph Context Engineering](https://langchain-ai.github.io/langgraph/how-tos/memory/add-memory/)** — How to implement context engineering patterns with LangGraph.

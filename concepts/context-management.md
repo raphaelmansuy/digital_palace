@@ -10,6 +10,7 @@ Context management refers to the strategies and techniques for handling, organiz
 - [Context Management Strategies](../reference/technical-articles/2025-06-29-context-management-llm-agents.md#contextflow-a-strategic-framework-for-context-optimization)
 - [Hierarchical Context Architecture](../reference/technical-articles/2025-06-29-context-management-llm-agents.md#1-hierarchical-context-architecture)
 - [Memory Systems for AI](../concepts/ai-agents.md#memory--context)
+- [Context Engineering: A First-Principles Handbook](https://github.com/davidkimai/Context-Engineering) — Comprehensive handbook for context design and optimization
 - [Integrating Long-Term Memory with Gemini 2.5 (Philipp Schmid)](https://www.philschmid.de/gemini-with-memory) — Practical implementation of persistent memory for conversational AI using Mem0
 
 ---

@@ -84,6 +84,8 @@ Explore these high-quality blog posts, hands-on guides, and deep dives from the 
 - **[12-Factor Agents: Patterns of reliable LLM applications (Dex Horthy)](./guides/agent-development/12-factor-agents.md)**  
   Production-ready AI agent patterns adapted from the 12-factor app methodology. Essential for teams deploying agents at scale. Covers structured output, prompt ownership, context engineering, and production deployment patterns.
 
+- **[Context Engineering: A First-Principles Handbook (davidkimai)](https://github.com/davidkimai/Context-Engineering)**  
+  A comprehensive, frontier handbook for moving beyond prompt engineering to context design, orchestration, and optimization. Inspired by Andrej Karpathy's definition of context engineering, this repository provides progressive learning from first principles to advanced neural field theory. Features hands-on tutorials, reusable templates, practical examples, and research evidence from IBM, MIT, Princeton, and other top institutions. With 2.4k stars and active development, this is the definitive resource for understanding context engineering in modern AI systems. Perfect for developers, researchers, and practitioners building production-ready AI agents.
 
 - **[Hands-on Multi-Vector Retrieval with Reason-ModernColBERT in Weaviate (LightOn)](https://github.com/weaviate/recipes/blob/main/weaviate-features/multi-vector/reason_moderncolbert.ipynb)**  
   Step-by-step notebook for advanced RAG with multi-vector embeddings and late interaction retrieval in Weaviate.
