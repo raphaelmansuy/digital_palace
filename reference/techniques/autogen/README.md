@@ -221,10 +221,10 @@ user_proxy.initiate_chat(
 
 ```bash
 # Install AutoGen
-pip install pyautogen
+pip install ag2
 
 # Optional: Install with extra features
-pip install "pyautogen[teachable,lmm,graph]"
+pip install "ag2[teachable,lmm,graph]"
 ```
 
 ### 🎯 Basic Agent Configuration
@@ -416,7 +416,7 @@ We will create an agent to answer natural language questions about Python code. 
 First, install the AutoGen package:
 
 ```
-pip install pyautogen
+pip install ag2
 ```
 
 Import the modules:
