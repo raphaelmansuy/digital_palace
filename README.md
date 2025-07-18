@@ -51,10 +51,12 @@
 
 **Stay ahead with the best in AI — handpicked, technical, and practical.**
 
-- **[Rules for Writing Software Tutorials (Michael Lynch, 2025)](https://refactoringenglish.com/chapters/rules-for-software-tutorials/)**  
   A practical, research-backed guide to writing clear, effective, and beginner-friendly software tutorials. Covers structure, code examples, copy-pasteability, and more—essential reading for anyone creating technical guides or documentation.
 
 Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
+
+- **[Probability and Statistics for Data Science (ps4ds.net)](https://www.ps4ds.net/)**  
+  A comprehensive, free resource for mastering probability and statistics in data science. Includes a preprint textbook, 100+ Python notebooks with real-world datasets, 100+ instructional videos, and solutions to 200 exercises. Authored by Carlos Fernandez-Granda (NYU), this site is ideal for learners and practitioners seeking practical, foundational knowledge in statistics, machine learning, and data science. All materials are open-access and regularly updated.
 
 
 - **[Kiro: Agentic IDE for Spec-Driven Development](https://kiro.dev/blog/introducing-kiro/)**  
