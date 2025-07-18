@@ -51,6 +51,8 @@ Each LinkedIn post follows this standardized header format:
 
 - [2025-07-17-aws-bedrock-agentcore-runtime-revolution.md](2025-07-17-aws-bedrock-agentcore-runtime-revolution.md): Technical Deep Dive - AWS Bedrock AgentCore addresses the fundamental runtime challenges of AI agents versus traditional software, providing secure execution, tool authentication, and state persistence.
 
+- [2025-07-18-aime-adaptive-multi-agent-framework.md](2025-07-18-aime-adaptive-multi-agent-framework.md): Research Highlight - AIME framework introduces adaptive collaboration that enables AI agents to replan and re-skill during execution like high-performing human teams, achieving 77.6% success on GAIA benchmarks.
+
 ---
 
 _When adding new posts:_
