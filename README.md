@@ -51,10 +51,12 @@
 
 **Stay ahead with the best in AI — handpicked, technical, and practical.**
 
-- **[Rules for Writing Software Tutorials (Michael Lynch, 2025)](https://refactoringenglish.com/chapters/rules-for-software-tutorials/)**  
   A practical, research-backed guide to writing clear, effective, and beginner-friendly software tutorials. Covers structure, code examples, copy-pasteability, and more—essential reading for anyone creating technical guides or documentation.
 
 Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
+
+- **[Probability and Statistics for Data Science (ps4ds.net)](https://www.ps4ds.net/)**  
+  A comprehensive, free resource for mastering probability and statistics in data science. Includes a preprint textbook, 100+ Python notebooks with real-world datasets, 100+ instructional videos, and solutions to 200 exercises. Authored by Carlos Fernandez-Granda (NYU), this site is ideal for learners and practitioners seeking practical, foundational knowledge in statistics, machine learning, and data science. All materials are open-access and regularly updated.
 
 
 - **[Kiro: Agentic IDE for Spec-Driven Development](https://kiro.dev/blog/introducing-kiro/)**  
@@ -92,7 +94,7 @@ Explore these high-quality blog posts, hands-on guides, and deep dives from the 
 
 
 
-For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md) and [Curated Blogs & Recommended Reading](#curated-blogs--recommended-reading).
+For more, see the [TIL summary](./personal/til/2025-07-07-blocks-mcp-server-playbook.md).
 
 - **[How to Run Kimi K2 Locally (Unsloth Docs)](https://docs.unsloth.ai/basics/kimi-k2-how-to-run-locally)**  
   Step-by-step guide to running the SOTA open-source Kimi K2 model on your own hardware. Covers quantization, hardware requirements, llama.cpp setup, prompt formatting, and real-world coding/reasoning tests. Ideal for anyone deploying advanced LLMs locally or exploring efficient model hosting.
@@ -341,6 +343,6 @@ Need AI implementation for your business? Raphaël offers:
 
 ---
 
-**⭐ If this repository helps you, please give it a star! ⭐**
+## If this repository helps you, please give it a star! ⭐
 
 _Built with ❤️ by [Raphaël MANSUY](https://www.linkedin.com/in/raphaelmansuy/) for the AI community_
