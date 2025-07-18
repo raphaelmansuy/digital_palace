@@ -1,34 +1,96 @@
 # Context Engineering for Agents
 
+
+
+
+## 🧠 Agent Memory Frameworks & Experiments (2025)
+
+
+
+
+Agent memory frameworks are essential for enabling LLM agents to persist, retrieve, and manage information across tasks, sessions, and workflows. Modern approaches combine context engineering, memory banks, and retrieval-augmented generation (RAG) to optimize agent performance and reliability.
+
+### Key Concepts
+
+
+- **Long-Term Memory:** Persistent storage for facts, plans, and feedback
+- **Short-Term Context:** Dynamic context window management for active tasks
+- **Memory Selection:** Embedding-based retrieval, knowledge graphs, and heuristics
+- **Benchmarks:** Evaluation of memory precision, recall, and context coherence
+
+
+### Notable Frameworks & Resources
+
+
+- [MemGPT](https://memgpt.ai/) — Long-term memory for agents
+- [LangMem](https://github.com/langchain-ai/langmem) — Memory management utilities for agents
+- [Vertex AI Agent Engine Memory Bank (Google Cloud)](https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-memory-bank-in-public-preview) — Managed memory bank for conversational agents
+- [Vertex AI Creative Studio: Veo3 Character Consistency Experiment](https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio/tree/main/experiments/veo3-character-consistency) — Cutting-edge experiment on agent memory and character consistency
+- [Context Engineering: A First-Principles Handbook](https://github.com/davidkimai/Context-Engineering) — Comprehensive handbook for context and memory design
+- [Provence: Efficient and Robust Context Pruning for RAG (ICLR 2025)](https://arxiv.org/abs/2501.16214) — Dynamic context pruning research
+- [MELODI (Google DeepMind)](https://arxiv.org/abs/2410.03156) — Hierarchical memory compression
+
+
+### Benchmarks & Datasets
+
+
+- [HotpotQA](https://huggingface.co/datasets/hotpot_qa) — Multi-hop QA for memory evaluation
+- [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html) — Tool-use and context confusion metrics
+
+
+### Implementation Patterns
+
+
+- **Scratchpads:** External memory for agent planning and feedback
+- **Hierarchical Summarization:** Multi-level context compression for long-running workflows
+- **State Objects:** Structured schemas for fine-grained context control
+- **Context Quarantine:** Isolating problematic context segments for validation
+
+
+---
+
+## 🧠 LLM Agent Memory Frameworks & Benchmarks (2025)
+
 Context engineering is the art and science of managing what information is included in the context window of large language models (LLMs) and AI agents at each step of their operation. As LLMs become more capable and agents more autonomous, effective context engineering is essential for performance, cost, and reliability.
 
 ---
 
 ## 🧠 Why Context Engineering Matters
 
+
 - LLMs have limited context windows (like RAM for a CPU)
 - Agents must decide what information to include, persist, or retrieve at each step
 - Poor context management leads to degraded performance, hallucinations, or excessive costs
+
 
 ---
 
 ## 🚦 Core Strategies
 
+
 ### 1. Write Context
+
 - Persist information outside the context window (e.g., scratchpads, memory systems)
 - Enables agents to remember plans, facts, or feedback across steps or sessions
 
+
 ### 2. Select Context
+
 - Retrieve and inject only the most relevant information into the context window
 - Uses embeddings, knowledge graphs, or heuristics for selection
 
+
 ### 3. Compress Context
+
 - Summarize or trim context to fit within window limits
 - Techniques include LLM-based summarization, pruning, or hierarchical compression
 
+
 ### 4. Isolate Context
+
 - Split context across sub-agents or environments
 - Reduces token usage and enables parallelism or specialization
+
 
 ---
 
@@ -81,6 +143,11 @@ Context engineering is the art and science of managing what information is inclu
 ---
 
 ## 📚 Further Reading & Examples
+
+### 🧠 LLM Agent Memory Frameworks & Experiments
+
+- [Vertex AI Creative Studio: Veo3 Character Consistency Experiment](https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio/tree/main/experiments/veo3-character-consistency) — Google Cloud experiment on agent memory and character consistency
+
 
 ### 🎯 Real-World Applications
 

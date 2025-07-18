@@ -15,6 +15,7 @@
 | **Deploy at scale**       | [Production Tools](#-production--research-tools)        | Infrastructure teams  |
 | **Fine-tune models**      | [Training & Fine-tuning](#-model-training--fine-tuning) | ML Engineers          |
 | **Work with voice**       | [Voice & Speech](#-voice--speech-technologies)          | Audio applications    |
+| **Enterprise AI platform** | [Quantalogic Platform](https://www.quantalogic.app/)   | Enterprise teams      |
 | **Use latest 2025 tools** | [2025 Breakthroughs](#-2025-breakthrough-tools)         | Early adopters        |
 
 ### 🔗 **Quick Navigation**
@@ -132,6 +133,22 @@
 - **Purpose**: Powerful agentic framework with ReAct agents and conversational AI
 - **Best for**: Complex automation, code generation, multi-agent systems
 - **Status**: Production-ready
+
+#### **[Quantalogic Platform](https://www.quantalogic.app/)** 🆕⭐
+
+- **Purpose**: Enterprise-grade AI platform with multi-agent systems and workflow automation
+- **Best for**: Enterprise AI deployment, autonomous agents, workflow automation, European data sovereignty
+- **Key Features**:
+  - Multi-LLM support (OpenAI, Claude, Gemini, Mistral, DeepSeek)
+  - Autonomous AI agents with ReAct framework
+  - Visual workflow builder with intelligent routing
+  - Enterprise-grade security and data sovereignty
+  - Multiple deployment options (SaaS, on-premise, VPC)
+  - Knowledge base management system
+  - Code generation and system integration
+- **Deployment**: SaaS, on-premise, cloud providers (OVHCloud, IONOS)
+- **Status**: Enterprise-ready, European data sovereignty compliant
+- **Links**: [Platform](https://www.quantalogic.app/) | [GitHub](https://github.com/quantalogic/quantalogic) | [Documentation](https://www.quantalogic.app/information-center/docs/introduction)
 
 #### **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** 🆕⭐
 
@@ -382,6 +399,7 @@
 1. **Code Generation**: Quantalogic
 2. **Multi-agent**: CrewAI
 3. **Computer Control**: Open Interpreter
+4. **Enterprise Platform**: Quantalogic Platform
 
 #### **Production Deployment?**
 
@@ -443,6 +461,7 @@ _The latest AI innovations reshaping the landscape_
 
 ### **Next-Generation Agent Platforms**
 
+- **[Quantalogic Platform](https://www.quantalogic.app/)** - Enterprise AI platform with multi-agent systems, visual workflow builder, and European data sovereignty
 - **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
 - **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse with YAML & Python APIs
 - **[Anything LLM](https://github.com/Mintplex-Labs/anything-llm)** - All-in-one desktop AI with built-in agents, MCP compatibility
