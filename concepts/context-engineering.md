@@ -91,6 +91,7 @@ Context engineering is the art and science of managing what information is inclu
 - **[Claude Code Auto-Compact](https://docs.anthropic.com/en/docs/claude-code/costs)** — Real-world context compression at 95% context window utilization
 - **[Anthropic's Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)** — Practical patterns for agent context management
 - **[Cognition AI's SWE-bench Agent](https://www.anthropic.com/research/swe-bench-sonnet)** — Context engineering for autonomous code generation and debugging
+- **[CodeRabbit: The Art and Science of Context Engineering for AI Code Reviews](https://www.coderabbit.ai/blog/the-art-and-science-of-context-engineering)** — Practical application of context engineering principles in AI-powered code review systems, covering how to structure context for effective code analysis and review generation
 - **[HuggingFace Deep Research](https://huggingface.co/blog/open-deep-research)** — Context isolation using CodeAgent patterns and sandboxes
 - **[LangChain's Open Deep Research](https://github.com/langchain-ai/open_deep_research)** — Open-source multi-agent research system with context engineering
 - **[Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html)** — Tool selection evaluation showing context confusion challenges

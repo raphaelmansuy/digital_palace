@@ -338,6 +338,7 @@
 | [Aider](https://github.com/paul-gauthier/aider)  | AI pair programming | Terminal       |
 | [Plandex](https://github.com/plandex-ai/plandex) | AI coding engine    | Complex tasks  |
 | [AutoDev](https://github.com/unit-mesh/auto-dev) | AI coding wizard    | Multi-language |
+| [CodeRabbit](https://coderabbit.ai/)             | AI code reviews     | GitHub/GitLab  |
 
 ---
 
