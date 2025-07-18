@@ -102,6 +102,9 @@ Every AI project must clearly answer all three questions to succeed:
 
 **✅ Decision:** Green light - strong alignment across all three dimensions
 
+**📖 Related Resources:**
+- [Context Engineering for AI Code Reviews](../../concepts/context-engineering.md) - Technical implementation patterns for AI-powered code review systems
+
 ### **Example 2: Real-World Decision Matrix**
 
 **Scenario:** E-commerce company considering AI features
