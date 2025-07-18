@@ -19,9 +19,7 @@ Communication Gaps: Without a centralized state tracker, context can be lost dur
 
 These issues can make systems less resilient, akin to a team following a rigid playbook without mid-game adjustments. (For a deeper dive, see our recent preprint from ByteDance Research: arXiv:2507.11988.arxiv.org)
 
----
 
-👉 WHAT AIME Proposes
 
 Developed by a team at ByteDance, AIME (Autonomous Intelligent Multi-Agent Framework) explores a more adaptive architecture to mitigate these challenges:
 
