@@ -15,6 +15,7 @@
 | **See latest models** | [2025 AI Updates →](./2025-ai-updates.md) | 15-45 min | Current AI landscape |
 | **Learn terminology** | [Core Technologies →](./core-technologies.md) | 20-60 min | AI vocabulary mastery |
 | **Find quick answers** | [Quick References →](../guides/quick-references/README.md) | 5-15 min | Fast skill lookup |
+| **Try Blaxel AI App** | [Blaxel AI App →](https://app.blaxel.ai/) | 5-15 min | Interactive AI platform |
 
 ---
 
