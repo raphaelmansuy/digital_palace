@@ -1,4 +1,3 @@
-
 # TIL: Using dotenv for Python Environment Management (2025-07-05)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
@@ -54,14 +53,19 @@ All variables in `.env` are available to your script, without polluting your glo
 ## More CLI Examples
 
 - List variables:
+
   ```bash
   dotenv list
   ```
+
 - Set a variable:
+
   ```bash
   dotenv set DEBUG True
   ```
+
 - Show as JSON:
+
   ```bash
   dotenv list --format=json
   ```
@@ -72,10 +76,19 @@ All variables in `.env` are available to your script, without polluting your glo
 
 - **Never commit your `.env` file** if it contains secrets. Add `.env` to your `.gitignore`.
 - Use variable expansion for DRY configs:
+
   ```env
   DOMAIN=example.org
   API_URL=https://${DOMAIN}/api
   ```
+
+---
+
+## Security Considerations
+
+- Always keep your `.env` file out of version control if it contains secrets.
+- Use environment variables for sensitive data, not hardcoded values.
+- Rotate secrets regularly and update your `.env` file accordingly.
 
 ---
 
@@ -93,5 +106,7 @@ All variables in `.env` are available to your script, without polluting your glo
 - [GitHub repository](https://github.com/theskumar/python-dotenv)
 
 ---
+
+*⚡ Pro tip: Use variable expansion in your `.env` file to keep configs DRY and maintainable!*
 
 *This TIL is part of the [Today I Learned](../README.md) series in Digital Palace.*

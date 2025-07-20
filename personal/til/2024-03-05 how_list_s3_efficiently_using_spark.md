@@ -1,19 +1,31 @@
-
+# TIL: How to List AWS S3 Files Efficiently Using Spark (2024-03-05)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-# How to list AWS S3 files efficiently using Spark
+> **Efficient S3 file listing with Spark** – Use a custom Scala function to recursively list S3 files and return a Spark DataFrame for analysis.
 
-## Function Summary: List AWS S3 Files Efficiently using Spark
+---
 
-The `listFiles` function is designed to efficiently list files from an AWS S3 bucket and return the results as a DataFrame using Apache Spark. It recursively lists all files under a specified S3 path prefix and provides details about each file, including the bucket name, ETag, file size, key, and last modified timestamp.
+## The Pain Point
 
-### Parameters:
-- `s3Path`: The S3 path from which files will be listed. It should be in the format "s3://bucket_name/path".
-- `awsRegion` (optional): The AWS region where the S3 bucket is located. Defaults to "eu-west-1".
-- `spark` (implicit): Implicit SparkSession to be used for creating the DataFrame. Defaults to the existing `spark` session.
+Listing files in large S3 buckets is slow and error-prone with standard tools. Manual iteration and pagination are complex. This Spark-based approach is fast, scalable, and integrates with DataFrames for further analysis.
 
-### Usage Example:
+---
+
+## Step-by-Step Guide
+
+### Function Summary
+
+The `listFiles` function efficiently lists files from an AWS S3 bucket and returns the results as a DataFrame using Apache Spark. It recursively lists all files under a specified S3 path prefix and provides details about each file, including the bucket name, ETag, file size, key, and last modified timestamp.
+
+### Parameters
+
+- `s3Path`: The S3 path from which files will be listed. Format: `s3://bucket_name/path`.
+- `awsRegion` (optional): The AWS region where the S3 bucket is located. Defaults to `eu-west-1`.
+- `spark` (implicit): Implicit SparkSession for creating the DataFrame.
+
+### Usage Example
+
 ```scala
 import org.apache.spark.sql.SparkSession
 
@@ -25,21 +37,18 @@ implicit val spark: SparkSession = SparkSession.builder()
 val s3Path = "s3://my-bucket/data"
 val awsRegion = "eu-west-1"
 
-// Call the function to list files from S3 and create a DataFrame
 val filesDF = listFiles(s3Path, awsRegion)
-
-// Show the result DataFrame
 filesDF.show()
 ```
 
-### Notes:
-- This function requires the AWS SDK for Java and SparkSession with appropriate configurations.
-- Make sure that the AWS credentials are correctly configured in the environment.
+### Notes
 
-Overall, the `listFiles` function provides a convenient and efficient way to list AWS S3 files and create a DataFrame for further analysis or processing using Apache Spark.
+- Requires AWS SDK for Java and SparkSession with appropriate configurations.
+- Ensure AWS credentials are correctly configured in the environment.
 
-[GIST](https://gist.github.com/raphaelmansuy/83c7ffb52c76f66fc8d235483f782f07)
+---
 
+## Implementation
 
 ```scala
 import scala.collection.JavaConverters._
@@ -236,3 +245,31 @@ dataFrame
 
 }
 ```
+
+---
+
+## Troubleshooting
+
+- If no files are returned, check your AWS credentials and bucket permissions.
+- For performance issues, increase `maxKeys` or run on a cluster.
+- See [AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/) and [Spark documentation](https://spark.apache.org/docs/latest/) for advanced usage.
+
+---
+
+## Security Considerations
+
+- Never hardcode AWS credentials; use environment variables or IAM roles.
+- Limit S3 bucket permissions to least privilege.
+- Review DataFrame contents before sharing or exporting sensitive data.
+
+---
+
+## Related Resources
+
+- [AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/)
+- [Apache Spark Documentation](https://spark.apache.org/docs/latest/)
+- [Scala AWS S3 Examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3)
+
+---
+
+*⚡ Pro tip: Use Spark DataFrames for downstream analytics and automate S3 file listing in ETL pipelines!*

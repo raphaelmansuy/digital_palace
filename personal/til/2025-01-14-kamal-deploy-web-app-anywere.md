@@ -3,6 +3,12 @@
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
+> **Fast, reliable web app deployment** – Use Kamal to deploy Next.js apps with Docker, zero-downtime, and cloud-agnostic simplicity.
+
+## The Pain Point
+
+Deploying web apps is often slow, error-prone, and complex. Traditional tools require deep DevOps knowledge and manual configuration. Kamal streamlines deployment for everyone, making it fast, secure, and repeatable.
+
 ---
 
 ## **Introduction**  
@@ -25,64 +31,85 @@ Ready to dive in? Let’s get started!
 ## **Chapter 1: Setting the Stage – Understanding Kamal and Next.js**  
 
 ### **What is Kamal?**  
+
 Kamal is a deployment tool that simplifies the process of deploying web applications. It uses Docker to containerize your app and provides a straightforward way to deploy it to any cloud provider. Kamal is particularly well-suited for small to medium-sized applications, offering a balance between simplicity and power.  
 
 #### **Comparison with Other Tools**  
+
 - **Vercel**: While Vercel is great for Next.js apps, it’s limited to its ecosystem. Kamal, on the other hand, is cloud-agnostic.  
 - **Docker Compose**: Docker Compose is excellent for local development but lacks the deployment features that Kamal provides.  
 
 ### **Why Kamal for Next.js?**  
-Kamal is an excellent choice for deploying Next.js apps because:  
-- It’s fast and lightweight.  
-- It supports zero-downtime deployments.  
-- It’s easy to configure and use.  
 
-### **Prerequisites**  
-Before we start, make sure you have the following tools installed:  
-- **Docker**: For containerizing your app.  
-- **Node.js**: For running your Next.js app.  
-- **Git**: For version control.  
-- **A Cloud Provider**: Such as AWS, DigitalOcean, or any other provider that supports SSH access.  
+Kamal is an excellent choice for deploying Next.js apps because:
 
-To install Kamal on **macOS**, use Homebrew: run `brew install kamal`. On **Windows**, download the latest release from the official GitHub repository, extract the files, and add the executable to your system PATH. For **Linux**, download the binary from GitHub, move it to `/usr/local/bin`, and make it executable with `chmod +x /usr/local/bin/kamal`.  
+- It’s fast and lightweight.
+- It supports zero-downtime deployments.
+- It’s easy to configure and use.
 
-#### **Setting Up Your Development Environment**  
-1. Install Docker Desktop from [here](https://www.docker.com/products/docker-desktop).  
-2. Install Node.js from [here](https://nodejs.org/).  
-3. Ensure Git is installed by running `git --version` in your terminal.  
+### **Prerequisites**
 
-### **Interactive Elements**  
-- **Quiz**: What is the primary benefit of using Kamal for deployment?  
-  - A) It’s cloud-agnostic.  
-  - B) It’s limited to Vercel.  
-  - C) It’s only for large-scale applications.  
-  - **Answer**: A) It’s cloud-agnostic.  
+Before we start, make sure you have the following tools installed:
 
-- **Task**: Install Docker and Node.js on your machine.  
+- **Docker**: For containerizing your app.
+- **Node.js**: For running your Next.js app.
+- **Git**: For version control.
+- **A Cloud Provider**: Such as AWS, DigitalOcean, or any other provider that supports SSH access.
 
-### **Insider Tips**  
-- **Myth Debunking**: "You don’t need to be a DevOps expert to use Kamal."  
-- **Tip**: Use Docker Desktop for an easier setup process.  
+To install Kamal on **macOS**, use Homebrew:
+
+```bash
+brew install kamal
+```
+
+On **Windows**, download the latest release from the official GitHub repository, extract the files, and add the executable to your system PATH.
+
+For **Linux**, download the binary from GitHub, move it to `/usr/local/bin`, and make it executable with:
+
+```bash
+chmod +x /usr/local/bin/kamal
+```
+
+#### **Setting Up Your Development Environment**
+
+- Install Docker Desktop from [Docker Desktop download](https://www.docker.com/products/docker-desktop).
+- Install Node.js from [Node.js download](https://nodejs.org/).
+- Ensure Git is installed by running `git --version` in your terminal.
+
+### **Interactive Elements**
+
+- **Quiz**: What is the primary benefit of using Kamal for deployment?
+  - A) It’s cloud-agnostic.
+  - B) It’s limited to Vercel.
+  - C) It’s only for large-scale applications.
+  - **Answer**: A) It’s cloud-agnostic.
+- **Task**: Install Docker and Node.js on your machine.
+
+### **Insider Tips**
+
+- **Myth Debunking**: "You don’t need to be a DevOps expert to use Kamal."
+- **Tip**: Use Docker Desktop for an easier setup process.
 
 ---
 
-## **Chapter 2: Preparing Your Next.js Application**  
+## **Chapter 2: Building and Configuring Your Next.js App for Deployment**  
 
 ### **Setting Up Your Next.js Project**  
 If you don’t already have a Next.js app, create one by running:  
 ```bash
 npx create-next-app@latest my-nextjs-app
 ```  
-Navigate to your project directory:  
+
+Navigate into your project directory:  
 ```bash
 cd my-nextjs-app
 ```  
 
-### **Configuring Docker for Next.js**  
+### **Dockerizing Your Next.js App**  
 Create a `Dockerfile` in the root of your project:  
 ```dockerfile
 # Stage 1: Build the application
-FROM node:18 AS builder
+FROM node:14 AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
@@ -90,9 +117,10 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve the application
-FROM node:18
+FROM node:14 AS production
 WORKDIR /app
-COPY --from=builder /app/.next ./.next
+COPY package*.json ./
+RUN npm install --only=production
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package*.json ./
 RUN npm install --only=production
@@ -244,4 +272,27 @@ Now that you’re a Kamal pro, deploy your next project with confidence!
 
 ### **Practical Task**  
 Deploy a new Next.js app using Kamal and share your experience on social media.  
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+### Solutions
+
+
+## Security Considerations
+
+1. **Use SSH keys** for server access, never passwords.
+2. **Store secrets in `.env` files** and never commit them to version control.
+3. **Restrict firewall rules** to only necessary ports (e.g., 22 for SSH, 3000 for your app).
+4. **Regularly update Docker images** to patch vulnerabilities.
+
+
+## Related Resources
+
+
+
+*⚡ Pro tip: Use Kamal with `.env` files and multi-stage Docker builds for secure, efficient deployments!*
 

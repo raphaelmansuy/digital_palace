@@ -1,8 +1,16 @@
-# TIL: Configuring MCP Servers in VSCode
+# TIL: Configuring MCP Servers in VSCode (2025-01-09)
 
-**Date:** January 9, 2025  
-**Category:** Development Tools  
-**Tags:** #VSCode #MCP #AI #Agents #Configuration
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
+> **Seamless AI tool integration in VSCode** – Use MCP servers to connect Copilot Agent Mode with external tools, APIs, and data sources for advanced workflows.
+
+---
+
+## The Pain Point
+
+Connecting VSCode Copilot Agent Mode to external tools and data sources is complex and error-prone. MCP servers standardize integration, making it secure, flexible, and scalable.
+
+---
 
 ## Overview
 
@@ -352,230 +360,16 @@ For each server:
    - Check container logs for errors
    - Verify Docker image and commands
 
-### Debug Mode
-
-Enable development mode for MCP servers:
-
-```json
-{
-  "servers": {
-    "myServer": {
-      "command": "node",
-      "args": ["build/index.js"],
-      "dev": {
-        "watch": "build/**/*.js",
-        "debug": { "type": "node" }
-      }
-    }
-  }
-}
-```
-
-### Output Logs
-
-Access server logs:
-1. Click error notification in Chat view
-2. Select **Show Output**
-3. Or: `MCP: List Servers` → Select server → **Show Output**
-
-## Command Line Tools
-
-### Add Server via CLI
-
-```bash
-# Add to user profile
-code --add-mcp '{"name":"my-server","command":"uvx","args":["mcp-server-fetch"]}'
-
-# Add to workspace (run in workspace directory)
-code --add-mcp-workspace '{"name":"my-server","command":"uvx","args":["mcp-server-fetch"]}'
-```
-
-### URL Handler
-
-Install servers via URL:
-```javascript
-const serverConfig = {
-  name: "my-server", 
-  command: "uvx",
-  args: ["mcp-server-fetch"]
-};
-
-const link = `vscode:mcp/install?${encodeURIComponent(JSON.stringify(serverConfig))}`;
-```
+---
 
 ## Security Considerations
 
-### Best Practices
+- Avoid hardcoding secrets; use input variables and secure storage.
+- Only install trusted MCP servers and review configuration.
+- Limit filesystem and API access to least privilege.
+- Use HTTPS and authentication for remote servers.
 
-1. **Avoid Hardcoding Secrets**:
-   - Use input variables for API keys
-   - Store credentials securely in VSCode
-   - Never commit secrets to version control
-
-2. **Validate Server Sources**:
-   - Only install trusted MCP servers
-   - Review server configuration before starting
-   - Check publisher and source code
-
-3. **Access Controls**:
-   - Limit filesystem access paths
-   - Use least-privilege API tokens
-   - Configure appropriate permissions
-
-4. **Network Security**:
-   - Use HTTPS for remote servers
-   - Validate connection origins
-   - Implement authentication when needed
-
-## Advanced Configuration
-
-### Environment Variables
-
-```json
-{
-  "servers": {
-    "database": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": ["mcp-server-postgres"],
-      "env": {
-        "POSTGRES_URL": "${input:db-url}",
-        "POSTGRES_SSL": "true",
-        "DEBUG": "true"
-      }
-    }
-  }
-}
-```
-
-### Workspace Variables
-
-Use VSCode predefined variables:
-
-```json
-{
-  "command": "python",
-  "args": [
-    "${workspaceFolder}/scripts/mcp-server.py",
-    "--config", "${workspaceFolder}/config.json"
-  ]
-}
-```
-
-### Custom Scripts
-
-Run custom MCP implementations:
-
-```json
-{
-  "servers": {
-    "customServer": {
-      "type": "stdio", 
-      "command": "python",
-      "args": [
-        "-m", "my_mcp_server",
-        "--workspace", "${workspaceFolder}",
-        "--port", "8080"
-      ]
-    }
-  }
-}
-```
-
-## Real-World Examples
-
-### Development Workflow Setup
-
-```json
-{
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "github-token", 
-      "description": "GitHub Personal Access Token",
-      "password": true
-    }
-  ],
-  "servers": {
-    "filesystem": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y", "@modelcontextprotocol/server-filesystem",
-        "${workspaceFolder}/src",
-        "${workspaceFolder}/docs",
-        "${workspaceFolder}/tests"
-      ]
-    },
-    "github": {
-      "type": "stdio",
-      "command": "npx", 
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github-token}"
-      }
-    },
-    "memory": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
-    },
-    "fetch": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch"]
-    }
-  }
-}
-```
-
-### Data Analysis Setup
-
-```json
-{
-  "inputs": [
-    {
-      "type": "promptString",
-      "id": "postgres-url",
-      "description": "PostgreSQL Connection URL", 
-      "password": true
-    }
-  ],
-  "servers": {
-    "database": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": ["mcp-server-postgres"],
-      "env": {
-        "POSTGRES_URL": "${input:postgres-url}"
-      }
-    },
-    "filesystem": {
-      "type": "stdio", 
-      "command": "npx",
-      "args": [
-        "-y", "@modelcontextprotocol/server-filesystem",
-        "${workspaceFolder}/data",
-        "${workspaceFolder}/reports"
-      ]
-    }
-  }
-}
-```
-
-## Key Insights
-
-1. **Start Simple**: Begin with filesystem and memory servers to understand MCP concepts
-
-2. **Security First**: Always use input variables for sensitive information and review server sources
-
-3. **Workspace vs User**: Use workspace configuration for team collaboration, user settings for personal tools
-
-4. **Tool Discovery**: Enable MCP discovery to reuse configurations from other tools like Claude Desktop
-
-5. **Agent Mode Integration**: MCP servers work best with VSCode Agent Mode for autonomous task completion
-
-6. **Debugging**: Always check server output logs when troubleshooting connection issues
+---
 
 ## Related Resources
 
@@ -585,12 +379,6 @@ Run custom MCP implementations:
 - [VSCode Agent Mode Guide](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
 - [MCP Client Examples](https://modelcontextprotocol.io/clients)
 
-## Cross-References
-
-- [TIL: VSCode Agent Mode Standard Tools](./2025-01-09-vscode-agent-mode-standard-tools.md)
-- [TIL: VSCode Chat Mode Configuration](./2025-07-09-vscode-chat-mode-configuration.md)
-- [TIL: Dissecting GPT-4.1 Coding Agent System Prompt](./2025-07-09-dissecting-gpt4-coding-agent-prompt.md)
-
 ---
 
-*This TIL is based on the latest MCP and VSCode documentation as of January 2025. MCP support in VSCode is currently in preview and features may change.*
+*⚡ Pro tip: Use workspace configuration for team projects and user settings for personal tools to maximize flexibility and security!*

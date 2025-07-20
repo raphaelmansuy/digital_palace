@@ -1,5 +1,16 @@
-# [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
-# Mastering Poetry
+# TIL: Mastering Poetry for Python Dependency Management (2024-02-27)
+
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
+> **Effortless Python dependency management** – Use Poetry to create, manage, and distribute Python projects with isolated environments and reproducible builds.
+
+---
+
+## The Pain Point
+
+Managing Python dependencies and environments manually is error-prone and leads to version conflicts. Poetry solves this by automating environment creation, dependency resolution, and packaging.
+
+---
 
 ## What is Poetry?
 
@@ -7,51 +18,38 @@ Poetry is a Python dependency management tool that simplifies the creation, mana
 
 For a basic introduction to Poetry, refer to the [official documentation](https://python-poetry.org/docs/basic-usage/).
 
-### Getting Started with Poetry
+---
 
-#### 1. Install Poetry
+## Step-by-Step Guide
 
-To install Poetry, run the following command:
+### 1. Install Poetry
 
 ```bash
 pipx install poetry
 ```
 
-#### 2. Create a New Project
-
-Create a new project using:
+### 2. Create a New Project
 
 ```bash
 poetry new poetry-demo
 ```
 
-This command sets up a new directory `poetry-demo` with the necessary project structure.
+### 3. Specify Python Version
 
-#### 3. Specify Python Version
-
-In `pyproject.toml`, specify the Python version like so:
+In `pyproject.toml`:
 
 ```toml
 python = "^3.7"
 ```
 
-#### 4. Configure Local Virtual Environment
-
-To configure Poetry to create a local `.venv`:
+### 4. Configure Local Virtual Environment
 
 ```bash
 poetry config virtualenvs.in-project true
-```
-
-Then, install dependencies and set up the `.venv` with:
-
-```bash
 poetry install
 ```
 
-#### 5. Activate the Virtual Environment
-
-Activate the virtual environment using:
+### 5. Activate the Virtual Environment
 
 ```bash
 poetry shell
@@ -69,7 +67,7 @@ For Windows PowerShell:
 .venv\Scripts\Activate.ps1
 ```
 
-#### 6. Managing Dependencies
+### 6. Managing Dependencies
 
 To add a library:
 
@@ -83,7 +81,7 @@ To remove a library:
 poetry remove numpy
 ```
 
-#### 7. Building and Packaging
+### 7. Building and Packaging
 
 Create a `main.py` in the `poetry_demo` folder and define an entry point in `pyproject.toml`:
 
@@ -92,14 +90,42 @@ Create a `main.py` in the `poetry_demo` folder and define an entry point in `pyp
 poetry_demo = "poetry_demo.main:main"
 ```
 
-Build the package with:
+Build the package:
 
 ```bash
 poetry build
 ```
 
-Install your package using:
+Install your package:
 
 ```bash
 pipx install .
 ```
+
+---
+
+## Troubleshooting
+
+- If dependencies aren’t installing, check your `pyproject.toml` for typos and ensure you’re using the correct Python version.
+- If the virtual environment isn’t created, verify your Poetry config with `poetry config --list`.
+- For advanced usage, see the [Poetry documentation](https://python-poetry.org/docs/).
+
+---
+
+## Security Considerations
+
+- Never commit sensitive data or secrets to your `pyproject.toml` or `.env` files.
+- Always use isolated environments to avoid dependency conflicts.
+- Keep Poetry and Python up to date to avoid vulnerabilities.
+
+---
+
+## Related Resources
+
+- [Poetry Official Documentation](https://python-poetry.org/docs/)
+- [Poetry GitHub Repository](https://github.com/python-poetry/poetry)
+- [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
+
+---
+
+*⚡ Pro tip: Use `poetry export` to generate a requirements.txt for compatibility with other tools and CI/CD pipelines!*

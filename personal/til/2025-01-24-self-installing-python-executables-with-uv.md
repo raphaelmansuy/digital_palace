@@ -1,4 +1,3 @@
-
 # TIL: Self-Installing Python Executables with UV (2025-01-24)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
@@ -87,10 +86,12 @@ Create a demo script:
 echo '#!/usr/bin/env -S uv run\n# /// script\ndependencies=["pyjokes"]\n///\nimport pyjokes\nprint(pyjokes.get_joke())' > joke.py
 chmod +x joke.py && ./joke.py
 ```
+
 **Output:**
 `"What do you call a fake noodle? An Impasta."` *(via pyjokes)*
 
 Or try this example to install an LLM:
+
 ```python
 #!/usr/bin/env -S uv run
 # /// script
@@ -113,6 +114,14 @@ response = generate(model, tokenizer, prompt="hello", verbose=True)
 
 ---
 
+## Security Considerations
+
+- Never run scripts from untrusted sources; review metadata and dependencies first.
+- Avoid hardcoding secrets in scripts; use environment variables for sensitive data.
+- Keep UV and Python up to date to avoid vulnerabilities.
+
+---
+
 ## Related Resources
 
 - [UV Documentation](https://github.com/astral-sh/uv)
@@ -121,11 +130,5 @@ response = generate(model, tokenizer, prompt="hello", verbose=True)
 
 ---
 
-
-*Pro Tip: Add scripts to your PATH for global access:*
-
-```bash
-mv joke.py ~/.local/bin/joke
-joke  # Run from anywhere!
-```
+*⚡ Pro tip: Add scripts to your PATH for global access and use UV for reproducible, portable Python automation!*
 

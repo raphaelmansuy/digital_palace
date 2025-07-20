@@ -1,30 +1,24 @@
-# [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
-# How to deduplicate a DeltaTable in scala
+# TIL: How to Deduplicate a DeltaTable in Scala (2024-03-05)
 
-## Function: deleteDuplicateRows
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-The `deleteDuplicateRows` function is designed to remove duplicate rows from a Delta table in Scala. It takes the path to the Delta table, a sequence of column names used to identify duplicates, and an optional column name that contains the timestamp of the last update.
+> **Efficient Delta Lake deduplication in Scala** – Use a custom function to remove duplicate rows from Delta tables using Spark SQL and DeltaTable API.
 
-### Problem
+---
 
-Duplicate rows in a Delta table can lead to data inconsistencies and inefficiencies. It is important to identify and remove these duplicate rows to maintain data integrity and optimize data processing.
+## The Pain Point
 
-### Approach
+Duplicate rows in Delta tables cause data inconsistencies and slow down analytics. Manual deduplication is error-prone and inefficient. This function automates deduplication using Spark and Delta Lake APIs.
 
-The `deleteDuplicateRows` function uses the DeltaTable API and Spark SQL to perform the deduplication process. Here is a high-level overview of the approach:
+---
 
-1. Load the Delta table using the provided path.
-2. Construct the merge condition by comparing the specified keys between the target and source tables.
-3. If an `updatedAtColumn` is provided, find the latest updated timestamp for each set of duplicate keys using Spark SQL aggregation.
-4. Register the resulting DataFrame as a temporary view.
-5. Construct the full SQL command for the merge operation, specifying the target table, source table, merge condition, and delete action for matched rows.
-6. Execute the merge operation using Spark SQL.
-7. Clean up the temporary view.
-8. Return the resulting DataFrame representing the Delta table after duplicate rows have been deleted.
+## Step-by-Step Guide
+
+### Function Summary
+
+The `deleteDuplicateRows` function removes duplicate rows from a Delta table in Scala. It takes the path to the Delta table, a sequence of column names used to identify duplicates, and an optional column name for the last update timestamp.
 
 ### Usage Example
-
-Here is an example of how to use the `deleteDuplicateRows` function:
 
 ```scala
 import org.apache.spark.sql.SparkSession
@@ -38,28 +32,18 @@ val deltaTablePath = "/path/to/delta/table"
 val keys = Seq("id", "name")
 val updatedAtColumn = Some("updated_at")
 
-// Call the function to delete duplicate rows
 val cleanedDF = deleteDuplicateRows(deltaTablePath, keys, updatedAtColumn)
-
-// Show the result DataFrame
 cleanedDF.show()
 ```
 
-Note that this function requires a Delta table and a SparkSession with Delta support enabled.
+---
 
-For more details, you can refer to the [original Gist](https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4).
-
-
+## Implementation
 
 ```scala
 import io.delta.tables._
-
-import org.apache.spark.sql.{SparkSession,DataFrame}
-
+import org.apache.spark.sql.{SparkSession, DataFrame}
 import org.apache.spark.sql.functions._
-
-  
-  
 
 /**
 
@@ -210,5 +194,31 @@ deltaTable.toDF
 }
 ```
 
+---
 
-https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4
+## Troubleshooting
+
+- If duplicates remain, check your key columns and ensure `updatedAtColumn` is correct.
+- For merge errors, verify Delta support is enabled in Spark.
+- See [Delta Lake documentation](https://docs.delta.io/latest/delta-batch.html) for advanced usage.
+
+---
+
+## Security Considerations
+
+- Never run merge/delete operations on production tables without backups.
+- Limit permissions for users running Spark SQL commands.
+- Review DataFrame contents before sharing or exporting sensitive data.
+
+---
+
+## Related Resources
+
+- [Delta Lake Documentation](https://docs.delta.io/latest/delta-batch.html)
+- [Spark SQL Documentation](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+- [DeltaTable API Reference](https://docs.delta.io/latest/api/scala/io/delta/tables/DeltaTable.html)
+- [Original Gist](https://gist.github.com/raphaelmansuy/4590176b9ff05c781f95d9a853e1d2d4)
+
+---
+
+*⚡ Pro tip: Use the `updatedAt` column to keep only the latest version of each record for robust deduplication!*
