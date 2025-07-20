@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Simple LinkedIn Word Counter Script
-Quick check for word count compliance on LinkedIn posts.
+Simple LinkedIn Character Counter Script
+Quick check for character count compliance on LinkedIn posts.
 """
 
 import sys
@@ -10,7 +10,7 @@ from pathlib import Path
 # Add the current directory to the path so we can import our tool
 sys.path.append(str(Path(__file__).parent))
 
-from linkedin_word_counter import analyze_post
+from linkedin_character_counter import analyze_post
 
 def main():
     if len(sys.argv) < 2:
@@ -24,7 +24,7 @@ def main():
     if success:
         print("\n🎉 Your LinkedIn post is ready to publish!")
     else:
-        print("\n⚠️  Please reduce word count before publishing.")
+        print("\n⚠️  Please reduce character count before publishing.")
     
     sys.exit(0 if success else 1)
 

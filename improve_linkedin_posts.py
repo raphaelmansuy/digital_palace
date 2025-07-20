@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-LinkedIn Posts Improvement Tool
-Automatically trims posts that exceed 600 words while maintaining:
-1. Core message and value
-2. Examples and practical content
-3. Engaging questions
-4. Good structure
+LinkedIn Posts Analysis Tool
+Analyzes posts for character count compliance and provides improvement suggestions.
+Does NOT automatically modify posts - provides guidance for manual improvements.
+Target: 1800 characters maximum per LinkedIn post.
 """
 
 import os
 import re
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import Dict, Any
 
-def extract_post_content(file_path: str) -> tuple[str, str, str]:
+    print("🔍 LinkedIn Posts Character Analysis Tool")
+    print("=" * 60)
+    print("Target: 1800 characters maximum per post") extract_post_content(file_path: str) -> tuple[str, str, str]:
     """Extract metadata, post content, and remaining content separately"""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -61,6 +61,30 @@ def extract_post_content(file_path: str) -> tuple[str, str, str]:
         print(f"Error reading {file_path}: {e}")
         return "", "", ""
 
+def count_characters(text: str) -> int:
+    """Count characters in text, excluding markdown formatting (same logic as linkedin_character_counter.py)"""
+    if not text:
+        return 0
+    
+    # Remove markdown code blocks
+    text = re.sub(r'```[\s\S]*?```', '', text)
+    
+    # Remove inline code
+    text = re.sub(r'`[^`]*`', '', text)
+    
+    # Remove markdown links [text](url) - keep only the link text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    
+    # Remove markdown formatting characters (* ** _ __ # etc.) but keep the content
+    text = re.sub(r'[*_#`>-]', '', text)
+    
+    # Remove extra whitespace but keep single spaces and newlines
+    text = re.sub(r'[ \t]+', ' ', text)  # Multiple spaces/tabs to single space
+    text = re.sub(r'\n+', '\n', text)    # Multiple newlines to single newline
+    
+    # Count characters (including spaces and newlines for readability)
+    return len(text.strip())
+
 def count_words(text: str) -> int:
     """Count words in text, excluding markdown formatting"""
     # Remove markdown formatting
@@ -77,7 +101,7 @@ def count_words(text: str) -> int:
     words = text.split()
     return len([word for word in words if word.strip()])
 
-def identify_sections_to_trim(content: str) -> Dict[str, Any]:
+def analyze_post_content(content: str) -> Dict[str, Any]:
     """Identify which sections can be safely trimmed"""
     lines = content.split('\n')
     sections = {
@@ -258,8 +282,63 @@ def save_improved_post(file_path: str, metadata: str, improved_content: str, rem
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(full_content)
 
+def analyze_post_content(content: str) -> Dict[str, Any]:
+    """Analyze post content and provide improvement suggestions"""
+    char_count = count_characters(content)
+    word_count = count_words(content)
+    
+    # Count paragraphs and sentences
+    paragraphs = [p for p in content.split('\n\n') if p.strip()]
+    sentences = [s for s in content.split('.') if s.strip()]
+    
+    # Identify verbose patterns
+    verbose_patterns = [
+        (r'\b(very|really|quite|extremely|absolutely|completely|totally)\b', 'Remove intensifiers'),
+        (r'\b(basically|essentially|fundamentally|ultimately)\b', 'Remove filler words'),
+        (r'\b(obviously|clearly|certainly|definitely|undoubtedly)\b', 'Remove certainty modifiers'),
+        (r'\b(in fact|as a matter of fact|to be honest|frankly speaking)\b', 'Remove conversational fillers'),
+        (r'\b(it goes without saying|needless to say)\b', 'Remove redundant phrases'),
+    ]
+    
+    suggestions = []
+    verbose_count = 0
+    
+    for pattern, suggestion in verbose_patterns:
+        matches = re.findall(pattern, content, re.IGNORECASE)
+        if matches:
+            verbose_count += len(matches)
+            suggestions.append(f"• {suggestion}: Found {len(matches)} instances")
+    
+    # Check for long sentences (>25 words)
+    long_sentences = [s for s in sentences if len(s.split()) > 25]
+    if long_sentences:
+        suggestions.append(f"• Break down {len(long_sentences)} long sentences (>25 words)")
+    
+    # Check for repetitive phrases
+    words = content.lower().split()
+    word_freq = {}
+    for word in words:
+        if len(word) > 4:  # Only check longer words
+            word_freq[word] = word_freq.get(word, 0) + 1
+    
+    repeated_words = [word for word, count in word_freq.items() if count > 3]
+    if repeated_words:
+        suggestions.append(f"• Reduce repetition of words: {', '.join(repeated_words[:5])}")
+    
+    return {
+        'char_count': char_count,
+        'word_count': word_count,
+        'paragraph_count': len(paragraphs),
+        'sentence_count': len(sentences),
+        'verbose_count': verbose_count,
+        'suggestions': suggestions,
+        'over_limit': char_count > 2500,
+        'excess_chars': max(0, char_count - 2500),
+        'reduction_needed_percent': max(0, (char_count - 2500) / char_count * 100) if char_count > 0 else 0
+    }
+
 def main():
-    """Main function to improve LinkedIn posts"""
+    """Main function to analyze LinkedIn posts for character compliance"""
     workspace_root = Path("/Users/raphaelmansuy/Library/Mobile Documents/iCloud~md~obsidian/Documents/digital_palace")
     
     # Find LinkedIn posts directory
@@ -273,62 +352,67 @@ def main():
         print("❌ LinkedIn posts directory not found!")
         return
     
-    print("🔧 LinkedIn Posts Improvement Tool")
-    print("=" * 50)
+    print("� LinkedIn Posts Character Analysis Tool")
+    print("=" * 60)
+    print("Target: 2500 characters maximum per post")
+    print("This tool provides analysis and suggestions WITHOUT modifying files")
+    print("=" * 60)
     
     # Get all markdown files and sort them
     post_files = list(linkedin_dir.glob("*.md"))
     post_files.sort()
     
-    # Focus on posts that exceed 600 words
-    posts_to_improve = []
+    # Analyze posts for character count compliance
+    posts_over_limit = []
+    posts_compliant = []
     
-    for post_file in post_files[:20]:  # First 20 posts
+    for post_file in post_files:
         metadata, content, remaining = extract_post_content(str(post_file))
-        word_count = count_words(content)
+        if not content:
+            continue
+            
+        analysis = analyze_post_content(content)
         
-        if word_count > 600:
-            posts_to_improve.append((post_file, word_count, metadata, content, remaining))
-    
-    if not posts_to_improve:
-        print("🎉 All posts are already within the 600-word limit!")
-        return
-    
-    print(f"📊 Found {len(posts_to_improve)} posts that need improvement:")
-    for post_file, word_count, _, _, _ in posts_to_improve:
-        print(f"   • {post_file.name}: {word_count} words ({word_count - 600} over limit)")
-    
-    print("\n🚀 Starting improvement process...")
-    
-    improved_count = 0
-    
-    for post_file, original_words, metadata, content, remaining in posts_to_improve:
-        print(f"\n📝 Improving: {post_file.name}")
-        print(f"   Original: {original_words} words")
-        
-        # Trim content intelligently
-        improved_content = trim_content_intelligently(content, 580)  # Target 580 to be safe
-        new_word_count = count_words(improved_content)
-        
-        print(f"   Improved: {new_word_count} words")
-        print(f"   Saved: {original_words - new_word_count} words")
-        
-        if new_word_count <= 600:
-            # Save the improved version
-            save_improved_post(str(post_file), metadata, improved_content, remaining)
-            improved_count += 1
-            print("   ✅ Successfully improved and saved!")
+        if analysis['over_limit']:
+            posts_over_limit.append((post_file, analysis))
         else:
-            print("   ⚠️  Still over limit, may need manual review")
+            posts_compliant.append((post_file, analysis))
     
-    print(f"\n🎉 Improvement Summary:")
-    print(f"   📊 Posts processed: {len(posts_to_improve)}")
-    print(f"   ✅ Successfully improved: {improved_count}")
-    print(f"   ⚠️  Need manual review: {len(posts_to_improve) - improved_count}")
+    # Report summary
+    total_posts = len(posts_over_limit) + len(posts_compliant)
+    print(f"\n📈 Analysis Summary:")
+    print(f"   Total posts analyzed: {total_posts}")
+    print(f"   ✅ Posts within limit (≤2500 chars): {len(posts_compliant)}")
+    print(f"   ❌ Posts over limit (>2500 chars): {len(posts_over_limit)}")
     
-    if improved_count > 0:
-        print(f"\n💡 Tip: Run the assessment tool again to verify improvements:")
-        print(f"   python assess_linkedin_posts.py")
+    if len(posts_compliant) > 0:
+        print(f"\n🎉 Compliant Posts:")
+        for post_file, analysis in posts_compliant[:10]:  # Show first 10
+            print(f"   ✅ {post_file.name}: {analysis['char_count']} chars ({2500-analysis['char_count']} remaining)")
+    
+    if len(posts_over_limit) > 0:
+        print(f"\n⚠️  Posts Requiring Manual Reduction:")
+        print("-" * 60)
+        
+        for post_file, analysis in posts_over_limit:
+            print(f"\n📝 {post_file.name}")
+            print(f"   Character count: {analysis['char_count']} (over by {analysis['excess_chars']})")
+            print(f"   Reduction needed: {analysis['reduction_needed_percent']:.1f}%")
+            print(f"   Words: {analysis['word_count']} | Paragraphs: {analysis['paragraph_count']} | Sentences: {analysis['sentence_count']}")
+            
+            if analysis['suggestions']:
+                print(f"   💡 Improvement suggestions:")
+                for suggestion in analysis['suggestions'][:5]:  # Show top 5 suggestions
+                    print(f"      {suggestion}")
+            print()
+    
+    print("\n🔧 Manual Improvement Guidelines:")
+    print("1. Use linkedin_character_counter.py to check specific posts")
+    print("2. Focus on removing filler words and redundant phrases")
+    print("3. Break long sentences into shorter, punchier ones")
+    print("4. Combine or remove less essential paragraphs")
+    print("5. Keep examples and actionable content")
+    print("6. Verify with: python3 check_post.py 'path/to/post.md'")
 
 if __name__ == "__main__":
     main()

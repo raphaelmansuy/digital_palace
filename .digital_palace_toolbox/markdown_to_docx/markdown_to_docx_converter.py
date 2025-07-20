@@ -12,38 +12,51 @@
 # ]
 # ///
 """
-Markdown to DOCX Converter with Code Block to PNG Conversion
+Markdown to DOCX Converter with Optional Code Block to PNG Conversion
 
 This script converts a markdown file to a DOCX document, with optional code block to image conversion.
 
+IMPORTANT: This script NEVER modifies the input file. It always creates a separate output file.
+The input file is opened in READ-ONLY mode and remains unchanged.
+
 Special Features:
-- Mermaid diagram support: ```mermaid code blocks are converted to high-quality diagram images
-- CodeSnap style: macOS window-style code blocks with syntax highlighting
+- Optional Mermaid diagram support: ```mermaid code blocks can be converted to high-quality diagram images (disabled by default)
+- Optional CodeSnap style: macOS window-style code blocks with syntax highlighting (disabled by default)
 - Multiple rendering engines: Playwright, Selenium, CLI tools, and online services
-- Flexible image replacement: Images are always generated, but only replace text when --image-replace is used
+- Flexible image replacement: Images are only generated when explicitly enabled
+- Input file protection: Input file is never modified or overwritten
+
+By default, code blocks and Mermaid diagrams are kept as text in the document.
 
 This is a self-installing Python script using UV. No manual dependency installation required!
 
 Usage:
     chmod +x markdown_to_docx_converter.py
     
-    # Convert with auto-generated output in ./tmp directory (code blocks remain as text)
+    # Convert markdown to DOCX (code blocks remain as text - default behavior)
     ./markdown_to_docx_converter.py input.md
     
+    # Convert with code block image generation enabled
+    ./markdown_to_docx_converter.py input.md --code-blocks
+    
+    # Convert with Mermaid diagram image generation enabled
+    ./markdown_to_docx_converter.py input.md --mermaid
+    
     # Convert and replace code blocks with images in the document
-    ./markdown_to_docx_converter.py input.md --image-replace
+    ./markdown_to_docx_converter.py input.md --code-blocks --image-replace
     
     # Convert with specific output file
-    ./markdown_to_docx_converter.py input.md output.docx --image-replace
+    ./markdown_to_docx_converter.py input.md output.docx --code-blocks --mermaid
     
     # Convert with custom output directory
     ./markdown_to_docx_converter.py input.md --output-dir /path/to/output
     
     # Traditional way
-    uv run markdown_to_docx_converter.py input.md --image-replace
+    uv run markdown_to_docx_converter.py input.md --code-blocks --mermaid
 
-Note: Images are always generated for code blocks regardless of the --image-replace flag.
-The flag only controls whether the code blocks are replaced with images in the document or kept as text.
+Note: By default, code blocks and Mermaid diagrams are preserved as text.
+Use --code-blocks and/or --mermaid flags to enable image generation.
+Use --image-replace to replace the text with images in the document.
 
 Mermaid Setup (Optional):
     For best Mermaid diagram quality, install mermaid-cli:
@@ -54,9 +67,11 @@ Mermaid Setup (Optional):
 
 import argparse
 import base64
+import json
 import os
 import re
 import requests
+import shutil
 import subprocess
 import tempfile
 import time
@@ -78,11 +93,23 @@ from pygments.lexers.special import TextLexer
 
 
 class MarkdownToDocxConverter:
-    def __init__(self, input_file: str, output_file: str, style: str = 'default', image_replace: bool = False):
+    def __init__(self, input_file: str, output_file: str, style: str = 'default', image_replace: bool = False, handle_code_blocks: bool = False, handle_mermaid: bool = False):
         self.input_file = Path(input_file)
         self.output_file = Path(output_file)
+        
+        # Safety check: Ensure input and output files are different
+        if self.input_file.resolve() == self.output_file.resolve():
+            raise ValueError(f"Input and output files cannot be the same: {input_file}")
+        
+        # Additional safety: Ensure we're not accidentally overwriting the input
+        if self.input_file.exists() and self.output_file.exists():
+            if self.input_file.samefile(self.output_file):
+                raise ValueError(f"Input and output files point to the same file: {input_file}")
+        
         self.style = style
         self.image_replace = image_replace  # Flag to control whether to replace text with images in document
+        self.handle_code_blocks = handle_code_blocks  # Flag to control code block image generation
+        self.handle_mermaid = handle_mermaid  # Flag to control Mermaid diagram generation
         
         # Create image directory alongside the output file
         output_path = Path(output_file)
@@ -93,6 +120,12 @@ class MarkdownToDocxConverter:
         self.image_counter = 0
         self.document = Document()
         self._setup_styles()
+    
+    def _get_next_image_path(self) -> str:
+        """Get the next image path for generated images"""
+        self.image_counter += 1
+        image_filename = f"{self.base_name}_image{self.image_counter:03d}.png"
+        return str(self.image_dir / image_filename)
     
     def _setup_styles(self):
         """Setup custom styles for the document"""
@@ -135,14 +168,23 @@ class MarkdownToDocxConverter:
     
     def _create_code_image(self, code: str, language: str = 'text') -> str:
         """Create a true retina-quality PNG image from code block (1200 DPI)"""
+        # Check if we should handle code blocks at all
+        if not self.handle_code_blocks and not (language.lower() == 'mermaid' and self.handle_mermaid):
+            return None  # Skip code block image generation
+        
+        # Special handling for Mermaid diagrams
+        if language.lower() == 'mermaid':
+            if not self.handle_mermaid:
+                return None  # Skip Mermaid diagram generation
+            return self._create_mermaid_image(code, self._get_next_image_path())
+        
+        if not self.handle_code_blocks:
+            return None  # Skip regular code block generation
+        
         self.image_counter += 1
         # Use persistent naming: outputfile_image001.png
         image_filename = f"{self.base_name}_image{self.image_counter:03d}.png"
         image_path = str(self.image_dir / image_filename)
-        
-        # Special handling for Mermaid diagrams
-        if language.lower() == 'mermaid':
-            return self._create_mermaid_image(code, image_path)
         
         # Choose styling based on user preference
         if self.style == 'codesnap':
@@ -1597,7 +1639,14 @@ class MarkdownToDocxConverter:
     def convert(self):
         """Convert the markdown file to DOCX"""
         try:
-            # Read the markdown file
+            # Ensure input file exists and is readable (never write to it)
+            if not self.input_file.exists():
+                raise FileNotFoundError(f"Input file does not exist: {self.input_file}")
+            
+            if not self.input_file.is_file():
+                raise ValueError(f"Input path is not a file: {self.input_file}")
+                
+            # Read the markdown file (READ-ONLY operation)
             with open(self.input_file, 'r', encoding='utf-8') as f:
                 content = f.read()
             
@@ -1688,7 +1737,7 @@ class MarkdownToDocxConverter:
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert Markdown to DOCX with code blocks as images'
+        description='Convert Markdown to DOCX with optional code blocks as images'
     )
     parser.add_argument('input', help='Input markdown file')
     parser.add_argument('output', nargs='?', default=None, help='Output DOCX file (optional if --output-dir is used)')
@@ -1697,7 +1746,11 @@ def main():
     parser.add_argument('--style', choices=['default', 'codesnap'], default='codesnap',
                        help='Code block image style: default or codesnap (macOS window style)')
     parser.add_argument('--image-replace', action='store_true',
-                       help='Replace code blocks with images in the document (images are always generated)')
+                       help='Replace code blocks with images in the document (only when code block processing is enabled)')
+    parser.add_argument('--code-blocks', action='store_true',
+                       help='Enable code block to image conversion (disabled by default)')
+    parser.add_argument('--mermaid', action='store_true',
+                       help='Enable Mermaid diagram to image conversion (disabled by default)')
     parser.add_argument('--verbose', '-v', action='store_true', 
                        help='Verbose output')
     
@@ -1727,6 +1780,24 @@ def main():
         output_filename = input_path.stem + '.docx'
         output_file = str(default_output_dir / output_filename)
     
+    # Safety check: Ensure output file is never the same as input file
+    input_abs_path = Path(args.input).resolve()
+    output_abs_path = Path(output_file).resolve()
+    
+    if input_abs_path == output_abs_path:
+        # If they're the same, force output to ./tmp directory
+        default_output_dir = input_path.parent / 'tmp'
+        output_dir = str(default_output_dir)
+        output_filename = input_path.stem + '.docx'
+        output_file = str(default_output_dir / output_filename)
+        print(f"Warning: Output path equals input path. Changed output to: {output_file}")
+    elif input_abs_path.suffix == '.docx' and output_abs_path.suffix == '.md':
+        # Additional check: if someone accidentally swapped input/output
+        print(f"Warning: Input appears to be DOCX and output appears to be Markdown. Please check your arguments.")
+        print(f"Input: {args.input}")
+        print(f"Output: {output_file}")
+        return 1
+    
     # Create output directory if it doesn't exist
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -1735,14 +1806,24 @@ def main():
     
     if args.verbose:
         print(f"Converting: {args.input} -> {output_file}")
-        if args.image_replace:
-            print("Mode: Code blocks will be replaced with images in the document")
+        if args.code_blocks or args.mermaid:
+            if args.image_replace:
+                print("Mode: Code blocks/diagrams will be replaced with images in the document")
+            else:
+                print("Mode: Code blocks/diagrams will remain as text in document (images generated separately)")
+            if args.code_blocks:
+                print("Feature: Code block image generation enabled")
+            if args.mermaid:
+                print("Feature: Mermaid diagram image generation enabled")
         else:
-            print("Mode: Code blocks will remain as text in document (images generated separately)")
+            print("Mode: All code blocks and diagrams will remain as text (default behavior)")
     
     # Convert the file
     try:
-        converter = MarkdownToDocxConverter(args.input, output_file, args.style, args.image_replace)
+        converter = MarkdownToDocxConverter(
+            args.input, output_file, args.style, args.image_replace, 
+            args.code_blocks, args.mermaid
+        )
         converter.convert()
         return 0
     except Exception as e:
@@ -1753,10 +1834,12 @@ def main():
 if __name__ == '__main__':
     # This script is now self-installing thanks to UV!
     # Usage examples:
-    # ./markdown_to_docx_converter.py input.md                     # -> ./tmp/input.docx (text), images generated separately
-    # ./markdown_to_docx_converter.py input.md --image-replace     # -> ./tmp/input.docx (with images embedded)
-    # ./markdown_to_docx_converter.py input.md output.docx         # -> output.docx (text), images generated
-    # ./markdown_to_docx_converter.py input.md -o /custom/dir      # -> /custom/dir/input.docx (text)
-    # ./markdown_to_docx_converter.py input.md --image-replace -o /custom/dir  # -> /custom/dir/input.docx (with images)
+    # ./markdown_to_docx_converter.py input.md                          # -> ./tmp/input.docx (text only, no images)
+    # ./markdown_to_docx_converter.py input.md --code-blocks            # -> ./tmp/input.docx (text), code images generated separately
+    # ./markdown_to_docx_converter.py input.md --mermaid                # -> ./tmp/input.docx (text), mermaid images generated separately  
+    # ./markdown_to_docx_converter.py input.md --code-blocks --mermaid  # -> ./tmp/input.docx (text), all images generated separately
+    # ./markdown_to_docx_converter.py input.md --code-blocks --image-replace    # -> ./tmp/input.docx (with code images embedded)
+    # ./markdown_to_docx_converter.py input.md output.docx --code-blocks        # -> output.docx (text), code images generated
+    # ./markdown_to_docx_converter.py input.md -o /custom/dir --mermaid         # -> /custom/dir/input.docx (text), mermaid images generated
     # UV will automatically handle all dependency installation and environment setup
     exit(main())

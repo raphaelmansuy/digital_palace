@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 """
-LinkedIn Post Word Counter Tool
-Verifies that LinkedIn post content is under 400 words.
-Counts only the content between the rulers (---).
+LinkedIn Post Word Counter Tool (DEPRECATED)
+This tool has been superseded by linkedin_character_counter.py
+LinkedIn posts are now limited by character count (1800 chars) rather than word count (400 words).
+
+For new projects, use linkedin_character_counter.py instead.
 """
 
 import re
 import sys
 import argparse
 from pathlib import Path
+
+print("⚠️  DEPRECATION WARNING: This tool uses word count (400 words max)")
+print("LinkedIn posts are now limited to 1800 characters.")
+print("Please use linkedin_character_counter.py for accurate validation.")
+print("=" * 60)
 
 def extract_linkedin_content(file_path):
     """Extract content between the first and last rulers (---) in a markdown file."""

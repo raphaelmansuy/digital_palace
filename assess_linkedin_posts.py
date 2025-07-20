@@ -2,7 +2,7 @@
 """
 LinkedIn Posts Quality Assessment Tool
 Analyzes the first 20 LinkedIn posts for:
-1. Word count (must be under 600 words)
+1. Character count (must be under 1800 characters)
 2. Content quality assessment
 3. Post body content only (between --- rulers)
 """
@@ -11,6 +11,15 @@ import os
 import re
 from pathlib import Path
 from typing import List, Dict, Any
+
+# Import character counting function from our LinkedIn character counter
+try:
+    from linkedin_character_counter import count_characters
+except ImportError:
+    # Fallback if module not available
+    def count_characters(text):
+        """Simple character count as fallback"""
+        return len(re.sub(r'[*_#`>-]', '', text).strip())
 
 def extract_post_content(file_path: str) -> str:
     """Extract only the post content between the two --- rulers"""
@@ -67,17 +76,23 @@ def assess_content_quality(content: str) -> Dict[str, Any]:
     """Assess the quality of the LinkedIn post content"""
     assessment = {
         'word_count': count_words(content),
-        'char_count': len(content),
+        'char_count': count_characters(content),  # Use proper character counting
         'issues': [],
         'suggestions': [],
         'quality_score': 0
     }
     
-    # Check word count
-    if assessment['word_count'] > 600:
-        assessment['issues'].append(f"Exceeds 600 words limit ({assessment['word_count']} words)")
-    elif assessment['word_count'] < 50:
-        assessment['issues'].append(f"Too short for engaging content ({assessment['word_count']} words)")
+    # Check character count (new primary constraint)
+    if assessment['char_count'] > 1800:
+        assessment['issues'].append(f"Exceeds 1800 character limit ({assessment['char_count']} chars)")
+    elif assessment['char_count'] < 1200:
+        assessment['issues'].append(f"Too short for engaging content ({assessment['char_count']} chars)")
+    
+    # Check word count (secondary check for reference)
+    if assessment['word_count'] < 50:
+        assessment['issues'].append(f"Very short content ({assessment['word_count']} words)")
+    elif assessment['word_count'] > 400:
+        assessment['suggestions'].append(f"High word count ({assessment['word_count']} words) - consider condensing")
     
     # Check for engagement elements
     has_question = '?' in content
@@ -190,15 +205,15 @@ def main():
         quality_scores.append(assessment['quality_score'])
         
         # Display results
-        print(f"📝 Word Count: {assessment['word_count']}/600")
-        print(f"📏 Character Count: {assessment['char_count']}")
+        print(f"� Character Count: {assessment['char_count']}/1800")
+        print(f"� Word Count: {assessment['word_count']} words")
         print(f"⭐ Quality Score: {assessment['quality_score']}/6")
         
-        if assessment['word_count'] > 600:
-            print("❌ EXCEEDS WORD LIMIT!")
+        if assessment['char_count'] > 1800:
+            print("❌ EXCEEDS CHARACTER LIMIT!")
             over_limit_count += 1
         else:
-            print("✅ Within word limit")
+            print("✅ Within character limit")
         
         if assessment['issues']:
             print("⚠️  Issues:")
@@ -222,7 +237,7 @@ def main():
     print("📈 SUMMARY")
     print("=" * 50)
     print(f"📊 Total posts analyzed: {len(posts_to_analyze)}")
-    print(f"❌ Posts over 600 words: {over_limit_count}")
+    print(f"❌ Posts over 1800 characters: {over_limit_count}")
     print(f"⚠️  Total issues found: {total_issues}")
     
     if quality_scores:

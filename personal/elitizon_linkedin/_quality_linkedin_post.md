@@ -6,21 +6,23 @@
 
 ---
 
-## 📏 Word Count Requirements
+## 📏 Character Count Requirements
 
-### Primary Rule: 400 Words Maximum
-- **Hard Limit:** 400 words between the ruler markers (`---`)
-- **Optimal Range:** 350-400 words for maximum engagement
-- **Minimum Viable:** 250 words to provide sufficient value
+### Primary Rule: 1800 Characters Maximum
+
+- **Hard Limit:** 1800 characters between the ruler markers (`---`)
+- **Optimal Range:** 1500-1800 characters for maximum engagement
+- **Minimum Viable:** 1200 characters to provide sufficient value
 
 ### Content Measurement Rules
+
 - Count only content between the **first** and **last** ruler (`---`)
 - Exclude metadata, headers, and footer content
 - Markdown formatting is automatically excluded from count
-- Code blocks and inline code don't count toward word limit
+- Quoted text examples don't count toward character limit
 - Link text counts, but URLs don't
 
-‼️ **CRITICAL REQUIREMENT:** The content between rulers MUST start with the post title as a `## [Title]` header (WITHOUT 👉 emoji). This title is counted as part of the word count.
+‼️ **CRITICAL REQUIREMENT:** The content between rulers MUST start with the post title as a `## [Title]` header (WITHOUT 👉 emoji). This title is counted as part of the character count.
 
 ---
 
@@ -46,13 +48,15 @@
 
 ### Formatting Standards
 
-#### Markdown Code Blocks
-- **Maximum:** 1 code block per post
+#### Quoted Text Examples
+
+- **Maximum:** 1 quoted text example per post
 - **Purpose:** Show before/after examples or practical implementations
-- **Format:** Use triple backticks without language specification
+- **Format:** Use blockquotes (>) for examples
 - **Content:** Keep examples concise and relevant
 
 #### Headers and Structure
+
 - Use `## 👉` for main sections with emoji prefix
 - **MANDATORY:** Content between rulers MUST start with post title as `## [Title]` (WITHOUT 👉 emoji)
 - Use `### 👉` for subsections
@@ -62,28 +66,37 @@
 - Format: `## 👉 Section Title`
 
 #### Lists and Bullets
+
 - Surround lists with blank lines
 - Use `-` for unordered lists
 - Keep bullet points concise
 - Limit to 5-7 items per list
+
+
+- Don't use codeblocks or inline code in main content
+- Avoid excessive formatting that distracts from content 
+- Use simple, clear language
 
 ---
 
 ## 🎯 Content Quality Standards
 
 ### Engagement Optimization
+
 - **Hook:** Start with compelling problem statement
 - **Value:** Provide actionable insights within first 100 words
 - **Specificity:** Use concrete numbers and percentages
 - **Social Proof:** Include research citations and data
 
 ### Professional Standards
+
 - **Tone:** Professional yet approachable
 - **Expertise:** Position as industry expert
 - **Credibility:** Reference academic sources
 - **Actionability:** Every post must include practical steps
 
 ### Readability Requirements
+
 - **Paragraphs:** Maximum 3 sentences each
 - **Sections:** Break content into digestible chunks
 - **Flow:** Logical progression from problem to solution
@@ -93,19 +106,21 @@
 
 ## 🔧 Technical Validation
 
-### Word Count Verification
+### Character Count Verification
+
 ```bash
 # Quick check
 python3 check_post.py "personal/elitizon_linkedin/[post_name].md"
 
 # Detailed analysis
-python3 linkedin_word_counter.py "personal/elitizon_linkedin/[post_name].md" --verbose
+python3 linkedin_character_counter.py "personal/elitizon_linkedin/[post_name].md" --verbose
 ```
 
 ### Pre-Publication Checklist
-- [ ] Word count ≤ 400 words
+
+- [ ] Character count ≤ 1800 characters
 - [ ] Content between rulers only
-- [ ] Single code block maximum
+- [ ] Single quoted example maximum
 - [ ] All required elements present
 - [ ] No markdown linting errors
 - [ ] Engaging hook in first paragraph
@@ -118,16 +133,18 @@ python3 linkedin_word_counter.py "personal/elitizon_linkedin/[post_name].md" --v
 ## 📊 Quality Metrics
 
 ### Engagement Targets
-- **Word Count:** 350-400 words (optimal range)
-- **Reading Time:** 60-90 seconds
+
+- **Character Count:** 1500-1800 characters (optimal range)
+- **Reading Time:** 45-60 seconds
 - **Paragraph Length:** 2-3 sentences maximum
-- **Code Examples:** 1 per post maximum
+- **Quoted Examples:** 1 per post maximum
 - **Call to Action:** 1 clear, specific action
 
 ### Content Effectiveness
-- **Problem Clarity:** Issue identified within first 50 words
+
+- **Problem Clarity:** Issue identified within first 100 characters
 - **Solution Specificity:** Concrete steps provided
-- **Value Density:** High insight-to-word ratio
+- **Value Density:** High insight-to-character ratio
 - **Actionability:** Immediate implementable advice
 - **Credibility:** Research-backed claims
 
@@ -135,19 +152,22 @@ python3 linkedin_word_counter.py "personal/elitizon_linkedin/[post_name].md" --v
 
 ## 🚨 Common Violations
 
-### Word Count Issues
-- ❌ Exceeding 400-word limit
-- ❌ Counting metadata in word count
-- ❌ Including multiple code blocks
+### Character Count Issues
+
+- ❌ Exceeding 1800-character limit
+- ❌ Counting metadata in character count
+- ❌ Including multiple quoted examples
 - ❌ Verbose explanations without value
 
 ### Structure Problems
+
 - ❌ Missing ruler markers
 - ❌ Content outside rulers
 - ❌ Inconsistent header hierarchy
 - ❌ Lists without blank lines
 
 ### Content Quality Issues
+
 - ❌ Vague problem statements
 - ❌ Generic advice without specifics
 - ❌ Missing call to action
@@ -159,6 +179,7 @@ python3 linkedin_word_counter.py "personal/elitizon_linkedin/[post_name].md" --v
 ## 🔄 Review Process
 
 ### Self-Review Steps
+
 1. **Content Check:** Verify all required elements
 2. **Word Count:** Run validation tools
 3. **Readability:** Read aloud for flow
@@ -166,9 +187,10 @@ python3 linkedin_word_counter.py "personal/elitizon_linkedin/[post_name].md" --v
 5. **Engagement:** Compelling hook and CTA?
 
 ### Final Validation
+
 ```bash
 # Run comprehensive check
-python3 linkedin_word_counter.py "path/to/post.md" --verbose
+python3 linkedin_character_counter.py "path/to/post.md" --verbose
 
 # Verify structure and formatting
 # Check for markdown linting errors
@@ -180,12 +202,14 @@ python3 linkedin_word_counter.py "path/to/post.md" --verbose
 ## 📈 Success Indicators
 
 ### Post Performance
+
 - High engagement in first 2 hours
 - Comments asking follow-up questions
 - Shares by industry professionals
 - Profile visits from post viewers
 
 ### Content Quality
+
 - ✅ Passes all technical validations
 - ✅ Provides immediate actionable value
 - ✅ Maintains professional credibility
@@ -197,17 +221,20 @@ python3 linkedin_word_counter.py "path/to/post.md" --verbose
 ## 🔧 Tools and Resources
 
 ### Validation Tools
-- `linkedin_word_counter.py` - Comprehensive analysis
+
+- `linkedin_character_counter.py` - Comprehensive analysis
 - `check_post.py` - Quick validation
 - Markdown linters for formatting
 
 ### Reference Materials
+
 - "The Prompt Report" academic survey
 - LinkedIn engagement best practices
 - Professional writing standards
 - Series content planning
 
 ### Workflow Integration
+
 - Pre-commit validation hooks
 - VS Code task integration
 - Automated quality checks
