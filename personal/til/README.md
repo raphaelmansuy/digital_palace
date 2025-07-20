@@ -15,9 +15,10 @@ A **"Today I Learned"** collection documents small, actionable insights and disc
 
 Perfect for developers, AI practitioners, and anyone building with modern tools.
 
----
 
-## 🔥 Latest Discoveries
+
+
+
 
 
 ### 2025 Entries
