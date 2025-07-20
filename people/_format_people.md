@@ -5,7 +5,9 @@ This document defines the actionable format for a "People" profile page in this 
 ---
 
 ## 1. Frontmatter (YAML)
+
 - Add a YAML block at the top for metadata and searchability.
+
 ```yaml
 ---
 name: "Full Name"
@@ -43,8 +45,13 @@ status: "active|inactive"
 ---
 
 ## 2. Main Content Structure
+
+- The first heading (H1) should be the person's name.
+
 - Use clear section headings (H2 or H3) for each concept
+
 - Recommended sections:
+
   - Photo
   - Current Role
   - Biography
@@ -63,8 +70,11 @@ status: "active|inactive"
 ---
 
 ## 3. Code & Media
+
 - Use fenced code blocks for YAML frontmatter
+
 - Use markdown image syntax for profile photos
+
 ```markdown
 ![Full Name](https://...)
 ```
@@ -72,13 +82,17 @@ status: "active|inactive"
 ---
 
 ## 4. Lists & Tips
+
 - Use bullet points for contributions, expertise, collaborations, and companies
+
 - Keep lists concise and focused on practical facts
 
 ---
 
 ## 5. Footer & Maintenance
+
 - End with last updated and next review dates
+
 ```markdown
 ---
 _Last updated: YYYY-MM-DD_  
@@ -88,4 +102,5 @@ _Next review: YYYY-MM-DD_
 ---
 
 ## 6. Example
+
 See [`sam-altman.md`](./sam-altman.md) for a complete, actionable example.

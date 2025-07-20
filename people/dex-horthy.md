@@ -36,6 +36,8 @@ priority: "high"
 status: "active"
 ---
 
+# Dex Horthy
+
 ![Dex Horthy](https://bookface-images.s3.us-west-2.amazonaws.com/avatars/92f896139dcd3579fc7d508f11a5ec34fdf643a9.jpg)
 
 ## 🎯 Current Role

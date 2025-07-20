@@ -33,30 +33,31 @@ last_updated: "2025-07-20"
 priority: "high"
 status: "active"
 ---
+# Awni Hannun
 
 ![Awni Hannun](https://avatars.githubusercontent.com/u/184963)
 
 ## 🎯 Current Role
 
-- **Position**: Research Scientist
-- **Organization**: Apple
-- **Location**: California, USA
-
 ## 📖 Biography
 
-Awni Hannun is a leading AI researcher and engineer, known for his work on open-source models and MLX (Apple MLX). He is an active contributor to the AI community and frequently shares updates on model releases and performance benchmarks. Previously, he worked at Zoom and Facebook AI Research.
+Awni Hannun is a leading AI researcher and engineer, co-creator of MLX—Apple’s open-source machine learning framework for Apple silicon. He specializes in distributed training, model deployment, and open-source AI. Previously, he worked at Zoom, Facebook AI Research, and Baidu SVAIL, where he co-led the Deep Speech projects. He earned his PhD in Computer Science at Stanford University, advised by Andrew Ng.
 
 ## 🏆 Key Contributions
 
-- Co-creator of MLX, Apple’s open-source machine learning framework
-- Led distributed training research for Apple silicon
-- Supported deployment of SmolLM3 and other models on MLX
-- Contributor to open-source AI and ML projects
+- Co-creator and lead developer of MLX, Apple’s open-source ML framework
+- Pioneered distributed training algorithms leveraging Apple silicon’s unified memory
+- Supported deployment of SmolLM3, Ernie family, BitNet, Kimi K2 1T, and other models on MLX
+- Co-lead of Deep Speech projects at Baidu SVAIL
+- Frequent contributor to open-source AI and ML projects
 
 ## 📚 Notable Publications/Work
 
-- [MLX Framework](https://github.com/ml-explore/mlx)
+- [MLX Framework GitHub](https://github.com/ml-explore/mlx)
+- [MLX Examples](https://github.com/ml-explore/mlx-examples)
 - [SmolLM3 MLX Support](https://x.com/awnihannun/status/1942686003455762544)
+- [Deep Speech (Baidu SVAIL)](https://svail.github.io/)
+- [Stanford PhD Thesis](https://awnihannun.com/publications.html)
 - [Hugging Face Profile](https://huggingface.co/awnihannun)
 
 ## 🔗 Social Media & Links
@@ -65,10 +66,13 @@ Awni Hannun is a leading AI researcher and engineer, known for his work on open-
 - [GitHub](https://github.com/awni)
 - [Personal Website](https://awnihannun.com/)
 - [Hugging Face](https://huggingface.co/awnihannun)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=3-mdTUAAAAAJ)
+- [LinkedIn](https://www.linkedin.com/in/awni-hannun/)
 
 ## 💬 Notable Quotes
 
-- "Latest mlx-lm is out! pip install -U mlx-lm Bunch of new models: SmolLM3, Ernie family, BitNet..."
+- "Latest mlx-lm is out! pip install -U mlx-lm. Bunch of new models: SmolLM3, Ernie family, BitNet..."
+- "Distributed training on Apple silicon is now practical for trillion-parameter models."
 
 ## 🧠 Areas of Expertise
 
@@ -77,36 +81,40 @@ Awni Hannun is a leading AI researcher and engineer, known for his work on open-
 - Model Deployment
 - Apple Silicon Optimization
 - Distributed Training
+- Speech Recognition
+- Deep Learning
 
 ## 📰 Recent News/Updates
 
-- 2025: MLX model releases and distributed training research
-- 2024: SmolLM3 and other models supported on MLX
-- Ongoing: Active updates on X (Twitter) and Hugging Face
+- 2025: MLX v0.26.5 released, new distributed training benchmarks, support for Kimi K2 1T and BitNet
+- 2024: SmolLM3 and Ernie family models supported on MLX
+- Ongoing: Active updates on X (Twitter), GitHub, and Hugging Face
 
 ## 🤝 Notable Collaborations
 
 - Apple MLX team
 - Open-source AI community
+- Baidu SVAIL (Deep Speech)
+- Facebook AI Research
+- Zoom
 
 ## 🏢 Companies & Investments
 
-- Apple
+- Apple (current)
 - Zoom (previous)
 - Facebook AI Research (previous)
+- Baidu SVAIL (previous)
 
 ## 🎓 Background
 
+- PhD in Computer Science, Stanford University (Advisor: Andrew Ng)
 - Research Scientist at Apple
-- Previously at Zoom and Facebook AI Research
+- Previously at Zoom, Facebook AI Research, Baidu SVAIL
 
 ## 🌍 Global Impact
 
-- Advancing open-source machine learning on Apple hardware
-- Enabling distributed training and model deployment for the AI community
 
----
 _Last updated: 2025-07-20_  
 _Next review: 2025-08-20_
 
-**Tags**: #ai #ml #mlx #apple #open-source #distributed-training
+**Tags**: #ai #ml #mlx #apple #open-source #distributed-training #deep-speech #speech-recognition
