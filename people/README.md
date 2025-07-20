@@ -105,6 +105,26 @@
 
 ---
 
+## 📝 Format Specification
+
+All new people profiles should follow the standardized format in [`_format_people.md`](./_format_people.md). This ensures:
+- Consistency across all profiles
+- Easy navigation and search
+- Clear metadata for automation and filtering
+- Actionable, well-structured content for readers
+
+**Reference Example:**
+See [`sam-altman.md`](./sam-altman.md) for a complete, actionable profile using this format.
+
+**How to use:**
+1. Copy the YAML frontmatter and section structure from `_format_people.md`.
+2. Fill in all required fields and sections.
+3. Add reliable sources and links.
+4. Use bullet points and clear headings for readability.
+5. Update the `last_updated` field when making changes.
+
+---
+
 ## 🎯 Contributing
 
 Help us expand the People Hub!
