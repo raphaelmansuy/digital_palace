@@ -7,14 +7,19 @@
 #     "Pygments",
 #     "selenium",
 #     "playwright",
-#     "webdriver-manager"
+#     "webdriver-manager",
+#     "requests"
 # ]
 # ///
 """
 Markdown to DOCX Converter with Code Block to PNG Conversion
 
 This script converts a markdown file to a DOCX document, converting all code blocks
-to true retina-quality PNG images with syntax highlighting (1200 DPI for pixel-perfect text).
+
+Special Features:
+- Mermaid diagram support: ```mermaid code blocks are converted to high-quality diagram images
+- CodeSnap style: macOS window-style code blocks with syntax highlighting
+- Multiple rendering engines: Playwright, Selenium, CLI tools, and online services
 
 This is a self-installing Python script using UV. No manual dependency installation required!
 
@@ -32,12 +37,22 @@ Usage:
     
     # Traditional way
     uv run markdown_to_docx_converter.py input.md
+
+Mermaid Setup (Optional):
+    For best Mermaid diagram quality, install mermaid-cli:
+    npm install -g @mermaid-js/mermaid-cli
+    
+    The script will automatically fall back to online rendering if CLI is unavailable.
 """
 
 import argparse
+import base64
 import os
 import re
+import requests
+import subprocess
 import tempfile
+import time
 from pathlib import Path
 from typing import List, Tuple, Dict, Any
 
@@ -117,6 +132,10 @@ class MarkdownToDocxConverter:
         image_filename = f"{self.base_name}_image{self.image_counter:03d}.png"
         image_path = str(self.image_dir / image_filename)
         
+        # Special handling for Mermaid diagrams
+        if language.lower() == 'mermaid':
+            return self._create_mermaid_image(code, image_path)
+        
         # Choose styling based on user preference
         if self.style == 'codesnap':
             return self._create_codesnap_image(code, language, image_path)
@@ -157,8 +176,8 @@ class MarkdownToDocxConverter:
             
             # Post-process to add DPI metadata for better quality
             try:
-                from PIL import Image as PILImageModule
-                img = PILImageModule.open(image_path)
+                from PIL import Image as PILImage
+                img = PILImage.open(image_path)
                 # Resave with true retina DPI metadata (1200 DPI)
                 img.save(image_path, dpi=(1200, 1200), quality=100)
             except Exception:
@@ -170,6 +189,438 @@ class MarkdownToDocxConverter:
             print(f"Warning: Failed to create syntax-highlighted image for {language}: {e}")
             # Fallback: create a simple text image
             return self._create_simple_text_image(code, image_path)
+    
+    def _create_mermaid_image(self, mermaid_code: str, image_path: str) -> str:
+        """Create high-quality PNG image from Mermaid diagram code"""
+        try:
+            print(f"Generating Mermaid diagram: {os.path.basename(image_path)}")
+            
+            # Check if this is a supported diagram type
+            diagram_type = self._detect_mermaid_diagram_type(mermaid_code)
+            if not self._is_supported_mermaid_type(diagram_type):
+                print(f"Warning: '{diagram_type}' diagrams are not supported by most Mermaid renderers")
+                return self._create_mermaid_alternative_or_fallback(mermaid_code, diagram_type, image_path)
+            
+            # Try different Mermaid rendering methods in order of preference
+            
+            # Method 1: Try mermaid-cli (mmdc) if available
+            try:
+                return self._create_mermaid_cli_image(mermaid_code, image_path)
+            except Exception as e:
+                print(f"Mermaid CLI rendering failed: {e}")
+            
+            # Method 2: Try Playwright with Mermaid.js
+            try:
+                return self._create_mermaid_playwright_image(mermaid_code, image_path)
+            except Exception as e:
+                print(f"Playwright Mermaid rendering failed: {e}")
+            
+            # Method 3: Try online Mermaid service
+            try:
+                return self._create_mermaid_online_image(mermaid_code, image_path)
+            except Exception as e:
+                print(f"Online Mermaid rendering failed: {e}")
+            
+            # Fallback: Create text representation
+            print("All Mermaid rendering methods failed, creating text fallback")
+            return self._create_mermaid_text_fallback(mermaid_code, image_path)
+            
+        except Exception as e:
+            print(f"Warning: Failed to create Mermaid image: {e}")
+            return self._create_mermaid_text_fallback(mermaid_code, image_path)
+    
+    def _detect_mermaid_diagram_type(self, mermaid_code: str) -> str:
+        """Detect the type of Mermaid diagram from the code"""
+        lines = [line.strip() for line in mermaid_code.split('\n') if line.strip()]
+        if not lines:
+            return 'unknown'
+        
+        # Skip configuration lines that start with %%
+        actual_content_lines = [line for line in lines if not line.startswith('%%')]
+        if not actual_content_lines:
+            return 'unknown'
+            
+        first_content_line = actual_content_lines[0].lower()
+        
+        # Map of diagram keywords to types
+        diagram_types = {
+            'flowchart': 'flowchart',
+            'graph': 'flowchart',
+            'sequencediagram': 'sequenceDiagram',
+            'classdiagram': 'classDiagram',
+            'statediagram': 'stateDiagram',
+            'state-diagram': 'stateDiagram',
+            'journey': 'journey',
+            'gantt': 'gantt',
+            'pie': 'pie',
+            'gitgraph': 'gitgraph',
+            'git': 'gitgraph',
+            'erdiagram': 'erDiagram',
+            'entityrelationshipdiagram': 'erDiagram',
+            'userjourneydiagram': 'journey',
+            'mindmap': 'mindmap',
+            'timeline': 'timeline',
+            'quadrantchart': 'quadrantChart',
+            'xychart': 'xyChart',
+            'xychart-beta': 'xyChart',
+            'requirementdiagram': 'requirementDiagram',
+            'c4context': 'c4',
+            'c4container': 'c4',
+            'c4component': 'c4',
+            'c4dynamic': 'c4',
+            'c4deployment': 'c4',
+            'sankey-beta': 'sankey',
+            'block-beta': 'block',
+            'packet-beta': 'packet',
+            'architecture-beta': 'architecture',
+            'kanban': 'kanban',
+            'treemap': 'treemap',
+            'zenuml': 'zenuml'
+        }
+        
+        # Check for diagram type
+        for keyword, diagram_type in diagram_types.items():
+            if first_content_line.startswith(keyword):
+                return diagram_type
+        
+        # Special handling for some diagram types
+        if 'gitgraph' in first_content_line or first_content_line.startswith('git'):
+            return 'gitgraph'
+        
+        return 'unknown'
+    
+    def _is_supported_mermaid_type(self, diagram_type: str) -> bool:
+        """Check if the diagram type is well-supported by rendering engines"""
+        # Diagram types with excellent support across all rendering methods
+        well_supported = {
+            'flowchart', 'sequenceDiagram', 'classDiagram', 'stateDiagram',
+            'gantt', 'pie', 'journey', 'erDiagram', 'mindmap', 'timeline',
+            'quadrantChart', 'requirementDiagram'
+        }
+        
+        # Diagram types with limited or problematic support (for reference)
+        # limited_support = {
+        #     'gitgraph',  # Limited CLI support, browser-dependent
+        #     'xyChart',   # Beta feature
+        #     'c4',        # Experimental
+        #     'sankey',    # Beta/experimental
+        #     'block',     # Beta
+        #     'packet',    # Beta
+        #     'architecture', # Beta
+        #     'kanban',    # New/beta
+        #     'treemap',   # New/beta
+        #     'zenuml'     # Third-party integration
+        # }
+        
+        return diagram_type in well_supported
+    
+    def _convert_gitgraph_syntax(self, mermaid_code: str) -> str:
+        """Convert gitgraph/gitGraph syntax to standard git syntax if possible"""
+        lines = mermaid_code.split('\n')
+        converted_lines = []
+        
+        for line in lines:
+            stripped = line.strip()
+            
+            # Convert gitgraph to git
+            if stripped.lower().startswith('gitgraph'):
+                converted_lines.append(line.replace('gitgraph', 'git', 1).replace('gitGraph', 'git', 1))
+            else:
+                converted_lines.append(line)
+        
+        return '\n'.join(converted_lines)
+    
+    def _create_mermaid_alternative_or_fallback(self, mermaid_code: str, diagram_type: str, image_path: str) -> str:
+        """Create alternative representation for unsupported diagram types"""
+        
+        if diagram_type == 'gitgraph':
+            # Try converting gitgraph to regular git syntax
+            converted_code = self._convert_gitgraph_syntax(mermaid_code)
+            if converted_code != mermaid_code:
+                print("Converting gitGraph to git syntax...")
+                try:
+                    return self._create_mermaid_cli_image(converted_code, image_path)
+                except Exception as e:
+                    print(f"Converted syntax also failed: {e}")
+            
+            # Try alternative: create a text-based git flow representation
+            print("Creating text-based git flow representation...")
+            git_flow_text = self._create_git_flow_text_representation(mermaid_code)
+            return self._create_simple_text_image(git_flow_text, image_path)
+        
+        elif diagram_type in ['c4', 'sankey', 'block', 'packet', 'architecture', 'kanban', 'treemap']:
+            # For beta/experimental features, try online service first
+            try:
+                print(f"Trying online service for {diagram_type} diagram...")
+                return self._create_mermaid_online_image(mermaid_code, image_path)
+            except Exception as e:
+                print(f"Online service failed for {diagram_type}: {e}")
+        
+        # Default fallback
+        return self._create_mermaid_text_fallback(mermaid_code, image_path)
+    
+    def _create_git_flow_text_representation(self, mermaid_code: str) -> str:
+        """Create a text representation of a git flow from mermaid gitgraph code"""
+        lines = [line.strip() for line in mermaid_code.split('\n') if line.strip()]
+        
+        text_flow = ["GIT FLOW DIAGRAM", "=" * 50, ""]
+        
+        current_branch = 'main'
+        branches = {'main': []}
+        commit_count = 0
+        
+        for line in lines:
+            if line.lower().startswith(('gitgraph', 'git')):
+                continue
+            
+            if line.startswith('commit'):
+                commit_count += 1
+                commit_info = f"Commit {commit_count}"
+                if 'id:' in line:
+                    commit_id = line.split('id:')[1].strip().strip('"').strip("'")
+                    commit_info = f"Commit: {commit_id}"
+                if 'type:' in line:
+                    commit_type = line.split('type:')[1].strip().split()[0]
+                    commit_info += f" ({commit_type})"
+                
+                text_flow.append(f"[{current_branch}] {commit_info}")
+                
+            elif line.startswith('branch'):
+                branch_name = line.split('branch')[1].strip()
+                current_branch = branch_name
+                branches[branch_name] = []
+                text_flow.append("")
+                text_flow.append(f"Created branch: {branch_name}")
+                text_flow.append(f"Switched to: {branch_name}")
+                
+            elif line.startswith('checkout'):
+                branch_name = line.split('checkout')[1].strip()
+                current_branch = branch_name
+                text_flow.append("")
+                text_flow.append(f"Switched to: {branch_name}")
+                
+            elif line.startswith('merge'):
+                merge_branch = line.split('merge')[1].strip().split()[0]
+                text_flow.append("")
+                text_flow.append(f"[{current_branch}] Merged branch '{merge_branch}' into '{current_branch}'")
+                
+            elif line.startswith('cherry-pick'):
+                if 'id:' in line:
+                    commit_id = line.split('id:')[1].strip().strip('"').strip("'")
+                    text_flow.append(f"[{current_branch}] Cherry-picked commit: {commit_id}")
+        
+        text_flow.extend(["", "=" * 50, 
+                         "Note: This is a text representation of the git flow.",
+                         "Visual diagram could not be rendered."])
+        
+        return '\n'.join(text_flow)
+    
+    def _create_mermaid_cli_image(self, mermaid_code: str, image_path: str) -> str:
+        """Create Mermaid image using mermaid-cli (mmdc)"""
+        
+        # Check if mmdc is available
+        try:
+            subprocess.run(['mmdc', '--version'], check=True, capture_output=True)
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            raise Exception("mermaid-cli (mmdc) not found. Install with: npm install -g @mermaid-js/mermaid-cli")
+        
+        # Create temporary mermaid file
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.mmd', delete=False, encoding='utf-8') as f:
+            f.write(mermaid_code)
+            mermaid_file = f.name
+        
+        try:
+            # Run mermaid-cli with high-quality settings
+            cmd = [
+                'mmdc',
+                '-i', mermaid_file,
+                '-o', image_path,
+                '-t', 'neutral',  # Use neutral theme for better compatibility
+                '-s', '3',        # Scale factor for high resolution
+                '-b', 'white',    # White background
+                '--width', '1200', # Max width
+                '--height', '800'  # Max height
+            ]
+            
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
+            
+            # Verify the image was created
+            if os.path.exists(image_path) and os.path.getsize(image_path) > 0:
+                print("Successfully created Mermaid image using mermaid-cli")
+                return image_path
+            else:
+                raise Exception("mermaid-cli produced empty or missing file")
+                
+        finally:
+            # Cleanup temporary file
+            try:
+                os.unlink(mermaid_file)
+            except Exception:
+                pass
+    
+    def _create_mermaid_playwright_image(self, mermaid_code: str, image_path: str) -> str:
+        """Create Mermaid image using Playwright with Mermaid.js"""
+        try:
+            from playwright.sync_api import sync_playwright
+            
+            # Create HTML file with Mermaid.js
+            html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Diagram</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({{ 
+            startOnLoad: true,
+            theme: 'neutral',
+            themeVariables: {{
+                primaryColor: '#ffffff',
+                primaryTextColor: '#000000',
+                primaryBorderColor: '#cccccc',
+                lineColor: '#333333',
+                secondaryColor: '#f8f8f8',
+                tertiaryColor: '#e8e8e8'
+            }},
+            flowchart: {{
+                htmlLabels: true,
+                useMaxWidth: true
+            }}
+        }});
+        
+        window.addEventListener('load', () => {{
+            setTimeout(() => {{
+                document.body.setAttribute('data-ready', 'true');
+            }}, 1000);
+        }});
+    </script>
+    <style>
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }}
+        .mermaid {{
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+    </style>
+</head>
+<body>
+    <div class="mermaid">
+{mermaid_code}
+    </div>
+</body>
+</html>"""
+
+            # Save HTML to temporary file
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False, encoding='utf-8') as f:
+                f.write(html_content)
+                html_file = f.name
+
+            try:
+                with sync_playwright() as p:
+                    browser = p.chromium.launch(headless=True)
+                    page = browser.new_page(
+                        device_scale_factor=3,  # High DPI for quality
+                        viewport={'width': 1200, 'height': 800}
+                    )
+                    
+                    page.goto(f'file://{html_file}')
+                    
+                    # Wait for Mermaid to render
+                    page.wait_for_selector('[data-ready="true"]', timeout=10000)
+                    page.wait_for_timeout(2000)  # Additional wait for complete rendering
+                    
+                    # Take screenshot of the mermaid diagram
+                    mermaid_element = page.locator('.mermaid')
+                    mermaid_element.screenshot(path=image_path, type='png')
+                    
+                    browser.close()
+
+                # Verify and enhance image quality
+                from PIL import Image as PILImage
+                img = PILImage.open(image_path)
+                img.save(image_path, dpi=(300, 300), quality=100, optimize=True)
+                print("Successfully created Mermaid image using Playwright")
+                return image_path
+                    
+            finally:
+                try:
+                    os.unlink(html_file)
+                except Exception:
+                    pass
+                    
+        except ImportError:
+            raise Exception("Playwright not available for Mermaid rendering")
+    
+    def _create_mermaid_online_image(self, mermaid_code: str, image_path: str) -> str:
+        """Create Mermaid image using online Mermaid service"""
+        
+        try:
+            # Use Mermaid.ink service (public API)
+            # Encode the mermaid code for URL
+            encoded_diagram = base64.b64encode(mermaid_code.encode('utf-8')).decode('ascii')
+            
+            # Mermaid.ink API endpoint
+            url = f"https://mermaid.ink/img/{encoded_diagram}"
+            
+            # Add parameters for better quality
+            params = {
+                'type': 'png',
+                'theme': 'neutral',
+                'scale': '3'  # Higher scale for better quality
+            }
+            
+            # Make request with longer timeout for complex diagrams
+            response = requests.get(url, params=params, timeout=30)
+            response.raise_for_status()
+            
+            # Check if we got a valid image
+            if response.headers.get('content-type', '').startswith('image/'):
+                with open(image_path, 'wb') as f:
+                    f.write(response.content)
+                
+                # Verify the image was created and is valid
+                if os.path.getsize(image_path) > 1000:  # Reasonable minimum size
+                    from PIL import Image as PILImage
+                    try:
+                        # Verify it's a valid image and enhance DPI
+                        img = PILImage.open(image_path)
+                        img.save(image_path, dpi=(300, 300), quality=100, optimize=True)
+                        print("Successfully created Mermaid image using online service")
+                        return image_path
+                    except Exception:
+                        raise Exception("Online service returned invalid image data")
+                else:
+                    raise Exception("Online service returned empty or tiny image")
+            else:
+                raise Exception(f"Online service returned non-image content: {response.headers.get('content-type')}")
+                
+        except requests.RequestException as e:
+            raise Exception(f"Online Mermaid service request failed: {e}")
+        except Exception as e:
+            raise Exception(f"Online Mermaid service error: {e}")
+    
+    def _create_mermaid_text_fallback(self, mermaid_code: str, image_path: str) -> str:
+        """Create text-based fallback for Mermaid diagrams"""
+        try:
+            # Create a text representation of the Mermaid diagram
+            fallback_text = f"[MERMAID DIAGRAM]\n\n{mermaid_code}\n\n[Diagram could not be rendered as image]"
+            
+            return self._create_simple_text_image(fallback_text, image_path)
+            
+        except Exception as e:
+            print(f"Error creating Mermaid text fallback: {e}")
+            return None
     
     def _create_codesnap_image(self, code: str, language: str, image_path: str) -> str:
         """Create CodeSnap style image with macOS window frame using headless browser rendering"""
