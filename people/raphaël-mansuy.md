@@ -41,48 +41,6 @@ last_updated: "2025-07-20"
 priority: "high"
 status: "active"
 ---
-name: "Raphaël MANSUY"
-slug: "raphael-mansuy"
-photo_url: "https://avatars.githubusercontent.com/u/1003084?v=4"
-birth_year: 1971
-nationality: "French"
-current_role:
-
-  title: "CTO & Co-founder"
-  organization: "ELITIZON Ltd (Startup Studio in Hong Kong)"
-  location: "Hong Kong SAR"
-  start_date: "N/A"
-links:
-  website: "https://www.elitizon.com/"
-  twitter: "https://twitter.com/raphaelmansuy"
-  github: "https://github.com/raphaelmansuy"
-  linkedin: "https://www.linkedin.com/in/raphaelmansuy/"
-  scholar: ""
-  personal: "https://www.elitizon.com/"
-expertise_areas:
-  - "AI/ML Platform Development"
-  - "Data Engineering & Integration"
-  - "Startup Studio Operations"
-  - "Open Source Development"
-  - "Technical Leadership & CTO Role"
-  - "AI Agent Frameworks (ReAct)"
-  - "LLM Tools & Applications"
-  - "Knowledge Management Systems"
-  - "Climate Tech Advisory"
-categories:
-  - "cto"
-  - "ai"
-  - "founder"
-  - "entrepreneur"
-  - "author"
-  - "open-source"
-position: "CTO & Co-founder"
-organization: "ELITIZON Ltd"
-tags: [cto, ai, founder, entrepreneur, author, open-source, elitizon, quantalogic, hong-kong, ai-platform, data-engineering, french-tech, startup-studio]
-last_updated: "2025-07-20"
-priority: "high"
-status: "active"
----
 
 # Raphaël MANSUY
 
