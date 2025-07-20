@@ -14,29 +14,36 @@
 """
 Markdown to DOCX Converter with Code Block to PNG Conversion
 
-This script converts a markdown file to a DOCX document, converting all code blocks
+This script converts a markdown file to a DOCX document, with optional code block to image conversion.
 
 Special Features:
 - Mermaid diagram support: ```mermaid code blocks are converted to high-quality diagram images
 - CodeSnap style: macOS window-style code blocks with syntax highlighting
 - Multiple rendering engines: Playwright, Selenium, CLI tools, and online services
+- Flexible image replacement: Images are always generated, but only replace text when --image-replace is used
 
 This is a self-installing Python script using UV. No manual dependency installation required!
 
 Usage:
     chmod +x markdown_to_docx_converter.py
     
-    # Convert with auto-generated output in ./tmp directory
+    # Convert with auto-generated output in ./tmp directory (code blocks remain as text)
     ./markdown_to_docx_converter.py input.md
     
+    # Convert and replace code blocks with images in the document
+    ./markdown_to_docx_converter.py input.md --image-replace
+    
     # Convert with specific output file
-    ./markdown_to_docx_converter.py input.md output.docx
+    ./markdown_to_docx_converter.py input.md output.docx --image-replace
     
     # Convert with custom output directory
     ./markdown_to_docx_converter.py input.md --output-dir /path/to/output
     
     # Traditional way
-    uv run markdown_to_docx_converter.py input.md
+    uv run markdown_to_docx_converter.py input.md --image-replace
+
+Note: Images are always generated for code blocks regardless of the --image-replace flag.
+The flag only controls whether the code blocks are replaced with images in the document or kept as text.
 
 Mermaid Setup (Optional):
     For best Mermaid diagram quality, install mermaid-cli:
@@ -71,10 +78,11 @@ from pygments.lexers.special import TextLexer
 
 
 class MarkdownToDocxConverter:
-    def __init__(self, input_file: str, output_file: str, style: str = 'default'):
+    def __init__(self, input_file: str, output_file: str, style: str = 'default', image_replace: bool = False):
         self.input_file = Path(input_file)
         self.output_file = Path(output_file)
         self.style = style
+        self.image_replace = image_replace  # Flag to control whether to replace text with images in document
         
         # Create image directory alongside the output file
         output_path = Path(output_file)
@@ -1099,7 +1107,6 @@ class MarkdownToDocxConverter:
                 
                 # Extended wait for font loading and rendering
                 driver.implicitly_wait(2)
-                import time
                 time.sleep(1)  # Additional wait to ensure complete rendering
                 
                 # Take screenshot of just the window element
@@ -1597,7 +1604,7 @@ class MarkdownToDocxConverter:
             # Extract code blocks
             modified_content, code_blocks = self._extract_code_blocks(content)
             
-            # Create images for code blocks
+            # Always create images for code blocks (regardless of image_replace flag)
             code_images = {}
             for i, block in enumerate(code_blocks):
                 image_path = self._create_code_image(block['content'], block['language'])
@@ -1614,8 +1621,9 @@ class MarkdownToDocxConverter:
                 placeholder_match = re.match(r'\{\{CODE_BLOCK_(\d+)\}\}', line.strip())
                 if placeholder_match:
                     block_index = int(placeholder_match.group(1))
-                    if block_index in code_images:
-                        # Add the code block image
+                    
+                    if self.image_replace and block_index in code_images:
+                        # Replace with image only if --image-replace flag is set
                         paragraph = self.document.add_paragraph()
                         run = paragraph.add_run()
                         try:
@@ -1624,8 +1632,10 @@ class MarkdownToDocxConverter:
                         except Exception as e:
                             print(f"Warning: Could not add image for code block {block_index}: {e}")
                             # Fallback: add as text
-                            self.document.add_paragraph(f"[Code Block - {code_blocks[block_index]['language']}]")
-                            self.document.add_paragraph(code_blocks[block_index]['content'])
+                            self._add_code_block_as_text(code_blocks[block_index])
+                    else:
+                        # Keep as text in document (default behavior when --image-replace is not set)
+                        self._add_code_block_as_text(code_blocks[block_index])
                 else:
                     self._process_markdown_element(line)
                 
@@ -1635,7 +1645,10 @@ class MarkdownToDocxConverter:
             self.document.save(self.output_file)
             print(f"Successfully converted {self.input_file} to {self.output_file}")
             if self.image_counter > 0:
-                print(f"Generated {self.image_counter} code block images: {self.base_name}_image001.png to {self.base_name}_image{self.image_counter:03d}.png")
+                image_status = "Generated" if not self.image_replace else "Generated and embedded"
+                print(f"{image_status} {self.image_counter} code block images: {self.base_name}_image001.png to {self.base_name}_image{self.image_counter:03d}.png")
+                if not self.image_replace:
+                    print("Note: Code blocks remain as text in document. Use --image-replace to embed images.")
             
         except Exception as e:
             print(f"Error during conversion: {e}")
@@ -1643,6 +1656,26 @@ class MarkdownToDocxConverter:
         finally:
             # Cleanup temporary files
             self._cleanup()
+    
+    def _add_code_block_as_text(self, code_block):
+        """Add code block as formatted text in the document"""
+        # Add language label if available
+        if code_block['language']:
+            lang_paragraph = self.document.add_paragraph()
+            lang_run = lang_paragraph.add_run(f"[{code_block['language']}]")
+            lang_run.font.name = 'Consolas'
+            lang_run.font.size = Pt(9)
+            lang_run.font.color.rgb = RGBColor(128, 128, 128)  # Gray color
+        
+        # Add code content
+        code_paragraph = self.document.add_paragraph()
+        code_run = code_paragraph.add_run(code_block['content'])
+        try:
+            code_run.style = 'CodeChar'
+        except Exception:
+            code_run.font.name = 'Consolas'
+            code_run.font.size = Pt(10)
+            code_run.font.color.rgb = RGBColor(64, 64, 64)  # Dark gray for code
     
     def _cleanup(self):
         """Clean up temporary files"""
@@ -1663,6 +1696,8 @@ def main():
                        help='Output directory (defaults to ./tmp relative to input file)')
     parser.add_argument('--style', choices=['default', 'codesnap'], default='codesnap',
                        help='Code block image style: default or codesnap (macOS window style)')
+    parser.add_argument('--image-replace', action='store_true',
+                       help='Replace code blocks with images in the document (images are always generated)')
     parser.add_argument('--verbose', '-v', action='store_true', 
                        help='Verbose output')
     
@@ -1686,9 +1721,11 @@ def main():
         output_filename = input_path.stem + '.docx'
         output_file = os.path.join(output_dir, output_filename)
     else:
-        # Default: output file is input filename with .docx extension in same directory
-        output_file = str(input_path.with_suffix('.docx'))
-        output_dir = input_path.parent
+        # Default: create ./tmp directory alongside input file
+        default_output_dir = input_path.parent / 'tmp'
+        output_dir = str(default_output_dir)
+        output_filename = input_path.stem + '.docx'
+        output_file = str(default_output_dir / output_filename)
     
     # Create output directory if it doesn't exist
     if output_dir and not os.path.exists(output_dir):
@@ -1698,10 +1735,14 @@ def main():
     
     if args.verbose:
         print(f"Converting: {args.input} -> {output_file}")
+        if args.image_replace:
+            print("Mode: Code blocks will be replaced with images in the document")
+        else:
+            print("Mode: Code blocks will remain as text in document (images generated separately)")
     
     # Convert the file
     try:
-        converter = MarkdownToDocxConverter(args.input, output_file, args.style)
+        converter = MarkdownToDocxConverter(args.input, output_file, args.style, args.image_replace)
         converter.convert()
         return 0
     except Exception as e:
@@ -1712,8 +1753,10 @@ def main():
 if __name__ == '__main__':
     # This script is now self-installing thanks to UV!
     # Usage examples:
-    # ./markdown_to_docx_converter.py input.md                    # -> input_dir/tmp/input.docx
-    # ./markdown_to_docx_converter.py input.md output.docx        # -> output.docx
-    # ./markdown_to_docx_converter.py input.md -o /custom/dir     # -> /custom/dir/input.docx
+    # ./markdown_to_docx_converter.py input.md                     # -> ./tmp/input.docx (text), images generated separately
+    # ./markdown_to_docx_converter.py input.md --image-replace     # -> ./tmp/input.docx (with images embedded)
+    # ./markdown_to_docx_converter.py input.md output.docx         # -> output.docx (text), images generated
+    # ./markdown_to_docx_converter.py input.md -o /custom/dir      # -> /custom/dir/input.docx (text)
+    # ./markdown_to_docx_converter.py input.md --image-replace -o /custom/dir  # -> /custom/dir/input.docx (with images)
     # UV will automatically handle all dependency installation and environment setup
     exit(main())
