@@ -1,5 +1,52 @@
-# [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](../README.md)
-# MLflow Tutorial
+# TIL: MLflow End-to-End Machine Learning Lifecycle (2024-03-20)
+
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](../README.md)
+
+> **MLflow manages the full ML lifecycle** – Track experiments, package code, deploy models, and manage model registry for reproducible, production-ready machine learning.
+
+---
+
+## The Pain Point
+
+Managing ML experiments, deployments, and model lineage is complex and error-prone. Manual tracking and ad-hoc deployment lead to reproducibility issues, lost results, and fragile production systems.
+
+---
+
+## Summary
+
+MLflow is an open source platform for managing the end-to-end machine learning lifecycle, including experimentation, reproducibility, deployment, and a central model registry. It supports tracking, packaging, deployment, and registry for models built with any ML library.
+
+---
+
+## Troubleshooting
+
+- If metrics or parameters aren't logged, check MLflow run context and tracking server configuration.
+- For deployment errors, verify model flavor compatibility and environment setup.
+- Use MLflow UI (`mlflow ui`) to compare runs and debug issues.
+
+---
+
+## Security Considerations
+
+- Never log sensitive data or credentials as parameters or artifacts.
+- Use access controls for model registry and artifact storage.
+- Audit dependencies and code before deploying models to production.
+
+---
+
+## Related Resources
+
+- [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
+- [MLflow GitHub Repository](https://github.com/mlflow/mlflow)
+- [MLflow Model Registry](https://mlflow.org/docs/latest/model-registry.html)
+- [MLflow Projects](https://mlflow.org/docs/latest/projects.html)
+- [MLflow Deployment](https://mlflow.org/docs/latest/models.html)
+
+---
+
+*⚡ Pro tip: Use MLflow Projects and Model Registry to ensure reproducibility and robust deployment for all your ML models!*
+
+## MLflow Tutorial
 
 ## Introduction
 
@@ -24,7 +71,7 @@ graph TD
     id1 --> id2
     id2 --> id3
     id3 --> id4
-```
+```bash
 
 - **MLflow Tracking**: Records and tracks experiments, including code, data, config, and results.
 - **MLflow Projects**: Packages code and dependencies as reproducible runs.
@@ -312,7 +359,7 @@ Here is an additional chapter that covers some of the weaknesses identified in t
 
 ## Advanced Model Training and Deployment
 
-The basic MLflow tutorial provides a good introduction to tracking experiments, packaging projects, saving models, and basic local deployment. However, it is limited to a simple linear regression model and CSV serving. 
+The basic MLflow tutorial provides a good introduction to tracking experiments, packaging projects, saving models, and basic local deployment. However, it is limited to a simple linear regression model and CSV serving.
 
 This chapter covers more advanced model training, deployment, and productionization techniques:
 
@@ -339,7 +386,7 @@ nn.fit(X_train, y_train, epochs=100)
 
 # Log NN model
 mlflow.keras.log_model(nn, "nn_model") 
-```
+```bash
 
 This demonstrates training and logging different model types with MLflow.
 
@@ -364,7 +411,7 @@ import model_training
 X, y = get_training_data()
 model = model_training.train_linear_regression(X, y) 
 mlflow.sklearn.log_model(model, "model")
-```
+```bash
 
 This makes the code more modular and maintainable.
 

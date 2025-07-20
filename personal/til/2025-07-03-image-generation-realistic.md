@@ -1,4 +1,5 @@
 
+
 # TIL: Image Generation Prompt for Realistic Photos (2025-07-03)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
@@ -10,6 +11,12 @@
 ## The Pain Point
 
 Most AI image generators produce "AI art" that looks synthetic. For websites and social media, you need images that look like real photos taken by people.
+
+---
+
+## Summary
+
+Use real photo filenames and natural scene descriptions in your prompts to guide AI models toward generating images that look authentic and human-made. This approach helps avoid synthetic "AI art" tropes and produces more realistic results for web and social use.
 
 ---
 
@@ -34,10 +41,21 @@ Friends at a party in Paris, IMG_375.jpg
 
 ---
 
+---
+
 ## Troubleshooting
 
 - If results look too artificial, try referencing a different real photo filename or add more details about lighting and imperfections.
 - Always review generated images for subtle artifacts or inconsistencies before publishing.
+
+
+---
+
+## Security Considerations
+
+- Never use or share real personal photos or sensitive images in prompts.
+- Review generated images for privacy risks before publishing.
+- Avoid generating images that could be misused or misrepresented as real photos of actual people.
 
 ---
 
@@ -48,4 +66,7 @@ Friends at a party in Paris, IMG_375.jpg
 
 ---
 
-*Tip: Always review generated images for subtle artifacts or inconsistencies before publishing.*
+
+---
+
+*⚡ Pro tip: Use real photo filenames and natural scene descriptions to maximize realism and avoid "AI art" artifacts!*

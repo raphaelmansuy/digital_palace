@@ -1,15 +1,24 @@
-# The Ultimate Guide for the Impatient: From Novice to Practitioner in Record Time  
-**Topic: Deploy a Next.js Application using Kamal**  
+# TIL: Deploy a Next.js Application using Kamal (2025-01-14)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
 > **Fast, reliable web app deployment** – Use Kamal to deploy Next.js apps with Docker, zero-downtime, and cloud-agnostic simplicity.
+
+---
 
 ## The Pain Point
 
 Deploying web apps is often slow, error-prone, and complex. Traditional tools require deep DevOps knowledge and manual configuration. Kamal streamlines deployment for everyone, making it fast, secure, and repeatable.
 
 ---
+
+## Summary
+
+Kamal (formerly MRSK) is a modern deployment tool that leverages Docker to containerize your Next.js app and deploy it to any cloud provider. It is lightweight, fast, beginner-friendly, and supports zero-downtime deployments. This guide walks you through setting up your environment, configuring Docker, deploying your app, scaling, troubleshooting, and security best practices.
+
+---
+
+## Step-by-Step Guide
 
 ## **Introduction**  
 Want to deploy your Next.js app faster than you can say 'Kamal'? This guide is your shortcut to becoming a deployment pro in record time!  
@@ -264,7 +273,7 @@ hooks:
 
 ---
 
-## **Conclusion**  
+## Conclusion  
 Congratulations! You’ve successfully deployed a Next.js app using Kamal. You’ve learned how to set up your environment, configure Docker, deploy your app, and even scale it.  
 
 ### **Call to Action**  
@@ -278,9 +287,18 @@ Deploy a new Next.js app using Kamal and share your experience on social media.
 ## Troubleshooting
 
 ### Common Issues
+- **Failed Deployments**: Use `kamal logs` to identify and fix errors.
+- **Docker Build Errors**: Check your Dockerfile and `kamal.yml` for misconfigurations.
+- **SSH Connection Problems**: Ensure your SSH keys are set up and firewall rules allow access.
+- **Environment Variable Issues**: Use `.env` files and verify variables are loaded correctly.
 
 ### Solutions
+- Use Kamal’s `--verbose` flag for detailed logs.
+- Double-check Docker and Kamal configuration files.
+- Restart Docker and Kamal services if deployments hang.
+- Consult Kamal documentation for error codes and troubleshooting tips.
 
+---
 
 ## Security Considerations
 
@@ -289,10 +307,17 @@ Deploy a new Next.js app using Kamal and share your experience on social media.
 3. **Restrict firewall rules** to only necessary ports (e.g., 22 for SSH, 3000 for your app).
 4. **Regularly update Docker images** to patch vulnerabilities.
 
+---
 
 ## Related Resources
 
+- [Kamal Official Documentation](https://kamal-deploy.com/)
+- [Kamal GitHub Repository](https://github.com/basecamp/kamal)
+- [Next.js Deployment Guide](https://nextjs.org/docs/deployment)
+- [Docker Best Practices](https://docs.docker.com/develop/best-practices/)
+- [Securing Docker Containers](https://docs.docker.com/engine/security/)
 
+---
 
 *⚡ Pro tip: Use Kamal with `.env` files and multi-stage Docker builds for secure, efficient deployments!*
 

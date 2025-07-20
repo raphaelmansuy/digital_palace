@@ -1,4 +1,3 @@
-
 # TIL: How to Prepare a Python Package for Distribution (2024-03-19)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
@@ -115,6 +114,15 @@ jobs:
 
 ---
 
+## Security Considerations
+
+- Never publish secrets, credentials, or API keys in your package or repository.
+- Use PyPI API tokens (not passwords) for automated publishing in CI/CD workflows.
+- Review dependencies for vulnerabilities before publishing.
+- Audit your code for sensitive information before release.
+
+---
+
 ## Related Resources
 
 - [Python Packaging User Guide](https://packaging.python.org/)
@@ -124,5 +132,5 @@ jobs:
 
 ---
 
-*Automate your Python package publishing workflow for reliable, consistent distribution to PyPI.*
+*⚡ Pro tip: Use TestPyPI to validate your package before publishing to the main PyPI repository!*
 

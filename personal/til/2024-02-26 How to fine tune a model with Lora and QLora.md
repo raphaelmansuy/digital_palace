@@ -1,8 +1,10 @@
-# 2024-02-26: Fine-Tuning Custom LLMs with LoRA and QLoRA
+# TIL: Fine-Tuning Custom LLMs with LoRA and QLoRA (2024-02-26)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-> LoRA (Low-Rank Adaptation) and QLoRA enable parameter-efficient fine-tuning of large language models by decomposing weight matrices into smaller trainable components, dramatically reducing memory requirements while maintaining model performance.
+> **LoRA (Low-Rank Adaptation) and QLoRA enable parameter-efficient fine-tuning of large language models by decomposing weight matrices into smaller trainable components, dramatically reducing memory requirements while maintaining model performance.**
+
+---
 
 ## The Pain Point
 
@@ -15,6 +17,8 @@ Fine-tuning large language models traditionally requires:
 - Risk of catastrophic forgetting of pre-trained knowledge
 
 LoRA solves this by allowing efficient fine-tuning with minimal additional parameters and memory.
+
+---
 
 ## Step-by-Step Guide
 
@@ -75,7 +79,6 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 ```
 
-
 ### 5. Prepare Training Data
 
 ```python
@@ -86,20 +89,9 @@ dataset = load_dataset("tatsu-lab/alpaca")
 
 def format_instruction(example):
     if example["input"]:
-        return f"### Instruction:
-{example['instruction']}
-
-### Input:
-{example['input']}
-
-### Response:
-{example['output']}"
+        return f"### Instruction:\n{example['instruction']}\n\n### Input:\n{example['input']}\n\n### Response:\n{example['output']}"
     else:
-        return f"### Instruction:
-{example['instruction']}
-
-### Response:
-{example['output']}"
+        return f"### Instruction:\n{example['instruction']}\n\n### Response:\n{example['output']}"
 
 # Format and tokenize data
 formatted_dataset = dataset["train"].map(
@@ -161,6 +153,8 @@ base_model = AutoModelForCausalLM.from_pretrained(model_name)
 lora_model = PeftModel.from_pretrained(base_model, "./lora-adapters")
 ```
 
+---
+
 ## Troubleshooting
 
 ### Out of Memory Errors
@@ -184,6 +178,17 @@ lora_model = PeftModel.from_pretrained(base_model, "./lora-adapters")
 - Use AdamW optimizer with weight decay
 - Monitor gradient norms and clip if necessary
 
+---
+
+## Security Considerations
+
+- Never use proprietary or sensitive data for fine-tuning unless you control the environment.
+- Audit training data for privacy and compliance risks.
+- Use isolated environments for training and publishing models.
+- Review dependencies for vulnerabilities before running training scripts.
+
+---
+
 ## Related Resources
 
 - [LoRA Paper](https://arxiv.org/abs/2106.09685) - Original Low-Rank Adaptation research
@@ -191,4 +196,8 @@ lora_model = PeftModel.from_pretrained(base_model, "./lora-adapters")
 - [PEFT Library](https://github.com/huggingface/peft) - Parameter-Efficient Fine-Tuning toolkit
 - [Lit-GPT Repository](https://github.com/Lightning-AI/lit-gpt) - Lightning AI's LoRA implementation
 - [LoRA Insights Tutorial](https://lightning.ai/pages/community/lora-insights/) - Comprehensive LoRA guide by Sebastian Raschka
+
+---
+
+*⚡ Pro tip: Use QLoRA with 4-bit quantization for dramatic memory savings and fast fine-tuning on consumer GPUs!*
 

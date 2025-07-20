@@ -1,4 +1,3 @@
-
 # 2024-07-30: Calling HTTP APIs from Databricks Notebooks
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)

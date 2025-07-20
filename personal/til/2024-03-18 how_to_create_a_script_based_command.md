@@ -1,5 +1,3 @@
-
-
 # TIL: How to Create Script-Based Commands in Raycast (2024-03-18)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
@@ -70,6 +68,8 @@ mv your-script.sh ~/raycast-scripts/
 - Type your script's title
 - Press Enter to execute
 
+---
+
 ## Troubleshooting
 
 ### Script Not Appearing in Raycast
@@ -89,10 +89,25 @@ mv your-script.sh ~/raycast-scripts/
 - Scripts may need full disk access permissions for certain operations
 - Grant necessary permissions in System Preferences → Security & Privacy
 
+---
+
+## Security Considerations
+
+- Avoid storing sensitive information (API keys, passwords) directly in scripts.
+- Use environment variables for secrets and credentials.
+- Grant only necessary permissions to scripts; review what each script can access.
+- Regularly audit scripts for security risks, especially if downloaded from the internet.
+
+---
+
 ## Related Resources
 
 - [Raycast Script Commands Repository](https://github.com/raycast/script-commands) - Community collection of scripts
 - [Raycast Manual: Script Commands](https://manual.raycast.com/script-commands) - Official documentation
 - [Script Command Templates](https://github.com/raycast/script-commands/tree/master/templates) - Ready-to-use templates
 - [ShellCheck](https://www.shellcheck.net/) - Bash script linting tool
+
+---
+
+*⚡ Pro tip: Use Raycast's metadata block to add icons, descriptions, and author info for a polished command experience!*
 

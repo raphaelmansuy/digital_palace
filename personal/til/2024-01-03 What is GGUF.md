@@ -1,17 +1,21 @@
-# 2024-01-03: Understanding GGUF for Local LLM Inference
+# TIL: Understanding GGUF for Local LLM Inference (2024-01-03)
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-> GGUF (GPT-Generated Unified Format) is a file format optimized for local inference of large language models, particularly on Apple Silicon, providing efficient loading and execution compared to traditional PyTorch serialization formats.
+> **GGUF (GPT-Generated Unified Format) is a file format optimized for local inference of large language models, particularly on Apple Silicon, providing efficient loading and execution compared to traditional PyTorch serialization formats.**
+
+---
 
 ## The Pain Point
 
 Traditional machine learning model serialization using PyTorch's pickle format has security vulnerabilities and isn't optimized for local inference. When trying to run large language models locally, especially on Apple Silicon devices, you need a format that:
 
 - Loads efficiently without security risks
-- Supports local inference without cloud dependencies  
+- Supports local inference without cloud dependencies
 - Works well with optimized inference engines like llama.cpp
 - Maintains backward compatibility and metadata
+
+---
 
 ## Step-by-Step Guide
 
@@ -69,6 +73,8 @@ GGUF files contain:
 - **Tensor data**: Model weights in optimized format
 - **Key-value pairs**: Configuration and compatibility information
 
+---
+
 ## Troubleshooting
 
 ### Model Loading Issues
@@ -89,6 +95,17 @@ GGUF files contain:
 - Enable memory mapping with `--mmap` flag
 - Close other applications to free up RAM
 
+---
+
+## Security Considerations
+
+- Only download GGUF models from trusted sources (e.g., official Hugging Face repos).
+- Avoid running untrusted code or models, especially those using custom layers.
+- Safetensors is recommended for secure serialization; avoid pickle for production.
+- Audit downloaded models for malicious code or unexpected behavior.
+
+---
+
 ## Related Resources
 
 - [GGUF Specification](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md) - Official format documentation
@@ -96,4 +113,8 @@ GGUF files contain:
 - [GGUF Models on Hugging Face](https://huggingface.co/models?search=gguf) - Pre-converted model collection
 - [Safetensors Library](https://github.com/huggingface/safetensors) - Secure tensor serialization
 - [GGUF: The Long Way Around](https://vickiboykis.com/2024/02/28/gguf-the-long-way-around/) - Detailed technical explanation
+
+---
+
+*⚡ Pro tip: Use Metal acceleration and quantized GGUF models for the fastest, most efficient local LLM inference on Apple Silicon!*
 
