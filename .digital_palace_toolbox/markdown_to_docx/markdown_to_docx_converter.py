@@ -415,6 +415,132 @@ class MarkdownToDocxConverter:
         
         return '\n'.join(text_flow)
     
+    def _extract_mermaid_theme_config(self, mermaid_code: str) -> dict:
+        """Extract theme configuration from Mermaid code"""
+        import json
+        import re
+        
+        # Look for %%{init: {...}}%% pattern
+        theme_pattern = r'%%\{init:\s*(\{.*?\})\s*\}%%'
+        matches = re.findall(theme_pattern, mermaid_code, re.DOTALL)
+        
+        if not matches:
+            return None
+        
+        try:
+            # Parse the JSON configuration
+            config_str = matches[0]
+            # Handle JavaScript-style object notation (unquoted keys)
+            config_str = re.sub(r'([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:', r'\1"\2":', config_str)
+            config = json.loads(config_str)
+            return config
+        except (json.JSONDecodeError, IndexError) as e:
+            print(f"Warning: Could not parse theme configuration: {e}")
+            return None
+    
+    def _create_mermaid_config_file(self, theme_config: dict) -> str:
+        """Create a mermaid configuration file for custom themes"""
+        import json
+        
+        # Create a complete mermaid configuration
+        full_config = {
+            "theme": "base",
+            "themeVariables": theme_config.get('themeVariables', {}),
+            "flowchart": {
+                "htmlLabels": True,
+                "useMaxWidth": True
+            },
+            "sequence": {
+                "diagramMarginX": 50,
+                "diagramMarginY": 10,
+                "actorMargin": 50,
+                "width": 150,
+                "height": 65,
+                "boxMargin": 10,
+                "boxTextMargin": 5,
+                "noteMargin": 10,
+                "messageMargin": 35,
+                "mirrorActors": True,
+                "bottomMarginAdj": 1,
+                "useMaxWidth": True
+            },
+            "gantt": {
+                "numberSectionStyles": 4,
+                "axisFormat": "%m/%d/%Y",
+                "useMaxWidth": True
+            }
+        }
+        
+        # Merge any additional configuration from the theme config
+        if 'flowchart' in theme_config:
+            full_config['flowchart'].update(theme_config['flowchart'])
+        if 'sequence' in theme_config:
+            full_config['sequence'].update(theme_config['sequence'])
+        if 'gantt' in theme_config:
+            full_config['gantt'].update(theme_config['gantt'])
+        
+        # Create temporary config file
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
+            json.dump(full_config, f, indent=2)
+            return f.name
+    
+    def _generate_mermaid_js_config(self, theme_config: dict) -> str:
+        """Generate JavaScript configuration for Mermaid.js initialization"""
+        import json
+        
+        if theme_config:
+            # Use the custom theme configuration
+            js_config = {
+                "startOnLoad": True,
+                "theme": "base",
+                "themeVariables": theme_config.get('themeVariables', {}),
+                "flowchart": {
+                    "htmlLabels": True,
+                    "useMaxWidth": True
+                },
+                "sequence": {
+                    "useMaxWidth": True
+                },
+                "gantt": {
+                    "useMaxWidth": True
+                }
+            }
+            
+            # Merge any additional configuration
+            if 'flowchart' in theme_config:
+                js_config['flowchart'].update(theme_config['flowchart'])
+            if 'sequence' in theme_config:
+                js_config['sequence'].update(theme_config['sequence'])
+            if 'gantt' in theme_config:
+                js_config['gantt'].update(theme_config['gantt'])
+                
+        else:
+            # Default neutral theme
+            js_config = {
+                "startOnLoad": True,
+                "theme": "neutral",
+                "themeVariables": {
+                    "primaryColor": "#ffffff",
+                    "primaryTextColor": "#000000",
+                    "primaryBorderColor": "#cccccc",
+                    "lineColor": "#333333",
+                    "secondaryColor": "#f8f8f8",
+                    "tertiaryColor": "#e8e8e8"
+                },
+                "flowchart": {
+                    "htmlLabels": True,
+                    "useMaxWidth": True
+                },
+                "sequence": {
+                    "useMaxWidth": True
+                },
+                "gantt": {
+                    "useMaxWidth": True
+                }
+            }
+        
+        return json.dumps(js_config, indent=2)
+    
     def _create_mermaid_cli_image(self, mermaid_code: str, image_path: str) -> str:
         """Create Mermaid image using mermaid-cli (mmdc)"""
         
@@ -424,10 +550,18 @@ class MarkdownToDocxConverter:
         except (subprocess.CalledProcessError, FileNotFoundError):
             raise Exception("mermaid-cli (mmdc) not found. Install with: npm install -g @mermaid-js/mermaid-cli")
         
+        # Parse theme configuration from the mermaid code
+        theme_config = self._extract_mermaid_theme_config(mermaid_code)
+        
         # Create temporary mermaid file
         with tempfile.NamedTemporaryFile(mode='w', suffix='.mmd', delete=False, encoding='utf-8') as f:
             f.write(mermaid_code)
             mermaid_file = f.name
+        
+        # Create config file if custom theme is detected
+        config_file = None
+        if theme_config:
+            config_file = self._create_mermaid_config_file(theme_config)
         
         try:
             # Run mermaid-cli with high-quality settings
@@ -435,12 +569,20 @@ class MarkdownToDocxConverter:
                 'mmdc',
                 '-i', mermaid_file,
                 '-o', image_path,
-                '-t', 'neutral',  # Use neutral theme for better compatibility
                 '-s', '3',        # Scale factor for high resolution
-                '-b', 'white',    # White background
-                '--width', '1200', # Max width
-                '--height', '800'  # Max height
+                '-b', 'transparent',  # Transparent background to preserve theme colors
+                '--width', '1200',    # Max width
+                '--height', '800'     # Max height
             ]
+            
+            # Add theme configuration if available
+            if config_file:
+                cmd.extend(['-c', config_file])
+                print("Using custom theme configuration")
+            else:
+                # Only use default theme if no custom theme is specified
+                cmd.extend(['-t', 'neutral'])
+                print("Using default neutral theme")
             
             subprocess.run(cmd, check=True, capture_output=True, text=True)
             
@@ -452,9 +594,11 @@ class MarkdownToDocxConverter:
                 raise Exception("mermaid-cli produced empty or missing file")
                 
         finally:
-            # Cleanup temporary file
+            # Cleanup temporary files
             try:
                 os.unlink(mermaid_file)
+                if config_file:
+                    os.unlink(config_file)
             except Exception:
                 pass
     
@@ -462,6 +606,12 @@ class MarkdownToDocxConverter:
         """Create Mermaid image using Playwright with Mermaid.js"""
         try:
             from playwright.sync_api import sync_playwright
+            
+            # Extract theme configuration
+            theme_config = self._extract_mermaid_theme_config(mermaid_code)
+            
+            # Generate JavaScript configuration for Mermaid
+            mermaid_config = self._generate_mermaid_js_config(theme_config)
             
             # Create HTML file with Mermaid.js
             html_content = f"""<!DOCTYPE html>
@@ -472,22 +622,7 @@ class MarkdownToDocxConverter:
     <title>Mermaid Diagram</title>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({{ 
-            startOnLoad: true,
-            theme: 'neutral',
-            themeVariables: {{
-                primaryColor: '#ffffff',
-                primaryTextColor: '#000000',
-                primaryBorderColor: '#cccccc',
-                lineColor: '#333333',
-                secondaryColor: '#f8f8f8',
-                tertiaryColor: '#e8e8e8'
-            }},
-            flowchart: {{
-                htmlLabels: true,
-                useMaxWidth: true
-            }}
-        }});
+        mermaid.initialize({mermaid_config});
         
         window.addEventListener('load', () => {{
             setTimeout(() => {{
