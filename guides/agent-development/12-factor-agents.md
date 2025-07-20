@@ -1,5 +1,29 @@
 # 🏗️ 12-Factor Agents: Patterns for Reliable LLM Applications
 
+- [Overview](#overview)
+- [Core Philosophy](#core-philosophy)
+- [The 12 Factors](#the-12-factors)
+  - [Factor 1: Structured Output](#factor-1-structured-output)
+  - [Factor 2: Own Your Prompts](#factor-2-own-your-prompts)
+  - [Factor 3: Context Engineering](#factor-3-context-engineering)
+  - [Factor 4: Tool Use Is Just JSON + Code](#factor-4-tool-use-is-just-json--code)
+  - [Factor 5: Error Handling with Context Management](#factor-5-error-handling-with-context-management)
+  - [Factor 6: Human-in-the-Loop Integration](#factor-6-human-in-the-loop-integration)
+  - [Factor 7: Multi-Channel Integration](#factor-7-multi-channel-integration)
+  - [Factor 9: Micro-Agents Over Monoliths](#factor-9-micro-agents-over-monoliths)
+  - [Factor 10: Stateless Agents](#factor-10-stateless-agents)
+  - [Factor 11: Pause and Resume Capability](#factor-11-pause-and-resume-capability)
+  - [Factor 12: Production Deployment Patterns](#factor-12-production-deployment-patterns)
+- [Common Pitfalls & Anti-Patterns](#common-pitfalls--anti-patterns)
+- [Migration Path: How to Start](#migration-path-how-to-start)
+- [Implementation Strategies](#implementation-strategies)
+- [Real-World Examples](#real-world-examples)
+- [Monitoring and Observability](#monitoring-and-observability)
+- [Cross-References](#cross-references)
+- [Production Considerations](#production-considerations)
+- [Next Steps](#next-steps)
+- [Key Takeaways](#key-takeaways)
+
 
 **Implementation**:
 
@@ -586,17 +610,17 @@ alerts = [
 
 ### **Related Digital Palace Content**
 
-- **[AI Agents Guide](../ai-agents.md)** - Comprehensive implementation patterns
-- **[Agent Development SOP](./sop_ai_agent.md)** - Standard operating procedures  
-- **[Production Deployment](../deployment.md)** - Scaling agents to production
-- **[Dex Horthy Profile](../../people/dex-horthy.md)** - Author background and expertise
-- **[HumanLayer](../../tools/ai-tools-master-directory.md#human-in-the-loop)** - Human-in-the-loop infrastructure
+**[AI Agents Guide](../ai-agents.md)** - Comprehensive implementation patterns
+**[Agent Development SOP](./sop_ai_agent.md)** - Standard operating procedures  
+**[Production Deployment](../deployment.md)** - Scaling agents to production
+**[Dex Horthy Profile](../../people/dex-horthy.md)** - Author background and expertise
+**[HumanLayer](../../tools/ai-tools-master-directory.md#human-in-the-loop-platforms)** - Human-in-the-loop infrastructure
 
 ### **Framework Comparisons**
 
-- **[AutoGen](../../reference/techniques/autogen/README.md)** - Microsoft's multi-agent framework
-- **[Design Patterns for LLM Applications](../../reference/techniques/dessign_patterns_for_llm_applications/README.md#agent-patterns)** - Architectural patterns
-- **[Context Management](../../reference/technical-articles/2025-06-29-context-management-llm-agents.md)** - Advanced context strategies
+**[AutoGen](../../reference/techniques/autogen/README.md)** - Microsoft's multi-agent framework
+**[Design Patterns for LLM Applications](../../reference/techniques/dessign_patterns_for_llm_applications/README.md)** - Architectural patterns
+**[Context Management](../../reference/technical-articles/2025-06-29-context-management-llm-agents.md)** - Advanced context strategies
 
 ### **Production Considerations**
 
@@ -624,7 +648,7 @@ alerts = [
 
 ### **Community & Resources**
 
-- **GitHub Repository**: [12-Factor Agents](https://github.com/human-layer/12-factor-agents) - Official implementation examples
+<!-- GitHub Repository: Link removed, repository not found (404) -->
 - **HumanLayer Platform**: [humanlayer.dev](https://humanlayer.dev) - Human-in-the-loop infrastructure
 - **AI Tinkerers**: San Francisco meetups on practical AI agent development
 
