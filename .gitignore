@@ -2,33 +2,8 @@ working_doc/
 .DS_Store
 data/
 .obsidian/
-tasks/
+./tasks/
 chroma_data/
 chroma.sqlite3
-prompts/
+.prompts/
 node_modules/
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-.env
-.venv
-# Jupyter Notebook
-.ipynb_checkpoints
-# VS Code
-.vscode/
-# Test and coverage
-.coverage
-.pytest_cache/
-htmlcov/
-# Logs
-*.log
-# MacOS
-.DS_Store

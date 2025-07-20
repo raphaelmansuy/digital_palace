@@ -8,11 +8,14 @@
 
 ---
 
-## The Problem Every Leader Faces
+## Uncertainty Routing: When Business Decisions Have No Clear Answer
 
-You're facing a strategic decision with incomplete information, conflicting stakeholder interests, and significant risk. Traditional decision frameworks fail when uncertainty is high and stakes are substantial. Most executives either delay decisions (costing opportunities) or rush to judgment (increasing risk exposure).
 
-## The Solution: Uncertainty Routing
+## 👉 The Problem Every Leader Faces
+
+You're facing a strategic decision with incomplete information, conflicting stakeholder interests, and significant risk. Traditional decision frameworks fail when uncertainty is high and stakes are substantial. Most executives either delay decisions (costing opportunities) or rush to judgment (increasing risk).
+
+## 👉 The Solution: Uncertainty Routing
 
 Uncertainty routing systematically maps decision complexity to appropriate reasoning approaches. Instead of applying one-size-fits-all frameworks, this technique routes different aspects of complex decisions to specialized analytical methods based on uncertainty levels and stakeholder impacts.
 
@@ -23,7 +26,7 @@ Uncertainty routing systematically maps decision complexity to appropriate reaso
 3. **Low Certainty + Low Stakes**: Rapid experimentation approaches
 4. **Low Certainty + High Stakes**: Uncertainty routing with multiple validation paths
 
-## Real-World Implementation
+## 👉 Real-World Implementation
 
 **Strategic Market Entry Decision:**
 
@@ -52,7 +55,7 @@ Provide routing recommendations with confidence intervals for each component."
 
 **Result:** Instead of generic analysis, you get systematic uncertainty management with appropriate methods for each decision element.
 
-## Business Impact
+## 👉 Business Impact
 
 **Quantifiable Outcomes:**
 - **Decision Quality**: 234% improvement in long-term outcome success
@@ -66,7 +69,7 @@ Provide routing recommendations with confidence intervals for each component."
 - Strategic initiative success rate improves from 23% to 71%
 - Executive team alignment increases by 156%
 
-## Advanced Applications
+## 👉 Advanced Applications
 
 **Investment Committee Decisions:**
 Route financial analysis (high certainty) through quantitative models while routing market positioning (low certainty) through scenario planning and expert consultation.
@@ -77,7 +80,7 @@ Route technical feasibility (moderate certainty) through engineering assessment 
 **Merger & Acquisition Evaluation:**
 Route financial due diligence (high certainty) through standard frameworks while routing cultural integration (high uncertainty) through specialized change management analysis.
 
-## Your Implementation Strategy
+## 👉 Your Implementation Strategy
 
 1. **Decision Audit**: Document 3 recent complex decisions and their uncertainty components
 2. **Routing Practice**: Apply uncertainty classification to one current decision
@@ -85,7 +88,7 @@ Route financial due diligence (high certainty) through standard frameworks while
 4. **Integration Testing**: Combine multiple analysis methods for one strategic choice
 5. **Outcome Tracking**: Measure decision quality improvements over 90 days
 
-## Join the Strategic Conversation
+## 👉 Join the Strategic Conversation
 
 What's the most challenging decision you're facing where traditional frameworks feel inadequate? Share your uncertainty - together we'll explore how routing different aspects to specialized methods can unlock better strategic outcomes.
 

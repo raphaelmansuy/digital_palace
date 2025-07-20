@@ -20,7 +20,7 @@
 - Code blocks and inline code don't count toward word limit
 - Link text counts, but URLs don't
 
-‼️ The Title of the linkedin post me repeated in the content and counted as part of the word count.
+‼️ **CRITICAL REQUIREMENT:** The content between rulers MUST start with the post title as a `## [Title]` header (WITHOUT 👉 emoji). This title is counted as part of the word count.
 
 ---
 
@@ -53,10 +53,13 @@
 - **Content:** Keep examples concise and relevant
 
 #### Headers and Structure
-- Use `##` for main sections
-- Use `###` for subsections
+- Use `## 👉` for main sections with emoji prefix
+- **MANDATORY:** Content between rulers MUST start with post title as `## [Title]` (WITHOUT 👉 emoji)
+- Use `### 👉` for subsections
 - Use `**bold**` for emphasis, not headers
 - Maintain consistent hierarchy
+- All level 2 headers (##) must include 👉 emoji EXCEPT the opening title
+- Format: `## 👉 Section Title`
 
 #### Lists and Bullets
 - Surround lists with blank lines

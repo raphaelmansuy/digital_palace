@@ -1,0 +1,117 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Fix LinkedIn Post 01",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_01_100b_prompt_engineering_opportunity.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix LinkedIn Post 06",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_06_few_shot_learning_company_standards.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix LinkedIn Post 07",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_07_constraint_based_prompting_real_world_solutions.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix LinkedIn Post 08",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_08_output_format_control_professional_ready_results.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix LinkedIn Post 09",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_09_iterative_refinement_ai_excellence.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix LinkedIn Post 10",
+            "type": "shell",
+            "command": "python3",
+            "args": ["check_post.py", "personal/elitizon_linkedin/post_10_multi_step_workflows_complex_projects.md"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Fix All LinkedIn Posts - Batch Check",
+            "type": "shell",
+            "command": "bash",
+            "args": ["-c", "for file in personal/elitizon_linkedin/post_*.md; do echo \"=== $file ===\"; python3 check_post.py \"$file\" 2>/dev/null || echo \"File error\"; echo; done"],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Check LinkedIn Post Compliance Status",
+            "type": "shell",
+            "command": "bash",
+            "args": ["-c", "echo 'LinkedIn Post Compliance Report:'; echo '================================'; compliant=0; total=0; for file in personal/elitizon_linkedin/post_*.md; do total=$((total+1)); if python3 check_post.py \"$file\" >/dev/null 2>&1; then compliant=$((compliant+1)); echo \"✅ $(basename \"$file\")\"; else echo \"❌ $(basename \"$file\")\"; fi; done; echo; echo \"Summary: $compliant/$total posts compliant\""],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
