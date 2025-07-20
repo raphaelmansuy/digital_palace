@@ -6,3 +6,4 @@ data/
 chroma_data/
 chroma.sqlite3
 .prompts/
+node_modules/
