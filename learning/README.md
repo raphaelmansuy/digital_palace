@@ -44,12 +44,10 @@
 *For those with little to no AI experience*
 
 ### **Phase 1: Foundations (Weeks 1-2)**
+[🟢 **Featured Beginner Curriculum:**]
+- **[Microsoft AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners)** — A free, hands-on, 12-week curriculum covering symbolic AI, neural networks, computer vision, NLP, ethics, and more. Includes Jupyter notebooks, labs, quizzes, and practical projects. Ideal for those starting their AI journey. (39k+ stars, actively maintained)
 
 **Essential Concepts**
-- What is AI and how does it work?
-- Understanding Large Language Models
-- Basic AI terminology and concepts
-- Prompt engineering fundamentals
 
 **📚 Learning Resources:**
 - [AI Fundamentals Course](../07-courses/ai_courses.md#fundamentals)

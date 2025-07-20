@@ -62,6 +62,9 @@ Explore these high-quality blog posts, hands-on guides, and deep dives from the 
 - **[AI Engineering Hub (patchy631, GitHub)](https://github.com/patchy631/ai-engineering-hub)**  
   A comprehensive, hands-on repository for mastering AI engineering in production. Features in-depth tutorials on LLMs, RAGs, agentic workflows, and real-world AI agent applications. Includes ready-to-run code, practical guides, and scalable patterns for deploying advanced agents, memory, and retrieval systems. Ideal for developers, researchers, and teams building robust, production-grade AI solutions. (14.4k+ stars, active development)
 
+- **[Annotated Deep Learning Paper Implementations (labml.ai, GitHub)](https://github.com/labmlai/annotated_deep_learning_paper_implementations)**  
+  A comprehensive, actively maintained collection of 60+ PyTorch implementations of influential deep learning papers. Each implementation is paired with side-by-side notes and explanations, covering transformers, GANs, RL, optimizers, normalization, and more. Ideal for researchers, students, and practitioners seeking clear, annotated code and practical insights into state-of-the-art neural network architectures. (62k+ stars, weekly updates)
+
 - **Kiro: Next-Gen Agentic IDE**  
   Kiro is a next-generation agentic IDE that helps you go from prompt to production with spec-driven workflows. It unpacks requirements from a single prompt, generates technical designs, creates and sequences tasks, and automates code quality with event-driven hooks. Features deep integration with your codebase, Model Context Protocol (MCP) support, and a modern AI coding experience. [Docs](https://kiro.dev/docs/) | [Download](https://kiro.dev/downloads/)
 
