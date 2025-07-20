@@ -1,101 +1,98 @@
 
 
+# TIL: How to Create Script-Based Commands in Raycast (2024-03-18)
+
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-# 🚀 How to Create a Script-Based Command in Raycast
-
-> **Raycast Script Commands** let you trigger custom scripts from anywhere on your Mac, boosting productivity for repetitive or complex tasks.
+> **Automate Mac workflows with custom Raycast scripts** – Create script commands in any language to trigger automations, control your Mac, and boost productivity directly from Raycast.
 
 ---
 
-## What Are Script Commands?
+## The Pain Point
 
-Script Commands are small scripts (Bash, Python, AppleScript, etc.) that you can run directly from Raycast. They are perfect for:
-- Automating daily workflows
-- Controlling your Mac (e.g., toggling hidden files)
-- Triggering dev tasks (e.g., git actions, deployments)
-- Integrating with APIs or home automation
+Repetitive tasks like toggling settings, triggering deployments, or running complex workflows require switching between apps and remembering commands. Raycast script commands eliminate this friction.
 
 ---
 
-## Step-by-Step: Create Your Own Script Command
+## Step-by-Step Guide
 
-1. **Write Your Script**
-   - Use Bash, Python, AppleScript, Swift, etc.
-   - Make it executable (`chmod +x your-script.sh`).
+### 1. Write Your Script
 
-2. **Add Metadata Block** (at the top of your script):
-   ```bash
-   #!/bin/bash
-   # Required parameters:
-   # @raycast.schemaVersion 1
-   # @raycast.title Hello World
-   # @raycast.mode fullOutput
-   # Optional parameters:
-   # @raycast.icon 🤖
-   # @raycast.author Your Name
-   # @raycast.description Prints Hello World
-   echo "Hello, World!"
-   ```
+Create a script in any language (Bash, Python, AppleScript, Swift):
 
-3. **Save the Script**
-   - Place it in a folder (e.g., `~/raycast-scripts/`).
+```bash
+#!/bin/bash
+echo "Hello, World!"
+```
 
-4. **Add Script Directory to Raycast**
-   - Open Raycast → Preferences → Extensions → Script Commands → Add Script Directory → Select your folder.
+Make it executable:
 
-5. **Run Your Command**
-   - Open Raycast, type your script's title, and run it!
+```bash
+chmod +x your-script.sh
+```
 
----
+### 2. Add Metadata Block
 
-## Metadata Block Explained
-
-The metadata block (comments starting with `# @raycast.`) configures how Raycast displays and runs your script. Key fields:
-- `@raycast.schemaVersion` (required): Always set to 1.
-- `@raycast.title` (required): Name shown in Raycast.
-- `@raycast.mode` (required): `fullOutput`, `inline`, or `compact` (controls output display).
-- `@raycast.icon`: Emoji, file path, or URL for icon.
-- `@raycast.author`, `@raycast.description`: For documentation.
-
-See [full metadata docs](https://github.com/raycast/script-commands#metadata).
-
----
-
-## Best Practices
-
-- **Use ShellCheck** to lint Bash scripts for errors.
-- **Keep scripts simple and fast.**
-- **Handle errors**: Exit with non-zero status and print a helpful message.
-- **Use arguments** for flexible commands (see Raycast docs for details).
-- **Add icons and descriptions** for clarity.
-
----
-
-## Example: Bash Script Command
+Add Raycast metadata at the top of your script:
 
 ```bash
 #!/bin/bash
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Show Date
-# @raycast.mode inline
+# @raycast.title Hello World
+# @raycast.mode fullOutput
 # Optional parameters:
-# @raycast.icon 📅
-# @raycast.author Jane Doe
-# @raycast.description Shows the current date and time
-date
+# @raycast.icon 🤖
+# @raycast.author Your Name
+# @raycast.description Prints Hello World
+
+echo "Hello, World!"
 ```
 
----
+### 3. Save and Organize
 
-## Resources
+Place your scripts in a dedicated folder:
 
-- [Raycast Script Commands Repo](https://github.com/raycast/script-commands)
-- [Raycast Manual: Script Commands](https://manual.raycast.com/script-commands)
-- [Script Command Templates](https://github.com/raycast/script-commands/tree/master/templates)
+```bash
+mkdir ~/raycast-scripts
+mv your-script.sh ~/raycast-scripts/
+```
 
----
+### 4. Add Script Directory to Raycast
 
-**Now you can automate anything on your Mac with just a script and Raycast!**
+- Open Raycast → Preferences → Extensions → Script Commands
+- Click "Add Script Directory"
+- Select your `~/raycast-scripts/` folder
+
+### 5. Run Your Command
+
+- Open Raycast (⌘ + Space)
+- Type your script's title
+- Press Enter to execute
+
+## Troubleshooting
+
+### Script Not Appearing in Raycast
+
+- Verify the script file has executable permissions: `chmod +x your-script.sh`
+- Check the metadata block syntax (no typos in `@raycast.` fields)
+- Ensure the script directory is properly added to Raycast preferences
+
+### Script Execution Errors
+
+- Test the script directly in Terminal first
+- Use `shellcheck` to validate Bash scripts for common errors
+- Check that all required dependencies are installed and in PATH
+
+### Permission Issues
+
+- Scripts may need full disk access permissions for certain operations
+- Grant necessary permissions in System Preferences → Security & Privacy
+
+## Related Resources
+
+- [Raycast Script Commands Repository](https://github.com/raycast/script-commands) - Community collection of scripts
+- [Raycast Manual: Script Commands](https://manual.raycast.com/script-commands) - Official documentation
+- [Script Command Templates](https://github.com/raycast/script-commands/tree/master/templates) - Ready-to-use templates
+- [ShellCheck](https://www.shellcheck.net/) - Bash script linting tool
 

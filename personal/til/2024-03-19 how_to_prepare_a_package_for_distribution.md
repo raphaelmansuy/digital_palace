@@ -1,63 +1,128 @@
 
+# TIL: How to Prepare a Python Package for Distribution (2024-03-19)
 
-# [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-### Prepare Your Package for Distribution
+> **Distribute Python packages to PyPI with automated workflows** – Learn to prepare, build, and publish Python packages using modern tools and GitHub Actions for seamless distribution.
 
-1. **Ensure your `pyproject.toml` is complete**: This file should contain all the necessary metadata about your package, including the name, version, author, and any dependencies.
+---
 
-2. **Write a comprehensive `README.md`**: This file should include an introduction to your package, installation instructions, usage examples, and any other relevant information for users.
+## The Pain Point
 
-3. **Include a `LICENSE` file**: This file should contain the full text of the license under which you are releasing your package. You've chosen the MIT License, which is already included in your `LICENCE.md`.
+Publishing Python packages manually is error-prone and time-consuming. Getting the metadata right, building distributions, and managing PyPI uploads requires proper setup and automation.
 
-4. **Ensure your package has a version number**: Follow semantic versioning. It looks like your `pyproject.toml` already specifies a version (`version = "0.1.3"`).
+---
 
-5. **Create a source distribution and wheel**: Run `poetry build` to create the distribution files. This will generate a `.tar.gz` file and a `.whl` file in the `dist` directory.
+## Step-by-Step Guide
 
-### Publish Your Package to PyPI
+### 1. Prepare Your Package for Distribution
 
-1. **Register an account on PyPI**: If you don't already have one, create an account on [PyPI](https://pypi.org/).
+Ensure your `pyproject.toml` is complete with all necessary metadata:
 
-2. **Install Twine**: Twine is a utility for publishing Python packages on PyPI. You can install it using pip:
+```toml
+[project]
+name = "your-package-name"
+version = "0.1.3"
+description = "Brief package description"
+readme = "README.md"
+authors = [{name = "Your Name", email = "you@example.com"}]
+license = {text = "MIT"}
+dependencies = ["requests>=2.25.0"]
+```
 
-   ```bash
-   pip install twine
-   ```
+Write a comprehensive `README.md` with installation instructions and usage examples.
 
-3. **Upload your package**: Use Twine to upload your distribution files to PyPI:
+Include a `LICENSE` file with the full license text.
 
-   ```bash
-   twine upload dist/*
-   ```
+### 2. Build Distribution Files
 
-   You will be prompted to enter your PyPI username and password.
+Create source distribution and wheel files:
 
-4. **Verify the upload**: Once the upload is complete, you should be able to see your package listed on PyPI, and it should be installable via pip:
+```bash
+poetry build
+# or with build tool
+python -m build
+```
 
-   ```bash
-   pip install your-package-name
-   ```
+This generates `.tar.gz` and `.whl` files in the `dist` directory.
 
-### Automate Package Deployment with GitHub Actions
+### 3. Publish to PyPI
 
-You can automate the deployment of your package to PyPI using GitHub Actions whenever you push a new tag to your repository. Update your `.github/workflows/build.yml` file to include a step for publishing to PyPI:
+Install Twine for uploading:
+
+```bash
+pip install twine
+```
+
+Upload your package:
+
+```bash
+twine upload dist/*
+```
+
+Enter your PyPI username and password when prompted.
+
+### 4. Verify Installation
+
+Test that your package is installable:
+
+```bash
+pip install your-package-name
+```
+
+### 5. Automate with GitHub Actions
+
+Create `.github/workflows/publish.yml` for automated publishing:
 
 ```yml
+name: Publish to PyPI
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+    - name: Build package
+      run: python -m build
     - name: Publish to PyPI
-      if: startsWith(github.ref, 'refs/tags')
       uses: pypa/gh-action-pypi-publish@v1.4.2
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
 ```
 
-Before using this GitHub Action, you'll need to:
+---
 
-1. **Create a PyPI API token**: Log in to PyPI, go to your account settings, and create an API token with the necessary permissions to upload packages.
+## Troubleshooting
 
-2. **Add the API token to your GitHub repository secrets**: Go to your repository settings on GitHub, find the "Secrets" section, and add your PyPI API token as a new secret (e.g., `PYPI_API_TOKEN`).
+- If upload fails, check your PyPI credentials and package name availability
+- For build errors, ensure `pyproject.toml` follows PEP 621 standards
+- Use TestPyPI first to validate your package: `twine upload --repository testpypi dist/*`
+- See [Python Packaging Guide](https://packaging.python.org/) for detailed help
 
-With these steps, your package will be automatically published to PyPI whenever you push a new tag that starts with `v`, indicating a version (e.g., `v0.1.4`).
+---
 
-Remember to update your package version in `pyproject.toml` before tagging a new release to avoid conflicts on PyPI.
+## Related Resources
+
+- [Python Packaging User Guide](https://packaging.python.org/)
+- [PyPI Documentation](https://pypi.org/help/)
+- [Twine Documentation](https://twine.readthedocs.io/)
+- [GitHub Actions for Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
+
+---
+
+*Automate your Python package publishing workflow for reliable, consistent distribution to PyPI.*
 

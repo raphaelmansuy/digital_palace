@@ -1,16 +1,24 @@
 
 
+# TIL: How to Use the LLM Command-Line Tool (2024-03-03)
+
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
 
-# How to use the `llm` Command-Line Tool
-
-> **llm** is a powerful CLI and Python library for interacting with OpenAI, Anthropic, Google Gemini, Meta Llama, and dozens of other LLMs—both via remote APIs and local models (Ollama, etc.).
+> **Interact with multiple LLMs from the command line** – Use the LLM CLI tool to work with OpenAI, Anthropic, Google Gemini, local models, and more from a unified interface.
 
 ---
 
-## 🚀 Quick Start
+## The Pain Point
 
-Install with pip, Homebrew, pipx, or uv:
+Managing multiple LLM APIs and local models with different interfaces, authentication methods, and command structures makes AI experimentation complex and time-consuming.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Install LLM
+
+Install using your preferred package manager:
 
 ```bash
 pip install llm
@@ -22,7 +30,9 @@ pipx install llm
 uv tool install llm
 ```
 
-Set your API key (for OpenAI, Gemini, Anthropic, etc.):
+### 2. Set API Keys
+
+Configure keys for different providers:
 
 ```bash
 llm keys set openai
@@ -30,86 +40,94 @@ llm keys set gemini
 llm keys set anthropic
 ```
 
+### 3. Basic Usage
+
+Run simple prompts:
+
+```bash
+llm "Ten fun names for a pet pelican"
+```
+
+### 4. Use System Prompts
+
+Add context or instructions with system prompts:
+
+```bash
+cat myfile.py | llm -s "Explain this code"
 ---
 
-## 🧠 Basic Usage
+*The LLM CLI tool unifies access to multiple language models with a simple, consistent interface for AI experimentation and automation.*
+```
 
-- **Run a prompt:**
-  ```bash
-  llm "Ten fun names for a pet pelican"
-  ```
-- **Use a specific model:**
-  ```bash
-  llm -m "mistral:latest" "Write a haiku about clouds."
-  llm -m stablelm-2-zephyr-1_6b-Q4_1 "Summarize this text: ..."
-  ```
-- **Set the default model:**
-  ```bash
-  llm models default stablelm-2-zephyr-1_6b-Q4_1
-  ```
-- **Use a system prompt:**
-  ```bash
-  cat myfile.py | llm -s "Explain this code"
-  pbpaste | llm -s "summarize this:" -m mistral:latest | tee /dev/tty | pbcopy
-  ```
+### 5. Create and Use Templates
+
+Save reusable prompts with parameters:
+
+```bash
+# Create a template
+llm 'Summarize this: $input' --save summarize
+llm --system 'Summarize this text in the voice of $voice' \
+  --model gpt-4 -p voice GlaDOS --save summarize
+
+# Use a template
+cat text1.txt | llm -t summarize
+llm -t summarize -p input @myfile.txt
+
+# List templates
+llm templates
+```
+
+### 6. Advanced Features
+
+Interactive chat:
+
+```bash
+llm chat -m gpt-4.1
+```
+
+Extract text from images:
+
+```bash
+llm "extract text" -a scanned-document.jpg
+```
+
+Work with embeddings:
+
+```bash
+llm embed "Text to embed"
+llm similar "Find similar text"
+```
+
+Use local models via plugins:
+
+```bash
+llm install llm-ollama
+llm -m llama3.2:latest "What is the capital of France?"
+```
 
 ---
 
-## 📝 Templates
+## Troubleshooting
 
-Templates let you save and reuse prompts with parameters.
-
-- **Create a template:**
-  ```bash
-  llm 'Summarize this: $input' --save summarize
-  llm -s 'Summarize this' --save summarize
-  llm --system 'Summarize this text in the voice of $voice' \
-    --model gpt-4 -p voice GlaDOS --save summarize
-  ```
-- **Use a template:**
-  ```bash
-  cat text1.txt | llm -t summarize
-  llm -t summarize -p input @myfile.txt
-  ```
-- **List templates:**
-  ```bash
-  llm templates
-  ```
+- If API keys aren't working, verify with: `llm keys list`
+- For model issues, check available models: `llm models list`
+- Install plugins for local models: `llm install llm-ollama`
+- Use `llm --help` for complete command reference
 
 ---
 
-## 🔧 Advanced Features
+## Related Resources
 
-- **Interactive chat:**
-  ```bash
-  llm chat -m gpt-4.1
-  ```
-- **Extract text from images:**
-  ```bash
-  llm "extract text" -a scanned-document.jpg
-  ```
-- **Work with embeddings:**
-  ```bash
-  llm embed "Text to embed"
-  llm similar "Find similar text"
-  ```
-- **Use plugins for local models:**
-  ```bash
-  llm install llm-ollama
-  llm -m llama3.2:latest "What is the capital of France?"
-  ```
-- **Count tokens:**
-  ```bash
-  cat my-file.txt | ttok
-  ```
-- **Summarize a webpage:**
-  ```bash
-  curl -s https://www.nytimes.com/ | strip-tags .story-wrapper | llm -s 'summarize the news' -m stablelm2
-  ```
-- **Search in codebase and analyze:**
-  ```bash
-  symbex 'test*csv*' | llm --system 'based on these tests guess what this tool does'
-  ```
+- [LLM Documentation](https://llm.datasette.io/)
+- [LLM Plugin Directory](https://llm.datasette.io/en/stable/plugins/directory.html)
+- [Simon Willison's Blog](https://simonwillison.net/tags/llm/)
+- [GitHub Repository](https://github.com/simonw/llm)
+
+---
+
+---
+
+*The LLM CLI tool unifies access to multiple language models with a simple, consistent interface for AI experimentation and automation.*
 
 ---
 

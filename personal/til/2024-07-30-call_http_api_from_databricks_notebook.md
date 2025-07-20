@@ -1,7 +1,21 @@
 
-# Calling HTTP API from Databricks Notebook
+# 2024-07-30: Calling HTTP APIs from Databricks Notebooks
 
 [![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
+> Learn how to make HTTP requests (GET and POST) from Databricks notebooks using Scala and Apache HttpClient library for external API integration and data retrieval.
+
+## The Pain Point
+
+When working with Databricks notebooks, you often need to:
+
+- Integrate with external REST APIs for data enrichment
+- Make HTTP calls to fetch metadata or configuration data
+- Post processed results to external services
+- Handle authentication and error scenarios properly
+- Work within Databricks' distributed computing environment
+
+The challenge is implementing reliable HTTP communication while handling potential failures gracefully.
 
 ```scala
 // Import necessary libraries

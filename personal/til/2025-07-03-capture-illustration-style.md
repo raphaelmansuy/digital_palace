@@ -1,8 +1,57 @@
-# TIL: Capturing and Reusing Illustration Style for Variants
 
-## How to Extract and Reapply Illustration Style for Generative Art
+# TIL: Capture and Reuse Illustration Style for Generative Art Variants (2025-07-03)
 
-When you want to generate new images that match the style of a real illustration, it's crucial to capture the style in a structured, detailed way. This allows you to create variants—such as changing the subject—while preserving the original's artistic feel.
+[![Back to TIL Hub](https://img.shields.io/badge/←%20Back%20to-TIL%20Hub-blue?style=for-the-badge)](README.md)
+
+> **Extract and reuse illustration style for consistent generative art** – Use structured prompts and JSON to capture style, then generate new variants by changing only the subject.
+
+---
+
+## The Pain Point
+
+Generating art variants that match the style of a real illustration is difficult without a structured approach. Most models lose consistency when the subject changes.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Use a Detailed Style Extraction Prompt
+
+Analyze your reference illustration with a prompt that requests extreme detail and outputs a structured JSON. Example:
+
+```text
+"Please analyze the following image as an illustration and describe it in extreme detail, focusing on its artistic medium, style, technique, narrative elements, and visual characteristics. The goal is to capture enough information that one could potentially recreate a similar illustration based solely on this description. Provide the description in a JSON format."
+```
+
+Include keys for title, summary, medium, style, mood, narrative, subject, setting, composition, lighting, color palette, line work, texture, effects, and keywords.
+
+### 2. Example Output
+
+```json
+{...existing code...}
+```
+
+### 3. Generate a Variant by Changing the Subject
+
+Modify only the `subject_details` (and related narrative fields if needed). For example, change the fox to a "robot owl" but keep all style, composition, and color details the same. This ensures the new image matches the original's look and feel.
+
+---
+
+## Troubleshooting
+
+- If the style is not preserved, check that all style/composition fields remain unchanged except for the subject.
+- Keep the JSON under 400 tokens for best results with most models.
+
+---
+
+## Related Resources
+
+- [Prompt Engineering for Art](https://www.promptingguide.ai/)
+- [Generative Art Consistency](https://aiartists.org/generative-art)
+
+---
+
+*Summary: Use a detailed prompt to extract style as structured JSON. Keep all style/composition fields the same for variants. Change only the subject and narrative to generate new images in the same style.*
 
 ### Step 1: Use a Detailed Style Extraction Prompt
 

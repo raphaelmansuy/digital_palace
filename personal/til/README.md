@@ -22,6 +22,8 @@ Perfect for developers, AI practitioners, and anyone building with modern tools.
 
 ### 2025 Entries
 
+- **[How to Use Mac OS Automator Quick Action to Get File Path in Finder](2025-07-20-macos-automator-quick-action-get-file-path.md)** - Step-by-step guide to creating a Quick Action in Automator that copies the POSIX path of selected files in Finder to your clipboard (July 2025)
+
 - **[GitHub Copilot CLI Aliases Setup](2025-07-13-github-copilot-cli-aliases.md)** - Quick productivity boost with `ghcs` and `ghce` aliases for AI-powered command suggestions and explanations in terminal workflows (July 2025) → *See also: [Git Aliases](2024-07-27-git-alias.md), [Agent Mode Tools](2025-01-09-vscode-agent-mode-standard-tools.md)*
 
 - **[VS Code 1.102: 7 Features That Actually Matter](2025-07-11-vscode-1.102.md)** - Practical guide to VS Code 1.102's most impactful features with actionable setup instructions and real-world productivity gains (July 2025) → *See also: [Chat Mode Configuration](2025-07-09-vscode-chat-mode-configuration.md), [MCP Server Configuration](2025-01-09-vscode-mcp-server-configuration.md)*
