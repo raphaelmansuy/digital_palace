@@ -2,7 +2,43 @@
 
 A collection of utility scripts for maintaining and validating the Digital Palace repository.
 
-## 🔗 Link Checkers
+## � Document Conversion
+
+### Markdown to DOCX Converter
+
+Converts Markdown files to professional Word documents with code blocks as syntax-highlighted PNG images.
+
+**Location:** `markdown_to_docx/`
+
+**Usage:**
+```bash
+# Quick start
+cd markdown_to_docx
+pip install -r requirements.txt
+python example_usage.py
+
+# Command line
+python markdown_to_docx_converter.py input.md output.docx
+
+# Custom file conversion
+python example_usage.py path/to/file.md output.docx
+```
+
+**Features:**
+- ✅ Full Markdown support (headers, lists, bold, italic, inline code)
+- ✅ Syntax-highlighted code blocks as PNG images
+- ✅ Professional DOCX formatting with proper styles
+- ✅ Support for 500+ programming languages
+- ✅ Command-line and programmatic API
+- ✅ Robust error handling and fallbacks
+
+**Perfect For:**
+- Converting README files to Word documents
+- Technical documentation with code examples
+- Blog posts and articles for publication
+- Academic papers with code snippets
+
+## �🔗 Link Checkers
 
 ### Internal Link Checker
 
