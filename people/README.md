@@ -2,7 +2,7 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-8-blue?style=flat-square)](#alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-9-blue?style=flat-square)](#alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-green?style=flat-square)](#recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#by-category)
 
@@ -44,6 +44,7 @@
 | ["Raphaël MANSUY"](./raphaël-mansuy.md) | "CTO & Co-founder" | "ELITIZON Ltd" | `cto,  ai,  founder` |
 | ["Sam Altman"](./sam-altman.md) | "CEO and Co-founder" | "OpenAI" | `ceo,  entrepreneur,  investor` |
 | ["Timnit Gebru"](./timnit-gebru.md) | "Founder & Executive Director" | "DAIR Institute" | `ai-ethics,  researcher,  entrepreneur` |
+| ["Nir Diamant"](./nir-diamant.md) | "AI Agentic Systems Architect, Open Source Maintainer" | "DiamantAI, Open Source" | `ai-agents, agent-frameworks, production-ai, open-source, orchestration, multi-agent, genai, tutorials` |
 
 ---
 
@@ -88,7 +89,7 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 8 people
+- **Total Profiles**: 9 people
 - **Categories**: 7 primary categories
 - **Last Updated**: July 2025
 - **Update Frequency**: Monthly maintenance

@@ -37,3 +37,7 @@ Developers can use LLamaIndex to quickly add private/custom data to enhance exis
 Read more about LLamaIndex [here](https://www.llamaindex.ai).
 
 [A guide about how to start with LLamaIndex](../llama_index/README.md).
+
+## Additional Resources
+
+- **[Agents Towards Production (Nir Diamant, GitHub)](https://github.com/NirDiamant/agents-towards-production)** - Comprehensive, code-first playbook for building and deploying GenAI agents. Features hands-on tutorials for orchestration, memory, security, monitoring, deployment, and more. Ideal for teams seeking production-grade agent systems.

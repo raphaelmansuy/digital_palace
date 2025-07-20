@@ -1,4 +1,3 @@
-
 # 🏛️ Digital Palace
 
 > **Your AI Knowledge Hub**  
@@ -55,11 +54,15 @@
 
 Explore these high-quality blog posts, hands-on guides, and deep dives from the AI community:
 
-- **[Probability and Statistics for Data Science (ps4ds.net)](https://www.ps4ds.net/)**  
   A comprehensive, free resource for mastering probability and statistics in data science. Includes a preprint textbook, 100+ Python notebooks with real-world datasets, 100+ instructional videos, and solutions to 200 exercises. Authored by Carlos Fernandez-Granda (NYU), this site is ideal for learners and practitioners seeking practical, foundational knowledge in statistics, machine learning, and data science. All materials are open-access and regularly updated.
 
+- **[Agents Towards Production (Nir Diamant, GitHub)](https://github.com/NirDiamant/agents-towards-production)**  
+  The open-source playbook for turning GenAI agents into real-world products. Features hands-on, code-first tutorials for every layer of production-grade agent stacks: orchestration, memory, security, monitoring, deployment, multi-agent coordination, and more. Includes ready-to-run notebooks, practical guides, and proven patterns for scaling agents from prototype to production. Ideal for developers, researchers, and teams building robust, scalable AI agent systems. (8.7k+ stars, active development)
 
-- **[Kiro: Agentic IDE for Spec-Driven Development](https://kiro.dev/blog/introducing-kiro/)**  
+- **[AI Engineering Hub (patchy631, GitHub)](https://github.com/patchy631/ai-engineering-hub)**  
+  A comprehensive, hands-on repository for mastering AI engineering in production. Features in-depth tutorials on LLMs, RAGs, agentic workflows, and real-world AI agent applications. Includes ready-to-run code, practical guides, and scalable patterns for deploying advanced agents, memory, and retrieval systems. Ideal for developers, researchers, and teams building robust, production-grade AI solutions. (14.4k+ stars, active development)
+
+- **Kiro: Next-Gen Agentic IDE**  
   Kiro is a next-generation agentic IDE that helps you go from prompt to production with spec-driven workflows. It unpacks requirements from a single prompt, generates technical designs, creates and sequences tasks, and automates code quality with event-driven hooks. Features deep integration with your codebase, Model Context Protocol (MCP) support, and a modern AI coding experience. [Docs](https://kiro.dev/docs/) | [Download](https://kiro.dev/downloads/)
 
 - **[Context Kills VRAM: How to Run LLMs on consumer GPUs](https://medium.com/@lyx_62906/context-kills-vram-how-to-run-llms-on-consumer-gpus-a785e8035632)**  
