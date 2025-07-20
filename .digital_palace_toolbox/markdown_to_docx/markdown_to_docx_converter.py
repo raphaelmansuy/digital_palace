@@ -4,14 +4,17 @@
 # dependencies = [
 #     "python-docx",
 #     "Pillow",
-#     "Pygments"
+#     "Pygments",
+#     "selenium",
+#     "playwright",
+#     "webdriver-manager"
 # ]
 # ///
 """
 Markdown to DOCX Converter with Code Block to PNG Conversion
 
 This script converts a markdown file to a DOCX document, converting all code blocks
-to high-quality PNG images with syntax highlighting (300 DPI for crisp text).
+to true retina-quality PNG images with syntax highlighting (1200 DPI for pixel-perfect text).
 
 This is a self-installing Python script using UV. No manual dependency installation required!
 
@@ -108,7 +111,7 @@ class MarkdownToDocxConverter:
         return modified_content, code_blocks
     
     def _create_code_image(self, code: str, language: str = 'text') -> str:
-        """Create a high-quality PNG image from code block (300 DPI)"""
+        """Create a true retina-quality PNG image from code block (1200 DPI)"""
         self.image_counter += 1
         # Use persistent naming: outputfile_image001.png
         image_filename = f"{self.base_name}_image{self.image_counter:03d}.png"
@@ -132,9 +135,9 @@ class MarkdownToDocxConverter:
             else:
                 lexer = TextLexer()
             
-            # Configure the image formatter with high-quality settings
-            # Scale up for higher resolution (300 DPI equivalent)
-            scale_factor = 3  # 3x scale for crisp text
+            # Configure the image formatter with maximum retina-quality settings
+            # Scale up for highest resolution (1200 DPI equivalent)
+            scale_factor = 12  # 12x scale for true retina-crisp text
             formatter = ImageFormatter(
                 font_name='Monaco',
                 font_size=14 * scale_factor,  # Larger font for scaling
@@ -154,10 +157,10 @@ class MarkdownToDocxConverter:
             
             # Post-process to add DPI metadata for better quality
             try:
-                from PIL import Image as PILImage
-                img = PILImage.open(image_path)
-                # Resave with DPI metadata
-                img.save(image_path, dpi=(300, 300), quality=100)
+                from PIL import Image as PILImageModule
+                img = PILImageModule.open(image_path)
+                # Resave with true retina DPI metadata (1200 DPI)
+                img.save(image_path, dpi=(1200, 1200), quality=100)
             except Exception:
                 pass  # If post-processing fails, keep original
             
@@ -169,7 +172,447 @@ class MarkdownToDocxConverter:
             return self._create_simple_text_image(code, image_path)
     
     def _create_codesnap_image(self, code: str, language: str, image_path: str) -> str:
-        """Create CodeSnap style image with macOS window frame"""
+        """Create CodeSnap style image with macOS window frame using headless browser rendering"""
+        try:
+            import tempfile
+            import os
+            
+            # Get lexer for syntax highlighting
+            if language and language.lower() != 'text':
+                try:
+                    lexer = get_lexer_by_name(language, stripall=True)
+                except ClassNotFound:
+                    lexer = TextLexer()
+            else:
+                lexer = TextLexer()
+            
+            # Generate syntax-highlighted HTML using Pygments
+            from pygments.formatters import HtmlFormatter
+            
+            # Create a custom HTML formatter with high-quality settings
+            formatter = HtmlFormatter(
+                style='monokai',  # Dark theme that works well with codesnap
+                noclasses=True,   # Inline styles for better control
+                linenos=False,
+                cssclass='highlight',
+                prestyles='margin: 0; padding: 0; font-family: Monaco, Menlo, "Ubuntu Mono", monospace;'
+            )
+            
+            # Generate highlighted code HTML
+            highlighted_code = highlight(code, lexer, formatter)
+            
+            
+            # Create complete HTML5 document optimized for headless browser rendering
+            html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snapshot</title>
+    <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+        
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+            padding: 40px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }}
+        
+        .window {{
+            background: #2d2d2d;
+            border-radius: 12px;
+            box-shadow: 
+                0 32px 64px rgba(0, 0, 0, 0.35),
+                0 8px 16px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            min-width: 600px;
+            max-width: 1000px;
+            width: fit-content;
+            backdrop-filter: blur(20px);
+        }}
+        
+        .title-bar {{
+            background: linear-gradient(to bottom, 
+                rgba(64, 64, 64, 0.95) 0%, 
+                rgba(56, 56, 56, 0.95) 100%);
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(42, 42, 42, 0.8);
+            backdrop-filter: blur(10px);
+        }}
+        
+        .traffic-lights {{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }}
+        
+        .dot {{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 0.5px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                0 1px 1px rgba(0, 0, 0, 0.1);
+        }}
+        
+        .dot.close {{ 
+            background: linear-gradient(135deg, #ff6058 0%, #ff4d4d 100%);
+        }}
+        .dot.minimize {{ 
+            background: linear-gradient(135deg, #ffbd30 0%, #ffab00 100%);
+        }}
+        .dot.maximize {{ 
+            background: linear-gradient(135deg, #28ca44 0%, #20a034 100%);
+        }}
+        
+        .title {{
+            flex: 1;
+            text-align: center;
+            color: #cccccc;
+            font-size: 13px;
+            font-weight: 500;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        }}
+        
+        .content {{
+            background: linear-gradient(to bottom, #282c34 0%, #21252b 100%);
+            padding: 28px;
+            font-family: 'SF Mono', Monaco, Menlo, 'Ubuntu Mono', Consolas, monospace;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #abb2bf;
+            overflow-x: auto;
+            border-radius: 0 0 12px 12px;
+        }}
+        
+        /* Enhanced Pygments styles for better codesnap appearance */
+        .highlight {{
+            background: transparent !important;
+            font-family: 'SF Mono', Monaco, Menlo, 'Ubuntu Mono', Consolas, monospace !important;
+            font-size: 14px !important;
+            line-height: 1.7 !important;
+            font-weight: 400 !important;
+        }}
+        
+        .highlight pre {{
+            margin: 0 !important;
+            padding: 0 !important;
+            background: transparent !important;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-feature-settings: "liga" 0, "calt" 0;
+        }}
+        
+        /* Ensure crisp text rendering for screenshots */
+        pre, code {{
+            font-feature-settings: "liga" 0, "calt" 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeSpeed;
+        }}
+        
+        /* Force hardware acceleration for smooth rendering */
+        .window {{
+            transform: translateZ(0);
+            will-change: transform;
+        }}
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="traffic-lights">
+                <div class="dot close"></div>
+                <div class="dot minimize"></div>
+                <div class="dot maximize"></div>
+            </div>
+            <div class="title">{language if language else 'code'}</div>
+            <div style="width: 60px;"></div> <!-- Spacer for centering -->
+        </div>
+        <div class="content">
+            {highlighted_code}
+        </div>
+    </div>
+</body>
+</html>"""
+            
+            # Save HTML to temporary file
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False, encoding='utf-8') as f:
+                f.write(html_content)
+                html_file = f.name
+            
+            try:
+                # Priority 1: Try headless browser rendering (Playwright)
+                try:
+                    return self._create_playwright_screenshot(html_file, image_path)
+                except Exception as e:
+                    print(f"Playwright rendering failed: {e}")
+                
+                # Priority 2: Try Selenium headless browser
+                try:
+                    print("Attempting Selenium rendering...")
+                    return self._create_selenium_screenshot(html_file, image_path)
+                except Exception as e:
+                    print(f"Selenium rendering failed: {e}")
+                
+                # Priority 3: Try wkhtmltopdf (if available)
+                try:
+                    print("Attempting wkhtmltopdf rendering...")
+                    return self._create_wkhtmltopdf_image(html_file, image_path)
+                except Exception as e:
+                    print(f"wkhtmltopdf rendering failed: {e}")
+                
+                # Priority 4: Enhanced PIL fallback
+                print("Using enhanced PIL fallback...")
+                return self._create_codesnap_pil_fallback(code, language, image_path)
+                
+            finally:
+                # Cleanup HTML file
+                try:
+                    os.unlink(html_file)
+                except Exception:
+                    pass
+            
+        except Exception as e:
+            print(f"Warning: Failed to create HTML5 CodeSnap image for {language}: {e}")
+            # Final fallback to PIL-based rendering
+            return self._create_codesnap_pil_fallback(code, language, image_path)
+    
+    def _create_playwright_screenshot(self, html_file: str, image_path: str) -> str:
+        """Create high-quality screenshot using Playwright headless browser"""
+        try:
+            from playwright.sync_api import sync_playwright
+            from PIL import Image as PILImageModule
+            
+            with sync_playwright() as p:
+                # Launch Chromium with maximum DPI settings for true retina quality
+                browser = p.chromium.launch(
+                    headless=True,
+                    args=[
+                        '--force-device-scale-factor=12',  # 12x scale for true retina quality
+                        '--high-dpi-support=1',
+                        '--force-color-profile=srgb',
+                        '--disable-background-timer-throttling',
+                        '--disable-renderer-backgrounding',
+                        '--disable-backgrounding-occluded-windows',
+                        '--font-render-hinting=none',  # Better font rendering
+                        '--enable-font-antialiasing',
+                        '--disable-lcd-text',  # Force grayscale antialiasing for crisp text
+                        '--force-prefers-reduced-motion',
+                        '--disable-background-media-processing',
+                        '--disable-renderer-accessibility',
+                    ]
+                )
+                
+                # Create page with maximum device scale factor for true retina
+                page = browser.new_page(
+                    device_scale_factor=12,  # 12x for true retina quality (1200 DPI equivalent)
+                    viewport={'width': 2000, 'height': 1600}  # Larger viewport for better text rendering
+                )
+                
+                # Navigate to HTML file
+                page.goto(f'file://{html_file}')
+                
+                # Wait for rendering to complete
+                page.wait_for_load_state('networkidle')
+                page.wait_for_timeout(1000)  # Extended wait for font loading and rendering
+                
+                # Ensure the window element exists and is visible
+                page.wait_for_selector('.window', state='visible')
+                
+                # Get the window element for precise cropping
+                window_element = page.locator('.window')
+                
+                # Take screenshot with high quality settings
+                window_element.screenshot(
+                    path=image_path,
+                    type='png',
+                    quality=100,
+                    animations='disabled'
+                )
+                
+                browser.close()
+                
+                # Post-process to add maximum DPI metadata for true retina
+                img = PILImageModule.open(image_path)
+                img.save(image_path, dpi=(1200, 1200), quality=100, optimize=True)  # 1200 DPI for true retina quality
+                
+                print("Successfully created CodeSnap image using Playwright")
+                return image_path
+                
+        except ImportError:
+            raise Exception("Playwright not available - install with: pip install playwright && playwright install chromium")
+        except Exception as e:
+            raise Exception(f"Playwright screenshot failed: {e}")
+    
+    def _create_selenium_screenshot(self, html_file: str, image_path: str) -> str:
+        """Create screenshot using Selenium headless browser"""
+        try:
+            from selenium import webdriver
+            from selenium.webdriver.chrome.options import Options
+            from selenium.webdriver.common.by import By
+            from selenium.webdriver.support.ui import WebDriverWait
+            from selenium.webdriver.support import expected_conditions as EC
+            from PIL import Image as PILImageModule
+            
+            # Configure Chrome options for ultra-high-quality rendering
+            chrome_options = Options()
+            chrome_options.add_argument('--headless=new')  # Use new headless mode
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.add_argument('--disable-dev-shm-usage')
+            chrome_options.add_argument('--disable-gpu')
+            chrome_options.add_argument('--force-device-scale-factor=6')  # 6x scale for optimal retina quality
+            chrome_options.add_argument('--high-dpi-support=1')
+            chrome_options.add_argument('--force-color-profile=srgb')
+            chrome_options.add_argument('--window-size=1800,1400')  # Optimal window for better text rendering
+            chrome_options.add_argument('--disable-background-timer-throttling')
+            chrome_options.add_argument('--disable-renderer-backgrounding')
+            chrome_options.add_argument('--disable-backgrounding-occluded-windows')
+            chrome_options.add_argument('--font-render-hinting=none')  # Better font rendering
+            chrome_options.add_argument('--enable-font-antialiasing')
+            chrome_options.add_argument('--disable-lcd-text')  # Force grayscale antialiasing
+            chrome_options.add_argument('--disable-web-security')  # Allow local file access
+            chrome_options.add_argument('--allow-running-insecure-content')
+            chrome_options.add_argument('--disable-features=VizDisplayCompositor')
+            
+            # Launch browser with ChromeDriverManager for automatic driver management
+            try:
+                from selenium.webdriver.chrome.service import Service
+                from webdriver_manager.chrome import ChromeDriverManager
+                service = Service(ChromeDriverManager().install())
+                driver = webdriver.Chrome(service=service, options=chrome_options)
+            except ImportError:
+                # Fallback to regular Chrome driver
+                driver = webdriver.Chrome(options=chrome_options)
+            
+            try:
+                # Navigate to HTML file
+                driver.get(f'file://{html_file}')
+                
+                # Wait for the window element to be present and fully rendered
+                wait = WebDriverWait(driver, 10)
+                window_element = wait.until(
+                    EC.presence_of_element_located((By.CLASS_NAME, "window"))
+                )
+                
+                # Extended wait for font loading and rendering
+                driver.implicitly_wait(2)
+                import time
+                time.sleep(1)  # Additional wait to ensure complete rendering
+                
+                # Take screenshot of just the window element
+                print(f"Taking screenshot with Selenium at {chrome_options.arguments}")
+                window_element.screenshot(image_path)
+                
+                # Verify the screenshot was taken properly
+                if os.path.getsize(image_path) < 500:  # Very small file suggests blank image
+                    print("Warning: Screenshot appears to be blank, taking full page screenshot as fallback")
+                    driver.save_screenshot(image_path.replace('.png', '_fullpage.png'))
+                    # Try to crop to window area
+                    from PIL import Image as PILImage
+                    full_img = PILImage.open(image_path.replace('.png', '_fullpage.png'))
+                    # Save as the main image
+                    full_img.save(image_path)
+                    os.remove(image_path.replace('.png', '_fullpage.png'))
+                
+                # Post-process to add maximum DPI metadata for true retina
+                img = PILImageModule.open(image_path)
+                img.save(image_path, dpi=(1200, 1200), quality=100, optimize=True)  # 1200 DPI for true retina quality
+                
+                print("Successfully created CodeSnap image using Selenium")
+                return image_path
+                
+            finally:
+                driver.quit()
+                
+        except ImportError:
+            raise Exception("Selenium not available - install with: pip install selenium")
+        except Exception as e:
+            raise Exception(f"Selenium screenshot failed: {e}")
+    
+    def _create_wkhtmltopdf_image(self, html_file: str, image_path: str) -> str:
+        """Create image using wkhtmltopdf (fallback method)"""
+        import tempfile
+        import subprocess
+        
+        # Create temporary PDF
+        temp_pdf = tempfile.NamedTemporaryFile(suffix='.pdf', delete=False)
+        temp_pdf.close()
+        
+        try:
+            # wkhtmltopdf command with high DPI settings
+            cmd = [
+                'wkhtmltopdf',
+                '--page-size', 'A4',
+                '--orientation', 'Portrait', 
+                '--margin-top', '0',
+                '--margin-right', '0',
+                '--margin-bottom', '0',
+                '--margin-left', '0',
+                '--dpi', '300',  # 300 DPI for high quality
+                '--image-quality', '100',
+                '--disable-smart-shrinking',
+                '--zoom', '2.0',  # 2x zoom for better quality
+                '--javascript-delay', '1000',  # Wait for rendering
+                html_file,
+                temp_pdf.name
+            ]
+            
+            # Check if wkhtmltopdf is available and run
+            subprocess.run(['which', 'wkhtmltopdf'], check=True, capture_output=True)
+            subprocess.run(cmd, check=True, capture_output=True)
+            
+            # Convert PDF to PNG using ImageMagick or PIL
+            try:
+                # Try ImageMagick first for best quality
+                convert_cmd = [
+                    'convert',
+                    '-density', '300',  # 300 DPI
+                    '-quality', '100',
+                    '-background', 'transparent',
+                    temp_pdf.name,
+                    image_path
+                ]
+                subprocess.run(convert_cmd, check=True, capture_output=True)
+                
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                # Fallback: use pdf2image if available
+                try:
+                    from pdf2image import convert_from_path
+                    images = convert_from_path(temp_pdf.name, dpi=300, first_page=1, last_page=1)
+                    if images:
+                        images[0].save(image_path, 'PNG', dpi=(300, 300), quality=100)
+                except ImportError:
+                    raise Exception("Neither ImageMagick nor pdf2image available for PDF conversion")
+            
+            print("Successfully created CodeSnap image using wkhtmltopdf")
+            return image_path
+            
+        finally:
+            # Cleanup
+            try:
+                os.unlink(temp_pdf.name)
+            except Exception:
+                pass
+    
+    def _create_codesnap_pil_fallback(self, code: str, language: str, image_path: str) -> str:
+        """Enhanced PIL-based fallback with better syntax highlighting and 800 DPI ultra-high quality"""
         try:
             from PIL import Image as PILImage, ImageDraw, ImageFont
             
@@ -182,71 +625,108 @@ class MarkdownToDocxConverter:
             else:
                 lexer = TextLexer()
             
-            # Settings for high DPI
-            scale = 3
-            window_border = 8 * scale
-            title_bar_height = 32 * scale
-            dot_size = 8 * scale
-            dot_spacing = 20 * scale
-            content_padding = 20 * scale
-            font_size = 14 * scale
-            line_height = 20 * scale
+            # 1200 DPI settings - scale factor for true retina-quality rendering
+            dpi_scale = 15  # 15x scale for 1200 DPI true retina quality
+            window_border = 8 * dpi_scale
+            title_bar_height = 44 * dpi_scale
+            dot_size = 12 * dpi_scale
+            dot_spacing = 20 * dpi_scale
+            content_padding = 24 * dpi_scale
+            font_size = 14 * dpi_scale
+            line_height = 22 * dpi_scale
             
-            # Window colors (dark theme)
-            window_bg = (40, 44, 52)      # Dark gray
-            title_bar_bg = (60, 63, 65)   # Slightly lighter gray
-            content_bg = (40, 44, 52)     # Same as window
-            text_color = (220, 220, 220)  # Light gray
+            # Enhanced window colors (more accurate macOS style)
+            window_bg = (45, 45, 45)      # Darker gray
+            title_bar_bg = (64, 64, 64)   # Title bar color
+            content_bg = (40, 44, 52)     # Code background (VS Code dark)
+            text_color = (171, 178, 191)  # Default text color
             dot_colors = [
-                (255, 95, 87),   # Red
-                (255, 189, 46),  # Yellow  
-                (39, 201, 63)    # Green
+                (255, 95, 87),   # Red (close)
+                (255, 189, 46),  # Yellow (minimize)
+                (40, 202, 66)    # Green (maximize)
             ]
             
-            # Calculate text dimensions
+            # Calculate text dimensions with proper font metrics
             lines = code.split('\n')
             max_line_length = max(len(line.expandtabs(4)) for line in lines) if lines else 50
             
-            # Try to load Monaco font, fallback to default monospace
+            # Load high-quality font
             try:
-                font = ImageFont.truetype("/System/Library/Fonts/Monaco.ttf", font_size)
+                font = ImageFont.truetype("/System/Library/Fonts/SF-Mono-Regular.otf", font_size)
             except Exception:
                 try:
-                    font = ImageFont.truetype("/System/Library/Fonts/Menlo.ttf", font_size)
+                    font = ImageFont.truetype("/System/Library/Fonts/Monaco.ttc", font_size)
                 except Exception:
-                    font = ImageFont.load_default()
+                    try:
+                        font = ImageFont.truetype("/System/Library/Fonts/Menlo.ttc", font_size)
+                    except Exception:
+                        font = ImageFont.load_default()
             
-            # Calculate image dimensions
-            content_width = max_line_length * (font_size // 2) + 2 * content_padding
+            # Calculate precise image dimensions
+            # Get actual text width using font metrics
+            try:
+                # Use the font to get actual character width
+                sample_text = "M" * max_line_length
+                bbox = font.getbbox(sample_text)
+                content_width = bbox[2] + 2 * content_padding
+            except Exception:
+                # Fallback calculation
+                content_width = max_line_length * (font_size * 0.6) + 2 * content_padding
+            
             content_height = len(lines) * line_height + 2 * content_padding
             
-            total_width = content_width + 2 * window_border
-            total_height = content_height + title_bar_height + 2 * window_border
+            total_width = int(content_width + 2 * window_border)
+            total_height = int(content_height + title_bar_height + 2 * window_border)
             
-            # Create image
+            # Create high-resolution image
             img = PILImage.new('RGB', (total_width, total_height), window_bg)
             draw = ImageDraw.Draw(img)
             
-            # Draw title bar
-            draw.rectangle([
-                window_border, 
-                window_border, 
-                total_width - window_border, 
-                window_border + title_bar_height
-            ], fill=title_bar_bg)
+            # Draw title bar with gradient effect (simulated)
+            for i in range(int(title_bar_height)):
+                alpha = i / title_bar_height
+                color_r = int(title_bar_bg[0] * (1 - alpha * 0.1))
+                color_g = int(title_bar_bg[1] * (1 - alpha * 0.1))
+                color_b = int(title_bar_bg[2] * (1 - alpha * 0.1))
+                draw.line([
+                    (window_border, window_border + i),
+                    (total_width - window_border, window_border + i)
+                ], fill=(color_r, color_g, color_b))
             
-            # Draw window dots (traffic lights)
+            # Draw window dots (traffic lights) with subtle shadows
             dot_y = window_border + title_bar_height // 2
             dot_start_x = window_border + dot_spacing
             
             for i, color in enumerate(dot_colors):
                 dot_x = dot_start_x + i * dot_spacing
+                # Draw subtle shadow
+                shadow_offset = dpi_scale
+                draw.ellipse([
+                    dot_x - dot_size//2 + shadow_offset, 
+                    dot_y - dot_size//2 + shadow_offset,
+                    dot_x + dot_size//2 + shadow_offset, 
+                    dot_y + dot_size//2 + shadow_offset
+                ], fill=(0, 0, 0, 30))
+                # Draw main dot
                 draw.ellipse([
                     dot_x - dot_size//2, 
                     dot_y - dot_size//2,
                     dot_x + dot_size//2, 
                     dot_y + dot_size//2
                 ], fill=color)
+            
+            # Draw title text
+            if language:
+                title_font_size = int(13 * dpi_scale)
+                try:
+                    title_font = ImageFont.truetype("/System/Library/Fonts/SF-Pro-Display-Medium.otf", title_font_size)
+                except Exception:
+                    title_font = font
+                
+                title_bbox = title_font.getbbox(language)
+                title_x = (total_width - title_bbox[2]) // 2
+                title_y = window_border + (title_bar_height - title_bbox[3]) // 2
+                draw.text((title_x, title_y), language, fill=(204, 204, 204), font=title_font)
             
             # Draw content area
             content_y_start = window_border + title_bar_height
@@ -257,44 +737,102 @@ class MarkdownToDocxConverter:
                 total_height - window_border
             ], fill=content_bg)
             
-            # Draw code with simple syntax highlighting (basic approach)
-            y_pos = content_y_start + content_padding
-            for line in lines:
-                # Basic syntax highlighting colors
-                line_color = text_color
-                if line.strip().startswith('#'):  # Comments
-                    line_color = (128, 128, 128)
-                elif any(keyword in line for keyword in ['def ', 'class ', 'import ', 'from ']):  # Keywords
-                    line_color = (255, 123, 114)
-                elif '"' in line or "'" in line:  # Strings (simple detection)
-                    line_color = (152, 195, 121)
+            # Enhanced syntax highlighting using Pygments tokens
+            try:
+                from pygments.token import Token
+                tokens = list(lexer.get_tokens(code))
                 
-                draw.text(
-                    (window_border + content_padding, y_pos),
-                    line.expandtabs(4),
-                    fill=line_color,
-                    font=font
-                )
-                y_pos += line_height
+                # Define color scheme (Monokai-inspired)
+                token_colors = {
+                    Token.Comment: (117, 113, 94),           # Comments
+                    Token.Comment.Single: (117, 113, 94),
+                    Token.Comment.Multiline: (117, 113, 94),
+                    Token.Keyword: (249, 38, 114),           # Keywords (def, class, etc.)
+                    Token.Keyword.Namespace: (249, 38, 114),
+                    Token.Keyword.Type: (102, 217, 239),
+                    Token.String: (230, 219, 116),           # Strings
+                    Token.String.Double: (230, 219, 116),
+                    Token.String.Single: (230, 219, 116),
+                    Token.Number: (174, 129, 255),           # Numbers
+                    Token.Number.Integer: (174, 129, 255),
+                    Token.Number.Float: (174, 129, 255),
+                    Token.Name.Function: (166, 226, 46),     # Function names
+                    Token.Name.Class: (166, 226, 46),        # Class names
+                    Token.Name.Builtin: (102, 217, 239),     # Built-ins
+                    Token.Operator: (249, 38, 114),          # Operators
+                    Token.Punctuation: text_color,           # Punctuation
+                }
+                
+                # Render tokens with syntax highlighting
+                x_pos = window_border + content_padding
+                y_pos = content_y_start + content_padding
+                
+                for token_type, text in tokens:
+                    if text == '\n':
+                        y_pos += line_height
+                        x_pos = window_border + content_padding
+                        continue
+                    
+                    # Get color for token type
+                    color = text_color  # Default
+                    for token_key, token_color in token_colors.items():
+                        if token_type in token_key:
+                            color = token_color
+                            break
+                    
+                    # Draw text
+                    draw.text((x_pos, y_pos), text, fill=color, font=font)
+                    
+                    # Update x position
+                    try:
+                        bbox = font.getbbox(text)
+                        x_pos += bbox[2]
+                    except Exception:
+                        x_pos += len(text) * (font_size * 0.6)
+                
+            except Exception:
+                # Fallback to simple syntax highlighting
+                y_pos = content_y_start + content_padding
+                for line in lines:
+                    # Simple syntax highlighting
+                    line_expanded = line.expandtabs(4)
+                    line_color = text_color
+                    
+                    # Basic highlighting rules
+                    stripped = line.strip()
+                    if stripped.startswith('#'):
+                        line_color = (117, 113, 94)  # Comments
+                    elif any(keyword in line for keyword in ['def ', 'class ', 'import ', 'from ', 'if ', 'for ', 'while ', 'try:', 'except:']):
+                        line_color = (249, 38, 114)  # Keywords
+                    elif '"' in line or "'" in line:
+                        line_color = (230, 219, 116)  # Strings
+                    
+                    draw.text(
+                        (window_border + content_padding, y_pos),
+                        line_expanded,
+                        fill=line_color,
+                        font=font
+                    )
+                    y_pos += line_height
             
-            # Save with high DPI
-            img.save(image_path, dpi=(300, 300), quality=100)
+            # Save with true retina DPI metadata (1200 DPI)
+            img.save(image_path, dpi=(1200, 1200), quality=100, optimize=True)
             return image_path
             
         except Exception as e:
-            print(f"Warning: Failed to create CodeSnap image for {language}: {e}")
-            # Fallback to default style
+            print(f"Warning: Enhanced PIL fallback failed: {e}")
+            # Final fallback to original simple method
             return self._create_default_image(code, language, image_path)
     
     def _create_simple_text_image(self, code: str, image_path: str) -> str:
-        """Create a simple text image as fallback with high DPI"""
+        """Create a simple text image as fallback with ultra-high DPI (800 DPI)"""
         try:
             # Calculate image size based on text with high DPI scaling
             lines = code.split('\n')
             max_line_length = max(len(line) for line in lines) if lines else 50
             
-            # High DPI settings (300 DPI equivalent)
-            dpi_scale = 4  # 4x scale for 300 DPI quality
+            # High DPI settings (1200 DPI equivalent for true retina)
+            dpi_scale = 15  # 15x scale for 1200 DPI true retina quality
             char_width = 9 * dpi_scale
             char_height = 18 * dpi_scale
             padding = 25 * dpi_scale
@@ -309,16 +847,19 @@ class MarkdownToDocxConverter:
             # Try to use a high-quality monospace font
             font_size = 16 * dpi_scale
             try:
-                font = ImageFont.truetype('/System/Library/Fonts/Monaco.ttc', font_size)
+                font = ImageFont.truetype('/System/Library/Fonts/SF-Mono-Regular.otf', font_size)
             except Exception:
                 try:
-                    font = ImageFont.truetype('Monaco', font_size)
+                    font = ImageFont.truetype('/System/Library/Fonts/Monaco.ttc', font_size)
                 except Exception:
                     try:
-                        font = ImageFont.truetype('/System/Library/Fonts/Menlo.ttc', font_size)
+                        font = ImageFont.truetype('Monaco', font_size)
                     except Exception:
-                        # Use default but scale it
-                        font = ImageFont.load_default()
+                        try:
+                            font = ImageFont.truetype('/System/Library/Fonts/Menlo.ttc', font_size)
+                        except Exception:
+                            # Use default but scale it
+                            font = ImageFont.load_default()
             
             # Draw text with high quality
             y_offset = padding
@@ -331,8 +872,8 @@ class MarkdownToDocxConverter:
             draw.rectangle([0, 0, width-border_width, height-border_width], 
                          outline='gray', width=border_width)
             
-            # Save with high DPI metadata (300 DPI)
-            img.save(image_path, dpi=(300, 300), quality=100)
+            # Save with true retina DPI metadata (1200 DPI)
+            img.save(image_path, dpi=(1200, 1200), quality=100)
             return image_path
             
         except Exception as e:
