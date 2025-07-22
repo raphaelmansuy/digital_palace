@@ -1,3 +1,4 @@
+[How to Build an Agent (ampcode.com)](./how-to-build-an-agent-ampcode.md)
 # 🌐 Curated Blogs & Recommended Reading Hub
 
 Stay ahead with the best in AI — handpicked, technical, and practical.

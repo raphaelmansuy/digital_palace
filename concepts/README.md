@@ -1,3 +1,6 @@
+# ⚡ Agentic Coding & Tools
+
+- **[Amp: Agentic Coding Platform](./amp.md)** — Next-generation agentic coding tool for autonomous code editing, refactoring, and developer automation. Integrates with VS Code, Cursor, and CLI. See [How to Build an Agent](https://ampcode.com/how-to-build-an-agent) for a hands-on tutorial.
 # 🧩 Concepts Hub
 
 Welcome to the **Concepts Hub**! This is your gateway to the essential AI and software concepts that power the Digital Palace. Each topic below links to a dedicated page with:

@@ -33,7 +33,8 @@
 ### 🛠️ Tools & Frameworks
 - **[AutoGen Framework](../../reference/techniques/autogen/README.md)** - Microsoft's multi-agent framework
 - **[Agent Development Tools](../../tools/README.md#agent-frameworks)** - Curated toolkit for agents
-- **[Agents Towards Production (Nir Diamant, GitHub)](https://github.com/NirDiamant/agents-towards-production)** - Comprehensive, code-first playbook for building and deploying GenAI agents. Includes hands-on tutorials for orchestration, memory, security, monitoring, deployment, and more. Ideal for teams seeking production-grade agent systems.
+ - **[Agents Towards Production (Nir Diamant, GitHub)](https://github.com/NirDiamant/agents-towards-production)** - Comprehensive, code-first playbook for building and deploying GenAI agents. Includes hands-on tutorials for orchestration, memory, security, monitoring, deployment, and more. Ideal for teams seeking production-grade agent systems.
+ - **[How to Build an Agent (ampcode.com)](../../community/curated-blogs/how-to-build-an-agent-ampcode.md)** - Step-by-step, practical guide to building a code-editing agent in Go using the Anthropic API. Covers conversational loops, tool use, and real-world agentic workflows. Great for developers and agent builders.
 
 ## 🔄 Content Lifecycle
 
