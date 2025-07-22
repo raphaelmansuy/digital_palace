@@ -23,6 +23,7 @@ Frameworks are structured platforms and libraries that accelerate the developmen
 
 
 See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation solutions.
+See also: [Diagramming & Visualization Tools](./diagramming-tools.md) for isometric and technical diagramming solutions like FossFLOW.
 
 ---
 
