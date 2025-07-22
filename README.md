@@ -41,6 +41,8 @@
 - **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** - In-depth analysis of ambient agents, agent UX, tools, and training
 - **[Vibe Coding & Benchmark (April 2025) – Lance Martin](https://rlancemartin.github.io/2025/04/03/vibe-code/)** - How context and retrieval methods shape agent coding performance
 
+- **[Crawlee Python: Modern Web Scraping & Automation](./concepts/crawlee.md)** – Asyncio-native, production-grade crawling and browser automation for AI, LLM, and RAG workflows. Unified API for HTTP and headless browsers, proxy rotation, persistent queues, and more. Open-source by Apify.
+
 ---
 
 
@@ -256,6 +258,8 @@ digital_palace/
 - **[158+ AI Tools](./tools/ai-tools-master-directory.md)** - Comprehensive directory
 - **[Framework Comparisons](./tools/framework-comparison.md)** - LangChain vs alternatives
 - **[Production Tools](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise solutions
+
+- **[Crawlee Python](./concepts/crawlee.md)** – Unified, asyncio-based web scraping and browser automation for Python. Ideal for data extraction, AI, and RAG pipelines. See concept page for features, install, and examples.
 
 ### 🎯 Practical Guides
 
