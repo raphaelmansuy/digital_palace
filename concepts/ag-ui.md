@@ -29,7 +29,8 @@
 
 ### **AG-UI Development Frameworks**
 
-- **[CopilotKit](https://copilotkit.ai/)** - React components for building AI-powered interfaces
+- **[CopilotKit](https://copilotkit.ai/)** - React components for building AI-powered interfaces with AG-UI Protocol support
+- **[create-ag-ui-app CLI](https://www.npmjs.com/package/create-ag-ui-app)** 🆕 - Interactive setup wizard for AG-UI projects with LangGraph, CrewAI, Mastra support
 - **[Vercel AI SDK](https://sdk.vercel.ai/)** - Streaming AI applications with generative UI
 - **[Gradio](https://gradio.app/)** - Rapid prototyping for ML model interfaces
 - **[Streamlit](https://streamlit.io/)** - Python-based AI application interfaces
@@ -489,6 +490,236 @@ if __name__ == "__main__":
     ag_ui.render_main_interface()
 ```
 
+## 🚀 AG-UI CLI: Rapid Agent Interface Development
+
+### **The create-ag-ui-app CLI Tool**
+
+The **[create-ag-ui-app](https://www.npmjs.com/package/create-ag-ui-app)** CLI provides an interactive setup wizard to quickly bootstrap AG-UI Protocol applications with your preferred client framework and agent backend. Think of it as "Create React App for AI agents."
+
+#### **Key Features**
+
+- 🎯 **Interactive Setup** - Guided prompts for client and framework selection
+- 🌐 **Multiple Clients** - CopilotKit/Next.js web apps and CLI clients  
+- 🔧 **Framework Integration** - Built-in support for LangGraph, CrewAI, Mastra, Agno, LlamaIndex
+- 📦 **Zero Config** - Automatically sets up dependencies and project structure
+- ⚡ **Quick Start** - Get from idea to running app in minutes
+
+#### **Quick Setup**
+
+```bash
+# Interactive setup
+npx create-ag-ui-app@latest
+
+# Framework-specific templates
+npx create-ag-ui-app@latest --langgraph-py
+npx create-ag-ui-app@latest --langgraph-js
+npx create-ag-ui-app@latest --mastra
+
+# See all options
+npx create-ag-ui-app@latest --help
+```
+
+### **LangGraph + AG-UI Integration Pattern**
+
+The AG-UI Protocol standardizes how LangGraph agents communicate with frontend applications through **22+ event types** including:
+
+- **Lifecycle Events**: `RUN_STARTED`, `RUN_FINISHED`
+- **Text Messages**: `TEXT_MESSAGE_START`, `TEXT_MESSAGE_CONTENT`, `TEXT_MESSAGE_END`
+- **Tool Calls**: `TOOL_CALL_START`, `TOOL_CALL_END`
+- **State Management**: `STATE_SNAPSHOT`, `STATE_DELTA`
+
+#### **LangGraph Backend Implementation**
+
+```python
+from ag_ui import EventEncoder, RunStartedEvent, TextMessageContentEvent
+from langgraph import StateGraph
+from fastapi import FastAPI
+from fastapi.responses import StreamingResponse
+
+app = FastAPI()
+
+@app.post("/langgraph-research")
+async def research_endpoint(input_data: RunAgentInput):
+    """AG-UI Protocol endpoint for LangGraph research agent."""
+    
+    async def event_generator():
+        encoder = EventEncoder()
+        
+        # 1. Signal run start
+        yield encoder.encode(RunStartedEvent(
+            type=EventType.RUN_STARTED,
+            thread_id=input_data.thread_id,
+            run_id=input_data.run_id
+        ))
+        
+        # 2. Initialize shared state
+        yield encoder.encode(StateSnapshotEvent(
+            message_id=message_id,
+            snapshot={
+                "status": {"phase": "initialized", "error": None},
+                "research": {"query": query, "stage": "not_started"},
+                "processing": {"progress": 0, "completed": False},
+                "ui": {"showSources": False, "activeTab": "chat"}
+            }
+        ))
+        
+        # 3. Execute LangGraph workflow
+        graph = build_research_graph()
+        result = graph.invoke([HumanMessage(content=query)])
+        
+        # 4. Stream text response
+        yield encoder.encode(TextMessageContentEvent(
+            type=EventType.TEXT_MESSAGE_CONTENT,
+            message_id=message_id,
+            delta=result.content
+        ))
+        
+        # 5. Signal completion
+        yield encoder.encode(RunFinishedEvent(
+            type=EventType.RUN_FINISHED,
+            thread_id=input_data.thread_id,
+            run_id=input_data.run_id
+        ))
+    
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
+```
+
+#### **CopilotKit Frontend Integration**
+
+```typescript
+// API Route: /api/copilotkit/route.ts
+import { HttpAgent } from "@ag-ui/client";
+import { CopilotRuntime, copilotRuntimeNextJSAppRouterEndpoint } from "@copilotkit/runtime";
+
+const researchAgent = new HttpAgent({
+  url: "http://127.0.0.1:8000/langgraph-research",
+});
+
+const runtime = new CopilotRuntime({
+  agents: { researchAgent },
+});
+
+export const POST = async (req: NextRequest) => {
+  const { handleRequest } = copilotRuntimeNextJSAppRouterEndpoint({
+    runtime,
+    serviceAdapter: new ExperimentalEmptyAdapter(),
+    endpoint: "/api/copilotkit",
+  });
+  return handleRequest(req);
+};
+```
+
+```jsx
+// React Component with Shared State
+import { CopilotKit, CopilotSidebar } from "@copilotkit/react-core";
+import { useCoAgent, useCoAgentStateRender } from "@copilotkit/react-core";
+
+function ResearchApp() {
+  const { state, stopAgent } = useCoAgent({
+    name: "researchAgent",
+    initialState: {
+      status: { phase: "idle", error: null },
+      research: { query: "", stage: "not_started", sources: [] },
+      processing: { progress: 0, completed: false }
+    }
+  });
+
+  useCoAgentStateRender({
+    name: "researchAgent",
+    render: ({ status }) => {
+      if (status === "inProgress") {
+        return (
+          <div className="research-progress">
+            <div className="spinner" />
+            <p>Research in progress...</p>
+            <progress value={state?.processing?.progress} max={1} />
+            {state?.research?.sources_found > 0 && (
+              <p>Found {state.research.sources_found} sources</p>
+            )}
+          </div>
+        );
+      }
+      return null;
+    }
+  });
+
+  return (
+    <CopilotKit runtimeUrl="/api/copilotkit" agent="researchAgent">
+      <div className="research-app">
+        <ResearchInterface state={state} />
+        <CopilotSidebar 
+          instructions="You are a research assistant. Help users conduct comprehensive research using web search and analysis."
+          defaultOpen={true}
+        />
+      </div>
+    </CopilotKit>
+  );
+}
+```
+
+### **AG-UI Protocol Benefits**
+
+#### **Standardized Communication**
+
+- **Event-Driven Architecture**: 22+ standardized event types handle all agent-UI interactions
+- **Framework Agnostic**: Works with React, Vue, and major AI libraries without custom rebuilds
+- **Bidirectional Streaming**: Real-time state synchronization between agents and UI
+
+#### **Developer Experience**
+
+- **Reduced Integration Time**: From weeks to days for complex agent-UI connections
+- **Human-in-the-Loop**: Built-in patterns for approval workflows and intervention
+- **Rich UI Components**: Beyond basic chat - forms, visualizations, interactive elements
+
+#### **Production Ready**
+
+- **State Management**: Persistent shared state across agent executions
+- **Error Handling**: Standardized error propagation and recovery patterns  
+- **Scalable Architecture**: Designed for multi-agent orchestration
+
+### **Getting Started Guide**
+
+1. **Bootstrap Project**
+
+   ```bash
+   npx create-ag-ui-app@latest -f langgraph-py
+   cd my-agent-app
+   ```
+
+2. **Configure Environment**
+
+   ```bash
+   # Backend (.env)
+   OPENAI_API_KEY=your-key
+   SERPER_API_KEY=your-key
+   
+   # Frontend (.env.local)  
+   NEXT_PUBLIC_COPILOTKIT_RUNTIME_URL=/api/copilotkit
+   ```
+
+3. **Start Development**
+
+   ```bash
+   # Backend
+   cd backend && poetry install && poetry run uvicorn main:app
+   
+   # Frontend  
+   cd frontend && npm install && npm run dev
+   ```
+
+4. **Test Integration**
+   - Visit `http://localhost:3000`
+   - Use the CopilotKit sidebar to interact with your LangGraph agent
+   - Watch real-time state updates in the UI
+
+### **Official Resources**
+
+- **[AG-UI Protocol Documentation](https://docs.ag-ui.com/)** - Complete protocol specification
+- **[CopilotKit AG-UI Guide](https://www.copilotkit.ai/blog/how-to-add-a-frontend-to-any-langgraph-agent-using-ag-ui-protocol)** - LangGraph integration tutorial
+- **[AG-UI GitHub Repository](https://github.com/ag-ui-protocol/ag-ui)** - Open source protocol implementation
+- **[create-ag-ui-app NPM](https://www.npmjs.com/package/create-ag-ui-app)** - CLI tool for rapid setup
+- **[AG-UI Demo Applications](https://agui-demo.vercel.app/)** - Live examples and building blocks
+
 ## 📊 Design Principles for AG-UI
 
 ### **Agent-First Design**
@@ -515,7 +746,9 @@ if __name__ == "__main__":
 ## 🔗 Integration with Other Concepts
 
 - **[AI Agents](./ai-agents.md)** - The intelligent systems that AG-UI is designed to control
-- **[Agent Communication](./agent-communication.md)** - Protocols and patterns for agent interaction
+- **[Agent Communication](./agent-communication.md)** - Protocols and patterns for agent interaction  
+- **[Agent Protocols](./agent-protocols.md)** 🆕 - Standards including A2A and MCP that complement AG-UI
+- **[LangGraph](../guides/frameworks.md#langgraph)** 🆕 - State machine framework for building agents with AG-UI integration
 - **[Conversational AI](./conversational-ai.md)** - Natural language interfaces for agent control
 - **[Computer Vision](./computer-vision.md)** - Visual analysis for interface adaptation
 - **[Real-time AI](./real-time-ai.md)** - Live updates and responsive interface elements
@@ -524,9 +757,18 @@ if __name__ == "__main__":
 
 ### **Getting Started**
 
+- **[AG-UI CLI Tutorial](https://www.copilotkit.ai/blog/how-to-add-a-frontend-to-any-langgraph-agent-using-ag-ui-protocol)** 🆕 - Complete LangGraph + AG-UI integration guide
+- **[create-ag-ui-app Documentation](https://docs.ag-ui.com/quickstart/applications)** 🆕 - Official CLI setup and usage guide
 - [CopilotKit Documentation](https://copilotkit.ai/docs) - Building AI-powered React interfaces
 - [Streamlit for AI Apps](https://docs.streamlit.io/) - Python-based AI interface development
 - [UI/UX Design for AI](../guides/ai-ux-design.md) - Design principles for AI interfaces
+
+### **AG-UI Protocol Deep Dive** 🆕
+
+- **[AG-UI Protocol Specification](https://docs.ag-ui.com/concepts/events)** - Complete event types and architecture
+- **[AG-UI GitHub Repository](https://github.com/ag-ui-protocol/ag-ui)** - Open source protocol implementation with examples
+- **[AG-UI Demo Applications](https://agui-demo.vercel.app/)** - Interactive building blocks and live examples
+- **[CopilotKit AG-UI Integration](https://github.com/CopilotKit/CopilotKit)** - React components for AG-UI Protocol
 
 ### **Advanced Topics**
 

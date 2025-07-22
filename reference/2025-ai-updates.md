@@ -78,11 +78,12 @@
 
 **Advanced Agent Communication**
 - **A2A Protocol (Agent-to-Agent)** - Emerging standard for direct agent-to-agent communication, enabling autonomous agents to negotiate, collaborate, and coordinate tasks without human intervention
-- **AG-UI (Agent Graphical User Interface)** - Next-generation interface design specifically for AI agent interactions, featuring:
+- **AG-UI (Agent User Interaction Protocol)** - Standardized, event-based protocol for agent-frontend communication, featuring:
   - Real-time agent status visualization  
   - Multi-agent workflow management
   - Natural language command interfaces
-  - Agent behavior visualization and control
+  - **[create-ag-ui-app CLI](https://www.npmjs.com/package/create-ag-ui-app)** for rapid setup with LangGraph, CrewAI, Mastra
+  - **[CopilotKit integration](../concepts/ag-ui.md#ag-ui-cli-rapid-agent-interface-development)** for React-based agent interfaces
 
 ### Production-Ready Agent Platforms
 

@@ -80,7 +80,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 ### 🎨 **User Experience & Design**
 
 - [AI UX/UI Design](./ai-ux-design.md) — Human-AI interaction patterns, agent interfaces, and conversational UI design. See [Conversational AI](./conversational-ai.md), [AI Agents](./ai-agents.md).
-- [AG-UI (Agent Graphical User Interface)](./ag-ui.md) — Next-generation interface design for human-agent interaction, multi-agent orchestration, and real-time agent management. Related: [AI Agents](./ai-agents.md), [Agent Communication](./agent-communication.md).
+- [AG-UI (Agent User Interaction Protocol)](./ag-ui.md) — Standardized, event-based protocol for agent-frontend communication with **create-ag-ui-app CLI** for rapid LangGraph, CrewAI, and CopilotKit integration. Related: [AI Agents](./ai-agents.md), [Agent Communication](./agent-communication.md).
 - [Workflow Automation](./workflow-automation.md) — AI-powered business process automation, RPA integration, and decision automation. Related: [AI Agents](./ai-agents.md), [Tool Use](./tool-use.md).
 - [UI/UX Design Challenges](./ui-ux-challenges.md) — Resources for daily UI/UX design challenges.
 
