@@ -320,6 +320,22 @@
 | [Plandex](https://github.com/plandex-ai/plandex) | AI coding engine    | Complex tasks  |
 | [AutoDev](https://github.com/unit-mesh/auto-dev) | AI coding wizard    | Multi-language |
 | [CodeRabbit](https://coderabbit.ai/)             | AI code reviews     | GitHub/GitLab  |
+| **[Phoenix.new](https://phoenix.new/)** 🆕⭐     | **Remote AI Runtime for Elixir/Phoenix** | **Ephemeral VMs with root access** |
+
+#### **Phoenix.new Spotlight** 🆕⭐
+
+**[Phoenix.new](https://phoenix.new/)** - Revolutionary AI coding agent specifically built for Elixir and Phoenix development, created by Chris McCord (Phoenix framework creator).
+
+**Key Features:**
+- **Ephemeral VMs**: Full root shell access in isolated virtual machines shared with AI agents
+- **Headless Browser Integration**: Agents can interact with web applications like real users
+- **Real-time Collaboration**: Built on Phoenix framework's strengths in live, collaborative apps
+- **End-to-End Deployment**: From prompt to deployed application with infrastructure guardrails on Fly.io
+- **Multi-Language Support**: While optimized for Phoenix, supports Rails, React Native, Svelte, Go, and more
+
+**Best For**: Elixir/Phoenix developers, real-time application prototyping, full-stack AI development with live preview
+
+**See**: [Full announcement](https://fly.io/blog/phoenix-new-the-remote-ai-runtime/) with demos of autonomous Tetris coding and real-time app generation
 
 ---
 
@@ -408,6 +424,7 @@ _The latest AI innovations reshaping the landscape_
 
 ### **Revolutionary AI Code Editors**
 
+- **[Phoenix.new](https://phoenix.new/)** - Remote AI runtime for Elixir/Phoenix with ephemeral VMs, root access, and headless browser automation. Created by Chris McCord (Phoenix creator). [Full announcement](https://fly.io/blog/phoenix-new-the-remote-ai-runtime/)
 - **[Kiro](https://kiro.dev/)** - Agentic IDE for spec-driven development. Generates requirements, technical designs, tasks, and automates code quality with hooks. [Intro Blog](https://kiro.dev/blog/introducing-kiro/) | [Docs](https://kiro.dev/docs/) | [Download](https://kiro.dev/downloads/)
 - **[Cursor AI](https://cursor.sh/)** - AI-powered code editor with contextual understanding and codebase analysis
 - **[Windsurf](https://codeium.com/windsurf)** - AI-first IDE with collaborative editing capabilities

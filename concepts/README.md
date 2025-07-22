@@ -20,7 +20,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [AI Agents](./ai-agents.md) — Autonomous systems, agent architectures, and multi-agent frameworks. See [Agent Communication](./agent-communication.md) and [Agent Protocols](./agent-protocols.md).
 - [Context Engineering](./context-engineering.md) — The art and science of providing the right information to LLMs and agents. See [Simon Willison on Context Engineering](https://simonwillison.net/2025/Jun/27/context-engineering/).
-- [Vibe Coding](./vibe-coding.md) — AI-powered, context-driven coding with autonomous agents and optimized retrieval. See [Vibe Code Benchmark](https://rlancemartin.github.io/2025/04/03/vibe-code/).
+- [Vibe Coding](./vibe-coding.md) — AI-powered, context-driven coding with autonomous agents and optimized retrieval. Features [Phoenix.new](https://phoenix.new/) for Elixir/Phoenix development. See [Vibe Code Benchmark](https://rlancemartin.github.io/2025/04/03/vibe-code/).
 - [SmolLM3 (2025)](./smollm3.md) — Small, multilingual, long-context open model from Hugging Face. Dual-mode reasoning, 128k context, SoTA at 3B scale. See [Official Blog](https://huggingface.co/blog/smollm3), [LLMs](./llms.md), [2025 AI Updates](../reference/2025-ai-updates.md).
 - [LLMs (Large Language Models)](./llms.md) — Model architectures, training, fine-tuning, and deployment. Related: [Fine-Tuning](./fine-tuning.md), [Inference](./inference.md).
 - [Embeddings](./embeddings.md) — Semantic vectors for search, retrieval, and clustering. See [RAG](./rag.md) and [Knowledge Management](./knowledge-management.md).

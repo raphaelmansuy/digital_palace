@@ -1,6 +1,28 @@
 # Vibe Coding
 
-Vibe coding is an emerging paradigm in AI-assisted software development, where code agents autonomously generate, modify, and evaluate code in response to high-level prompts—often with minimal human intervention. The term is inspired by the fluid, collaborative process between human intent and AI execution, emphasizing rapid iteration and context-aware problem solving.
+Vibe coding is an emerging paradigm in AI-assisted software- [Cla- **[Vibe Code Benchmark – Lance Martin (2025)](https://rlancemartin.github.io/2025/04/03/vibe-code/)** — In-depth analysis, results, and code
+- [LangGraph](https://langchain-ai.github.io/langgraph/) — Agent orchestration framework
+- [llms.txt](https://llmstxt.org/) — Open standard for LLM-friendly documentation
+- [MCP Protocol](https://modelcontextprotocol.io/) — Open protocol for connecting agents to tools and data
+- [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) — Anthropic's agentic coding tool
+- [Cursor](https://www.cursor.com/) — AI-powered code editor/agent
+- **[Phoenix.new](https://phoenix.new/)** — Remote AI runtime for Elixir/Phoenix with ephemeral VMs and headless browser automation
+
+For case studies and practical guides, see:
+
+- [LangChain Blog: The rise of "context engineering"](https://blog.langchain.com/the-rise-of-context-engineering/)
+- [LangChain Blog: Context Engineering for Agents](https://blog.langchain.com/context-engineering-for-agents/)
+- **[Phoenix.new – The Remote AI Runtime (Chris McCord, Fly.io)](https://fly.io/blog/phoenix-new-the-remote-ai-runtime/)** — Full announcement with demos and technical details(https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) — Anthropic's agentic coding tool
+- [Cursor](https://www.cursor.com/) — AI-powered code editor/agent
+
+For case studies and practical guides, see:
+
+- [LangChain Blog: The rise of "context engineering"](https://blog.langchain.com/the-rise-of-context-engineering/)
+- [LangChain Blog: Context Engineering for Agents](https://blog.langchain.com/context-engineering-for-agents/)
+
+---
+
+_For a deep dive and practical results, see the full benchmark and analysis by Lance Martin: [Vibe Code Benchmark (2025)](https://rlancemartin.github.io/2025/04/03/vibe-code/)_t, where code agents autonomously generate, modify, and evaluate code in response to high-level prompts—often with minimal human intervention. The term is inspired by the fluid, collaborative process between human intent and AI execution, emphasizing rapid iteration and context-aware problem solving.
 
 ---
 
@@ -28,12 +50,24 @@ This approach enables developers to focus on intent and architecture, while the 
 
 ## 🛠️ Vibe Coding in Practice
 
-- **Agents:** [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+- **Agents:** [Cursor](https://www.cursor.com/), [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Phoenix.new](https://phoenix.new/) — Remote AI runtime for Elixir/Phoenix
 - **Protocols:** [MCP (Model Context Protocol)](https://www.anthropic.com/news/model-context-protocol)
 - **Retrieval:** [llms.txt](https://llmstxt.org/), [LangGraph docs](https://langchain-ai.github.io/langgraph/llms-full.txt), [Vector DB Example](https://github.com/langchain-ai/vibe-code-benchmark/blob/main/context_and_mcp/build_langgraph_context.py)
 - **Benchmarks:** [Vibe Code Benchmark (Lance Martin, 2025)](https://rlancemartin.github.io/2025/04/03/vibe-code/)
 
+### 🌟 Featured: Phoenix.new
+
+[Phoenix.new](https://phoenix.new/) represents a breakthrough in language-specific vibe coding, offering:
+
+- **Ephemeral VMs**: Full root access in isolated virtual machines shared with AI agents
+- **Headless Browser Integration**: Agents can interact with web applications like real users
+- **Real-time Collaboration**: Built on Phoenix framework's strengths in live, collaborative apps
+- **End-to-End Deployment**: From prompt to deployed application with infrastructure guardrails
+
+Created by Chris McCord (Phoenix framework creator), Phoenix.new demonstrates how vibe coding can be optimized for specific languages and frameworks. See the [full announcement](https://fly.io/blog/phoenix-new-the-remote-ai-runtime/) for demos of autonomous Tetris coding and real-time app generation.
+
 ---
+
 ## 📈 Why It Matters
 
 Vibe coding marks a significant shift toward more autonomous, context-driven software development, as demonstrated by recent benchmarks and real-world deployments:
