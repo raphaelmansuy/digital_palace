@@ -60,6 +60,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [MLOps](./mlops.md) — Model lifecycle management, CI/CD for ML, versioning, and governance. See [Production Deployment](./production-deployment.md), [Observability](./observability.md).
 - [AI Testing & Validation](./ai-testing.md) — Testing methodologies, evaluation frameworks, bias detection, and quality assurance for AI systems. Related: [Observability](./observability.md), [AI Safety & Ethics](./ai-safety-ethics.md).
 - [App Template (Mckay's)](./app-template.md) — Modern full-stack Next.js/TypeScript SaaS/AI starter with Supabase, Clerk, Stripe, and best practices. See [Frameworks](./frameworks.md), [Production Deployment](./production-deployment.md).
+- [Steampipe](./steampipe.md) — Query APIs, cloud, and SaaS data with SQL. Zero-ETL, open-source, and extensible. See [Official Site](https://steampipe.io/).
 
 ### 🚀 **Performance & Optimization**
 

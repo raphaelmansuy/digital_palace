@@ -2,7 +2,7 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-9-blue?style=flat-square)](#alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-10-blue?style=flat-square)](#alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%202025-green?style=flat-square)](#recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#by-category)
 
@@ -32,6 +32,9 @@
 ### 🌟 ["Sam Altman"](./sam-altman.md)
 **"CEO and Co-founder"** at "OpenAI"
 
+### 🌟 ["Thorsten Ball"](./thorsten-ball.md)
+**"Software Engineer & Author"** at "Sourcegraph"
+
 ---
 
 ## 📝 Alphabetical Directory
@@ -45,6 +48,7 @@
 | ["Sam Altman"](./sam-altman.md) | "CEO and Co-founder" | "OpenAI" | `ceo,  entrepreneur,  investor` |
 | ["Timnit Gebru"](./timnit-gebru.md) | "Founder & Executive Director" | "DAIR Institute" | `ai-ethics,  researcher,  entrepreneur` |
 | ["Nir Diamant"](./nir-diamant.md) | "AI Agentic Systems Architect, Open Source Maintainer" | "DiamantAI, Open Source" | `ai-agents, agent-frameworks, production-ai, open-source, orchestration, multi-agent, genai, tutorials` |
+| ["Thorsten Ball"](./thorsten-ball.md) | "Software Engineer & Author" | "Sourcegraph" | `developer, author, compilers, interpreters, go, open-source` |
 
 ---
 
@@ -89,9 +93,9 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 9 people
+- **Total Profiles**: 10 people
 - **Categories**: 7 primary categories
-- **Last Updated**: July 2025
+- **Last Updated**: July 2025 (Thorsten Ball added)
 - **Update Frequency**: Monthly maintenance
 - **Coverage**: Global AI/ML community
 
@@ -99,6 +103,7 @@
 
 *Latest profiles added to the People Hub*
 
+- 🆕 ["Thorsten Ball"](./thorsten-ball.md)
 - 🆕 ["Dex Horthy"](./dex-horthy.md)
 - 🆕 ["Timnit Gebru"](./timnit-gebru.md)
 - 🆕 ["[Person Name]"](./_template.md)
