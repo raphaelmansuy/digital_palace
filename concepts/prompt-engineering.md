@@ -22,6 +22,8 @@ Prompt engineering is the art and science of crafting effective inputs (prompts)
 - [Fabric](https://github.com/danielmiessler/fabric) — Open-source prompt manager & workflow automation (Patterns, CLI/GUI, Obsidian integration)
   - [Origin Story](https://danielmiessler.com/blog/fabric-origin-story): Fabric was created to make AI accessible for everyone by breaking down complex tasks into components, applying AI to each, and chaining them into powerful workflows. Its philosophy is to augment human capability with a universal, open-source AI layer for life and work.
 
+ - See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation tools.
+
 ---
 
 ## 🧠 Core Concepts

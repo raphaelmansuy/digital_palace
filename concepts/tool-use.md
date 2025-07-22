@@ -22,6 +22,8 @@ Tool Use refers to AI systems' ability to interact with external tools, APIs, an
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Autonomous AI agent with tools
 - [LangGraph](https://github.com/langchain-ai/langgraph) — Tool-enabled agent workflows
 
+ - See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation tools.
+
 ---
 
 ## 🧠 Core Concepts

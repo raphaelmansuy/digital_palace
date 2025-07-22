@@ -37,6 +37,8 @@
 - **[Adobe XD](https://adobe.com/products/xd.html)** - UI/UX design with voice prototyping
 - **[Principle](https://principleformac.com/)** - Animation and interaction design
 
+- See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation tools.
+
 ### **Conversational UI Frameworks**
 
 - **[Botfront](https://botfront.io/)** - Open-source chatbot platform

@@ -1,3 +1,7 @@
+# Presentation Tools
+
+**[Marp](https://github.com/marp-team/marp)** — Open-source Markdown presentation ecosystem for creating slide decks. Integrates with VS Code and supports exporting to HTML, PDF, and PowerPoint.
+
 # ⚡ Quick References - Guides Hub
 
 [![Last Updated](https://img.shields.io/badge/Updated-June%202025-brightgreen?style=flat-square)](./CHANGELOG.md)

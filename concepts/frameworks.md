@@ -21,6 +21,9 @@ Frameworks are structured platforms and libraries that accelerate the developmen
 - [DSPy](https://github.com/stanfordnlp/dspy) — Modular prompt programming
 - [ell](https://docs.ell.so/) — Type-safe LLM programming
 
+
+See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation solutions.
+
 ---
 
 ## 🧠 Core Concepts
