@@ -39,6 +39,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [AutoGen](https://microsoft.github.io/autogen/) — Conversational multi-agent framework
 - [MemGPT](https://memgpt.ai/) — Long-term memory for agents
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) — Natural language computer interface
+- [Trae Agent](https://github.com/bytedance/trae-agent) — Open-source, modular LLM agent for software engineering. Multi-LLM support (OpenAI, Anthropic, Gemini, etc.), rich tool ecosystem, CLI, and research-friendly design. Ideal for agentic coding and workflow automation.
 
 ---
 
