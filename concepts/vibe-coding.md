@@ -80,6 +80,25 @@ These benefits are empirically supported by the Vibe Code Benchmark and are incr
 
 ---
 
+## ☁️ Fly.io: Developer-Focused Public Cloud
+
+[Fly.io](https://fly.io/) is a modern public cloud platform designed for developers who want instant, global deployments with minimal ops overhead. It powers projects like Phoenix.new and is ideal for agentic coding, LLM inference, and distributed systems.
+
+**Key features:**
+
+- Hardware-virtualized containers ("Fly Machines") that boot in ~250ms
+- Deploy in 35+ regions for sub-100ms latency worldwide
+- GPU/CPU on the edge for AI/ML workloads
+- Native support for popular frameworks (Rails, Phoenix, Django, Node, etc.)
+- Hardware isolation, memory-safe stack, and private WireGuard networking
+- Developer-centric support and transparent pricing ([see docs](https://fly.io/docs/), [pricing](https://fly.io/pricing/))
+
+**Why it matters:**
+
+Fly.io enables rapid, scalable, and secure deployment of agentic coding environments, LLMs, and real-time apps—making it a top choice for modern AI and developer workflows.
+
+---
+
 ## Final Thoughts
 
 Vibe coding is rapidly evolving, with new tools, protocols, and best practices emerging from both open-source and industry leaders. As agentic workflows become more capable and context engineering matures, developers can expect even greater productivity gains and new forms of collaboration between humans and AI.
