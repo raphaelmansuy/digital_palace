@@ -41,12 +41,10 @@
 - **[The State of AI Agents (June 2025) – Lance Martin](https://rlancemartin.github.io/2025/06/10/aie/)** - In-depth analysis of ambient agents, agent UX, tools, and training
 - **[Vibe Coding & Benchmark (April 2025) – Lance Martin](https://rlancemartin.github.io/2025/04/03/vibe-code/)** - How context and retrieval methods shape agent coding performance
 
-- **[Phoenix.new – The Remote AI Runtime for Phoenix (Chris McCord, Fly.io)](https://fly.io/blog/phoenix-new-the-remote-ai-runtime/)** - Revolutionary AI coding agent specifically built for Elixir/Phoenix development. Features ephemeral VMs, root shell access, headless browser automation, and real-time collaborative app building. From the creator of Phoenix framework, this represents a major breakthrough in language-specific AI development environments. Includes live demos of autonomous Tetris coding and real-time app generation.
 
-- **[Crawlee Python: Modern Web Scraping & Automation](./concepts/crawlee.md)** – Asyncio-native, production-grade crawling and browser automation for AI, LLM, and RAG workflows. Unified API for HTTP and headless browsers, proxy rotation, persistent queues, and more. Open-source by Apify.
 
----
 
+- **[Gemini Embedding (Google, 2025) – Now GA](https://developers.googleblog.com/en/gemini-embedding-available-gemini-api/)** - State-of-the-art multilingual embedding model for search, RAG, and more. [See concept →](./concepts/embeddings.md#-gemini-embedding-google-2025)
 
 ## 🌐 Curated Blogs & Recommended Reading
 

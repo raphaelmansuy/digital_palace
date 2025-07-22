@@ -40,3 +40,42 @@ Embeddings are numerical vector representations of words, sentences, or document
 - See [Learning Pathways](./learning-pathways.md) for skill progression
 
 [Back to Concepts Hub](./README.md)
+
+---
+
+## 🚀 Gemini Embedding (Google, 2025)
+
+**Gemini Embedding** (`gemini-embedding-001`) is Google’s state-of-the-art, multilingual embedding model, now generally available via the [Gemini API](https://ai.google.dev/gemini-api/docs/embeddings) and Vertex AI. It supports 100+ languages, code, and advanced domains, and consistently ranks at the top of the [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard).
+
+**Key features:**
+**Key features:**
+
+- Matryoshka Representation Learning (MRL): Flexible output dimensions (3072, 1536, 768, etc.)
+- High performance on retrieval, classification, clustering, and RAG
+- Free and paid tiers ([pricing](https://ai.google.dev/gemini-api/docs/pricing)), generous [rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+- [Technical report (arXiv)](https://arxiv.org/abs/2503.07891)
+
+**Quickstart Example:**
+
+**Quickstart Example:**
+
+```python
+from google import genai
+client = genai.Client()
+result = client.models.embed_content(
+    model="gemini-embedding-001",
+    contents="What is the meaning of life?")
+print(result.embeddings)
+```
+
+**Resources:**
+**Resources:**
+
+- [Official announcement](https://developers.googleblog.com/en/gemini-embedding-available-gemini-api/)
+- [Embeddings documentation](https://ai.google.dev/gemini-api/docs/embeddings)
+- [Quickstart notebook](https://github.com/google-gemini/cookbook/blob/main/quickstarts/Embeddings.ipynb)
+- [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+- [arXiv technical report](https://arxiv.org/abs/2503.07891)
+
+
+**Best practice:** Use the recommended output dimensions (3072, 1536, or 768) for optimal quality and efficiency. See the docs for advanced usage, batch mode, and integration with vector databases.
