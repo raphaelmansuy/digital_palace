@@ -255,6 +255,7 @@ strands --model-provider ollama --model-config '{"model_id": "llama3.3"}'
 
 | Framework | Best For | Difficulty | Features |
 |-----------|----------|------------|-----------|
+| [RunAgent](https://github.com/runagent-dev/runagent) | Universal cross-language agent platform | 🟡 Intermediate | Python-first, SDKs for Rust/Go/JS, framework-agnostic, production-ready |
 | [Quantalogic](https://github.com/quantalogic/quantalogic) | Complex multi-step tasks | 🔴 Advanced | Planning, coding, web search |
 | [CrewAI](https://github.com/joaomdmoura/crewAI) | Multi-agent collaboration | 🟡 Intermediate | Role-based agents, workflows |
 | [Pydantic AI](https://ai.pydantic.dev/agents/) | Type-safe agents | 🟡 Intermediate | Validation, structured output |

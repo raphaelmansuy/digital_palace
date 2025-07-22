@@ -15,9 +15,11 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 
 ---
 
+
 ## 🛠️ Key Frameworks & Tools
 
 - [Model Context Protocol](https://modelcontextprotocol.io/) — Standardized AI application interfaces
+- [Steampipe](./steampipe.md) — Open-source SQL engine with first-class MCP integration. See [Steampipe MCP Documentation](https://steampipe.io/docs/query/mcp).
 - [MCP Tools](https://github.com/f/mcptools) — Swiss Army Knife for MCP Servers
 - [Active Pieces](https://github.com/activepieces/activepieces) — AI Agents & MCPs with 280+ servers
 - [MCP Agent](https://github.com/lastmile-ai/mcp-agent) — Build effective agents using MCP

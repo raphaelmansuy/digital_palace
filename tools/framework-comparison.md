@@ -15,6 +15,7 @@
 | **Haystack** | Search, RAG | Python | 🟡 Medium | 🟡 Medium | ✅ Yes |
 | **Semantic Kernel** | Enterprise AI | C#, Python | 🟡 Medium | 🟡 Growing | ✅ Yes |
 | **Fabric** | Prompt management, workflow automation, Patterns, CLI/GUI | Go, JS | 🟢 Easy | 🟢 Large | ✅ Yes |
+| **RunAgent** | Universal cross-language agent platform | Python, Rust, Go, JS/TS | 🟡 Medium | 🟡 Growing | ✅ Yes |
 
 
 

@@ -22,54 +22,31 @@
 
 - 👉 **Beginner**: [Getting Started Tools](#-beginner-tools)
 - 🟡 **Intermediate**: [Development Frameworks](#-development-frameworks)
-- 👉 **Advanced**: [Production & Research Tools](#-production--research-tools)
-- 🆕 **Latest**: [2025 AI Breakthroughs](#-2025-breakthrough-tools)
-
 ---
 
 ## 🌱 Beginner-Friendly Tools
 
 ### Local AI Runtime
 
-| Tool                                | Purpose              | Best For                              |
-| ----------------------------------- | -------------------- | ------------------------------------- |
-| [Ollama](https://ollama.com/)       | Run models locally   | First-time users, offline development |
-| [LM Studio](https://lmstudio.ai/)   | GUI for local models | Non-technical users                   |
 | [Jan](https://github.com/janhq/jan) | ChatGPT alternative  | Privacy-focused local chat            |
 
 ### Getting Started Frameworks
-
-| Tool                                                                                      | Purpose                                                                                         | Learning Curve |
-| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------- |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli)                                 | Google's official AI workflow tool                                                              | 🟢 Easy        |
 | [Fabric](https://github.com/danielmiessler/fabric)                                        | Open-source prompt manager & AI workflow automation (CLI & GUI, Patterns, Obsidian integration) | 🟢 Easy        |
 | [Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow) | Workflow automation with YAML & Python APIs                                                     | 🟢 Easy        |
 | [LangChain](https://langchain.com/)                                                       | LLM application framework                                                                       | 🟡 Moderate    |
 | [instructor](https://jxnl.github.io/instructor/)                                          | Structured outputs                                                                              | 🟢 Easy        |
 | [QLLM](https://github.com/quantalogic/qllm)                                               | CLI for multiple LLMs                                                                           | 🟢 Easy        |
-
----
-
 ## 💻 Development Frameworks
 
-### Core Application Frameworks
-
-#### **LangChain Ecosystem** 🦜
 
 - **[LangChain](https://www.langchain.com/)** - The most popular LLM framework
   - **Use for**: General LLM applications, prototyping
   - **Strength**: Extensive ecosystem, lots of examples
   - **Documentation**: [Getting Started](https://python.langchain.com/docs/get_started/introduction)
-
-#### **LlamaIndex Ecosystem** 🦙
-
-- **[LlamaIndex](https://www.llamaindex.ai/)** - Data-focused LLM applications
   - **Use for**: RAG systems, document processing
   - **Strength**: Excellent for enterprise data integration
   - **Best fit**: When working with proprietary data
-
-#### **Modern Alternatives**
-
 - **[Fabric](https://github.com/danielmiessler/fabric)** - Open-source framework for prompt management, workflow automation, and AI augmentation
   - **Use for**: Organizing, sharing, and running AI prompts (Patterns) for real-world tasks
   - **Strength**: CLI & GUI, integrates with Obsidian, supports custom workflows, extensible with Patterns and strategies
@@ -77,9 +54,6 @@
   - **Docs**: [GitHub README](https://github.com/danielmiessler/fabric)
 - **[ell](https://docs.ell.so/)** - Language model programming framework
   - **Use for**: Clean, type-safe LLM programming
-  - **Strength**: Modern Python patterns, excellent DX
-- **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse
-  - **Use for**: Structured workflows, LLM-powered pipelines
   - **Strength**: YAML declarative + Python API, built-in validation
 
 ### Structured Output Tools
@@ -98,25 +72,15 @@
 
 #### **[Google ADK (Agent Development Kit)](https://google.github.io/adk-docs/)** 🆕⭐
 
-- **Purpose**: Flexible and modular framework for developing and deploying AI agents
-- **Best for**: Enterprise-grade agent development, multi-agent systems, complex workflows
-- **Key Features**:
   - Model-agnostic (optimized for Gemini, works with others)
   - Deployment-agnostic (local, Cloud Run, Vertex AI)
   - Rich tool ecosystem with built-in and custom tools
   - Multi-agent architecture support
   - Built-in evaluation and safety features
   - Streaming and real-time capabilities
-- **Languages**: Python, Java
-- **Installation**: `pip install google-adk`
-- **Status**: Production-ready, officially supported by Google
-- **Links**: [Docs](https://google.github.io/adk-docs/) | [Python SDK](https://github.com/google/adk-python) | [Java SDK](https://github.com/google/adk-java) | [Samples](https://github.com/google/adk-samples)
 
-- **Purpose**: Modular RAG engine built on Google ADK, see RAG & Data Tools section.
-- **Best for**: Enterprise RAG, Google Cloud, agentic workflows
 
 #### **[Motia](https://github.com/MotiaDev/motia)** 🆕⭐
-
 - **Purpose**: Unified backend framework for APIs, events, background jobs, and AI agents
 - **Best for**: Building event-driven, multi-language (TypeScript, Python) backends with integrated observability and state management
 - **Key Features**:
