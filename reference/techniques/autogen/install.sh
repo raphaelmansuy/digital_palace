@@ -1,1 +1,1 @@
-pip install pyautogen~=0.1.1
+pip install ag2~=0.1.1
