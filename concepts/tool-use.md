@@ -21,6 +21,7 @@ Tool Use refers to AI systems' ability to interact with external tools, APIs, an
 - [Anthropic Tool Use](https://docs.anthropic.com/claude/docs/tool-use) — Claude's tool framework
 - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Autonomous AI agent with tools
 - [LangGraph](https://github.com/langchain-ai/langgraph) — Tool-enabled agent workflows
+- [Qwen Code](./qwen-code.md) — Advanced CLI tool for agentic coding, workflow automation, and codebase interaction
 
  - See also: [Presentation & Visualization Tools](./presentation-tools.md) for Markdown-based slide decks and technical presentation tools.
 

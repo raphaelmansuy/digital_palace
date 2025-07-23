@@ -157,6 +157,7 @@ class WorkflowEngine:
 - **[Semantic Kernel](https://github.com/microsoft/semantic-kernel)** - SDK for AI orchestration
 - **[LlamaIndex](https://llamaindex.ai/)** - Data framework for LLM applications
 - **[AutoGen](https://microsoft.github.io/autogen/)** - Multi-agent conversation framework
+- **[Qwen Code](./qwen-code.md)** - Agentic CLI for automating code workflows, refactoring, and repository analysis
 
 ## Design Patterns
 
