@@ -97,7 +97,63 @@ Nir Diamant is an AI researcher, educator, and community builder, best known for
 
 ## 🎯 Areas of Expertise
 
-- GenAI Agents
+- GenAI Agent Development
+- AI/ML Education
+- Open Source Community Building
+- Production Deployment
+- Agent Frameworks & Orchestration
+- AI Security & Observability
+- Tutorial Creation
+
+## 📰 Recent News/Updates
+
+- **2025**: Agents Towards Production reaches 8.9K+ stars, 1.1K+ forks
+- **2025**: DiamantAI newsletter surpasses 27K subscribers
+- **Ongoing**: Expanding tutorial coverage for agentic workflows and security
+- **Regular**: Hosting community events and publishing new guides
+
+## 🤝 Notable Collaborations
+
+- **LangChain, Redis, Tavily, RunPod, xpander.ai, Qualifire, Anchor Browser**: Tutorial partnerships and sponsorships
+- **Open Source Community**: Active collaboration with contributors and AI practitioners
+
+## 🏆 Awards & Recognition
+
+- **GitHub Impact**: 8.9K+ stars, 1.1K+ forks on Agents Towards Production
+- **Newsletter Leadership**: Top 0.1% AI newsletter
+- **Community Growth**: Discord and Reddit communities with thousands of members
+
+## 🎓 Academic & Professional Background
+
+- **Specialization**: GenAI agent development, AI/ML education, open source
+- **Industry Focus**: AI/ML, agentic workflows, production deployment, security
+- **Community Focus**: Education, collaboration, and knowledge sharing
+
+## 🌍 Global Impact
+
+- **Knowledge Democratization**: Making agentic AI accessible worldwide
+- **Educational Resources**: Comprehensive tutorials and guides for all levels
+- **Community Building**: Fostering collaborative learning environments
+
+## 🔬 Philosophy
+
+- **Tutorial-First**: Practical, hands-on learning for real-world impact
+- **Open Source**: Sharing knowledge and tools for collective progress
+- **Community First**: Building resources that serve the global AI/ML community
+- **Continuous Learning**: Staying current with rapidly evolving AI landscape
+
+## 📺 Educational Impact
+
+- **Agents Towards Production**: Comprehensive GenAI agent repository
+- **DiamantAI Newsletter**: Weekly AI insights and tutorials
+- **Community Resources**: Discord, Reddit, and LinkedIn groups
+
+---
+
+_Last updated: 2025-07-24_  
+_Next review: 2025-08-24_
+
+**Tags**: #ai #educator #founder #open-source #diamantai #agents-towards-production #genai #tutorial #israel #github #newsletter
 - Agent Orchestration
 - Production Deployment
 - Open Source
