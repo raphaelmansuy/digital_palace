@@ -253,8 +253,10 @@ digital_palace/
 - **[Voice AI](./concepts/voice-ai.md)** - Real-time conversation
 - **[AI Legal Compliance](./concepts/ai-legal-regulatory.md)** - EU AI Act & GDPR
 
+
 ### 🛠️ Tools & Frameworks
 
+- **[Prompt Boost](https://promptboost.dev/)** – Discover and install the best prompts, instructions, chat modes, and MCP servers for VS Code. Supercharge your agentic and AI development workflow with 1-click installation and a curated extension directory. Ideal for anyone building with AI agents, MCP, or advanced prompt engineering in VS Code.
 - **[158+ AI Tools](./tools/ai-tools-master-directory.md)** - Comprehensive directory
 - **[Framework Comparisons](./tools/framework-comparison.md)** - LangChain vs alternatives
 - **[Production Tools](./tools/ai-tools-master-directory.md#production-research-tools)** - Enterprise solutions
