@@ -53,8 +53,9 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [Prompt Engineering](./prompt-engineering.md) — Crafting effective prompts, patterns, and templates for LLMs. See [LLMs](./llms.md) and [Technical Articles](./technical-articles.md).
 - [Frameworks](./frameworks.md) — Development platforms, libraries, and toolkits for building AI solutions. Related: [Prompt Engineering](./prompt-engineering.md), [LLMs](./llms.md).
-- [Production Deployment](./production-deployment.md) — Real-world delivery, monitoring, security, and best practices. See [Frameworks](./frameworks.md), [Observability](./observability.md).
+## 📚 Concept Index
 - [Cloud Platforms](./cloud-platforms.md) — Scalable infrastructure for AI and LLM applications. Related: [Inference](./inference.md), [Production Deployment](./production-deployment.md).
+    - [MCP Illustrated Guidebook](./mcp-illustrated-guidebook.md) — Illustrated, example-driven introduction to the Model Context Protocol (MCP) for AI agents. Includes architecture, core concepts, and hands-on project guides. [Assessment tool](https://bit.ly/mcp-assessment).
 - [API Design](./api-design.md) — Creating robust interfaces for AI services and integrations. See [Production Deployment](./production-deployment.md).
 - [Observability](./observability.md) — Monitoring, debugging, and analytics for AI systems. Related: [Production Deployment](./production-deployment.md).
 - [MLOps](./mlops.md) — Model lifecycle management, CI/CD for ML, versioning, and governance. See [Production Deployment](./production-deployment.md), [Observability](./observability.md).

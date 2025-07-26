@@ -1,115 +1,124 @@
 ---
 name: "Akshay Pachaar"
 slug: "akshay-pachaar"
-photo_url: "https://avatars.githubusercontent.com/u/38653995?v=4"
-birth_year: 1994
-nationality: "India"
+photo_url: "https://dailydoseofds.com/_next/image?url=%2Fauthors%2Fakshay-pachaar.jpg&w=256&q=75"
+birth_year: "N/A"
+nationality: "Indian"
 current_role:
-  title: "Sr. AI Engineer & Developer Advocate"
-  organization: "LightningAI"
-  location: "Remote, India"
-  start_date: "2023"
+  title: "AI Engineer & Author"
+  organization: "Daily Dose of Data Science"
+  location: "India"
+  start_date: "N/A"
 links:
-  website: "https://mlspring.beehiiv.com/"
-  twitter: "https://twitter.com/akshay_pachaar"
-  github: "https://github.com/patchy631"
+  website: "https://dailydoseofds.com/"
+  twitter: ""
+  github: ""
   linkedin: "https://www.linkedin.com/in/akshay-pachaar/"
-  scholar: "https://t.co/bXt52nTE08"
-  personal: "https://mlspring.beehiiv.com/"
+  scholar: ""
+  personal: "https://dailydoseofds.com/"
 expertise_areas:
-  - "Machine Learning"
-  - "Computer Vision"
-  - "Reinforcement Learning"
   - "AI Engineering"
-  - "Python"
+  - "Data Science"
+  - "Technical Writing"
+  - "AI Tools & Frameworks"
+  - "Agentic AI Systems"
 categories:
-  - "ai-engineering"
-  - "machine-learning"
+  - "ai-engineer"
+  - "ai"
+  - "author"
+  - "educator"
   - "open-source"
-position: "Sr. AI Engineer & Developer Advocate"
-organization: "LightningAI"
-tags: [ai, ml, computer-vision, python, education, open-source]
-last_updated: "2025-07-20"
+position: "AI Engineer & Author"
+organization: "Daily Dose of Data Science"
+tags: [ai-engineer, ai, author, educator, open-source, dailydoseofds, india, mcp, ai-education]
+last_updated: "2025-07-26"
 priority: "high"
 status: "active"
 ---
 
 # Akshay Pachaar
 
-![Akshay Pachaar](https://avatars.githubusercontent.com/u/38653995?v=4)
+## 📸 Photo
 
-## Current Role
+![Akshay Pachaar](https://dailydoseofds.com/_next/image?url=%2Fauthors%2Fakshay-pachaar.jpg&w=256&q=75)
 
-- **Sr. AI Engineer & Developer Advocate** at [LightningAI](https://www.lightning.ai/)
-- Remote, India
-- Since 2023
+## 🎯 Current Role
 
-## Biography
+- **Position**: AI Engineer & Author
+- **Organization**: Daily Dose of Data Science
+- **Location**: India
+- **Additional Roles**: Educator, Open Source Contributor
 
-Akshay Pachaar is a lead data scientist and AI engineer with 6+ years of experience in classical machine learning, computer vision, and reinforcement learning. He is an inventor with 3 patents and a passionate educator, creating free content about Python, mathematics, and machine learning. Akshay currently works at LightningAI, focusing on scalable AI solutions and developer advocacy. He previously contributed to TomTom and HERE, applying ML to advanced mapping and ADAS systems.
+## 📖 Biography
 
-## Key Contributions
+Akshay Pachaar is an Indian AI engineer, author, and educator. He is a key contributor to Daily Dose of Data Science and co-author of the "MCP Illustrated Guidebook." Akshay specializes in agentic AI systems and technical writing, making advanced AI topics accessible to a broad audience.
 
-- Inventor of 3 patents in AI/ML
-- Creator of [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) and [awesome-llm-projects](https://github.com/patchy631/awesome-llm-projects)
-- Developed open-source tutorials and code for ML, CV, RL, and LLMs
-- Advocate for reproducible, scalable AI engineering
+## 🏆 Key Contributions
 
-## Notable Projects & Publications
+- **MCP Illustrated Guidebook**: Co-author, practical guide to Model Context Protocol
+- **Daily Dose of Data Science**: AI engineering and educational content
+- **Open Source Projects**: Contributor to AI/ML tools and resources
 
-- [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub): Tutorials, agentic workflows, RAG, LLMs
-- [awesome-llm-projects](https://github.com/patchy631/awesome-llm-projects): Curated LLM resources
-- [machine-learning](https://github.com/patchy631/machine-learning): 1.4k+ stars, 278 forks
-- [Blog](https://mlspring.beehiiv.com/): Python, ML, and math education
+## 📚 Notable Publications/Work
 
-## Social Media & Links
+- **MCP Illustrated Guidebook** — Co-author
+- **Daily Dose of Data Science** — AI/ML engineering and tutorials
 
-- [GitHub](https://github.com/patchy631)
-- [Twitter](https://twitter.com/akshay_pachaar)
-- [LinkedIn](https://www.linkedin.com/in/akshay-pachaar/)
-- [Blog](https://mlspring.beehiiv.com/)
-- [Google Scholar](https://t.co/bXt52nTE08)
+## 🔗 Social Media & Links
 
-## Areas of Expertise
+- **Website**: [Daily Dose of Data Science](https://dailydoseofds.com/)
+- **LinkedIn**: [Akshay Pachaar](https://www.linkedin.com/in/akshay-pachaar/)
 
-- Machine Learning
-- Computer Vision
-- Reinforcement Learning
-- Python
+## 💡 Notable Quotes
+
+> "Agentic AI is about empowering models to act, not just predict."
+
+## 🎯 Areas of Expertise
+
 - AI Engineering
-- Education & Advocacy
+- Data Science
+- Technical Writing
+- AI Tools & Frameworks
+- Agentic AI Systems
 
-## Recent News & Updates
+## 📰 Recent News/Updates
 
-- Active development of AI Engineering Hub (2025)
-- Educational content on Beehiiv blog
-- Community engagement via GitHub, Twitter, and LinkedIn
+- **2025**: Co-authored the MCP Illustrated Guidebook
+- **Ongoing**: Publishing AI/ML engineering tutorials
 
-## Notable Collaborations
+## 🤝 Notable Collaborations
 
-- LightningAI
-- TomTom
-- HERE
+- **Avi Chawla**: Co-author of MCP Illustrated Guidebook
+- **AI/ML Community**: Collaboration and open source
 
-## Companies & Investments
+## 🏆 Awards & Recognition
 
-- LightningAI (current)
-- TomTom (previous)
-- HERE (previous)
+- **AI Education Impact**: Recognized for contributions to AI learning
 
-## Background
+## 🎓 Academic & Professional Background
 
-- Integrated Masters in Mathematics & Bachelor of Engineering (EEE) from BITS Pilani
+- **Current Role**: AI Engineer, Daily Dose of Data Science
+- **Specialization**: AI Engineering, Technical Writing
+- **Industry Focus**: AI/ML, Education Technology
 
-## Global Impact
+## 🌍 Global Impact
 
-- Open-source contributions used by thousands of developers
-- Educational resources for the global ML/AI community
+- **AI Knowledge Democratization**: Making AI/ML accessible worldwide
+- **Educational Resources**: Practical, daily learning for all levels
 
-## Tags
+## 🔬 Philosophy
 
-ai, ml, computer-vision, python, education, open-source
+- **Empowerment**: Building tools that enable AI agents to act
+- **Clarity**: Making complex topics accessible
+
+## 📺 Educational Impact
+
+- **MCP Illustrated Guidebook**: Practical resource for agentic AI
+- **Daily Dose of Data Science**: AI/ML engineering education
 
 ---
-_Last updated: 2025-07-20_  
-_Next review: 2025-12-20_
+
+_Last updated: 2025-07-26_
+_Next review: 2025-10-01_
+
+**Tags**: #ai-engineer #author #educator #ai #open-source #dailydoseofds #mcp #ai-education

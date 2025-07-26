@@ -3,8 +3,8 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-16-blue?style=flat-square)](#-alphabetical-directory)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2022%2C%202025-green?style=flat-square)](#-recent-additions)
+[![Total People](https://img.shields.io/badge/Total%20People-17-blue?style=flat-square)](#-alphabetical-directory)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2026%2C%202025-green?style=flat-square)](#-recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#-by-category)
 
 ---
@@ -130,26 +130,27 @@
 
 ---
 
+
 ## 📈 Statistics
 
-- **Total Profiles**: 10 people
+- **Total Profiles**: 17 people
 - **Categories**: 7 primary categories
-- **Last Updated**: July 2025 (Thorsten Ball added)
+- **Last Updated**: July 2025 (Akshay Pachaar added)
 - **Update Frequency**: Monthly maintenance
 - **Coverage**: Global AI/ML community
+
 
 ## 🆕 Recent Additions
 
 ### Latest profiles added to the People Hub
 
-
+- 🆕 ["Akshay Pachaar"](./akshay-pachaar.md)
 - 🆕 ["Shubham Saboo"](./shubham-saboo.md)
 - 🆕 ["Hynek Schlawack"](./hynek-schlawack.md)
 - 🆕 ["David Kim"](./david-kim.md)
 - 🆕 ["Chris McCord"](./chris-mccord.md)
 - 🆕 ["Burke Holland"](./burke-holland.md)
 - 🆕 ["Awni Hannun"](./awni-hannun.md)
-- 🆕 ["Akshay Pachaar"](./akshay-pachaar.md)
 
 ---
 
@@ -206,7 +207,7 @@ Help us expand the People Hub!
 
 ---
 
-*Generated automatically on: Thu Jul  3 10:22:54 HKT 2025*  
+*Generated automatically on: Sat Jul 26 2025*  
 *Next update: Monthly via maintenance script*
 
 **Legend**: 🎓 Academic • 🏢 Industry • 🛡️ Safety • 🚀 Startup • 📚 Author • 💻 Open Source • 🎤 Communicator
