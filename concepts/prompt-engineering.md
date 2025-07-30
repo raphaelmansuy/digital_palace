@@ -7,6 +7,8 @@ Prompt engineering is the art and science of crafting effective inputs (prompts)
 ## 📖 Learn More
 
 - [Prompt Engineering Guide](../guides/prompting/README.md) — Techniques, patterns, and examples
+- [AI Assistant Personas](./ai-assistant-personas.md) — Structured prompt templates for specialized AI assistants
+- [Prompts Directory](../prompts/README.md) — Ready-to-use AI assistant personas and templates
 - [Chain of Thought Prompting](../guides/prompting/chain_of_tought_leaders_prompting.md)
 - [DSPy: Modular Prompt Programming](../reference/techniques/dspy/README.md)
 - [Design Patterns for LLM Applications](../reference/techniques/dessign_patterns_for_llm_applications/README.md#prompt-engineering)
