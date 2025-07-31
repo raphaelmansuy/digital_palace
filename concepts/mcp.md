@@ -5,8 +5,9 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 ---
 
 
-## � Learn More
+## 📚 Learn More
 
+- **[MCP Comprehensive Guide](../reference/mcp-comprehensive-guide.md)** — Detailed A4 explanation of what MCP is, why it's important, and how it works
 - [Model Context Protocol Overview](../reference/core-technologies.md#model-context-protocol-mcp)
 - [MCP Official Documentation](https://modelcontextprotocol.io/)
 - [MCP Agent Guide](../guides/mcp-servers.md)
