@@ -27,6 +27,7 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 - [MCP Agent](https://github.com/lastmile-ai/mcp-agent) — Build effective agents using MCP
 - [Cline](https://github.com/cline/cline) — VS Code extension with native MCP support
 - [Continue](https://continue.dev/) — Open-source autopilot with MCP integrations
+ - [MCPJam Inspector](https://github.com/MCPJam/inspector) — Open-source developer tool for testing and debugging MCP servers. Full MCP spec compliance, supports STDIO/SSE/HTTP transports, integrated LLM playground (OpenAI, Anthropic, Ollama), modern UI/UX, logging, error reporting. **Install:** `npx @mcpjam/inspector@latest` ([Docs](https://modelcontextprotocol.io/), [Discord](https://discord.gg/JEnDtz8X6z), [Website](https://mcpjam.com/))
 
 ---
 
