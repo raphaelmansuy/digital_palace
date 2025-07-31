@@ -460,6 +460,7 @@ _The latest AI innovations reshaping the landscape_
 
 - **[Model Context Protocol](https://modelcontextprotocol.io/)** - Standardized AI application interfaces
 - **[Code Sandbox MCP](https://github.com/philschmid/code-sandbox-mcp)** - Lightweight, open-source MCP server for secure, containerized code execution (Python/JS) in LLM workflows. Integrates with Gemini SDK/CLI, supports custom containers, and environment passthrough. MIT License.
+- **[MCPJam Inspector](https://github.com/MCPJam/inspector)** - Developer tool for testing and debugging MCP servers. Full MCP spec compliance, supports STDIO/SSE/HTTP transports, integrated LLM playground (OpenAI, Anthropic, Ollama), modern UI/UX, logging, error reporting. **Install:** `npx @mcpjam/inspector@latest` ([Docs](https://modelcontextprotocol.io/), [Discord](https://discord.gg/JEnDtz8X6z), [Website](https://mcpjam.com/))
 - **[MCP Tools](https://github.com/f/mcptools)** - Swiss Army Knife for MCP Servers
 - **[Active Pieces](https://github.com/activepieces/activepieces)** - AI Agents & MCPs & AI Workflow Automation with 280+ MCP servers
 - **[MCP Agent](https://github.com/lastmile-ai/mcp-agent)** - Build effective agents using Model Context Protocol
