@@ -2,9 +2,12 @@
 
 > Build production-ready AI agents with Google's official framework - from simple chatbots to complex multi-agent systems
 
+**🌟 Featured Tutorial:** [Simplify your Agent "vibe building" flow with ADK and Gemini CLI (Google Developer Blog, July 2025)](https://developers.googleblog.com/en/simplify-agent-building-adk-gemini-cli/) — Learn rapid agent prototyping with the revamped `llms-full.txt` file and iterative "vibe coding" workflow. See [Vibe Coding concept](../concepts/vibe-coding.md) for context.
+
 ## 🎯 What You'll Achieve
 
 By the end of this guide, you'll have:
+
 - Built your first Google ADK agent
 - Understanding of ADK's architecture and components
 - Knowledge of multi-agent orchestration

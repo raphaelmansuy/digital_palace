@@ -46,6 +46,7 @@
 
 
 - **[Gemini Embedding (Google, 2025) – Now GA](https://developers.googleblog.com/en/gemini-embedding-available-gemini-api/)** - State-of-the-art multilingual embedding model for search, RAG, and more. [See concept →](./concepts/embeddings.md#-gemini-embedding-google-2025)
+- **[Simplify your Agent "vibe building" flow with ADK and Gemini CLI (Google Developer Blog, July 2025)](https://developers.googleblog.com/en/simplify-agent-building-adk-gemini-cli/)** - Learn rapid agent prototyping with the revamped `llms-full.txt` file and iterative "vibe coding" workflow. [See concept →](./concepts/vibe-coding.md)
 
 ## 🌐 Curated Blogs & Recommended Reading
 
