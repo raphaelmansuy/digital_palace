@@ -228,6 +228,8 @@ class WorkflowEngine:
 ## Related Frameworks & Tools
 
 - [Motia: Unified Backend Framework](./motia.md) — Polyglot, event-driven backend for APIs, jobs, and agentic workflows. Supports TypeScript, Python, and more. Built-in state management, observability, and automation.
+- [Agent Development Kit (ADK) & MCP Toolbox](https://google.github.io/adk-docs/tools/) — Advanced agentic workflow automation with Google’s ADK, supporting function tools, built-in tools, third-party integrations, and MCP protocol for secure, scalable orchestration. See [Software Bug Assistant sample](https://github.com/google/adk-samples/tree/main/python/agents/software-bug-assistant) and [Travel Agent Codelab](https://codelabs.developers.google.com/travel-agent-mcp-toolbox-adk#0) for real-world deployments. Learn how to [deploy MCP servers to Cloud Run](https://cloud.google.com/blog/topics/developers-practitioners/build-and-deploy-a-remote-mcp-server-to-google-cloud-run-in-under-10-minutes).
+- [VideoSDK AI Agents](https://github.com/videosdk-live/agents) — Real-time multimodal conversational AI agent framework for voice/video, telephony, avatars, multi-model pipelines, MCP & A2A protocol integration, and extensible function tools. See [Documentation](https://docs.videosdk.live/ai_agents/introduction) and [Examples](https://github.com/videosdk-live/agents/blob/main/examples).
 
 ## Challenges & Solutions
 
