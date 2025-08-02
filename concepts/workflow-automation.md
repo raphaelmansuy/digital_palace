@@ -136,6 +136,7 @@ class WorkflowEngine:
 - **[Temporal](https://temporal.io/)** - Microservice orchestration platform
 - **[Camunda](https://camunda.com/)** - Business process management platform
 - **[n8n](https://n8n.io/)** - Workflow automation tool with visual editor
+- **[Eigent](./eigent.md)** - Multi-agent workforce platform for automating complex workflows. 100% open-source, privacy-first, supports MCP, human-in-the-loop, and enterprise features. See [concept page](./eigent.md).
 
 ### **RPA Platforms**
 
@@ -150,6 +151,7 @@ class WorkflowEngine:
 - **[Microsoft Power Platform](https://powerplatform.microsoft.com/)** - Suite of low-code tools
 - **[Appian](https://appian.com/)** - Low-code automation platform
 - **[Nintex](https://nintex.com/)** - Process automation and workflow solutions
+- **[Dyad](./dyad.md)** - Local, open-source AI app builder. Build unlimited apps with no vendor lock-in, full privacy, and support for any AI model. See [concept page](./dyad.md).
 
 ### **AI Integration**
 
@@ -158,6 +160,8 @@ class WorkflowEngine:
 - **[LlamaIndex](https://llamaindex.ai/)** - Data framework for LLM applications
 - **[AutoGen](https://microsoft.github.io/autogen/)** - Multi-agent conversation framework
 - **[Qwen Code](./qwen-code.md)** - Agentic CLI for automating code workflows, refactoring, and repository analysis
+- **[Crush](./crush.md)** - Multi-model, extensible, open-source AI coding agent for your terminal. Supports LLMs, MCP, LSP, and custom workflows. See [concept page](./crush.md).
+- **[Eigent](./eigent.md)** - Multi-agent workforce platform for automating complex workflows. See [concept page](./eigent.md).
 
 ## Design Patterns
 
@@ -220,11 +224,10 @@ class WorkflowEngine:
 
 ## Related Concepts
 
-- **[AI Agents](./ai-agents.md)** — Autonomous systems for task execution
-- **[Tool Use](./tool-use.md)** — AI systems interacting with external tools
-- **[Agent Communication](./agent-communication.md)** — Multi-agent coordination
-- **[Production Deployment](./production-deployment.md)** — Deploying automated workflows
-- **[Observability](./observability.md)** — Monitoring workflow performance
+
+## Related Frameworks & Tools
+
+- [Motia: Unified Backend Framework](./motia.md) — Polyglot, event-driven backend for APIs, jobs, and agentic workflows. Supports TypeScript, Python, and more. Built-in state management, observability, and automation.
 
 ## Challenges & Solutions
 

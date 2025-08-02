@@ -35,6 +35,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 ---
 
+
 ## 🛠️ Key Protocols & Tools
 
 - [A2A Protocol](https://github.com/google/A2A/) — Google's agent-to-agent communication standard
@@ -44,6 +45,7 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 - [AutoGen](https://microsoft.github.io/autogen/) — Conversational multi-agent framework
 - [CAMEL](../reference/techniques/camel/README.md) — Communicative agents for role-playing
 - [CrewAI](https://github.com/joaomdmoura/crewAI) — Multi-agent collaboration platform
+- [Motia](./motia.md) — Unified backend framework for APIs, jobs, and agentic workflows. Polyglot, event-driven, open-source, supports TypeScript, Python, and more. Built-in state management, observability, and automation.
 
 ---
 

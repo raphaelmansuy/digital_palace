@@ -197,6 +197,7 @@ def process_payment(amount, recipient):
 - **CrewAI**: Human oversight for multi-agent workflows  
 - **AutoGen**: Human proxy agents for collaborative AI systems
 - **Custom APIs**: Direct integration with approval workflow services
+- **Eigent**: Multi-agent workforce platform with built-in human-in-the-loop support, MCP integration, and enterprise features. [Learn more](./eigent.md)
 
 ### **Communication Channels**
 

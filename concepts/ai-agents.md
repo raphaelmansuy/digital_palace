@@ -30,6 +30,7 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 
 ---
 
+
 ## 🛠️ Key Frameworks & Tools
 
 - [Google ADK (Agent Development Kit)](https://google.github.io/adk-docs/) — Production-ready, multi-agent, model-agnostic
@@ -41,6 +42,9 @@ AI agents are autonomous systems that perceive their environment, reason, and ta
 - [Open Interpreter](https://github.com/KillianLucas/open-interpreter/) — Natural language computer interface
 - [Trae Agent](https://github.com/bytedance/trae-agent) — Open-source, modular LLM agent for software engineering. Multi-LLM support (OpenAI, Anthropic, Gemini, etc.), rich tool ecosystem, CLI, and research-friendly design. Ideal for agentic coding and workflow automation.
 - [Qwen Code](./qwen-code.md) — Command-line agentic coding tool for Qwen3-Coder and Gemini CLI workflows
+- [Crush](./crush.md) — Multi-model, extensible, open-source AI coding agent for your terminal. Supports LLMs, MCP, LSP, and custom workflows.
+- [Eigent](./eigent.md) — Multi-agent workforce desktop platform. 100% open-source, privacy-first, supports MCP, human-in-the-loop, and enterprise features. See [concept page](./eigent.md).
+- [Motia](./motia.md) — Unified backend framework for APIs, jobs, and agentic workflows. Polyglot, event-driven, open-source, supports TypeScript, Python, and more. Built-in state management, observability, and automation.
 
 ---
 

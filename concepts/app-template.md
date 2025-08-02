@@ -31,11 +31,7 @@ A production-ready, open-source full-stack starter for building modern AI and Sa
 
 ## 🚀 Why Use This Template?
 
-- **Save weeks** of setup for new projects
-- **Modern tech stack**: Next.js, TypeScript, Tailwind, shadcn/ui, Supabase, Clerk, Stripe
-- **Production-ready**: Clean code, scalable structure, MIT license
-- **Prebuilt features**: Auth, payments, database, UI, and more
-- **Great for**: SaaS, AI tools, MVPs, learning, and fast prototyping
+
 
 ## 🛠️ Tech Stack
 
