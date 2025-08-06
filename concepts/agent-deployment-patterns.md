@@ -517,12 +517,14 @@ async def chat_endpoint(request: Request, chat_request: ChatRequest):
 - [[stateless-agent-design]] - Stateless architecture principles
 - [[pause-resume-workflows]] - Workflow interruption handling
 - [[production-deployment]] - General deployment strategies
+- [[agent-native-cloud]] - Agent-native cloud platforms
 - [[observability]] - Monitoring and debugging
 - [[mlops]] - ML operations practices
 
 ## Tools and Platforms
 
 - **Container Orchestration**: Kubernetes, Docker Swarm, ECS
+- **Agent-Native Platforms**: [Agentuity](https://agentuity.com/), AWS Bedrock AgentCore
 - **Service Mesh**: Istio, Linkerd, Consul Connect
 - **Monitoring**: Prometheus, Grafana, DataDog, New Relic
 - **Logging**: ELK Stack, Fluentd, Splunk

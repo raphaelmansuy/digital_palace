@@ -70,6 +70,24 @@
 
 ### Production-Grade Agents
 
+#### **[Agentuity](https://agentuity.com/)** ⭐
+
+- **Purpose**: Agent-native cloud platform for deploying, running, and scaling autonomous agents
+- **Best for**: Production agent deployment, multi-framework support, rapid prototyping to production
+- **Key Features**:
+  - Framework agnostic (supports CrewAI, LangChain, LlamaIndex, Mastra, Pydantic AI, Vercel AI SDK)
+  - Agent-to-agent communication across different frameworks
+  - Single command deployment with `agentuity deploy`
+  - Built-in infrastructure (no IAM, security groups, or load balancers to configure)
+  - Unified AI gateway (OpenAI, Anthropic, Gemini, Perplexity, DeepSeek)
+  - Real-time monitoring, performance analytics, and debugging
+  - Multi-channel integration (chat, webhooks, email, SMS, voice)
+  - Long-running agent sessions with state persistence
+- **Pricing**: Free tier with $5 credits, Team plans from $10/seat/month + usage
+- **Getting Started**: `curl -fsS https://agentuity.sh | sh && agentuity create`
+- **Status**: Production-ready, agent-native platform
+- **Links**: [Platform](https://agentuity.com/) | [Docs](https://agentuity.dev/) | [Examples](https://github.com/orgs/agentuity/repositories?q=props.type%3Aexample) | [Discord](https://discord.gg/agentuity) | [Blog](https://agentuity.com/blog)
+
 #### **[Google ADK (Agent Development Kit)](https://google.github.io/adk-docs/)** 🆕⭐
 
   - Model-agnostic (optimized for Gemini, works with others)
@@ -442,6 +460,7 @@ _The latest AI innovations reshaping the landscape_
 
 ### **Next-Generation Agent Platforms**
 
+- **[Agentuity](https://agentuity.com/)** ⭐ - Agent-native cloud platform for deploying, running, and scaling autonomous agents. Single-command deployment (`agentuity deploy`), multi-framework support (CrewAI, LangChain, LlamaIndex, Mastra, Pydantic AI, Vercel AI SDK), agent-to-agent communication, unified AI gateway, real-time monitoring. [Documentation](https://agentuity.dev/) | [Examples](https://github.com/orgs/agentuity/repositories?q=props.type%3Aexample) | [Discord](https://discord.gg/agentuity)
 - **[Quantalogic Platform](https://www.quantalogic.app/)** - Enterprise AI platform with multi-agent systems, visual workflow builder, and European data sovereignty
 - **[Dify](https://github.com/langgenius/dify)** - Production-ready platform for agentic workflow development (22k+ stars)
 - **[Quantalogic Flow](https://github.com/quantalogic/quantalogic/tree/main/quantalogic_flow)** - Workflow automation powerhouse with YAML & Python APIs

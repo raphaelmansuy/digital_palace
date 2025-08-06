@@ -56,7 +56,8 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Frameworks](./frameworks.md) — Development platforms, libraries, and toolkits for building AI solutions. Related: [Prompt Engineering](./prompt-engineering.md), [LLMs](./llms.md).
 ## 📚 Concept Index
 - [Cloud Platforms](./cloud-platforms.md) — Scalable infrastructure for AI and LLM applications. Related: [Inference](./inference.md), [Production Deployment](./production-deployment.md).
-    - [MCP Illustrated Guidebook](./mcp-illustrated-guidebook.md) — Illustrated, example-driven introduction to the Model Context Protocol (MCP) for AI agents. Includes architecture, core concepts, and hands-on project guides. [Assessment tool](https://bit.ly/mcp-assessment).
+- [Agent-Native Cloud Platforms](./agent-native-cloud.md) — Specialized cloud platforms designed for AI agent deployment, orchestration, and multi-agent workflows. See [Agentuity](https://agentuity.com/) for agent-native infrastructure.
+- [MCP Illustrated Guidebook](./mcp-illustrated-guidebook.md) — Illustrated, example-driven introduction to the Model Context Protocol (MCP) for AI agents. Includes architecture, core concepts, and hands-on project guides. [Assessment tool](https://bit.ly/mcp-assessment).
 - [API Design](./api-design.md) — Creating robust interfaces for AI services and integrations. See [Production Deployment](./production-deployment.md).
 - [Observability](./observability.md) — Monitoring, debugging, and analytics for AI systems. Related: [Production Deployment](./production-deployment.md).
 - [MLOps](./mlops.md) — Model lifecycle management, CI/CD for ML, versioning, and governance. See [Production Deployment](./production-deployment.md), [Observability](./observability.md).
