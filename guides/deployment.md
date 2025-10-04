@@ -541,6 +541,7 @@ groups:
 ### Sandboxing & Isolation
 
 - **[Microsandbox](https://github.com/microsandbox/microsandbox)** — Secure, instant microVM sandboxing for untrusted user/AI code. Supports Python, JS, Rust, C, and more. MCP-ready, open source. Recommended for production agent infrastructure and robust isolation.
+- **[Arrakis](https://github.com/abshkbh/arrakis)** — Secure, self-hosted sandboxing solution for AI agent code execution and computer use. Features MicroVM isolation, snapshot-and-restore for backtracking, REST API, Python SDK, and MCP server support. Perfect for multi-step agent workflows requiring state management.
 
 ### Authentication & Authorization
 
