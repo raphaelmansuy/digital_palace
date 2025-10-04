@@ -18,6 +18,8 @@ API Design for AI systems involves creating robust, scalable, and user-friendly 
 
 - [FastAPI](https://fastapi.tiangolo.com/) — High-performance Python API framework
 - [Express.js](https://expressjs.com/) — Node.js web application framework
+- [Bun](https://bun.com/) — Fast JavaScript runtime and toolkit
+- [Hono](https://hono.dev/) — Lightweight web framework for edge computing
 - [Django REST](https://www.django-rest-framework.org/) — Django API framework
 - [Swagger/OpenAPI](https://swagger.io/) — API documentation and design
 - [Postman](https://www.postman.com/) — API development and testing
