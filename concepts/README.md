@@ -56,6 +56,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [Prompt Engineering](./prompt-engineering.md) — Crafting effective prompts, patterns, and templates for LLMs. See [LLMs](./llms.md) and [Technical Articles](./technical-articles.md).
 - [Frameworks](./frameworks.md) — Development platforms, libraries, and toolkits for building AI solutions. Related: [Prompt Engineering](./prompt-engineering.md), [LLMs](./llms.md).
+- [Reinforcement Learning](./reinforcement-learning.md) — Agent learning through trial-and-error for optimal decision-making. See [AI Agents](./ai-agents.md).
 ## 📚 Concept Index
 - [Cloud Platforms](./cloud-platforms.md) — Scalable infrastructure for AI and LLM applications. Related: [Inference](./inference.md), [Production Deployment](./production-deployment.md).
 - [Agent-Native Cloud Platforms](./agent-native-cloud.md) — Specialized cloud platforms designed for AI agent deployment, orchestration, and multi-agent workflows. See [Agentuity](https://agentuity.com/) for agent-native infrastructure.
