@@ -748,6 +748,7 @@ function ResearchApp() {
 - **[AI Agents](./ai-agents.md)** - The intelligent systems that AG-UI is designed to control
 - **[Agent Communication](./agent-communication.md)** - Protocols and patterns for agent interaction  
 - **[Agent Protocols](./agent-protocols.md)** 🆕 - Standards including A2A and MCP that complement AG-UI
+- **[ADK + AG-UI Integration: Fancy Frontends for ADK Agents](./adk-ag-ui-integration.md)** 🆕 - Combining Google's Agent Development Kit with AG-UI for production-ready agent interfaces
 - **[LangGraph](../guides/frameworks.md#langgraph)** 🆕 - State machine framework for building agents with AG-UI integration
 - **[Conversational AI](./conversational-ai.md)** - Natural language interfaces for agent control
 - **[Computer Vision](./computer-vision.md)** - Visual analysis for interface adaptation
