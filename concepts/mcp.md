@@ -8,6 +8,7 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 ## 📚 Learn More
 
 - **[MCP Comprehensive Guide](../reference/mcp-comprehensive-guide.md)** — Detailed A4 explanation of what MCP is, why it's important, and how it works
+- **[ADK + MCP Integration: AI Shopping Assistant on GKE](./adk-mcp-gke-shopping-assistant.md)** — Practical implementation of MCP server exposing gRPC microservices as tools for ADK agents
 - [Model Context Protocol Overview](../reference/core-technologies.md#model-context-protocol-mcp)
 - [MCP Official Documentation](https://modelcontextprotocol.io/)
 - [MCP Agent Guide](../guides/mcp-servers.md)
@@ -27,7 +28,7 @@ The Model Context Protocol (MCP) is an emerging standard that enables AI applica
 - [MCP Agent](https://github.com/lastmile-ai/mcp-agent) — Build effective agents using MCP
 - [Cline](https://github.com/cline/cline) — VS Code extension with native MCP support
 - [Continue](https://continue.dev/) — Open-source autopilot with MCP integrations
- - [MCPJam Inspector](https://github.com/MCPJam/inspector) — Open-source developer tool for testing and debugging MCP servers. Full MCP spec compliance, supports STDIO/SSE/HTTP transports, integrated LLM playground (OpenAI, Anthropic, Ollama), modern UI/UX, logging, error reporting. **Install:** `npx @mcpjam/inspector@latest` ([Docs](https://modelcontextprotocol.io/), [Discord](https://discord.gg/JEnDtz8X6z), [Website](https://mcpjam.com/))
+- [MCPJam Inspector](https://github.com/MCPJam/inspector) — Open-source developer tool for testing and debugging MCP servers. Full MCP spec compliance, supports STDIO/SSE/HTTP transports, integrated LLM playground (OpenAI, Anthropic, Ollama), modern UI/UX, logging, error reporting. **Install:** `npx @mcpjam/inspector@latest` ([Docs](https://modelcontextprotocol.io/), [Discord](https://discord.gg/JEnDtz8X6z), [Website](https://mcpjam.com/))
 
 ---
 

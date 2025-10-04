@@ -64,6 +64,8 @@ Agent protocols are standardized communication frameworks that enable AI agents 
 
 - Start with [Agent Communication Revolution](../reference/2025-ai-updates.md#1-agent-communication-revolution)
 - Explore [A2A Protocol](https://github.com/google/A2A/) and [MCP](./mcp.md)
+- See [Google A2A and ADK Multi-Agent Architecture](./google-a2a-adk-multi-agent.md) for practical implementation
+- See [ADK + MCP Integration: AI Shopping Assistant on GKE](./adk-mcp-gke-shopping-assistant.md) for production deployment example
 - See [AI Agents](./ai-agents.md) for implementation patterns
 - Follow [Agent Development SOP](../guides/agent-development/sop_ai_agent.md)
 

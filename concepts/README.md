@@ -77,6 +77,8 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [Agent Communication](./agent-communication.md) — Protocols, standards, and strategies for multi-agent systems. See [AI Agents](./ai-agents.md).
 - [Agent Protocols](./agent-protocols.md) — Standardized communication frameworks for AI agent interaction. Related: [MCP](./mcp.md), [Agent Communication](./agent-communication.md).
+- [Google A2A and ADK Multi-Agent Architecture](./google-a2a-adk-multi-agent.md) — Architecting collaborative AI systems using Google's A2A protocol and ADK toolkit, with trading simulator example. See [Agent Protocols](./agent-protocols.md).
+- [ADK + MCP Integration: AI Shopping Assistant on GKE](./adk-mcp-gke-shopping-assistant.md) — Practical implementation of conversational commerce using ADK and MCP with Online Boutique microservices. See [MCP](./mcp.md).
 - [MCP (Model Context Protocol)](./mcp.md) — Standard for AI application interfaces and tool connectivity. See [Agent Protocols](./agent-protocols.md).
 - [Mental Models](./mental-models.md) — Reasoning frameworks for AI development, debugging, and communication. See [Learning Pathways](./learning-pathways.md).
 - [Learning Pathways](./learning-pathways.md) — Structured skill progression and recommended resources. See [Mental Models](./mental-models.md).
