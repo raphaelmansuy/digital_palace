@@ -3,7 +3,7 @@
 
 > **Your comprehensive directory of AI/ML leaders, researchers, and innovators**
 
-[![Total People](https://img.shields.io/badge/Total%20People-17-blue?style=flat-square)](#-alphabetical-directory)
+[![Total People](https://img.shields.io/badge/Total%20People-18-blue?style=flat-square)](#-alphabetical-directory)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2026%2C%202025-green?style=flat-square)](#-recent-additions)
 [![Categories](https://img.shields.io/badge/Categories-7-orange?style=flat-square)](#-by-category)
 
@@ -57,6 +57,7 @@
 | ["Andrej Karpathy"](./andrej-karpathy.md) | "Independent AI Researcher & Educator" | "Self-employed" | `deep-learning, researcher, educator` |
 | ["Awni Hannun"](./awni-hannun.md) | "Research Scientist" | "Apple" | `ai, ml, mlx, apple, open-source, distributed-training` |
 | ["Burke Holland"](./burke-holland.md) | "Developer Advocate" | "Microsoft" | `javascript, nodejs, developer-advocate, blogging, community` |
+| ["Chao Huang"](./chao-huang.md) | "Assistant Professor" | "University of Hong Kong" | `ai, llm, graph-learning, recommender-systems, autonomous-agents, researcher` |
 | ["Chris McCord"](./chris-mccord.md) | "Principal Engineer & Creator of Phoenix" | "Fly.io" | `engineer, open-source, elixir, phoenix, flyio, framework-author, real-time, distributed-systems` |
 | ["David Kim"](./david-kim.md) | "Founder & Research Lead" | "Recursive Labs / AI-MRI" | `ai, researcher, founder, open-source, context-engineering, interpretability` |
 | ["Dex Horthy"](./dex-horthy.md) | "CEO & Founder" | "HumanLayer" | `founder, ai-agents, y-combinator, human-in-the-loop` |
@@ -86,6 +87,7 @@
 - 🎓 ["Akshay Pachaar"](./akshay-pachaar.md)
 - 🎓 ["Awni Hannun"](./awni-hannun.md)
 - 🎓 ["David Kim"](./david-kim.md)
+- 🎓 ["Chao Huang"](./chao-huang.md)
 
 
 
@@ -133,9 +135,9 @@
 
 ## 📈 Statistics
 
-- **Total Profiles**: 17 people
+- **Total Profiles**: 18 people
 - **Categories**: 7 primary categories
-- **Last Updated**: July 2025 (Akshay Pachaar added)
+- **Last Updated**: October 2025 (Chao Huang added)
 - **Update Frequency**: Monthly maintenance
 - **Coverage**: Global AI/ML community
 
@@ -144,6 +146,7 @@
 
 ### Latest profiles added to the People Hub
 
+- 🆕 ["Chao Huang"](./chao-huang.md)
 - 🆕 ["Akshay Pachaar"](./akshay-pachaar.md)
 - 🆕 ["Shubham Saboo"](./shubham-saboo.md)
 - 🆕 ["Hynek Schlawack"](./hynek-schlawack.md)
@@ -207,7 +210,7 @@ Help us expand the People Hub!
 
 ---
 
-*Generated automatically on: Sat Jul 26 2025*  
+*Generated automatically on: Sun Oct 04 2025*  
 *Next update: Monthly via maintenance script*
 
 **Legend**: 🎓 Academic • 🏢 Industry • 🛡️ Safety • 🚀 Startup • 📚 Author • 💻 Open Source • 🎤 Communicator
