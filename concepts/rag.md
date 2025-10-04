@@ -12,6 +12,7 @@ Retrieval-Augmented Generation (RAG) is a technique that combines large language
 - [Knowledge Graph Integration](../reference/core-technologies.md#knowledge-graph-integration)
 - [RAGFlow](https://github.com/infiniflow/ragflow) — Open-source RAG engine
 - [LightRAG](./lightrag.md) — Knowledge graph RAG
+- [GraphRAG](./graphrag.md) — Microsoft Research graph-based RAG
 - [RAG-Anything](./rag-anything.md) — Multimodal RAG framework
 - [VideoRAG](./videorag.md) — Long-context video RAG
 - [MiniRAG](./minirag.md) — Lightweight RAG for small models

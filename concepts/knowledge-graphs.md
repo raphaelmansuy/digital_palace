@@ -318,6 +318,7 @@ def train_gnn_on_knowledge_graph():
 ## 🔗 Integration with Other Concepts
 
 - **[RAG](./rag.md)** - Knowledge graphs enhance retrieval systems
+- **[GraphRAG](./graphrag.md)** - Microsoft Research's implementation of graph-based RAG
 - **[Knowledge Management](./knowledge-management.md)** - Structured knowledge organization
 - **[AI Agents](./ai-agents.md)** - Agents using structured knowledge for reasoning
 - **[Datasets](./datasets.md)** - Graph datasets for training and evaluation

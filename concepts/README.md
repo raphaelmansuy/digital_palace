@@ -41,6 +41,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [RAG (Retrieval-Augmented Generation)](./rag.md) — Combine LLMs with external knowledge, vector search, and knowledge graphs. Related: [Embeddings](./embeddings.md), [Datasets](./datasets.md).
 - [Knowledge Management](./knowledge-management.md) — Organizing, retrieving, and leveraging information for AI. Related: [RAG](./rag.md), [Context Management](./context-management.md).
 - [Knowledge Graphs](./knowledge-graphs.md) — Graph-based knowledge representation, semantic reasoning, and structured data integration. See [RAG](./rag.md), [Knowledge Management](./knowledge-management.md).
+- [GraphRAG](./graphrag.md) — Microsoft Research's graph-based RAG system for extracting structured data from unstructured text. See [RAG](./rag.md), [Knowledge Graphs](./knowledge-graphs.md).
 - [Context Management](./context-management.md) — Handling information flow in AI systems with limited context windows. See [AI Agents](./ai-agents.md).
 - [Datasets](./datasets.md) — Data for training, evaluation, and benchmarking. See [RAG](./rag.md), [Fine-Tuning](./fine-tuning.md).
 - [Synthetic Data Generation](./synthetic-data.md) — Creating artificial datasets for training, privacy protection, and data augmentation. Related: [Datasets](./datasets.md), [Fine-Tuning](./fine-tuning.md).

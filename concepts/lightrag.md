@@ -229,5 +229,7 @@ rag = LightRAG(
 - [RAG →](./rag.md)
 - [RAG-Anything →](./rag-anything.md)
 - [VideoRAG →](./videorag.md)
-- [MiniRAG →](./minirag.md)</content>
+- [MiniRAG →](./minirag.md)
+- [GraphRAG →](./graphrag.md)
+</content>
 <parameter name="filePath">/Users/raphaelmansuy/Github/00-obsidian/digital_palace/concepts/lightrag.md
