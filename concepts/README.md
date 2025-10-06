@@ -40,6 +40,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Berkeley Function Calling Leaderboard (BFCL)](./gorilla-bfcl.md) — Public benchmark for LLM tool use and agentic evaluation. See [LLMs](./llms.md), [Agentic Coding](./amp.md).
 - [Computer Use & Interface Control](./computer-use.md) — AI systems that directly control computer interfaces, applications, and operating systems through visual understanding and automated actions. Related: [AI Agents](./ai-agents.md), [Computer Vision](./computer-vision.md).
 - [Guided LLM Generation (Structured Output)](./guided-llm-generation.md) — Techniques for schema-based, XML/JSON, and structured output generation with LLMs. Covers structured prompting, schema introspection, and feedback-driven refinement for reliable, interpretable, and secure outputs. See also: [Prompt Engineering](./prompt-engineering.md), [Datasets](./datasets.md).
+- [AI Home Renovation Planner Agent (Nano Banana)](./ai-home-renovation-agent-nano-banana.md) — Build a fully local, multi-agent home renovation planner using Google ADK and Gemini 2.5 Flash Image (Nano Banana). Features photorealistic rendering, budget-aware planning, and agentic orchestration. See [tutorial](https://www.theunwindai.com/p/build-an-ai-home-renovation-planner-agent-using-nano-banana) and [GitHub repo](https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/advanced_ai_agents/multi_agent_apps/ai_home_renovation_agent).
 
 
 
