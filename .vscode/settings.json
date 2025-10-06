@@ -83,7 +83,7 @@
     ".github/chatmodes"
   ],
   "chat.agent.enabled": true,
-  "chat.agent.maxRequests": 15,
-  "chat.mcp.enabled": true,
-  "chat.extensionTools.enabled": true
+  "chat.agent.maxRequests": 500,
+  "chat.extensionTools.enabled": true,
+  "chat.mcp.access": "all"
 }

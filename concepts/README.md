@@ -2,6 +2,7 @@
 
 - **[Amp: Agentic Coding Platform](./amp.md)** — Next-generation agentic coding tool for autonomous code editing, refactoring, and developer automation. Integrates with VS Code, Cursor, and CLI. See [How to Build an Agent](https://ampcode.com/how-to-build-an-agent) for a hands-on tutorial.
 - **[DeepCode: Open Agentic Coding](./deepcode.md)** — Multi-agent AI platform that transforms research papers and natural language into production-ready code. Features Paper2Code, Text2Web, and Text2Backend capabilities with MCP integration. See [GitHub Repository](https://github.com/HKUDS/DeepCode).
+
 # 🧩 Concepts Hub
 
 Welcome to the **Concepts Hub**! This is your gateway to the essential AI and software concepts that power the Digital Palace. Each topic below links to a dedicated page with:
@@ -13,6 +14,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - **[Curated X Accounts for AI →](../reference/curated-x-accounts.md)**
 
 ---
+
 
 
 
@@ -31,8 +33,11 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Fine-Tuning](./fine-tuning.md) — Adapting pre-trained models for specific tasks and domains. Related: [LLMs](./llms.md), [Datasets](./datasets.md).
 - [Multimodal AI](./multimodal-ai.md) — Systems processing text, images, audio, and video. See [Computer Vision](./computer-vision.md).
 - [Computer Vision](./computer-vision.md) — Visual understanding and image processing. Related: [Multimodal AI](./multimodal-ai.md).
+	- [CS231n: Deep Learning for Computer Vision](./cs231n.md) — Stanford’s gold-standard course on deep learning and computer vision. See [LLMs](./llms.md), [Embeddings](./embeddings.md).
+	- [AI Engineer Book: Curated Resources (Chip Huyen)](./ai-engineer-book-resources.md) — Comprehensive, expertly curated resource list for AI engineering, LLMs, RAG, agents, prompt engineering, datasets, and more. See [Prompt Engineering](./prompt-engineering.md), [RAG](./rag.md), [AI Agents](./ai-agents.md).
 - [ASMR Techniques](./asmr-techniques.md) — Creating intimate, sensory-rich video experiences through careful audio-visual design. Related: [Multimodal AI](./multimodal-ai.md), [Voice AI](./voice-ai.md).
 - [Tool Use](./tool-use.md) — AI systems interacting with external tools and APIs. See [AI Agents](./ai-agents.md), [MCP](./mcp.md).
+- [Berkeley Function Calling Leaderboard (BFCL)](./gorilla-bfcl.md) — Public benchmark for LLM tool use and agentic evaluation. See [LLMs](./llms.md), [Agentic Coding](./amp.md).
 - [Computer Use & Interface Control](./computer-use.md) — AI systems that directly control computer interfaces, applications, and operating systems through visual understanding and automated actions. Related: [AI Agents](./ai-agents.md), [Computer Vision](./computer-vision.md).
 - [Guided LLM Generation (Structured Output)](./guided-llm-generation.md) — Techniques for schema-based, XML/JSON, and structured output generation with LLMs. Covers structured prompting, schema introspection, and feedback-driven refinement for reliable, interpretable, and secure outputs. See also: [Prompt Engineering](./prompt-engineering.md), [Datasets](./datasets.md).
 
@@ -41,6 +46,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 ### 🔍 **Data & Knowledge Systems**
 
 - [RAG (Retrieval-Augmented Generation)](./rag.md) — Combine LLMs with external knowledge, vector search, and knowledge graphs. Related: [Embeddings](./embeddings.md), [Datasets](./datasets.md).
+- [Contextual Retrieval (Anthropic)](./contextual-retrieval.md) — Advanced RAG technique that preserves document context for more accurate retrieval. See [RAG](./rag.md), [Embeddings](./embeddings.md).
 - [Knowledge Management](./knowledge-management.md) — Organizing, retrieving, and leveraging information for AI. Related: [RAG](./rag.md), [Context Management](./context-management.md).
 - [Knowledge Graphs](./knowledge-graphs.md) — Graph-based knowledge representation, semantic reasoning, and structured data integration. See [RAG](./rag.md), [Knowledge Management](./knowledge-management.md).
 - [GraphRAG](./graphrag.md) — Microsoft Research's graph-based RAG system for extracting structured data from unstructured text. See [RAG](./rag.md), [Knowledge Graphs](./knowledge-graphs.md).
@@ -56,6 +62,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 ### 🛠️ **Development & Engineering**
 
 - [Prompt Engineering](./prompt-engineering.md) — Crafting effective prompts, patterns, and templates for LLMs. See [LLMs](./llms.md) and [Technical Articles](./technical-articles.md).
+- [Promptly AI Library](./promptly.md) — Curated collection of AI prompts for productivity and interaction enhancement. See [Prompt Engineering](./prompt-engineering.md).
 - [Frameworks](./frameworks.md) — Development platforms, libraries, and toolkits for building AI solutions. Related: [Prompt Engineering](./prompt-engineering.md), [LLMs](./llms.md).
 - [Reinforcement Learning](./reinforcement-learning.md) — Agent learning through trial-and-error for optimal decision-making. See [AI Agents](./ai-agents.md).
 ## 📚 Concept Index
@@ -68,6 +75,8 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [AI Testing & Validation](./ai-testing.md) — Testing methodologies, evaluation frameworks, bias detection, and quality assurance for AI systems. Related: [Observability](./observability.md), [AI Safety & Ethics](./ai-safety-ethics.md).
 - [App Template (Mckay's)](./app-template.md) — Modern full-stack Next.js/TypeScript SaaS/AI starter with Supabase, Clerk, Stripe, and best practices. See [Frameworks](./frameworks.md), [Production Deployment](./production-deployment.md).
 - [Steampipe](./steampipe.md) — Query APIs, cloud, and SaaS data with SQL. Zero-ETL, open-source, and extensible. See [Official Site](https://steampipe.io/).
+- [BertViz](./bertviz.md) — Interactive tool for visualizing attention in Transformer models like BERT, GPT2, and T5. See [LLMs](./llms.md), [Embeddings](./embeddings.md).
+- [Depyler](./depyler.md) — Python-to-Rust transpiler with semantic verification and memory safety analysis. See [Frameworks](./frameworks.md), [Model Compression](./model-compression.md).
 
 ### 🚀 **Performance & Optimization**
 
@@ -104,6 +113,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [Technical Articles](./technical-articles.md) — Deep dives, research, and advanced guides. See [LLMs](./llms.md), [Prompt Engineering](./prompt-engineering.md).
 - [AI Safety & Ethics](./ai-safety-ethics.md) — Responsible AI development, alignment, and governance. Related: [AI Agents](./ai-agents.md), [AI Legal & Regulatory](./ai-legal-regulatory.md).
+- [Offensive ML Playbook (OffSecML)](./offensive-ml-playbook.md) — Community-driven resource for adversarial ML, red-teaming, and defense. See [AI Testing & Validation](./ai-testing.md), [MLOps](./mlops.md).
 - [AI Legal & Regulatory Compliance](./ai-legal-regulatory.md) — Legal frameworks, regulations, and compliance requirements including EU AI Act, GDPR, and sector-specific regulations. Related: [AI Safety & Ethics](./ai-safety-ethics.md), [MLOps](./mlops.md).
 - [Conversational AI](./conversational-ai.md) — Dialogue systems, chatbots, and voice interfaces. See [AI Agents](./ai-agents.md).
 - [Voice AI & Real-time Conversation](./voice-ai.md) — Real-time spoken interaction, speech recognition, synthesis, and conversational AI with human-like latency. Related: [Conversational AI](./conversational-ai.md), [Real-time AI](./real-time-ai.md).
