@@ -65,6 +65,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [Prompt Engineering](./prompt-engineering.md) — Crafting effective prompts, patterns, and templates for LLMs. See [LLMs](./llms.md) and [Technical Articles](./technical-articles.md).
 - [Promptly AI Library](./promptly.md) — Curated collection of AI prompts for productivity and interaction enhancement. See [Prompt Engineering](./prompt-engineering.md).
 - [Frameworks](./frameworks.md) — Development platforms, libraries, and toolkits for building AI solutions. Related: [Prompt Engineering](./prompt-engineering.md), [LLMs](./llms.md).
+- [py2many](./py2many.md) — Universal Python transpiler converting Python to Rust, C++, Go, Zig, Mojo, and other languages for performance and cross-platform development. See [Frameworks](./frameworks.md).
 - [Reinforcement Learning](./reinforcement-learning.md) — Agent learning through trial-and-error for optimal decision-making. See [AI Agents](./ai-agents.md).
 ## 📚 Concept Index
 - [Cloud Platforms](./cloud-platforms.md) — Scalable infrastructure for AI and LLM applications. Related: [Inference](./inference.md), [Production Deployment](./production-deployment.md).
@@ -90,6 +91,7 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 
 - [Agent Communication](./agent-communication.md) — Protocols, standards, and strategies for multi-agent systems. See [AI Agents](./ai-agents.md).
 - [Agent Protocols](./agent-protocols.md) — Standardized communication frameworks for AI agent interaction. Related: [MCP](./mcp.md), [Agent Communication](./agent-communication.md).
+- [Google ADK (Agent Development Kit)](./adk.md) — Modular, production-grade agent framework for Gemini, Google AI, and multi-agent workflows. See [Crash Course](https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/ai_agent_framework_crash_course/google_adk_crash_course), [Official Docs](https://google.github.io/adk-docs/).
 - [Google A2A and ADK Multi-Agent Architecture](./google-a2a-adk-multi-agent.md) — Architecting collaborative AI systems using Google's A2A protocol and ADK toolkit, with trading simulator example. See [Agent Protocols](./agent-protocols.md).
 - [ADK + MCP Integration: AI Shopping Assistant on GKE](./adk-mcp-gke-shopping-assistant.md) — Practical implementation of conversational commerce using ADK and MCP with Online Boutique microservices. See [MCP](./mcp.md).
 - [CopilotKit ADK Integration](./copilotkit-adk.md) — Bringing ADK agents to interactive applications with CopilotKit's React components and AG-UI protocol. See [AG-UI](./ag-ui.md), [ADK + AG-UI Integration](./adk-ag-ui-integration.md).
