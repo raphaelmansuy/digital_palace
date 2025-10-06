@@ -118,6 +118,10 @@ Welcome to the **Concepts Hub**! This is your gateway to the essential AI and so
 - [AI Legal & Regulatory Compliance](./ai-legal-regulatory.md) — Legal frameworks, regulations, and compliance requirements including EU AI Act, GDPR, and sector-specific regulations. Related: [AI Safety & Ethics](./ai-safety-ethics.md), [MLOps](./mlops.md).
 - [Conversational AI](./conversational-ai.md) — Dialogue systems, chatbots, and voice interfaces. See [AI Agents](./ai-agents.md).
 - [Voice AI & Real-time Conversation](./voice-ai.md) — Real-time spoken interaction, speech recognition, synthesis, and conversational AI with human-like latency. Related: [Conversational AI](./conversational-ai.md), [Real-time AI](./real-time-ai.md).
+- [Unwind AI](./unwind-ai.md) — Open-source ecosystem and knowledge hub for high-leverage AI builders. Features hands-on tutorials, daily/weekly updates, and curated resources for agentic AI, RAG, and LLMs. See [homepage](https://www.theunwindai.com/).
+- [beehiiv](./beehiiv.md) — All-in-one platform for building, publishing, and monetizing newsletters and websites. Features no-code tools, analytics, monetization, and AI-powered content. See [homepage](https://www.beehiiv.com/).
+- [AI Engineering: Agents, RAG, LLMs, and More (YouTube Playlist)](./ai-engineering-youtube-playlist.md) — Curated video series on agentic AI, RAG, LLMs, and production patterns. Features expert talks, tutorials, and case studies. See [playlist](https://www.youtube.com/playlist?list=PLqFaTIg4myu-lbBTrUpoQQIzZZxvrOaP5).
+- [Learning Deep Representations of Data Distributions (Book)](./deep-representation-learning-book.md) — Open-source textbook on the theory and practice of deep representation learning. Covers interpretability, design principles, and mathematical foundations. See [book homepage](https://ma-lab-berkeley.github.io/deep-representation-learning-book/index.html).
 
 ---
 
