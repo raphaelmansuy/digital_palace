@@ -1,6 +1,6 @@
-# Part 6: Reality Check & Limitations
+# Part 7: Reality Check & Limitations
 
-[← Previous: Implementation Guide](./05-implementation.md) | [Back to Index](./README.md) | [Next: The Path Forward →](./07-path-forward.md)
+[← Previous: Implementation Guide](./06-implementation.md) | [Back to Index](./README.md) | [Next: Path Forward →](./08-path-forward.md)
 
 ---
 
@@ -477,8 +477,11 @@ Success rate: 4/6 steps = 67%
 
 **Next**: Where is this all heading?
 
-[Continue to Part 7 →](./07-path-forward.md)
+[Continue to Part 8 →](./08-path-forward.md)
 
 ---
 
-[← Previous: Implementation Guide](./05-implementation.md) | [Back to Index](./README.md) | [Next: The Path Forward →](./07-path-forward.md)
+[← Previous: Implementation Guide](./06-implementation.md) | [Back to Index](./README.md) | [Next: The Path Forward →](./08-path-forward.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

@@ -1,6 +1,6 @@
-# Part 5: Real Implementation Guide
+# Part 6: Real Implementation Guide
 
-[← Previous: Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)
+[← Previous: Debundling Enterprise Systems](./05-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./07-reality-check.md)
 
 ---
 
@@ -1331,8 +1331,11 @@ SUCCESS METRICS:
 
 **Next**: Reality check — What's working? What's not?
 
-[Continue to Part 6 →](./06-reality-check.md)
+[Continue to Part 7 →](./07-reality-check.md)
 
 ---
 
-[← Previous: Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)
+[← Previous: Debundling Enterprise Systems](./05-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./07-reality-check.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

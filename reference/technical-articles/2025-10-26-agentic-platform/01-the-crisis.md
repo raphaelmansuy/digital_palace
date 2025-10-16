@@ -454,3 +454,6 @@ In [Part 2](./02-why-platforms.md), we'll explore:
 ---
 
 [← Back to Index](./README.md) | [Next: Why Platforms →](./02-why-platforms.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

@@ -66,7 +66,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - Core architecture diagrams
 - Protocol stack deep dive
 
-### Part 4b: [Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) **(NEW)**
+### Part 5: [Debundling Enterprise Systems](./05-debundling-enterprise-systems.md) **(NEW)**
 **How AG-UI + MCP solve the $5M enterprise software silo problem**
 
 - The enterprise silo pain: 30-40% of day context-switching between systems
@@ -76,7 +76,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - Implementation path: POC (3mo) → Pilot (6mo) → Enterprise (12mo)
 - ROI: $500K-2M annual savings, 3-4 month payback
 
-### Part 5: [Real Implementation Guide](./05-implementation.md)
+### Part 6: [Real Implementation Guide](./06-implementation.md)
 **Verified code examples and deployment patterns**
 
 - Google ADK implementation (real API)
@@ -85,7 +85,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - Salesforce Agentforce examples
 - Quick wins timeline (Week 1-4-12)
 
-### Part 6: [Reality Check & Limitations](./06-reality-check.md)
+### Part 7: [Reality Check & Limitations](./07-reality-check.md)
 **What actually works vs. the hype**
 
 - Current success rates: 40-95% depending on complexity
@@ -94,7 +94,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - Multi-agent coordination limitations
 - Decision framework: Build vs Buy vs Wait
 
-### Part 7: [The Path Forward](./07-path-forward.md)
+### Part 8: [The Path Forward](./08-path-forward.md)
 **Where this technology is heading**
 
 - Short-term (6-12 months): A2A maturation, cost optimization
@@ -116,22 +116,22 @@ This series explores what these platforms actually do, how they work, and whethe
 ## Quick Reference
 
 ### For CTO/Engineering Leaders
-- **Start here**: [Part 1 (The Crisis)](./01-the-crisis.md) → [Part 6 (Reality Check)](./06-reality-check.md)
+- **Start here**: [Part 1 (The Crisis)](./01-the-crisis.md) → [Part 7 (Reality Check)](./07-reality-check.md)
 - **Key question**: "Should we build or buy?"
 - **TCO comparison**: DIY vs Platform costs
 
 ### For AI/ML Engineers
-- **Start here**: [Part 4 (Protocols)](./04-protocols-architecture.md) → [Part 4b (Debundling)](./04b-debundling-enterprise-systems.md) → [Part 5 (Implementation)](./05-implementation.md)
+- **Start here**: [Part 4 (Protocols)](./04-protocols-architecture.md) → [Part 5 (Debundling)](./05-debundling-enterprise-systems.md) → [Part 6 (Implementation)](./06-implementation.md)
 - **Key question**: "How do I implement this?"
 - **Code examples**: All verified against October 2025 APIs
 
 ### For Product Managers
-- **Start here**: [Part 3 (Platforms)](./03-platforms-compared.md) → [Part 7 (Path Forward)](./07-path-forward.md)
+- **Start here**: [Part 3 (Platforms)](./03-platforms-compared.md) → [Part 8 (Path Forward)](./08-path-forward.md)
 - **Key question**: "What can we build in 6 months?"
 - **Success rates**: 40-95% depending on task complexity
 
 ### For Technology Observers
-- **Start here**: [Part 2 (Why Platforms)](./02-why-platforms.md) → [Part 7 (Path Forward)](./07-path-forward.md)
+- **Start here**: [Part 2 (Why Platforms)](./02-why-platforms.md) → [Part 8 (Path Forward)](./08-path-forward.md)
 - **Key question**: "Is this the next Kubernetes?"
 - **Industry trajectory**: 2025 → 2030 evolution
 
@@ -163,9 +163,51 @@ Agentic platforms are becoming **foundational infrastructure**—like Kubernetes
 
 ---
 
+## About the Author
+
+**Raphaël Mansuy** is a Chief Technology Officer, Author, AI Strategist, and Data Engineering Expert based in Hong Kong SAR, China. With over 20 years of experience in AI and innovation across various sectors, Raphaël is dedicated to democratizing data management and artificial intelligence.
+
+### Role & Experience
+
+As the **CTO and Co-Founder of [Elitizon](https://elitizon.com/)**, a technology venture studio, Raphaël leads the development of AI strategies tailored to meet specific business goals across Europe and the USA. His expertise spans:
+
+- Architecting scalable data platforms
+- Implementing advanced machine learning models
+- Overseeing DevOps and MLOps processes
+- Data governance and analytics operating models
+
+### Strategic Collaborations
+
+Raphaël serves as a consultant for prominent organizations, including:
+
+- **[Quantmetry (Capgemini Invent)](https://www.capgemini.com/)** / **[ALVIA](https://www.linkedin.com/company/alvia-consulting/about/)** — leading innovation initiatives
+- **[DECATHLON](https://www.decathlon.com/)** — advising on data and AI strategy
+
+He actively bridges the gap between advanced AI models and their practical applications in business processes, working with startups and enterprises across Europe and the USA.
+
+### Community Leadership & Cross-Continental Bridge
+
+As a Hong Kong Permanent Resident, Raphaël is a **founding member of the [Hong Kong AI Association](https://www.aiiahk.com/)**, contributing to the development of AI research and practice in the Asia-Pacific region. He serves as a strategic bridge between Europe and China, leveraging his deep understanding of both markets to foster collaboration, innovation, and responsible AI development across continents.
+
+### Author & Educator
+
+Raphaël is the **author of "[The Definitive Guide to Data Integration](https://www.amazon.com/Definitive-Guide-Data-Integration-integration/dp/1837631913)"**, a comprehensive resource on modern data integration practices. He is also the creator of the **[ADK (Agent Development Kit) Training Course](https://raphaelmansuy.github.io/adk_training/)**, which is featured in the [Google ADK Community Resources](https://google.github.io/adk-docs/community/), establishing him as a recognized expert in agent development frameworks.
+
+### Founder & Thought Leader
+
+Raphaël is **Co-Founder of [QuantaLogic (PARIS)](https://quantalogic.com/)**, focusing on unlocking the potential of generative AI for businesses.
+
+A thought leader in the AI community, Raphaël conducts daily reviews of AI research and shares insights with his 31,000+ LinkedIn followers. He holds a Master's degree in Database and Artificial Intelligence from Université de Bourgogne and various certifications in machine learning and data science.
+
+His combination of technical expertise, business acumen, and passion for innovation—coupled with his published works and educational contributions—provides a unique vantage point: understanding both what platforms promise and what enterprises actually need to succeed.
+
+---
+
 ## About This Series
 
 This series is grounded in:
+
+
 - ✅ **Verified production implementations** (Epsilon, Salesforce, Microsoft)
 - ✅ **Accurate code examples** (tested against real APIs)
 - ✅ **Honest limitations** (success rates, autonomy levels)
@@ -178,7 +220,7 @@ All technical claims are sourced from official platform documentation, customer 
 
 ## Navigation
 
-**[Start Reading →](./01-the-crisis.md)** | [Jump to Implementation](./05-implementation.md) | [Jump to Reality Check](./06-reality-check.md)
+**[Start Reading →](./01-the-crisis.md)** | [Jump to Implementation](./06-implementation.md) | [Jump to Reality Check](./07-reality-check.md)
 
 ---
 

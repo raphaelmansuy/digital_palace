@@ -496,3 +496,6 @@ The problem is clear. The solution pattern is clear. Now let's understand the op
 ---
 
 [← Previous: The Crisis](./01-the-crisis.md) | [Back to Index](./README.md) | [Next: The Four Platforms →](./03-platforms-compared.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

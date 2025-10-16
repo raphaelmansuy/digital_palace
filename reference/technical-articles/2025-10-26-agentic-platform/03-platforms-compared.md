@@ -563,3 +563,6 @@ In [Part 4](./04-protocols-architecture.md), we'll explore:
 ---
 
 [← Previous: Why Platforms](./02-why-platforms.md) | [Back to Index](./README.md) | [Next: Protocols & Architecture →](./04-protocols-architecture.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

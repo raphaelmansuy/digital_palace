@@ -1,6 +1,6 @@
 # Appendix: Advanced Architectural Views
 
-[← Back to Index](./README.md) | [Back to Part 7](./07-path-forward.md)
+[← Back to Index](./README.md) | [Back to Part 8](./08-path-forward.md)
 
 ---
 
@@ -804,4 +804,7 @@ We've explored six architectural views:
 
 ---
 
-[← Back to Index](./README.md) | [Back to Part 7](./07-path-forward.md)
+[← Back to Index](./README.md) | [Back to Part 8](./08-path-forward.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

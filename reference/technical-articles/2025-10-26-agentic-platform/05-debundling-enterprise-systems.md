@@ -1,6 +1,6 @@
-# Part 4b: Debundling Enterprise Systems Through AG-UI + MCP
+# Part 5: Debundling Enterprise Systems Through AG-UI + MCP
 
-[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Implementation Guide →](./05-implementation.md)
+[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Implementation Guide →](./06-implementation.md)
 
 ---
 
@@ -540,4 +540,7 @@ In Chapter 4, **systems no longer compete on UI. They compete on API quality, re
 
 ---
 
-[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Implementation Guide →](./05-implementation.md)
+[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Implementation Guide →](./06-implementation.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

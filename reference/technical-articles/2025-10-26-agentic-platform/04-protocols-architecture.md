@@ -1,6 +1,6 @@
 # Part 4: Protocols & Architecture
 
-[← Previous: Platforms Compared](./03-platforms-compared.md) | [Back to Index](./README.md) | [Next: Debundling Enterprise Systems →](./04b-debundling-enterprise-systems.md)
+[← Previous: Platforms Compared](./03-platforms-compared.md) | [Back to Index](./README.md) | [Next: Debundling Enterprise Systems →](./05-debundling-enterprise-systems.md)
 
 ---
 
@@ -880,14 +880,14 @@ AG-UI = Presentation (how users interact with agents)
 
 Before diving into implementation, let's see how these protocols solve **real enterprise problems**.
 
-In [Part 4b](./04b-debundling-enterprise-systems.md), we'll explore:
+In [Part 5](./05-debundling-enterprise-systems.md), we'll explore:
 
 - How enterprise software silos create friction
 - How MCP + AG-UI solve the debundling challenge
 - Real use cases: Sales, HR, Finance operations
 - ROI calculations and implementation paths
 
-Then in [Part 5](./05-implementation.md), we'll put theory into practice with verified code examples:
+Then in [Part 6](./06-implementation.md), we'll put theory into practice with verified code examples:
 
 - Google ADK code example (verified, real APIs)
 - AWS Bedrock code example (verified, real APIs)
@@ -898,8 +898,11 @@ Then in [Part 5](./05-implementation.md), we'll put theory into practice with ve
 
 Time to see how these protocols transform enterprise operations.
 
-[Continue to Part 4b →](./04b-debundling-enterprise-systems.md)
+[Continue to Part 5 →](./05-debundling-enterprise-systems.md)
 
 ---
 
-[← Previous: Platforms Compared](./03-platforms-compared.md) | [Back to Index](./README.md) | [Next: Debundling Enterprise Systems →](./04b-debundling-enterprise-systems.md)
+[← Previous: Platforms Compared](./03-platforms-compared.md) | [Back to Index](./README.md) | [Next: Debundling Enterprise Systems →](./05-debundling-enterprise-systems.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+

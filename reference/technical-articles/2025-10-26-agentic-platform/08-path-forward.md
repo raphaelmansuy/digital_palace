@@ -1,6 +1,6 @@
-# Part 7: The Path Forward (2025 → 2030)
+# Part 8: The Path Forward (2025 → 2030)
 
-[← Previous: Reality Check](./06-reality-check.md) | [Back to Index](./README.md) | [See Also: Appendix →](./appendix-architecture.md)
+[← Previous: Reality Check](./07-reality-check.md) | [Back to Index](./README.md) | [See Also: Appendix →](./appendix-architecture.md)
 
 ---
 
@@ -463,4 +463,7 @@ For visual thinkers, we've preserved all detailed architectural diagrams in the 
 
 ---
 
-[← Previous: Reality Check](./06-reality-check.md) | [Back to Index](./README.md) | [See Also: Appendix →](./appendix-architecture.md)
+[← Previous: Reality Check](./07-reality-check.md) | [Back to Index](./README.md) | [See Also: Appendix →](./appendix-architecture.md)
+
+*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
+
