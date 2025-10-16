@@ -349,24 +349,61 @@ Holistic snapshot integrating all layers, with 2025 examples.
 ### Google ADK Agent Example
 
 ```python
-# Customer Support Agent with MCP tools
-from vertexai import agentic
-from vertexai.agents import Agent
+### Google ADK (Agent Development Kit) Example
 
+```python
+# Customer Support Agent - using real ADK API
+from google.adk.agents.llm_agent import Agent
+
+# Define tool functions (ADK uses Python functions, not Tool objects)
+def query_crm(customer_id: str) -> dict:
+    """Query customer data from CRM system."""
+    return {"status": "success", "customer_id": customer_id}
+
+def create_ticket(title: str, description: str) -> dict:
+    """Create a support ticket."""
+    return {"status": "created", "ticket_id": "T-12345"}
+
+# Create agent with function tools
 agent = Agent(
-    model="gemini-2.0-pro",
-    name="support-agent",
-    instructions="Helpful customer support with access to CRM and ticketing",
-    tools=[
-        agentic.Tool(name="crm", mcp_server="postgresql://crm-db"),
-        agentic.Tool(name="tickets", mcp_server="https://jira.com/mcp")
-    ],
-    memory=agentic.Memory(short_term=True, long_term=True),
-    guardrails=[agentic.Guardrail(type="content_filter")]
+    model='gemini-2.0-flash',
+    name='support_agent',
+    description='Customer support agent with CRM access',
+    instruction='You are a helpful customer support agent. Use the tools to help customers.',
+    tools=[query_crm, create_ticket],  # Python functions, not Tool objects
 )
 
-deployment = agent.deploy(runtime="agent-engine")
-print(f"Deployed: {deployment.endpoint}")
+# ADK agents are deployed separately via Agent Engine
+# Use agent.generate() for local testing
+response = agent.generate(user_input="Check status for customer 12345")
+```
+
+### AWS Bedrock Agents Example
+
+```python
+# Multi-agent sales coordination - using real boto3 API
+import boto3
+
+# Correct client name is 'bedrock-agent' not 'bedrock-agentcore'
+bedrock_agent = boto3.client('bedrock-agent')
+
+response = bedrock_agent.create_agent(
+    agentName='sales-coordinator',
+    foundationModel='anthropic.claude-3-5-sonnet-20240620-v1:0',
+    agentResourceRoleArn='arn:aws:iam::123456789012:role/AmazonBedrockExecutionRoleForAgents',
+    instruction='You are a sales coordination agent that helps manage customer relationships.',
+    # Memory configuration
+    memoryConfiguration={
+        'enabledMemoryTypes': ['SESSION_SUMMARY'],
+        'storageDays': 30
+    }
+)
+
+agent_id = response['agent']['agentId']
+print(f"Created agent: {agent_id}")
+
+# Action groups and knowledge bases are added separately via 
+# create_agent_action_group() and associate_agent_knowledge_base()
 ```
 
 ### AWS AgentCore Example
