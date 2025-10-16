@@ -85,7 +85,7 @@ def create_ticket(
 
 frontend_agent = Agent(
     name="customer_support_frontend",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     
     # Tools: Python functions
     tools=[query_crm, create_ticket],
@@ -125,7 +125,7 @@ def run_customer_analytics(customer_id: str) -> Dict[str, Any]:
 
 data_agent = Agent(
     name="data_analyst",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     tools=[run_customer_analytics],
     instruction="""
     You are a data analyst agent.
@@ -188,7 +188,7 @@ if __name__ == "__main__":
 | **Python Tools** | `tools=[query_crm, create_ticket]` | Simple, type-safe, no boilerplate |
 | **A2A Discovery** | `a2a.register(agent)` | Agents find each other dynamically |
 | **Multi-Agent** | Frontend → Data Agent via A2A | No hardcoded integrations |
-| **Gemini 2.0** | `model="gemini-2.0-flash"` | Fast, cheap, multimodal |
+| **Gemini 2.5** | `model="gemini-2.5-flash"` | Fast, cheap, multimodal |
 
 ### Deployment Options
 
@@ -224,7 +224,7 @@ service = run_v2.Service(
 Monthly Cost Breakdown (1000 customer queries/day):
 
 LLM Costs:
-├─ Gemini 2.0 Flash: 2000 tokens/query average
+├─ Gemini 2.5 Flash: 2000 tokens/query average
 ├─ Input: 1500 tokens × $0.00025/1K = $0.000375/query
 ├─ Output: 500 tokens × $0.001/1K = $0.0005/query
 └─ Total per query: $0.000875
@@ -328,7 +328,7 @@ agent_response = bedrock_agent.create_agent(
     agentName='compliance_assistant',
     
     # Foundation model
-    foundationModel='anthropic.claude-3-5-sonnet-20241022-v2:0',
+    foundationModel='anthropic.claude-4-5-sonnet-20251022-v2:0',
     
     # IAM role for agent identity
     agentResourceRoleArn=agent_role_arn,
@@ -359,7 +359,7 @@ agent_id = agent_response['agent']['agentId']
 bedrock_agent.update_agent(
     agentId=agent_id,
     agentName='compliance_assistant',
-    foundationModel='anthropic.claude-3-5-sonnet-20241022-v2:0',
+    foundationModel='anthropic.claude-4-5-sonnet-20251022-v2:0',
     agentResourceRoleArn=agent_role_arn,
     instruction=agent_response['agent']['instruction'],
     
@@ -509,7 +509,7 @@ guardrail_id = guardrail_response['guardrailId']
 bedrock_agent.update_agent(
     agentId=agent_id,
     agentName='compliance_assistant',
-    foundationModel='anthropic.claude-3-5-sonnet-20241022-v2:0',
+    foundationModel='anthropic.claude-4-5-sonnet-20251022-v2:0',
     agentResourceRoleArn=agent_role_arn,
     instruction=agent_response['agent']['instruction'],
     
@@ -588,7 +588,7 @@ if __name__ == "__main__":
 Monthly Cost Breakdown (500 compliance queries/day):
 
 LLM Costs:
-├─ Claude 3.5 Sonnet: 3000 tokens/query average
+├─ Claude 4.5 Sonnet: 3000 tokens/query average
 ├─ Input: 2000 tokens × $0.003/1K = $0.006/query
 ├─ Output: 1000 tokens × $0.015/1K = $0.015/query
 └─ Total per query: $0.021
@@ -1285,9 +1285,9 @@ SUCCESS METRICS:
 
 | Platform | Model | Average Cost | Use Case |
 |----------|-------|--------------|----------|
-| Google ADK | Gemini 2.0 Flash | $0.0009 | Customer support |
-| AWS Bedrock | Claude 3.5 Sonnet | $0.021 | Compliance queries |
-| Microsoft Copilot | GPT-4o | $0.015 | HR onboarding |
+| Google ADK | Gemini 2.5 Flash | $0.0009 | Customer support |
+| AWS Bedrock | Claude 4.5 Sonnet | $0.021 | Compliance queries |
+| Microsoft Copilot | GPT-5 | $0.015 | HR onboarding |
 | Salesforce Agentforce | Mixed models | $0.005 | Lead qualification |
 
 **Cost optimization strategies**:

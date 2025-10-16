@@ -30,9 +30,9 @@ Each platform reflects its parent company's DNA. Let's compare them.
 ║                                     AGENTCORE     COPILOT      AGENTFORCE ║
 ║  ──────────────────────────────────────────────────────────────────────  ║
 ║                                                                           ║
-║  PRIMARY MODEL       Gemini 2.0     Claude 3.7     GPT-4o       Mix of    ║
-║                      (native)       Sonnet         (Azure)       models   ║
-║                                     (default)                   + Atlas   ║
+║  PRIMARY MODEL       Gemini 2.5     Claude 4.5     GPT-5        Mix of    ║
+║                      Flash          Sonnet         (latest)     models    ║
+║                      (native)       (default)                   + Atlas   ║
 ║                                                                           ║
 ║  MULTI-MODEL         ✅ Any model   ✅ Bedrock     ✅ Azure AI   ⚠️ Limited ║
 ║  SUPPORT             via Vertex     models         + OpenAI      (SaaS    ║
@@ -111,7 +111,7 @@ Each platform reflects its parent company's DNA. Let's compare them.
 - **A2A Protocol Leadership**: Only platform with native Agent-to-Agent communication
 - **Research Pedigree**: Built on Google DeepMind's agent research (see: Gemini models, AlphaGo)
 - **Framework Flexibility**: Works with LangGraph, AG2, CrewAI, AutoGen
-- **Gemini 2.0 Integration**: Native access to Google's latest multimodal models
+- **Gemini 2.5 Integration**: Native access to Google's latest multimodal models (Gemini 2.5 Pro, Flash, Flash-Lite)
 
 **Sweet Spot**: Companies building **complex multi-agent systems** where agents need to discover each other, negotiate tasks, and coordinate autonomously.
 
@@ -125,7 +125,7 @@ from google.adk.protocols.a2a import A2AProtocol
 # Agent 1: Sales Agent
 sales_agent = Agent(
     name="sales_assistant",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     tools=[crm_tool, email_tool],
     capabilities=["customer_lookup", "send_proposal"]
 )
@@ -133,7 +133,7 @@ sales_agent = Agent(
 # Agent 2: Data Agent  
 data_agent = Agent(
     name="data_analyst",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     tools=[bigquery_tool, sheets_tool],
     capabilities=["run_analytics", "generate_report"]
 )
@@ -185,7 +185,7 @@ bedrock_agent = boto3.client('bedrock-agent')
 # Create agent with MCP tool access via Gateway
 response = bedrock_agent.create_agent(
     agentName='customer_support_agent',
-    foundationModel='anthropic.claude-3-5-sonnet-20241022-v2:0',
+    foundationModel='anthropic.claude-4-5-sonnet-20251022-v2:0',
     agentResourceRoleArn='arn:aws:iam::123456789:role/AgentRole',
     
     # MCP Gateway: Connect to MCP servers

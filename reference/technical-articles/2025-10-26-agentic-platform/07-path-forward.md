@@ -43,7 +43,7 @@ Let's explore the next 5 years.
 ### 2. Cost Optimization: 10x Reduction in LLM Costs
 
 **What's happening**:
-- Model distillation: Claude 3.5 Haiku, Gemini 2.0 Flash Lite
+- Model distillation: Claude 4.5 Haiku, Gemini 2.5 Flash Lite
 - Prompt caching: 50-90% cost reduction for repeated queries
 - Inference optimization: Speculative decoding, quantization (4-bit, 8-bit)
 
@@ -52,8 +52,8 @@ Let's explore the next 5 years.
 ```text
 LLM Cost Per Million Tokens (Input):
 
-2024 Q4: $0.25 - $3.00 (GPT-4, Claude 3.5)
-2025 Q2: $0.10 - $1.00 (Gemini 2.0, Claude 3.5 Haiku)
+2024 Q4: $0.25 - $3.00 (GPT-4, Claude 4.5)
+2025 Q2: $0.10 - $1.00 (Gemini 2.5, Claude 4.5 Haiku)
 2026 Q2: $0.01 - $0.10 (Next-gen distilled models)
 
 10-30x cost reduction in 18 months
@@ -66,7 +66,7 @@ LLM Cost Per Million Tokens (Input):
 
 **Example**: Customer support chatbot
 - 2024: $500/month (GPT-4)
-- 2025: $50/month (Gemini 2.0 Flash + caching)
+- 2025: $50/month (Gemini 2.5 Flash + caching)
 - 2026: $5/month (distilled models)
 
 **Impact**: Mass adoption of AI agents across all company sizes.

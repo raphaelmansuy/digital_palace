@@ -297,10 +297,11 @@ Engineering cost: $2M-$5M
 # Agents become code:
 from google.adk.agents.llm_agent import Agent
 
-agent = Agent(
-    model='gemini-2.0-flash',
-    tools=[salesforce_tool, slack_tool],
-    memory='persistent'
+sales_agent = Agent(
+    name="sales_assistant",
+    model="gemini-2.5-flash",
+    tools=[crm_tool, email_tool],
+    capabilities=["customer_lookup", "send_proposal"]
 )
 
 # Launch time: 2 weeks

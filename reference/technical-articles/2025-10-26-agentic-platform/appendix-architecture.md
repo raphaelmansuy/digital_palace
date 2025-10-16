@@ -56,7 +56,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │                                                            │ ║
 ║  │  ┌──────────────────────────────────────────────────┐    │ ║
 ║  │  │ FOUNDATION MODEL (LLM)                           │    │ ║
-║  │  │ - GPT-4o, Claude 3.5, Gemini 2.0, etc.           │    │ ║
+║  │  │ - GPT-5, Claude 4.5, Gemini 2.5, etc.           │    │ ║
 ║  │  │                                                   │    │ ║
 ║  │  │ Reasoning Strategies:                            │    │ ║
 ║  │  │ ┌────────────────────────────────────────────┐   │    │ ║
@@ -265,6 +265,7 @@ Every AI agent follows this pattern, regardless of platform:
 ```
 
 **Decision Guide**:
+
 - **Serverless**: Small-scale, bursty workloads, cost-sensitive
 - **Containerized**: Large-scale, always-on, need low latency
 - **Fully Managed**: Fastest time to market, least operational burden
@@ -631,7 +632,7 @@ KEY INSIGHTS:
 ║  │  │                                                       │  │ ║
 ║  │  │ Quarterly:                                            │  │ ║
 ║  │  │ ├─ Consider fine-tuning (if >10K examples)           │  │ ║
-║  │  │ ├─ Evaluate new models (Gemini 2.0, Claude 4, etc.)  │  │ ║
+║  │  │ ├─ Evaluate new models (Gemini 2.5, Claude 4, etc.)  │  │ ║
 ║  │  │ └─ Benchmark: accuracy, cost, latency                │  │ ║
 ║  │  └──────────────────────────────────────────────────────┘  │ ║
 ║  └────────────────────────────────────────────────────────────┘ ║
