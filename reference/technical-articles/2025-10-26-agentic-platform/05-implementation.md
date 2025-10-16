@@ -1,6 +1,6 @@
 # Part 5: Real Implementation Guide
 
-[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)
+[← Previous: Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)
 
 ---
 
@@ -1335,4 +1335,4 @@ SUCCESS METRICS:
 
 ---
 
-[← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)
+[← Previous: Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) | [Back to Index](./README.md) | [Next: Reality Check →](./06-reality-check.md)

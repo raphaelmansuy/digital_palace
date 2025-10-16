@@ -121,7 +121,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - **TCO comparison**: DIY vs Platform costs
 
 ### For AI/ML Engineers
-- **Start here**: [Part 4 (Protocols)](./04-protocols-architecture.md) → [Part 5 (Implementation)](./05-implementation.md)
+- **Start here**: [Part 4 (Protocols)](./04-protocols-architecture.md) → [Part 4b (Debundling)](./04b-debundling-enterprise-systems.md) → [Part 5 (Implementation)](./05-implementation.md)
 - **Key question**: "How do I implement this?"
 - **Code examples**: All verified against October 2025 APIs
 
