@@ -55,7 +55,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │                                                          │    ║
 ║  │  ┌──────────────────────────────────────────────────┐    │    ║
 ║  │  │ FOUNDATION MODEL (LLM)                           │    │    ║
-║  │  │ - GPT-5, Claude 4.5, Gemini 2.5, etc.            │    │    ║
+║  │  │ - GPT-4o, Claude 4.5, Gemini 2.5, etc.            │    │    ║
 ║  │  │                                                  │    │    ║
 ║  │  │ Reasoning Strategies:                            │    │    ║
 ║  │  │ ┌────────────────────────────────────────────┐   │    │    ║

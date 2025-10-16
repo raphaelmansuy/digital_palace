@@ -23,7 +23,7 @@ Each platform reflects its parent company's DNA. Let's compare them.
 
 | Feature | Google ADK | AWS Bedrock AgentCore | Microsoft Copilot Studio | Salesforce Agentforce |
 |---------|-----------|----------------------|--------------------------|----------------------|
-| **PRIMARY MODEL** | Gemini 2.5 Flash (native) | Claude 4.5 Sonnet (default) | GPT-5 (latest) | Mix of models + Atlas |
+| **PRIMARY MODEL** | Gemini 2.5 Flash (native) | Claude 4.5 Sonnet (default) | GPT-5 (latest, 2025-10-06) | Mix of models + Atlas |
 | **MULTI-MODEL SUPPORT** | ✅ Any model via Vertex | ✅ Bedrock models | ✅ Azure AI + OpenAI | ⚠️ Limited (SaaS focus) |
 | **PROTOCOL SUPPORT** | ✅ A2A (native) + MCP | ✅ MCP (gateway) | ⚠️ Custom connectors (1000+) | ✅ MCP + A2A (roadmap) |
 | **TOOL ECOSYSTEM** | MCP servers + custom Python | AWS services + MCP + custom | Power Platform connectors | Apex code + MCP + APIs |
