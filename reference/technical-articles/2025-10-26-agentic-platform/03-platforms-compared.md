@@ -21,65 +21,20 @@ Each platform reflects its parent company's DNA. Let's compare them.
 
 ### Core Capabilities
 
-```text
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                    AGENTIC PLATFORM COMPARISON (OCT 2025)                 ║
-╠═══════════════════════════════════════════════════════════════════════════╣
-║                                                                           ║
-║  FEATURE              GOOGLE ADK    AWS BEDROCK   MICROSOFT    SALESFORCE ║
-║                                     AGENTCORE     COPILOT      AGENTFORCE ║
-║  ──────────────────────────────────────────────────────────────────────  ║
-║                                                                           ║
-║  PRIMARY MODEL       Gemini 2.5     Claude 4.5     GPT-5        Mix of    ║
-║                      Flash          Sonnet         (latest)     models    ║
-║                      (native)       (default)                   + Atlas   ║
-║                                                                           ║
-║  MULTI-MODEL         ✅ Any model   ✅ Bedrock     ✅ Azure AI   ⚠️ Limited ║
-║  SUPPORT             via Vertex     models         + OpenAI      (SaaS    ║
-║                                                                  focus)    ║
-║                                                                           ║
-║  PROTOCOL SUPPORT    ✅ A2A          ✅ MCP          ⚠️ Custom    ✅ MCP +   ║
-║                      (native)       (gateway)      connectors   A2A       ║
-║                      + MCP                         (1000+)      (roadmap) ║
-║                                                                           ║
-║  TOOL ECOSYSTEM      MCP servers    AWS services   Power        Apex code ║
-║                      + custom       + MCP          Platform     + MCP     ║
-║                      Python         + custom       connectors   + APIs    ║
-║                                                                           ║
-║  MEMORY              Vector DB      Memory         M365         CRM data  ║
-║                      (Vertex AI)    service        Graph +      + Data    ║
-║                      + custom       (managed)      custom       Cloud     ║
-║                                                                           ║
-║  ORCHESTRATION       LangGraph      Step           Low-code     Atlas     ║
-║                      + AG2          Functions      designer +   Reasoning ║
-║                      + custom       + custom       copilot      Engine    ║
-║                                                                           ║
-║  IDENTITY/AUTH       Google IAM     AWS IAM +      Entra ID     Salesforce║
-║                      + Workload     Amazon         (AAD) +      Org       ║
-║                      Identity       Verified       M365         permissions║
-║                                     Permissions    identity               ║
-║                                                                           ║
-║  OBSERVABILITY       Cloud          CloudWatch +   Application  Einstein  ║
-║                      Logging +      Bedrock        Insights +   Analytics ║
-║                      Trace          metrics        custom       + custom  ║
-║                                                                           ║
-║  DEPLOYMENT          GKE, Cloud     Lambda, ECS,   Azure        Salesforce║
-║                      Run, Vertex    Fargate, EC2   Functions,   cloud     ║
-║                      AI managed                    AKS, VMs     (managed) ║
-║                                                                           ║
-║  PRICING MODEL       Pay-per-use    Pay-per-use    Per-agent    Per-      ║
-║                      (LLM tokens)   + managed      licensing    conversation║
-║                                     services                    + usage   ║
-║                                                                           ║
-║  IDEAL FOR           GCP-native,    AWS-native,    M365-heavy   CRM-      ║
-║                      multi-agent    enterprise     orgs,        centric   ║
-║                      systems        compliance     low-code     businesses║
-║                                                                           ║
-║  MATURITY            🟡 Early        🟡 Early        🟢 Mature     🟡 Early  ║
-║                      (Q4 2024)      (Q1 2025)      (years)      (Q4 2024) ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-```
+| Feature | Google ADK | AWS Bedrock AgentCore | Microsoft Copilot Studio | Salesforce Agentforce |
+|---------|-----------|----------------------|--------------------------|----------------------|
+| **PRIMARY MODEL** | Gemini 2.5 Flash (native) | Claude 4.5 Sonnet (default) | GPT-5 (latest) | Mix of models + Atlas |
+| **MULTI-MODEL SUPPORT** | ✅ Any model via Vertex | ✅ Bedrock models | ✅ Azure AI + OpenAI | ⚠️ Limited (SaaS focus) |
+| **PROTOCOL SUPPORT** | ✅ A2A (native) + MCP | ✅ MCP (gateway) | ⚠️ Custom connectors (1000+) | ✅ MCP + A2A (roadmap) |
+| **TOOL ECOSYSTEM** | MCP servers + custom Python | AWS services + MCP + custom | Power Platform connectors | Apex code + MCP + APIs |
+| **MEMORY** | Vector DB (Vertex AI) + custom | Memory service (managed) | M365 Graph + custom | CRM data + Data Cloud |
+| **ORCHESTRATION** | LangGraph + AG2 + custom | Step Functions + custom | Low-code designer + copilot | Atlas Reasoning Engine |
+| **IDENTITY/AUTH** | Google IAM + Workload Identity | AWS IAM + Amazon Verified Permissions | Entra ID (AAD) + M365 identity | Salesforce Org permissions |
+| **OBSERVABILITY** | Cloud Logging + Trace | CloudWatch + Bedrock metrics | Application Insights + custom | Einstein Analytics + custom |
+| **DEPLOYMENT** | GKE, Cloud Run, Vertex AI managed | Lambda, ECS, Fargate, EC2 | Azure Functions, AKS, VMs | Salesforce cloud (managed) |
+| **PRICING MODEL** | Pay-per-use (LLM tokens) | Pay-per-use + managed services | Per-agent licensing | Per-conversation + usage |
+| **IDEAL FOR** | GCP-native, multi-agent systems | AWS-native, enterprise compliance | M365-heavy orgs, low-code | CRM-centric businesses |
+| **MATURITY** | 🟡 Early (Q4 2024) | 🟡 Early (Q1 2025) | 🟢 Mature (years) | 🟡 Early (Q4 2024) |
 
 ### Problems Solved by Each Platform
 

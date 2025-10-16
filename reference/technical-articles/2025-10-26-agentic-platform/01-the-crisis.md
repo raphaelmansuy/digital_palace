@@ -35,13 +35,13 @@ Every agent connects directly to every tool. This creates an explosion of custom
          ┌─────────────────────────────────────────────────┐
          │         Your 5 AI Agents                        │
          │  [Customer] [Sales] [Data] [Code] [HR]          │
-         └────┬─────┬─────┬─────┬─────┬──────────────────┘
+         └────┬─────┬─────┬─────┬─────┬────────────────────┘
               │     │     │     │     │
-         ┌────┴─────┴─────┴─────┴─────┴────┐
+         ┌────┴─────┴─────┴─────┴─────┴─────┐
          │    Custom Integration Layer      │ ← 150+ unique connectors!
          │    (Your engineering team        │
          │     maintains all of this)       │
-         └────┬─────┬─────┬─────┬─────┬────┘
+         └────┬─────┬─────┬─────┬─────┬─────┘
               │     │     │     │     │
          ┌────┴─────┴─────┴─────┴─────┴────────────────┐
          │  Salesforce Zendesk Slack HubSpot LinkedIn  │
@@ -273,33 +273,33 @@ You can't write unit tests. You can't use traditional debuggers. You need new to
 ║  PHASE 1: INITIAL BUILD (18-24 months)                ║
 ║  ───────────────────────────────────────────────      ║
 ║  Tool Integration Layer                               ║
-║  ├─ Custom connectors (50+): 6 months, 3 engineers   ║
-║  ├─ Authentication/OAuth: 2 months, 2 engineers      ║
-║  ├─ Rate limiting & retry: 1 month, 1 engineer       ║
+║  ├─ Custom connectors (50+): 6 months, 3 engineers    ║
+║  ├─ Authentication/OAuth: 2 months, 2 engineers       ║
+║  ├─ Rate limiting & retry: 1 month, 1 engineer        ║
 ║  └─ Subtotal: 9 months × 6 engineers = $810K          ║
 ║                                                       ║
 ║  Orchestration Engine                                 ║
-║  ├─ Agent coordination: 4 months, 2 engineers        ║
-║  ├─ State management: 2 months, 2 engineers          ║
-║  ├─ Workflow engine: 3 months, 1 engineer            ║
+║  ├─ Agent coordination: 4 months, 2 engineers         ║
+║  ├─ State management: 2 months, 2 engineers           ║
+║  ├─ Workflow engine: 3 months, 1 engineer             ║
 ║  └─ Subtotal: 9 months × 5 engineers = $675K          ║
 ║                                                       ║
 ║  Memory Management                                    ║
-║  ├─ Vector DB integration: 2 months, 2 engineers     ║
-║  ├─ Session management: 2 months, 1 engineer         ║
-║  ├─ Long-term memory: 3 months, 2 engineers          ║
+║  ├─ Vector DB integration: 2 months, 2 engineers      ║
+║  ├─ Session management: 2 months, 1 engineer          ║
+║  ├─ Long-term memory: 3 months, 2 engineers           ║
 ║  └─ Subtotal: 7 months × 5 engineers = $525K          ║
 ║                                                       ║
 ║  Identity & Security                                  ║
-║  ├─ IAM integration: 3 months, 2 engineers           ║
-║  ├─ Guardrails engine: 2 months, 2 engineers         ║
-║  ├─ Audit logging: 2 months, 1 engineer              ║
+║  ├─ IAM integration: 3 months, 2 engineers            ║
+║  ├─ Guardrails engine: 2 months, 2 engineers          ║
+║  ├─ Audit logging: 2 months, 1 engineer               ║
 ║  └─ Subtotal: 7 months × 5 engineers = $525K          ║
 ║                                                       ║
 ║  Observability                                        ║
-║  ├─ Distributed tracing: 2 months, 2 engineers       ║
-║  ├─ Reasoning logs: 2 months, 1 engineer             ║
-║  ├─ Cost tracking: 1 month, 1 engineer               ║
+║  ├─ Distributed tracing: 2 months, 2 engineers        ║
+║  ├─ Reasoning logs: 2 months, 1 engineer              ║
+║  ├─ Cost tracking: 1 month, 1 engineer                ║
 ║  └─ Subtotal: 5 months × 4 engineers = $300K          ║
 ║                                                       ║
 ║  PHASE 1 TOTAL: $2,835,000                            ║
@@ -307,7 +307,7 @@ You can't write unit tests. You can't use traditional debuggers. You need new to
 ║  ───────────────────────────────────────────────      ║
 ║  PHASE 2: ONGOING OPERATIONS (per year)               ║
 ║  ───────────────────────────────────────────────      ║
-║  Maintenance & Updates: 3 engineers × 100% = $540K   ║
+║  Maintenance & Updates: 3 engineers × 100% = $540K    ║
 ║  New integrations: 2 engineers × 50% = $180K          ║
 ║  Security patches: 1 engineer × 50% = $90K            ║
 ║  Incident response: 1 engineer × 75% = $135K          ║
@@ -336,9 +336,9 @@ You can't write unit tests. You can't use traditional debuggers. You need new to
 ║                                                       ║
 ║  PHASE 1: INITIAL SETUP (2-4 weeks)                   ║
 ║  ───────────────────────────────────────────────      ║
-║  Platform selection & POC: 1 week, 2 engineers       ║
-║  Initial agent development: 2 weeks, 2 engineers     ║
-║  Integration configuration: 1 week, 1 engineer       ║
+║  Platform selection & POC: 1 week, 2 engineers        ║
+║  Initial agent development: 2 weeks, 2 engineers      ║
+║  Integration configuration: 1 week, 1 engineer        ║
 ║                                                       ║
 ║  Setup Time: 4 weeks × 3 engineers = $45K             ║
 ║                                                       ║
@@ -346,14 +346,14 @@ You can't write unit tests. You can't use traditional debuggers. You need new to
 ║  PHASE 2: PLATFORM COSTS (per year)                   ║
 ║  ───────────────────────────────────────────────      ║
 ║  Platform subscription:                               ║
-║  ├─ Base platform: $2,000-$5,000/month               ║
-║  ├─ Per-agent fees: $500-$1,000/agent/month          ║
-║  └─ LLM API costs: $50,000-$200,000/year             ║
+║  ├─ Base platform: $2,000-$5,000/month                ║
+║  ├─ Per-agent fees: $500-$1,000/agent/month           ║
+║  └─ LLM API costs: $50,000-$200,000/year              ║
 ║                                                       ║
 ║  Engineering support:                                 ║
-║  ├─ 1 platform engineer: 100% = $180K                ║
-║  ├─ 1 AI engineer: 50% = $90K                        ║
-║  └─ Support & maintenance: 25% overhead = $67K       ║
+║  ├─ 1 platform engineer: 100% = $180K                 ║
+║  ├─ 1 AI engineer: 50% = $90K                         ║
+║  └─ Support & maintenance: 25% overhead = $67K        ║
 ║                                                       ║
 ║  YEARLY OPERATIONS: $400,000-$650,000                 ║
 ║                                                       ║
