@@ -52,11 +52,11 @@ Total: 3 MCP servers, shared by all agents
 ### MCP Architecture
 
 ```text
-╔══════════════════════════════════════════════════════════════════╗
-║                    MCP ARCHITECTURE                              ║
-║                "USB-C for AI Tools"                              ║
-╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
+╔═════════════════════════════════════════════════════════════════╗
+║                    MCP ARCHITECTURE                             ║
+║                "USB-C for AI Tools"                             ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
 ║   ┌──────────────────────────────────────────────────────────┐  ║
 ║   │                    YOUR AI AGENTS                        │  ║
 ║   │  [Customer Service] [Sales] [Data] [Code] [HR]           │  ║
@@ -123,8 +123,8 @@ STEP 1: Agent discovers available tools
          │ returns: ["query_crm", "create_lead", "update_opp"]
          │
 ┌────────▼─────────┐                   ┌─────────────┐
-│ MCP Server:      │───────────────────>│ MCP Client  │
-│ Salesforce       │   tool list        │             │
+│ MCP Server:      │──────────────────>│ MCP Client  │
+│ Salesforce       │   tool list       │             │
 └──────────────────┘                   └──────┬──────┘
                                               │
                                               │ presents tools
@@ -152,7 +152,7 @@ STEP 2: Agent calls tool
          │ executes: Salesforce API call
          │ (handles OAuth, rate limits, retries)
          │
-┌────────▼─────────┐                   ┌─────────────┐
+┌────────▼─────────┐                    ┌─────────────┐
 │ MCP Server:      │───────────────────>│ MCP Client  │
 │ Salesforce       │   result           │             │
 └──────────────────┘   {customer data}  └──────┬──────┘
@@ -161,7 +161,7 @@ STEP 2: Agent calls tool
                                               │
 ┌──────────┐                           ┌──────▼──────┐
 │  Agent   │<──────────────────────────│ MCP Client  │
-│          │  customer data             │             │
+│          │  customer data            │             │
 └──────────┘                           └─────────────┘
 
 STEP 3: Agent continues reasoning
@@ -666,43 +666,43 @@ AG-UI standardizes this asynchronous, interactive, streaming pattern.
 ║           "Agent-to-User Interface (Presentation Layer)"         ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
-║   ┌──────────────────────────────────────────────────────────┐  ║
-║   │              USER APPLICATIONS                            │  ║
-║   │  [Web Chat]  [Mobile]  [Slack Bot]  [Voice]  [AR/VR]    │  ║
-║   └──────────────────────┬───────────────────────────────────┘  ║
+║   ┌──────────────────────────────────────────────────────────┐   ║
+║   │              USER APPLICATIONS                           │   ║
+║   │  [Web Chat]  [Mobile]  [Slack Bot]  [Voice]  [AR/VR]     │   ║
+║   └──────────────────────┬───────────────────────────────────┘   ║
 ║                          │                                       ║
-║                          │ AG-UI Events (Streaming)             ║
-║                          │ • Token-by-token (SSE/WebSocket)    │
-║                          │ • Tool call events                   │
-║                          │ • User interrupts                    │
-║                          │ • State updates                      │
+║                          │ AG-UI Events (Streaming)              ║
+║                          │ • Token-by-token (SSE/WebSocket)      ║
+║                          │ • Tool call events                    ║
+║                          │ • User interrupts                     ║
+║                          │ • State updates                       ║
 ║                          ↓                                       ║
-║   ┌──────────────────────────────────────────────────────────┐  ║
-║   │              AGENT RUNTIME                               │  ║
-║   │  (LangGraph / CrewAI / Google ADK / AWS Bedrock)         │  ║
-║   │                                                           │  ║
-║   │  • Executes agent logic                                  │  ║
-║   │  • Emits AG-UI events in real-time                      │  ║
-║   │  • Handles human interrupts (pause/approve/edit/retry)  │  ║
-║   │  • Manages long-running workflows                        │  ║
-║   └──────────────────────┬───────────────────────────────────┘  ║
+║   ┌──────────────────────────────────────────────────────────┐   ║
+║   │              AGENT RUNTIME                               │   ║
+║   │  (LangGraph / CrewAI / Google ADK / AWS Bedrock)         │   ║
+║   │                                                          │   ║
+║   │  • Executes agent logic                                  │   ║
+║   │  • Emits AG-UI events in real-time                       │   ║
+║   │  • Handles human interrupts (pause/approve/edit/retry)   │   ║
+║   │  • Manages long-running workflows                        │   ║
+║   └──────────────────────┬───────────────────────────────────┘   ║
 ║                          │                                       ║
 ║                          │ MCP, A2A (internal protocols)         ║
 ║                          ↓                                       ║
-║   ┌──────────────────────────────────────────────────────────┐  ║
-║   │    TOOLS, DATA, OTHER AGENTS (via MCP & A2A)             │  ║
-║   │  [Salesforce]  [SAP]  [Slack]  [GitHub]  [Databases]    │  ║
-║   └──────────────────────────────────────────────────────────┘  ║
+║   ┌──────────────────────────────────────────────────────────┐   ║
+║   │    TOOLS, DATA, OTHER AGENTS (via MCP & A2A)             │   ║
+║   │  [Salesforce]  [SAP]  [Slack]  [GitHub]  [Databases]     │   ║
+║   └──────────────────────────────────────────────────────────┘   ║
 ║                                                                  ║
 ║  AG-UI Building Blocks (Today):                                  ║
-║  ├─ Streaming chat (tokens + events)                            ║
-║  ├─ Multimodal (files, images, audio, transcripts)             ║
-║  ├─ Generative UI (agent proposes components)                  ║
-║  ├─ Shared state (agent + app sync state)                      ║
-║  ├─ Tool visualization (show what agent is doing)              ║
-║  ├─ Human-in-the-loop (pause, approve, edit, retry)           │
-║  ├─ Frontend tool calls (agent delegates to UI)                ║
-║  └─ Sub-agent composition (nested agents with scoped state)    ║
+║  ├─ Streaming chat (tokens + events)                             ║
+║  ├─ Multimodal (files, images, audio, transcripts)               ║
+║  ├─ Generative UI (agent proposes components)                    ║
+║  ├─ Shared state (agent + app sync state)                        ║
+║  ├─ Tool visualization (show what agent is doing)                ║
+║  ├─ Human-in-the-loop (pause, approve, edit, retry)              ║ 
+║  ├─ Frontend tool calls (agent delegates to UI)                  ║
+║  └─ Sub-agent composition (nested agents with scoped state)      ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
@@ -741,26 +741,26 @@ TIME 0.3s: First response tokens arrive (streaming)
 
 TIME 0.8s: Agent calls MCP tool (Salesforce) - shown to user
 ┌──────────────────────────────────────┐
-│ I found your order (XYZ123)...        │
-│ 🔍 Checking shipping status...       │
+│ I found your order (XYZ123)...        
+│ 🔍 Checking shipping status...       
 └──────────────────────────────────────┘
 
 TIME 1.2s: Tool result arrives, agent synthesizes
 ┌──────────────────────────────────────┐
-│ I found your order (XYZ123)...        │
-│ ✓ Current status: In transit         │
-│ 📍 Location: Memphis distribution    │
-│ 🕐 Estimated delivery: Tomorrow      │
-│                                       │
-│ For expedited shipping, I can add    │
-│ Priority handling (+$15). Approve?   │
-│ [ YES ]  [ NO ]  [ TALK TO AGENT ]  │
+│ I found your order (XYZ123)...       
+│ ✓ Current status: In transit         
+│ 📍 Location: Memphis distribution    
+│ 🕐 Estimated delivery: Tomorrow      
+│                                       
+│ For expedited shipping, I can add    
+│ Priority handling (+$15). Approve?   
+│ [ YES ]  [ NO ]  [ TALK TO AGENT ]  
 └──────────────────────────────────────┘
 
 TIME 2.0s: User clicks [YES] - INTERRUPT sent via AG-UI
 ┌──────────────────────────────────────┐
 │ Processing expedited shipping...     │
-│ ⏳ Updating order in system...       │
+│ ⏳ Updating order in system...       
 └──────────────────────────────────────┘
 
 TIME 2.5s: Action complete
@@ -768,9 +768,9 @@ TIME 2.5s: Action complete
 │ ✓ Expedited shipping enabled!        │
 │ Your order should arrive today       │
 │ Confirmation sent to your email      │
-│                                       │
+│                                      │
 │ Order ID: XYZ123                     │
-│ Tracking: https://track.com/XYZ123  │
+│ Tracking: https://track.com/XYZ123   │
 └──────────────────────────────────────┘
 
 KEY FEATURES IN ACTION:
@@ -815,24 +815,24 @@ All three protocols working together:
 ```text
 ┌──────────────────────────────────────────────────────┐
 │  LAYER 3: AG-UI (Agent ↔ User Interface)             │
-│  • User-facing interaction layer                      │
-│  • Streaming, real-time, interactive                  │
-│  • Handles long-running agents                        │
+│  • User-facing interaction layer                     │
+│  • Streaming, real-time, interactive                 │
+│  • Handles long-running agents                       │
 ├──────────────────────────────────────────────────────┤
 │  LAYER 2: A2A (Agent ↔ Agent Communication)          │
-│  • Agent-to-agent orchestration layer                 │
-│  • Dynamic discovery, context transfer                │
-│  • Security & authorization built-in                  │
+│  • Agent-to-agent orchestration layer                │
+│  • Dynamic discovery, context transfer               │
+│  • Security & authorization built-in                 │
 ├──────────────────────────────────────────────────────┤
 │  LAYER 1: MCP (Agent ↔ Tools/Data)                   │
-│  • Tool and data access layer                         │
-│  • Standardized integrations                          │
-│  • 100+ community servers                             │
+│  • Tool and data access layer                        │
+│  • Standardized integrations                         │
+│  • 100+ community servers                            │
 ├──────────────────────────────────────────────────────┤
-│  FOUNDATION: Agent Runtime                            │
-│  • LLM execution                                       │
-│  • Memory management                                   │
-│  • Reasoning & planning                               │
+│  FOUNDATION: Agent Runtime                           │
+│  • LLM execution                                     │
+│  • Memory management                                 │
+│  • Reasoning & planning                              │
 └──────────────────────────────────────────────────────┘
 
 Together, these three protocols create a COMPLETE 

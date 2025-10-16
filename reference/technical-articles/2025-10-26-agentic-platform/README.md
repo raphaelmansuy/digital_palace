@@ -8,7 +8,7 @@
 
 ## The Problem No One Talks About
 
-Here's what most enterprises discover after deploying their first AI agents: **the agent itself costs $500/month in API fees. The infrastructure to keep it running, secure, and integrated costs $50,000/month in engineering time.**
+Here's what most enterprises discover after deploying their first AI agents: **the agent itself costs \$500/month in API fees. The infrastructure to keep it running, secure, and integrated costs \$50,000/month in engineering time.**
 
 You need:
 - 🔧 Tool integrations to 50-100 enterprise systems
@@ -36,7 +36,7 @@ This series explores what these platforms actually do, how they work, and whethe
 - The integration nightmare: 5 agents × 30 tools = 150 custom integrations
 - The coordination chaos: When agents can't talk to each other
 - The security crisis: Credential sprawl and audit nightmares
-- **The cost calculator**: DIY ($2M) vs Platform ($150K)
+- **The cost calculator**: DIY (\$2M) vs Platform (\$150K)
 
 ### Part 2: [Why Platforms Are The Answer](./02-why-platforms.md)
 **The Cloud OS analogy and historical parallels**

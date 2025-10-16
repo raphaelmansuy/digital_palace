@@ -37,14 +37,14 @@ Every employee context-switches between 5-10+ systems daily:
 
 This creates massive costs:
 
-| Cost Category | Annual Impact |
-|---------------|-------------|
-| **Productivity Loss** | $50K per employee |
-| **Training & Onboarding** | $15K per new hire |
-| **Custom Integrations** | $500K+ per connection |
-| **Maintenance** | 30% of IT budget |
-| **System Licenses** | $2-3M for mid-sized company |
-| **TOTAL (100 employees)** | **$5-8M annually** |
+| Cost Category             | Annual Impact               |
+| ------------------------- | --------------------------- |
+| **Productivity Loss**     | $50K per employee           |
+| **Training & Onboarding** | $15K per new hire           |
+| **Custom Integrations**   | $500K+ per connection       |
+| **Maintenance**           | 30% of IT budget            |
+| **System Licenses**       | $2-3M for mid-sized company |
+| **TOTAL (100 employees)** | **$5-8M annually**          |
 
 ---
 
@@ -96,6 +96,7 @@ Instead of users learning each system, **agents abstract the systems**.
 ```
 
 **Result:**
+
 - ✅ Single, natural language interface
 - ✅ Cross-system queries in seconds
 - ✅ Real-time streaming (user sees progress)
@@ -137,39 +138,39 @@ Any open issues?"
 
 Agent (via MCP + AG-UI):
 ┌─────────────────────────────────────────────┐
-│ Agent thinking... 🔍                         │
-│ • Querying Salesforce (CRM)                  │
-│ • Querying ServiceNow (Support)              │
-│ • Querying Knowledge Base                    │
-│ • Querying Slack history                     │
+│ Agent thinking... 🔍
+│ • Querying Salesforce (CRM)                 │
+│ • Querying ServiceNow (Support)             │
+│ • Querying Knowledge Base                   │
+│ • Querying Slack history                    │
 └─────────────────────────────────────────────┘
 
 RESPONSE (via AG-UI - multimodal):
 ┌─────────────────────────────────────────────┐
-│ ACME CORP STATUS                             │
+│ ACME CORP STATUS                            │
 │ ────────────────────────────────────────────│
-│ Account Health: ⚠️ At Risk                   │
-│ ARR: $2.5M | Tenure: 3 years                 │
-│                                              │
-│ OPEN ISSUES (3):                             │
-│ 1. API rate limiting [P2, 2 days old]        │
-│    Assigned to: Jack | Status: In Progress  │
-│ 2. Dashboard performance [P3, 4h old]        │
-│    Assigned to: Sarah | Status: Just Started│
-│ 3. Data export feature [Feature Request]     │
-│    Requested: 1 month ago                    │
-│                                              │
-│ RECENT COMMUNICATIONS:                       │
+│ Account Health: ⚠️ At Risk
+│ ARR: $2.5M | Tenure: 3 years
+│
+│ OPEN ISSUES (3):
+│ 1. API rate limiting [P2, 2 days old]
+│    Assigned to: Jack | Status: In Progress
+│ 2. Dashboard performance [P3, 4h old]
+│    Assigned to: Sarah | Status: Just Started
+│ 3. Data export feature [Feature Request]
+│    Requested: 1 month ago
+│
+│ RECENT COMMUNICATIONS:
 │ • Slack: "Are we being replaced?"           │
 │ • Ticket: Exploring alternatives (HubSpot)  │
 │ • Email: Threatening to leave Q1            │
-│                                              │
-│ RECOMMENDATION:                              │
-│ ✅ Proactive check-in call TODAY             │
-│ ✅ Offer free consulting on API optimization│
-│ ✅ Escalate to VP to keep relationship      │
-│                                              │
-│ [SEND OUTREACH]  [SCHEDULE CALL]  [HELP]   │
+│                                             │
+│ RECOMMENDATION:
+│ ✅ Proactive check-in call TODAY
+│ ✅ Offer free consulting on API optimization
+│ ✅ Escalate to VP to keep relationship
+│
+│ [SEND OUTREACH]  [SCHEDULE CALL]  [HELP]
 └─────────────────────────────────────────────┘
 
 (CSM can click [SEND OUTREACH] → agent automatically):
@@ -185,12 +186,12 @@ ERROR RATE: Near-zero - agent handles system logic
 
 **IMPACT**:
 
-| Metric | Before | After | Gain |
-|--------|--------|-------|------|
-| Time per account review | 20 min | 5 min | 75% ↓ |
-| Issues caught per CSM | 3.2/day | 8.1/day | 150% ↑ |
-| Customer escalations | 12% | 3% | 75% ↓ |
-| CSM satisfaction | 6.2/10 | 8.7/10 | +40% |
+| Metric                  | Before  | After   | Gain   |
+| ----------------------- | ------- | ------- | ------ |
+| Time per account review | 20 min  | 5 min   | 75% ↓  |
+| Issues caught per CSM   | 3.2/day | 8.1/day | 150% ↑ |
+| Customer escalations    | 12%     | 3%      | 75% ↓  |
+| CSM satisfaction        | 6.2/10  | 8.7/10  | +40%   |
 
 ---
 
@@ -232,46 +233,46 @@ Agent (via MCP - queries):
 
 RESPONSE (via AG-UI - generative UI):
 ┌─────────────────────────────────────────────┐
-│ HIGH-POTENTIAL ENGINEERS                     │
+│ HIGH-POTENTIAL ENGINEERS                    │
 │ ────────────────────────────────────────────│
-│ 1. ALICE CHEN [READY NOW - High confidence]  │
-│    Current: Senior Engineer L3               │
-│    Recommended: Staff Engineer L4            │
-│                                              │
-│    ✅ Performance: 4.6/5 (highest on team)  │
-│    ✅ Leadership: Mentoring 3 juniors       │
-│    ✅ Technical: 2,400+ LOC/month (quality) │
-│    ⚠️  Gap: Architecture design             │
-│         → Recommend: 4-week course           │
-│    💰 Comp increase: $40K → $58K (+45%)     │
-│    📅 Recommended: Immediate                 │
-│                                              │
-│ 2. BOB MARTINEZ [6-MONTH RUNWAY]            │
-│    Current: Senior Engineer L3               │
-│    Recommended: Staff Engineer L4            │
-│                                              │
-│    ✅ Performance: 4.1/5                    │
-│    ✅ Technical: Strong contributor         │
-│    ⚠️  Gap 1: System design (3/5)          │
-│         → Course assigned                    │
-│    ⚠️  Gap 2: Cross-team collaboration      │
-│         → Assign cross-team project         │
-│    📅 Ready: ~6 months                      │
-│                                              │
-│ 3. CAROL THOMPSON [FUTURE POTENTIAL]        │
-│    Current: Mid Engineer L2                  │
-│    Recommended: Senior Engineer L3           │
-│                                              │
-│    ✅ High growth rate (+1.2 perf/year)    │
-│    ⚠️  Gap 1: Deep tech expertise           │
-│    ⚠️  Gap 2: Project ownership experience  │
-│    ⚠️  Gap 3: Communication skills          │
-│    📅 Ready: ~12-18 months                  │
-│                                              │
-│ NEXT STEPS:                                  │
+│ 1. ALICE CHEN [READY NOW - High confidence] │
+│    Current: Senior Engineer L3              │
+│    Recommended: Staff Engineer L4           │
+│                                             │
+│    ✅ Performance: 4.6/5 (highest on team)
+│    ✅ Leadership: Mentoring 3 juniors
+│    ✅ Technical: 2,400+ LOC/month (quality)
+│    ⚠️  Gap: Architecture design
+│         → Recommend: 4-week course
+│    💰 Comp increase: $40K → $58K (+45%)
+│    📅 Recommended: Immediate
+│
+│ 2. BOB MARTINEZ [6-MONTH RUNWAY]
+│    Current: Senior Engineer L3
+│    Recommended: Staff Engineer L4
+│
+│    ✅ Performance: 4.1/5
+│    ✅ Technical: Strong contributor
+│    ⚠️  Gap 1: System design (3/5)
+│         → Course assigned
+│    ⚠️  Gap 2: Cross-team collaboration
+│         → Assign cross-team project
+│    📅 Ready: ~6 months
+│
+│ 3. CAROL THOMPSON [FUTURE POTENTIAL]
+│    Current: Mid Engineer L2
+│    Recommended: Senior Engineer L3
+│
+│    ✅ High growth rate (+1.2 perf/year)
+│    ⚠️  Gap 1: Deep tech expertise
+│    ⚠️  Gap 2: Project ownership experience
+│    ⚠️  Gap 3: Communication skills
+│    📅 Ready: ~12-18 months
+│                                             │
+│ NEXT STEPS:                                 │
 │ [APPROVE ALICE] [ENROLL BOB IN COURSES]     │
 │ [CREATE DEV PLAN FOR CAROL]                 │
-│ [EMAIL HR]                                   │
+│ [EMAIL HR]                                  │
 └─────────────────────────────────────────────┘
 
 When manager clicks [APPROVE ALICE]:
@@ -287,12 +288,12 @@ When manager clicks [APPROVE ALICE]:
 
 **IMPACT**:
 
-| Metric | Before | After | Gain |
-|--------|--------|-------|------|
-| Time to identify talent | 90 min | 8 min | 91% ↓ |
-| Talent retention | 82% | 91% | +11% |
-| Time to promotion | 6+ months | 1-2 months | 75% ↓ |
-| Manager engagement | 5.1/10 | 8.9/10 | +75% |
+| Metric                  | Before    | After      | Gain  |
+| ----------------------- | --------- | ---------- | ----- |
+| Time to identify talent | 90 min    | 8 min      | 91% ↓ |
+| Talent retention        | 82%       | 91%        | +11%  |
+| Time to promotion       | 6+ months | 1-2 months | 75% ↓ |
+| Manager engagement      | 5.1/10    | 8.9/10     | +75%  |
 
 ---
 
@@ -336,48 +337,49 @@ Agent (via MCP - comprehensive query):
 
 RESPONSE (via AG-UI - interactive dashboard):
 ┌──────────────────────────────────────────────┐
-│ Q4 CLOSE SUMMARY                              │
+│ Q4 CLOSE SUMMARY                             │
 │ ──────────────────────────────────────────── │
 │ REVENUE:               $150M (vs. $145M Q3)  │
-│ GROSS PROFIT:         63% (vs. 61% Q3)  ✅   │
-│ OPERATING EXPENSE:    $35M (vs. $34M Q3)    │
-│                                              │
-│ ⚠️  EXCEPTIONS TO REVIEW:                   │
-│                                              │
-│ 1. LARGE DEAL - Acme Corp ($5M)             │
-│    Issue: Performance obligation not met    │
-│    ASC 606 status: DEFERRAL REQUIRED        │
-│    Impact: Revenue defer $2.5M → Q1         │
-│    Adjustment: [DEFER]                      │
-│                                              │
-│ 2. FOREIGN EXCHANGE                         │
-│    GBP depreciation: -8% vs. budget         │
-│    Impact: -$1.2M headwind                  │
-│    Adjustment: Hedge loss - already posted  │
-│    Status: ✅ Correct                       │
-│                                              │
-│ 3. SUBSCRIPTION REVENUE                     │
-│    Churn adjustments: -$800K                │
-│    Status: ✅ Validated                     │
-│                                              │
-│ 4. INTERCOMPANY TRANSACTIONS                │
-│    Germany → US : $3.2M [FLAGGED]          │
-│    Invoice timing mismatch detected         │
-│    Need: Follow-up with regional FP&A       │
-│    [SEND TO REGIONAL]                       │
-│                                              │
-│ RECOMMENDED ADJUSTMENTS:                     │
-│ • Acme deferral:                $2.5M        │
-│ • Intercompany reconciliation:  Pending     │
-│ • FX impacts:                   ✅ Posted    │
-│                                              │
-│ FINAL P&L (with adjustments):               │
-│ Revenue:                 $147.5M ✅          │
-│ Gross Profit:           63.2% ✅             │
-│ EBITDA:                 $28.2M ✅            │
-│                                              │
-│ STATUS: Ready for review & audit            │
-│ [SEND TO AUDIT]  [APPROVE]  [EXPORT]       │
+│ GROSS PROFIT:         63% (vs. 61% Q3)  ✅
+│ OPERATING EXPENSE:    $35M (vs. $34M Q3)
+│
+│ ⚠️  EXCEPTIONS TO REVIEW:
+│
+│ 1. LARGE DEAL - Acme Corp ($5M)
+│    Issue: Performance obligation not met
+│    ASC 606 status: DEFERRAL REQUIRED
+│    Impact: Revenue defer $2.5M → Q1
+│    Adjustment: [DEFER]
+│
+│ 2. FOREIGN EXCHANGE
+│    GBP depreciation: -8% vs. budget
+│    Impact: -$1.2M headwind
+│    Adjustment: Hedge loss - already posted
+│    Status: ✅ Correct
+│
+│ 3. SUBSCRIPTION REVENUE
+│    Churn adjustments: -$800K
+│    Status: ✅ Validated
+│
+
+│ 4. INTERCOMPANY TRANSACTIONS
+│    Germany → US : $3.2M [FLAGGED]
+│    Invoice timing mismatch detected
+│    Need: Follow-up with regional FP&A
+│    [SEND TO REGIONAL]
+│
+│ RECOMMENDED ADJUSTMENTS:
+│ • Acme deferral:                $2.5M
+│ • Intercompany reconciliation:  Pending
+│ • FX impacts:                   ✅ Posted
+│
+│ FINAL P&L (with adjustments):
+│ Revenue:                 $147.5M ✅
+│ Gross Profit:           63.2% ✅
+│ EBITDA:                 $28.2M ✅
+│
+│ STATUS: Ready for review & audit
+│ [SEND TO AUDIT]  [APPROVE]  [EXPORT]         │
 └──────────────────────────────────────────────┘
 
 When CFO clicks [APPROVE]:
@@ -393,11 +395,11 @@ When CFO clicks [APPROVE]:
 
 **IMPACT**:
 
-| Metric | Before | After | Gain |
-|--------|--------|-------|------|
-| Close time | 2-3 days | 2-3 hours | 95% ↓ |
-| Audit findings | 12-18 | 1-2 | 85% ↓ |
-| Manual errors | 5-8 | 0-1 | 90% ↓ |
+| Metric           | Before     | After        | Gain        |
+| ---------------- | ---------- | ------------ | ----------- |
+| Close time       | 2-3 days   | 2-3 hours    | 95% ↓       |
+| Audit findings   | 12-18      | 1-2          | 85% ↓       |
+| Manual errors    | 5-8        | 0-1          | 90% ↓       |
 | Time to insights | Post-close | During close | Real-time ↑ |
 
 ---
@@ -408,51 +410,51 @@ When CFO clicks [APPROVE]:
 
 ```text
 ┌─────────────────────────────────────────────────────┐
-│ STEP 1: User asks question (natural language)      │
+│ STEP 1: User asks question (natural language)       │
 │ "Show me deals closing Q4..."                       │
-└──────────────────────┬────────────────────────────┘
+└──────────────────────┬──────────────────────────────┘
                        │
                        ↓ (AG-UI: User query event)
 ┌─────────────────────────────────────────────────────┐
 │ STEP 2: Agent receives and plans                    │
-│ • Parse intent                                       │
-│ • Determine what systems to query                    │
+│ • Parse intent                                      │
+│ • Determine what systems to query                   │
 │ • Build MCP tool calls                              │
-└──────────────────────┬────────────────────────────┘
+└──────────────────────┬──────────────────────────────┘
                        │
                        ↓ (streaming: "Querying Salesforce...")
 ┌─────────────────────────────────────────────────────┐
 │ STEP 3: Agent queries MCP endpoints in parallel     │
-│ ┌──────────┐  ┌──────────┐  ┌──────────┐          │
-│ │Salesforce│  │ServiceNow│  │  Workday │          │
-│ │via MCP   │  │via MCP   │  │ via MCP  │          │
-│ └──────────┘  └──────────┘  └──────────┘          │
-└──────────────────────┬────────────────────────────┘
+│ ┌──────────┐  ┌──────────┐  ┌──────────┐            │
+│ │Salesforce│  │ServiceNow│  │  Workday │            │
+│ │via MCP   │  │via MCP   │  │ via MCP  │            │
+│ └──────────┘  └──────────┘  └──────────┘            │
+└──────────────────────┬──────────────────────────────┘
                        │
                        ↓ (AG-UI: Show results as they arrive)
 ┌─────────────────────────────────────────────────────┐
-│ STEP 4: Agent synthesizes results                  │
+│ STEP 4: Agent synthesizes results                   │
 │ • Correlates data across systems                    │
 │ • Ranks / filters                                   │
 │ • Adds business logic                               │
-│ • Generates recommendations                        │
-└──────────────────────┬────────────────────────────┘
+│ • Generates recommendations                         │
+└──────────────────────┬──────────────────────────────┘
                        │
                        ↓ (AG-UI: streaming full response)
 ┌─────────────────────────────────────────────────────┐
-│ STEP 5: User sees results + takes action           │
+│ STEP 5: User sees results + takes action            │
 │ • Streaming response tokens                         │
 │ • Generative UI (buttons, forms)                    │
-│ • Can approve/edit/reject                          │
-└──────────────────────┬────────────────────────────┘
+│ • Can approve/edit/reject                           │
+└──────────────────────┬──────────────────────────────┘
                        │
                        ↓ (AG-UI: User action event)
 ┌─────────────────────────────────────────────────────┐
-│ STEP 6: Agent executes approved actions            │
-│ • Updates Salesforce (MCP)                         │
-│ • Sends Slack message (MCP)                        │
-│ • Logs in system (MCP)                             │
-│ • Confirms to user (AG-UI)                         │
+│ STEP 6: Agent executes approved actions             │
+│ • Updates Salesforce (MCP)                          │
+│ • Sends Slack message (MCP)                         │
+│ • Logs in system (MCP)                              │
+│ • Confirms to user (AG-UI)                          │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -461,12 +463,14 @@ When CFO clicks [APPROVE]:
 ## Strategic Shift: From Systems of Record to Systems of Interaction
 
 **OLD MODEL (2000-2020s)**:
+
 - Users are "system experts" (Salesforce expert, SAP expert, HR expert)
 - Data is "system of record" (truth lives in each silo)
 - Integration = expensive custom development
 - Change management = train users on each system
 
 **NEW MODEL (2025+)**:
+
 - Users are "domain experts" (sales expert, finance expert, HR expert)
 - Data is "shared context" (agent accesses all systems)
 - Integration = simple tool definitions (MCP servers)
@@ -479,18 +483,21 @@ When CFO clicks [APPROVE]:
 ## Why This Matters
 
 **For Enterprises:**
+
 - 20-30% productivity improvement
 - 60-80% reduction in training costs
 - 90%+ improvement in employee satisfaction
 - Massive reduction in operational overhead
 
 **For Vendors:**
+
 - No longer compete on UI/UX (agents are UI-agnostic)
 - Competition shifts to API quality and reliability
 - Opens door to "best-of-breed" model (single specialist tool per function)
 - Creates new marketplace for agents and integrations
 
 **For Employees:**
+
 - Single interface to learn instead of 5-10 complex systems
 - Faster onboarding (days instead of months)
 - More time on strategic work, less on system navigation
@@ -501,18 +508,21 @@ When CFO clicks [APPROVE]:
 ## Implementation Path
 
 **Phase 1 (Months 1-3): Proof of Concept**
+
 - Pick one use case (e.g., CSM operations)
 - Build 2-3 MCP connectors (Salesforce, ServiceNow, Slack)
 - Deploy agent with AG-UI interface
 - Measure: Time savings, error reduction, satisfaction
 
 **Phase 2 (Months 4-6): Pilot Expansion**
+
 - Add 2-3 more use cases (Finance, HR, Sales)
 - Build additional MCP connectors (SAP, Workday, etc.)
 - Train pilot users
 - Measure: ROI, adoption, business impact
 
 **Phase 3 (Months 7-12): Enterprise Rollout**
+
 - Scale to all departments
 - Build custom MCP servers for legacy systems
 - Integrate with enterprise workflows
@@ -542,5 +552,4 @@ In Chapter 4, **systems no longer compete on UI. They compete on API quality, re
 
 [← Previous: Protocols & Architecture](./04-protocols-architecture.md) | [Back to Index](./README.md) | [Next: Implementation Guide →](./06-implementation.md)
 
-*Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)*
-
+_Written by [Raphaël Mansuy](https://www.linkedin.com/in/raphaelmansuy/)_
