@@ -630,6 +630,221 @@ VISIBILITY: Full trace, every step logged
 
 ---
 
+## AG-UI: Agent-User Interaction Protocol
+
+### The Problem AG-UI Solves
+
+**The Challenge**: Agents are fundamentally different from traditional services.
+
+**Traditional Service** (like a REST API):
+```
+Request → Process → Response (done)
+```
+
+**Agent** (with AG-UI):
+```
+User Query
+   ↓
+Agent thinking (streams tokens)
+   ↓
+Agent calls tools (long-running, shows progress)
+   ↓
+Agent may ask user for input (human-in-the-loop)
+   ↓
+Agent provides result (may be incomplete if interrupted)
+   ↓
+User can approve/edit/retry
+```
+
+AG-UI standardizes this asynchronous, interactive, streaming pattern.
+
+### AG-UI Protocol Architecture
+
+```text
+╔══════════════════════════════════════════════════════════════════╗
+║                   AG-UI PROTOCOL ARCHITECTURE                    ║
+║           "Agent-to-User Interface (Presentation Layer)"         ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║   ┌──────────────────────────────────────────────────────────┐  ║
+║   │              USER APPLICATIONS                            │  ║
+║   │  [Web Chat]  [Mobile]  [Slack Bot]  [Voice]  [AR/VR]    │  ║
+║   └──────────────────────┬───────────────────────────────────┘  ║
+║                          │                                       ║
+║                          │ AG-UI Events (Streaming)             ║
+║                          │ • Token-by-token (SSE/WebSocket)    │
+║                          │ • Tool call events                   │
+║                          │ • User interrupts                    │
+║                          │ • State updates                      │
+║                          ↓                                       ║
+║   ┌──────────────────────────────────────────────────────────┐  ║
+║   │              AGENT RUNTIME                               │  ║
+║   │  (LangGraph / CrewAI / Google ADK / AWS Bedrock)         │  ║
+║   │                                                           │  ║
+║   │  • Executes agent logic                                  │  ║
+║   │  • Emits AG-UI events in real-time                      │  ║
+║   │  • Handles human interrupts (pause/approve/edit/retry)  │  ║
+║   │  • Manages long-running workflows                        │  ║
+║   └──────────────────────┬───────────────────────────────────┘  ║
+║                          │                                       ║
+║                          │ MCP, A2A (internal protocols)         ║
+║                          ↓                                       ║
+║   ┌──────────────────────────────────────────────────────────┐  ║
+║   │    TOOLS, DATA, OTHER AGENTS (via MCP & A2A)             │  ║
+║   │  [Salesforce]  [SAP]  [Slack]  [GitHub]  [Databases]    │  ║
+║   └──────────────────────────────────────────────────────────┘  ║
+║                                                                  ║
+║  AG-UI Building Blocks (Today):                                  ║
+║  ├─ Streaming chat (tokens + events)                            ║
+║  ├─ Multimodal (files, images, audio, transcripts)             ║
+║  ├─ Generative UI (agent proposes components)                  ║
+║  ├─ Shared state (agent + app sync state)                      ║
+║  ├─ Tool visualization (show what agent is doing)              ║
+║  ├─ Human-in-the-loop (pause, approve, edit, retry)           │
+║  ├─ Frontend tool calls (agent delegates to UI)                ║
+║  └─ Sub-agent composition (nested agents with scoped state)    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+### AG-UI vs Traditional Request/Response
+
+| Aspect           | Traditional API | AG-UI Protocol |
+|------------------|-----------------|----------------|
+| **Flow**         | Request → Response (done) | Request → Stream → Interact |
+| **Duration**     | Milliseconds | Seconds to minutes |
+| **Control**      | None (response is final) | User can interrupt/approve |
+| **Visibility**   | Black box | Real-time streaming |
+| **Errors**       | Return error code | Handle gracefully mid-stream |
+| **State**        | Stateless | Stateful with checkpoints |
+
+### Real Example: Customer Support with AG-UI
+
+**User Query via Chat Interface**:
+```
+"I ordered item XYZ three days ago and haven't received it. 
+Where is my order? Can you expedite shipping?"
+```
+
+**What Happens (with AG-UI)**:
+
+```
+TIME 0.0s: Agent starts responding
+┌──────────────────────────────────────┐
+│ (Agent thinking... searching orders) │
+└──────────────────────────────────────┘
+
+TIME 0.3s: First response tokens arrive (streaming)
+┌──────────────────────────────────────┐
+│ I found your order (XYZ123)... it's  │
+└──────────────────────────────────────┘
+
+TIME 0.8s: Agent calls MCP tool (Salesforce) - shown to user
+┌──────────────────────────────────────┐
+│ I found your order (XYZ123)...        │
+│ 🔍 Checking shipping status...       │
+└──────────────────────────────────────┘
+
+TIME 1.2s: Tool result arrives, agent synthesizes
+┌──────────────────────────────────────┐
+│ I found your order (XYZ123)...        │
+│ ✓ Current status: In transit         │
+│ 📍 Location: Memphis distribution    │
+│ 🕐 Estimated delivery: Tomorrow      │
+│                                       │
+│ For expedited shipping, I can add    │
+│ Priority handling (+$15). Approve?   │
+│ [ YES ]  [ NO ]  [ TALK TO AGENT ]  │
+└──────────────────────────────────────┘
+
+TIME 2.0s: User clicks [YES] - INTERRUPT sent via AG-UI
+┌──────────────────────────────────────┐
+│ Processing expedited shipping...     │
+│ ⏳ Updating order in system...       │
+└──────────────────────────────────────┘
+
+TIME 2.5s: Action complete
+┌──────────────────────────────────────┐
+│ ✓ Expedited shipping enabled!        │
+│ Your order should arrive today       │
+│ Confirmation sent to your email      │
+│                                       │
+│ Order ID: XYZ123                     │
+│ Tracking: https://track.com/XYZ123  │
+└──────────────────────────────────────┘
+
+KEY FEATURES IN ACTION:
+✓ Streaming responses (tokens arrive as agent thinks)
+✓ Tool visibility (user sees what agent is doing)
+✓ Human interruption (user can approve actions)
+✓ Generative UI (agent proposed "Approve?" buttons)
+✓ State management (agent knows about approval)
+```
+
+### AG-UI Adoption (October 2025)
+
+**Framework Support**:
+
+- ✅ LangGraph (native AG-UI support)
+- ✅ CrewAI (native AG-UI support)
+- ✅ Google ADK (native AG-UI support)
+- ✅ Mastra, Pydantic AI, Agno, LlamaIndex (AG-UI support)
+- 🟡 AWS Bedrock Agents (in progress)
+- 🟡 AWS Strands Agents (in progress)
+- 🟡 OpenAI Agent SDK (in progress)
+
+**Adoption Metrics**:
+
+- **GitHub Stars**: 9,000+ (as of Oct 2025)
+- **GitHub Forks**: 800+
+- **Community Servers**: 50+ integrations
+- **Teams Using It**: Startups to enterprises
+
+**Why AG-UI is Winning**:
+
+- **Simplicity**: Event-based, standard messages
+- **Flexibility**: Works with any transport (SSE, WebSocket, HTTP)
+- **Realism**: Handles streaming, interrupts, long-running tasks
+- **Multi-modal**: Supports text, voice, video, attachments
+- **Open Standard**: Not vendor-locked (unlike closed agent APIs)
+
+### The Complete Protocol Stack (October 2025)
+
+All three protocols working together:
+
+```text
+┌──────────────────────────────────────────────────────┐
+│  LAYER 3: AG-UI (Agent ↔ User Interface)             │
+│  • User-facing interaction layer                      │
+│  • Streaming, real-time, interactive                  │
+│  • Handles long-running agents                        │
+├──────────────────────────────────────────────────────┤
+│  LAYER 2: A2A (Agent ↔ Agent Communication)          │
+│  • Agent-to-agent orchestration layer                 │
+│  • Dynamic discovery, context transfer                │
+│  • Security & authorization built-in                  │
+├──────────────────────────────────────────────────────┤
+│  LAYER 1: MCP (Agent ↔ Tools/Data)                   │
+│  • Tool and data access layer                         │
+│  • Standardized integrations                          │
+│  • 100+ community servers                             │
+├──────────────────────────────────────────────────────┤
+│  FOUNDATION: Agent Runtime                            │
+│  • LLM execution                                       │
+│  • Memory management                                   │
+│  • Reasoning & planning                               │
+└──────────────────────────────────────────────────────┘
+
+Together, these three protocols create a COMPLETE 
+AGENTIC LAYER FOR ENTERPRISES.
+
+MCP = Access (what agents can do)
+A2A = Coordination (how agents work together)
+AG-UI = Presentation (how users interact with agents)
+```
+
+---
+
 ## Summary: Protocols & Architecture
 
 **MCP (Model Context Protocol)**:
@@ -644,13 +859,20 @@ VISIBILITY: Full trace, every step logged
 - ✅ 50+ Google partners
 - ✅ Discovery, context transfer, security built-in
 
+**AG-UI (Agent-User Interface Protocol)**:
+
+- ✅ Standard user-facing interaction
+- ✅ 9,000+ GitHub stars, 800+ forks
+- ✅ Streaming, real-time, human-in-the-loop
+- ✅ LangGraph, CrewAI, Google ADK support (native)
+
 **Unified Architecture**:
 
 - 7 layers every platform provides
 - Layer 7: Your agent logic
 - Layers 1-6: Platform handles infrastructure
 
-**Key Insight**: Platforms abstract complexity, just like operating systems did 60 years ago.
+**Key Insight**: Platforms abstract complexity, just like operating systems did 60 years ago. **The three protocols (MCP + A2A + AG-UI) create a complete, standardized layer for enterprise agents.**
 
 ---
 

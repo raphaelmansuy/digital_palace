@@ -55,12 +55,26 @@ This series explores what these platforms actually do, how they work, and whethe
 - Framework compatibility landscape
 
 ### Part 4: [Protocols & Architecture](./04-protocols-architecture.md)
-**MCP, A2A, and how it all fits together**
+**MCP, A2A, and AG-UI protocols - the complete layer for agent ecosystems**
 
 - Model Context Protocol: "USB-C for AI agents"
-- Agent2Agent Protocol: Cross-platform interoperability
+- Agent2Agent Protocol: Cross-platform interoperability  
+- **AG-UI Protocol: Agent-User Interaction (NEW)**
+  - Event-driven, streaming, real-time
+  - 9,000+ GitHub stars, production-ready
+  - LangGraph, CrewAI, Google ADK support
 - Core architecture diagrams
 - Protocol stack deep dive
+
+### Part 4b: [Debundling Enterprise Systems](./04b-debundling-enterprise-systems.md) **(NEW)**
+**How AG-UI + MCP solve the $5M enterprise software silo problem**
+
+- The enterprise silo pain: 30-40% of day context-switching between systems
+- Real use cases: Customer Success, HR Operations, Finance Close
+- Technical pattern: MCP + AG-UI for unified interfaces
+- Strategic shift: "Systems of Record" → "Systems of Interaction"
+- Implementation path: POC (3mo) → Pilot (6mo) → Enterprise (12mo)
+- ROI: $500K-2M annual savings, 3-4 month payback
 
 ### Part 5: [Real Implementation Guide](./05-implementation.md)
 **Verified code examples and deployment patterns**
