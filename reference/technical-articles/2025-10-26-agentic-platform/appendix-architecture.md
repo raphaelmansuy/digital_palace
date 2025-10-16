@@ -6,7 +6,6 @@
 
 ## For Visual Thinkers
 
-This appendix preserves all detailed architectural diagrams from the original article, with enhanced explanations for visual learners.
 
 Each view shows the agentic platform from a different perspective:
 
@@ -57,92 +56,92 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │  ┌──────────────────────────────────────────────────┐    │    ║
 ║  │  │ FOUNDATION MODEL (LLM)                           │    │    ║
 ║  │  │ - GPT-5, Claude 4.5, Gemini 2.5, etc.            │    │    ║
-║  │  │                                                  │    │ ║
-║  │  │ Reasoning Strategies:                            │    │ ║
-║  │  │ ┌────────────────────────────────────────────┐   │    │ ║
-║  │  │ │ ReAct (Reason + Act):                      │   │    │ ║
-║  │  │ │ - Thought: "I need customer data"          │   │    │ ║
-║  │  │ │ - Action: query_crm(customer_id)           │   │    │ ║
-║  │  │ │ - Observation: {customer_data}             │   │    │ ║
-║  │  │ │ - Thought: "Now I can answer"              │   │    │ ║
-║  │  │ └────────────────────────────────────────────┘   │    │ ║
-║  │  │                                                   │    │ ║
-║  │  │ ┌────────────────────────────────────────────┐   │    │ ║
-║  │  │ │ Chain-of-Thought (CoT):                    │   │    │ ║
-║  │  │ │ - Step 1: Identify problem                 │   │    │ ║
-║  │  │ │ - Step 2: Break down into sub-problems     │   │    │ ║
-║  │  │ │ - Step 3: Solve each sub-problem           │   │    │ ║
-║  │  │ │ - Step 4: Synthesize answer                │   │    │ ║
-║  │  │ └────────────────────────────────────────────┘   │    │ ║
-║  │  │                                                   │    │ ║
-║  │  │ ┌────────────────────────────────────────────┐   │    │ ║
-║  │  │ │ Tree-of-Thought (ToT):                     │   │    │ ║
-║  │  │ │ - Generate multiple reasoning paths        │   │    │ ║
-║  │  │ │ - Evaluate each path                       │   │    │ ║
-║  │  │ │ - Select best path                         │   │    │ ║
-║  │  │ └────────────────────────────────────────────┘   │    │ ║
-║  │  └──────────────────────┬───────────────────────────┘    │ ║
-║  │                         │                                 │ ║
-║  │  ┌──────────────────────▼───────────────────────────┐    │ ║
-║  │  │ MEMORY SERVICE                                   │    │ ║
-║  │  │ - Short-term: Conversation context (session)     │    │ ║
-║  │  │ - Long-term: Historical interactions (vector DB) │    │ ║
-║  │  │ - Semantic: Knowledge base (RAG)                 │    │ ║
-║  │  └──────────────────────┬───────────────────────────┘    │ ║
-║  │                         │                                 │ ║
-║  └─────────────────────────┼─────────────────────────────────║
-║                            │                                 ║
-║  ┌─────────────────────────▼─────────────────────────────┐  ║
-║  │  3. ACTION LAYER                                       │  ║
-║  │  "How do I execute?"                                   │  ║
-║  │                                                         │  ║
-║  │  ┌──────────────────────────────────────────────────┐  │  ║
-║  │  │ TOOL GATEWAY (MCP)                               │  │  ║
-║  │  │ - Discovery: What tools are available?           │  │  ║
-║  │  │ - Invocation: Call tool with parameters          │  │  ║
-║  │  │ - Result: Parse tool response                    │  │  ║
-║  │  └────────┬──────────────────────┬──────────────────┘  │  ║
-║  │           │                      │                     │  ║
-║  │  ┌────────▼────────┐  ┌──────────▼──────────┐        │  ║
-║  │  │ External APIs   │  │ Internal Systems    │        │  ║
-║  │  │ - Salesforce    │  │ - Databases         │        │  ║
-║  │  │ - Slack         │  │ - File systems      │        │  ║
-║  │  │ - GitHub        │  │ - Custom services   │        │  ║
-║  │  └─────────────────┘  └─────────────────────┘        │  ║
-║  │                                                         │  ║
-║  │  ┌──────────────────────────────────────────────────┐  │  ║
-║  │  │ AGENT COMMUNICATION (A2A)                        │  │  ║
-║  │  │ - Discover other agents                          │  │  ║
-║  │  │ - Send tasks to other agents                     │  │  ║
-║  │  │ - Receive results from other agents              │  │  ║
-║  │  └──────────────────────────────────────────────────┘  │  ║
-║  │                                                         │  ║
-║  │  ┌──────────────────────────────────────────────────┐  │  ║
-║  │  │ OUTPUT FORMATTING                                │  │  ║
-║  │  │ - User response (chat, email, notification)      │  │  ║
-║  │  │ - System actions (database updates, API calls)   │  │  ║
-║  │  └──────────────────────────────────────────────────┘  │  ║
-║  └─────────────────────────────────────────────────────────║
-║                                                             ║
-║  ┌─────────────────────────────────────────────────────┐   ║
-║  │  4. CROSS-CUTTING CONCERNS                          │   ║
-║  │                                                      │   ║
-║  │  ┌────────────────┐  ┌────────────────┐            │   ║
-║  │  │ Observability  │  │ Identity/Auth  │            │   ║
-║  │  │ - Traces       │  │ - Agent ID     │            │   ║
-║  │  │ - Logs         │  │ - Permissions  │            │   ║
-║  │  │ - Metrics      │  │ - Audit logs   │            │   ║
-║  │  └────────────────┘  └────────────────┘            │   ║
-║  │                                                      │   ║
-║  │  ┌────────────────┐  ┌────────────────┐            │   ║
-║  │  │ Guardrails     │  │ Cost Tracking  │            │   ║
-║  │  │ - Content      │  │ - Token usage  │            │   ║
-║  │  │ - PII filter   │  │ - API costs    │            │   ║
-║  │  │ - Safety       │  │ - Budget alerts│            │   ║
-║  │  └────────────────┘  └────────────────┘            │   ║
-║  └─────────────────────────────────────────────────────┘   ║
-║                                                             ║
-╚═════════════════════════════════════════════════════════════╝
+║  │  │                                                  │    │    ║
+║  │  │ Reasoning Strategies:                            │    │    ║
+║  │  │ ┌────────────────────────────────────────────┐   │    │    ║
+║  │  │ │ ReAct (Reason + Act):                      │   │    │    ║
+║  │  │ │ - Thought: "I need customer data"          │   │    │    ║
+║  │  │ │ - Action: query_crm(customer_id)           │   │    │    ║
+║  │  │ │ - Observation: {customer_data}             │   │    │    ║
+║  │  │ │ - Thought: "Now I can answer"              │   │    │    ║
+║  │  │ └────────────────────────────────────────────┘   │    │    ║
+║  │  │                                                  │    │    ║
+║  │  │ ┌────────────────────────────────────────────┐   │    │    ║
+║  │  │ │ Chain-of-Thought (CoT):                    │   │    │    ║
+║  │  │ │ - Step 1: Identify problem                 │   │    │    ║
+║  │  │ │ - Step 2: Break down into sub-problems     │   │    │    ║
+║  │  │ │ - Step 3: Solve each sub-problem           │   │    │    ║
+║  │  │ │ - Step 4: Synthesize answer                │   │    │    ║
+║  │  │ └────────────────────────────────────────────┘   │    │    ║
+║  │  │                                                  │    │    ║
+║  │  │ ┌────────────────────────────────────────────┐   │    │    ║
+║  │  │ │ Tree-of-Thought (ToT):                     │   │    │    ║
+║  │  │ │ - Generate multiple reasoning paths        │   │    │    ║
+║  │  │ │ - Evaluate each path                       │   │    │    ║
+║  │  │ │ - Select best path                         │   │    │    ║
+║  │  │ └────────────────────────────────────────────┘   │    │    ║
+║  │  └──────────────────────┬───────────────────────────┘    │    ║
+║  │                         │                                │    ║
+║  │  ┌──────────────────────▼───────────────────────────┐    │    ║
+║  │  │ MEMORY SERVICE                                   │    │    ║
+║  │  │ - Short-term: Conversation context (session)     │    │    ║
+║  │  │ - Long-term: Historical interactions (vector DB) │    │    ║
+║  │  │ - Semantic: Knowledge base (RAG)                 │    │    ║
+║  │  └──────────────────────┬───────────────────────────┘    │    ║
+║  │                         │                                │    ║
+║  └─────────────────────────┼────────────────────────────────│    ║
+║                            │                                │    ║
+║  ┌─────────────────────────▼─────────────────────────────┐  │    ║
+║  │  3. ACTION LAYER                                       │ │    ║
+║  │  "How do I execute?"                                   │ │    ║
+║  │                                                        │ │    ║
+║  │  ┌──────────────────────────────────────────────────┐  │ │    ║
+║  │  │ TOOL GATEWAY (MCP)                               │  │ │    ║
+║  │  │ - Discovery: What tools are available?           │  │ │    ║
+║  │  │ - Invocation: Call tool with parameters          │  │ │    ║
+║  │  │ - Result: Parse tool response                    │  │ │    ║
+║  │  └────────┬──────────────────────┬──────────────────┘  │ │    ║
+║  │           │                      │                     │ │    ║
+║  │  ┌────────▼────────┐  ┌──────────▼──────────┐          │ │    ║
+║  │  │ External APIs   │  │ Internal Systems    │          │ │    ║
+║  │  │ - Salesforce    │  │ - Databases         │          │ │    ║
+║  │  │ - Slack         │  │ - File systems      │          │ │    ║
+║  │  │ - GitHub        │  │ - Custom services   │          │ │    ║
+║  │  └─────────────────┘  └─────────────────────┘          │ │    ║
+║  │                                                        │ │    ║
+║  │  ┌──────────────────────────────────────────────────┐  │ │    ║
+║  │  │ AGENT COMMUNICATION (A2A)                        │  │ │    ║
+║  │  │ - Discover other agents                          │  │ │    ║
+║  │  │ - Send tasks to other agents                     │  │ │    ║
+║  │  │ - Receive results from other agents              │  │ │    ║
+║  │  └──────────────────────────────────────────────────┘  │ │    ║
+║  │                                                        │ │    ║
+║  │  ┌──────────────────────────────────────────────────┐  │ │    ║
+║  │  │ OUTPUT FORMATTING                                │  │ │    ║
+║  │  │ - User response (chat, email, notification)      │  │ │    ║
+║  │  │ - System actions (database updates, API calls)   │  │ │    ║
+║  │  └──────────────────────────────────────────────────┘  │ │    ║
+║  └───────────────────────────────────────────────────────── │    ║
+║                                                             │    ║
+║  ┌────────────────────────────────────────────────────┐     │    ║
+║  │  4. CROSS-CUTTING CONCERNS                         │     │    ║
+║  │                                                    │     │    ║
+║  │  ┌────────────────┐  ┌────────────────┐            │     │    ║
+║  │  │ Observability  │  │ Identity/Auth  │            │     │    ║
+║  │  │ - Traces       │  │ - Agent ID     │            │     │    ║
+║  │  │ - Logs         │  │ - Permissions  │            │     │    ║
+║  │  │ - Metrics      │  │ - Audit logs   │            │     │    ║
+║  │  └────────────────┘  └────────────────┘            │     │    ║
+║  │                                                    │     │    ║
+║  │  ┌────────────────┐  ┌────────────────┐            │     │    ║
+║  │  │ Guardrails     │  │ Cost Tracking  │            │     │    ║
+║  │  │ - Content      │  │ - Token usage  │            │     │    ║
+║  │  │ - PII filter   │  │ - API costs    │            │     │    ║
+║  │  │ - Safety       │  │ - Budget alerts│            │     │    ║
+║  │  └────────────────┘  └────────────────┘            │     │    ║
+║  └────────────────────────────────────────────────────┘     │    ║
+║                                                             │    ║
+╚══════════════════════════════════════════════════════════════════╝
 ```
 
 **Key Insight**: All platforms implement this pattern. The difference is **how** they implement each layer.
@@ -313,7 +312,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │  2. Result: {status: "shipped", carrier: "UPS", tracking:   │ ║
 ║  │         "123"}                                              │ ║
 ║  │  3. Send result back to Agent 1 via A2A                     │ ║
-║  └──────────────────────────┬────────────────────────────────────║
+║  └──────────────────────────┬──────────────────────────────────  ║
 ║                             │                                    ║
 ║                             ▼                                    ║
 ║  ┌─────────────────────────────────────────────────────────────┐ ║
@@ -323,7 +322,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │  1. Receive order data from Agent 2                         │ ║
 ║  │  2. Decision: "Customer might want delivery estimate"       │ ║
 ║  │  3. Action: Send A2A message to Agent 3 (Logistics)         │ ║
-║  └──────────────────────────┬────────────────────────────────────║
+║  └──────────────────────────┬─────────────────────────────────── ║
 ║                             │ A2A Protocol                       ║
 ║                             ▼                                    ║
 ║  ┌─────────────────────────────────────────────────────────────┐ ║
@@ -357,7 +356,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  │  1. Query Salesforce CRM for customer tickets               │ ║
 ║  │  2. Result: {open_tickets: 0, sentiment: "positive"}        │ ║
 ║  │  3. Send result back to Agent 1                             │ ║
-║  └──────────────────────────┬────────────────────────────────────║
+║  └──────────────────────────┬─────────────────────────────────── ║
 ║                             │                                    ║
 ║                             ▼                                    ║
 ║  ┌──────────────────────────────────────────────────────────────┐║
@@ -379,7 +378,7 @@ Every AI agent follows this pattern, regardless of platform:
 ║  ┌─────────────────────────────────────────────────────────────┐ ║
 ║  │  CUSTOMER                                                   │ ║
 ║  │  └─ Receives answer (within 2 seconds)                      │ ║
-║  └───────────────────────────────────────────────────────────────║
+║  └────────────────────────────────────────────────────────────── ║
 ║                                                                  ║
 ║  ┌─────────────────────────────────────────────────────────────┐ ║
 ║  │  OBSERVABILITY (Behind the Scenes)                          │ ║
@@ -427,104 +426,104 @@ KEY INSIGHTS:
 ║          "Cross-Company Autonomous Agent Coordination"           ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
-║  SCENARIO: Your company's agent needs legal review              ║
+║  SCENARIO: Your company's agent needs legal review               ║
 ║                                                                  ║
-║  ┌────────────────────────────────────────────────────────────┐ ║
-║  │  YOUR COMPANY (Tech Startup)                               │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │  SALES AGENT                                         │  │ ║
-║  │  │  - Reviews customer contract                         │  │ ║
-║  │  │  - Realizes: "I need legal expertise"                │  │ ║
-║  │  │  - Decision: "Search public agent registry"          │  │ ║
-║  │  └────────────────┬─────────────────────────────────────┘  │ ║
-║  └───────────────────┼────────────────────────────────────────┘ ║
-║                      │                                          ║
-║                      │ A2A Discovery Request                    ║
-║                      │ "Find: Legal contract review agents"    ║
-║                      ▼                                          ║
-║  ┌──────────────────────────────────────────────────────────┐  ║
-║  │  PUBLIC AGENT REGISTRY (Decentralized)                   │  ║
-║  │  - Blockchain-based agent directory                      │  ║
-║  │  - Trust scores, ratings, pricing                        │  ║
-║  │                                                           │  ║
-║  │  Search results:                                          │  ║
-║  │  ┌─────────────────────────────────────────────────────┐ │  ║
-║  │  │ 1. LegalAI Co. - Contract Review Agent             │ │  ║
-║  │  │    Trust: 4.8/5.0 (500 reviews)                     │ │  ║
-║  │  │    Price: $50/contract                              │ │  ║
-║  │  │    Capabilities: [contract_review, risk_assessment] │ │  ║
-║  │  │    Compliance: SOC2, GDPR-certified                 │ │  ║
-║  │  └─────────────────────────────────────────────────────┘ │  ║
-║  │                                                           │  ║
-║  │  ┌─────────────────────────────────────────────────────┐ │  ║
-║  │  │ 2. Law Firm XYZ - AI Legal Assistant               │ │  ║
-║  │  │    Trust: 4.9/5.0 (1200 reviews)                    │ │  ║
-║  │  │    Price: $75/contract                              │ │  ║
-║  │  │    Capabilities: [contract_review, compliance_check]│ │  ║
-║  │  │    Compliance: Bar-certified, insured               │ │  ║
-║  │  └─────────────────────────────────────────────────────┘ │  ║
-║  └───────────────────┬──────────────────────────────────────┘  ║
-║                      │                                          ║
-║                      │ Your agent selects: LegalAI Co.          ║
-║                      │ (Best balance: trust + price)            ║
-║                      ▼                                          ║
-║  ┌──────────────────────────────────────────────────────────┐  ║
-║  │  LEGALAI CO. (Third-Party Service)                       │  ║
-║  │                                                           │  ║
-║  │  ┌──────────────────────────────────────────────────────┐│  ║
-║  │  │  CONTRACT REVIEW AGENT                               ││  ║
-║  │  │  - Receives: Contract document + context             ││  ║
-║  │  │  - Action: Review for legal risks                    ││  ║
-║  │  │  - Result: Risk assessment + recommendations         ││  ║
-║  │  └────────────────┬─────────────────────────────────────┘│  ║
-║  └───────────────────┼──────────────────────────────────────┘  ║
-║                      │                                          ║
-║                      │ A2A Response + Payment Request           ║
-║                      │ (Smart contract executed)                ║
-║                      ▼                                          ║
-║  ┌──────────────────────────────────────────────────────────┐  ║
-║  │  BLOCKCHAIN PAYMENT LAYER                                │  ║
-║  │  - Smart contract: "Review complete → Pay $50"           │  ║
-║  │  - Escrow released to LegalAI Co.                        │  ║
-║  │  - Transaction logged (immutable audit trail)            │  ║
-║  └───────────────────┬──────────────────────────────────────┘  ║
-║                      │                                          ║
-║                      ▼                                          ║
-║  ┌──────────────────────────────────────────────────────────┐  ║
-║  │  YOUR COMPANY (Tech Startup)                             │  ║
-║  │                                                           │  ║
-║  │  ┌──────────────────────────────────────────────────────┐│  ║
-║  │  │  SALES AGENT (continued)                             ││  ║
-║  │  │  - Receives: Legal review results                    ││  ║
-║  │  │  - Action: Update contract based on recommendations  ││  ║
-║  │  │  - Decision: "Send updated contract to customer"     ││  ║
-║  │  └──────────────────────────────────────────────────────┘│  ║
-║  └───────────────────────────────────────────────────────────┘  ║
+║  ┌────────────────────────────────────────────────────────────┐  ║
+║  │  YOUR COMPANY (Tech Startup)                               │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │  SALES AGENT                                         │  │  ║
+║  │  │  - Reviews customer contract                         │  │  ║
+║  │  │  - Realizes: "I need legal expertise"                │  │  ║
+║  │  │  - Decision: "Search public agent registry"          │  │  ║
+║  │  └────────────────┬─────────────────────────────────────┘  │  ║
+║  └───────────────────┼────────────────────────────────────────┘  ║
+║                      │                                           ║
+║                      │ A2A Discovery Request                     ║
+║                      │ "Find: Legal contract review agents"      ║
+║                      ▼                                           ║
+║  ┌──────────────────────────────────────────────────────────┐    ║
+║  │  PUBLIC AGENT REGISTRY (Decentralized)                   │    ║
+║  │  - Blockchain-based agent directory                      │    ║
+║  │  - Trust scores, ratings, pricing                        │    ║
+║  │                                                          │    ║
+║  │  Search results:                                         │    ║
+║  │  ┌─────────────────────────────────────────────────────┐ │    ║
+║  │  │ 1. LegalAI Co. - Contract Review Agent              │ │    ║
+║  │  │    Trust: 4.8/5.0 (500 reviews)                     │ │    ║
+║  │  │    Price: $50/contract                              │ │    ║
+║  │  │    Capabilities: [contract_review, risk_assessment] │ │    ║
+║  │  │    Compliance: SOC2, GDPR-certified                 │ │    ║
+║  │  └─────────────────────────────────────────────────────┘ │    ║
+║  │                                                          │    ║
+║  │  ┌─────────────────────────────────────────────────────┐ │    ║
+║  │  │ 2. Law Firm XYZ - AI Legal Assistant                │ │    ║
+║  │  │    Trust: 4.9/5.0 (1200 reviews)                    │ │    ║
+║  │  │    Price: $75/contract                              │ │    ║
+║  │  │    Capabilities: [contract_review, compliance_check]│ │    ║
+║  │  │    Compliance: Bar-certified, insured               │ │    ║
+║  │  └─────────────────────────────────────────────────────┘ │    ║
+║  └───────────────────┬──────────────────────────────────────┘    ║
+║                      │                                           ║
+║                      │ Your agent selects: LegalAI Co.           ║
+║                      │ (Best balance: trust + price)             ║
+║                      ▼                                           ║
+║  ┌──────────────────────────────────────────────────────────┐    ║
+║  │  LEGALAI CO. (Third-Party Service)                       │    ║
+║  │                                                          │    ║
+║  │  ┌──────────────────────────────────────────────────────┐│    ║
+║  │  │  CONTRACT REVIEW AGENT                               ││    ║
+║  │  │  - Receives: Contract document + context             ││    ║
+║  │  │  - Action: Review for legal risks                    ││    ║ 
+║  │  │  - Result: Risk assessment + recommendations         ││    ║
+║  │  └────────────────┬─────────────────────────────────────┘│    ║
+║  └───────────────────┼──────────────────────────────────────┘    ║
+║                      │                                           ║
+║                      │ A2A Response + Payment Request            ║
+║                      │ (Smart contract executed)                 ║
+║                      ▼                                           ║
+║  ┌──────────────────────────────────────────────────────────┐    ║
+║  │  BLOCKCHAIN PAYMENT LAYER                                │    ║
+║  │  - Smart contract: "Review complete → Pay $50"           │    ║
+║  │  - Escrow released to LegalAI Co.                        │    ║
+║  │  - Transaction logged (immutable audit trail)            │    ║
+║  └───────────────────┬──────────────────────────────────────┘    ║ 
+║                      │                                           ║
+║                      ▼                                           ║
+║  ┌──────────────────────────────────────────────────────────┐    ║
+║  │  YOUR COMPANY (Tech Startup)                             │    ║
+║  │                                                          │    ║
+║  │  ┌──────────────────────────────────────────────────────┐│    ║
+║  │  │  SALES AGENT (continued)                             ││    ║
+║  │  │  - Receives: Legal review results                    ││    ║
+║  │  │  - Action: Update contract based on recommendations  ││    ║
+║  │  │  - Decision: "Send updated contract to customer"     ││    ║
+║  │  └──────────────────────────────────────────────────────┘│    ║
+║  └──────────────────────────────────────────────────────────┘    ║
 ║                                                                  ║
-║  ┌──────────────────────────────────────────────────────────┐  ║
-║  │  THE AGENT ECONOMY (Emerging 2028-2030)                  │  ║
-║  │                                                           │  ║
-║  │  Key Enablers:                                            │  ║
-║  │  ├─ A2A Protocol: Cross-company agent communication      │  ║
-║  │  ├─ Public Agent Registry: Discover third-party agents   │  ║
-║  │  ├─ Smart Contracts: Automated payments                  │  ║
-║  │  ├─ Trust Systems: Ratings, reviews, certifications      │  ║
-║  │  └─ Identity Standards: OAuth for agents                 │  ║
-║  │                                                           │  ║
-║  │  Use Cases:                                               │  ║
-║  │  ├─ Legal review (contracts, compliance)                 │  ║
-║  │  ├─ Market research (competitive analysis)               │  ║
-║  │  ├─ Data enrichment (CRM augmentation)                   │  ║
-║  │  ├─ Specialized expertise (medical, financial, etc.)     │  ║
-║  │  └─ Temporary capacity (handle spike workloads)          │  ║
-║  │                                                           │  ║
-║  │  Economic Impact:                                         │  ║
-║  │  ├─ New business model: Agent-as-a-Service (AaaS)        │  ║
-║  │  ├─ Micropayments: Pay per agent task ($1-$100)          │  ║
-║  │  ├─ Market size: $10B+ by 2030 (estimated)               │  ║
-║  │  └─ Job creation: Agent service providers                │  ║
-║  └──────────────────────────────────────────────────────────┘  ║
+║  ┌──────────────────────────────────────────────────────────┐    ║
+║  │  THE AGENT ECONOMY (Emerging 2028-2030)                  │    ║
+║  │                                                          │    ║
+║  │  Key Enablers:                                           │    ║
+║  │  ├─ A2A Protocol: Cross-company agent communication      │    ║
+║  │  ├─ Public Agent Registry: Discover third-party agents   │    ║
+║  │  ├─ Smart Contracts: Automated payments                  │    ║
+║  │  ├─ Trust Systems: Ratings, reviews, certifications      │    ║
+║  │  └─ Identity Standards: OAuth for agents                 │    ║
+║  │                                                          │    ║
+║  │  Use Cases:                                              │    ║
+║  │  ├─ Legal review (contracts, compliance)                 │    ║
+║  │  ├─ Market research (competitive analysis)               │    ║
+║  │  ├─ Data enrichment (CRM augmentation)                   │    ║
+║  │  ├─ Specialized expertise (medical, financial, etc.)     │    ║
+║  │  └─ Temporary capacity (handle spike workloads)          │    ║
+║  │                                                          │    ║
+║  │  Economic Impact:                                        │    ║
+║  │  ├─ New business model: Agent-as-a-Service (AaaS)        │    ║
+║  │  ├─ Micropayments: Pay per agent task ($1-$100)          │    ║
+║  │  ├─ Market size: $10B+ by 2030 (estimated)               │    ║
+║  │  └─ Job creation: Agent service providers                │    ║
+║  └──────────────────────────────────────────────────────────┘    ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 
@@ -545,56 +544,56 @@ KEY INSIGHTS:
 ║              "Continuous Learning & Optimization"                ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
-║  ┌────────────────────────────────────────────────────────────┐ ║
-║  │  PHASE 1: INITIAL DEPLOYMENT                               │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ Agent v1.0                                           │  │ ║
-║  │  │ - Baseline performance: 70% success rate             │  │ ║
-║  │  │ - No historical data                                 │  │ ║
-║  │  │ - Generic prompts                                    │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  └─────────────────────────┬──────────────────────────────────┘ ║
-║                            │                                    ║
-║                            ▼                                    ║
-║  ┌────────────────────────────────────────────────────────────┐ ║
-║  │  PHASE 2: DATA COLLECTION                                  │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ Observability Layer Captures:                        │  │ ║
-║  │  │                                                       │  │ ║
-║  │  │ Success Cases:                                        │  │ ║
-║  │  │ ├─ User query: "Order status?"                       │  │ ║
-║  │  │ ├─ Agent reasoning: [detailed steps]                 │  │ ║
-║  │  │ ├─ Tools called: query_crm, query_orders             │  │ ║
-║  │  │ ├─ Response: Accurate, user satisfied                │  │ ║
-║  │  │ └─ Label: ✅ SUCCESS                                  │  │ ║
-║  │  │                                                       │  │ ║
-║  │  │ Failure Cases:                                        │  │ ║
-║  │  │ ├─ User query: "When will this ship?"                │  │ ║
-║  │  │ ├─ Agent reasoning: [called wrong tool]              │  │ ║
-║  │  │ ├─ Tools called: query_inventory (incorrect!)        │  │ ║
-║  │  │ ├─ Response: Inaccurate, user escalated              │  │ ║
-║  │  │ └─ Label: ❌ FAILURE                                  │  │ ║
+║  ┌────────────────────────────────────────────────────────────┐  ║
+║  │  PHASE 1: INITIAL DEPLOYMENT                               │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ Agent v1.0                                           │  │  ║
+║  │  │ - Baseline performance: 70% success rate             │  │  ║
+║  │  │ - No historical data                                 │  │  ║
+║  │  │ - Generic prompts                                    │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  └─────────────────────────┬──────────────────────────────────┘  ║
+║                            │                                     ║
+║                            ▼                                     ║
+║  ┌────────────────────────────────────────────────────────────┐  ║
+║  │  PHASE 2: DATA COLLECTION                                  │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ Observability Layer Captures:                        │  │  ║
+║  │  │                                                      │  │  ║
+║  │  │ Success Cases:                                       │  │  ║
+║  │  │ ├─ User query: "Order status?"                       │  │  ║
+║  │  │ ├─ Agent reasoning: [detailed steps]                 │  │  ║
+║  │  │ ├─ Tools called: query_crm, query_orders             │  │  ║
+║  │  │ ├─ Response: Accurate, user satisfied                │  │  ║
+║  │  │ └─ Label:  SUCCESS                                   │  │  ║
+║  │  │                                                      │  │  ║
+║  │  │ Failure Cases:                                       │  │  ║
+║  │  │ ├─ User query: "When will this ship?"                │  │  ║
+║  │  │ ├─ Agent reasoning: [called wrong tool]              │  │  ║
+║  │  │ ├─ Tools called: query_inventory (incorrect!)        │  │  ║
+║  │  │ ├─ Response: Inaccurate, user escalated              │  │  ║
+║  │  │ └─ Label: ❌ FAILURE                                 
 ║  │  └──────────────────────────────────────────────────────┘  │ ║
 ║  └─────────────────────────┬──────────────────────────────────┘ ║
 ║                            │                                    ║
 ║                            ▼                                    ║
 ║  ┌────────────────────────────────────────────────────────────┐ ║
 ║  │  PHASE 3: ANALYSIS & LEARNING                              │ ║
-║  │                                                             │ ║
+║  │                                                            │ ║
 ║  │  ┌──────────────────────────────────────────────────────┐  │ ║
 ║  │  │ Learning Pipeline:                                   │  │ ║
-║  │  │                                                       │  │ ║
+║  │  │                                                      │  │ ║
 ║  │  │ 1. Pattern Detection:                                │  │ ║
 ║  │  │    - "ship" queries → should call order_tracking     │  │ ║
 ║  │  │    - "refund" queries → should call billing_system   │  │ ║
-║  │  │                                                       │  │ ║
+║  │  │                                                      │  │ ║
 ║  │  │ 2. Prompt Optimization:                              │  │ ║
 ║  │  │    - LLM generates better prompts based on failures  │  │ ║
 ║  │  │    - Example: "When user asks about shipping, call   │  │ ║
 ║  │  │      order_tracking, NOT inventory"                  │  │ ║
-║  │  │                                                       │  │ ║
+║  │  │                                                      │  │ ║
 ║  │  │ 3. Fine-Tuning (Optional):                           │  │ ║
 ║  │  │    - Collect 1000+ labeled examples                  │  │ ║
 ║  │  │    - Fine-tune model on company-specific data        │  │ ║
@@ -605,7 +604,7 @@ KEY INSIGHTS:
 ║                            ▼                                    ║
 ║  ┌────────────────────────────────────────────────────────────┐ ║
 ║  │  PHASE 4: DEPLOYMENT (Improved Agent)                      │ ║
-║  │                                                             │ ║
+║  │                                                            │ ║
 ║  │  ┌──────────────────────────────────────────────────────┐  │ ║
 ║  │  │ Agent v2.0                                           │  │ ║
 ║  │  │ - Improved performance: 85% success rate             │  │ ║
@@ -617,49 +616,49 @@ KEY INSIGHTS:
 ║                            ▼                                    ║
 ║  ┌────────────────────────────────────────────────────────────┐ ║
 ║  │  PHASE 5: CONTINUOUS IMPROVEMENT                           │ ║
-║  │                                                             │ ║
+║  │                                                            │ ║
 ║  │  ┌──────────────────────────────────────────────────────┐  │ ║
 ║  │  │ Ongoing Learning Loop:                               │  │ ║
-║  │  │                                                       │  │ ║
-║  │  │ Weekly:                                               │  │ ║
+║  │  │                                                      │  │ ║
+║  │  │ Weekly:                                              │  │ ║
 ║  │  │ ├─ Review new failures                               │  │ ║
 ║  │  │ ├─ Identify new patterns                             │  │ ║
 ║  │  │ └─ Update prompts incrementally                      │  │ ║
-║  │  │                                                       │  │ ║
-║  │  │ Monthly:                                              │  │ ║
+║  │  │                                                      │  │ ║
+║  │  │ Monthly:                                             │  │ ║
 ║  │  │ ├─ A/B test prompt variations                        │  │ ║
 ║  │  │ ├─ Measure: success rate, latency, cost              │  │ ║
 ║  │  │ └─ Deploy winning variant                            │  │ ║
-║  │  │                                                       │  │ ║
-║  │  │ Quarterly:                                            │  │ ║
+║  │  │                                                      │  │ ║
+║  │  │ Quarterly:                                           │  │ ║
 ║  │  │ ├─ Consider fine-tuning (if >10K examples)           │  │ ║
 ║  │  │ ├─ Evaluate new models (Gemini 2.5, Claude 4, etc.)  │  │ ║
 ║  │  │ └─ Benchmark: accuracy, cost, latency                │  │ ║
 ║  │  └──────────────────────────────────────────────────────┘  │ ║
 ║  └────────────────────────────────────────────────────────────┘ ║
-║                                                                  ║
+║                                                                 ║
 ║  ┌────────────────────────────────────────────────────────────┐ ║
 ║  │  PERFORMANCE TRAJECTORY                                    │ ║
-║  │                                                             │ ║
+║  │                                                            │ ║
 ║  │  Success Rate Over Time:                                   │ ║
-║  │                                                             │ ║
-║  │  100% ┤                                                     │ ║
+║  │                                                            │ ║
+║  │  100% ┤                                                    │ ║
 ║  │       │                                           ✱ v5.0   │ ║
 ║  │   90% ┤                               ✱ v4.0     (95%)     │ ║
-║  │       │                   ✱ v3.0                            │ ║
+║  │       │                   ✱ v3.0                           │ ║
 ║  │   85% ┤        ✱ v2.0    (88%)                             │ ║
-║  │       │        (85%)                                        │ ║
-║  │   70% ┤ ✱ v1.0                                              │ ║
-║  │       │ (70%)                                               │ ║
-║  │   60% ┤                                                     │ ║
+║  │       │        (85%)                                       │ ║
+║  │   70% ┤ ✱ v1.0                                             │ ║
+║  │       │ (70%)                                              │ ║
+║  │   60% ┤                                                    │ ║
 ║  │       └─────┬─────┬─────┬─────┬─────┬─────>                │ ║
 ║  │           Month 1   3     6     9    12  Time              │ ║
-║  │                                                             │ ║
+║  │                                                            │ ║
 ║  │  Key Insight: Agents improve 20-25% in first year          │ ║
 ║  │               through continuous learning                  │ ║
 ║  └────────────────────────────────────────────────────────────┘ ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -675,115 +674,115 @@ KEY INSIGHTS:
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
 ║  REQUEST ARRIVES                                                 ║
-║  └─> User: "What's the status of my order #12345?"              ║
+║  └─> User: "What's the status of my order #12345?"               ║
 ║                                                                  ║
-║  ┌────────────────────────────────────────────────────────────┐ ║
-║  │  STEP 1: INPUT PROCESSING                                  │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ - Parse user input                                   │  │ ║
-║  │  │ - Extract intent: "order_status_inquiry"             │  │ ║
-║  │  │ - Extract entities: order_id = "12345"               │  │ ║
-║  │  │ - Load conversation context (if exists)              │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~10ms                                                │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 2: REASONING LOOP (ReAct)                            │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ Iteration 1:                                         │  │ ║
-║  │  │ - Thought: "I need order data for #12345"            │  │ ║
-║  │  │ - Action: Call tool "query_orders"                   │  │ ║
-║  │  │ - LLM generates: tool_call(query_orders, {"order_id": "12345"})│ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~500ms (LLM inference)                               │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 3: TOOL INVOCATION (MCP)                             │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ MCP Client:                                          │  │ ║
-║  │  │ - Discover tool: "query_orders" → MCP Server: Orders│  │ ║
-║  │  │ - Format request: JSON-RPC                           │  │ ║
-║  │  │ - Send request to MCP server                         │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ MCP Server:                                          │  │ ║
-║  │  │ - Authenticate (OAuth)                               │  │ ║
-║  │  │ - Call order system API                              │  │ ║
-║  │  │ - Return: {status: "shipped", tracking: "UPS123"}   │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~150ms (API call)                                    │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 4: REASONING LOOP (Continued)                        │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ Iteration 2:                                         │  │ ║
-║  │  │ - Observation: Order #12345 is shipped, UPS123       │  │ ║
-║  │  │ - Thought: "I have the info, should I provide        │  │ ║
-║  │  │            delivery estimate?"                        │  │ ║
-║  │  │ - Decision: Yes, call shipping API                   │  │ ║
-║  │  │ - Action: Call tool "query_shipping"                 │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~500ms (LLM inference)                               │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 5: SECOND TOOL INVOCATION                            │ ║
-║  │  (Similar to Step 3, calls UPS API via MCP)                │ ║
-║  │  Time: ~200ms                                               │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 6: FINAL REASONING                                   │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ Iteration 3:                                         │  │ ║
-║  │  │ - Observation: Delivery estimate is "Tomorrow 3 PM" │  │ ║
-║  │  │ - Thought: "I have all needed info"                  │  │ ║
-║  │  │ - Action: Generate response                          │  │ ║
-║  │  │ - LLM generates: "Your order #12345 has shipped..." │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~500ms (LLM inference)                               │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  STEP 7: RESPONSE DELIVERY                                 │ ║
-║  │                                                             │ ║
-║  │  ┌──────────────────────────────────────────────────────┐  │ ║
-║  │  │ - Format response for channel (chat, API, etc.)     │  │ ║
-║  │  │ - Store conversation in memory service              │  │ ║
-║  │  │ - Log trace to observability                        │  │ ║
-║  │  │ - Send response to user                              │  │ ║
-║  │  └──────────────────────────────────────────────────────┘  │ ║
-║  │  Time: ~50ms                                                │ ║
-║  └────────────────────────┬───────────────────────────────────┘ ║
-║                           │                                     ║
-║  ┌────────────────────────▼───────────────────────────────────┐ ║
-║  │  TOTAL EXECUTION TIME: ~1.91 seconds                       │ ║
-║  │                                                             │ ║
-║  │  Breakdown:                                                 │ ║
-║  │  ├─ Input processing: 10ms                                 │ ║
-║  │  ├─ LLM reasoning: 1500ms (3 iterations × 500ms)           │ ║
-║  │  ├─ Tool calls: 350ms (2 tools)                            │ ║
-║  │  └─ Response delivery: 50ms                                │ ║
-║  └────────────────────────────────────────────────────────────┘ ║
+║  ┌────────────────────────────────────────────────────────────┐  ║
+║  │  STEP 1: INPUT PROCESSING                                  │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ - Parse user input                                   │  │  ║
+║  │  │ - Extract intent: "order_status_inquiry"             │  │  ║
+║  │  │ - Extract entities: order_id = "12345"               │  │  ║
+║  │  │ - Load conversation context (if exists)              │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~10ms                                               │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 2: REASONING LOOP (ReAct)                            │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ Iteration 1:                                         │  │  ║
+║  │  │ - Thought: "I need order data for #12345"            │  │  ║
+║  │  │ - Action: Call tool "query_orders"                   │  │  ║
+║  │  │ - LLM generates: tool_call(query_orders, {"order_id": "12345"}) 
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~500ms (LLM inference)                              │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 3: TOOL INVOCATION (MCP)                             │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ MCP Client:                                          │  │  ║
+║  │  │ - Discover tool: "query_orders" → MCP Server: Orders │  │  ║
+║  │  │ - Format request: JSON-RPC                           │  │  ║
+║  │  │ - Send request to MCP server                         │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ MCP Server:                                          │  │  ║
+║  │  │ - Authenticate (OAuth)                               │  │  ║
+║  │  │ - Call order system API                              │  │  ║
+║  │  │ - Return: {status: "shipped", tracking: "UPS123"}    │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~150ms (API call)                                   │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 4: REASONING LOOP (Continued)                        │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ Iteration 2:                                         │  │  ║
+║  │  │ - Observation: Order #12345 is shipped, UPS123       │  │  ║
+║  │  │ - Thought: "I have the info, should I provide        │  │  ║
+║  │  │            delivery estimate?"                       │  │  ║
+║  │  │ - Decision: Yes, call shipping API                   │  │  ║
+║  │  │ - Action: Call tool "query_shipping"                 │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~500ms (LLM inference)                              │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 5: SECOND TOOL INVOCATION                            │  ║
+║  │  (Similar to Step 3, calls UPS API via MCP)                │  ║
+║  │  Time: ~200ms                                              │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 6: FINAL REASONING                                   │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ Iteration 3:                                         │  │  ║
+║  │  │ - Observation: Delivery estimate is "Tomorrow 3 PM"  │  │  ║
+║  │  │ - Thought: "I have all needed info"                  │  │  ║
+║  │  │ - Action: Generate response                          │  │  ║
+║  │  │ - LLM generates: "Your order #12345 has shipped..."  │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~500ms (LLM inference)                              │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  STEP 7: RESPONSE DELIVERY                                 │  ║
+║  │                                                            │  ║
+║  │  ┌──────────────────────────────────────────────────────┐  │  ║
+║  │  │ - Format response for channel (chat, API, etc.)      │  │  ║
+║  │  │ - Store conversation in memory service               │  │  ║
+║  │  │ - Log trace to observability                         │  │  ║
+║  │  │ - Send response to user                              │  │  ║
+║  │  └──────────────────────────────────────────────────────┘  │  ║
+║  │  Time: ~50ms                                               │  ║
+║  └────────────────────────┬───────────────────────────────────┘  ║
+║                           │                                      ║
+║  ┌────────────────────────▼───────────────────────────────────┐  ║
+║  │  TOTAL EXECUTION TIME: ~1.91 seconds                       │  ║
+║  │                                                            │  ║
+║  │  Breakdown:                                                │  ║
+║  │  ├─ Input processing: 10ms                                 │  ║
+║  │  ├─ LLM reasoning: 1500ms (3 iterations × 500ms)           │  ║
+║  │  ├─ Tool calls: 350ms (2 tools)                            │  ║
+║  │  └─ Response delivery: 50ms                                │  ║
+║  └────────────────────────────────────────────────────────────┘  ║
 ║                                                                  ║
-║  ┌────────────────────────────────────────────────────────────┐ ║
-║  │  PARALLEL PROCESSING (Optimization)                        │ ║
-║  │                                                             │ ║
-║  │  If tools are independent, platform can call in parallel:  │ ║
-║  │                                                             │ ║
-║  │  Sequential: Tool A (200ms) + Tool B (150ms) = 350ms       │ ║
-║  │  Parallel:   max(Tool A, Tool B) = 200ms                   │ ║
-║  │                                                             │ ║
-║  │  Savings: 150ms (43% faster)                                │ ║
-║  └────────────────────────────────────────────────────────────┘ ║
+║  ┌────────────────────────────────────────────────────────────┐  ║
+║  │  PARALLEL PROCESSING (Optimization)                        │  ║
+║  │                                                            │  ║
+║  │  If tools are independent, platform can call in parallel:  │  ║
+║  │                                                            │  ║
+║  │  Sequential: Tool A (200ms) + Tool B (150ms) = 350ms       │  ║
+║  │  Parallel:   max(Tool A, Tool B) = 200ms                   │  ║
+║  │                                                            │  ║
+║  │  Savings: 150ms (43% faster)                               │  ║
+║  └────────────────────────────────────────────────────────────┘  ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
