@@ -293,6 +293,8 @@ Raphaël advocates for a multi-polar AI ecosystem where European, Asian, and oth
 
 Raphaël is the **author of "[The Definitive Guide to Data Integration](https://www.amazon.com/Definitive-Guide-Data-Integration-integration/dp/1837631913)"**, a comprehensive resource on modern data integration practices. He is also the creator of the **[ADK (Agent Development Kit) Training Course](https://raphaelmansuy.github.io/adk_training/)**, which is featured in the [Google ADK Community Resources](https://google.github.io/adk-docs/community/), establishing him as a recognized expert in agent development frameworks.
 
+**Raphaël serves as a Guest Lecturer at Oxford University's Continuous Education programme**, where he teaches "**AI as an Operating System**"—exploring the evolution of AI platforms from specialized tools to foundational infrastructure, directly drawing from QuantaLogic's platform development experience and the insights captured in this document series.
+
 ### Founder & Thought Leader
 
 Raphaël is **Co-Founder of [QuantaLogic (PARIS)](https://quantalogic.com/)**, focusing on unlocking the potential of generative AI for businesses.
