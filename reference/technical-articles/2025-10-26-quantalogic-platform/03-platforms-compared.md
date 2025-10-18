@@ -4,6 +4,17 @@
 
 ---
 
+> **📌 QuantaLogic's Dual-Platform Strategy**
+>
+> This section compares **hyperscaler platforms** (Google, AWS, Microsoft, Salesforce) with **QuantaLogic's sovereign alternative**. The comparison reflects Phase 1 insights:
+>
+> - **Phase 1 (October 2025)**: QuantaLogic launched as a Sovereign AI Generative Platform (multi-model, EU data residency, workflow automation)
+> - **Phase 2 (Q3 2026)**: Scaling to **Universal Agent Platform**—the only framework-agnostic runtime that runs agents built with Google ADK, CrewAI, LangGraph, LangChain on the same platform
+>
+> This document compares what's available today (all five platforms at Phase 1-2 maturity), helping enterprises choose based on their priorities: hyperscaler convenience vs sovereign flexibility vs multi-framework freedom.
+
+---
+
 ## The Platform Landscape (October 2025)
 
 Five distinct platform approaches have emerged for building and deploying AI agents:

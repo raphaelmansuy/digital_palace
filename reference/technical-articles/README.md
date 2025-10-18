@@ -16,6 +16,7 @@
 | **Understand LLMs** | [Training LLM](./2024-03-12_training_an_llm.md) | 45 min | LLM development knowledge |
 | **Master Context** | [Context Management](./2025-06-29-context-management-llm-agents.md) | 30 min | Agent context handling |
 | **Business Applications** | [GenAI Use Cases](./2024-03-12_genai_business_use_cases.md) | 35 min | Enterprise AI insights |
+| **Build AI Agents** | [Agentic Platforms](./2025-10-26-quantalogic-platform/README.md) | 45 min | Production agent architecture |
 
 ## 📋 Content Inventory
 
@@ -37,6 +38,17 @@
 
 - **[GenAI Business Use Cases](./2024-03-12_genai_business_use_cases.md)** 🟢 - Enterprise applications
 - **[From Specification to Code](./2024-11-21-from-specification-to-code-using-an-llm.md)** 🟡 - Automated development
+
+### 🤖 Agentic Platforms & Sovereignty
+
+- **[Agentic Platforms Series: From Sovereign AI to Universal Agent Platforms](./2025-10-26-quantalogic-platform/README.md)** 🟢 - **Comprehensive 8-part strategic vision document**
+  - Strategic insights from QuantaLogic's Phase 1 → Phase 2 evolution
+  - Hyperscaler vs sovereign platform comparison
+  - MCP and A2A protocol deep-dives
+  - Real implementation code (Google ADK, AWS Bedrock, Microsoft, Salesforce)
+  - QuantaLogic's roadmap for universal AI agent platform
+  - **Key Topics**: Agent orchestration, EU data sovereignty, cost optimization, framework portability
+  - **Target Audience**: CTOs, AI/ML Engineers, Product Managers, Enterprise Architects
 
 ### 🔗 Related Techniques
 
