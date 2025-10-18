@@ -542,7 +542,16 @@ A new approach is emerging: platforms that **run agents built with ANY framework
 ╚═══════════════════════════════════════════════════════╝
 ```
 
-### The Kubernetes Analogy
+### The Kubernetes Analogy (With Important Caveats)
+
+**HONEST NOTE**: The "framework portability" vision is compelling but currently **unproven at scale**. This is the analogy and the roadmap, not the current October 2025 reality:
+
+- ✅ Kubernetes solved container portability (proven, 2014-2025)
+- 🗓️ Universal agent runtimes targeting framework portability (roadmap, proof-of-concept phase)
+- ⚠️ Framework translation is complex: not all ADK patterns map cleanly to CrewAI patterns
+- ⚠️ Production evidence limited: This is a 2025 roadmap approach, not battle-tested at scale like Kubernetes
+
+Think of this as **the strategic direction** platforms are headed, not necessarily what's working perfectly today.
 
 This is analogous to how Kubernetes solved container orchestration:
 
@@ -691,6 +700,36 @@ Five distinct approaches have emerged:
 - **QuantaLogic** - Framework-agnostic (runs ADK/CrewAI/LangGraph), EU sovereign, multi-model (15+), deploy anywhere
 
 Each takes a different approach. Each has different strengths. Each has different trade-offs around lock-in vs convenience, sovereignty vs ecosystem maturity.
+
+---
+
+## Honest Acknowledgement: Why Hyperscalers Are Genuinely Good
+
+Before moving to the next section, it's important to acknowledge that US hyperscaler platforms genuinely excel at what they were designed for:
+
+### What Hyperscalers Do Well
+
+**Google ADK (Vertex AI Agent Builder)**:
+- ✅ Best-in-class reasoning traces (you can see why agents make decisions)
+- ✅ Native integration with Google services (Workspace, Cloud, etc.)
+- ✅ Proven A2A protocol for agent coordination
+- ✅ Excellent developer experience (well-documented, tutorials)
+
+**AWS Bedrock**:
+- ✅ Most flexible model selection (Claude, LLaMA, Mistral, etc.)
+- ✅ Deepest integration with AWS services (160K+ customers using Bedrock)
+- ✅ Industry-leading security & compliance tooling
+- ✅ Best cost optimization (if your workload is AWS-native)
+
+**Microsoft Copilot Studio**:
+- ✅ 160K+ production deployments (battle-tested scale)
+- ✅ Seamless M365 integration (Teams, SharePoint, Outlook)
+- ✅ Low-code + pro-code flexibility
+- ✅ Enterprise support maturity
+
+**The Reality**: If your company is already on AWS/GCP/Azure AND sovereignty isn't a requirement, hyperscaler platforms will give you agents faster, cheaper, and with more production maturity than alternatives.
+
+The choice isn't "hyperscalers are bad." It's "hyperscalers are excellent at scale but create lock-in and don't solve the sovereignty problem."
 
 ---
 

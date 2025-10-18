@@ -7,7 +7,9 @@
 
 ---
 
-## 📋 About This Series: Vision Document for Platform Evolution
+## About This Series: Vision Document for Platform Evolution
+
+⚠️ **IMPORTANT DISCLOSURE**: This document series is authored by **Raphaël Mansuy, Co-Founder of QuantaLogic**. While the analysis of market problems and platform patterns is grounded in verified research, this series also serves as strategic positioning for QuantaLogic's Phase 2 roadmap. Read with the understanding that the author has a direct financial interest in sovereign agentic platform adoption.
 
 This is a **strategic vision document** reflecting QuantaLogic's evolution and roadmap after successfully launching a **Phase 1 Sovereign AI Generative Platform**. This document series captures the team's strategic thinking and learnings from Phase 1, now focused on building **Phase 2: A Sovereign Agent Platform** for European enterprises.
 

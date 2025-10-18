@@ -4,11 +4,17 @@
 
 ---
 
-> **📌 Context: Phase 1 → Phase 2 Evolution**
+> **📌 Context: Phase 1 (October 2025) vs Phase 2 (Q3 2026 Roadmap)**
 >
-> This document series is the strategic reflection of QuantaLogic's team **after successfully launching Phase 1 (Sovereign AI Generative Platform in October 2025)**. We've learned that generative AI platforms solve the "conversational interface" problem, but enterprises deploying multi-agent systems face a **new infrastructure crisis** that Phase 1 didn't solve.
+> This document series is the strategic reflection of QuantaLogic's team **after successfully launching Phase 1 (Sovereign AI Generative Platform in October 2025)**. 
 >
-> This series captures our thinking as we build **Phase 2: A Sovereign Agent Platform** that addresses the integration nightmare, coordination chaos, and infrastructure complexity described in these pages. This is not theoretical—it's the roadmap emerging from real Phase 1 learnings and customer feedback.
+> **IMPORTANT**: This series describes both:
+> - **Phase 1 REALITY** (✅ October 2025): Sovereign multi-model generative platform, conversational AI, workflow automation
+> - **Phase 2 VISION** (🗓️ Q3 2026 Roadmap): Universal agent runtime, multi-framework support, advanced orchestration
+>
+> Generative AI platforms solve the "conversational interface" problem, but enterprises deploying multi-agent systems face a **new infrastructure crisis** that Phase 1 doesn't yet solve. This series captures QuantaLogic's thinking as we build Phase 2 to address the integration nightmare, coordination chaos, and infrastructure complexity described in these pages.
+>
+> **CLARITY NOTE**: The "universal runtime" and "run any framework" capabilities described in this series are **Phase 2 roadmap** (Q3 2026 target), not Phase 1 (October 2025 current state). The roadmap is ambitious but unproven at scale.
 
 ---
 
@@ -394,6 +400,33 @@ Beyond legal compliance, hyperscaler platforms create strategic dependencies:
 └─────────────────────────────────────────────────────┘
 ```
 
+### Important Clarification: Sovereign Platforms Have Different Lock-In
+
+**Honest truth**: Sovereign platforms don't eliminate lock-in—they trade one form of lock-in for another:
+
+```text
+HYPERSCALER LOCK-IN vs SOVEREIGN PLATFORM LOCK-IN
+
+Hyperscaler (e.g., AWS Bedrock):
+├─ Cloud lock-in: AWS infrastructure & services
+├─ Model lock-in: Claude via Bedrock
+├─ Tool ecosystem lock-in: AWS-native integrations
+├─ Escape cost: $500K-$2M (rewrite agents + migrate data)
+└─ Result: 5 dimensions of lock-in
+
+Sovereign Platform (e.g., QuantaLogic):
+├─ Platform lock-in: Vendor's runtime and services
+├─ Model flexibility: Multi-model (not locked)
+├─ Deployment flexibility: On-prem, EU cloud, SaaS (choose)
+├─ Tool ecosystem: Open protocols (MCP, A2A)
+├─ Escape cost: $300K-$800K (export data + redeploy code)
+└─ Result: Platform lock-in (but more exit paths)
+
+KEY DIFFERENCE: Sovereign platforms reduce lock-in in SOME dimensions (cloud, model, ecosystem) while introducing lock-in in OTHER dimensions (platform runtime).
+
+This is NOT "zero lock-in"—it's a different lock-in profile suited for enterprises that value sovereignty and control over vendor convenience.
+```
+
 ### Real European Enterprise Pain
 
 **Case Study: European Healthcare Provider (Anonymous)**
@@ -450,74 +483,74 @@ What happens when you build on US hyperscalers without sovereignty consideration
 
 ### Building Your Own (Reality of October 2025)
 
+**Reality Check**: Most companies attempting DIY agent infrastructure don't deploy 10 engineers for 18-24 months. Instead, they allocate 3-5 core engineers over 12-18 months, with support from adjacent teams. This results in lower headline costs but equally high total impact (opportunity cost, stretched teams).
+
 ```text
 ╔═══════════════════════════════════════════════════════╗
 ║  DIY AGENTIC INFRASTRUCTURE COST BREAKDOWN            ║
+║  (Realistic allocation for mid-market company)        ║
 ╠═══════════════════════════════════════════════════════╣
 ║                                                       ║
-║  PHASE 1: INITIAL BUILD (18-24 months)                ║
+║  PHASE 1: INITIAL BUILD (12-18 months)                ║
 ║  ───────────────────────────────────────────────      ║
-║  Tool Integration Layer                               ║
-║  ├─ Custom connectors (50+): 6 months, 3 engineers    ║
-║  ├─ Authentication/OAuth: 2 months, 2 engineers       ║
-║  ├─ Rate limiting & retry: 1 month, 1 engineer        ║
-║  └─ Subtotal: 9 months × 6 engineers = $810K          ║
+║  Core Engineering Team                                ║
+║  ├─ 1 Platform engineer (100%): $180K                 ║
+║  ├─ 2 Backend engineers (50% each): $180K             ║
+║  ├─ 1 Security engineer (25%): $45K                   ║
+║  └─ Subtotal: $405K                                   ║
 ║                                                       ║
-║  Orchestration Engine                                 ║
-║  ├─ Agent coordination: 4 months, 2 engineers         ║
-║  ├─ State management: 2 months, 2 engineers           ║
-║  ├─ Workflow engine: 3 months, 1 engineer             ║
-║  └─ Subtotal: 9 months × 5 engineers = $675K          ║
+║  Infrastructure & Tooling                             ║
+║  ├─ Vector DB, LLM APIs, dev tools: $50K              ║
+║  └─ Cloud infrastructure: $30K                        ║
 ║                                                       ║
-║  Memory Management                                    ║
-║  ├─ Vector DB integration: 2 months, 2 engineers      ║
-║  ├─ Session management: 2 months, 1 engineer          ║
-║  ├─ Long-term memory: 3 months, 2 engineers           ║
-║  └─ Subtotal: 7 months × 5 engineers = $525K          ║
-║                                                       ║
-║  Identity & Security                                  ║
-║  ├─ IAM integration: 3 months, 2 engineers            ║
-║  ├─ Guardrails engine: 2 months, 2 engineers          ║
-║  ├─ Audit logging: 2 months, 1 engineer               ║
-║  └─ Subtotal: 7 months × 5 engineers = $525K          ║
-║                                                       ║
-║  Observability                                        ║
-║  ├─ Distributed tracing: 2 months, 2 engineers        ║
-║  ├─ Reasoning logs: 2 months, 1 engineer              ║
-║  ├─ Cost tracking: 1 month, 1 engineer                ║
-║  └─ Subtotal: 5 months × 4 engineers = $300K          ║
-║                                                       ║
-║  PHASE 1 TOTAL: $2,835,000                            ║
+║  PHASE 1 TOTAL: ~$485,000                             ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  PHASE 2: ONGOING OPERATIONS (per year)               ║
 ║  ───────────────────────────────────────────────      ║
-║  Maintenance & Updates: 3 engineers × 100% = $540K    ║
-║  New integrations: 2 engineers × 50% = $180K          ║
-║  Security patches: 1 engineer × 50% = $90K            ║
-║  Incident response: 1 engineer × 75% = $135K          ║
+║  Maintenance & Updates: 1.5 engineers = $270K         ║
+║  New integrations & improvements: 0.5 engineers = $90K║
+║  LLM API costs: $50K-$100K                            ║
+║  Infrastructure costs: $30K                           ║
+║  Incident response & on-call: $50K                    ║
 ║                                                       ║
-║  YEARLY OPERATIONS: $945,000                          ║
+║  YEARLY OPERATIONS: ~$490,000-$540,000                ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  3-YEAR TOTAL COST OF OWNERSHIP                       ║
 ║  ───────────────────────────────────────────────      ║
-║  Initial Build: $2,835,000                            ║
-║  Year 1 Ops: $945,000                                 ║
-║  Year 2 Ops: $945,000                                 ║
-║  Year 3 Ops: $945,000                                 ║
+║  Initial Build: $485,000                              ║
+║  Year 1 Ops: $515,000                                 ║
+║  Year 2 Ops: $530,000                                 ║
+║  Year 3 Ops: $540,000                                 ║
 ║                                                       ║
-║  TOTAL: $5,670,000                                    ║
+║  TOTAL: ~$2,070,000                                   ║
+║                                                       ║
+║  ⚠️  HIDDEN COSTS NOT IN ABOVE NUMBERS:                ║
+║  ├─ Opportunity cost (what else could those           ║
+║  │   engineers build? Probably $1-2M in value)        ║
+║  ├─ Technical debt from rushed decisions              ║
+║  ├─ Team attrition (people get bored maintaining code)║
+║  └─ Risk of project abandonment (common)              ║
+║                                                       ║
+║  REALISTIC TOTAL WITH OPPORTUNITY COST: $2.8-3.5M    ║
 ║                                                       ║
 ╚═══════════════════════════════════════════════════════╝
 ```
 
+**Key insight**: DIY isn't as expensive as the original $5.67M estimate claimed, but it's more expensive than just the engineering salary line items suggest. The opportunity cost is the killer.
+
 ### Using a US Hyperscaler Platform (October 2025 Pricing)
+
+**Reality Check**: Hyperscaler costs are lower than DIY on a direct basis, but real-world enterprise deployments often include professional services, premium support, and higher LLM usage than initially budgeted. The numbers below are realistic for mid-market adoption.
+
+Sources: AWS Bedrock (October 2025 pricing), Google Vertex AI ADK pricing, Microsoft Copilot Studio commercial rates.
 
 ```text
 ╔═══════════════════════════════════════════════════════╗
 ║  US HYPERSCALER PLATFORM COST BREAKDOWN               ║
 ║  (AWS Bedrock, Google ADK, Microsoft Copilot Studio)  ║
+║  October 2025 pricing, mid-market profile             ║
 ╠═══════════════════════════════════════════════════════╣
 ║                                                       ║
 ║  PHASE 1: INITIAL SETUP (2-4 weeks)                   ║
@@ -527,128 +560,155 @@ What happens when you build on US hyperscalers without sovereignty consideration
 ║  Integration configuration: 1 week, 1 engineer        ║
 ║                                                       ║
 ║  Setup Time: 4 weeks × 3 engineers = $45K             ║
+║  (vs DIY: this is 100x faster)                        ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
-║  PHASE 2: PLATFORM COSTS (per year)                   ║
+║  PHASE 2: ANNUAL PLATFORM COSTS                       ║
 ║  ───────────────────────────────────────────────      ║
-║  Platform subscription:                               ║
-║  ├─ Base platform: $2,000-$5,000/month                ║
-║  ├─ Per-agent fees: $500-$1,000/agent/month           ║
-║  └─ LLM API costs: $50,000-$200,000/year              ║
+║  Platform subscription & fees:                        ║
+║  ├─ Base platform fee: $2,000-$3,000/month = $30K     ║
+║  ├─ LLM API costs (typical): $80K-$120K/year          ║
+║  │  (Note: this varies wildly 10x based on usage)     ║
+║  └─ Enterprise support (if needed): $30K-$50K         ║
 ║                                                       ║
-║  Engineering support:                                 ║
-║  ├─ 1 platform engineer: 100% = $180K                 ║
-║  ├─ 1 AI engineer: 50% = $90K                         ║
-║  └─ Support & maintenance: 25% overhead = $67K        ║
+║  Engineering & Operations:                            ║
+║  ├─ 1 platform engineer (50%): $90K                   ║
+║  ├─ 1 AI engineer (50%): $90K                         ║
+║  └─ DevOps/monitoring (25%): $45K                     ║
 ║                                                       ║
-║  YEARLY OPERATIONS: $400,000-$650,000                 ║
+║  YEARLY OPERATIONS: ~$440K-$500K                      ║
+║  (Range depends heavily on LLM usage patterns)        ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  3-YEAR TOTAL COST OF OWNERSHIP                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  Initial Setup: $45,000                               ║
-║  Year 1: $525,000 (average)                           ║
-║  Year 2: $525,000                                     ║
-║  Year 3: $525,000                                     ║
+║  Year 1: $470,000                                     ║
+║  Year 2: $470,000                                     ║
+║  Year 3: $470,000                                     ║
 ║                                                       ║
-║  TOTAL: $1,620,000                                    ║
+║  TOTAL: ~$1,925,000                                   ║
 ║                                                       ║
 ║  ═══════════════════════════════════════════════      ║
-║  SAVINGS vs DIY: $4,050,000 (71% reduction)           ║
+║  SAVINGS vs DIY: ~$900K-$1.6M depending on            ║
+║  whether you calculate DIY at $2M or $3.5M            ║
 ║  ═══════════════════════════════════════════════      ║
 ║                                                       ║
-║  ⚠️  HIDDEN COSTS NOT INCLUDED:                       
-║  ├─ Vendor lock-in (cloud, model, ecosystem)          ║
-║  ├─ Potential forced migration if sovereignty needed  ║
-║  ├─ Compliance risk for EU regulated sectors          ║
-║  └─ No control over future pricing                    ║
+║  WHAT THIS DOESN'T INCLUDE:                           ║
+║  ├─ Vendor lock-in costs (switching later costs $500K+)
+║  ├─ Potential forced migration if sovereignty becomes ║
+║  │   mandatory (€1-2M for EU regulated enterprises)   ║
+║  ├─ Compliance risk for regulated sectors (potential  ║
+║  │   regulatory fines are uncapped)                   ║
+║  └─ Runaway LLM costs if not monitored (can spike 10x)║
+║                                                       ║
+║  HYPERSCALER ADVANTAGES:                              ║
+║  ✅ 100x faster time to market (2 weeks vs 18 months) ║
+║  ✅ Predictable costs (baseline known upfront)        ║
+║  ✅ Enterprise-grade security & uptime                ║
+║  ✅ Integrated with cloud native ecosystems           ║
+║                                                       ║
+║  HYPERSCALER DISADVANTAGES:                           ║
+║  ❌ US Cloud Act jurisdiction (data sovereignty risk) ║
+║  ❌ Cloud/framework/model lock-in                     ║
+║  ❌ Limited control over roadmap                      ║
+║  ❌ Pricing increases over time (vendor discretion)   ║
 ║                                                       ║
 ╚═══════════════════════════════════════════════════════╝
 ```
 
 ### Using a Sovereign Platform
 
-Emerging sovereign agentic platforms (focused on European data residency and open protocols) offer a middle path: platform convenience without US cloud dependency.
+Emerging sovereign agentic platforms (focused on European data residency and open protocols) offer a middle path: platform convenience without US cloud dependency. However, as early-stage offerings, they carry different risks and trade-offs than established hyperscalers.
+
+**IMPORTANT CAVEAT**: Sovereign platforms are relatively new (2025). The pricing and feature maturity below is aspirational based on current beta/early access offerings. Real production costs may vary significantly. This is **unproven at scale** vs hyperscaler platforms.
 
 ```text
 ╔═══════════════════════════════════════════════════════╗
-║  SOVEREIGN PLATFORM COST BREAKDOWN (Example)          ║
-║  Estimated typical SaaS model for EU-focused platform ║
+║  SOVEREIGN PLATFORM COST BREAKDOWN (Estimated)        ║
+║  Example: EU-focused platform (e.g., QuantaLogic)     ║
+║  October 2025 early access pricing model              ║
 ╠═══════════════════════════════════════════════════════╣
 ║                                                       ║
 ║  PHASE 1: INITIAL SETUP (1-3 weeks)                   ║
 ║  ───────────────────────────────────────────────      ║
-║  Platform setup: 3 days, 1 engineer                   ║
+║  Platform setup & onboarding: 3 days, 1 engineer      ║
 ║  Initial agent development: 1.5 weeks, 2 engineers    ║
 ║  Integration configuration: 3 days, 1 engineer        ║
-║  (Lower complexity: standard workflow builder,        ║
-║   multi-model flexibility, MCP native)                ║
+║  (Complexity similar to hyperscalers)                 ║
 ║                                                       ║
 ║  Setup Time: 3 weeks × 2.5 engineers = $30K           ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
-║  PHASE 2: PLATFORM COSTS (per year)                   ║
+║  PHASE 2: ANNUAL PLATFORM COSTS                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  Platform subscription (SaaS):                        ║
-║  ├─ Base platform: $3,000-$8,000/month                ║
-║  ├─ Per-user licensing: $100-$300/user/month          ║
-║  └─ Estimated team cost: $100K-$150K/year            ║
+║  ├─ Base platform: $3,000-$6,000/month = $50K-$72K    ║
+║  │  (Note: Early access may have promotional pricing) ║
+║  ├─ LLM API costs: $50K-$80K/year                      ║
+║  │  (Multi-model flexibility allows optimization)     ║
+║  └─ Support (if needed): $20K-$30K                    ║
 ║                                                       ║
-║  LLM API costs: $50,000-$100,000/year                 ║
-║      (Multi-model flexibility allows optimization:    ║
-║       select cheapest/best model per task,            ║
-║       EU sovereign models may reduce costs)           ║
+║  Infrastructure (choose deployment):                  ║
+║  ├─ Option A - SaaS (EU hosted): Included above       ║
+║  ├─ Option B - EU cloud (OVHCloud): $20K-$30K/yr     ║
+║  └─ Option C - On-premise (amortized): $30K-$50K/yr  ║
 ║                                                       ║
-║  Infrastructure (choose one):                         ║
-║  ├─ Option A - EU cloud (OVHCloud/IONOS): ~$20K/yr   ║
-║  ├─ Option B - On-premise: ~$30K/yr amortized        ║
-║  └─ Option C - SaaS (EU data center): Included        ║
+║  Engineering & Operations:                            ║
+║  ├─ 1 engineer (75%): $135K                           ║
+║  │  (Less complex than hyperscalers due to openness)  ║
+║  └─ DevOps (minimal): $20K                            ║
 ║                                                       ║
-║  Engineering support:                                 ║
-║  ├─ 1 engineer: 75% time = $135K                      ║
-║      (Less complex than DIY, standard tools,          ║
-║       multi-model flexibility, open protocols)        ║
-║                                                       ║
-║  YEARLY OPERATIONS: $250,000-$320,000                 ║
-║  (Typical SaaS + multi-model LLM optimization)        ║
+║  YEARLY OPERATIONS: ~$365K-$420K                      ║
+║  (Deployment option adds $0-50K above)                ║
 ║                                                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  3-YEAR TOTAL COST OF OWNERSHIP                       ║
 ║  ───────────────────────────────────────────────      ║
 ║  Initial Setup: $30,000                               ║
-║  Year 1: $300,000 (average)                           ║
-║  Year 2: $290,000                                     ║
-║  Year 3: $290,000                                     ║
+║  Year 1: $390,000 (average)                           ║
+║  Year 2: $395,000                                     ║
+║  Year 3: $400,000                                     ║
 ║                                                       ║
-║  TOTAL: ~$900,000 - $1,000,000                        ║
+║  TOTAL: ~$1,205,000                                   ║
 ║                                                       ║
 ║  ═══════════════════════════════════════════════      ║
-║  SAVINGS vs DIY: $4,670,000 (82% reduction)           ║
-║  SAVINGS vs US Hyperscaler: $620,000 (38% reduction)  ║
+║  vs DIY: ~$900K-$1.8M savings (varies with DIY model) ║
+║  vs US Hyperscaler: ~$700K-$800K additional cost      ║
+║  (trade-off: sovereignty + control for ~40% premium)  ║
 ║  ═══════════════════════════════════════════════      ║
 ║                                                       ║
-║  ✅ TYPICAL SOVEREIGN PLATFORM CHARACTERISTICS:       ║
-║  ├─ Multi-model support: 10-20+ models available     ║
-║      (Includes EU sovereign options like Mistral)     ║
-║  ├─ Standard workflow/chat interfaces                ║
-║  ├─ Multiple deployment options (SaaS, EU cloud,     ║
-║      on-premise)                                      ║
-║  ├─ Data residency: 100% EU (GDPR compliant)         ║
-║  └─ Based on open protocols (MCP, A2A roadmap)        ║
+║  ⚠️  SOVEREIGN PLATFORM REALITIES (2025):             ║
+║  ├─ EARLY STAGE: Unproven at scale vs hyperscalers    ║
+║  ├─ FEATURE GAPS: May not have all hyperscaler        ║
+║  │   capabilities (yet)                               ║
+║  ├─ SUPPORT MATURITY: Smaller support teams           ║
+║  ├─ PRICING STABILITY: Early adopter risk (pricing    ║
+║  │   may change significantly in Years 2-3)           ║
+║  ├─ VENDOR RISK: Smaller companies have higher        ║
+║  │   failure rates                                    ║
+║  └─ PRODUCT ROADMAP: Often more flexible but less     ║
+║      predictable than hyperscalers                    ║
 ║                                                       ║
-║  🗓️  PHASE 2 ROADMAP (Typical ~18 months):           ║
-║  ├─ Advanced multi-framework agent support            ║
-║  ├─ Cross-framework orchestration                     ║
-║  ├─ A2A Protocol integration (agent communication)    ║
-║  ├─ Enhanced cost optimization tools                  ║
-║  └─ Estimated ~30-40% operational savings at maturity ║
+║  ✅ SOVEREIGN PLATFORM ADVANTAGES:                    ║
+║  ├─ EU data sovereignty (GDPR/NIS2/DORA compliant)   ║
+║  ├─ Multi-model flexibility (switch per task)        ║
+║  ├─ Open protocols (MCP, future A2A support)         ║
+║  ├─ No US Cloud Act exposure                         ║
+║  └─ Strategic independence (not locked to one cloud) ║
 ║                                                       ║
-║  ✅ KEY BENEFITS:                                     ║
-║  ├─ EU data sovereignty (GDPR, NIS2, DORA)           ║
-║  ├─ Multi-model flexibility (switch models per task) ║
-║  ├─ Vendor portability (open protocols, standards)    ║
-║  ├─ Cost predictability (transparent pricing)         ║
-║  └─ Open foundations (based on open standards)        ║
+║  ❌ SOVEREIGN PLATFORM RISKS:                         ║
+║  ├─ Unproven technology at scale                      ║
+║  ├─ Smaller support organizations                     ║
+║  ├─ Faster feature changes/potential breaking changes ║
+║  ├─ Limited integrations compared to hyperscalers     ║
+║  └─ Vendor viability uncertainty (startup risk)       ║
+║                                                       ║
+║  📊 REALISTIC POSITIONING (October 2025):             ║
+║  Sovereign platforms are NOT cheaper than hyperscalers║
+║  upfront. They ARE cheaper if compliance/sovereignty  ║
+║  are mandatory. Choose based on regulatory needs, not ║
+║  cost savings alone.                                  ║
 ║                                                       ║
 ╚═══════════════════════════════════════════════════════╝
 ```
@@ -665,17 +725,25 @@ Sovereign agentic platforms typically offer:
 
 | Factor                   | DIY             | US Hyperscaler   | Sovereign Platform Example |
 | ------------------------ | --------------- | ---------------- | ----------------------------------- |
-| **3-Year TCO**           | $5.67M          | $1.62M           | **$900K-$1M**                       |
-| **Time to Production**   | 18-24 months    | 2-4 weeks        | **1-3 weeks**                       |
-| **Engineering Required** | 10+ engineers   | 1-2 engineers    | **1 engineer**                      |
-| **Multi-Framework**      | ✅ Any (DIY)    | ⚠️ Vendor LLM    | ✅ Roadmap: ADK, CrewAI, LangGraph  |
+| **3-Year TCO**           | $2.0-3.5M*      | $1.9-2.5M        | $1.2M (aspirational)        |
+| **Time to Production**   | 12-18 months    | 2-4 weeks        | 1-3 weeks                           |
+| **Engineering Required** | 3-5 engineers   | 1-2 engineers    | 1 engineer                          |
+| **Multi-Framework**      | ✅ Any (native) | ⚠️ Framework-tied| ✅ Q3 2026 (roadmap)                |
 | **Data Sovereignty**     | ✅ (if on-prem) | ❌ US Cloud Act  | ✅ EU compliant (by design)         |
-| **Model Flexibility**    | ✅ Any          | ⚠️ Limited       | ✅ 10-20+ models available          |
-| **Vendor Lock-In**       | ❌ DIY lock-in  | ❌ Cloud lock-in | ✅ Open protocols (MCP)             |
-| **Cost Control**         | ✅ Full control | ❌ Vendor sets   | ✅ Flexible deployment options      |
-| **EU Compliance**        | ✅ If designed  | ⚠️ Risky         | ✅ Native GDPR/NIS2/DORA compliance |
+| **Model Flexibility**    | ✅ Any          | ⚠️ Limited       | ✅ Multi-model                      |
+| **Vendor Lock-In**       | Medium (DIY)    | High (cloud+IaaS)| Medium (platform)                   |
+| **Cost Control**         | ✅ Full control | ⚠️ Vendor sets   | ✅ Transparent SaaS                 |
+| **EU Compliance**        | ✅ If designed  | ⚠️ Risky (Schrems II)| ✅ Native GDPR/NIS2/DORA            |
+| **Production Maturity**  | Variable        | ✅ Battle-tested | ⚠️ Early stage (2025)               |
+| **Support Quality**      | N/A             | ✅ Enterprise    | ⚠️ Smaller organizations            |
 
-**The verdict**: For cost-conscious or EU-regulated enterprises, sovereign platforms offer the best of both worlds: platform convenience without US dependency or lock-in.
+**\* DIY includes $0.8-1.8M opportunity cost (what engineers could build instead)**
+
+**Honest verdict**: No single "best" option. Choose based on your constraints:
+- **Time-to-market critical**: Hyperscalers (2-4 weeks)
+- **Sovereignty mandatory**: Sovereign platforms (despite higher price point)
+- **Cost only factor**: Hyperscalers (but review compliance risks if EU regulated)
+- **Maximum control needed**: DIY (at very high time and opportunity cost)
 
 ### The Hidden Costs of DIY
 
@@ -964,6 +1032,78 @@ Month 7+:  Optimize costs
 Result: Started fast, sovereign when needed, optimized costs
         Total migration time: 2 weeks (vs 8-12 months for platform change)
 ```
+
+---
+
+## When NOT to Use Agents (or Platforms)
+
+Not every problem needs agents. This is important to acknowledge.
+
+### Scenarios Where Traditional Approaches Are Better
+
+**1. Deterministic, High-Reliability Systems**
+
+Where: Data pipelines, financial transactions, critical infrastructure
+
+Why platforms/agents underperform:
+- Agents are non-deterministic (temperature >0 means different results)
+- You can't test the same way as traditional software
+- Compliance requires audit trails and deterministic behavior
+- Cost of a "wrong" decision is high
+
+Better approach: ETL pipelines, state machines, traditional APIs
+
+Example: Bank transfer system
+- ❌ WRONG: "Agent decides if transfer is fraud"
+- ✅ RIGHT: Deterministic rules + agent for edge cases + human review
+
+**2. Simple, Repetitive Tasks with Known Inputs/Outputs**
+
+Where: Order processing, form validation, routine reporting
+
+Why agents are overkill:
+- Agents add latency (LLM inference takes 1-5 seconds)
+- You don't need reasoning for trivial logic
+- Cost: Even "simple" agent calls cost $0.01-$0.10
+
+Better approach: Traditional APIs, rules engines, scheduled jobs
+
+Example: Invoice generation
+- ❌ WRONG: "Agent analyzes purchase order and generates invoice"
+- ✅ RIGHT: Template + scheduled job (1ms, cost: $0/month)
+
+**3. Systems Where Explainability/Auditability Is Non-Negotiable**
+
+Where: Legal decisions, medical diagnosis, regulatory compliance
+
+Why agents struggle:
+- "Why did the agent do that?" is still hard to answer
+- LLM reasoning isn't fully transparent (it's a statistical process)
+- Regulatory bodies want to see explicit rules, not learned patterns
+- Liability questions: Who's responsible if agent makes wrong call?
+
+Better approach: Expert systems, rule engines, human-in-loop with logging
+
+**4. When Your Real Problem Isn't Integration**
+
+Where: You don't have a tool integration problem; you have a domain expertise problem
+
+Example company: "We need an AI agent to do sales prospecting"
+
+- Real problem: We don't understand our sales process well enough to specify it
+- Agent won't fix this: You'll just get AI-powered guessing
+- Better approach: First, do sales process engineering. Then, if tool integration is complex, use a platform.
+
+### When Agents ARE the Right Answer
+
+- ✅ Multi-step reasoning across diverse data sources (5-15 tool calls per query)
+- ✅ Semi-structured decision-making (context-dependent, not rule-based)
+- ✅ Conversational interfaces where users ask varied questions
+- ✅ Systems where 80-90% success is acceptable (with human fallback)
+- ✅ Scenarios where you're replacing 3-5 people's daily tasks
+- ✅ Integration nightmares that cost more than the agent platform
+
+**The honest rule**: Build an agent if the cost to build it (via a platform) is less than the cost of NOT building it (manual work, custom integration, opportunity cost).
 
 ---
 
